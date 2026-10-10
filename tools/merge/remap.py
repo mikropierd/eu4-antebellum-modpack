@@ -50,6 +50,17 @@ class Remap:
         for nd in nodes:
             key = nd.key
             parent = path[-1] if path else ''
+            if nd.kind == 'value' and t[nd.vstart:nd.vstart + 1] == '"' and chr(10) in t[nd.vstart:nd.vend]:
+                s = t[nd.vstart:nd.vend]
+                def sub_t(mm):
+                    if oor(mm.group(2)):
+                        self.bump('embedded string triggers')
+                        return 'always = no'
+                    return mm.group(0)
+                ns = _TRIG.sub(sub_t, s)
+                if ns != s:
+                    edits.append((nd.vstart, nd.vend, ns))
+                continue
             # --- province-scope block
             if nd.kind == 'block' and key.isdigit() and oor(key) and parent not in SKIP_PARENTS:
                 self._replace(t, nd, ctx(path), edits, f'province {key}')

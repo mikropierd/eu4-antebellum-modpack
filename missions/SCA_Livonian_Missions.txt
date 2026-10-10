@@ -15,10 +15,6 @@ liv_diplomacy_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_1 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_first_conquest takes precedence
 		NOT = {
 OR = {
@@ -28,6 +24,10 @@ OR = {
 			was_tag = LIV
 		}
 		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree lva_missions_1 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -123,10 +123,6 @@ liv_teutonic_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_2 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_second_conquest takes precedence
 		NOT = {
 OR = {
@@ -175,6 +171,10 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree lva_missions_2 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -326,10 +326,6 @@ liv_riga_and_secularization_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_3 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_third_conquest takes precedence
 		NOT = {
 OR = {
@@ -386,6 +382,10 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree lva_missions_3 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -566,10 +566,6 @@ liv_internal_division_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_4 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_fourth_conquest takes precedence
 		NOT = {
 OR = {
@@ -626,6 +622,10 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree lva_missions_4 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -712,10 +712,6 @@ liv_fortify_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_5 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_fifth_conquest takes precedence
 		NOT = {
 OR = {
@@ -725,6 +721,10 @@ OR = {
 			was_tag = LIV
 		}
 		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree lva_missions_5 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -875,10 +875,6 @@ liv_lva_colonialism_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_1 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_first_conquest takes precedence
 		NOT = {
 OR = {
@@ -888,6 +884,10 @@ OR = {
 			was_tag = LIV
 		}
 		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree lva_missions_1 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -957,10 +957,6 @@ liv_lva_colonize_north_america_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
 	
-		# [merge] Ante Bellum tree lva_missions_1 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_first_conquest takes precedence
 		NOT = {
 OR = {
@@ -970,6 +966,10 @@ OR = {
 			was_tag = LIV
 		}
 		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree lva_missions_1 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -1151,10 +1151,6 @@ liv_lva_colonize_new_world_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = yes
 	
-		# [merge] Ante Bellum tree lva_missions_1 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_first_conquest takes precedence
 		NOT = {
 OR = {
@@ -1164,6 +1160,10 @@ OR = {
 			was_tag = LIV
 		}
 		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree lva_missions_1 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -1293,10 +1293,6 @@ liv_lva_old_world_scramble_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_2 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_second_conquest takes precedence
 		NOT = {
 OR = {
@@ -1345,6 +1341,10 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree lva_missions_2 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -1577,10 +1577,6 @@ liv_lva_trade_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_3 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_third_conquest takes precedence
 		NOT = {
 OR = {
@@ -1637,6 +1633,10 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree lva_missions_3 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -1882,10 +1882,6 @@ liv_lva_livonian_teutonic_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_4 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_fourth_conquest takes precedence
 		NOT = {
 OR = {
@@ -1942,6 +1938,10 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree lva_missions_4 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -2149,10 +2149,6 @@ liv_baltic_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_4 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_fourth_conquest takes precedence
 		NOT = {
 OR = {
@@ -2209,6 +2205,10 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree lva_missions_4 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes
@@ -2347,10 +2347,6 @@ liv_lva_handle_the_threats_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree lva_missions_5 takes precedence
-		NOT = {
-tag = LVA
-		}
 		# [merge] Ante Bellum tree ab_teu_fifth_conquest takes precedence
 		NOT = {
 OR = {
@@ -2360,6 +2356,10 @@ OR = {
 			was_tag = LIV
 		}
 		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree lva_missions_5 takes precedence
+		NOT = {
+tag = LVA
 		}
 	}
 	has_country_shield = yes

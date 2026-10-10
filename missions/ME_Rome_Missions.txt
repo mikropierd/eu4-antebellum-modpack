@@ -9,15 +9,44 @@ ROM_missions_1 = {
 			NOT = { was_tag = BYZ }
 		}
 	
+		# [merge] Ante Bellum tree byz_slot1_balkan takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot1_carpathia_locked takes precedence
+		NOT = {
+tag = BYZ
+		}
 		# [merge] Ante Bellum tree byz_slot1_carpathia_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
 		}
+		# [merge] Ante Bellum tree byz_slot1_army takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot1_europe_locked takes precedence
+		NOT = {
+tag = BYZ
+		}
 		# [merge] Ante Bellum tree byz_slot1_europe_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
+		}
+		# [merge] Ante Bellum tree byz_slot1_tall takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
 		}
 		# [merge] Ante Bellum tree byz_slot1_chinese_locked takes precedence
 		NOT = {
@@ -204,35 +233,6 @@ tag = ROM
 		was_tag = RUM
 		religion_group = muslim
 		has_country_flag = byz_chinese_war_victory
-		}
-		# [merge] Ante Bellum tree byz_slot1_balkan takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot1_carpathia_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot1_army takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot1_europe_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot1_tall takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
 		}
 	}
 	has_country_shield = yes
@@ -507,10 +507,58 @@ ROM_missions_2 = {
 			NOT = { was_tag = BYZ }
 		}
 	
+		# [merge] Ante Bellum tree byz_slot2_balkan takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot2_italian_league_locked takes precedence
+		NOT = {
+tag = BYZ
+		NOT = { has_country_flag = byz_timed_mission_unlocked }
+		NOT = { has_country_flag = byz_timed_mission_failed }
+		}
+		# [merge] Ante Bellum tree byz_slot2_italian_league_unlocked takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		has_country_flag = byz_timed_mission_unlocked
+		NOT = { has_country_flag = byz_timed_mission_failed }
+		}
+		# [merge] Ante Bellum tree byz_slot2_italian_league_failed takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		has_country_flag = byz_timed_mission_failed
+		}
+		# [merge] Ante Bellum tree byz_slot2_europe takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot2_europe_locked takes precedence
+		NOT = {
+tag = BYZ
+		}
 		# [merge] Ante Bellum tree byz_slot2_europe_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
+		}
+		# [merge] Ante Bellum tree byz_slot2_tall takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
 		}
 		# [merge] Ante Bellum tree byz_slot2_chinese_locked takes precedence
 		NOT = {
@@ -697,54 +745,6 @@ tag = ROM
 		was_tag = RUM
 		religion_group = muslim
 		has_country_flag = byz_chinese_war_victory
-		}
-		# [merge] Ante Bellum tree byz_slot2_balkan takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot2_italian_league_locked takes precedence
-		NOT = {
-tag = BYZ
-		NOT = { has_country_flag = byz_timed_mission_unlocked }
-		NOT = { has_country_flag = byz_timed_mission_failed }
-		}
-		# [merge] Ante Bellum tree byz_slot2_italian_league_unlocked takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		has_country_flag = byz_timed_mission_unlocked
-		NOT = { has_country_flag = byz_timed_mission_failed }
-		}
-		# [merge] Ante Bellum tree byz_slot2_italian_league_failed takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		has_country_flag = byz_timed_mission_failed
-		}
-		# [merge] Ante Bellum tree byz_slot2_europe takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot2_europe_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot2_tall takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
 		}
 	}
 	has_country_shield = yes
@@ -1163,15 +1163,44 @@ ROM_missions_3 = {
 			NOT = { was_tag = BYZ }
 		}
 	
+		# [merge] Ante Bellum tree byz_slot3_balkan takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot3_mesopotamia_locked takes precedence
+		NOT = {
+tag = BYZ
+		}
 		# [merge] Ante Bellum tree byz_slot3_mesopotamia_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
 		}
+		# [merge] Ante Bellum tree byz_slot3_army takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot3_europe_locked takes precedence
+		NOT = {
+tag = BYZ
+		}
 		# [merge] Ante Bellum tree byz_slot3_europe_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
+		}
+		# [merge] Ante Bellum tree byz_slot3_tall takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
 		}
 		# [merge] Ante Bellum tree byz_slot3_chinese_locked takes precedence
 		NOT = {
@@ -1372,35 +1401,6 @@ tag = ROM
 		was_tag = RUM
 		religion_group = muslim
 		has_country_flag = byz_chinese_war_victory
-		}
-		# [merge] Ante Bellum tree byz_slot3_balkan takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot3_mesopotamia_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot3_army takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot3_europe_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot3_tall takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
 		}
 	}
 	has_country_shield = yes
@@ -2266,20 +2266,67 @@ ROM_missions_4 = {
 			NOT = { was_tag = BYZ }
 		}
 	
+		# [merge] Ante Bellum tree byz_slot4_balkan takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot4_mesopotamia_locked takes precedence
+		NOT = {
+tag = BYZ
+		}
 		# [merge] Ante Bellum tree byz_slot4_mesopotamia_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
+		}
+		# [merge] Ante Bellum tree byz_slot4_africa takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot4_africa_locked takes precedence
+		NOT = {
+tag = BYZ
 		}
 		# [merge] Ante Bellum tree byz_slot4_africa_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
 		}
+		# [merge] Ante Bellum tree byz_slot4_alexandria takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot4_europe_locked takes precedence
+		NOT = {
+tag = BYZ
+		}
 		# [merge] Ante Bellum tree byz_slot4_europe_unlocked takes precedence
 		NOT = {
 tag = ROM
 		was_tag = BYZ
+		}
+		# [merge] Ante Bellum tree byz_slot4_punic takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot4_tall takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
 		}
 		# [merge] Ante Bellum tree byz_slot4_persian_locked takes precedence
 		NOT = {
@@ -2466,53 +2513,6 @@ tag = ROM
 		was_tag = RUM
 		religion_group = muslim
 		has_country_flag = byz_persian_war_victory
-		}
-		# [merge] Ante Bellum tree byz_slot4_balkan takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot4_mesopotamia_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot4_africa takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot4_africa_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot4_alexandria takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot4_europe_locked takes precedence
-		NOT = {
-tag = BYZ
-		}
-		# [merge] Ante Bellum tree byz_slot4_punic takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot4_tall takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
 		}
 	}
 	has_country_shield = yes
@@ -2887,6 +2887,20 @@ ROM_missions_5 = {
 			NOT = { was_tag = BYZ }
 		}
 	
+		# [merge] Ante Bellum tree byz_slot5_balkan takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
+		# [merge] Ante Bellum tree byz_slot5_tall takes precedence
+		NOT = {
+OR = {
+			tag = BYZ
+			was_tag = BYZ
+		}
+		}
 		# [merge] Ante Bellum tree byz_slot5_persian_locked takes precedence
 		NOT = {
 tag = ROM
@@ -3088,20 +3102,6 @@ tag = ROM
 		was_tag = RUM
 		religion_group = muslim
 		has_country_flag = byz_persian_war_victory
-		}
-		# [merge] Ante Bellum tree byz_slot5_balkan takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
-		}
-		# [merge] Ante Bellum tree byz_slot5_tall takes precedence
-		NOT = {
-OR = {
-			tag = BYZ
-			was_tag = BYZ
-		}
 		}
 	}
 	has_country_shield = yes

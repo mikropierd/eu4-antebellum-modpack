@@ -17,16 +17,6 @@ dnz_hre_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
 		NOT = {
 OR = {
@@ -51,6 +41,16 @@ OR = {
 		NOT = {
 tag = PRU
 		NOT = { was_tag = TEU }
+		}
+		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -120,14 +120,6 @@ dnz_development_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
 		NOT = {
 OR = {
@@ -152,6 +144,14 @@ OR = {
 		NOT = {
 tag = PRU
 		NOT = { was_tag = TEU }
+		}
+		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -222,16 +222,6 @@ dnz_internal_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree ab_teu_third_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_third takes precedence
 		NOT = {
 OR = {
@@ -251,6 +241,16 @@ OR = {
 			tag = PRU
 		}
 		NOT = { was_tag = TEU }
+		}
+		# [merge] Ante Bellum tree ab_teu_third_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -343,14 +343,6 @@ dnz_army_mission_slot = {
 		has_dlc = "Lions of the North"
 		NOT = { map_setup = map_setup_random }
 	
-		# [merge] Ante Bellum tree ab_teu_fourth_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_fourth takes precedence
 		NOT = {
 OR = {
@@ -370,6 +362,14 @@ OR = {
 			tag = PRU
 		}
 		NOT = { was_tag = TEU }
+		}
+		# [merge] Ante Bellum tree ab_teu_fourth_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes

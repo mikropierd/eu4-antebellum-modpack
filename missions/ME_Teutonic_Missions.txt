@@ -1323,16 +1323,6 @@ OR = {
 tag = PRU
 		NOT = { was_tag = TEU }
 		}
-		# [merge] Ante Bellum tree ab_teu_fifth_conquest takes precedence
-		NOT = {
-OR = {
-			tag = TEU
-			tag = LIV
-			was_tag = TEU
-			was_tag = LIV
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ger_fifth_group_prussia takes precedence
 		NOT = {
 OR = {
@@ -1343,6 +1333,16 @@ OR = {
 			was_tag = PRU
 			was_tag = LVI
 		}
+		}
+		# [merge] Ante Bellum tree ab_teu_fifth_conquest takes precedence
+		NOT = {
+OR = {
+			tag = TEU
+			tag = LIV
+			was_tag = TEU
+			was_tag = LIV
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
