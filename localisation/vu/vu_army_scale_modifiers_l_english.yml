@@ -1,0 +1,15 @@
+﻿l_english:
+ # VU Province-Count Force Limit Scaling
+ # Triggered modifier names and descriptions shown in the country modifier list.
+ vu_army_scale_micro: "Independent Principality"
+ vu_army_scale_micro_desc: "A small but proud realm. The concentrated demands of defending a minor territory allow a disproportionate military effort relative to its size, on land and sea alike."
+ vu_army_scale_small: "Small Kingdom"
+ vu_army_scale_small_desc: "A compact kingdom whose rulers can project military and naval power effectively within a manageable territory."
+ vu_army_scale_regional: "Regional Power"
+ vu_army_scale_regional_desc: "A regional power with enough territory to be taken seriously, but not yet burdened by the administrative weight of a great empire."
+ vu_army_scale_great_power: "Great Power Overstretch"
+ vu_army_scale_great_power_desc: "Administering such a vast realm fragments the attention and resources needed to fully mobilise an effective army and fleet. The centre holds, but the margins are thin."
+ vu_army_scale_empire: "Continental Empire Overstretch"
+ vu_army_scale_empire_desc: "A continent-spanning empire cannot concentrate its forces as a compact state can. Supply lines, garrison obligations, and distant rebellions consume soldiers and sailors that never reach the front."
+ vu_army_scale_world_empire: "World Empire Overstretch"
+ vu_army_scale_world_empire_desc: "Holding dominion over such a vast expanse of the world places enormous strain on military logistics. The armies and fleets that can be assembled at any single point are a fraction of the empire's theoretical strength."

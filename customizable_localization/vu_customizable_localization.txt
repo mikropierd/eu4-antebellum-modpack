@@ -1,0 +1,1128 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+defined_text = {
+    name = GetIfSubjectsVU
+
+    text = {
+        localisation_key = string_is_subject_vu
+        trigger = {
+            is_subject = yes
+        }
+    }
+    text = {
+        localisation_key = string_is_not_subject_vu
+        trigger = {
+            is_subject = no
+        }
+    }
+}
+
+defined_text = {
+    name = GetBeerVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Beer
+        trigger = {
+           NOT = { has_global_flag = No_Beer }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Beer_NO
+        trigger = {
+            has_global_flag = No_Beer 
+        }
+    }
+}
+
+defined_text = {
+	name = GetApicultureVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Apiculture
+        trigger = {
+           NOT = { has_global_flag = No_apiculture }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Apiculture_NO
+        trigger = {
+            has_global_flag = No_apiculture 
+        }
+    }
+}
+
+
+defined_text = {
+    name = GetWhalingVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Whaling
+        trigger = {
+            NOT = { has_global_flag = No_Whaling }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Whaling_NO
+        trigger = {
+            has_global_flag = No_Whaling 
+        }
+    }
+}
+
+defined_text = {
+    name = GetLumberVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Lumber
+        trigger = {
+            NOT = { has_global_flag = No_Lumber }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Lumber_NO
+        trigger = {
+            has_global_flag = No_Lumber 
+         }
+    }
+}
+
+defined_text = {
+    name = GetPalm_oilVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Palm_oil
+        trigger = {
+            NOT = { has_global_flag = No_Palm_oil }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Palm_oil_NO
+		trigger = {
+			has_global_flag = No_Palm_oil 
+		}
+	}
+}
+
+defined_text = {
+    name = GetSaffronVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Saffron
+        trigger = {
+            NOT = { has_global_flag = No_Saffron }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Saffron_NO
+        trigger = {
+            has_global_flag = No_Saffron 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetRiceVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Rice
+        trigger = {
+            NOT = { has_global_flag = No_Rice }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Rice_NO
+        trigger = {
+            has_global_flag = No_Rice 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetOpiumVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Opium
+        trigger = {
+            NOT = { has_global_flag = No_Opium }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Opium_NO
+        trigger = {
+            has_global_flag = No_Opium 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetRumVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Rum
+        trigger = {
+            NOT = { has_global_flag = No_Rum }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Rum_NO
+        trigger = {
+            has_global_flag = No_Rum 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetHorsesVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Horses
+        trigger = {
+            NOT = { has_global_flag = No_Horses }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Horses_NO
+        trigger = {
+            has_global_flag = No_Horses 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetOlive_oilVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Olive_oil
+        trigger = {
+            NOT = { has_global_flag = No_Olive_Oil }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Olive_oil_NO
+        trigger = {
+            has_global_flag = No_Olive_Oil 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetAmberVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Amber
+        trigger = {
+            NOT = { has_global_flag = No_Amber }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Amber_NO
+        trigger = {
+            has_global_flag = No_Amber 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMarbleVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Marble
+        trigger = {
+            NOT = { has_global_flag = No_Marble }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Marble_NO
+        trigger = {
+            has_global_flag = No_Marble 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetLeadVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Lead
+        trigger = {
+            NOT = { has_global_flag = No_Lead }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Lead_NO
+        trigger = {
+            has_global_flag = No_Lead 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetClovesVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Cloves
+        trigger = {
+            NOT = { has_global_flag = No_Cloves }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Cloves_NO
+        trigger = {
+            has_global_flag = No_Cloves 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMercuryVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Mercury
+        trigger = {
+            NOT = { has_global_flag = No_Mercury }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Mercury_NO
+        trigger = {
+            has_global_flag = No_Mercury 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetCamelVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Camel
+        trigger = {
+            NOT = { has_global_flag = No_Camel }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Camel_NO
+        trigger = {
+            has_global_flag = No_Camel 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetGunpowderVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Gunpowder
+        trigger = {
+            NOT = { has_global_flag = No_Gunpowder }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Gunpowder_NO
+        trigger = {
+            has_global_flag = No_Gunpowder 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetElephantsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Elephants
+        trigger = {
+            NOT = { has_global_flag = No_Elephants }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Elephants_NO
+        trigger = {
+            has_global_flag = No_Elephants 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetTinVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Tin
+        trigger = {
+            NOT = { has_global_flag = No_Tin }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Tin_NO
+        trigger = {
+            has_global_flag = No_Tin 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetDatesVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Dates
+        trigger = {
+            NOT = { has_global_flag = No_Dates }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Dates_NO
+        trigger = {
+            has_global_flag = No_Dates 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetCheeseVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Cheese
+        trigger = {
+            NOT = { has_global_flag = No_Cheese }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Cheese_NO
+        trigger = {
+            has_global_flag = No_Cheese 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetCitrusVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Citrus
+        trigger = {
+            NOT = { has_global_flag = No_Citrus }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Citrus_NO
+        trigger = {
+            has_global_flag = No_Citrus 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetSeafoodVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Seafood
+        trigger = {
+            NOT = { has_global_flag = No_Seafood }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Seafood_NO
+        trigger = {
+            has_global_flag = No_Seafood 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetCarpetVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Carpet
+        trigger = {
+            NOT = { has_global_flag = No_Carpet }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Carpet_NO
+        trigger = {
+            has_global_flag = No_Carpet 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetNutmegVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Nutmeg
+        trigger = {
+            NOT = { has_global_flag = No_Nutmeg }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Nutmeg_NO
+        trigger = {
+            has_global_flag = No_Nutmeg 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMaizeVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Maize
+        trigger = {
+            NOT = { has_global_flag = No_Maize }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Maize_NO
+        trigger = {
+            has_global_flag = No_Maize 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetPearlsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Pearls
+        trigger = {
+            NOT = { has_global_flag = No_Pearls }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Pearls_NO
+        trigger = {
+            has_global_flag = No_Pearls 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMetalworkingVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Metalworking
+        trigger = {
+            NOT = { has_global_flag = No_Metalworking }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Metalworking_NO
+        trigger = {
+            has_global_flag = No_Metalworking 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetExotic_animalsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Exotic_animals
+        trigger = {
+            NOT = { has_global_flag = No_Exotic_animals }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Exotic_animals_NO
+        trigger = {
+            has_global_flag = No_Exotic_animals 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetVanillaVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Vanilla
+        trigger = {
+            NOT = { has_global_flag = No_Vanilla }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Vanilla_NO
+        trigger = {
+            has_global_flag = No_Vanilla 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMunitionsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Munitions
+        trigger = {
+            NOT = { has_global_flag = No_Munitions }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Munitions_NO
+        trigger = {
+            has_global_flag = No_Munitions 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetWoodworkingVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Woodworking
+        trigger = {
+            NOT = { has_global_flag = No_Woodworking }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Woodworking_NO
+        trigger = {
+            has_global_flag = No_Woodworking 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetEbonyVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Ebony
+        trigger = {
+            NOT = { has_global_flag = No_Ebony }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Ebony_NO
+        trigger = {
+            has_global_flag = No_Ebony 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetTarVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Tar
+        trigger = {
+            NOT = { has_global_flag = No_Tar }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Tar_NO
+        trigger = {
+            has_global_flag = No_Tar 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetSulfurVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Sulfur
+        trigger = {
+            NOT = { has_global_flag = No_Sulfur }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Sulfur_NO
+        trigger = {
+            has_global_flag = No_Sulfur 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetLeatherVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Leather
+        trigger = {
+            NOT = { has_global_flag = No_Leather }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Leather_NO
+        trigger = {
+            has_global_flag = No_Leather 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetJewelleryVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Jewellery
+        trigger = {
+            NOT = { has_global_flag = No_Jewellery }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Jewellery_NO
+        trigger = {
+            has_global_flag = No_Jewellery 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMaple_syrupVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Maple_syrup
+        trigger = {
+            NOT = { has_global_flag = No_Maple_syrup }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Maple_syrup_NO
+        trigger = {
+            has_global_flag = No_Maple_syrup 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetPotatoVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Potato
+        trigger = {
+            NOT = { has_global_flag = No_Potato }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Potato_NO
+        trigger = {
+            has_global_flag = No_Potato 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetSteam_engineVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Steam_engine
+        trigger = {
+            NOT = { has_global_flag = No_Steam_engine }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Steam_engine_NO
+        trigger = {
+            has_global_flag = No_Steam_engine 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetZincVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Zinc
+        trigger = {
+            NOT = { has_global_flag = No_Zinc }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Zinc_NO
+        trigger = {
+            has_global_flag = No_Zinc 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetOpticsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Optics
+        trigger = {
+            NOT = { has_global_flag = No_Optics }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Optics_NO
+        trigger = {
+            has_global_flag = No_Optics 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetCannonVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Cannon
+        trigger = {
+            NOT = { has_global_flag = No_Cannon }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Cannon_NO
+        trigger = {
+            has_global_flag = No_Cannon 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetTomatoVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Tomato
+        trigger = {
+            NOT = { has_global_flag = No_Tomato }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Tomato_NO
+        trigger = {
+            has_global_flag = No_Tomato 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetChampagneVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Champagne_Bottle
+        trigger = {
+            NOT = { has_global_flag = No_Champagne }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Champagne_Bottle_NO
+        trigger = {
+            has_global_flag = No_Champagne 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetLlamaVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Llama
+        trigger = {
+            NOT = { has_global_flag = No_Llama }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Llama_NO
+        trigger = {
+            has_global_flag = No_Llama 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetIndigoVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Indigo
+        trigger = {
+            NOT = { has_global_flag = No_Indigo }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Indigo_NO
+        trigger = {
+            has_global_flag = No_Indigo 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetSea_turtleVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Sea_turtle
+        trigger = {
+            NOT = { has_global_flag = No_Sea_turtle }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Sea_turtle_NO
+        trigger = {
+            has_global_flag = No_Sea_turtle 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetUniformsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Uniforms
+        trigger = {
+            NOT = { has_global_flag = No_Uniforms }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Uniforms_NO
+        trigger = {
+            has_global_flag = No_Uniforms 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMarble_sculptureVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Marble_sculpture
+        trigger = {
+            NOT = { has_global_flag = No_Marble_sculpture }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Marble_sculpture_NO
+        trigger = {
+            has_global_flag = No_Marble_sculpture 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetCigarsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Cigars
+        trigger = {
+            NOT = { has_global_flag = No_Cigars }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Cigars_NO
+        trigger = {
+            has_global_flag = No_Cigars 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetChocolateVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Chocolate
+        trigger = {
+            NOT = { has_global_flag = No_Chocolate }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Chocolate_NO
+        trigger = {
+            has_global_flag = No_Chocolate 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetCinnamonVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Cinnamon
+        trigger = {
+            NOT = { has_global_flag = No_Cinnamon }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Cinnamon_NO
+        trigger = {
+            has_global_flag = No_Cinnamon 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetJadeVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Jade
+        trigger = {
+            NOT = { has_global_flag = No_Jade }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Jade_NO
+        trigger = {
+            has_global_flag = No_Jade 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetMilletVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Millet
+        trigger = {
+            NOT = { has_global_flag = No_Millet }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Millet_NO
+        trigger = {
+            has_global_flag = No_Millet 
+        }
+    }
+}
+
+defined_text = {
+    name = GetOatsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Oats
+        trigger = {
+            NOT = { has_global_flag = No_Oats }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Oats_NO
+        trigger = {
+            has_global_flag = No_Oats
+        }
+    }
+}
+
+defined_text = {
+    name = GetVegetablesVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Vegetables
+        trigger = {
+            NOT = { has_global_flag = No_Vegetables }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Vegetables_NO
+        trigger = {
+            has_global_flag = No_Vegetables
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetExotic_furVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Exotic_fur
+        trigger = {
+            NOT = { has_global_flag = No_Exotic_fur }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Exotic_fur_NO
+        trigger = {
+            has_global_flag = No_Exotic_fur 
+        }
+    }
+}
+        
+
+defined_text = {
+    name = GetString_InstrumentsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_String_Instruments
+        trigger = {
+            NOT = { has_global_flag = No_String_Instruments }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_String_Instruments_NO
+        trigger = {
+            has_global_flag = No_String_Instruments 
+        }
+    }
+}
+
+defined_text = {
+    name = GetCanned_GoodsVU
+
+    text = {
+        localisation_key = string_GOODS_vu_Canned_Goods
+        trigger = {
+            NOT = { has_global_flag = No_Canned_Goods }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_vu_Canned_Goods_NO
+        trigger = {
+            has_global_flag = No_Canned_Goods
+        }
+    }
+}
+
+defined_text = {
+    name = GetSweet_ConfectioneriesVU
+
+    text = {
+        localisation_key = string_GOODS_GOODS_vu_Sweet_Confectioneries
+        trigger = {
+            NOT = { has_global_flag = No_Sweet_Confectioneries }
+        }
+    }
+    text = {
+        localisation_key = string_GOODS_GOODS_vu_Sweet_Confectioneries_NO
+        trigger = {
+            has_global_flag = No_Sweet_Confectioneries
+        }
+    }
+}

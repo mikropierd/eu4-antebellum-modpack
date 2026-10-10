@@ -1,0 +1,569 @@
+#Events for the HRE
+#Principalities of the HRE
+namespace = vu_hre_events
+country_event = {
+	id = vu_hre_events.1
+	title = vu_hre_events.1.t
+	desc = vu_hre_events.1.d
+	picture = vu_grand_moff_tarkin_eventPicture
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+		is_emperor = yes
+		hre_reform_passed = emperor_privilegia_de_non_appelando
+		any_subject_country = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+			government = monarchy
+		}
+	}
+	option = {
+		name = vu_hre_events.1.a		# A new Prince joins the ranks. May he serve well.
+		ai_chance = {
+			factor = 50
+		}
+		add_prestige = 10
+		random_subject_country = {
+			limit = {
+				is_subject_of = ROOT
+				is_subject_of_type = vassal
+				government = monarchy
+			}
+			every_owned_province = {
+				set_in_empire = yes
+			}
+			ROOT = {
+				if = {
+					limit = {
+						OR = {
+							tag = UKS
+							primary_culture = angevin_UKS
+							primary_culture = anglois
+						}
+					}
+					create_subject = {
+						subject_type = anglois_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = ARA
+							primary_culture = aragonese
+							primary_culture = catalan
+						}
+					}
+					create_subject = {
+						subject_type = aragonese_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = AUT
+							tag = STY
+							tag = HAB
+							primary_culture = austrian
+						}
+					}
+					create_subject = {
+						subject_type = austrian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture_group = finno_ugric
+							culture_group = baltic
+							tag = LIV
+						}
+					}
+					create_subject = {
+						subject_type = baltic_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = BUR
+							tag = LOT
+							primary_culture = burgundian
+						}
+					}
+					create_subject = {
+						subject_type = burgundian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							primary_culture = czech
+							primary_culture = czechBOH
+							primary_culture = czech_new
+							primary_culture = slovak
+							primary_culture = slovak_new
+							tag = BOH
+						}
+					}
+					create_subject = {
+						subject_type = bohemian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = BYZ
+							culture_group = byzantine
+						}
+					}
+					create_subject = {
+						subject_type = byzantine_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = CAS
+							tag = SPA
+							AND = {
+								NOT = {
+									primary_culture = aragonese
+									primary_culture = catalan
+								}
+								OR = {
+									culture_group = iberian
+								}
+							}
+						}
+					}
+					create_subject = {
+						subject_type = castilian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture_group = japanese_g
+							tag = JAP
+						}
+					}
+					create_subject = {
+						subject_type = daimyo_principality_vassal
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = daimyo_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							primary_culture = danish
+							tag = DAN
+						}
+					}
+					create_subject = {
+						subject_type = danish_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = NED
+							primary_culture = dutch
+							primary_culture = ger_dutch
+							primary_culture = dutch_saxon
+							primary_culture = ger_guelders
+						}
+					}
+					create_subject = {
+						subject_type = dutch_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = ENG
+							tag = GBR
+							AND = {
+								NOT = {
+									primary_culture = scottish
+								}
+								culture_group = british
+							}
+						}
+					}
+					create_subject = {
+						subject_type = english_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = FRA
+							AND = {
+								culture_group = french
+								NOT = {
+									primary_culture = burgundian
+								}
+							}
+						}
+					}
+					create_subject = {
+						subject_type = french_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = GER
+							AND = {
+								culture_group = germanic
+								NOT = {
+									primary_culture = prussian
+									tag = PRU
+									tag = BRA
+									has_reform = prussian_monarchy
+								}
+							}
+						}
+					}
+					create_subject = {
+						subject_type = german_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = HUN
+							culture_group = carpathian
+							culture_group = south_slavic
+						}
+					}
+					create_subject = {
+						subject_type = hungarian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture_group = latin
+							tag = ITA
+							tag = ROM
+						}
+					}
+					create_subject = {
+						subject_type = italian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							primary_culture = lithuanian
+							tag = LIT
+						}
+					}
+					create_subject = {
+						subject_type = lithuanian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = NOR
+							primary_culture = norwegian
+						}
+					}
+					create_subject = {
+						subject_type = norwegian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = POL
+							tag = PLC
+							AND = {
+								culture_group = west_slavic
+								NOT = {
+									primary_culture = czech
+									primary_culture = czechBOH
+									primary_culture = czech_new
+									primary_culture = slovak
+									primary_culture = slovak_new
+								}
+							}
+						}
+					}
+					create_subject = {
+						subject_type = polish_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = POR
+							primary_culture = portugese
+						}
+					}
+					create_subject = {
+						subject_type = portuguese_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							primary_culture = prussian
+							tag = PRU
+							tag = BRA
+							has_reform = prussian_monarchy
+						}
+					}
+					create_subject = {
+						subject_type = prussian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = RUS
+							tag = MOS
+							culture_group = east_slavic
+							primary_culture = bulgarian
+							primary_culture = bulgarian_new
+							primary_culture = bulgar
+						}
+					}
+					create_subject = {
+						subject_type = russian_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = SWE
+							primary_culture = swedish
+						}
+					}
+					create_subject = {
+						subject_type = swedish_principality
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = eue_principality_reform
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vu_hre_events.2
+	title = vu_hre_events.2.t
+	desc = vu_hre_events.2.d
+	picture = vu_grand_moff_tarkin_eventPicture
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+		is_emperor = yes
+		hre_reform_passed = emperor_privilegia_de_non_appelando
+		any_subject_country = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+			government = republic
+		}
+	}
+	option = {
+		name = vu_hre_events.2.a		# A new Prince joins the ranks. May he serve well.
+		ai_chance = {
+			factor = 50
+		}
+		add_prestige = 10
+		random_subject_country = {
+			limit = {
+				is_subject_of = ROOT
+				is_subject_of_type = vassal
+				government = republic
+			}
+			every_owned_province = {
+				set_in_empire = yes
+			}
+			ROOT = {
+				if = {
+					limit = {
+						government = monarchy
+					}
+					create_subject = {
+						subject_type = feudal_republic
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = noble_republic
+					}
+				}
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = vu_hre_events.3
+	title = vu_hre_events.3.t
+	desc = vu_hre_events.3.d
+	picture = vu_grand_moff_tarkin_eventPicture
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+		is_emperor = yes
+		hre_reform_passed = emperor_privilegia_de_non_appelando
+		any_subject_country = {
+			is_subject_of = ROOT
+			is_subject_of_type = vassal
+			government = theocracy
+		}
+	}
+	option = {
+		name = vu_hre_events.3.a		# A new Prince joins the ranks. May he serve well.
+		ai_chance = {
+			factor = 50
+		}
+		add_prestige = 10
+		random_subject_country = {
+			limit = {
+				is_subject_of = ROOT
+				is_subject_of_type = vassal
+				government = theocracy
+			}
+			every_owned_province = {
+				set_in_empire = yes
+			}
+			ROOT = {
+				if = {
+					limit = {
+						government = monarchy
+					}
+					create_subject = {
+						subject_type = christian_bishopric
+						subject = PREV
+						keep_liberty_desire = yes
+					}
+					PREV = {
+						add_government_reform = church_of_generic_bishopric_reform
+					}
+				}
+			}
+		}	
+	}
+}

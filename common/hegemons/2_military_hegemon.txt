@@ -1,6 +1,7 @@
+#VU updated by San Felipe for 1.35
 military_hegemon = {
 	allow = {
-		
+
 		if = {
 			limit = {
 				NOT = { has_country_flag = halve_hegemony_requirements }
@@ -11,7 +12,8 @@ military_hegemon = {
 		}
 		else_if = { 
 			limit = { 
-				is_or_was_tag = { tag = FRA } 
+				is_or_was_tag = { tag = FRA }
+				has_defeated_imperial_retribution_coalition = yes 
 			}
 			OR = { 
 				army_size = 1000 
@@ -24,31 +26,26 @@ military_hegemon = {
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				has_defeated_imperial_retribution_coalition = yes
-			}
-			army_size = 300
-		}
 		else = { army_size = 500 }
 		is_great_power = yes
+		is_year = 1600
 		NOT = { any_other_great_power = { army_size = root } }
 		NOT = { has_country_modifier = lost_hegemony }
 	}
-	
+
 	base = {
 		country_military_power = 1
 		war_exhaustion = -0.1
 		province_warscore_cost = -0.1
 	}
-	
+
 	# At max 100% tickup.
 	scale = {
 		movement_speed = 0.1
 		land_attrition = -0.2
 		global_unrest = -3
 	}
-	
+
 	max = {
 		siege_ability = 0.2
 	}

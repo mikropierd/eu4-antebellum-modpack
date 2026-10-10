@@ -48,7 +48,9 @@ country_event = {
 		name = estate_privileges_and_agendas_events.1.B
 		
 		if = { 
-			limit = { has_reform = elective_monarchy }
+			limit = { 
+				has_reform = elective_monarchy
+			}
 			remove_government_reform = elective_monarchy
 		}
 		else_if = { 
@@ -117,7 +119,7 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
-		NOT = { has_country_flag = estate_privileges_and_agendas_events.2_not_interested }
+		
 		NOT = { crown_land_share = 11 }
 		OR = {
 			AND = {
@@ -136,7 +138,10 @@ country_event = {
 				NOT = {	num_of_estate_privileges = { estate = estate_church value = 6 } }
 			}
 			AND = {
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 				has_estate = estate_brahmins
 				NOT = {	num_of_estate_privileges = { estate = estate_brahmins	value = 6 } }
 			}
@@ -147,6 +152,7 @@ country_event = {
             has_estate_privilege = estate_burghers_statutory_rights
             has_estate_privilege = estate_church_statutory_rights
         }
+		NOT = { has_country_flag = estate_privileges_and_agendas_events.2_not_interested }
 	}
 
 	mean_time_to_happen = {
@@ -174,7 +180,10 @@ country_event = {
 		custom_tooltip = seize_land_unavailable_from_privilege
 		if = {
 			limit = {
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 				has_estate = estate_brahmins
 			}
 			set_estate_privilege = estate_brahmins_statutory_rights
@@ -210,7 +219,6 @@ country_event = {
 	}
 }
 
-# AB [[[
 country_event = {
 	id = estate_privileges_and_agendas_events.3
 	title = estate_privileges_and_agendas_events.3.name
@@ -221,216 +229,932 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					has_estate = estate_church
-				}
-				generate_estate_agenda = estate_church
-			}
-			if = {
-				limit = {
-					has_estate = estate_nobles
-				}
-				generate_estate_agenda = estate_nobles
-			}
-			if = {
-				limit = {
-					has_estate = estate_burghers
-				}
-				generate_estate_agenda = estate_burghers
-			}
-			if = {
-				limit = {
-					has_estate = estate_dhimmi
-				}
-				generate_estate_agenda = estate_dhimmi
-			}
-			if = {
-				limit = {
-					has_estate = estate_cossacks
-				}
-				generate_estate_agenda = estate_cossacks
-			}
-			if = {
-				limit = {
-					has_estate = estate_nomadic_tribes
-				}
-				generate_estate_agenda = estate_nomadic_tribes
-			}
-			if = {
-				limit = {
-					has_estate = estate_eunuchs
-				}
-				generate_estate_agenda = estate_eunuchs
-			}
-			if = {
-				limit = {
-					has_estate = estate_rajput
-				}
-				generate_estate_agenda = estate_rajput
-			}
-			if = {
-				limit = {
-					has_estate = estate_janissaries
-				}
-				generate_estate_agenda = estate_janissaries
-			}
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
 		}
 	}
 
 	after = {
+		clr_country_flag = estate_brahmins_present_agenda
+		clr_country_flag = estate_church_present_agenda
+		clr_country_flag = estate_maratha_present_agenda
+		clr_country_flag = estate_nobles_present_agenda
+		clr_country_flag = estate_burghers_present_agenda
+		clr_country_flag = estate_vaisyas_present_agenda
+		clr_country_flag = estate_cossacks_present_agenda
+		clr_country_flag = estate_nomadic_tribes_present_agenda
+		clr_country_flag = estate_dhimmi_present_agenda
+		clr_country_flag = estate_jains_present_agenda
+		clr_country_flag = estate_rajput_present_agenda
+		clr_country_flag = estate_jews_present_agenda
+		clr_country_flag = estate_industrial_present_agenda
+		clr_country_flag = estate_peasants_present_agenda
+		clr_country_flag = estate_janissaries_present_agenda
+		clr_country_flag = estate_eunuchs_present_agenda
+		clr_country_flag = estate_qizilbash_present_agenda
+		clr_country_flag = estate_ghulams_present_agenda
 		clear_estate_agenda_cache = ROOT
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.a
-		trigger = { has_estate = estate_brahmins }
+		trigger = { has_country_flag = estate_brahmins_present_agenda }
 		start_estate_agenda = estate_brahmins
 		goto = estate_brahmins
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_brahmins
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_brahmins
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_brahmins
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_brahmins
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_brahmins
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.b
-		trigger = { has_estate = estate_church }
+		trigger = { has_country_flag = estate_church_present_agenda }
 		start_estate_agenda = estate_church
 		goto = estate_church
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_church
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_church
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_church
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_church
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_church
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.c
-		trigger = { has_estate = estate_maratha }
+		trigger = { has_country_flag = estate_maratha_present_agenda }
 		start_estate_agenda = estate_maratha
 		goto = estate_maratha
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_maratha
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_maratha
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_maratha
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_maratha
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_maratha
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 	
 	option = {
 		name = estate_privileges_and_agendas_events.3.k
-		trigger = { has_estate = estate_rajput }
+		trigger = { has_country_flag = estate_rajput_present_agenda }
 		start_estate_agenda = estate_rajput
 		goto = estate_rajput
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_rajput
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_rajput
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_rajput
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_rajput
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_rajput
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.d
-		trigger = { has_estate = estate_nobles }
+		trigger = { has_country_flag = estate_nobles_present_agenda }
 		start_estate_agenda = estate_nobles
 		goto = estate_nobles
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_nobles
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_nobles
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_nobles
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_nobles
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.e
-		trigger = { has_estate = estate_burghers }
+		trigger = { has_country_flag = estate_burghers_present_agenda }
 		start_estate_agenda = estate_burghers
 		goto = estate_burghers
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_burghers
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_burghers
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_burghers
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_burghers
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 	
 	option = {
 		name = estate_privileges_and_agendas_events.3.j
-		trigger = { has_estate = estate_jains }
+		trigger = { has_country_flag = estate_jains_present_agenda }
 		start_estate_agenda = estate_jains
 		goto = estate_jains
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_jains
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_jains
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_jains
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_jains
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_jains
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.f
-		trigger = { has_estate = estate_vaisyas }
+		trigger = { has_country_flag = estate_vaisyas_present_agenda }
 		start_estate_agenda = estate_vaisyas
 		goto = estate_vaisyas
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_vaisyas
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_vaisyas
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_vaisyas
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_vaisyas
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_vaisyas
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.g
-		trigger = { has_estate = estate_cossacks }
+		trigger = { has_country_flag = estate_cossacks_present_agenda }
 		start_estate_agenda = estate_cossacks
 		goto = estate_cossacks
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_cossacks
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_cossacks
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_cossacks
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_cossacks
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_cossacks
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.h
-		trigger = { has_estate = estate_nomadic_tribes }
+		trigger = { has_country_flag = estate_nomadic_tribes_present_agenda }
 		start_estate_agenda = estate_nomadic_tribes
 		goto = estate_nomadic_tribes
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_nomadic_tribes
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_nomadic_tribes
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_nomadic_tribes
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_nomadic_tribes
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_nomadic_tribes
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.i
-		trigger = { has_estate = estate_dhimmi }
+		trigger = { has_country_flag = estate_dhimmi_present_agenda }
 		start_estate_agenda = estate_dhimmi
 		goto = estate_dhimmi
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_dhimmi
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_dhimmi
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_dhimmi
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_dhimmi
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_dhimmi
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.l
-		trigger = { has_estate = estate_janissaries }
+		trigger = { has_country_flag = estate_janissaries_present_agenda NOT = { has_disaster = tur_disaster_janissary_coup } }
 		start_estate_agenda = estate_janissaries
 		goto = estate_janissaries
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_janissaries
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_janissaries
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_janissaries
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_janissaries
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_janissaries
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.m
-		trigger = { has_estate = estate_eunuchs }
+		trigger = { has_country_flag = estate_eunuchs_present_agenda }
 		start_estate_agenda = estate_eunuchs
 		goto = estate_eunuchs
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_eunuchs
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_eunuchs
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_eunuchs
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_eunuchs
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_eunuchs
+					higher_than_influence = no
+				}
+			}
 		}
 	}
 
-	# option = {
-	# 	name = estate_privileges_and_agendas_events.3.n
-	# 	trigger = { has_country_flag = estate_qizilbash_present_agenda }
-	# 	start_estate_agenda = estate_qizilbash
-	# 	goto = estate_qizilbash
-	# 	ai_chance = {
-	# 		factor = 1
-	# 	}
-	# }
+	option = {
+		name = estate_privileges_and_agendas_events.3.n
+		trigger = { has_country_flag = estate_qizilbash_present_agenda }
+		start_estate_agenda = estate_qizilbash
+		goto = estate_qizilbash
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_qizilbash
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_qizilbash
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_qizilbash
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_qizilbash
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_qizilbash
+					higher_than_influence = no
+				}
+			}
+		}
+	}
 
-	# option = {
-	# 	name = estate_privileges_and_agendas_events.3.o
-	# 	trigger = { has_country_flag = estate_ghulams_present_agenda }
-	# 	start_estate_agenda = estate_ghulams
-	# 	goto = estate_ghulams
-	# 	ai_chance = {
-	# 		factor = 1
-	# 	}
-	# }
+	option = {
+		name = estate_privileges_and_agendas_events.3.o
+		trigger = { has_country_flag = estate_ghulams_present_agenda }
+		start_estate_agenda = estate_ghulams
+		goto = estate_ghulams
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_ghulams
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_ghulams
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_ghulams
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_ghulams
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_ghulams
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = estate_privileges_and_agendas_events.3.n
+		trigger = { has_country_flag = estate_jews_present_agenda }
+		start_estate_agenda = estate_jews
+		goto = estate_jews
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_jews
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_jews
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_jews
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_jews
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_jews
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = estate_privileges_and_agendas_events.3.q
+		trigger = { has_country_flag = estate_peasants_present_agenda }
+		start_estate_agenda = estate_peasants
+		goto = estate_peasants
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_peasants
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_peasants
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_peasants
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_peasants
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_peasants
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = estate_privileges_and_agendas_events.3.r
+		trigger = { has_country_flag = estate_industrial_present_agenda }
+		start_estate_agenda = estate_industrial
+		goto = estate_industrial
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_industrial
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_industrial
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_industrial
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_industrial
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_industrial
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+
+	#ME agendas
+	option = { #We're missing agendas for the Turkic tribes thing, adding it in options
+		name = estate_privileges_and_agendas_events.3.vv
+		trigger = { has_country_flag = estate_turkic_tribes_present_agenda }
+		start_estate_agenda = estate_turkic_tribes 
+		goto = estate_turkic_tribes 
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_turkic_tribes 
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_turkic_tribes 
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_turkic_tribes 
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_turkic_tribes
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_turkic_tribes 
+					higher_than_influence = no
+				}
+			}
+		}
+	}
 }
 
 country_event = {
@@ -448,7 +1172,7 @@ country_event = {
 			has_estate_privilege = estate_brahmins_supremacy_over_crown
 			has_estate_privilege = estate_eunuchs_supremacy_over_crown_privilege
 		}
-		has_any_active_estate_agenda = no
+		NOT = { has_any_active_estate_agenda = yes }
 	}
 
 	immediate = {
@@ -459,7 +1183,6 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
-# AB ]]]
 
 country_event = {
 	id = estate_privileges_and_agendas_events.5 #Tropical City Planning Update
@@ -802,6 +1525,7 @@ country_event = {
 					loyalty = 30
 				}
 			}
+			add_legitimacy = 1
 		}
 		else_if = { 
 			limit = {

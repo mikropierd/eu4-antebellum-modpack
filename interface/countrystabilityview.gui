@@ -12,7 +12,7 @@ guiTypes = {
 	#y is the size increase for lists and distance to move for buttons at the bottom of the country view
 	positionType = {
 		name ="countrystabilityview_scaling_huge_min_inc"
-		position = { x= 1080 y = 290 }
+		position = { x= 1080 y = 258 }
 	}
 
 
@@ -277,7 +277,7 @@ guiTypes = {
 			maxHeight = 18
 			format = left
 		}
-
+		
 
 		iconType =
 		{
@@ -678,11 +678,11 @@ guiTypes = {
 		listboxType = {
 			name = "revolters_listbox"
 			backGround = ""
-			position = { x=22 y=385 }
-			size = { x=482 y=163 }
+			position = { x=25 y=385 }
+			size = { x=482 y=143 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
-			spacing = 0
+			spacing = 1.5
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 0 y = 0}
 		}

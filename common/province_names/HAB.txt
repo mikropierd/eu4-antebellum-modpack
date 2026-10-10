@@ -1,0 +1,68 @@
+132 = { "Judenburg" "Judenburg" }
+2327 = { "Magna" "Magna" }
+4710 = "Vorarlberg"
+4760 = "Innviertel"
+
+#Caribbean
+481 = { "Bermuda" "Fredericks Hafen" }
+482 = { "Neue Vorsehung" "Karlsstadt" }
+483 = { "Turks-und Caicosinseln" "Hahnenfuß Stadt" }
+484 = { "Havanna" "Havanna" }
+485 = { "Hundert Feuer" "Hundert Feuer" }
+486 = { "Sankt Jakob" "Heiliger Jakob" }
+487 = { "Jamaika" "Hafen Königlich" }
+488 = { "Westen" "Hafen des Prinzen" }
+489 = { "Noordwesten" "Hafen des Friedens" }
+490 = { "Der Seibo" "Higüey" }
+491 = { "Curacao" "Ferdinandstadt" }
+492 = { "Reicher Hafen" "Sankt Johannes" }
+493 = { "Sankt Thomas" "Straßenstadt" }
+494 = { "Sankt Kitts und Nevis" "Flachland" }
+495 = { "Antigua und Barbuda" "Sankt Johannes" }
+496 = { "Guadeloupe" "Flachland" }
+497 = { "Dominika" "Schilf" }
+498 = { "Martinique" "Festung Königlich" }
+499 = { "Sankt Lucia" "Seehafen" }
+500 = { "Sankt Vincent und die Grenadinen" "Königsstadt" }
+501 = { "Barbados" "Brückenstadt" }
+502 = { "Neu-Kurland" "Trelleborg" }
+926 = { "Sankt Lucie" "Heilige Lucie" }
+927 = { "Festung Caroline" "Festung Caroline" }
+1881 = { "Saint Martin und Anguilla" "Philipsberg" }
+2536 = { "Miami" "Miami" }
+2654 = { "Guantanamo" "Baracoa" }
+2655 = { "Oma" "Donnerschlag" }
+2656 = { "Camagüey" "Camagüey" }
+2658 = { "Azua" "Azua" }
+2659 = { "Silberhafen" "Silberhafen" }
+4618 = { "Artibonite" "Gonaïves" }
+4619 = { "Norden" "Haitianisches Kap" }
+4620 = { "Samana" "Sankt Barbara" }
+4621 = { "Sankt Dominik" "Heiliger Dominik" }
+4622 = { "Insel der Jugend" "Neu-Gerona" }
+4623 = { "Klares Haus" "Sankt Klara" }
+4624 = { "Kiefernwald" "Kiefernwald des Flusses" }
+# [VU] removed: province 5563 (not on Ante Bellum map)
+# [VU] removed: province 5565 (not on Ante Bellum map)
+# [VU] removed: province 5567 (not on Ante Bellum map)
+# [VU] removed: province 5572 (not on Ante Bellum map)
+# [VU] removed: province 5576 (not on Ante Bellum map)
+# [VU] removed: province 5577 (not on Ante Bellum map)
+# [VU] removed: province 5578 (not on Ante Bellum map)
+# [VU] removed: province 5579 (not on Ante Bellum map)
+# [VU] removed: province 5581 (not on Ante Bellum map)
+# [VU] removed: province 5582 (not on Ante Bellum map)
+# [VU] removed: province 5583 (not on Ante Bellum map)
+# [VU] removed: province 5584 (not on Ante Bellum map)
+# [VU] removed: province 5585 (not on Ante Bellum map)
+# [VU] removed: province 5586 (not on Ante Bellum map)
+# [VU] removed: province 5706 (not on Ante Bellum map)
+# [VU] removed: province 5707 (not on Ante Bellum map)
+# [VU] removed: province 6010 (not on Ante Bellum map)
+# [VU] removed: province 6011 (not on Ante Bellum map)
+# [VU] removed: province 6012 (not on Ante Bellum map)
+# [VU] removed: province 6013 (not on Ante Bellum map)
+# [VU] removed: province 6014 (not on Ante Bellum map)
+# [VU] removed: province 6015 (not on Ante Bellum map)
+# [VU] removed: province 6016 (not on Ante Bellum map)
+# [VU] removed: province 6017 (not on Ante Bellum map)

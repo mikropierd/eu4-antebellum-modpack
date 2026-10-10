@@ -13,12 +13,12 @@ estate_jains_land_rights = {
 	}
 
 	benefits = {
-		governing_capacity = 100
+		governing_capacity = 200
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = ned_land_rights_buff_flag }
 		modifier = {
-			governing_capacity = 20
+			governing_capacity = 50
 		}
 	}
 	ai_will_do = {
@@ -104,50 +104,113 @@ estate_jains_land_rights = {
 		}
 		modifier = {
 			factor = 8
-			NOT = { adm_tech = 12 }
+			NOT = { adm_tech = 30 }
 			governing_capacity_percentage = 0.8
 		}
 		modifier = {
 			factor = 5
-			NOT = { adm_tech = 12 }
-			NOT = { government_rank = 1 }
+			NOT = { adm_tech = 30 }
+			NOT = { government_rank = 6 }
 			governing_capacity_percentage = 0.65
 		}
 		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
 		modifier = {
 			factor = 1.25
 			tag = MOS
-			NOT = { adm_tech = 17 }
+			NOT = { adm_tech = 35 }
 		}
 		modifier = {
 			factor = 1.25
 			tag = RUS
-			NOT = { adm_tech = 17 }
+			NOT = { adm_tech = 35 }
 		}
 		modifier = {
 			factor = 1.25
 			tag = TUR
-			NOT = { adm_tech = 17 }
+			NOT = { adm_tech = 35 }
 		}
 		modifier = {
 			factor = 1.25
 			tag = MNG
-			NOT = { adm_tech = 17 }
+			NOT = { adm_tech = 35 }
 		}
 		modifier = {
 			factor = 1.25
 			tag = FRA
-			NOT = { adm_tech = 17 }
+			NOT = { adm_tech = 35 }
 		}
 		modifier = {
 			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
+			NOT = { adm_tech = 35 }
 		}
 		modifier = {
 			factor = 1.25
 			tag = PLC
-			NOT = { adm_tech = 17 }
+			NOT = { adm_tech = 35 }
+		}
+		#VU French Tags
+		modifier = {
+			factor = 1.25
+			tag = BFR
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = FSR
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = FSE
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = NPF
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = OFR
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = RVF
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = TFR
+			NOT = { adm_tech = 35 }
+		}
+		#VU Spanish Tags
+		modifier = {
+			factor = 1.25
+			tag = BSP
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = SPB
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = BBS
+			NOT = { adm_tech = 35 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = CSP
+			NOT = { adm_tech = 35 }
+		}
+		#VU Tzarist Russia
+		modifier = {
+			factor = 1.25
+			tag = TZR
+			NOT = { adm_tech = 35 }
 		}
 		#Has already a similar privilege active
 		modifier = {
@@ -223,7 +286,7 @@ estate_jains_diplomacy = {
 				NOT = { crown_land_share = 30 }
 				estate_influence = {
 					estate = estate_jains
-					influence = 95
+					influence = 75
 				}
 			}
 			NOT = { has_estate_privilege = estate_jains_diplomacy }
@@ -278,7 +341,7 @@ estate_jains_indebted_to_jains = {
 	influence = 0.05
 	on_granted = {
 		custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
-		if = {
+        if = {
 			limit = { NOT = { has_government_attribute = no_mercantilism_loss_from_privilege } }
 			add_mercantilism = -1
 		}
@@ -449,15 +512,6 @@ estate_jains_land_trade_rights = {
 	benefits = {
 		trade_range_modifier = 0.1
 	}
-	# ABF 
-	conditional_modifier = {
-		trigger = { has_country_flag = ABA_TCR_JAIN_C_PRIVILEGE_BUFF }
-		modifier = {
-			max_absolutism = 5
-			trade_efficiency = 0.1
-			mercantilism_cost = -0.33
-		}
-	}
 	mechanics = {
 		exempt_from_seize_land
 	}
@@ -473,7 +527,7 @@ estate_jains_monopoly_of_textiles = {
 	icon = privilege_monopoly_of_goods_cloth
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	loyalty = 0.05
+	loyalty = 0.1
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -623,7 +677,7 @@ estate_jains_monopoly_of_dyes = {
 	icon = privilege_monopoly_of_goods_dyes
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	loyalty = 0.05
+	loyalty = 0.1
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -736,7 +790,7 @@ estate_jains_monopoly_of_glass = {
 	icon = privilege_monopoly_of_goods_glass
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	loyalty = 0.05
+	loyalty = 0.1
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"
@@ -849,7 +903,7 @@ estate_jains_monopoly_of_paper = {
 	icon = privilege_monopoly_of_goods_paper
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
-	loyalty = 0.05
+	loyalty = 0.1
 	is_valid = {
 		OR = {
 			has_dlc = "Emperor"

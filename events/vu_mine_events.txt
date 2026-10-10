@@ -1,0 +1,1015 @@
+namespace = vu_mining_events
+
+province_event = {
+	id = vu_mining_events.1
+	title = vu_mining_events.1.t
+	desc = vu_mining_events.1.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	trigger = {
+		has_building = mine
+	}
+
+	immediate = {
+		FROM = { remove_building = mine }
+		ROOT = { set_province_flag = has_mine }
+	}
+
+	option = {
+		name = vu_mining_events.1.a
+		ai_chance = { factor = 75 }
+		hidden_effect = {
+
+			# ----------------------------------------------------------------
+			# CASE 1: Province already produces one of the five mine ores.
+			# Confirm and enhance that deposit - no trade good change needed.
+			# ----------------------------------------------------------------
+			if = {
+				limit = { trade_goods = copper }
+				set_province_flag = has_copper_mine
+				random_list = {
+					50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+					50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+				}
+			}
+			else_if = {
+				limit = { trade_goods = tin }
+				set_province_flag = has_tin_mine
+				random_list = {
+					50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+					50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+				}
+			}
+			else_if = {
+				limit = { trade_goods = zinc }
+				set_province_flag = has_zinc_mine
+				random_list = {
+					50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+					50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+				}
+			}
+			else_if = {
+				limit = { trade_goods = iron }
+				set_province_flag = has_iron_mine
+				random_list = {
+					50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+					50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+				}
+			}
+			else_if = {
+				limit = { trade_goods = lead }
+				set_province_flag = has_lead_mine
+				random_list = {
+					50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+					50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+				}
+			}
+
+			# ----------------------------------------------------------------
+			# CASE 2: Province does not produce a mine ore.
+			# Ore discovery is based on real-world geological data.
+			# Area-specific assignments cover historically significant ore zones.
+			# Provinces not in a named area fall through to regional fallback.
+			# ----------------------------------------------------------------
+			else = {
+
+				# Cornwall and Devon - European tin heartland (Cassiterides).
+				# Devon Great Consols was also a major copper producer.
+				if = {
+					limit = { area = cornwall_area }
+					random_list = {
+						80 = {
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+						20 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Wales - Parys Mountain (Anglesey) was one of Europe's
+				# largest copper mines in the 18th century. Also significant
+				# lead fields and zinc-rich calamine deposits.
+				else_if = {
+					limit = { OR = { area = wales_area area = south_wales_area } }
+					random_list = {
+						45 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						30 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						25 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+					}
+				}
+
+				# Northern England, Yorkshire Dales, Peak District, Pennines.
+				# North Pennines and Derbyshire are among England's most
+				# productive lead fields; Pennine calamine supplied zinc smelting.
+				else_if = {
+					limit = { OR = { area = yorkshire_area area = northern_england_area area = east_midlands_area } }
+					random_list = {
+						50 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						35 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						15 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Scottish Highlands - Leadhills, Wanlockhead (lead/zinc),
+				# Tyndrum and Alva copper workings.
+				else_if = {
+					limit = { area = highlands_area }
+					random_list = {
+						40 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						35 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						25 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+					}
+				}
+
+				# Svealand / Bergslagen - the Falun Great Copper Mountain was
+				# the world's dominant copper source for most of the 17th century.
+				# Bergslagen is also Sweden's primary iron-producing belt.
+				else_if = {
+					limit = { area = svealand_area }
+					random_list = {
+						50 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						40 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						10 = {
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+					}
+				}
+
+				# Norrland - northern Sweden is primarily iron country.
+				# The Kiruna and Gallivare deposits are the largest in Europe.
+				else_if = {
+					limit = { area = norrland_area }
+					random_list = {
+						85 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						15 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Basque Country / Vizcaya - the Bilbao iron ore belt was the
+				# foundation of Spanish and later Basque steel industry.
+				else_if = {
+					limit = { OR = { area = vizcaya_area area = basque_area } }
+					random_list = {
+						80 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						15 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						5 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+					}
+				}
+
+				# Northern Andalusia / Huelva - Rio Tinto, one of the world's
+				# largest copper deposits, mined continuously since antiquity.
+				# Also iron-rich (the name Rio Tinto means "red river").
+				else_if = {
+					limit = { area = northern_andalusia_area }
+					random_list = {
+						70 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						20 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						10 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+					}
+				}
+
+				# Murcia / Cartagena - Sierra Minera and La Union hold one of
+				# Europe's largest lead deposits. Mined heavily from Roman times.
+				else_if = {
+					limit = { area = murcia_area }
+					random_list = {
+						55 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						25 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						20 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+					}
+				}
+
+				# Bohemia / Erzgebirge (Ore Mountains) - the name says it all.
+				# The Bohemian side produced tin and silver-copper ores; Jachymov
+				# (Joachimsthal) was a famous silver-tin mining centre.
+				else_if = {
+					limit = { OR = { area = bohemia_area area = erzgebirge_area } }
+					random_list = {
+						50 = {
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+						30 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						20 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+					}
+				}
+
+				# Saxony / Thuringia / Lower Saxony - covers both the Harz Mountains
+				# (Rammelsberg lead-zinc-copper, a UNESCO site) and the Saxon
+				# Erzgebirge tin-silver belt, plus the Freiberg lead-silver district.
+				else_if = {
+					limit = { OR = { area = saxony_area area = thuringia_area area = lower_saxony_area } }
+					random_list = {
+						35 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						30 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						20 = {
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+						15 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+					}
+				}
+
+				# Silesia - Upper Silesia (around Bytom, Zabrze, Gliwice) held
+				# one of Europe's richest zinc-lead fields. The calamine deposits
+				# fed the Belgian and German zinc industries.
+				else_if = {
+					limit = { area = silesia_area }
+					random_list = {
+						50 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						30 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						20 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+					}
+				}
+
+				# Slovakia / Upper Hungary - Banska Bystrica (Neusohl) was the
+				# single most important European copper producer in the 15th-16th
+				# centuries, run by the Fugger banking family.
+				else_if = {
+					limit = { OR = { area = slovakia_area area = upper_hungary_area } }
+					random_list = {
+						65 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						25 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						10 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+					}
+				}
+
+				# Serbia / Rascia - the Trepca complex (Kosovo/Serbia) is one
+				# of Europe's richest lead-zinc-silver deposits, mined since
+				# the Byzantine period. Medieval Serbian mining wealth was famed.
+				else_if = {
+					limit = { OR = { area = serbia_area area = rascia_area } }
+					random_list = {
+						45 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						35 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						20 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+					}
+				}
+
+				# Bosnia - Srebrenica (literally "silver") was famous for its
+				# silver-lead deposits throughout the medieval period.
+				else_if = {
+					limit = { area = bosnia_area }
+					random_list = {
+						55 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						25 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						20 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Inner Austria (Styria) - the Erzberg at Eisenerz (literally
+				# "Iron Mountain") is the largest open-cut iron ore mine in Europe
+				# and has been mined continuously since the Iron Age.
+				else_if = {
+					limit = { area = inner_austria_area }
+					random_list = {
+						70 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						20 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						10 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+					}
+				}
+
+				# Carinthia - Bleiberg ("Lead Mountain") was one of Austria's
+				# oldest and most productive lead mines; Huttenberg supplied iron.
+				else_if = {
+					limit = { area = carinthia_area }
+					random_list = {
+						50 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						30 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						20 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Tyrol - the Schwaz mine near Innsbruck was one of the most
+				# productive silver-copper workings in 15th-16th century Europe,
+				# helping finance the Habsburgs. The Alpine belt also yields iron.
+				else_if = {
+					limit = { area = tirol_area }
+					random_list = {
+						50 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						30 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						20 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+					}
+				}
+
+				# Sardinia - the Iglesiente mining district around Iglesias has
+				# produced lead, zinc and silver since Phoenician times.
+				else_if = {
+					limit = { OR = { area = sardinia_area area = corsica_sardinia_area } }
+					random_list = {
+						45 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						35 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						20 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Malay Peninsula - the Kinta Valley and Larut fields are the
+				# world's richest alluvial tin deposits. Perak alone produced
+				# much of the world's tin supply from the 19th century onward.
+				else_if = {
+					limit = { area = malaya_area }
+					random_list = {
+						90 = {
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+						10 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Palembang / Bangka - the islands of Bangka and Belitung off
+				# SE Sumatra hold the world's second-largest tin reserves and
+				# have been mined since at least the early 18th century.
+				else_if = {
+					limit = { area = palembang_area }
+					random_list = {
+						75 = {
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+						25 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Potosi / Upper Peru - the Cerro Rico silver-lead mountain
+				# was the backbone of the Spanish colonial economy. Bolivia
+				# also became the world's leading tin producer by the 19th century.
+				else_if = {
+					limit = { OR = { area = potosi_area area = upper_peru } }
+					random_list = {
+						45 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						25 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						20 = {
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+						10 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+					}
+				}
+
+				# Northern Chile / Atacama - the Atacama copper belt contains
+				# the world's largest copper deposits (Chuquicamata, El Teniente).
+				# Some iron-manganese is also present along the Chilean coastal range.
+				else_if = {
+					limit = { area = northern_chile_area }
+					random_list = {
+						85 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						15 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+					}
+				}
+
+				# Appalachian Mountains - iron ore deposits (Birmingham, AL area;
+				# Pennsylvania iron) plus Tri-State lead-zinc district and
+				# various Appalachian lead workings.
+				else_if = {
+					limit = { area = appalachia_area }
+					random_list = {
+						45 = {
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						30 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						25 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+					}
+				}
+
+				# Mississippi Valley - the "Lead Belt" in Missouri is the
+				# largest lead deposit in North America; the Tri-State district
+				# (Missouri-Kansas-Oklahoma) produced both lead and zinc.
+				else_if = {
+					limit = { area = mississippi_area }
+					random_list = {
+						55 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						30 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						15 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# Atlas Mountains (Morocco) - the Anti-Atlas and Draa Valley
+				# hold significant lead-zinc deposits; copper is also found
+				# in the southern Anti-Atlas (Bou Azzer, the world's oldest
+				# cobalt-arsenic-copper mine).
+				else_if = {
+					limit = { OR = { area = northern_morocco_area area = western_morocco_area } }
+					random_list = {
+						40 = {
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+						35 = {
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						25 = {
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+					}
+				}
+
+				# ----------------------------------------------------------------
+				# REGIONAL FALLBACK
+				# Province is not in a historically significant ore area.
+				# Weights reflect broad real-world geology at the regional level.
+				# Base weights: Iron=30 (most abundant), Copper=20, Zinc=15,
+				# Lead=15, Tin=10 (rarest; very geographically concentrated).
+				# ----------------------------------------------------------------
+				else = {
+					random_list = {
+						20 = {
+							# Copper: strong in Iberia, Scandinavia, Slovakia, Anatolia,
+							# Caucasus, Urals, British Isles, Japan, Andes, Zambia Copper Belt
+							modifier = { factor = 3   region = scandinavia_region }
+							modifier = { factor = 3   region = iberia_region }
+							modifier = { factor = 2.5 region = carpathia_region }
+							modifier = { factor = 2   region = austria_region }
+							modifier = { factor = 2.5 region = anatolia_region }
+							modifier = { factor = 2   region = caucasia_region }
+							modifier = { factor = 2   region = ural_region }
+							modifier = { factor = 2   region = british_isles_region }
+							modifier = { factor = 2   region = japan_region }
+							modifier = { factor = 2.5 region = pacific_south_america_region }
+							modifier = { factor = 1.5 region = zambia_region }
+							set_province_flag = has_copper_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = copper_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = copper_mine duration = -1 } }
+							}
+							change_trade_goods = copper
+						}
+						10 = {
+							# Tin: extremely concentrated - Cornwall, Malay Peninsula,
+							# Indonesia, Erzgebirge/Bohemia, Bolivia, Yunnan
+							modifier = { factor = 6   region = british_isles_region }
+							modifier = { factor = 6   region = malaya_region }
+							modifier = { factor = 4   region = indonesia_region }
+							modifier = { factor = 3   region = bohemia_region }
+							modifier = { factor = 2.5 region = north_german_region }
+							modifier = { factor = 2   region = iberia_region }
+							modifier = { factor = 3   region = upper_peru_region }
+							modifier = { factor = 2   region = south_china_region }
+							set_province_flag = has_tin_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = tin_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = tin_mine duration = -1 } }
+							}
+							change_trade_goods = tin
+						}
+						15 = {
+							# Zinc: Silesia, Belgian Aachen, Wales/Derbyshire,
+							# Balkans, Sardinia, Andes zinc-lead districts, Atlas
+							modifier = { factor = 3   region = north_german_region }
+							modifier = { factor = 3   region = poland_region }
+							modifier = { factor = 3   region = british_isles_region }
+							modifier = { factor = 3   region = low_countries_region }
+							modifier = { factor = 2   region = balkan_region }
+							modifier = { factor = 1.5 region = italy_region }
+							modifier = { factor = 2   region = upper_peru_region }
+							modifier = { factor = 1.5 region = maghreb_region }
+							set_province_flag = has_zinc_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = zinc_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = zinc_mine duration = -1 } }
+							}
+							change_trade_goods = zinc
+						}
+						30 = {
+							# Iron: most widely distributed ore globally.
+							# Scandinavia, Iberia (Basque), Lorraine, Erzberg/Austria,
+							# Urals, Britain, Japan, China, Africa (iron-smelting cultures)
+							modifier = { factor = 2.5 region = scandinavia_region }
+							modifier = { factor = 2   region = iberia_region }
+							modifier = { factor = 2   region = france_region }
+							modifier = { factor = 1.5 region = north_german_region }
+							modifier = { factor = 2.5 region = austria_region }
+							modifier = { factor = 2.5 region = ural_region }
+							modifier = { factor = 1.5 region = british_isles_region }
+							modifier = { factor = 1.5 region = japan_region }
+							modifier = { factor = 1.5 superregion = china_superregion }
+							modifier = { factor = 1.5 continent = africa }
+							set_province_flag = has_iron_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = iron_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = iron_mine duration = -1 } }
+							}
+							change_trade_goods = iron
+						}
+						15 = {
+							# Lead: North Pennines/Derbyshire, Harz/Freiberg,
+							# Srebrenica/Balkans, Cartagena/SE Spain, Sardinia,
+							# Andes silver-lead, Missouri Lead Belt
+							modifier = { factor = 3.5 region = british_isles_region }
+							modifier = { factor = 3   region = north_german_region }
+							modifier = { factor = 3   region = balkan_region }
+							modifier = { factor = 3   region = iberia_region }
+							modifier = { factor = 2   region = italy_region }
+							modifier = { factor = 2.5 region = upper_peru_region }
+							modifier = { factor = 2   region = mississippi_region }
+							modifier = { factor = 1.5 region = maghreb_region }
+							set_province_flag = has_lead_mine
+							random_list = {
+								50 = { add_permanent_province_modifier = { name = lead_mine_small duration = -1 } }
+								50 = { add_permanent_province_modifier = { name = lead_mine duration = -1 } }
+							}
+							change_trade_goods = lead
+						}
+					}
+				}
+			}
+		}
+		owner = { add_dip_power = -100 }
+	}
+}

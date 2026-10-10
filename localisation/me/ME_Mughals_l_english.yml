@@ -1,0 +1,30 @@
+﻿l_english:
+ #Modifiers:
+ mughals_army_professionalism_per_war_won: "Army Professionalism Per War Won"
+ mughals_chance_of_master_mint_or_treasurer: "Master of Mint or Treasurer Chances"
+ mughals_absolutism_per_land_seize: "Absolutism From Seizing Land"
+ vu_mug_mughal_ties: "Mughal Ties"
+ desc_vu_mug_mughal_ties: ""
+ naval_supplies_goods_produced: "Goods Produced on Naval Supplies"
+ ME_rise_of_babur_1: "Rise of Babur"
+ desc_ME_rise_of_babur_1: ""
+ 
+ #Tooltips:
+ me_mug_until_no_alliance: "until we do not get the benefits of the trade outpost"
+ MUG_outpost: "Mughal Outpost"
+ desc_MUG_outpost: ""
+ MUG_icon: "Mughal Outpost"
+ desc_MUG_icon: "§YMughal Outpost§! provides §YMughals§! §G15§! Trade Power as long as Province Owner's §YOpinion§! of §YMughals§! is at least §G125§!"
+ MUG_icon_gray: "Mughal Outpost"
+ desc_MUG_icon_gray: "§YMughal Outpost§! provides §YMughals§! §G15§! Trade Power as long as Province Owner's §YOpinion§! of §YMughals§! is at least §G125§!!."
+ MUG_ties: "Ties in South East Asia" 
+ me_mug_adm_advisors_give_scaling_bonuses: "£adm£ §YAdministrative§! advisors now provide §YScaling Bonuses§!\n\n   §YPhilosopher§!: Idea Cost: §G-2.0%§!\n   §YNatural Scientist§!: State Maintenance Modifier: §G-5.00%§!\n   §YArtist§!: Monthly Splendor: §G+0.5§!\n   §YTreasurer§!: Development Cost: §G-2.0%§!\n   §YTheologian§!: Yearly Corruption: §G-0.05§!\n   §YMaster of Mint§!: Gold Depletion Chance: §G-5.00%§!\n   §YInquisitor§!: Missionary Maintenance Cost: §G-10.00%§!"
+ 
+ #Mercenaries:
+ me_mug_ahadis: "Ahadis"
+ me_mug_sowars: "Sowars"
+ me_mug_gurkhas: "Gurkhas"
+ 
+ #Flagship Modifications:
+ ME_mug_pride_of_the_fleet: "Pride of the Fleet"
+ ME_mug_pride_of_the_fleet_desc: "In order to inspire our navy in battle, we shall build a grand vessel that will tower that of any other."

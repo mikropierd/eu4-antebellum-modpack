@@ -1,0 +1,8 @@
+﻿l_english:
+ defender_of_faith_limits_tt: "Religious unity must be §T100%§!, §RArmy size§! must be at least §R30k§!, and §YStability 2§!. Your country must have these: §JFervor§!, §JPapal Influence§!, §JPatriarch Authority§!, or §JChurch Power§! at §J55§! if §JChristian§!. §lPiety§! is §l-55§! or less if §lMuslim§!, §VKarma§! is at least §V30§! if §VBuddhist§!, or have §M2 Active Blessings§!, or the religious group is §ODharmic§!."
+ #defender_of_faith_limits_tt: "Religious unity must be §T100%§!, §RArmy size§! must be at least §R30k§!, and §YStability 2§!. Your country must have one of the following: §GTheologian§!, §GReligious Representative§!, or §GInquisitor§! advisors, or you have the §gReligious Ideas idea group§!, and or in addition, has at least one of the following: §JFervor§!, §JPapal Influence§!, §JPatriarch Authority§!, or §JChurch Power§! of at least §J55§! if §JChristian§!. §lPiety§! is §l-55§! or less if §lMuslim§!, §VKarma§! is at least §V30§! if §VBuddhist§!, or have §M2 Active Blessings§!, or the religious group is §ODharmic§!."
+
+ # Annexation action — colonial subject type restrictions
+ VU_CANNOT_ANNEX_COLONIES: "Colonial territories cannot be annexed directly. Grant them independence first, or convert them to a different subject type."
+ VU_AI_CANNOT_ANNEX_COLONIES: "Colonial territories cannot be annexed directly. Grant them independence first, or convert them to a different subject type."
+

@@ -1,0 +1,7 @@
+﻿l_english:
+ vu_mining_events.1.t: "Mining Operations in [Root.GetName]"
+ vu_mining_events.1.d: "Surveyors and engineers have completed their assessment of the local terrain. Based on the geological composition of the area, extraction can now begin. The type of ore found will depend on what the land has to offer."
+ vu_mining_events.1.a: "Begin extraction operations."
+ mine_fail: "Mining Operations Failed"
+ desc_mine_fail: "We can't find anything with the current technology. Perhaps we can try again in ten years."
+ MINEs_tooltip: "Chance to fail: §Y30.00%§!\nChance to success: §Y70.00%§!"

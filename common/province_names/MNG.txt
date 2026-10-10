@@ -1,0 +1,4 @@
+#XXXX = { "Province" "City" }
+
+2112 = { "Fengcheng" "Fengcheng" }
+# [VU] removed: province 6747 (not on Ante Bellum map)

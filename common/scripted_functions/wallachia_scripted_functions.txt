@@ -1,32 +1,3 @@
-can_change_culture = {
-	condition = {
-		tooltip = bulgarian_underclass_change_culture_tooltip
-		potential = {
-			culture = bulgarian
-			FROM = {
-				has_country_flag = wal_bulgarian_underclass
-			}
-		}
-		allow = {
-			always = no
-		}
-	}
-}
+# [merge] can_change_culture now defined in common/scripted_functions/00_scripted_functions.txt (Victorum wins; Ante Bellum-specific parts merged there)
 
-can_add_seat_in_parliament = {
-	condition = {
-		tooltip = bulgarian_underclass_no_parliament_tooltip
-		potential = {
-			culture = bulgarian
-			OR = {
-				FROM = {
-					has_country_flag = wal_bulgarian_underclass
-				}
-				has_province_modifier = wallachia_aftermath_of_the_krushenieto
-			}
-		}
-		allow = {
-			always = no
-		}
-	}
-}
+# [merge] can_add_seat_in_parliament now defined in common/scripted_functions/00_scripted_functions.txt (Victorum wins; Ante Bellum-specific parts merged there)

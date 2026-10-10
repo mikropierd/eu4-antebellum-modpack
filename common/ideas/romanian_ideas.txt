@@ -1,45 +1,4 @@
-WAL_ideas = {
-	start = {
-		defensiveness = 0.2
-		discipline = 0.05
-	}
-	bonus = {
-		manpower_recovery_speed = 0.2
-	}
-	trigger = {
-		tag = WAL
-	}
-	free = yes
-	WAL_terror_state = {
-		monthly_terror_power = 0.05
-		shock_damage = 0.1
-	}
-	foreign_trade_restrictions = {
-		global_prov_trade_power_modifier = 0.2
-	}
-	WAL_state_of_paranoia = {
-		global_spy_defence = 0.5
-		global_unrest = -0.5
-	}
-	w_foreign_advisors = {
-		advisor_cost = -0.1
-	}
-	WAL_lessons_from_the_invaders = {
-		cavalry_power = 0.1
-		cav_to_inf_ratio = 0.15
-	}
-	WAL_boier_regime = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-		nobles_loyalty_modifier = 0.05
-	}
-	abolition_of_serfdom = {
-		global_manpower_modifier = 0.2
-	}
-}
+# [merge] WAL_ideas now defined in common/ideas/00_country_ideas.txt (Victorum wins; Ante Bellum-specific parts merged there)
 
 TUH_ideas = {
 	free = yes

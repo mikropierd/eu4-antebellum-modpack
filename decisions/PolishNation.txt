@@ -1,86 +1,9 @@
+#Dummy
+
+# ===== Ante Bellum additions (not in Victorum) =====
 country_decisions = {
 
-	polish_nation = {
-		major = yes
-		potential = {
-			OR = {
-				tag = PLN # Catholic/Hussite
-				tag = LUD # Orthodox
-				tag = MAZ # Pagan
-				tag = SIL # Pagan
-				tag = VIS # Pagan
-			}
-			NOT = { exists = POL }
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 262	# Krakow
-				province_id = 257	# Warszawa
-				province_id = 254	# Poznan
-				province_id = 4526
-				province_id = 258	# Sieradz
-				province_id = 259	# Sandomierz
-				province_id = 1939	# Leczyca
-				province_id = 260
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-		}
-		allow = {
-			culture_group = west_slavic
-			owns_core_province = 262	# Krakow
-			owns_core_province = 257	# Warszawa
-			owns_core_province = 254	# Poznan
-			owns_core_province = 4526
-			owns_core_province = 258	# Sieradz
-			owns_core_province = 259	# Sandomierz
-			owns_core_province = 1939	# Leczyca
-			owns_core_province = 260
-			is_at_war = no
-			is_subject = no
-		}
-		effect = {
-			change_tag = POL
-			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
-			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			if = {
-				limit = {
-					government = monarchy
-					is_revolutionary = no
-					NOT = {
-						OR = {
-							was_tag = PLN
-							tag = PLN
-						}	
-					}
-				}
-				add_government_reform = crownpoland
-			}
-			else = {
-				set_country_flag = aba_pln_crownpoland_popular
-				add_government_reform = aba_crownpoland
-			}
-			add_prestige = 25
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			remove_country_modifier = pol_unite_lechitic_tribes
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 400 #If there is no Poland then Polish minors will prioritize reforming it.
-	}
+	# [merge] decision polish_nation now defined in decisions/VU_Replace_Vanilla_Country_Formations.txt (Victorum wins; Ante Bellum-specific parts merged there)
 
 	pol_move_capital = {
 		major = yes

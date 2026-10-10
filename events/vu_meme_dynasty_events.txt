@@ -1,0 +1,1124 @@
+#Meme dynasty events for sheetz and gigglesworth - Prussia
+
+namespace = vu_meme_dynasty_events
+
+country_event = { #LARP Dynasty Selector 9000
+    id = vu_meme_dynasty_events.1
+    title = vu_meme_dynasty_events.1.t
+    desc = vu_meme_dynasty_events.1.desc
+    picture = vu_james_I_stuart_eventPicture
+
+	is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+    }
+
+    option = { # Would you like to give yourself a dynasty from a series or show for your nation?
+        name = vu_meme_dynasty_events.1.a  # Show me the series!
+        ai_chance = { factor = 50 }
+        country_event = {
+			id = vu_meme_dynasty_events.2
+		}
+    }
+
+    option = {
+        name = vu_meme_dynasty_events.1.b  # No thanks, I like my current dynasty
+        ai_chance = { factor = 50 }
+        add_prestige = 10
+    }
+}
+
+country_event = { #Choose Series
+    id = vu_meme_dynasty_events.2
+    title = vu_meme_dynasty_events.2.t
+    desc = vu_meme_dynasty_events.2.desc
+    picture = vu_james_I_stuart_eventPicture
+
+	is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+    }
+
+    option = {
+        name = vu_meme_dynasty_events.2.a  # Game of Thrones
+        ai_chance = { factor = 50 }
+        country_event = {
+			id = vu_meme_dynasty_events.3
+		}
+    }
+
+    option = {
+        name = vu_meme_dynasty_events.2.b  # Lord of the Rings
+        ai_chance = { factor = 50 }
+        country_event = {
+			id = vu_meme_dynasty_events.4
+		}
+    }
+
+	option = {
+        name = vu_meme_dynasty_events.2.c  # Merlin
+        ai_chance = { factor = 50 }
+        country_event = {
+			id = vu_meme_dynasty_events.5
+		}
+    }
+
+	option = {
+        name = vu_meme_dynasty_events.2.d  # Dune
+        ai_chance = { factor = 50 }
+        country_event = {
+			id = vu_meme_dynasty_events.6
+		}
+    }
+	option = {
+        name = vu_meme_dynasty_events.2.e  # Star Wars
+        ai_chance = { factor = 50 }
+        country_event = {
+			id = vu_meme_dynasty_events.7
+		}
+    }
+}
+
+country_event = { #Game of Thrones Dynasties
+    id = vu_meme_dynasty_events.3
+    title = vu_meme_dynasty_events.3.t
+    desc = vu_meme_dynasty_events.3.desc
+    picture = vu_james_I_stuart_eventPicture
+
+	is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+    }
+
+    option = { # House Targaryen
+        name = vu_meme_dynasty_events.3.a
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Aegon"
+			dynasty = "Targaryen"
+			culture = ROOT
+			adm = 4
+			dip = 2
+			mil = 6
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Aenys #0"
+			dynasty = "Targaryen"
+			culture = ROOT
+			adm = 3
+			dip = 3
+			mil = 2
+			age = 0
+		}
+		add_ruler_personality = legendary_conqueror_personality
+		add_ruler_personality = iron_crowned_personality
+		add_ruler_personality = careful_personality
+		add_heir_personality = scholar_personality
+		define_ruler_to_general = {
+			fire = 6
+			shock = 5
+			manuever = 5
+			siege = 6
+		}
+		define_general = {
+			name = "Rhaenys Targaryen"
+			shock = 4
+			fire = 4
+			manuever = 4
+			siege = 3
+			trait = dragon_tiger_general_personality
+		}
+		define_general = {
+			name = "Visenya Targaryen"
+			shock = 5
+			fire = 5
+			manuever = 4
+			siege = 4
+			trait = ruthless_personality
+		}
+		define_general = {
+			name = "Maegor Targaryen"
+			shock = 5
+			fire = 4
+			manuever = 5
+			siege = 4
+			trait = cruel_tactician_personality
+		}
+		define_general = {
+			name = "Orys Baratheon"
+			shock = 4
+			fire = 3
+			manuever = 3
+			siege = 2
+			trait = inspirational_leader_general_personality
+		}
+		define_admiral = {
+			name = "Daemion Velaryon"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = ruthless_blockader_personality
+		}
+		define_admiral = {
+			name = "Bartimos Celtigar"
+			shock = 3
+			fire = 3
+			manuever = 3
+			siege = 1
+			trait = accomplished_sailor_personality
+		}
+    }
+
+    option = { # House Baratheon
+        name = vu_meme_dynasty_events.3.b
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Robert"
+			dynasty = "Baratheon"
+			culture = ROOT
+			adm = 3
+			dip = 4
+			mil = 6
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Stannis"
+			dynasty = "Baratheon"
+			culture = ROOT
+			adm = 4
+			dip = 2
+			mil = 5
+			age = 0
+		}
+		add_ruler_personality = iron_crowned_personality
+		add_heir_personality = incorruptible_personality
+		define_ruler_to_general = {
+			fire = 4
+			shock = 5
+			manuever = 4
+			siege = 3
+		}
+		define_general = {
+			name = "Stannis Baratheon"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 3
+			trait = ironside_personality
+		}
+		define_general = {
+			name = "Renly Baratheon"
+			shock = 3
+			fire = 3
+			manuever = 3
+			siege = 2
+			trait = inspirational_leader_general_personality
+		}
+    }
+
+	option = { # House Stark
+        name = vu_meme_dynasty_events.3.c
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Eddard"
+			dynasty = "Stark"
+			culture = ROOT
+			adm = 3
+			dip = 2
+			mil = 4
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Robb #0"
+			dynasty = "Stark"
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 5
+			age = 0
+		}
+		add_ruler_personality = incorruptible_personality
+		add_heir_personality = bold_fighter_personality
+		define_ruler_to_general = {
+			fire = 4
+			shock = 3
+			manuever = 3
+			siege = 2
+		}
+		define_general = {
+			name = "Benjen Stark"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = frontline_holder_personality
+		}
+		define_general = {
+			name = "Roose Bolton"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = cruel_tactician_personality
+		}
+		define_general = {
+			name = "Greatjon Umber"
+			shock = 5
+			fire = 3
+			manuever = 3
+			siege = 1
+			trait = ruthless_personality
+		}
+    }
+
+	option = { # House Tully
+        name = vu_meme_dynasty_events.3.d
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Brynden"
+			dynasty = "Tully"
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 4
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Edmure #0"
+			dynasty = "Tully"
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 2
+			age = 0
+		}
+		add_ruler_personality = martial_educator_personality
+		add_heir_personality = silver_tongue_personality
+		define_general = {
+			name = "Walder Frey"
+			shock = 3
+			fire = 2
+			manuever = 3
+			siege = 1
+			trait = cunning_leader_personality
+		}
+		define_general = {
+			name = "Jonos Bracken"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = cuirassier_leader_personality
+		}
+		define_general = {
+			name = "Tytos Blackwood"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = siege_specialist_personality
+		}
+		define_admiral = {
+			name = "Patrek Mallister"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = naval_gunner_personality
+		}
+    }
+
+	option = { # House Arryn
+        name = vu_meme_dynasty_events.3.e
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Jon"
+			dynasty = "Arryn"
+			culture = ROOT
+			adm = 4
+			dip = 4
+			mil = 4
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Robin #0"
+			dynasty = "Arryn"
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 1
+			age = 0
+		}
+		add_ruler_personality = reformist_personality
+		add_heir_personality = vu_absolutist_personality
+		define_general = {
+			name = "Yohn Royce"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = frontline_holder_personality
+		}
+		define_admiral = {
+			name = "Vardis Egen"
+			shock = 3
+			fire = 3
+			manuever = 3
+			siege = 2
+			trait = siege_specialist_personality
+		}
+		define_general = {
+			name = "Lyn Corbray"
+			shock = 5
+			fire = 4
+			manuever = 4
+			siege = 2
+			trait = ruthless_personality
+		}
+    }
+
+	option = { # House Lannister
+        name = vu_meme_dynasty_events.3.f
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Tywin"
+			dynasty = "Lannister"
+			culture = ROOT
+			adm = 5
+			dip = 4
+			mil = 5
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Jaime #0"
+			dynasty = "Lannister"
+			culture = ROOT
+			adm = 1
+			dip = 2
+			mil = 5
+			age = 0
+		}
+		add_ruler_personality = industrious_personality
+		add_heir_personality = last_knight_personality
+		define_ruler_to_general = {
+			fire = 4
+			shock = 4
+			manuever = 4
+			siege = 2
+		}
+		define_general = {
+			name = "Kevan Lannister"
+			shock = 3
+			fire = 3
+			manuever = 3
+			siege = 2
+			trait = frontline_holder_personality
+		}
+		define_general = {
+			name = "Tygett Lannister"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = ruthless_personality
+		}
+		define_admiral = {
+			name = "Gerion Lannister"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = siege_specialist_personality
+		}
+    }
+
+	option = { # House Greyjoy
+        name = vu_meme_dynasty_events.3.g
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Euron"
+			dynasty = "Greyjoy"
+			culture = ROOT
+			adm = 5
+			dip = 3
+			mil = 5
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Theon #0"
+			dynasty = "Greyjoy"
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 3
+			age = 0
+		}
+		add_ruler_personality = navigator_personality
+		add_heir_personality = intricate_web_weaver_personality
+		define_general = {
+			name = "Victarion Greyjoy"
+			shock = 5
+			fire = 4
+			manuever = 4
+			siege = 2
+			trait = glory_seeker_personality
+		}
+		define_general = {
+			name = "Harras Harlaw"
+			shock = 4
+			fire = 3
+			manuever = 3
+			siege = 3
+			trait = hardy_warrior_personality
+		}
+		define_general = {
+			name = "Aeron Greyjoy"
+			shock = 5
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = goal_oriented_personality
+		}
+		define_admiral = {
+			female = yes
+			name = "Asha Greyjoy"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = naval_strategist_personality
+		}
+		define_admiral = {
+			name = "Balon Greyjoy"
+			shock = 4
+			fire = 2
+			manuever = 3
+			siege = 2
+			trait = cunning_navigator_personality
+		}
+    }
+
+	option = { # House Tyrell
+        name = vu_meme_dynasty_events.3.h
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			female = yes
+			name = "Olenna"
+			dynasty = "Tyrell"
+			culture = ROOT
+			adm = 5
+			dip = 4
+			mil = 2
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Willas #0"
+			dynasty = "Tyrell"
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 5
+			age = 0
+		}
+		add_ruler_personality = well_advised_personality
+		add_heir_personality = vu_scholarly_personality
+		define_general = {
+			name = "Garlan Tyrell"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = goal_oriented_personality
+		}
+		define_general = {
+			name = "Loras Tyrell"
+			shock = 5
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = glory_seeker_personality
+		}
+		define_general = {
+			name = "Randyll Tarly"
+			shock = 5
+			fire = 4
+			manuever = 5
+			siege = 3
+			trait = ruthless_personality
+		}
+		define_general = {
+			name = "Matthis Rowan"
+			shock = 4
+			fire = 3
+			manuever = 3
+			siege = 1
+			trait = siege_specialist_personality
+		}
+		define_admiral = {
+			name = "Paxter Redwyne"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = naval_strategist_personality
+		}
+		define_admiral = {
+			name = "Leyton Hightower"
+			shock = 3
+			fire = 3
+			manuever = 3
+			siege = 2
+			trait = naval_engineer_personality
+		}
+    }
+
+	option = { # House Martell
+        name = vu_meme_dynasty_events.3.i
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Doran"
+			dynasty = "Martell"
+			culture = ROOT
+			adm = 5
+			dip = 4
+			mil = 3
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Oberyn #0"
+			dynasty = "Martell"
+			culture = ROOT
+			adm = 3
+			dip = 3
+			mil = 6
+			age = 0
+		}
+		add_ruler_personality = intricate_web_weaver_personality
+		add_heir_personality = righteous_personality
+		define_general = {
+			name = "Lewyn Martell"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = frontline_holder_personality
+		}
+		define_general = {
+			name = "Manfrey Martell"
+			shock = 3
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = siege_specialist_personality
+		}
+		define_general = {
+			name = "Anders Yronwood"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = defensive_planner_personality
+		}
+		define_general = {
+			name = "Ryon Allyrion"
+			shock = 4
+			fire = 3
+			manuever = 3
+			siege = 1
+			trait = glory_seeker_personality
+		}
+		define_admiral = {
+			name = "Quentyn Martell"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = naval_strategist_personality
+		}
+		define_admiral = {
+			name = "Mellario of Norvos"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 2
+			trait = naval_cannoneer_personality
+		}
+    }
+}
+
+country_event = { #Lord of the Rings Dynasties
+    id = vu_meme_dynasty_events.4
+    title = vu_meme_dynasty_events.4.t
+    desc = vu_meme_dynasty_events.4.desc
+    picture = vu_james_I_stuart_eventPicture
+
+	is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+    }
+
+    option = { # House Elessar
+        name = vu_meme_dynasty_events.4.a
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Aragorn"
+			dynasty = "Elessar"
+			culture = ROOT
+			adm = 4
+			dip = 2
+			mil = 6
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Eldarion #0"
+			dynasty = "Elessar"
+			culture = ROOT
+			adm = 3
+			dip = 3
+			mil = 2
+			age = 0
+		}
+		add_ruler_personality = inspiring_leader_personality
+		add_heir_personality = reformist_personality
+		define_general = {
+			name = "Boromir of Gondor"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 3
+			trait = siege_specialist_personality
+		}
+		define_general = {
+			name = "Faramir of Gondor"
+			shock = 4
+			fire = 5
+			manuever = 4
+			siege = 1
+			trait = battlefield_medic_personality
+		}
+		define_general = {
+			name = "Imrahil of Dol Amroth"
+			shock = 6
+			fire = 4
+			manuever = 4
+			siege = 2
+			trait = cuirassier_leader_personality
+		}
+		define_admiral = {
+			name = "Eldacar of Gondor"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = naval_engineer_personality
+		}
+		define_admiral = {
+			name = "Castamir of Gondor"
+			shock = 3
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = naval_strategist_personality
+		}
+    }
+
+    option = { # House Eorl
+        name = vu_meme_dynasty_events.4.b
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Theoden"
+			dynasty = "Eorl"
+			culture = ROOT
+			adm = 4
+			dip = 4
+			mil = 6
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Theodred #0"
+			dynasty = "Eorl"
+			culture = ROOT
+			adm = 4
+			dip = 3
+			mil = 5
+			age = 0
+		}
+		add_ruler_personality = just_personality
+		add_heir_personality = bold_fighter_personality
+		define_general = {
+			name = "Eomer Eorl"
+			shock = 6
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = cuirassier_leader_personality
+		}
+		define_general = {
+			female = yes
+			name = "Eowyn Eorl"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = goal_oriented_personality
+		}
+		define_general = {
+			name = "Erkenbrand of Eastmark"
+			shock = 4
+			fire = 4
+			manuever = 4
+			siege = 1
+			trait = siege_specialist_personality
+		}
+		define_general = {
+			name = "Gamling of Gineard"
+			shock = 5
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = born_to_the_saddle_personality
+		}
+    }
+}
+
+country_event = { #Merlin Dynasties
+    id = vu_meme_dynasty_events.5
+    title = vu_meme_dynasty_events.5.t
+    desc = vu_meme_dynasty_events.5.desc
+    picture = vu_james_I_stuart_eventPicture
+
+	is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+    }
+
+    option = { # House Pendragon
+        name = vu_meme_dynasty_events.5.a
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Uther"
+			dynasty = "Pendragon"
+			culture = ROOT
+			adm = 4
+			dip = 3
+			mil = 4
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Arthur #0"
+			dynasty = "Pendragon"
+			culture = ROOT
+			adm = 4
+			dip = 4
+			mil = 6
+			age = 0
+		}
+		add_ruler_personality = legendary_conqueror_personality
+		add_heir_personality = last_knight_personality
+		define_general = {
+			name = "Gorlois"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 2
+			trait = glory_seeker_personality
+		}
+		define_general = {
+			name = "Lancelot du Lac"
+			shock = 5
+			fire = 3
+			manuever = 3
+			siege = 1
+			trait = inspirational_leader_general_personality
+		}
+		define_general = {
+			name = "Agravaine du Bois"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 1
+			trait = cuirassier_leader_personality
+		}
+    }
+
+    option = { # House le Fay
+        name = vu_meme_dynasty_events.5.b
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			female = yes
+			name = "Morgana #0"
+			dynasty = "le Fay"
+			culture = ROOT
+			adm = 3
+			dip = 4
+			mil = 4
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			female = yes
+			name = "Nimueh #0"
+			dynasty = "le Fay"
+			culture = ROOT
+			adm = 3
+			dip = 3
+			mil = 3
+			age = 0
+		}
+		add_ruler_personality = righteous_personality
+		add_heir_personality = vu_patron_of_arts_personality
+		define_general = {
+			female = yes
+			name = "Morgause"
+			shock = 4
+			fire = 3
+			manuever = 4
+			siege = 2
+			trait = siege_specialist_personality
+		}
+		define_general = {
+			name = "Cenred"
+			shock = 5
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = cruel_tactician_personality
+		}
+		define_general = {
+			name = "Lot"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 1
+			trait = ruthless_personality
+		}
+    }
+}
+
+country_event = { #Dune Dynasties
+    id = vu_meme_dynasty_events.6
+    title = vu_meme_dynasty_events.6.t
+    desc = vu_meme_dynasty_events.6.desc
+    picture = vu_james_I_stuart_eventPicture
+
+	is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+    }
+
+    option = { # House Atreides
+        name = vu_meme_dynasty_events.6.a
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Leto"
+			dynasty = "Atreides"
+			culture = ROOT
+			adm = 4
+			dip = 3
+			mil = 4
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Leto #0"
+			dynasty = "Atreides"
+			culture = ROOT
+			adm = 6
+			dip = 5
+			mil = 5
+			age = 0
+		}
+		add_ruler_personality = just_personality
+		add_heir_personality = lawgiver_personality
+    }
+
+    option = { # House Harkkonen
+        name = vu_meme_dynasty_events.6.b
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Vladimir"
+			dynasty = "Harkonnen"
+			culture = ROOT
+			adm = 4
+			dip = 6
+			mil = 4
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Feyd-Rautha #0"
+			dynasty = "Harkonnen"
+			culture = ROOT
+			adm = 2
+			dip = 2
+			mil = 4
+			age = 0
+		}
+		add_ruler_personality = careful_personality
+		add_heir_personality = bold_fighter_personality
+    }
+
+	option = { # House Corrino
+        name = vu_meme_dynasty_events.6.c
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Shaddam"
+			dynasty = "Corrino"
+			culture = ROOT
+			adm = 4
+			dip = 4
+			mil = 3
+			age = 25
+		}
+		define_heir = {
+			claim = 100
+			name = "Shaddam #0"
+			dynasty = "Corrino"
+			culture = ROOT
+			adm = 4
+			dip = 3
+			mil = 5
+			age = 0
+		}
+		add_ruler_personality = intricate_web_weaver_personality
+		add_heir_personality = industrious_personality
+    }
+}
+
+country_event = { #Star Wars
+    id = vu_meme_dynasty_events.7
+    title = vu_meme_dynasty_events.7.t
+    desc = vu_meme_dynasty_events.7.desc
+    picture = vu_james_I_stuart_eventPicture
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+    }
+
+    option = { # House Palpatine
+        name = vu_meme_dynasty_events.7.a
+        ai_chance = { factor = 50 }
+        add_stability_or_adm_power = yes
+		define_ruler = {
+			claim = 100
+			name = "Sheev"
+			dynasty = "Palpatine"
+			culture = ROOT
+			adm = 4
+			dip = 6
+			mil = 4
+			age = 25
+		}
+		add_ruler_personality = immortal_personality
+		add_ruler_personality = vu_absolutist_personality
+		add_ruler_personality = legendary_conqueror_personality
+		define_general = {
+			name = "Wilhuff Tarkin"
+			shock = 4
+			fire = 6
+			manuever = 4
+			siege = 4
+			trait = siege_specialist_personality
+		}
+		define_general = {
+			name = "Hux"
+			shock = 4
+			fire = 5
+			manuever = 3
+			siege = 2
+			trait = ruthless_personality
+		}
+		define_general = {
+			name = "Darth Vader"
+			shock = 6
+			fire = 5
+			manuever = 5
+			siege = 5
+			trait = inspirational_leader_general_personality
+		}
+		define_admiral = {
+			name = "Piett"
+			shock = 4
+			fire = 4
+			manuever = 4
+			siege = 2
+			trait = naval_strategist_personality
+		}
+    }
+}

@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.37
 # Do not change tags in here without changing every other reference to them.
 # If adding new dieties, make sure they are uniquely named.
 
@@ -5,13 +6,8 @@ odin = {
 	legitimacy = 0.1
 	horde_unity = 0.1
 	core_creation = -0.10
-	
-	potential = {
-		OR = {
-			religion = norse_pagan_reformed
-			has_country_flag = hyl_unlock_norse_gods
-		}
-	}
+
+	potential = { religion = norse_pagan_reformed }
 	trigger = {}
 	sprite = 7
 	
@@ -33,13 +29,8 @@ odin = {
 freya = {
 	global_manpower_modifier = 0.1
 	global_tax_modifier = 0.1
-	
-	potential = {
-		OR = {
-			religion = norse_pagan_reformed
-			has_country_flag = hyl_unlock_norse_gods
-		}
-	}
+
+	potential = { religion = norse_pagan_reformed }
 	trigger = {}
 	sprite = 8
 	
@@ -61,13 +52,8 @@ freya = {
 tor = {
 	leader_land_shock = 1
 	defensiveness = 0.1
-	
-	potential = {
-		OR = {
-			religion = norse_pagan_reformed
-			has_country_flag = hyl_unlock_norse_gods
-		}
-	}
+
+	potential = { religion = norse_pagan_reformed }
 	trigger = {}
 	sprite = 9
 	
@@ -101,13 +87,8 @@ tor = {
 tyr = {
 	global_sailors_modifier = 0.10
 	discipline = 0.05
-	
-	potential = {
-		OR = {
-			religion = norse_pagan_reformed
-			has_country_flag = hyl_unlock_norse_gods
-		}
-	}
+
+	potential = { religion = norse_pagan_reformed }
 	trigger = {}
 	sprite = 10
 	
@@ -129,13 +110,8 @@ tyr = {
 njord = {
 	trade_efficiency = 0.1
 	global_trade_goods_size_modifier = 0.1
-	
-	potential = {
-		OR = {
-			religion = norse_pagan_reformed
-			has_country_flag = hyl_unlock_norse_gods
-		}
-	}
+
+	potential = { religion = norse_pagan_reformed }
 	trigger = {}
 	sprite = 11
 	
@@ -162,13 +138,8 @@ njord = {
 snotra = {
 	technology_cost = -0.05
 	build_cost = -0.1
-	
-	potential = {
-		OR = {
-			religion = norse_pagan_reformed
-			has_country_flag = hyl_unlock_norse_gods
-		}
-	}
+
+	potential = { religion = norse_pagan_reformed }
 	trigger = {}
 	sprite = 12
 	

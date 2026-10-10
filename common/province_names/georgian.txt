@@ -1,0 +1,4 @@
+132 = { "Judenburg" "Judenburg" }
+2204 = "Lomsia"
+2327 = { "Magna" "Magna" }
+4303 = "Tao"

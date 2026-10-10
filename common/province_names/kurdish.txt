@@ -1,0 +1,30 @@
+411 = { "Musll" "Musll" }
+415 = "Kerkuk"
+2209 = "Ilam"
+2211 = { "Ardalan" "Sine" }
+2309 = "Singar"
+3684 = { "Qesra Sirin" "Qesra Sirin" }
+3685 = { "Kweyest" "Kewyest" }
+3727 = { "Badd" "Keleivar" }
+3728 = { "Seqiz" "Bane" }
+3729 = { "Bokan" "Bokan" }
+3731 = "Mansurabad"
+3733 = { "Sablagh" "Mehabad" }
+3734 = "Mako"
+3735 = "Chaldoran"
+3737 = { "Nochiya" "Semzinan" }
+3738 = { "Amedi" "Amedi" }
+3739 = { "Palo" "Palo" }
+3742 = { "Heseke" "Heseke" }
+3754 = { "Pirsus" "Pirsus" }
+3966 = "Dersim"
+4293 = "Hewler"
+4294 = "Silemani"
+4296 = { "Bidlise" "Bidlis" }
+4298 = { "Entab" "Dilok" }
+# [VU] removed: province 6627 (not on Ante Bellum map)
+# [VU] removed: province 6640 (not on Ante Bellum map)
+# [VU] removed: province 6642 (not on Ante Bellum map)
+# [VU] removed: province 6644 (not on Ante Bellum map)
+# [VU] removed: province 6645 (not on Ante Bellum map)
+# [VU] removed: province 8412 (not on Ante Bellum map)

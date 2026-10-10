@@ -1,0 +1,1283 @@
+vu_el_morro = {
+    start = 2495
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 10
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    can_use_modifiers_trigger = {}
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0	}
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_development_cost = -0.1
+            local_monthly_devastation = -0.05
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 3500 }
+        province_modifiers = {
+            #local_development_cost = -0.1
+            #local_monthly_devastation = -0.05
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 7000 }
+        province_modifiers = {
+            #local_development_cost = -0.15
+            #local_monthly_devastation = -0.05
+            #local_tax_modifier = 0.15
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+
+    tier_3 = {
+        upgrade_time = { months = 960 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {
+            #local_development_cost = -0.15
+            #local_monthly_devastation = -0.05
+            #local_tax_modifier = 0.15
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+vu_gros_morne = {
+    start = 981
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 10
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    can_use_modifiers_trigger = {}
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_development_cost = -0.1
+            local_monthly_devastation = -0.05
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 3500 }
+        province_modifiers = {
+            #local_development_cost = -0.1
+            #local_monthly_devastation = -0.05
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {
+            #local_development_cost = -0.15
+            #local_monthly_devastation = -0.05
+            #local_tax_modifier = 0.15
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 960 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {
+            #local_development_cost = -0.15
+            #local_monthly_devastation = -0.05
+            #local_tax_modifier = 0.15
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+vu_red_bay = {
+    start = 997
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 10
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    can_use_modifiers_trigger = {}
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_development_cost = -0.1
+            local_monthly_devastation = -0.05
+            trade_value = 0.5
+            local_tax_modifier = 0.05
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 3500 }
+        province_modifiers = {
+            #local_development_cost = -0.1
+            #local_monthly_devastation = -0.05
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 7000 }
+        province_modifiers = {
+            #local_development_cost = -0.15
+            #local_monthly_devastation = -0.05
+            #local_tax_modifier = 0.15
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 960 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {
+            #local_development_cost = -0.15
+            #local_monthly_devastation = -0.05
+            #local_tax_modifier = 0.15
+        }
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+# [VU] great project mount_denali removed: start province 5778 not on Ante Bellum map
+
+mount_everest = {
+    start = 2071
+    #date = -3000.01.01
+    date = 1200.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { OR = { AND = { religion_group = buddhist_group has_owner_religion = yes } AND = { religion = bon has_owner_religion = yes } AND = { OR = { religion = hinduism religion = surya_majapahit } has_owner_religion = yes } } }
+    can_upgrade_trigger = {	always = no	}
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_unrest = -3
+        }
+        area_modifier = {
+            local_monthly_devastation = -0.1
+        }
+        country_modifiers = {
+            idea_cost = -0.15
+            innovativeness_gain = 0.15
+            prestige = 0.5
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = { factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = {	factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+mount_nemrut = {
+    start = 2303
+    date = 190.01.01 #escavation site
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = {
+        OR = {
+            AND = {
+                culture_group = caucasian
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture_group = kartvelian
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture_group = armenic
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture = georgian_new
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture_group = byzantine
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture_group = iranian
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture_group = mesopotamian_group
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+        }
+    }
+    can_upgrade_trigger = {	always = no	}
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0	}
+        cost_to_upgrade = { factor = 0 }
+        province_modifiers = {
+            local_unrest = -2
+        }
+        area_modifier = {
+            local_monthly_devastation = -0.1
+        }
+        country_modifiers = {
+            idea_cost = -0.01
+            innovativeness_gain = 0.05
+            prestige = 0.1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = {	factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+# [VU] great project mount_rainier removed: start province 5806 not on Ante Bellum map
+
+mount_aconcagua = {
+    start = 787
+    #date = -2000.01.01
+    date = 1200.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { religion = inti has_owner_religion = yes }
+    can_upgrade_trigger = {	always = no	}
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = { factor = 0 }
+        province_modifiers = {
+            local_unrest = -2
+        }
+        area_modifier = {
+            local_monthly_devastation = -0.1
+        }
+        country_modifiers = {
+            idea_cost = -0.15
+            innovativeness_gain = 0.15
+            prestige = 0.3
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = {	factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+mount_belucha = {
+    start = 4681
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = {
+        OR = {
+            AND = {
+                religion = tengri_pagan_reformed
+                has_owner_religion = yes
+            }
+            AND = {
+                religion = vajrayana
+                has_owner_religion = yes
+            }
+        }
+    }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    #tier data
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {}
+        area_modifier = {
+            local_friendly_movement_speed = 0.1
+        }
+        country_modifiers = {
+            idea_cost = -0.05
+            prestige = 0.5
+            reform_progress_growth = 0.1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = {	factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = {	factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+mount_elbrus = {
+    start = 3262
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = {
+        OR = {
+            AND = {
+                culture_group = caucasian
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture_group = kartvelian
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+            AND = {
+                culture = georgian_new
+                OR = {
+                    has_owner_culture = yes
+                    has_owner_accepted_culture = yes
+                }
+            }
+        }
+    }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0	}
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {}
+        area_modifier = {
+            local_friendly_movement_speed = 0.1
+        }
+        country_modifiers = {
+            idea_cost = -0.1
+            prestige = 0.25
+            reform_progress_growth = 0.1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = {	factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = {	factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+mount_olympus = {
+    start = 147
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { OR = { AND = { culture_group = byzantine has_owner_culture = yes } AND = { culture_group = dacian has_owner_culture = yes } AND = { culture_group = french has_owner_culture = yes } AND = { culture_group = old_latin has_owner_culture = yes } AND = { culture_group = illyrian has_owner_culture = yes } } }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {}
+        area_modifier = {
+            local_friendly_movement_speed = 0.1
+        }
+        country_modifiers = {
+            idea_cost = -0.025
+            prestige = 0.1
+            reform_progress_growth = 0.1
+            tolerance_own = 1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = { factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+# [VU] great project mount_sinai removed: start province 6550 not on Ante Bellum map
+
+mount_yamantau = {
+    start = 2420
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { OR = { AND = { religion = tengri_pagan_reformed has_owner_religion = yes } AND = { culture = uralic OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } }	}
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {}
+        area_modifier = {
+            local_friendly_movement_speed = 0.1
+        }
+        country_modifiers = {
+            idea_cost = -0.05
+            prestige = 0.5
+            reform_progress_growth = 0.1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+#VU - Quonton
+vu_mammoth_cave = {
+    start = 940
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {}
+        area_modifier = {
+            local_friendly_movement_speed = 0.1
+            local_prosperity_growth = 0.1
+        }
+        country_modifiers = {
+            global_institution_spread = 0.1
+            prestige = 0.5
+            monthly_splendor = 0.75
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+# [VU] great project vu_crater_lake removed: start province 5777 not on Ante Bellum map
+
+vu_death_valley = {
+    start = 2478
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            supply_limit_modifier = -0.25
+            allowed_num_of_buildings = -1
+            local_production_efficiency = -0.1
+            max_attrition = 50
+            attrition = 5
+            local_hostile_attrition = 15
+        }
+        area_modifier = { }
+        country_modifiers = {
+            max_absolutism = 10
+            yearly_absolutism = 0.1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+vu_scotts_bluff = {
+    start = 2507
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { NOT = { religion_group = pagan } }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {}
+        area_modifier = {
+            local_friendly_movement_speed = 0.2
+        }
+        country_modifiers = {
+            range = 0.5
+            colony_cost_modifier = -0.75
+            global_colonial_growth = 10
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+vu_angle_falls = {
+    start = 2804
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_tax_modifier = 0.1
+            local_development_cost = -0.1
+        }
+        area_modifier = {
+            local_prosperity_growth = 0.1
+        }
+        country_modifiers = {
+            prestige = 0.5
+            monthly_splendor = 0.75
+            vassal_income = 0.2
+            colonists = 1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+vu_uguazu_falls = {
+    start = 2855
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_tax_modifier = 0.1
+            local_development_cost = -0.1
+        }
+        area_modifier = {
+            local_prosperity_growth = 0.1
+        }
+        country_modifiers = {
+            prestige = 0.5
+            monthly_splendor = 0.75
+            vassal_sailors_bonus = 0.1
+            vassal_manpower_bonus = 0.1
+            colonists = 1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+vu_eye_of_sahara = {
+    start = 3958
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_hostile_attrition = 1
+            local_tax_modifier = 0.1
+        }
+        area_modifier = { }
+        country_modifiers = { }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+vu_mt_kilimanjaro = {
+    start = 1273
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            institution_growth = 1
+            local_development_cost = -0.2
+        }
+        area_modifier = {
+            local_monthly_devastation = -0.1
+            local_development_cost = -0.1
+        }
+        country_modifiers = {
+            diplomatic_reputation = 0.75
+            innovativeness_gain = 0.15
+            technology_cost = -0.075
+            prestige = 0.5
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+vu_victoria_falls = {
+    start = 4106
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {}
+        area_modifier = {
+            local_friendly_movement_speed = 0.1
+            local_prosperity_growth = 0.1
+        }
+        country_modifiers = {
+            global_institution_spread = 0.1
+            prestige = 0.5
+            idea_cost = -0.15
+            diplomatic_reputation = 0.75
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+vu_ha_long_bay = {
+    start = 2372
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_sailors = 250
+            local_development_cost = -0.2
+            trade_goods_size = 0.5
+        }
+        area_modifier = {
+            local_prosperity_growth = 0.1
+            local_sailors_modifier = 0.1
+            local_development_cost = -0.1
+            province_trade_power_modifier = 0.2
+        }
+        country_modifiers = {
+            trade_efficiency = 0.1
+            global_ship_trade_power = 0.25
+            global_institution_spread = 0.1
+            prestige = 0.5
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+# [VU] great project vu_milford_sound removed: start province 5597 not on Ante Bellum map
+
+vu_table_mountain = {
+    start = 1177
+    date = 1444.01.01
+    time = { months = 0 }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 1
+    starting_tier = 0
+    type = monument
+    build_trigger = {}
+    on_built = {}
+    on_destroyed = {}
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { always = no }
+    keep_trigger = { always = yes }
+
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = {	factor = 0 }
+        province_modifiers = {
+            local_sailors = 200
+            local_development_cost = -0.2
+        }
+        area_modifier = {
+            local_prosperity_growth = 0.1
+            local_sailors_modifier = 0.1
+            local_development_cost = -0.1
+        }
+        country_modifiers = {
+            prestige = 0.5
+            monthly_splendor = 0.75
+            global_tariffs = 0.20
+            global_colonial_growth = 12
+            colonists = 1
+        }
+        on_upgraded = {}
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 3500 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = {	factor = 7000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 14000 }
+        province_modifiers = {}
+        area_modifier = {}
+        country_modifiers = {}
+        on_upgraded = {}
+    }
+}
+
+# [VU] great project vu_matterhorn removed: start province 8527 not on Ante Bellum map
+
+# [VU] great project vu_yushan_mountain removed: start province 8548 not on Ante Bellum map

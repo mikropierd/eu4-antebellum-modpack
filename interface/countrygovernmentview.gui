@@ -75,13 +75,6 @@ guiTypes = {
 			position = { x= 8 y = 218 }
 		}
 
-		iconType = {
-			name ="romanian_elective_monarchy_bg"
-			spriteType = "GFX_rem_bg"
-			position = { x= 8 y = 218 }
-			scripted = yes
-		}
-
 		### ------- Government -------
 
 		iconType =
@@ -731,6 +724,51 @@ guiTypes = {
 			spacing = 0
 		}
 
+		OverlappingElementsBoxType = {
+			name = "modifiers_box_5"
+			position = { x = 380 y = 281 }
+			size = { x = 156 y = 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 0
+		}
+
+		OverlappingElementsBoxType = {
+			name = "modifiers_box_6"
+			position = { x = 380 y = 311 }
+			size = { x = 156 y = 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 0
+		}
+
+		OverlappingElementsBoxType = {
+			name = "modifiers_box_7"
+			position = { x = 380 y = 341 }
+			size = { x = 156 y = 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 0
+		}
+
+		OverlappingElementsBoxType = {
+			name = "modifiers_box_8"
+			position = { x = 380 y = 371 }
+			size = { x = 156 y = 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 0
+		}
+
+		OverlappingElementsBoxType = {
+			name = "modifiers_box_9"
+			position = { x = 380 y = 401 }
+			size = { x = 156 y = 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 0
+		}
+
 		guiButtonType = {
 			name = "modifier_view_button"
 			position = { x = 510 y = 113 }
@@ -802,6 +840,12 @@ guiTypes = {
 				extra_shortcut = "ESCAPE"
 				clicksound = back_click
 			}
+		}
+		iconType = {
+			name ="romanian_elective_monarchy_bg"
+			spriteType = "GFX_rem_bg"
+			position = { x= 8 y = 218 }
+			scripted = yes
 		}
 	}
 

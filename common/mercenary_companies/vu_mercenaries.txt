@@ -1,0 +1,303 @@
+#A few small additions
+#A second (bigger) version of the free company for the small tags (below 300 dev), to encourage mercenary play in the early game
+vu_merc_local_large_free_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 0.1
+	artillery_weight = 0.1
+	cavalry_cap = 2
+	cost_modifier = 0.5
+	trigger = {
+		NOT = {
+			total_development = 300
+		}
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	modifier = {
+		#I guess the smaller cheaper Free companies should have a downside
+		reinforce_speed = -0.15
+		recover_army_morale_speed = -0.05
+	}
+	# No home province means local mercenary company
+	min_size = 8	#So that it's always twice as big as the normal free company
+}
+
+#An early cavalry company
+vu_merc_local_cavalry_free_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	trigger = {
+		NOT = {
+			total_development = 300
+		}
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	modifier = {
+		#I guess the smaller cheaper Free companies should have a downside
+		reinforce_speed = -0.15
+		recover_army_morale_speed = -0.05
+	}
+	# No home province means local mercenary company
+}
+
+#A late cavalry commpany
+vu_merc_local_large_cavalry_free_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	trigger = {
+		total_development = 300
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	# No home province means local mercenary company
+	min_size = 8	#So that it's always twice as big as the the small variant
+}
+
+#An early Siege company
+vu_merc_local_small_siege_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 0
+	artillery_weight = 0.5
+	cost_modifier = 0.25
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	modifier = {
+		#Siege company specific (Same for both versions)
+		#Debuffs for battles so they won't be used to cheese in early battle artillery
+		artillery_power = -1
+		#Siege specific buffs (that's their entire bloody job)
+		siege_ability = 0.2
+		artillery_levels_available_vs_fort = 1
+		artillery_barrage_cost = -0.25
+	}
+	counts_towards_force_limit = no	#Siege companies are only for sieging, this should help break stalemates when small AI tags fight and neither of them have enough men to besiege eachothers castles
+	# No home province means local mercenary company
+}
+
+#A late Siege company
+vu_merc_local_large_siege_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	trigger = {
+		total_development = 300
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	modifier = {
+		#Siege company specific (Same for both versions)
+		#Debuffs for battles so they won't be used to cheese in early battle artillery
+		artillery_power = -1
+		#Siege specific buffs (that's their entire bloody job)
+		siege_ability = 0.2
+		artillery_levels_available_vs_fort = 1
+		artillery_barrage_cost = -0.25
+	}
+	counts_towards_force_limit = no	#Siege companies are only for sieging, this should help break stalemates when small AI tags fight and neither of them have enough men to besiege eachothers castles
+	# No home province means local mercenary company
+	min_size = 8	#So that it's always twice as big as the small variant
+}
+
+####################################
+# VU Middle Eastern Mercenaries    #
+# Timurids, Ottomans, Mamlukes,   #
+# Syrians, Mesopotamians          #
+# Design: Darth Modus & Prussia   #
+####################################
+
+# ── OTTOMAN-STYLE (hired by Europeans) ──────────────────────────────────────
+
+# The Janissary Corps — elite devshirme infantry of the Sublime Porte.
+# Hired by European border nations who have encountered Ottoman methods of war
+# firsthand. The Ottomans themselves already field Janissaries as standing troops
+# and have no need to hire them as mercenaries.
+vu_merc_ottoman_janissaries = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.75		# Foreign mercenaries — expensive but formidable
+	home_province = 151		# Istanbul — where these soldiers were trained
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		# Available to European nations that border or contest the Ottoman sphere.
+		# NOT available to the Ottomans themselves — they already have Janissaries.
+		NOT = { tag = OTT }
+		NOT = { tag = TUR }
+		NOT = { religion_group = muslim }
+		OR = {
+			capital_scope = { region = balkan_region }
+			capital_scope = { region = carpathia_region }
+			capital_scope = { region = austria_region }
+			capital_scope = { region = poland_region }
+			tag = VEN		# Venice — long trade and conflict with the Porte
+		}
+	}
+	modifier = {
+		discipline = 0.05
+		infantry_power = 0.10
+		shock_damage_received = -0.05
+	}
+}
+
+# Sipahi — the timariot cavalry of Anatolia and the Balkans.
+# Deserters, discharged veterans, and adventurers from the Ottoman cavalry
+# tradition available for hire by neighbouring European powers.
+# The Ottomans field their own Sipahi as a core unit and need not hire them.
+vu_merc_sipahi = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.75		# Foreign mercenaries — expensive but formidable
+	home_province = 330		# Bursa — cradle of the Ottoman cavalry tradition
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		# Available to European nations in the Ottoman's shadow.
+		# NOT available to the Ottomans — they already have Sipahi as a unit type.
+		NOT = { tag = OTT }
+		NOT = { tag = TUR }
+		NOT = { religion_group = muslim }
+		OR = {
+			capital_scope = { region = balkan_region }
+			capital_scope = { region = carpathia_region }
+			capital_scope = { region = austria_region }
+			capital_scope = { region = poland_region }
+			tag = VEN
+		}
+	}
+	modifier = {
+		cavalry_power = 0.10
+		cavalry_flanking = 0.25
+		land_morale = 0.05
+	}
+}
+
+# ── MAMLUKE ──────────────────────────────────────────────────────────────────
+
+# The Mamluke Guard — slave-soldier cavalry, unmatched in the near east.
+# Their entire culture of warfare is built around mobile shock cavalry.
+vu_merc_mamluke_guard = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.5
+	home_province = 361		# Cairo — seat of the Mamluke Sultanate
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		OR = {
+			tag = MAM
+			AND = {
+				capital_scope = { region = egypt_region }
+				religion_group = muslim
+			}
+		}
+	}
+	modifier = {
+		cavalry_power = 0.10
+		discipline = 0.05
+		shock_damage = 0.05
+	}
+}
+
+# ── SYRIAN ───────────────────────────────────────────────────────────────────
+
+# Syrian Ghazi Warriors — religious volunteers from the Levant.
+# Inspired by faith and the tradition of jihad, they fight with fierce zeal.
+vu_merc_syrian_ghazi = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.5
+	artillery_weight = 0
+	cost_modifier = 0.25
+	home_province = 379		# Aleppo — gateway of the Syrian corridor
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		capital_scope = { region = mashriq_region }
+		religion_group = muslim
+	}
+	modifier = {
+		recover_army_morale_speed = 0.10
+		land_morale = 0.05
+		religious_unity = 0.05
+	}
+}
+
+# ── MESOPOTAMIAN ─────────────────────────────────────────────────────────────
+
+# Mesopotamian Horse Archers — the tribal cavalry of Iraq and the river valleys.
+# Skilled riders who exploit terrain and harry enemies with hit-and-run raids.
+vu_merc_mesopotamian_cavalry = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.25
+	home_province = 410		# Baghdad — the ancient seat of Abbasid prestige
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		capital_scope = { region = mashriq_region }
+		religion_group = muslim
+	}
+	modifier = {
+		cavalry_flanking = 0.25
+		land_attrition = -0.05
+		cavalry_power = 0.05
+	}
+}
+
+# ── TIMURID ──────────────────────────────────────────────────────────────────
+
+# Timurid Ghulam Cavalry — the personal household guard of the Timurid sultans.
+# Heavily armored horsemen drawn from Central Asian and Persian noble families.
+vu_merc_timurid_ghulam = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1
+	artillery_weight = 0
+	cost_modifier = 0.75
+	home_province = 454		# Samarkand — jewel of the Timurid empire
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		OR = {
+			tag = TIM
+			AND = {
+				capital_scope = {
+					OR = {
+						region = khorasan_region
+						region = persia_region
+					}
+				}
+				religion_group = muslim
+			}
+		}
+	}
+	modifier = {
+		discipline = 0.05
+		cavalry_power = 0.10
+		army_tradition_decay = -0.01
+	}
+}
+
+# Timurid War Elephants — terror weapons of Tamerlane's campaigns.
+# In EU4 represented as slow but devastating shock infantry that crushes lines.
+vu_merc_timurid_war_elephants = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 1.0
+	home_province = 454		# Samarkand
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		OR = {
+			tag = TIM
+			AND = {
+				capital_scope = { region = hindusthan_region }
+				religion_group = muslim
+			}
+		}
+	}
+	modifier = {
+		land_morale = 0.10
+		shock_damage = 0.10
+		shock_damage_received = 0.05	# Elephants are hard to maneuver defensively
+	}
+}

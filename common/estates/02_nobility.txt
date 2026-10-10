@@ -1,8 +1,12 @@
+#Updated to v1.37 - SF
 estate_nobles = {
 	icon = 2
 
 	# If true, country will get estate
 	trigger = {
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = veche_republic }
+		#NOT = { has_reform = trading_city }
 		NOT = { has_government_attribute = disables_estate_nobles }
 		NOT = { has_disabled_estate = { estate = estate_nobles } }
 		OR = {
@@ -12,22 +16,34 @@ estate_nobles = {
 			AND = {
 				NOT = { has_government_attribute = is_pirate_republic_reform }
 				NOT = { government = native }
+				NOT = { has_reform = trading_city }
 				NOT = { has_reform = siberian_tribe }
 				NOT = { is_revolutionary_republic_trigger = yes }
 				NOT = { has_reform = revolutionary_empire_reform }
+				NOT = { has_reform = peasants_republic }
+				NOT = { has_reform = kongsi_federation }
+				NOT = { has_reform = continental_congress }
+				NOT = { has_reform = US_constitutional_republic }
+				NOT = { has_reform = irish_republic }
 				is_nomad = no
 				is_colonial_nation = no
 				if = {
 					limit = {
 						NOT = { religion_group = muslim }
 						NOT = { religion = sikhism }
-						uses_karma = no
+						NOT = { religion = buddhism }
+						NOT = { religion = vajrayana }
+						NOT = { religion = mahayana }
 					}
 					NOT = { has_estate = estate_maratha }
 					NOT = { has_estate = estate_rajput }
 				}
 			}
 		}
+		#OR = {
+		#	NOT = { has_reform = celestial_empire }
+		#	has_dlc = "Mandate of Heaven"
+		#}
 	}
 
 	country_modifier_happy = {
@@ -35,17 +51,10 @@ estate_nobles = {
 		land_maintenance_modifier = -0.1
 		monthly_support_heir_gain = 0.1
 		rr_royalists_influence = 0.2
-		# TLW [[[
-		faction_byzlatin_influence = 0.2
-		# ]]]
-		monthly_commonwealth_popular_sovereignity = 0.03
 	}
 	country_modifier_neutral = {
 		manpower_recovery_speed = 0.2 
 		rr_royalists_influence = 0.1
-		# TLW [[[
-		faction_byzlatin_influence = 0.1
-		# ]]]
 	}	
 	country_modifier_angry = {
 		manpower_recovery_speed = -0.1
@@ -53,10 +62,6 @@ estate_nobles = {
 		monthly_support_heir_gain = -0.2
 		global_unrest = 2
 		rr_royalists_influence = -0.1
-		# TLW [[[
-		faction_byzlatin_influence = -0.1
-		# ]]]
-		monthly_commonwealth_popular_sovereignity = -0.03
 	}
 	land_ownership_modifier = {
 		nobles_loyalty_modifier = 0.2
@@ -88,9 +93,26 @@ estate_nobles = {
 	influence_modifier = {
 		desc = EST_VAL_EASTERN_TECH
 		trigger = {
-			technology_group = eastern
+			OR = {
+				technology_group = eastern
+			    technology_group = bohemian_tech_group #VU addition by SF
+			    technology_group = byzantine_tech_group #VU addition by SF
+			    technology_group = hungarian_tech_group #VU addition by SF
+			    technology_group = polish_tech_group #VU addition by SF
+			    technology_group = russian_tech_group #VU addition by SF
+				technology_group = bulgarian_tech_group #VU addition by SF
+			}
 		}	
 		influence = 5
+	}
+	
+	# Influence modifiers from Events:
+	influence_modifier = {
+		desc = EST_HUN_MAGNATES
+		trigger = {
+			has_ruler_modifier = hun_power_to_magnates
+		}
+		influence = 10
 	}
 	influence_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
@@ -195,51 +217,35 @@ estate_nobles = {
 	
 	#Alternative naming of estates
 	custom_name = {
-		desc = estate_aateliset
+		desc = estate_mamluks
 		trigger = {
-			OR = {
-				tag = FIN
-				was_tag = FIN
-			}
+			tag = MAM
 		}
 	}
 	custom_name = {
-		desc = estate_dvoryanstvo
+		desc = estate_imperial_nobility
 		trigger = {
-			culture_group = east_slavic
-			NOT = { primary_culture = Litvin }
+			has_reform = revolutionary_empire_reform
 		}
 	}
 	custom_name = {
-		desc = estate_wuzurgan
+		desc = estate_oyo_mesi
 		trigger = {
-			OR = {
-				ab_is_persia_trigger = yes
-				has_reform = persianprince
-				has_reform = persianprincet
-			}
+			tag = OYO
 		}
 	}
-	# TLW [[[
 	custom_name = {
 		desc = estate_eugeneis
 		trigger = {
-			OR = {
-				primary_culture = greek
-				primary_culture = sclavinian
-				primary_culture = greco_roman
-				culture_group = hellenic_g
-			}
+			tag = BYZ
+			culture_group = byzantine
 		}
 	}
-	# ]]]
 	custom_name = {
-		desc = estate_sweden_adel
+		desc = estate_nakomse
 		trigger = {
-			OR = {
-				tag = SWE
-				was_tag = SWE
-			}
+			primary_culture = mossi
+			religion = shamanism
 		}
 	}
 	custom_name = {
@@ -251,49 +257,85 @@ estate_nobles = {
 	custom_name = {
 		desc = estate_beys
 		trigger = {
-			technology_group = ottoman
+			OR = {
+				technology_group = ottoman
+				technology_group = persian_tech_group #VU addition by SF
+			}
 		}
 	}
+	#VU-specific:
+	custom_name = {
+		desc = estate_marchers
+		trigger = {
+			OR = {
+				has_reform = english_monarchy
+				has_reform = british_monarchy 
+				has_reform = scottish_monarchy
+			}
+		}
+	}
+	#End of VU-specific
 	custom_name = {
 		desc = estate_boyars
 		trigger = {
 			OR = {
 				culture_group = east_slavic
 				primary_culture = bulgarian
+				primary_culture = romanian
+				culture_group = slavic
 			}
+			NOT = { primary_culture = polish_new }
 		}
 	}
 	custom_name = {
 		desc = estate_szlachta
 		trigger = {
-			primary_culture = polish
-		}
-	}
-	# AB [[[
-	custom_name = {
-		desc = estate_bajorija
-		trigger = {
 			OR = {
-				tag = LIT
-				was_tag = LIT
-				tag = PRR
-				was_tag = PRR
+				primary_culture = polish
+				primary_culture = polish_new
+				primary_culture = lithuanian
 			}
 		}
 	}
-	# ]]]
+	custom_name = {
+		desc = estate_timawa
+		trigger = {
+			tag = MAS
+		}
+	}
+	custom_name = {
+		desc = estate_nayaks
+		trigger = {
+			tag = VIJ
+		}
+	}
+	custom_name = {
+		desc = estate_samantas
+		trigger = {
+			tag = ORI
+		}
+	}
 	custom_name = {
 		desc = estate_kshatriyas
 		trigger = {
-			religion = hinduism
+			OR = { 
+				religion = hinduism
+				religion = surya_majapahit
+			}
 		}
 	}
 	custom_name = {
 		desc = estate_qinwang
 		trigger = {
+			has_reform = celestial_empire
+		}
+	}
+	custom_name = {
+		desc = estate_mansabdars
+		trigger = {
 			OR = {
-				has_reform = MIN_celestial_empire
-				has_reform = celestial_empire
+				tag = MUG
+				has_government_attribute = enable_mansabdar_privileges
 			}
 		}
 	}
@@ -316,10 +358,27 @@ estate_nobles = {
 		}
 	}
 	custom_name = {
+		desc = estate_andriana
+		trigger = {
+			tag = MIR
+		}
+	}
+	custom_name = {
 		desc = estate_amirs
 		trigger = {
 			religion_group = muslim
-			NOT = { technology_group = ottoman } #Should possibly be more restricted
+			NOT = { 
+				OR = {
+		    		technology_group = ottoman
+		    		technology_group = persian_tech_group
+		    	}
+		    }
+		}
+	}
+	custom_name = {
+		desc = estate_planters
+		trigger = {
+			tag = USA
 		}
 	}
 	custom_name = {
@@ -339,11 +398,53 @@ estate_nobles = {
 		desc = estate_junkers
 		trigger = {
 			OR = {
-				tag = PRU
-				was_tag = PRU
-				tag = LVI
-				was_tag = LVI
+				has_reform = prussian_republic_reform
+				has_reform = prussian_monarchy_base
+				has_reform = prussian_monarchy
+				AND = {
+					primary_culture = prussian 
+					tag = GER
+				}
 			}
+		}
+	}
+	custom_name = {
+		desc = estate_alii
+		trigger = {
+			OR = {
+				capital_scope = {
+					area = northern_polynesia_area
+				}
+				tag = SAM
+			}
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_rangatira
+		trigger = {
+			primary_culture = maori
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_eiki
+		trigger = {
+			tag = TOG
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_ratu
+		trigger = {
+			OR = {
+				tag = LAI
+				tag = VIL
+				tag = VNL
+			}
+			religion = animism
 		}
 	}
 	custom_name = {
@@ -356,50 +457,13 @@ estate_nobles = {
 			}
 		}
 	}
-	# TLW [[[
 	custom_name = {
-		desc = estate_patricians
+		desc = estate_mani
 		trigger = {
-			culture_group = roman_g
-			NOT = { primary_culture = greco_roman }
+			tag = KON
 		}
 	}
-	custom_name = {
-		desc = estate_nubl
-		trigger = {
-			OR = {
-				culture_group = punic_g
-				culture_group = muskogean
-			}
-		}
-	}
-	custom_name = {
-		desc = estate_batticy
-		trigger = {
-			OR = {
-				culture_group = eastern_algonquian
-				culture_group = central_algonquian
-				culture_group = siouan
-				culture_group = iroquoian
-			}
-		}
-	}
-	custom_name = {
-		desc = estate_sighna
-		trigger = {
-			culture_group = eskaleut
-		}
-	}
-	# ]]]
-	# ABMP [[[
-	custom_name = {
-		desc = estate_boierimea
-		trigger = {
-			culture_group = romanian_culture_group
-		}
-	}
-	# ]]]
-
+	
 	color = { 200 0 50 }
 	
 	privileges = {
@@ -415,10 +479,13 @@ estate_nobles = {
 		estate_nobles_strong_duchies
 		estate_nobles_golden_liberty
 		estate_nobles_veto_heir_apparent
+		estate_nobles_nieszawa_privileges
+		estate_nobles_pacta_conventa
 		estate_nobles_monopoly_of_metals
 		estate_nobles_monopoly_of_livestock
 		estate_nobles_monopoly_of_gems
 		estate_nobles_statutory_rights
+		estate_noble_hajduk #VU addition
 		estate_nobles_command_of_the_military
 		estate_nobles_better_integration
 		estate_nobles_cawa_peace_keepers
@@ -428,13 +495,32 @@ estate_nobles = {
 		estate_nobles_tribe_unification
 		estate_nobles_tribe_centralization
 		estate_nobles_grant_power_to_the_bashorun
+		estate_nobles_danish_nobility
+		estate_nobles_nobles_instead_of_royal_court
+		estate_nobles_leidang_conscription
+		estate_nobles_carolean_march
+		estate_nobles_carolean_charge
+		estate_nobles_religious_conscription
+		estate_nobles_leidang_mass_conscription
+		estate_nobles_leidang_elite_conscription
+		estate_nobles_sponsor_hussars
 		estate_nobles_mansabdari_cav_maintenance
 		estate_nobles_mansabdari_military_service
 		estate_nobles_mansabdari_royal_rule
+		estate_nobles_mestnichestvo
+		estate_nobles_early_serfdom
+		estate_nobles_legalized_serfdom
+		estate_nobles_total_serfdom
+		estate_nobles_restricted_serfdom
+		estate_nobles_devastating_serfdom
+		estate_nobles_increased_peasant_freedom
+		estate_nobles_peasant_liberation
 		estate_nobles_rynda
 		estate_nobles_landed_army
 		estate_nobles_factionalist_nobility
 		estate_nobles_consolidated_noble_contracts
+		estate_nobles_english_villeinage
+		estate_nobles_english_copyhold_tenure
 		estate_nobles_development_of_castles
 		estate_nobles_statesman_servitude
 		estate_nobles_royal_court_tasks
@@ -443,6 +529,8 @@ estate_nobles = {
 		estate_nobles_noble_officer_right
 		estate_nobles_expedition_rights
 		estate_nobles_highland_fortifications
+		estate_nobles_emirs_of_baghdad
+		estate_nobles_deteriorating_army
 		estate_nobles_defensive_policy
 		estate_nobles_tofangchi_regiment
 		estate_nobles_tupchi_artillery_corps
@@ -450,33 +538,78 @@ estate_nobles = {
 		estate_nobles_mamlukian_administration
 		estate_nobles_enlist_the_mamluks
 		estate_nobles_vegvar_system
+		estate_nobles_ITA_military_governors
+		estate_nobles_GER_diploma_andreanum
 		estate_nobles_orangist_privileges
+		estate_nobles_MAY_arm_nobles_with_obsidian_blades
 		estate_nobles_MAY_spread_dynastic_influence
 		estate_nobles_AZT_triple_alliance
-		# AB [[[
+		estate_nobles_AZT_warrior_culture
+		estate_nobles_reformatio_sigismundi
+		estate_nobles_basqaq_autonomy
+		estate_nobles_habsburg_disunity
+		estate_nobles_hab_habsburg_connections
+		estate_nobles_imperial_war_leader
+		estate_nobles_melting_pot_of_cultures
+		estate_nobles_hab_von_raab_restructions
+		estate_nobles_TIM_soyurghal_grants
+		estate_nobles_TIM_chagatai_warriors
+		estate_nobles_TIM_appease_the_elites
+		estate_nobles_MUG_development_of_the_subah
+		estate_nobles_four_class_system
+		estate_nobles_hungarian_nobility_privileges
+		estate_nobles_austrian_nobility_privileges 
+		#VU-specific privileges
+		estate_nobles_order_of_dragon
+		estate_nobles_very_strong_duchies
+		estate_nobles_extremely_strong_duchies
+		estate_nobles_british_strong_marches
+		#End of VU-specific privileges
+		#GE
+		estate_nobles_diplomatic_privilege
+		estate_nobles_magnate_law_privilege
+		estate_nobles_timariot_privilege
+		estate_nobles_noble_officer_privilege
+		estate_nobles_grand_captain_privilege
+		estate_nobles_call_cortez
+		estate_nobles_call_privy_council
+		estate_nobles_white_knights
+		estate_noble_land_privileges
+		estate_nobles_kreditwerk_appointment
+		estate_nobles_blood_tax
+		estate_nobles_establish_serfdom
+		estate_nobles_berber_guides
+		estate_nobles_elite_guards
+		#ME
+		estate_nobles_anatolian_theme
+		#HRE
+		estate_nobles_imperial_court
+		estate_nobles_imperial_marshall
+		#PE
+		estate_noble_baron_pensions
+		estate_noble_baron_courts
+		estate_noble_baron_courtier
+		estate_noble_baron_squires
+		estate_noble_baron_titles
+		estate_noble_absolute_taxation
+		#ME Privileges:
+		estate_nobles_recruit_grenzens
+		estate_nobles_conscription_law
+		ME_estate_nobles_theme_system
 		estate_nobles_hindu_integration
 		estate_nobles_ghurid_hindu_integration
 		AB_estate_nobles_command_of_the_military_improved
 		estate_nobles_balkan_client
 		estate_nobles_tataria_slavicization
-		estate_nobles_nomadic_warriors
 		estate_nobles_frankish_unity
 		estate_nobles_germano_italic_unity
 		estate_nobles_integrate_rus
-		# ]]]
-		# TLW [[[
-		estate_nobles_theme_system
 		estate_nobles_punic_pacifist_civilization
 		estate_nobles_punic_administration
-		# ]]]
-		# ABMP [[[
 		estate_nobles_dominance_of_the_boierime
 		estate_nobles_integrate_german_nobility
-		# ]]]
-		# ABA [[[
 		ABA_estate_nobles_POL_serdom_enforced
 		ABA_estate_nobles_POL_serdom_abolished
-		# ]]]
 	}
 
 	agendas = {
@@ -517,4 +650,56 @@ estate_nobles = {
 	}
 	
 	influence_from_dev_modifier = 1.0
+	custom_name = {
+		desc = estate_wuzurgan
+		trigger = {
+			OR = {
+				ab_is_persia_trigger = yes
+				has_reform = persianprince
+				has_reform = persianprincet
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_eugeneis
+		trigger = {
+			OR = {
+				primary_culture = greek
+				primary_culture = sclavinian
+				primary_culture = greco_roman
+				culture_group = hellenic_g
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_qinwang
+		trigger = {
+			OR = {
+				has_reform = MIN_celestial_empire
+				has_reform = celestial_empire
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_patricians
+		trigger = {
+			culture_group = roman_g
+			NOT = { primary_culture = greco_roman }
+		}
+	}
+	custom_name = {
+		desc = estate_nubl
+		trigger = {
+			OR = {
+				culture_group = punic_g
+				culture_group = muskogean
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_boierimea
+		trigger = {
+			culture_group = romanian_culture_group
+		}
+	}
 }

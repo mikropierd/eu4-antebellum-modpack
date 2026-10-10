@@ -1,0 +1,1128 @@
+
+101 = "Genuos"
+102 = { "Nikaia" "Nikaia" }
+103 = { "Taurasia" "Taurasia" } #Turin
+104 = { "Medhelanon" "Medhelanon" } #Milan
+105 = { "Parmnos" "Parmnos" } #Parma
+106 = { "Mutina" "Mutina" } #Modena
+107 = { "Brixia" "Brixia" } #Brescia
+108 = "Verona"
+109 = "Mantuum"
+110 = { "Tridentum" "Tridentum" } #Trentino
+111 = { "Aquliea" "Aquliea" }
+112 = { "Enetia" "Enetia" }
+113 = { "Feraria" "Feraria" } #Ferrara
+114 = "Ravena"
+115 = "Pisna"
+116 = "Florentia"
+117 = "Senio" #Siena
+118 = { "Rhoma" "Roma" } #Rome
+119 = "Ankona" #Ancona
+120 = { "Abruzion" "Amiternis" }
+121 = { "Parthenope" "Parthenope" } #Napoli
+122 = { "Taras" "Taras" }
+123 = { "Rhegion" "Rhegion" }
+124 = { "Messana" "Messana" }
+125 = { "Panhormus" "Panhormus" }
+126 = { "Malet" "Malet" }
+127 = { "Olbia" "Olbia" }
+129 = { "Carnium" "Libianos" }
+130 = "Istria"
+131 = "Segesticia"
+132 = { "Noreia" "Noreia" } #Steiermark
+134 = { "Vidobona" "Vidobona" } #Wien
+135 = "Carnuntos"
+136 = "Salona"
+137 = { "Ragusium" "Ragusium" }
+138 = { "Dioklea" "Doclea" }
+139 = "Diluntia"
+140 = { "Marsonia" "Marsonia" }
+141 = "Ivois Pagos"
+142 = "Corfu"
+143 = { "Byllis" "Byllis" }
+144 = { "Actia-Nicopolis" "Ioannia" }
+145 = { "Laconia" "Lacedaemon" }
+146 = "Athens"
+147 = { "Thessaly" "Larissa" }
+148 = { "Thessaloniki" "Thessaloniki" }
+149 = { "Adrianople" "Adrianopolis" }
+150 = { "Nicopolis" "Nicopolis" }
+152 = { "Andautonia" "Sala" }
+153 = { "Exoterikion Aquincios" "Pestopol" }
+159 = { "Silistria" "Drastar" }
+160 = "Sucidava"
+161 = "Tregovion"
+163 = "Heraklion"
+164 = "Naxos"
+167 = { "Rotomagus" "Rotomagus" } #Rouen
+168 = { "Catumagos" "Catumagos" } #Caen
+169 = "Curiosolitea"
+170 = { "Gesocribata" "Gesocribata" } #Brest
+171 = { "Dariorigum" "Dariorigum" }
+172 = { "Nantes" "Portus Nannetum" } #Nantes
+173 = { "Lapurdos" "Lapurdos" }
+174 = { "Burdigala" "Burdigala" } #Bordeaux
+175 = { "Armagnos" "Elimberrum" }
+176 = { "Iluro" "Iluro" }
+177 = { "Cenomanios" "Vindinium" } #Le Mans
+178 = { "Juliomagus" "Juliomagus" }
+179 = { "Avariko" "Avaricum" } #Bourges
+180 = { "Pictavis" "Pictavis" } #Poitiers
+181 = { "Rethelia" "Rethel" }
+182 = { "Suessionia" "Noviodunum" } #Valois
+183 = { "Lutetia" "Lutetia" } #Paris
+184 = { "Cenabum" "Aurelianorum" } #Orleans
+185 = { "Gatinaia" "Nemora" } #Nemours
+186 = { "Durocortorum" "Durocortorum" } #Remis
+190 = { "Moulinos" "Nea Augostonemetum" }
+191 = { "Aeudia Noviodunum" "Noviodunum" }
+192 = { "Mandubia" "Divio" } #Dijon
+193 = { "Visontio" "Visontio" } #Besancon
+194 = { "Biolindum" "Diolindum" }
+195 = { "Augustoritum" "Augustoritum" } #Limoges
+196 = { "Tolosa" "Tolosa" } #Toulouse
+197 = { "Ruscino Voreios" "Nea Rosselithya" }
+198 = { "Rutenia" "Segodunum" }
+199 = { "Nemossos" "Nemossos" } #Clermont
+200 = { "Magalona" "Magalona" } #Montpellier
+201 = { "Massalia" "Massalia" } #Marsille
+202 = { "Tricastinorum" "Tricastinorum" } #Avignon
+203 = { "Lugdunum" "Lugdunum" } #Lyon
+204 = { "Cularos" "Cularos" }
+205 = { "Sapaudia" "Sapaudia" } #Savoy
+206 = { "Artabria" "Trigundum" }
+207 = { "Lungonesia" "Ovideios" }
+208 = { "Leonidasiopolis" "Leonidasiopolis" } #Leon
+209 = { "Karistia Thalassios" "Vesperies" } #Vizcaya
+210 = { "Pompaelon" "Pompaelon" } #Navarra
+211 = { "Celsa" "Celsa" }
+212 = { "Turissa" "Emporion" }
+213 = { "Baetulo" "Baetulo" } #Barcelona
+214 = { "Auci" "Zargozion" } #Zaragoza
+215 = { "Septimanca" "Septimanca" }
+216 = { "Salamantica" "Salamantica" } #Salamanca
+217 = { "Hispaniopolis" "Hispaniopolis" } #Madrid
+218 = "Baeturia Occidentalis"
+219 = { "Toletum" "Toletum" } #Toledo
+220 = "Valentia" #Valencia
+221 = "Ilorci" #Murcia
+222 = { "Almeria" "Portus Magnus" } #Almeria
+223 = { "Voreios Baetica" "Nea Osca" }
+224 = { "Hispalis" "Hispalis" } #Seville
+225 = { "Corduba" "Corduba" } #Cordoba
+226 = { "Herakleiai Stelai" "Gibraltar" } #Pillars of Hercules
+227 = { "Olisipo" "Olisipo" } #Lisbona
+228 = { "Turdulios" "Mundapol" }
+229 = { "Augustia" "Augustia" } #Beja
+230 = { "Lacobriga" "Portus Hannibalis" }
+231 = { "Portus Cale" "Portus Cale" } #Porto
+232 = { "Barganzos" "Veniatia" }
+268 = "Upper Pyretus"
+282 = { "Niconium" "Boristhenis" }
+283 = "Borysthenian Scythia"
+284 = { "Bosporia" "Taphros" }
+285 = { "Theodosia" "Caffa" }
+286 = { "Tanais" "Tanais" }
+287 = "Dandarioi"
+316 = { "Optimatoi" "Nikomedia" }
+317 = { "Opsikion" "Prussa" }
+318 = { "Smyrna" "Smyrna" }
+319 = { "Caria" "Mogalla" }
+320 = "Rhodes"
+321 = "Limassol"
+322 = { "Dorylaion" "Dorylaion" }
+323 = { "Iconium" "Iconium" }
+324 = { "Laranda" "Laranda" }
+325 = { "Inopolis" "Timonion" }
+326 = { "Ancyra" "Ancyra" }
+327 = "Adana"
+328 = { "Sinope" "Sinope" }
+329 = { "Sebastea" "Sebastea" }
+330 = "Trebizond"
+331 = { "Theodesiopolis" "Theodesiopolis" } #Erzurum
+332 = { "Lykandos" "Arabissos" }
+333 = { "Polenttia" "Palmaria Palmensis" }
+334 = { "Tingis" "Tingis" } #Tangiers
+335 = { "Rusaddir" "Rusaddir" }
+336 = { "Pomaria" "Pomaria" }
+337 = { "Portus Magnus" "Portus Magnus" } #Oran
+338 = { "Icosium" "Icosium" } #Algiers
+339 = { "Saldae" "Saldae" }
+340 = { "Constantina" "Constantine" }
+341 = { "Karchedon" "Karchedon" }
+342 = { "Sala" "Sala" }
+343 = { "Tocolosida" "Tocolosida" } #Fez
+344 = { "Asarna Superior" "Marrachios" } #Marrakech
+345 = { "Autololia Maritimae" "Safyon" } #Safi
+347 = { "Pharusia" "Pharusia" }
+348 = { "Rutubis" "Rutubis" }
+349 = "Calchorychoum Dese"
+350 = { "Dimmidi" "Castellum Dimmidi" }
+351 = "Thabudeos"
+352 = { "Capsa" "Justiniania" }
+353 = "Gigthis"
+354 = "Oea"
+355 = { "Syrtion" "Digidida Selorum" }
+356 = { "Cyrene" "Euseperides" }
+357 = { "Darnis" "Darnis" }
+358 = { "Aleksandreia" "Alexandria" }
+359 = { "Crocodilopolis" "Crocodilopolis" }
+360 = { "Kaine" "Koptos" }
+361 = { "Heliopolis" "Heliopolis" } #Cairo
+362 = { "Buto" "Pachnemunis" }
+363 = { "Tamiathis" "Tamiathis" }
+364 = { "Rinocolura" "Rinocolura" }
+366 = { "Junonia" "Junonia" }
+367 = { "Azourion" "Portus Delgadia" } #Azoures
+368 = { "Erythia" "Erythia" }
+377 = { "Beroea" "Beroea" } #Aleppo
+378 = { "Tripolis" "Tripolis" }
+379 = { "Hierosolyma" "Hierosolyma" } #Jerusalem
+380 = { "Areopolis" "Areopolis" } #Kerak
+381 = { "Bostra" "Bostra" }
+382 = { "Damaskos" "Damascus" }
+394 = { "Thar" "Bilbana" }
+395 = { "Cadara" "Cadara" } #Qatar
+396 = "Tylos"
+397 = { "Ichtyophagorum" "Anarithaeos Orientalis" }
+398 = "Ommania"
+399 = { "Sophar" "Sophar" }
+400 = "Kriptos Limen" #Muscat
+405 = { "Palmyra" "Palmyra" }
+406 = { "Aeiopolis" "Aeiopolis" }
+407 = { "Kallinikos" "Nikephorion" }
+408 = { "Euphrati Ostia" "Basrah" } #Basra
+409 = { "Arabia Scenitia" "Alexandreia Pallakotas" } #Karbala
+410 = { "Bagdata" "Sippar" } #Baghdad
+411 = { "Ninos" "Ninos" } #Mosul
+412 = { "Sousa" "Sousa" } #Ahvaz
+415 = { "Arrapha" "Arrapha" }
+417 = { "Parachoatras" "Salos" }
+418 = { "Amida" "Amida" }
+419 = { "Erebuni" "Erebuni" } #Yerevan
+420 = { "Cambysenos" "Sarypoli" }
+421 = { "Albania Inferior" "Kaspiania" }
+422 = { "Kotais" "Kotais" }
+423 = { "Iberia Occidentalis" "Tiflis" }
+424 = { "Ardabil" "Spandarion" }
+426 = { "Orotan" "Orotan" }
+430 = { "Arakia" "Amarak" }
+431 = { "Hamozeia" "Hamozeia" }
+450 = { "Bactra" "Zariaspa" }
+462 = { "Archaiopolis" "Phasis" }
+463 = "Siracia"
+468 = "North Siracia"
+1099 = { "Dioskouridou" "Sokotrios" } #Socotra
+1110 = "Gytta"
+1111 = { "Slathina Occidentalis" "Arguinion" }
+1220 = "Boron"
+1127 = { "Montes Tautricium" }
+1228 = { "Zamnes" "Satachtha" }
+1231 = { "Syene" "Syene" }
+1233 = { "Megale" "Tchonemyris" }
+1234 = { "Magassa" "Magassa" }
+1247 = { "Saone" "Saone" }
+1745 = { "Cantabria" "Portus Victoriae" }
+1746 = { "Burgesios" "Deobrigula" }
+1747 = { "Castra Caecilia" "Castra Caecilia" }
+1748 = { "Aurgi" "Aurgi" }
+1749 = { "Gades" "Portus Gaditanus" } #Cadiz
+1750 = { "Akra Leuke" "Alikantia" }
+1751 = { "Septem" "Ad Septem Fratres" } #Ceuta
+1756 = { "Harpis" "Aliobrix" }
+1764 = { "Mesembria" "Mesembria" }
+1765 = { "Serdica" "Serdica" }
+1766 = { "Ulpiana" "Ulpiana" }
+1767 = { "Mursa" "Mursa" }
+1769 = "Molyvdopolis" #Lead-town
+1773 = { "Elis" "Pyrgos" }
+1774 = "Trevision"
+1826 = { "Aenona" "Aenona" }
+1828 = "Splonia"
+1831 = "Andreva"
+1846 = { "Kotyora" "Polemonion" }
+1848 = { "Afyon" "Arkonion" }
+1849 = { "Emesos" "Emesa" }
+1851 = { "Conimbriga" "Conimbriga" }
+1853 = "Kastoria"
+1854 = "Jaffa"
+1855 = { "Ptolemais" "Ptolemais" }
+1856 = { "Dioscurias" "Dioscurias" }
+1862 = { "Kermonia" "Kermonia" }
+1863 = { "Poidikon" "Poidikon" }
+1864 = { "Tricciana" "Limusion" }
+1875 = { "Kouni" "Kouni" }
+1877 = { "Karolepia" "Vorogium" }
+1879 = { "Suindinum" "Alenga" } #Alencon
+1882 = { "Hippo Regius" "Hippo Regius" }
+1933 = { "Barion" "Barion" }
+1934 = { "Grumention" "Blanda" }
+1974 = "Lower Scythia"
+2195 = { "Nesis" "Nesis" }
+2196 = { "Asparos" "Bathys" }
+2202 = { "Melikates" "Amaras" }
+2203 = { "Iberia Orientalis" "Argavispiros" }
+2204 = { "Karuts" "Ani" }
+2205 = { "Naxouana" "Naxouanos" }
+2214 = { "Hyrcania" "Hyrkanis" }
+2217 = { "Hidali" "Hidali" }
+2218 = { "Persepolis" "Persepolis" }
+2219 = { "Sirathos" "Sirathos" }
+2223 = { "Utia" "Karniyos" }
+2227 = { "Drapsaka" "Drapsaka" }
+2244 = { "Kerne" "Kerne" }
+2296 = { "Abydos" "Abydos" }
+2297 = { "Magnesia" "Sardeis" }
+2298 = { "Attaleia" "Perge" }
+2299 = { "Amastris" "Amastris" }
+2300 = { "Zara" "Zara" }
+2301 = { "Caesarea" "Caesarea" }
+2302 = { "Pamphylia Anatolikos" "Adrasos" }
+2303 = { "Melitene" "Melitene" }
+2304 = { "Amisos" "Amisos" }
+2305 = { "Kamacha" "Kamacha" }
+2306 = { "Taron" "Mush" }
+2307 = { "Thospites" "Tushpa" } #Thospites is old name for lake Van
+2308 = "Edessa"
+2309 = { "Siggara" "Siggara" }
+2310 = "Assur"
+2311 = { "Charmandion" "Charmandion" } #Samawat
+2312 = { "Satrapene" "Apameia" } #Wasit
+2313 = { "Antiocheia" "Antiokia" }
+2314 = { "Circesium" "Circesium" }
+2315 = { "Clysma" "Heroopolis" } #Suez
+2316 = { "Sebennytus" "Sebennytus" }
+2317 = { "Phylace Thebaica" "Kesi" }
+2318 = { "Parva" "Poca" }
+2319 = { "Lytkopolis" "Lycopolis" }
+2320 = { "Drepanum" "Drepanum" }
+2321 = { "Porphyrites Mons" "Myoshormos" }
+2322 = "Tama"
+2323 = "Umm Karejat"
+2325 = { "Pinigeus" "Pinigeus" }
+2326 = { "Petra Megale" "Kathabathmos" }
+2327 = { "Magna" "Magna" }
+2333 = { "Anarithaeos" "Tharo" }
+2340 = { "Coromanis" "Coromanis" }
+2348 = "Chios"
+2343 = "Adrramyta"
+2347 = "Marithim"
+2405 = "Porata"
+2406 = "Georgi"
+2410 = { "Theodoro" "Cherson" }
+2412 = "Limnaioi"
+2414 = "Thateis"
+2447 = { "Tamatarha" "Hermonassa" }
+2448 = { "Sabae" "Sabae" }
+2449 = "Macaeum"
+2450 = "Cidamus"
+2451 = { "Thubactis" "Thubactis" }
+2452 = { "Sabratha" "Pisida" }
+2453 = { "Thaenae" "Taparura" }
+2454 = { "Thysdrus" "Thysdrus" }
+2455 = { "Hippo Diarrhytus" "Hippo Diarrhytus" }
+2456 = "Tucrumunda"
+2457 = "Mzabbis"
+2458 = { "Hodna" "Zabi Iustiniana" }
+2459 = { "Rapidum" "Rapidum" }
+2461 = { "Kartenna" "Kartenna" }
+2462 = { "Tigava Municiptum" "Tigava Municiptum" }
+2463 = "Geraphia Occidentali"
+2465 = "Lemnis"
+2466 = { "Daras Inferior" "Atlas Masathoum" }
+2467 = { "Volubilis" "Volubilis" } #Meknes
+2468 = "Phocra"
+2469 = "Portus Balusibis"
+2470 = { "Mogador" "Essauoria" }
+2472 = "Ourgylion"
+2473 = { "Hadrumentum" "Hadrumentum" }
+2474 = { "Gramantum" "Grama Metropolis" }
+2746 = { "Ratiaria" "Bononia" }
+2750 = { "Philippopolis" "Philippopolis" }
+2751 = { "Edetania" "Valeria" }
+2753 = { "Ruscino" "Ruscino" } #Narbonnais
+2754 = { "Oretania Notios" "Oretum Germanorum" }
+2755 = { "Pelendonia" "Numantia" } #Soria
+2797 = { "Meroe" "Meroe" }
+2954 = "Meninx"
+2976 = { "Perusna" "Perusna" } #Perugia
+2977 = { "Urbinon" "Sentinum" }
+2978 = { "Arretios" "Arretios" } #Azzero
+2979 = { "Plumbia" "Novariopoli" }
+2980 = { "Luca" "Lucania" } #Lucca
+2981 = { "Vouna Ferato" "Moferatkia" }
+2982 = { "Syracousai" "Syracousai" }
+2983 = { "Salerno" "Irna" }
+2984 = { "Pandosia" "Sybaris" }
+2985 = { "Luceria" "Sypious" }
+2986 = { "Caralis" "Caralis" }
+2987 = { "Urgion" "Urgion" }
+2988 = { "Tarraco" "Tarraco" }
+2989 = { "Beroneia" "Vereia" } #Roja
+2990 = { "Lassira" "Lassira" }
+2991 = "Alaebacios Vereios"
+2992 = "Albingaunum"
+2998 = "Buzalis"
+2999 = { "Organa" "Organa" }
+3000 = { "Naissos" "Naissos" }
+3001 = { "Skoupoi" "Scupi" }
+3002 = { "Bersellios" "Bersellios" }
+3003 = { "Euboea" "Euripos" }
+3039 = { "Alifae" "Volturnum" } #Capua
+3040 = "Pupluna" #Piombino
+3042 = "Massania"
+3043 = { "Sanduma" "Primis" }
+3045 = { "Aeosthos" "Sedunum" }
+3046 = { "Albinnum" "Lemnicum" }
+3048 = "Tirelio Notios"
+3050 = { "Magna Savaria" "Marpolion" }
+3051 = "Dytiki Carnuntia"
+3054 = { "Lugitha" "Tarvesedon" }
+3068 = { "Vorganium" "Vorganium" }
+3070 = { "Alaudanum" "Alaudanum" } #Laon
+3071 = { "Catalaunia" "Chalon" }
+3073 = { "Eburovicia" "Mediolanum Aurecorum" }
+3075 = { "Castrodunum" "Castrodunum" }
+3077 = { "Rauranum" "Rauranum" }
+3081 = { "Aginnum" "Aginnum" }
+3083 = { "Tarbellia" "Tarbellica" }
+3085 = { "Rhodanousia" "Rhodanousia" }
+3087 = "Meroliacum"
+3089 = { "Valentia" "Valentia" }
+3091 = "Matisco"
+3092 = "Vesulium"
+3095 = "Bilbilis"
+3099 = { "Emerita Augusta" "Emerita Augusta" } #Merida
+3104 = { "Baracara Augusta" "Baracara Augusta" }
+3108 = { "Promunturium Barbarium" "Equabona" }
+3110 = { "Andios" "Andium Insulae" } #Channel Islands
+3151 = { "Zala" "Egersos" }
+3157 = "Zargidavion"
+3159 = "Tyrragetaia"
+3160 = { "Teiason" "Teiason" }
+3164 = "Konstantia"
+3165 = { "Odessos" "Odessos" }
+3167 = { "Pirin" "Nevrokopi" }
+3168 = "Marsa"
+3169 = { "Beroea" "Beroea" }
+3170 = { "Arcadiopolis" "Arcadiopolis" }
+3174 = "Trikala"
+3175 = { "Aetolia" "Messolonghi" }
+3177 = { "Attica" "Thebes" }
+3178 = { "Achaea" "Patrae" }
+3179 = { "Argos" "Argolis" }
+3180 = "Chania"
+3181 = { "Aulon" "Aulon" }
+3182 = "Scodra"
+3183 = "Bitola"
+3185 = { "Dasminion" "Praes Dasmini" }
+3187 = "Macvos"
+3190 = "Stravianois"
+3193 = "Baloia"
+3194 = { "Saldis" "Saldis" }
+3196 = { "Epidotia" "Epidotia" }
+3244 = { "Kimmerikon" "Kimmerikon" }
+3245 = { "Panticapaeum" "Panticapaeum" }
+3248 = { "Rhizaeum" "Rhizus" }
+3250 = { "Zydria" "Moschios" }
+3251 = { "Tsunda" "Acinasis" }
+3253 = { "Kainepolis" "Parisos" }
+3254 = { "Syracene" "Didymos" }
+3256 = { "Syiunion" "Saganmos" }
+3294 = "Valetlisum"
+3295 = { "Etruria Orientalis" "Tarchuna" }
+3351 = { "Modon" "Modon" }
+3352 = { "Tzympe" "Tzympe" }
+3636 = { "Eukratidia" "Eukratidia" }
+3653 = { "Hamamshen" "Tambur" }
+3676 = { "Rhagai" "Rhagai Europos" }
+3677 = "Kalakio"
+3678 = "Mahalat"
+3679 = { "Khodabandon" "Qydar" }
+3681 = "Iujiros"
+3682 = "Qurve"
+3683 = { "Konkobar" "Konkobar" }
+3684 = { "Shirin" "Shirin" }
+3685 = "Hudah"
+3686 = "Kisyriospan"
+3687 = { "Raodita" "Raodita" }
+3688 = { "Aetofolia" "Alamut" }
+3689 = { "Marlik" "Nea Marlikos" }
+3690 = "Taros"
+3692 = { "Tavales" "Hashpar" }
+3727 = "Kaleiros"
+3728 = { "Barzan" "Barza" }
+3729 = "Bokan"
+3731 = "Delos Lura"
+3733 = "Savolbolagos"
+3734 = "Makos"
+3735 = { "Chaldoran" "Chaldoran" }
+3736 = { "Armavir" "Armaouria" }
+3737 = { "Nochiya" "Nochiapolis" }
+3738 = "Amedia"
+3739 = { "Palios" "Palios" }
+3740 = { "Ingilene" "Ingilene" }
+3742 = { "Chaboras" "Mogarisos" }
+3749 = { "Septem" "Septem Nihilos" }
+3750 = "Motrelos"
+3751 = { "Sexi" "Firmium Julium Sexi" }
+3752 = { "Iluritanum" "Iluritanum" }
+3753 = "Ronda"
+3754 = { "Birtha" "Makedonoupolis" }
+3755 = { "Karrhai" "Karrhai" }
+3756 = { "Avtiaradus" "Avtiaradus" }
+3757 = "Yarbous"
+3758 = "Sidon"
+3934 = { "Tyros" "Tyrus" }
+3942 = "Qaratia"
+3943 = "Brak"
+3945 = { "Ubari" "Ubari" }
+3951 = "Dianetta"
+3952 = "Abalessa"
+3953 = "Mons Tamanran"
+3954 = "Salaeale"
+3955 = "Adraropolis"
+3956 = "Tamentios"
+3963 = { "Kasra" "Kasra" }
+3964 = { "Basie" "Qasr Basie" } #Azraq
+3966 = { "Sophene" "Sophene Minor" } #Dersim
+3967 = { "Kamacha" "Kamacha" }
+3968 = { "Neocaesarea" "Neocaesarea" }
+3969 = "Aravrakes"
+3970 = { "Mazaka" "Argyrion" }
+3971 = { "Dokeia" "Dokeia" } #Tokat
+3972 = { "Sarissa" "Sarissa" }
+3973 = { "Albasta" "Albasta" }
+3974 = "Mudarwa"
+3975 = { "Kykysos" "Kykysos" }
+3976 = { "Flavias" "Flaviopolis" }
+3978 = { "Claudia-Archelais" "Karmalasopoli" }
+3979 = { "Oinoparas" "Ufrenus" } #Afrin
+3981 = "Aegae"
+3982 = { "Tarsos" "Tarsos" }
+3983 = { "Korama" "Korama" } #Goreme
+3984 = { "Heraclea Cybistra" "Herclea Cybistra" }
+3985 = { "Isauria" "Isaura Palaea" }
+3986 = { "Claudiopolis" "Claudiopolis" }
+3988 = { "Sergiopolis" "Sergiopolis" } #Resafa
+3990 = { "Sikne" "Sikne" }
+3991 = { "Alexandretta" "Alexandretta" }
+3992 = { "Chrysopolis" "Skoutarion" }
+3993 = { "Lycia Ypsilos" "Isinda" }
+3994 = { "Phoenix" "Phoenix" } #Finike
+3995 = { "Nakoleia" "Nakoleia" }
+3996 = { "Pisidia Anatolikos" "Mistheia" } #Beysehir
+3997 = { "Philomelion" "Philomelion" } #Aksehir
+3998 = { "Polydorion" "Polydorion" }
+#7172 = "Dewol" #???
+4111 = { "Mediolanum" "Mediolanum" } #Approx. La Rochelle
+4112 = { "Cadurci" "Varadetum" }
+4140 = { "Alektor" "Alektor" } #Vozia
+4150 = { "Ebora" "Ebora" } #Evora
+4174 = { "Dyrrhachium" "Dyrrhachium" }
+4175 = { "Lissos" "Lissos" }
+4176 = { "Viminacium" "Viminacium" }
+4239 = { "Singidunum" "Singidunum" }
+4240 = { "Pannoniopolis" "Pannoniopolis" }
+4270 = { "Petra" "Petra" }
+4271 = { "Apameia" "Apameia" }
+4285 = "Aynotoruma"
+4286 = "Mileiha"
+4288 = { "Lagas" "Lagas" }
+4289 = { "Suisane Superior" "Adamdunon" }
+4290 = { "Cissiana" "Tarynana" }
+4291 = { "Artemita" "Artemita" }
+4292 = { "Merida" "Merida" }
+4293 = { "Arbelitis" "Arbela" } #Arbil
+4294 = { "Adiabenos" "Isektion" }
+4295 = { "Cepha" "Cepha" } #Hisn-Kayfa
+4296 = { "Calata" "Calata" } #Bitlis
+4297 = { "Triparadeisos" "Heliopolis" }
+4298 = { "Germankeia" "Zeugma" }
+4299 = { "Albania Superior" "Kapalakion" }
+4301 = "Gori"
+4302 = { "Alashkertion" "Acachia" }
+4303 = { "Syspitis" "Kaballa" }
+4305 = { "Varashekion" "Mingehauros" }
+4307 = { "Koloneia" "Malakopeia" }
+4308 = { "Laodicea" "Aphrodisias" }
+4309 = { "Ephesus" "Theíra" }
+4310 = { "Arsamosata" "Arsamosata" }
+4311 = { "Kotyaion" "Kotyaion" }
+4312 = { "Claudiopolis" "Heraclea" }
+4313 = { "Gangra" "Gangra" }
+4314 = { "Iconium" "Aspona" }
+4315 = { "Colonea" "Koloneia" }
+4316 = { "Athribis" "Athribis" }
+4317 = { "Hermopolis" "Hermopolis" }
+4318 = { "Aphroditopolis" "Aphroditopolis" }
+4319 = { "Thebes" "Diospolis Magna" }
+4320 = "Thinis"
+4323 = "Libya Interior"
+4327 = { "Badis" "Badis" }
+4329 = { "Darioupolis" "Darioupolis" }
+4330 = { "Zetis" "Narechios" }
+4331 = "Tukrasion"
+4332 = { "Apostanos" "Apostanos" }
+4339 = { "Amardos" "Kyropolis" }
+4340 = { "Tambyses" "Masalas" }
+4341 = { "Mandros" "Amarda" }
+4342 = { "Sostratos" "Sostratos" }
+4384 = { "Ad Herius" "Condate" }
+4385 = { "Unelia" "Coriallum" }
+4386 = { "Piktonia" "Fontenia" }
+4387 = { "Iculisma" "Vesunna" }
+4388 = { "Autricum" "Autricum" } #Chartres
+4389 = { "Caesarodunum" "Caesarodunum" } #Tours
+4390 = { "Tricassium" "Augustobona Tricassium" } #Troyes
+4391 = { "Vellavia" "Vellavi" }
+4392 = { "Autesiodorum" "Autesiodorum" }
+4529 = "Pyrretion"
+4530 = { "Barbosi" "Barbosi" }
+4531 = "Gyrgos"
+4532 = { "Drobetia" "Drobetia" }
+4546 = { "Malaca" "Malaca" } #Malaga
+4547 = { "Salika" "Salika" }
+4548 = { "Onoba" "Ad Rubras" }
+4549 = { "Edeta" "Saetabis" }
+4550 = { "Zakantha" "Zakantha" }
+4551 = { "Obila" "Obila" }
+4552 = { "Pallantia" "Pallantia" } #Palencia
+4553 = { "Oceloduron" "Oceloduron" }
+4554 = { "Kallaiki" "Lacus Augusti" }
+4555 = { "Turoqua" "Turoqua" }
+4556 = { "Aveiron" "Talagrigia" }
+4557 = { "Ilerda" "Ilerda" }
+4558 = { "Orensia" "Nemetrobrigia" }
+4559 = { "Nura" "Mago" }
+4560 = "Ibes"
+4561 = { "Tamouda" "Tamouda" }
+4562 = { "Siga" "Siga" }
+4563 = { "Nea Salas" "Neasalas" }
+4564 = "Anfa"
+4565 = { "Canaria" "Canaria" }
+4566 = "Tabira"
+4567 = "Dedris"
+4568 = { "Atlas Minor" "Demnation" }
+4694 = "Consoranni"
+4695 = { "Carcaso" "Carcaso" }
+4696 = { "Athenopolis" "Athenopolis" } #Toulon
+4697 = { "Acitodunum" "Acitodunum" }
+4698 = "Cephallenia"
+4699 = "Arta"
+4700 = { "Lesbos" "Mytilene" }
+4701 = "Corinth"
+4702 = { "Serres" "Serrae" }
+4703 = { "Belebousda" "Pautalia" }
+4704 = { "Tsarvetes" "Nikopolis" }
+4705 = "Komotini"
+4706 = { "Aegyssus" "Aegyssus" }
+4719 = { "Bricius" "Bricius" } #Bresse
+4720 = "Genava"
+4727 = { "Saluzion" "Saluzion" }
+4728 = { "Ticinum" "Ticinum" } #Pavia
+4729 = "Patavia"
+4730 = { "Bononion" "Bononia" } #Bologna
+4731 = { "Spoletium" "Spoletium" } #Spoleto
+4732 = { "Velitraos" "Antion" }
+4733 = { "Histonion" "Fagifulos" }
+4734 = { "Maloenton" "Abellinum" }
+4735 = { "Tharros" "Tharros" } #Arborea
+4736 = { "Ilybaion" "Ilybaion" }
+4737 = { "Heraclea Minoa" "Heraclea Minoa" }
+4738 = { "Tergeste" "Tergeste" }
+4739 = { "Bergomos" "Bergomos" }
+4740 = { "Comum" "Comum" }
+4750 = { "Scampis" "Leukepolis" }
+4751 = { "Flavia Solva" "Flavia Solva" }
+4752 = { "Tarsatica" "Tarsatica" }
+4753 = { "Iader" "Iader" }
+4754 = { "Dekaderon" "Dekaderon" }
+4755 = "Domavion"
+4756 = "Piretis"
+4757 = "Selinaos"
+4758 = "Merikosol"
+4759 = { "Teurnia" "Teurnia" } #Oberkarnten
+4764 = "Sequania"
+4766 = { "Verodunum" "Verodunum" } #Verdun
+4776 = { "Blesum" "Blesum Kastrum" } #Blois
+4777 = { "Segustania Borealis" "Rodumna" }
+4780 = "Ochrida"
+4787 = { "Olisipo Anatolikos" "Moron" }
+4788 = { "Vettonia Notios" "Caecilias Vieus" }
+4789 = "Segovia"
+5091 = { "Erucium" "Turris Libisonis" }
+5092 = { "Kanelate" "Kanelate" }
+5094 = "Lugina"
+5096 = "Tamaria"
+5130 = { "Mysia" "Pegadia" }
+5131 = { "Kydonies" "Kydonies" }
+5134 = { "Petronium" "Helikarnaossos" }
+5135 = { "Zephyrion" "Zephyrion" }
+5137 = { "Tavia" "Tavia" }
+5138 = { "Anazarbos" "Anazarbos" }
+5139 = "Nicosia"
+5145 = { "Salamis" "Salamis" }
+5146 = { "Magida" "Tyana" }
+5147 = {"Korakesion" "Cibyra" }
+5150 = { "Justinianopolis" "Justinianopolis" }
+5151 = { "Baeberdon" "Baiberdon" }
+5152 = { "Helenopontus" "Amasea" }
+5154 = { "Panhormus" "Sisium" }
+5155 = { "Gordion" "Pessinus" }
+5156 = { "Cyzicus" "Pegai" }
+5157 = { "Nicea" "Nicaea" }
+5158 = { "Tephrice" "Tephrice" }
+5161 = { "Seleucia" "Corycos" }
+5162 = { "Lycia" "Myra" }
+5163 = { "Ousakion" "Aizanoi" }
+5164 = { "Hadrianopolis" "Hadrianopolis" }
+5165 = { "Ankyra" "Ankyra" }
+5167 = { "Euchaita" "Euchaita" }
+5168 = { "Agrillium" "Tarsia" }
+5170 = { "Laodicea" "Laodikeia" }
+5171 = { "Lopadion" "Miletopolis" }
+5172 = { "Philadelphia" "Philadelpheia" }
+5180 = "Gaza"
+5181 = "Sinai"
+5203 = { "Mampsis" "Mampsis" }
+5205 = { "Berytos" "Berytus" }
+5206 = { "Kerasous" "Cerasus" }
+5210 = { "Acrath" "Acrath" }
+# [VU] removed: province 5211 (not on Ante Bellum map)
+# [VU] removed: province 5212 (not on Ante Bellum map)
+# [VU] removed: province 5213 (not on Ante Bellum map)
+# [VU] removed: province 5219 (not on Ante Bellum map)
+# [VU] removed: province 5224 (not on Ante Bellum map)
+# [VU] removed: province 5225 (not on Ante Bellum map)
+# [VU] removed: province 5226 (not on Ante Bellum map)
+# [VU] removed: province 5249 (not on Ante Bellum map)
+# [VU] removed: province 5250 (not on Ante Bellum map)
+# [VU] removed: province 5261 (not on Ante Bellum map)
+# [VU] removed: province 5264 (not on Ante Bellum map)
+# [VU] removed: province 5267 (not on Ante Bellum map)
+# [VU] removed: province 5271 (not on Ante Bellum map)
+# [VU] removed: province 5272 (not on Ante Bellum map)
+# [VU] removed: province 5273 (not on Ante Bellum map)
+# [VU] removed: province 5274 (not on Ante Bellum map)
+# [VU] removed: province 5278 (not on Ante Bellum map)
+# [VU] removed: province 5279 (not on Ante Bellum map)
+# [VU] removed: province 5281 (not on Ante Bellum map)
+# [VU] removed: province 5284 (not on Ante Bellum map)
+# [VU] removed: province 5293 (not on Ante Bellum map)
+# [VU] removed: province 5295 (not on Ante Bellum map)
+# [VU] removed: province 5296 (not on Ante Bellum map)
+# [VU] removed: province 5302 (not on Ante Bellum map)
+# [VU] removed: province 5303 (not on Ante Bellum map)
+# [VU] removed: province 5304 (not on Ante Bellum map)
+# [VU] removed: province 5309 (not on Ante Bellum map)
+# [VU] removed: province 5310 (not on Ante Bellum map)
+# [VU] removed: province 5312 (not on Ante Bellum map)
+# [VU] removed: province 5313 (not on Ante Bellum map)
+# [VU] removed: province 5314 (not on Ante Bellum map)
+# [VU] removed: province 5315 (not on Ante Bellum map)
+# [VU] removed: province 5316 (not on Ante Bellum map)
+# [VU] removed: province 5317 (not on Ante Bellum map)
+# [VU] removed: province 5318 (not on Ante Bellum map)
+# [VU] removed: province 5319 (not on Ante Bellum map)
+# [VU] removed: province 5321 (not on Ante Bellum map)
+# [VU] removed: province 5322 (not on Ante Bellum map)
+# [VU] removed: province 5323 (not on Ante Bellum map)
+# [VU] removed: province 5324 (not on Ante Bellum map)
+# [VU] removed: province 5325 (not on Ante Bellum map)
+# [VU] removed: province 5327 (not on Ante Bellum map)
+# [VU] removed: province 5330 (not on Ante Bellum map)
+# [VU] removed: province 5331 (not on Ante Bellum map)
+# [VU] removed: province 5332 (not on Ante Bellum map)
+# [VU] removed: province 5548 (not on Ante Bellum map)
+# [VU] removed: province 5561 (not on Ante Bellum map)
+# [VU] removed: province 6072 (not on Ante Bellum map)
+# [VU] removed: province 6134 (not on Ante Bellum map)
+# [VU] removed: province 6136 (not on Ante Bellum map)
+# [VU] removed: province 6137 (not on Ante Bellum map)
+# [VU] removed: province 6138 (not on Ante Bellum map)
+# [VU] removed: province 6147 (not on Ante Bellum map)
+# [VU] removed: province 6498 (not on Ante Bellum map)
+# [VU] removed: province 6499 (not on Ante Bellum map)
+# [VU] removed: province 6501 (not on Ante Bellum map)
+# [VU] removed: province 6502 (not on Ante Bellum map)
+# [VU] removed: province 6503 (not on Ante Bellum map)
+# [VU] removed: province 6504 (not on Ante Bellum map)
+# [VU] removed: province 6505 (not on Ante Bellum map)
+# [VU] removed: province 6506 (not on Ante Bellum map)
+# [VU] removed: province 6508 (not on Ante Bellum map)
+# [VU] removed: province 6510 (not on Ante Bellum map)
+# [VU] removed: province 6511 (not on Ante Bellum map)
+# [VU] removed: province 6512 (not on Ante Bellum map)
+# [VU] removed: province 6519 (not on Ante Bellum map)
+# [VU] removed: province 6524 (not on Ante Bellum map)
+# [VU] removed: province 6525 (not on Ante Bellum map)
+# [VU] removed: province 6533 (not on Ante Bellum map)
+# [VU] removed: province 6543 (not on Ante Bellum map)
+# [VU] removed: province 6549 (not on Ante Bellum map)
+# [VU] removed: province 6550 (not on Ante Bellum map)
+# [VU] removed: province 6551 (not on Ante Bellum map)
+# [VU] removed: province 6552 (not on Ante Bellum map)
+# [VU] removed: province 6555 (not on Ante Bellum map)
+# [VU] removed: province 6559 (not on Ante Bellum map)
+# [VU] removed: province 6560 (not on Ante Bellum map)
+# [VU] removed: province 6561 (not on Ante Bellum map)
+# [VU] removed: province 6562 (not on Ante Bellum map)
+# [VU] removed: province 6563 (not on Ante Bellum map)
+# [VU] removed: province 6564 (not on Ante Bellum map)
+# [VU] removed: province 6565 (not on Ante Bellum map)
+# [VU] removed: province 6568 (not on Ante Bellum map)
+# [VU] removed: province 6573 (not on Ante Bellum map)
+# [VU] removed: province 6574 (not on Ante Bellum map)
+# [VU] removed: province 6575 (not on Ante Bellum map)
+# [VU] removed: province 6576 (not on Ante Bellum map)
+# [VU] removed: province 6580 (not on Ante Bellum map)
+# [VU] removed: province 6585 (not on Ante Bellum map)
+# [VU] removed: province 6604 (not on Ante Bellum map)
+# [VU] removed: province 6608 (not on Ante Bellum map)
+# [VU] removed: province 6610 (not on Ante Bellum map)
+# [VU] removed: province 6613 (not on Ante Bellum map)
+# [VU] removed: province 6615 (not on Ante Bellum map)
+ #Amarah
+# [VU] removed: province 6617 (not on Ante Bellum map)
+# [VU] removed: province 6618 (not on Ante Bellum map)
+# [VU] removed: province 6619 (not on Ante Bellum map)
+# [VU] removed: province 6620 (not on Ante Bellum map)
+ #Kut
+# [VU] removed: province 6622 (not on Ante Bellum map)
+# [VU] removed: province 6623 (not on Ante Bellum map)
+ #Shamiyah
+ #Hillah
+# [VU] removed: province 6626 (not on Ante Bellum map)
+# [VU] removed: province 6627 (not on Ante Bellum map)
+# [VU] removed: province 6628 (not on Ante Bellum map)
+# [VU] removed: province 6629 (not on Ante Bellum map)
+# [VU] removed: province 6630 (not on Ante Bellum map)
+# [VU] removed: province 6631 (not on Ante Bellum map)
+# [VU] removed: province 6632 (not on Ante Bellum map)
+# [VU] removed: province 6633 (not on Ante Bellum map)
+# [VU] removed: province 6634 (not on Ante Bellum map)
+# [VU] removed: province 6635 (not on Ante Bellum map)
+# [VU] removed: province 6636 (not on Ante Bellum map)
+# [VU] removed: province 6637 (not on Ante Bellum map)
+# [VU] removed: province 6638 (not on Ante Bellum map)
+# [VU] removed: province 6639 (not on Ante Bellum map)
+# [VU] removed: province 6640 (not on Ante Bellum map)
+# [VU] removed: province 6641 (not on Ante Bellum map)
+# [VU] removed: province 6642 (not on Ante Bellum map)
+# [VU] removed: province 6643 (not on Ante Bellum map)
+# [VU] removed: province 6644 (not on Ante Bellum map)
+# [VU] removed: province 6670 (not on Ante Bellum map)
+# [VU] removed: province 6924 (not on Ante Bellum map)
+# [VU] removed: province 6927 (not on Ante Bellum map)
+# [VU] removed: province 6928 (not on Ante Bellum map)
+# [VU] removed: province 6930 (not on Ante Bellum map)
+# [VU] removed: province 6931 (not on Ante Bellum map)
+# [VU] removed: province 6932 (not on Ante Bellum map)
+# [VU] removed: province 6963 (not on Ante Bellum map)
+# [VU] removed: province 6964 (not on Ante Bellum map)
+# [VU] removed: province 6965 (not on Ante Bellum map)
+# [VU] removed: province 6974 (not on Ante Bellum map)
+# [VU] removed: province 6976 (not on Ante Bellum map)
+# [VU] removed: province 7001 (not on Ante Bellum map)
+# [VU] removed: province 7002 (not on Ante Bellum map)
+# [VU] removed: province 7003 (not on Ante Bellum map)
+# [VU] removed: province 7004 (not on Ante Bellum map)
+# [VU] removed: province 7005 (not on Ante Bellum map)
+# [VU] removed: province 7006 (not on Ante Bellum map)
+# [VU] removed: province 7007 (not on Ante Bellum map)
+# [VU] removed: province 7008 (not on Ante Bellum map)
+# [VU] removed: province 7009 (not on Ante Bellum map)
+# [VU] removed: province 7011 (not on Ante Bellum map)
+# [VU] removed: province 7013 (not on Ante Bellum map)
+# [VU] removed: province 7014 (not on Ante Bellum map)
+# [VU] removed: province 7015 (not on Ante Bellum map)
+# [VU] removed: province 7017 (not on Ante Bellum map)
+# [VU] removed: province 7019 (not on Ante Bellum map)
+# [VU] removed: province 7020 (not on Ante Bellum map)
+# [VU] removed: province 7021 (not on Ante Bellum map)
+# [VU] removed: province 7022 (not on Ante Bellum map)
+ #Norcia
+ #Camerino
+# [VU] removed: province 7027 (not on Ante Bellum map)
+# [VU] removed: province 7028 (not on Ante Bellum map)
+# [VU] removed: province 7030 (not on Ante Bellum map)
+# [VU] removed: province 7031 (not on Ante Bellum map)
+# [VU] removed: province 7032 (not on Ante Bellum map)
+# [VU] removed: province 7034 (not on Ante Bellum map)
+# [VU] removed: province 7035 (not on Ante Bellum map)
+# [VU] removed: province 7036 (not on Ante Bellum map)
+ #Fermo
+# [VU] removed: province 7038 (not on Ante Bellum map)
+# [VU] removed: province 7039 (not on Ante Bellum map)
+# [VU] removed: province 7040 (not on Ante Bellum map)
+# [VU] removed: province 7042 (not on Ante Bellum map)
+# [VU] removed: province 7044 (not on Ante Bellum map)
+# [VU] removed: province 7048 (not on Ante Bellum map)
+# [VU] removed: province 7050 (not on Ante Bellum map)
+# [VU] removed: province 7051 (not on Ante Bellum map)
+# [VU] removed: province 7053 (not on Ante Bellum map)
+# [VU] removed: province 7054 (not on Ante Bellum map)
+ #Monaco
+# [VU] removed: province 7057 (not on Ante Bellum map)
+# [VU] removed: province 7059 (not on Ante Bellum map)
+# [VU] removed: province 7063 (not on Ante Bellum map)
+# [VU] removed: province 7067 (not on Ante Bellum map)
+# [VU] removed: province 7068 (not on Ante Bellum map)
+# [VU] removed: province 7070 (not on Ante Bellum map)
+# [VU] removed: province 7072 (not on Ante Bellum map)
+# [VU] removed: province 7074 (not on Ante Bellum map)
+# [VU] removed: province 7075 (not on Ante Bellum map)
+# [VU] removed: province 7076 (not on Ante Bellum map)
+ #Tosya
+# [VU] removed: province 7080 (not on Ante Bellum map)
+# [VU] removed: province 7082 (not on Ante Bellum map)
+# [VU] removed: province 7085 (not on Ante Bellum map)
+# [VU] removed: province 7086 (not on Ante Bellum map)
+# [VU] removed: province 7090 (not on Ante Bellum map)
+# [VU] removed: province 7096 (not on Ante Bellum map)
+# [VU] removed: province 7097 (not on Ante Bellum map)
+# [VU] removed: province 7098 (not on Ante Bellum map)
+# [VU] removed: province 7099 (not on Ante Bellum map)
+# [VU] removed: province 7100 (not on Ante Bellum map)
+# [VU] removed: province 7108 (not on Ante Bellum map)
+# [VU] removed: province 7112 (not on Ante Bellum map)
+# [VU] removed: province 7113 (not on Ante Bellum map)
+# [VU] removed: province 7117 (not on Ante Bellum map)
+# [VU] removed: province 7118 (not on Ante Bellum map)
+# [VU] removed: province 7120 (not on Ante Bellum map)
+# [VU] removed: province 7122 (not on Ante Bellum map)
+# [VU] removed: province 7123 (not on Ante Bellum map)
+# [VU] removed: province 7125 (not on Ante Bellum map)
+# [VU] removed: province 7127 (not on Ante Bellum map)
+# [VU] removed: province 7132 (not on Ante Bellum map)
+# [VU] removed: province 7135 (not on Ante Bellum map)
+# [VU] removed: province 7136 (not on Ante Bellum map)
+# [VU] removed: province 7137 (not on Ante Bellum map)
+# [VU] removed: province 7140 (not on Ante Bellum map)
+# [VU] removed: province 7141 (not on Ante Bellum map)
+# [VU] removed: province 7142 (not on Ante Bellum map)
+# [VU] removed: province 7143 (not on Ante Bellum map)
+# [VU] removed: province 7144 (not on Ante Bellum map)
+# [VU] removed: province 7145 (not on Ante Bellum map)
+# [VU] removed: province 7147 (not on Ante Bellum map)
+# [VU] removed: province 7148 (not on Ante Bellum map)
+# [VU] removed: province 7149 (not on Ante Bellum map)
+# [VU] removed: province 7150 (not on Ante Bellum map)
+# [VU] removed: province 7152 (not on Ante Bellum map)
+# [VU] removed: province 7154 (not on Ante Bellum map)
+# [VU] removed: province 7155 (not on Ante Bellum map)
+# [VU] removed: province 7156 (not on Ante Bellum map)
+# [VU] removed: province 7157 (not on Ante Bellum map)
+# [VU] removed: province 7158 (not on Ante Bellum map)
+# [VU] removed: province 7159 (not on Ante Bellum map)
+# [VU] removed: province 7190 (not on Ante Bellum map)
+# [VU] removed: province 7191 (not on Ante Bellum map)
+# [VU] removed: province 7192 (not on Ante Bellum map)
+# [VU] removed: province 7193 (not on Ante Bellum map)
+# [VU] removed: province 7195 (not on Ante Bellum map)
+# [VU] removed: province 7194 (not on Ante Bellum map)
+# [VU] removed: province 7278 (not on Ante Bellum map)
+# [VU] removed: province 7443 (not on Ante Bellum map)
+# [VU] removed: province 7446 (not on Ante Bellum map)
+# [VU] removed: province 7447 (not on Ante Bellum map)
+# [VU] removed: province 7448 (not on Ante Bellum map)
+# [VU] removed: province 7449 (not on Ante Bellum map)
+# [VU] removed: province 7450 (not on Ante Bellum map)
+# [VU] removed: province 7451 (not on Ante Bellum map)
+# [VU] removed: province 7452 (not on Ante Bellum map)
+# [VU] removed: province 7453 (not on Ante Bellum map)
+# [VU] removed: province 7454 (not on Ante Bellum map)
+# [VU] removed: province 7455 (not on Ante Bellum map)
+# [VU] removed: province 7457 (not on Ante Bellum map)
+# [VU] removed: province 7461 (not on Ante Bellum map)
+# [VU] removed: province 7702 (not on Ante Bellum map)
+# [VU] removed: province 7703 (not on Ante Bellum map)
+# [VU] removed: province 7704 (not on Ante Bellum map)
+# [VU] removed: province 7705 (not on Ante Bellum map)
+# [VU] removed: province 7706 (not on Ante Bellum map)
+# [VU] removed: province 7708 (not on Ante Bellum map)
+# [VU] removed: province 7709 (not on Ante Bellum map)
+# [VU] removed: province 7710 (not on Ante Bellum map)
+# [VU] removed: province 7714 (not on Ante Bellum map)
+# [VU] removed: province 7715 (not on Ante Bellum map)
+# [VU] removed: province 7716 (not on Ante Bellum map)
+# [VU] removed: province 7718 (not on Ante Bellum map)
+# [VU] removed: province 7725 (not on Ante Bellum map)
+# [VU] removed: province 7725 (not on Ante Bellum map)
+# [VU] removed: province 7727 (not on Ante Bellum map)
+# [VU] removed: province 7731 (not on Ante Bellum map)
+# [VU] removed: province 7732 (not on Ante Bellum map)
+# [VU] removed: province 7733 (not on Ante Bellum map)
+# [VU] removed: province 7734 (not on Ante Bellum map)
+# [VU] removed: province 7735 (not on Ante Bellum map)
+ #Osmaneli
+# [VU] removed: province 7748 (not on Ante Bellum map)
+# [VU] removed: province 7749 (not on Ante Bellum map)
+# [VU] removed: province 7756 (not on Ante Bellum map)
+# [VU] removed: province 7758 (not on Ante Bellum map)
+# [VU] removed: province 7763 (not on Ante Bellum map)
+# [VU] removed: province 7765 (not on Ante Bellum map)
+# [VU] removed: province 7814 (not on Ante Bellum map)
+# [VU] removed: province 7820 (not on Ante Bellum map)
+# [VU] removed: province 7822 (not on Ante Bellum map)
+# [VU] removed: province 7890 (not on Ante Bellum map)
+# [VU] removed: province 7891 (not on Ante Bellum map)
+# [VU] removed: province 7892 (not on Ante Bellum map)
+ #Arles
+ #Montelimar
+# [VU] removed: province 7898 (not on Ante Bellum map)
+# [VU] removed: province 7899 (not on Ante Bellum map)
+ #Beziers
+# [VU] removed: province 7901 (not on Ante Bellum map)
+# [VU] removed: province 7903 (not on Ante Bellum map)
+# [VU] removed: province 7904 (not on Ante Bellum map)
+# [VU] removed: province 7906 (not on Ante Bellum map)
+# [VU] removed: province 7909 (not on Ante Bellum map)
+# [VU] removed: province 7910 (not on Ante Bellum map)
+# [VU] removed: province 7911 (not on Ante Bellum map)
+ #Aydin
+# [VU] removed: province 7914 (not on Ante Bellum map)
+# [VU] removed: province 7916 (not on Ante Bellum map)
+# [VU] removed: province 7917 (not on Ante Bellum map)
+# [VU] removed: province 7918 (not on Ante Bellum map)
+# [VU] removed: province 7919 (not on Ante Bellum map)
+# [VU] removed: province 7920 (not on Ante Bellum map)
+# [VU] removed: province 7921 (not on Ante Bellum map)
+# [VU] removed: province 7922 (not on Ante Bellum map)
+# [VU] removed: province 7925 (not on Ante Bellum map)
+# [VU] removed: province 7926 (not on Ante Bellum map)
+# [VU] removed: province 7928 (not on Ante Bellum map)
+# [VU] removed: province 7929 (not on Ante Bellum map)
+# [VU] removed: province 7930 (not on Ante Bellum map)
+# [VU] removed: province 7931 (not on Ante Bellum map)
+# [VU] removed: province 7932 (not on Ante Bellum map)
+# [VU] removed: province 7933 (not on Ante Bellum map)
+# [VU] removed: province 7936 (not on Ante Bellum map)
+# [VU] removed: province 7938 (not on Ante Bellum map)
+# [VU] removed: province 7940 (not on Ante Bellum map)
+ #Sart
+# [VU] removed: province 7942 (not on Ante Bellum map)
+ #Bergama
+# [VU] removed: province 7950 (not on Ante Bellum map)
+ #Sens
+# [VU] removed: province 7956 (not on Ante Bellum map)
+# [VU] removed: province 7957 (not on Ante Bellum map)
+# [VU] removed: province 7958 (not on Ante Bellum map)
+# [VU] removed: province 7961 (not on Ante Bellum map)
+# [VU] removed: province 7971 (not on Ante Bellum map)
+# [VU] removed: province 7972 (not on Ante Bellum map)
+# [VU] removed: province 7978 (not on Ante Bellum map)
+# [VU] removed: province 7981 (not on Ante Bellum map)
+# [VU] removed: province 7982 (not on Ante Bellum map)
+# [VU] removed: province 7984 (not on Ante Bellum map)
+# [VU] removed: province 7986 (not on Ante Bellum map)
+# [VU] removed: province 7987 (not on Ante Bellum map)
+# [VU] removed: province 7991 (not on Ante Bellum map)
+# [VU] removed: province 7992 (not on Ante Bellum map)
+# [VU] removed: province 7995 (not on Ante Bellum map)
+# [VU] removed: province 8013 (not on Ante Bellum map)
+# [VU] removed: province 8016 (not on Ante Bellum map)
+# [VU] removed: province 8026 (not on Ante Bellum map)
+# [VU] removed: province 8028 (not on Ante Bellum map)
+# [VU] removed: province 8029 (not on Ante Bellum map)
+# [VU] removed: province 8030 (not on Ante Bellum map)
+# [VU] removed: province 8033 (not on Ante Bellum map)
+# [VU] removed: province 8034 (not on Ante Bellum map)
+# [VU] removed: province 8035 (not on Ante Bellum map)
+# [VU] removed: province 8036 (not on Ante Bellum map)
+# [VU] removed: province 8037 (not on Ante Bellum map)
+# [VU] removed: province 8038 (not on Ante Bellum map)
+# [VU] removed: province 8039 (not on Ante Bellum map)
+# [VU] removed: province 8040 (not on Ante Bellum map)
+# [VU] removed: province 8041 (not on Ante Bellum map)
+ #Santiagp
+# [VU] removed: province 8043 (not on Ante Bellum map)
+# [VU] removed: province 8044 (not on Ante Bellum map)
+# [VU] removed: province 8045 (not on Ante Bellum map)
+# [VU] removed: province 8046 (not on Ante Bellum map)
+# [VU] removed: province 8047 (not on Ante Bellum map)
+# [VU] removed: province 8048 (not on Ante Bellum map)
+# [VU] removed: province 8049 (not on Ante Bellum map)
+# [VU] removed: province 8050 (not on Ante Bellum map)
+# [VU] removed: province 8051 (not on Ante Bellum map)
+# [VU] removed: province 8052 (not on Ante Bellum map)
+# [VU] removed: province 8054 (not on Ante Bellum map)
+# [VU] removed: province 8055 (not on Ante Bellum map)
+# [VU] removed: province 8056 (not on Ante Bellum map)
+# [VU] removed: province 8057 (not on Ante Bellum map)
+# [VU] removed: province 8058 (not on Ante Bellum map)
+# [VU] removed: province 8059 (not on Ante Bellum map)
+ #Trujillo
+# [VU] removed: province 8061 (not on Ante Bellum map)
+# [VU] removed: province 8062 (not on Ante Bellum map)
+ #Olivenza - olive-town
+# [VU] removed: province 8064 (not on Ante Bellum map)
+ #Cartagena
+# [VU] removed: province 8070 (not on Ante Bellum map)
+# [VU] removed: province 8071 (not on Ante Bellum map)
+# [VU] removed: province 8072 (not on Ante Bellum map)
+# [VU] removed: province 8073 (not on Ante Bellum map)
+# [VU] removed: province 8074 (not on Ante Bellum map)
+ #Cermona
+# [VU] removed: province 8076 (not on Ante Bellum map)
+# [VU] removed: province 8077 (not on Ante Bellum map)
+# [VU] removed: province 8079 (not on Ante Bellum map)
+# [VU] removed: province 8080 (not on Ante Bellum map)
+# [VU] removed: province 8081 (not on Ante Bellum map)
+# [VU] removed: province 8082 (not on Ante Bellum map)
+# [VU] removed: province 8083 (not on Ante Bellum map)
+# [VU] removed: province 8084 (not on Ante Bellum map)
+# [VU] removed: province 8085 (not on Ante Bellum map)
+# [VU] removed: province 8086 (not on Ante Bellum map)
+ #Iliberris near Grenada, Selambina coastal
+# [VU] removed: province 8088 (not on Ante Bellum map)
+# [VU] removed: province 8089 (not on Ante Bellum map)
+# [VU] removed: province 8090 (not on Ante Bellum map)
+# [VU] removed: province 8091 (not on Ante Bellum map)
+# [VU] removed: province 8092 (not on Ante Bellum map)
+# [VU] removed: province 8093 (not on Ante Bellum map)
+# [VU] removed: province 8094 (not on Ante Bellum map)
+# [VU] removed: province 8095 (not on Ante Bellum map)
+# [VU] removed: province 8096 (not on Ante Bellum map)
+# [VU] removed: province 8097 (not on Ante Bellum map)
+# [VU] removed: province 8098 (not on Ante Bellum map)
+# [VU] removed: province 8099 (not on Ante Bellum map)
+# [VU] removed: province 8100 (not on Ante Bellum map)
+# [VU] removed: province 8101 (not on Ante Bellum map)
+# [VU] removed: province 8102 (not on Ante Bellum map)
+# [VU] removed: province 8103 (not on Ante Bellum map)
+# [VU] removed: province 8104 (not on Ante Bellum map)
+# [VU] removed: province 8105 (not on Ante Bellum map)
+# [VU] removed: province 8106 (not on Ante Bellum map)
+# [VU] removed: province 8107 (not on Ante Bellum map)
+# [VU] removed: province 8108 (not on Ante Bellum map)
+# [VU] removed: province 8109 (not on Ante Bellum map)
+# [VU] removed: province 8110 (not on Ante Bellum map)
+# [VU] removed: province 8111 (not on Ante Bellum map)
+# [VU] removed: province 8114 (not on Ante Bellum map)
+# [VU] removed: province 8115 (not on Ante Bellum map)
+# [VU] removed: province 8116 (not on Ante Bellum map)
+# [VU] removed: province 8117 (not on Ante Bellum map)
+# [VU] removed: province 8121 (not on Ante Bellum map)
+# [VU] removed: province 8171 (not on Ante Bellum map)
+# [VU] removed: province 8172 (not on Ante Bellum map)
+# [VU] removed: province 8180 (not on Ante Bellum map)
+# [VU] removed: province 8185 (not on Ante Bellum map)
+# [VU] removed: province 8186 (not on Ante Bellum map)
+# [VU] removed: province 8190 (not on Ante Bellum map)
+# [VU] removed: province 8191 (not on Ante Bellum map)
+# [VU] removed: province 8216 (not on Ante Bellum map)
+# [VU] removed: province 8220 (not on Ante Bellum map)
+# [VU] removed: province 8261 (not on Ante Bellum map)
+# [VU] removed: province 8414 (not on Ante Bellum map)
+# [VU] removed: province 8430 (not on Ante Bellum map)
+# [VU] removed: province 8435 (not on Ante Bellum map)
+# [VU] removed: province 8436 (not on Ante Bellum map)
+# [VU] removed: province 8437 (not on Ante Bellum map)
+ #Elba
+# [VU] removed: province 8505 (not on Ante Bellum map)
+# [VU] removed: province 8531 (not on Ante Bellum map)
+# [VU] removed: province 8610 (not on Ante Bellum map)
+# [VU] removed: province 8735 (not on Ante Bellum map)
+# [VU] removed: province 8740 (not on Ante Bellum map)

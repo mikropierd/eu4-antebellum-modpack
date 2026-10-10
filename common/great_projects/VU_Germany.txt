@@ -1,0 +1,450 @@
+vu_reichstag = {
+	start = 50
+	date = 1884.01.01
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		FROM = {
+			OR = {
+				tag = GER
+				tag = HLR
+			}
+		}
+        	culture_group = germanic
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		FROM = {
+			OR = {
+				tag = GER
+				tag = PRU
+				tag = HLR
+				AND = {
+					culture_group = germanic
+					NOT = { primary_culture = dutch }
+				}
+			}
+		}
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			FROM = {
+				OR = {
+					has_parliament = yes
+					government = republic
+				}
+			}
+		}
+		else = {
+			FROM = {
+				OR = {
+					government = republic
+					has_reform = parliamentary_reform
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		FROM = { adm_tech = 37 }
+		FROM = {
+			OR = {
+				tag = GER
+				tag = PRU
+				tag = HLR
+				AND = {
+					culture_group = germanic
+					NOT = { primary_culture = dutch }
+				}
+			}
+		}
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			FROM = {
+				OR = {
+					has_parliament = yes
+					government = republic
+				}
+			}
+		}
+		else = {
+			FROM = {
+				OR = {
+					government = republic
+					has_reform = parliamentary_reform
+				}
+			}
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_monthly_devastation = -0.05
+		}
+		area_modifier = { }
+		country_modifiers = { 
+			governing_capacity = 0.1
+		}
+		on_upgraded = {
+			add_devastation = -10
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+			local_unrest = -1
+		}
+		country_modifiers = { 
+			governing_capacity = 0.2
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_monthly_devastation = -0.15
+		}
+		area_modifier = {
+			local_unrest = -2
+		}
+		country_modifiers = {
+			governing_capacity_modifier = 0.3
+			yearly_corruption = -0.02
+			expand_administration_cost = -0.1
+		}
+		on_upgraded = {
+			add_stability_or_adm_power = yes
+		}
+	}
+}
+# [VU] great project vu_externsteine removed: start province 7518 not on Ante Bellum map
+vu_schloss_neuhaus = {
+	start = 2972
+	date = 1.01.01
+	time = { months = 120 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 0
+	type = monument
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		FROM = { has_institution = renaissance }
+		FROM = {
+			OR = {
+				has_reform = monarchy_mechanic
+				has_reform = theocracy_mechanic
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		FROM = { has_institution = renaissance }
+		FROM = {
+			OR = {
+				has_reform = monarchy_mechanic
+				has_reform = theocracy_mechanic
+			}
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_governing_cost = -0.05
+		}
+		area_modifier = { }
+		country_modifiers = { 
+			legitimacy = 1
+			devotion = 1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_governing_cost = -0.1
+		}
+		area_modifier = {
+			local_autonomy = -0.05
+		}
+		country_modifiers = {
+			legitimacy = 2
+			devotion = 2
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_governing_cost = -0.15
+		}
+		area_modifier = {
+			local_autonomy = -0.1
+		}
+		country_modifiers = {
+			legitimacy = 3
+			devotion = 3
+		}
+		on_upgraded = { }
+	}
+}
+
+# [VU] great project vu_schloss_weesenstein removed: start province 7644 not on Ante Bellum map
+
+vu_bundeshaus = {
+    start = 165
+    date = 1.01.01
+    time = { months = 120 }
+    build_cost = 1000
+    starting_tier = 0
+    type = monument
+    can_be_moved = no
+    build_trigger = { }
+    on_built = { }
+    on_destroyed = { }
+    can_use_modifiers_trigger = {
+        culture = swiss
+        has_owner_culture = yes
+    }
+    can_upgrade_trigger = {
+        culture = swiss
+        has_owner_culture = yes
+    }
+    keep_trigger = { }
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = { factor = 0 }
+        province_modifiers = { }
+        area_modifier = { }
+        country_modifiers = { }
+        on_upgraded = { }
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 1000 }
+        province_modifiers = {
+            local_governing_cost = -0.10
+        }
+        area_modifier = { }
+        country_modifiers = {
+            reform_progress_growth = 0.05
+        }
+        on_upgraded = {
+            owner = {
+                change_government_reform_progress  = 10
+            }
+        }
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = { factor = 2500 }
+        province_modifiers = { }
+        area_modifier = {
+            local_state_maintenance_modifier = -0.15
+            local_governing_cost = -0.20
+        }
+        country_modifiers = {
+            reform_progress_growth = 0.10
+        }
+        on_upgraded = {
+            owner = {
+                change_government_reform_progress  = 15
+            }
+        }
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 5000 }
+        province_modifiers = { }
+        area_modifier = {
+            local_state_maintenance_modifier = -0.25
+            local_governing_cost = -0.25
+        }
+        country_modifiers = {
+            candidate_random_bonus = 1
+            reform_progress_growth = 0.15
+        }
+        on_upgraded = {
+            owner = {
+                change_government_reform_progress  = 25
+            }
+        }
+    }
+}
+
+vu_college_de_geneve = {
+    start = 4720
+    date = 1.01.01
+    time = { months = 120 }
+    build_cost = 1000
+    starting_tier = 0
+    type = monument
+    can_be_moved = no
+    build_trigger = { }
+    on_built = { }
+    on_destroyed = { }
+    can_use_modifiers_trigger = {
+        culture = swiss
+        has_owner_culture = yes
+        religion = reformed
+        has_owner_religion = yes
+    }
+    can_upgrade_trigger = {
+        culture = swiss
+        has_owner_culture = yes
+        religion = reformed
+        has_owner_religion = yes
+    }
+    keep_trigger = { }
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = { factor = 0 }
+        province_modifiers = { }
+        area_modifier = { }
+        country_modifiers = { }
+        on_upgraded = { }
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 1000 }
+        province_modifiers = { }
+        area_modifier = { }
+        country_modifiers = {
+            monthly_fervor_increase = 0.25
+            tolerance_own = 0.50
+        }
+        on_upgraded = {
+            owner = {
+                add_fervor = 5
+            }
+        }
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = { factor = 2500 }
+        province_modifiers = { }
+        area_modifier = { }
+        country_modifiers = {
+            monthly_fervor_increase = 0.5
+            tolerance_own = 1
+            advisor_cost = -0.20
+        }
+        on_upgraded = {
+            owner = {
+                add_fervor = 5
+            }
+        }
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 5000 }
+        province_modifiers = { }
+        area_modifier = { }
+        country_modifiers = {
+            monthly_fervor_increase = 1
+            tolerance_own = 2
+            advisor_cost = -0.30
+            advisor_pool = 1
+            idea_cost = -0.10
+        }
+        on_upgraded = {
+            owner = {
+                add_fervor = 5
+            }
+        }
+    }
+}
+
+vu_steinerne_brucke = {
+    start = 2957
+    date = 1.01.01
+    time = { months = 120 }
+    build_cost = 1000
+    starting_tier = 2
+    type = monument
+    can_be_moved = no
+    build_trigger = { }
+    on_built = { }
+    on_destroyed = { }
+    can_use_modifiers_trigger = { }
+    can_upgrade_trigger = { }
+    keep_trigger = { }
+    tier_0 = {
+        upgrade_time = { months = 0 }
+        cost_to_upgrade = { factor = 0 }
+        province_modifiers = { }
+        area_modifier = { }
+        country_modifiers = { }
+        on_upgraded = { }
+    }
+    tier_1 = {
+        upgrade_time = { months = 120 }
+        cost_to_upgrade = { factor = 1000 }
+        province_modifiers = {
+            province_trade_power_modifier = 0.1
+            local_development_cost = -0.05
+        }
+        area_modifier = { }
+        country_modifiers = { }
+        on_upgraded = { }
+    }
+    tier_2 = {
+        upgrade_time = { months = 240 }
+        cost_to_upgrade = { factor = 2500 }
+        province_modifiers = {
+            province_trade_power_modifier = 0.25
+            local_development_cost = -0.1
+            local_institution_spread = 0.1
+        }
+        area_modifier = { }
+        country_modifiers = { }
+        on_upgraded = { }
+    }
+    tier_3 = {
+        upgrade_time = { months = 480 }
+        cost_to_upgrade = { factor = 5000 }
+        province_modifiers = {
+            province_trade_power_modifier = 0.5
+            local_development_cost = -0.1
+            local_institution_spread = 0.2
+            local_prosperity_growth = 1
+            local_monthly_devastation = -0.1
+        }
+        area_modifier = { }
+        country_modifiers = { }
+        on_upgraded = { }
+    }
+}

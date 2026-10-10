@@ -1,0 +1,5225 @@
+#All Monarchy government names go here, at the top add the specific ones, the further down the file, the more generic they get.
+#Game will pick the first applicable government name from this file.
+#Contributors: Darth Modus & Prussia
+#Contains Original and modified entries from Victorum Universalis, Vanilla, Missions Expanded and Government's Expanded, they were all transformatively changed according
+#to the DMCA. Permissions were granted for all entries by the constituent parties.
+#######################
+##	Muslim Category	 ##
+#######################
+#Persia
+qara_qoyunlu_tribal_federation = {
+    rank = {
+        6 = QARATE
+    }
+    ruler_male = {
+        6 = QARA
+    }
+    consort_female = {
+        6 = KHANUM_CONSORT_fem
+    }
+    heir_male = {
+        6 = ARBAB
+    }
+    trigger = {
+        has_reform = persianate_tribal_confederation
+        religion = shiite
+        tag = QAR
+        government_rank = 6
+        NOT = {
+            government_rank = 7
+        }
+    }
+}
+aq_qoyunlu_confederate_sultanate = {
+    rank = {
+        6 = AQ_SULTANATE
+    }
+    ruler_male = {
+        6 = AQ_SULTAN
+    }
+    consort_female = {
+        6 = KHANUM_CONSORT_fem
+    }
+    heir_male = {
+        6 = ARBAB
+    }
+    trigger = {
+        has_reform = persianate_tribal_confederation
+        religion = sunni
+        government_rank = 6
+        NOT = {
+            government_rank = 7
+        }
+        OR = {
+            tag = AKK
+            tag = EGI
+            tag = HAK
+        }
+    }
+}
+#Ottermen
+ottoman_sultanate = {
+    rank = {
+        8 = SUBLIME_SULTANATE
+        9 = MOST_SUBLIME_KHILAFAH
+    }
+    ruler_male = {
+        8 = SUBLIME_SULTAN
+        9 = MOST_SUBLIME_KHALIFA
+    }
+    consort_female = {
+        8 = HASEKI_SULTAN_CONSORT_fem
+        9 = HASEKI_SULTAN_CONSORT_fem
+    }
+    heir_male = {
+        8 = VALI_AHAD
+        9 = VALI_AHAD
+    }
+    trigger = {
+        has_reform = ottoman_government
+        government_rank = 8
+    }
+}
+######################
+##	Asian Category	##
+######################
+#China
+yuan_empire = {
+    rank = {
+        6 = HORDE
+        7 = GREAT_HORDE
+        8 = KHANATE
+        9 = KHAGANATE
+    }
+    ruler_male = {
+        6 = JINONG
+        7 = GREAT_JINONG
+        8 = KHAN
+        9 = KHAGAN
+    }
+    consort_female = {
+        6 = GEGE_CONSORT_fem
+        7 = GEGE_CONSORT_fem
+        8 = KHANUM_CONSORT_fem
+        9 = YEKHE_KHANUM_CONSORT_fem
+    }
+    heir_male = {
+        6 = KHANZADEH
+        7 = KHANZADEH
+        8 = KHANZADEH
+        9 = KHANZADEH
+    }
+    trigger = {
+        government_rank = 6
+        OR = {
+            tag = YUA
+            AND = {
+                tag = OIR
+                has_reform = celestial_empire
+            }
+        }
+    }
+}
+celestial_parliament = {
+    rank = {
+        9 = PARLIAMENT_OF_HEAVEN
+    }
+    ruler_male = {
+        9 = HUANGDI
+    }
+    consort_female = {
+        9 = GONGZHU_CONSORT_fem
+    }
+    heir_male = {
+        9 = WANGZI
+    }
+    trigger = {
+        has_reform = celestial_empire
+        has_reform = parliamentary_reform
+        government_rank = 9
+    }
+}
+#Japan
+gov_shogunate = {
+    rank = {
+        8 = SHOGUNATE
+    }
+    ruler_male = {
+        8 = SHOGUN
+    }
+    consort_female = {
+        8 = LADY_fem
+    }
+    heir_male = {
+        8 = LORD
+    }
+    trigger = {
+        has_reform = shogunate
+        government_rank = 8
+    }
+}
+restoration = {
+    rank = {
+        9 = EMPIRE
+    }
+    ruler_male = {
+        9 = JPEMPEROR
+    }
+    ruler_female = {
+        9 = JPEMPEROR
+    }
+    consort_male = {
+        9 = EMPEROR_CONSORT
+    }
+    consort_female = {
+        9 = EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        9 = JPEMPHEIR
+    }
+    heir_female = {
+        9 = JPEMPHEIRF
+    }
+    trigger = {
+        has_reform = restoration_reform
+        government_rank = 9
+    }
+}
+gov_daimyo = {
+    rank = {
+        1 = DAIMYO
+        2 = DAIMYO_BARONY_VU
+        3 = DAIMYO_VISCOUNTY_VU
+        4 = DAIMYO_COUNTY_VU
+        5 = DAIMYO_MARQUISATE_VU
+        6 = DAIMYO_DUCHY_VU
+        7 = DAIMYO_PRINCIPALITY_VU
+    }
+    ruler_male = {
+        1 = LORD
+        2 = LORD
+        3 = LORD
+        4 = LORD
+        5 = LORD
+        6 = LORD
+        7 = LORD
+    }
+    consort_female = {
+        1 = LADY_fem
+        2 = LADY_fem
+        3 = LADY_fem
+        4 = LADY_fem
+        5 = LADY_fem
+        6 = LADY_fem
+        7 = LADY_fem
+    }
+    heir_male = {
+        1 = LORD
+        2 = LORD
+        3 = LORD
+        4 = LORD
+        5 = LORD
+        6 = LORD
+        7 = LORD
+    }
+    trigger = {
+        NOT = {
+            government_rank = 8
+        }
+        OR = {
+            has_reform = daimyo
+            has_reform = indep_daimyo
+            has_reform = daimyo_barony_reform
+            has_reform = daimyo_viscounty_reform
+            has_reform = daimyo_county_reform
+            has_reform = daimyo_marquisate_reform
+            has_reform = daimyo_duchy_reform
+            has_reform = daimyo_principality_reform
+        }
+    }
+}
+gov_indep_daimyo = {
+    rank = {
+        1 = INDEP_DAIMYO
+        2 = INDEP_DAIMYO
+        3 = INDEP_DAIMYO
+        4 = INDEP_DAIMYO
+        5 = INDEP_DAIMYO
+        6 = INDEP_DAIMYO
+        7 = INDEP_DAIMYO
+        8 = INDEP_DAIMYO
+        9 = GREAT_INDEP_DAIMYO
+    }
+    ruler_male = {
+        1 = LORD
+        2 = LORD
+        3 = LORD
+        4 = LORD
+        5 = LORD
+        6 = LORD
+        7 = LORD
+        8 = LORD
+        9 = LORD
+    }
+    consort_female = {
+        1 = LADY_fem
+        2 = LADY_fem
+        3 = LADY_fem
+        4 = LADY_fem
+        5 = LADY_fem
+        6 = LADY_fem
+        7 = LADY_fem
+        8 = LADY_fem
+        9 = LADY_fem
+    }
+    heir_male = {
+        1 = LADY_fem
+        2 = LADY_fem
+        3 = LADY_fem
+        4 = LADY_fem
+        5 = LADY_fem
+        6 = LORD
+        7 = LORD
+        8 = LORD
+        9 = LORD
+    }
+    heir_female = {
+        1 = LADY_fem
+        2 = LADY_fem
+        3 = LADY_fem
+        4 = LADY_fem
+        5 = LADY_fem
+        6 = LADY_fem
+        7 = LADY_fem
+        8 = LADY_fem
+        9 = LADY_fem
+    }
+    trigger = {
+        has_reform = indep_daimyo
+    }
+}
+###########################
+##	European Category	 ##
+###########################
+#Germany
+upper_imperial_circle = {
+    rank = {
+        1 = GER_UPPER_IMPERIAL_CIRCLE
+        2 = GER_UPPER_IMPERIAL_CIRCLE
+        3 = GER_UPPER_IMPERIAL_CIRCLE
+        4 = GER_UPPER_IMPERIAL_CIRCLE
+        5 = GER_UPPER_IMPERIAL_CIRCLE
+        6 = GER_UPPER_IMPERIAL_CIRCLE
+        7 = GER_UPPER_IMPERIAL_CIRCLE
+        8 = GER_UPPER_IMPERIAL_CIRCLE
+        9 = GER_UPPER_IMPERIAL_CIRCLE
+    }
+    ruler_male = {
+        1 = GER_UPPER_IMPERIAL_DIRECTOR
+        2 = GER_UPPER_IMPERIAL_DIRECTOR
+        3 = GER_UPPER_IMPERIAL_DIRECTOR
+        4 = GER_UPPER_IMPERIAL_DIRECTOR
+        5 = GER_UPPER_IMPERIAL_DIRECTOR
+        6 = GER_UPPER_IMPERIAL_DIRECTOR
+        7 = GER_UPPER_IMPERIAL_DIRECTOR
+        8 = GER_UPPER_IMPERIAL_DIRECTOR
+        9 = GER_UPPER_IMPERIAL_DIRECTOR
+    }
+    trigger = {
+        OR = {
+            primary_culture = swabian
+            primary_culture = alsatian
+            primary_culture = bavarian
+            primary_culture = austrian
+            primary_culture = swiss
+            primary_culture = franconian
+        }
+        has_reform = imperial_circles_reform
+    }
+}
+lower_imperial_circle = {
+    rank = {
+        1 = GER_LOWER_IMPERIAL_CIRCLE
+        2 = GER_LOWER_IMPERIAL_CIRCLE
+        3 = GER_LOWER_IMPERIAL_CIRCLE
+        4 = GER_LOWER_IMPERIAL_CIRCLE
+        5 = GER_LOWER_IMPERIAL_CIRCLE
+        6 = GER_LOWER_IMPERIAL_CIRCLE
+        7 = GER_LOWER_IMPERIAL_CIRCLE
+        8 = GER_LOWER_IMPERIAL_CIRCLE
+        9 = GER_LOWER_IMPERIAL_CIRCLE
+    }
+    ruler_male = {
+        1 = GER_LOWER_IMPERIAL_DIRECTOR
+        2 = GER_LOWER_IMPERIAL_DIRECTOR
+        3 = GER_LOWER_IMPERIAL_DIRECTOR
+        4 = GER_LOWER_IMPERIAL_DIRECTOR
+        5 = GER_LOWER_IMPERIAL_DIRECTOR
+        6 = GER_LOWER_IMPERIAL_DIRECTOR
+        7 = GER_LOWER_IMPERIAL_DIRECTOR
+        8 = GER_LOWER_IMPERIAL_DIRECTOR
+        9 = GER_LOWER_IMPERIAL_DIRECTOR
+    }
+    trigger = {
+        has_reform = imperial_circles_reform
+    }
+}
+#Low Countries
+federal_monarchy_statists = {
+    rank = {
+        1 = ZEVEN_VERENIGDE_NEDERLANDEN
+        2 = ZEVEN_VERENIGDE_NEDERLANDEN
+        3 = ZEVEN_VERENIGDE_NEDERLANDEN
+        4 = ZEVEN_VERENIGDE_NEDERLANDEN
+        5 = ZEVEN_VERENIGDE_NEDERLANDEN
+        6 = ZEVEN_VERENIGDE_NEDERLANDEN
+        7 = VERENIGDE_NEDERLANDEN
+        8 = FEDERAL_KINGDOM_VU
+        9 = FEDERAL_EMPIRE_VU
+    }
+    ruler_male = {
+        1 = STADTHOLDER
+        2 = STADTHOLDER
+        3 = STADTHOLDER
+        4 = STADTHOLDER
+        5 = STADTHOLDER
+        6 = STADTHOLDER
+        7 = SPREKER
+        8 = KANSELIER
+        9 = VOORZITTER
+    }
+    heir_male = {
+        1 = HOL_COUNT_1
+        2 = HOL_COUNT_1
+        3 = HOL_COUNT_1
+        4 = HOL_COUNT_1
+        5 = HOL_COUNT_1
+        6 = HOL_COUNT_1
+        7 = HOL_DUKE_CONSORT_1
+        8 = HOL_PRINCE_CONSORT_1
+        9 = HOL_KING_1
+    }
+    trigger = {
+        has_reform = states_general_reform
+    }
+}
+#Russia
+muscovite_monarchy = {
+    rank = {
+        1 = GERTSOGSTVO
+        2 = GERTSOGSTVO
+        3 = GERTSOGSTVO
+        4 = GERTSOGSTVO
+        5 = GERTSOGSTVO
+        6 = GERTSOGSTVO
+        7 = KNYAZHESTVO
+        8 = VELIKOYE_KNYAZHESTVO
+        9 = TSARDOM
+    }
+    ruler_male = {
+        1 = GERTSOG
+        2 = GERTSOG
+        3 = GERTSOG
+        4 = GERTSOG
+        5 = GERTSOG
+        6 = GERTSOG
+        7 = KNYAZ
+        8 = VELIKIY_KNYAZ
+        9 = TSAR
+    }
+    ruler_female = {
+        1 = KNIAGINIA_fem
+        2 = KNIAGINIA_fem
+        3 = KNIAGINIA_fem
+        4 = KNIAGINIA_fem
+        5 = KNIAGINIA_fem
+        6 = KNIAGINIA_fem
+        7 = KNIAGINIA_fem
+        8 = GRAND_KNIAGINIA_fem
+        9 = TSARITSA_fem
+    }
+    consort_male = {
+        1 = KNIAZ_CONSORT
+        2 = KNIAZ_CONSORT
+        3 = KNIAZ_CONSORT
+        4 = KNIAZ_CONSORT
+        5 = KNIAZ_CONSORT
+        6 = KNIAZ_CONSORT
+        7 = KNIAZ_CONSORT
+        8 = GRAND_KNIAZ_CONSORT
+        9 = TSAR
+    }
+    consort_female = {
+        1 = KNIAGINIA_fem
+        2 = KNIAGINIA_fem
+        3 = KNIAGINIA_fem
+        4 = KNIAGINIA_fem
+        5 = KNIAGINIA_fem
+        6 = KNIAGINIA_fem
+        7 = GREAT_KNIAGINIA_fem
+        8 = GRAND_KNIAGINIA_fem
+        9 = TSARITSA_fem
+    }
+    heir_male = {
+        1 = KNIAZHICH
+        2 = KNIAZHICH
+        3 = KNIAZHICH
+        4 = KNIAZHICH
+        5 = KNIAZHICH
+        6 = KNIAZHICH
+        7 = KNIAZHICH
+        8 = KNIAZHICH
+        9 = TSAREVICH
+    }
+    heir_female = {
+        1 = KNIAZHNA_fem
+        2 = KNIAZHNA_fem
+        3 = KNIAZHNA_fem
+        4 = KNIAZHNA_fem
+        5 = KNIAZHNA_fem
+        6 = KNIAZHNA_fem
+        7 = KNIAZHNA_fem
+        8 = KNIAZHNA_fem
+        9 = TSAREVNA_fem
+    }
+    trigger = {
+        OR = {
+            has_reform = principality
+            has_reform = tsardom
+        }
+    }
+}
+zaporozhian_republic = {
+    rank = {
+        1 = ATAMAN
+        2 = ATAMAN
+        3 = ATAMAN
+        4 = ATAMAN
+        5 = ATAMAN
+        6 = ATAMANATE
+        7 = HETMANATE
+        8 = GREAT_HETMANATE
+        9 = GRAND_HETMANATE
+    }
+    ruler_male = {
+        1 = ATAMAN
+        2 = ATAMAN
+        3 = ATAMAN
+        4 = ATAMAN
+        5 = ATAMAN
+        6 = ATAMAN
+        7 = HETMAN
+        8 = GREAT_HETMAN
+        9 = GRAND_HETMAN
+    }
+    trigger = {
+        has_reform = cossacks_reform
+    }
+}
+#Scandinavia
+althing_noble_republic = {
+    rank = {
+        1 = ICE_COMMONWEALTH
+        2 = ICE_COMMONWEALTH
+        3 = ICE_COMMONWEALTH
+        4 = ICE_COMMONWEALTH
+        5 = ICE_COMMONWEALTH
+        6 = ICE_COMMONWEALTH
+        7 = ICE_COMMONWEALTH
+        8 = ICE_GRAND_COMMONWEALTH
+        9 = ICE_GREAT_COMMONWEALTH
+    }
+    ruler_male = {
+        1 = GODI
+        2 = GODI
+        3 = GODI
+        4 = GODI
+        5 = GODI
+        6 = GODI
+        7 = GODI
+        8 = GODI
+        9 = GREAT_GODI
+    }
+    ruler_female = {
+        1 = GODI
+        2 = GODI
+        3 = GODI
+        4 = GODI
+        5 = GODI
+        6 = GODI
+        7 = GODI
+        8 = GODI
+        9 = GREAT_GODI
+    }
+    trigger = {
+        has_reform = althing_elite_reform
+    }
+}
+#British Iles
+gov_english_commonwealth = {
+    rank = {
+        6 = COMMONWEALTH
+        7 = COMMONWEALTH
+        8 = COMMONWEALTH
+        9 = COMMONWEALTH
+    }
+    ruler_male = {
+        6 = LORD_PROTECTOR
+        7 = LORD_PROTECTOR
+        8 = LORD_PROTECTOR
+        9 = LORD_PROTECTOR
+    }
+    heir_male = {
+        6 = LORD
+        7 = LORD
+        8 = LORD
+        9 = LORD
+    }
+    trigger = {
+        has_reform = protectorate_parliament_reform
+        government_rank = 6
+    }
+}
+gov_puppet_kingdom_of_ireland = { #For released anglo-Ireland under England or similar.
+    rank = {
+        6 = LIEUTENATE
+    }
+    ruler_male = {
+        6 = VULORDLIEUTENANT
+    }
+    ruler_female = {
+        6 = VULORDLIEUTENANTFEMALE
+    }
+    consort_male = {
+        6 = VULORDLIEUTENANT
+    }
+    consort_female = {
+        6 = VULORDLIEUTENANTFEMALE
+    }
+    heir_male = {
+        6 = VUHEIRAPPARENT
+    }
+    heir_female = {
+        6 = VUHEIRAPPARENT
+    }
+    trigger = {
+        has_reform = puppet_kingdom_reform
+        government_rank = 6
+        NOT = {
+            government_rank = 7
+        }
+    }
+}
+gov_transitional_government_ireland = { #Something to do with viceroyalty anglo-Ireland or something.
+    rank = {
+        1 = DUCHY
+        2 = DUCHY
+        3 = DUCHY
+        4 = DUCHY
+        5 = DUCHY
+        6 = DUCHY
+        7 = DUCHY
+        8 = KINGDOM
+        9 = EMPIRE
+    }
+    ruler_male = {
+        1 = DUKE
+        2 = DUKE
+        3 = DUKE
+        4 = DUKE
+        5 = DUKE
+        6 = DUKE
+        7 = DUKE
+        8 = VUTRANSITIONALKING
+        9 = EMPEROR
+    }
+    ruler_female = {
+        1 = DUCHESS_fem
+        2 = DUCHESS_fem
+        3 = DUCHESS_fem
+        4 = DUCHESS_fem
+        5 = DUCHESS_fem
+        6 = DUCHESS_fem
+        7 = DUCHESS_fem
+        8 = QUEEN_fem
+        9 = EMPRESS_fem
+    }
+    consort_male = {
+        1 = DUKE
+        2 = DUKE
+        3 = DUKE
+        4 = DUKE
+        5 = DUKE
+        6 = DUKE
+        7 = DUKE
+        8 = KING
+        9 = EMPEROR
+    }
+    consort_female = {
+        1 = DUCHESS_CONSORT_fem
+        2 = DUCHESS_CONSORT_fem
+        3 = DUCHESS_CONSORT_fem
+        4 = DUCHESS_CONSORT_fem
+        5 = DUCHESS_CONSORT_fem
+        6 = DUCHESS_CONSORT_fem
+        7 = DUCHESS_CONSORT_fem
+        8 = QUEEN_CONSORT_fem
+        9 = EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = LORD
+        2 = LORD
+        3 = LORD
+        4 = LORD
+        5 = LORD
+        6 = LORD
+        7 = LORD
+        8 = PRINCE
+        9 = PRINCE
+    }
+    heir_female = {
+        1 = DAME_VU_fem
+        2 = DAME_VU_fem
+        3 = DAME_VU_fem
+        4 = DAME_VU_fem
+        5 = DAME_VU_fem
+        6 = DAME_VU_fem
+        7 = DAME_VU_fem
+        8 = PRINCESS_fem
+        9 = PRINCESS_fem
+    }
+    trigger = {
+        has_reform = transitional_government_reform
+    }
+}
+gov_irish_clann = { #Starting Irish minors
+    rank = {
+        1 = IRISH_CLANN
+    }
+    ruler_male = {
+        1 = RI
+    }
+    ruler_female = {
+        1 = BANRION
+    }
+    consort_male = {
+        1 = FEARNABANRION
+    }
+    consort_female = {
+        1 = BANANRI
+    }
+    heir_male = {
+        1 = TANAISTE
+    }
+    heir_female = {
+        1 = BANTANAISTE
+    }
+    trigger = {
+        has_reform = irish_clann_reform
+        NOT = {
+            government_rank = 2
+        }
+    }
+}
+gov_welsh_monarchy = { #Welsh minor kingdoms.
+    rank = {
+        1 = WELSH_CAMMOTE #Cantref
+        2 = WELSH_CAMMOTE #Cymwd
+        3 = WELSH_CAMMOTE #Cymwd
+        4 = WELSH_EARLDOM #Cymwd
+        5 = WELSH_PETTY_KINGDOM #Cymwd
+        6 = WELSH_HIGH_KINGDOM #Dugiaeth
+        7 = WELSH_HIGH_KINGDOM #Cymwd
+        8 = WELSH_HIGH_KINGDOM #Iarllwys
+        9 = WELSH_HIGH_KINGDOM #Teyrnas
+    }
+    ruler_male = {
+        1 = WELSH_CHIEFTAIN #Pennaeth
+        2 = WELSH_CHIEFTAIN #Pennaeth
+        3 = WELSH_CHIEFTAIN #Pennaeth
+        4 = WELSH_EARL #Iarll
+        5 = WELSH_PETTY_KING #Brenin
+        6 = WELSH_HIGH_KING #Dug
+        7 = WELSH_HIGH_KING #Brenin
+        8 = WELSH_HIGH_KING #Brenin
+        9 = WELSH_HIGH_KING #Brenin
+    }
+    ruler_female = {
+        1 = WELSH_CHIEFTESS_fem #Penaethiaid
+        2 = WELSH_CHIEFTESS_fem #Penaethiaid
+        3 = WELSH_CHIEFTESS_fem #Penaethiaid
+        4 = WELSH_COUNTESS_fem #Iarlles
+        5 = WELSH_PETTY_QUEEN_fem #Brenhines
+        6 = WELSH_HIGH_QUEEN_fem #Duges
+        7 = WELSH_HIGH_QUEEN_fem #Brenhines
+        8 = WELSH_HIGH_QUEEN_fem #Brenhines
+        9 = WELSH_HIGH_QUEEN_fem #Brenhines
+    }
+    consort_male = {
+        1 = WELSH_CONSORT #Cydymaith
+        2 = WELSH_CONSORT #Cydymaith
+        3 = WELSH_CONSORT #Cydymaith
+        4 = WELSH_CONSORT #Cydymaith
+        5 = WELSH_CONSORT #Cydymaith
+        6 = WELSH_CONSORT #Cydymaith
+        7 = WELSH_CONSORT #Cydymaith
+        8 = WELSH_CONSORT #Cydymaith
+        9 = WELSH_CONSORT #Cydymaith
+    }
+    consort_female = {
+        1 = WELSH_CONSORT_fem #Cydymaith
+        2 = WELSH_CONSORT_fem #Cydymaith
+        3 = WELSH_CONSORT_fem #Cydymaith
+        4 = WELSH_CONSORT_fem #Cydymaith
+        5 = WELSH_CONSORT_fem #Cydymaith
+        6 = WELSH_CONSORT_fem #Cydymaith
+        7 = WELSH_CONSORT_fem #Cydymaith
+        8 = WELSH_CONSORT_fem #Cydymaith
+        9 = WELSH_CONSORT_fem #Cydymaith
+    }
+    heir_male = {
+        1 = WELSH_HEIR #Arglwydd
+        2 = WELSH_HEIR #Arglwydd
+        3 = WELSH_HEIR #Arglwydd
+        4 = WELSH_HEIR #Arglwydd
+        5 = WELSH_HEIR_PRINCE #Tywysog
+        6 = WELSH_HEIR_PRINCE #Tywysog
+        7 = WELSH_HEIR_PRINCE #Tywysog
+        8 = WELSH_HEIR_PRINCE #Tywysog
+        9 = WELSH_HEIR_PRINCE #Tywysog
+    }
+    heir_female = {
+        1 = WELSH_HEIRESS_fem #Arglwydd
+        2 = WELSH_HEIRESS_fem #Arglwydd
+        3 = WELSH_HEIRESS_fem #Arglwydd
+        4 = WELSH_HEIRESS_fem #Arglwydd
+        5 = WELSH_HEIRESS_PRINCESS_fem #Tywysoges
+        6 = WELSH_HEIRESS_PRINCESS_fem #Tywysoges
+        7 = WELSH_HEIRESS_PRINCESS_fem #Tywysoges
+        8 = WELSH_HEIRESS_PRINCESS_fem #Tywysoges
+        9 = WELSH_HEIRESS_PRINCESS_fem #Tywysoges
+    }
+    trigger = {
+        OR = {
+            has_reform = welsh_monarchy_reform
+            has_reform = welsh_lordship_reform
+            has_reform = welsh_duchy_reform
+        }
+    }
+}
+gov_scottish_clan_reform = {
+    rank = {
+        1 = SCOTTISH_CLAN_1
+        2 = SCOTTISH_CLAN_1
+        3 = SCOTTISH_CLAN_2
+        4 = SCOTTISH_EARLDOM
+        5 = SCOTTISH_MARQUISATE
+        6 = SCOTTISH_DUCHY
+        7 = SCOTTISH_PETTY_KINGDOM
+        8 = SCOTTISH_HIGH_KINGDOM
+        9 = SCOTTISH_KINGDOM
+    }
+    ruler_male = {
+        1 = SCOTTISH_CHIEFTAIN
+        2 = SCOTTISH_CHIEFTAIN
+        3 = SCOTTISH_CHIEFTAIN
+        4 = SCOTTISH_EARL
+        5 = SCOTTISH_MARQUEES
+        6 = SCOTTISH_DUKE
+        7 = SCOTTISH_PETTY_KING
+        8 = SCOTTISH_HIGH_KING
+        9 = SCOTTISH_KING
+    }
+    ruler_female = {
+        1 = SCOTTISH_CHIEFTESS_fem
+        2 = SCOTTISH_CHIEFTESS_fem
+        3 = SCOTTISH_CHIEFTESS_fem
+        4 = SCOTTISH_COUNTESS_fem
+        5 = SCOTTISH_MARCHIONESS_fem
+        6 = SCOTTISH_DUCHESS_fem
+        7 = SCOTTISH_PETTY_QUEEN_fem
+        8 = SCOTTISH_HIGH_QUEEN_fem
+        9 = SCOTTISH_QUEEN_fem
+    }
+    consort_male = {
+        1 = SCOTTISH_CONSORT
+        2 = SCOTTISH_CONSORT
+        3 = SCOTTISH_CONSORT
+        4 = SCOTTISH_EARL_CONSORT
+        5 = SCOTTISH_MARQUEES_CONSORT
+        6 = SCOTTISH_DUKE_CONSORT
+        7 = SCOTTISH_PRINCE_CONSORT
+        8 = SCOTTISH_PRINCE_CONSORT
+        9 = SCOTTISH_PRINCE_CONSORT
+    }
+    consort_female = {
+        1 = SCOTTISH_CONSORT_fem
+        2 = SCOTTISH_CONSORT_fem
+        3 = SCOTTISH_CONSORT_fem
+        4 = SCOTTISH_COUNTESS_CONSORT_fem
+        5 = SCOTTISH_MARCHIONESS_CONSORT_fem
+        6 = SCOTTISH_DUCHESS_CONSORT_fem
+        7 = SCOTTISH_PRINCESS_CONSORT_fem
+        8 = SCOTTISH_PRINCESS_CONSORT_fem
+        9 = SCOTTISH_PRINCESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = SCOTTISH_HEIR
+        2 = SCOTTISH_HEIR
+        3 = SCOTTISH_HEIR
+        4 = SCOTTISH_HEIR
+        5 = SCOTTISH_HEIR
+        6 = SCOTTISH_PRINCE
+        7 = SCOTTISH_PRINCE
+        8 = SCOTTISH_PRINCE
+        9 = SCOTTISH_PRINCE
+    }
+    heir_female = {
+        1 = SCOTTISH_HEIRESS_fem
+        2 = SCOTTISH_HEIRESS_fem
+        3 = SCOTTISH_HEIRESS_fem
+        4 = SCOTTISH_HEIRESS_fem
+        5 = SCOTTISH_HEIRESS_fem
+        6 = SCOTTISH_PRINCESS_fem
+        7 = SCOTTISH_PRINCESS_fem
+        8 = SCOTTISH_PRINCESS_fem
+        9 = SCOTTISH_PRINCESS_fem
+    }
+    trigger = {
+        OR = {
+            is_subject_of_type = scottish_clan
+            has_reform = scottish_monarchy
+            has_reform = lowland_clan_reform
+            has_reform = highland_clan_reform
+            primary_culture = scottish
+            primary_culture = celtic_lowland_scottish
+            primary_culture = celtic_highland_scottish_culture
+        }
+    }
+}
+gov_provincial_kingdom = { #Provincial Kingdom formables Munster, Leinster, Ulster & Connacht, by Irish
+    rank = {
+        7 = KINGDOM_TANISTRY
+    }
+    ruler_male = {
+        7 = RIRUIR
+    }
+    ruler_female = {
+        7 = BANRIONRUIR
+    }
+    consort_male = {
+        7 = FEARNABANRION
+    }
+    consort_female = {
+        7 = BANANRI
+    }
+    heir_male = {
+        7 = TANAISTE
+    }
+    heir_female = {
+        7 = BANTANAISTE
+    }
+    trigger = {
+        has_reform = provincial_kingdom_reform
+        government_rank = 7
+        NOT = {
+            government_rank = 8
+        }
+    }
+}
+gov_high_kingship = { #Irish Ireland, pretty much. Tanistry.
+    rank = {
+        1 = CLANN_TANISTRY
+        2 = CLANN_TANISTRY
+        3 = CLANN_TANISTRY
+        4 = CLANN_TANISTRY
+        5 = CLANN_TANISTRY
+        6 = CLANN_TANISTRY
+        7 = PROVKINGDOM_TANISTRY
+        8 = KINGDOM_TANISTRY
+        9 = KINGDOM_TANISTRY
+    }
+    ruler_male = {
+        1 = RIRUIR
+        2 = RIRUIR
+        3 = RIRUIR
+        4 = RIRUIR
+        5 = RIRUIR
+        6 = RIRUIR
+        7 = RIRUIR
+        8 = ARDRI
+        9 = ARDRI
+    }
+    ruler_female = {
+        1 = BANRIONRUIR
+        2 = BANRIONRUIR
+        3 = BANRIONRUIR
+        4 = BANRIONRUIR
+        5 = BANRIONRUIR
+        6 = BANRIONRUIR
+        7 = BANRIONRUIR
+        8 = ARDBANRION
+        9 = ARDBANRION
+    }
+    consort_male = {
+        1 = FEARNABANRION
+        2 = FEARNABANRION
+        3 = FEARNABANRION
+        4 = FEARNABANRION
+        5 = FEARNABANRION
+        6 = FEARNABANRION
+        7 = FEARNABANRION
+        8 = FEARNAARDBANRION
+        9 = FEARNAARDBANRION
+    }
+    consort_female = {
+        1 = BANANRI
+        2 = BANANRI
+        3 = BANANRI
+        4 = BANANRI
+        5 = BANANRI
+        6 = BANANRI
+        7 = BANANRI
+        8 = BANANARDRI
+        9 = BANANARDRI
+    }
+    heir_male = {
+        1 = TANAISTE
+        2 = TANAISTE
+        3 = TANAISTE
+        4 = TANAISTE
+        5 = TANAISTE
+        6 = TANAISTE
+        7 = TANAISTE
+        8 = TANAISTE
+        9 = TANAISTE
+    }
+    heir_female = {
+        1 = BANTANAISTE
+        2 = BANTANAISTE
+        3 = BANTANAISTE
+        4 = BANTANAISTE
+        5 = BANTANAISTE
+        6 = BANTANAISTE
+        7 = BANTANAISTE
+        8 = BANTANAISTE
+        9 = BANTANAISTE
+    }
+    trigger = {
+        has_reform = tanistry_reform
+    }
+}
+gov_norman_lordship = { #Starting Old English minors. + Norman Duchy formables Munser, Leinster, Ulster & Connacht
+    rank = {
+        1 = LORDSHIP_VU
+        6 = DUCHY
+    }
+    ruler_male = {
+        1 = LORD
+        6 = DUKE
+    }
+    ruler_female = {
+        1 = DAME_VU_fem
+        6 = DUCHESS_fem
+    }
+    consort_male = {
+        1 = LORD
+        6 = DUKE
+    }
+    consort_female = {
+        1 = LADY_fem
+        6 = DUCHESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = HONOURABLE_VU
+        6 = LORD
+    }
+    heir_female = {
+        1 = LADY_fem
+        6 = DAME_fem
+    }
+    trigger = {
+        OR = {
+            NOT = {
+                government_rank = 2
+            }
+            AND = {
+                government_rank = 6
+                NOT = {
+                    government_rank = 7
+                }
+            }
+        }
+        OR = {
+            has_reform = norman_lordship_reform
+            has_reform = norman_duchy_reform
+        }
+    }
+}
+gov_anglo_irish_monarchy = { #Anglo-Ireland, pretty much.
+    rank = {
+        1 = LORDSHIP_VU
+        2 = BARONY_VU
+        3 = VISCOUNTY_VU
+        4 = EARLDOM
+        5 = MARQUISATE_VU
+        6 = DUCHY_VU
+        7 = PRINCIPALITY_VU
+        8 = KINGDOM_VU
+        9 = EMPIRE_ENG
+    }
+    ruler_male = {
+        1 = LORD
+        2 = BARON_VU
+        3 = VISCOUNT_VU
+        4 = EARL_VU
+        5 = MARQUESS_VU
+        6 = DUKE_VU
+        7 = PRINCE_VU
+        8 = KING_VU
+        9 = EMPEROR_ENG
+    }
+    ruler_female = {
+        1 = DAME_VU_fem
+        2 = BARONESS_VU_fem
+        3 = VISCOUNTESS_VU_fem
+        4 = COUNTESS_VU_fem
+        5 = MARCHIONESS_VU_fem
+        6 = DUCHESS_fem
+        7 = PRINCESS_fem
+        8 = QUEEN_VU_fem
+        9 = EMPRESS_ENG
+    }
+    consort_male = {
+        1 = LORD_CONSORT_VU
+        2 = BARON_CONSORT_VU
+        3 = VISCOUNT_CONSORT_VU
+        4 = COUNT_CONSORT_VU
+        5 = MARQUESS_CONSORT_VU
+        6 = DUKE_CONSORT_VU
+        7 = PRINCE_CONSORT_VU
+        8 = KING_CONSORT_VU
+        9 = EMPEROR_CONSORT_VU
+    }
+    consort_female = {
+        1 = DAME_CONSORT_VU_fem
+        2 = BARONESS_CONSORT_VU_fem
+        3 = VISCOUNTESS_CONSORT_VU_fem
+        4 = COUNTESS_CONSORT_VU_fem
+        5 = MARCHIONESS_CONSORT_VU_fem
+        6 = DUCHESS_CONSORT_VU_fem
+        7 = PRINCESS_CONSORT_VU_fem
+        8 = QUEEN_CONSORT_VU_fem
+        9 = EMPRESS_CONSORT_VU_fem
+    }
+    heir_male = {
+        1 = HONOURABLE_VU
+        2 = HONOURABLE_VU
+        3 = LORD
+        4 = LORD
+        5 = LORD
+        6 = PRINCE_VU
+        7 = PRINCE_VU
+        8 = PRINCE_VU
+        9 = PRINCE_ENG
+    }
+    heir_female = {
+        1 = DAME_VU_fem
+        2 = DAME_VU_fem
+        3 = LADY_fem
+        4 = LADY_fem
+        5 = LADY_fem
+        6 = PRINCESS_fem
+        7 = PRINCESS_fem
+        8 = PRINCESS_fem
+        9 = PRINCESS_ENG
+    }
+    trigger = {
+        has_reform = anglo_irish_monarchy_reform
+    }
+}
+#Greece
+gov_greek_duchy = { #Greek Duchy formables
+    rank = {
+        1 = GREEK_LORDSHIP #Despotate
+        2 = GREEK_LORDSHIP #Despotate
+        3 = GREEK_LORDSHIP #Despotate
+        4 = GREEK_KATEPANATE #Katepanate
+        5 = GREEK_KATEPANATE #Katepanate
+        6 = GREEK_DUCATE #Ducate
+        7 = GREEK_EXARCHATE #Exarchate
+        8 = GREEK_NOMARCHATE #Nomarchate
+        9 = GREEK_NOMARCHATE #Nomarchate
+    }
+    ruler_male = {
+        1 = GREEK_LORD #Despotēs
+        2 = GREEK_LORD #Despotēs
+        3 = GREEK_LORD #Despotēs
+        4 = GREEK_KATEPANOS #Katepanos
+        5 = GREEK_KATEPANOS #Katepanos
+        6 = GREEK_DUKE #Doux
+        7 = GREEK_EXARCH #Exarch
+        8 = GREEK_PRAETORIAN_PREFECT #Nomarch
+        9 = GREEK_PRAETORIAN_PREFECT #Nomarch
+    }
+    consort_female = {
+        1 = GREEK_CONSORT_fem #Syzygos
+        2 = GREEK_CONSORT_fem #Syzygos
+        3 = GREEK_CONSORT_fem #Syzygos
+        4 = GREEK_CONSORT_fem #Syzygos
+        5 = GREEK_CONSORT_fem #Syzygos
+        6 = GREEK_CONSORT_fem #Syzygos
+        7 = GREEK_CONSORT_fem #Syzygos
+        8 = GREEK_CONSORT_fem #Syzygos
+        9 = GREEK_CONSORT_fem #Syzygos
+    }
+    heir_male = {
+        1 = GREEK_HEIR #Kyrios
+        2 = GREEK_HEIR #Kyrios
+        3 = GREEK_HEIR #Kyrios
+        4 = GREEK_HEIR #Krites
+        5 = GREEK_HEIR #Krites
+        6 = GREEK_HEIR #Krites
+        7 = GREEK_HEIR #Archon
+        8 = GREEK_HEIR #Archon
+        9 = GREEK_HEIR #Archon
+    }
+    trigger = {
+        OR = {
+            has_reform = greek_lordship_reform
+            has_reform = greek_duchy_reform
+            has_reform = greek_roman_governors_reform
+        }
+    }
+}
+#Iberia
+church_of_andorra = {
+    rank = {
+        1 = AOR_PRINCE_ABBACY
+        2 = AOR_PRINCE_ABBACY
+        3 = AOR_PRINCE_BISHOPRIC
+        4 = AOR_PRINCE_BISHOPRIC
+        5 = AOR_PRINCE_ARCHBISHOPRIC
+        6 = AOR_PRINCE_ARCHBISHOPRIC
+        7 = AOR_PRINCE_ARCHBISHOPRIC
+        8 = AOR_PRINCE_ARCHBISHOPRIC
+    }
+    ruler_male = {
+        1 = AOR_PRINCE_ABBOT
+        2 = AOR_PRINCE_ABBOT
+        3 = AOR_PRINCE_BISHOP
+        4 = AOR_PRINCE_BISHOP
+        5 = AOR_PRINCE_ARCHBISHOP
+        6 = AOR_PRINCE_ARCHBISHOP
+        7 = AOR_PRINCE_ARCHBISHOP
+        8 = AOR_PRINCE_ARCHBISHOP
+    }
+    trigger = {
+        NOT = {
+            government_rank = 9
+        }
+        tag = AOR
+        primary_culture = catalan
+        OR = {
+            has_reform = prince_abbacy_of_andorra_reform
+            has_reform = prince_bishopric_of_andorra_reform
+            has_reform = prince_archbishopric_of_andorra_reform
+            is_theocratic_subject_type = yes
+        }
+    }
+}
+
+#France
+principality_of_wales = {
+    rank = {
+        7 = PRINCIPALITY_WALES
+    }
+    ruler_male = {
+        7 = PRINCIPALITY_PRINCE_WALES
+    }
+    ruler_female = {
+        7 = PRINCIPALITY_PRINCESS_WALES_fem
+    }
+    consort_male = {
+        7 = PRINCIPALITY_PRINCE_CONSORT_WALES
+    }
+    consort_female = {
+        7 = PRINCIPALITY_PRINCESS_CONSORT_WALES_fem
+    }
+    trigger = {
+        primary_culture = celtic_welsh_culture
+        government_rank = 7
+        NOT = {
+            government_rank = 8
+        }
+    }
+}
+principality_of_orange = {
+    rank = {
+        7 = PRINCIPALITY_ORANGE
+    }
+    ruler_male = {
+        7 = PRINCIPALITY_PRINCE_ORANGE
+    }
+    ruler_female = {
+        7 = PRINCIPALITY_PRINCESS_ORANGE_fem
+    }
+    consort_male = {
+        7 = PRINCIPALITY_PRINCE_CONSORT_ORANGE
+    }
+    consort_female = {
+        7 = PRINCIPALITY_PRINCESS_CONSORT_ORANGE_fem
+    }
+    trigger = {
+        tag = ONG
+        OR = {
+            has_reform = eue_principality_reform
+            has_reform = unlocked_eue_principality_reform
+        }
+        government_rank = 7
+        NOT = {
+            government_rank = 8
+        }
+    }
+}
+principality_of_achaea = {
+    rank = {
+        7 = PRINCIPALITY_ACHAEA
+    }
+    ruler_male = {
+        7 = PRINCIPALITY_PRINCE_ACHAEA
+    }
+    ruler_female = {
+        7 = PRINCIPALITY_PRINCESS_ACHAEA_fem
+    }
+    consort_male = {
+        7 = PRINCIPALITY_PRINCE_CONSORT_ACHAEA
+    }
+    consort_female = {
+        7 = PRINCIPALITY_PRINCESS_CONSORT_ACHAEA_fem
+    }
+    trigger = {
+        tag = ACH
+        OR = {
+            has_reform = eue_principality_reform
+            has_reform = unlocked_eue_principality_reform
+        }
+        government_rank = 7
+        NOT = {
+            government_rank = 8
+        }
+    }
+}
+#Western Slavland
+slovak_localisation = {
+    rank = {
+        1 = VOJVODSTVO
+        2 = VOJVODSTVO
+        3 = VOJVODSTVO
+        4 = VOJVODSTVO
+        5 = VOJVODSTVO
+        6 = VOJVODSTVO
+        7 = KNIEZATSTVO
+        8 = KRALOVSTVO
+        9 = CISARSTVO
+    }
+    ruler_male = {
+        1 = VOJVODA
+        2 = VOJVODA
+        3 = VOJVODA
+        4 = VOJVODA
+        5 = VOJVODA
+        6 = VOJVODA
+        7 = KNIEZA
+        8 = KRAL
+        9 = CISAR_SK
+    }
+    ruler_female = {
+        1 = VOJVODINA_fem
+        2 = VOJVODINA_fem
+        3 = VOJVODINA_fem
+        4 = VOJVODINA_fem
+        5 = VOJVODINA_fem
+        6 = VOJVODINA_fem
+        7 = PRINCEZNA_fem
+        8 = KRALOVNA_fem
+        9 = CISAROVNA_fem
+    }
+    consort_male = {
+        1 = PRINCOVY_MANZELKA_CONSORT
+        2 = PRINCOVY_MANZELKA_CONSORT
+        3 = PRINCOVY_MANZELKA_CONSORT
+        4 = PRINCOVY_MANZELKA_CONSORT
+        5 = PRINCOVY_MANZELKA_CONSORT
+        6 = PRINCOVY_MANZELKA_CONSORT
+        7 = PRINCOVY_MANZELKA_CONSORT
+        8 = PRINCOVY_MANZELKA_CONSORT
+        9 = KRAL_MANZELKA_CONSORT
+    }
+    consort_female = {
+        1 = PRINCEZNA_MANZELKA_CONSORT_fem
+        2 = PRINCEZNA_MANZELKA_CONSORT_fem
+        3 = PRINCEZNA_MANZELKA_CONSORT_fem
+        4 = PRINCEZNA_MANZELKA_CONSORT_fem
+        5 = PRINCEZNA_MANZELKA_CONSORT_fem
+        6 = PRINCEZNA_MANZELKA_CONSORT_fem
+        7 = PRINCEZNA_MANZELKA_CONSORT_fem
+        8 = PRINCEZNA_MANZELKA_CONSORT_fem
+        9 = KRALOVNA_MANZELKA_CONSORT_fem
+    }
+    heir_male = {
+        1 = KNIEZA
+        2 = KNIEZA
+        3 = KNIEZA
+        4 = KNIEZA
+        5 = KNIEZA
+        6 = KNIEZA
+        7 = KNIEZA
+        8 = KNIEZA
+        9 = KNIEZA
+    }
+    heir_female = {
+        1 = PRINCEZNA_fem
+        2 = PRINCEZNA_fem
+        3 = PRINCEZNA_fem
+        4 = PRINCEZNA_fem
+        5 = PRINCEZNA_fem
+        6 = PRINCEZNA_fem
+        7 = PRINCEZNA_fem
+        8 = PRINCEZNA_fem
+        9 = PRINCEZNA_fem
+    }
+    trigger = {
+        has_reform = slovakian_monarchy_reform
+    }
+}
+#Central Asia
+georgian = {
+    rank = {
+        1 = MATAVRO                      #Duchy
+        2 = MATAVRO                      #Duchy
+        3 = MATAVRO                      #Duchy
+        4 = MATAVRO                      #Duchy
+        5 = MATAVRO                      #Duchy
+        6 = MATAVRO                      #Duchy
+        7 = SAMTAVRO                     #Principality
+        8 = SAMEPO                       #Kingdom
+        9 = IMPERIA                      #Empire
+    }
+    ruler_male = {
+        1 = MATAVRI                      #Duke
+        2 = MATAVRI                      #Duke
+        3 = MATAVRI                      #Duke
+        4 = MATAVRI                      #Duke
+        5 = MATAVRI                      #Duke
+        6 = MATAVRI                      #Duke
+        7 = SAMTAVRI                     #Prince
+        8 = MEPE                         #King
+        9 = IMPERATORI                   #Emperor
+    }
+    ruler_female = {
+        1 = MATAVLI_fem                  #Duchy
+        2 = MATAVLI_fem                  #Duchy
+        3 = MATAVLI_fem                  #Duchy
+        4 = MATAVLI_fem                  #Duchy
+        5 = MATAVLI_fem                  #Duchy
+        6 = MATAVLI_fem                  #Duchy
+        7 = SAMTAVLI_fem                 #Princess
+        8 = DEDOPALI_fem                 #Queen
+        9 = IMPERATRITSA_fem             #Empress
+    }
+    consort_male = {
+        1 = BATONISHVILI_CONSORT
+        2 = BATONISHVILI_CONSORT
+        3 = BATONISHVILI_CONSORT
+        4 = BATONISHVILI_CONSORT
+        5 = BATONISHVILI_CONSORT
+        6 = BATONISHVILI_CONSORT
+        7 = BATONISHVILI_CONSORT
+        8 = BATONISHVILI_CONSORT
+        9 = IMPERATORI_CONSORT
+    }
+    consort_female = {
+        1 = BATONISHVILI_CONSORT_fem
+        2 = BATONISHVILI_CONSORT_fem
+        3 = BATONISHVILI_CONSORT_fem
+        4 = BATONISHVILI_CONSORT_fem
+        5 = BATONISHVILI_CONSORT_fem
+        6 = BATONISHVILI_CONSORT_fem
+        7 = BATONISHVILI_CONSORT_fem
+        8 = BATONISHVILI_CONSORT_fem
+        9 = DEDOPALI_CONSORT_fem
+    }
+    heir_male = {
+        1 = BATONISHVILI
+        2 = BATONISHVILI
+        3 = BATONISHVILI
+        4 = BATONISHVILI
+        5 = BATONISHVILI
+        6 = BATONISHVILI
+        7 = BATONISHVILI
+        8 = BATONISHVILI
+        9 = BATONISHVILI
+    }
+    heir_female = {
+        1 = BATONISHVILI_fem
+        2 = BATONISHVILI_fem
+        3 = BATONISHVILI_fem
+        4 = BATONISHVILI_fem
+        5 = BATONISHVILI_fem
+        6 = BATONISHVILI_fem
+        7 = BATONISHVILI_fem
+        8 = BATONISHVILI_fem
+        9 = BATONISHVILI_fem
+    }
+    trigger = {
+        has_reform = georgian_monarchy_reform
+        NOT = {	tag = SME }
+    }
+}
+##########################################################
+##  ToR Gov reforms and subjects + overlapping entries  ##
+##########################################################
+#ANGEVIN
+ang_ToR_reform = {
+    rank = {
+        1 = ANG_LORDSHIP_1
+        2 = ANG_BARONY_1
+        3 = ANG_VISCOUNTY_1
+        4 = ANG_COUNTY_1
+        5 = ANG_MARQUISATE_1
+        6 = ANG_DUCHY_1
+        7 = ANG_PRINCIPALITY_1
+        8 = ANG_KINGDOM_1
+        9 = ANG_EMPIRE_1
+    }
+    ruler_male = {
+        1 = ANG_LORD_1
+        2 = ANG_BARON_1
+        3 = ANG_VISCOUNT_1
+        4 = ANG_COUNT_1
+        5 = ANG_MARQUIS_1
+        6 = ANG_DUKE_1
+        7 = ANG_PRINCE_1
+        8 = ANG_KING_1
+        9 = ANG_EMPEROR_1
+    }
+    ruler_female = {
+        1 = ANG_LADY_fem_1
+        2 = ANG_BARONESS_fem_1
+        3 = ANG_VISCOUNTESS_fem_1
+        4 = ANG_COUNTESS_fem_1
+        5 = ANG_MARCHIONESS_fem_1
+        6 = ANG_DUCHESS_fem_1
+        7 = ANG_PRINCESS_fem_1
+        8 = ANG_QUEEN_fem_1
+        9 = ANG_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = ANG_LORD_CONSORT_1
+        2 = ANG_BARON_CONSORT_1
+        3 = ANG_VISCOUNT_CONSORT_1
+        4 = ANG_COUNT_CONSORT_1
+        5 = ANG_MARQUIS_CONSORT_1
+        6 = ANG_DUKE_CONSORT_1
+        7 = ANG_PRINCE_CONSORT_1
+        8 = ANG_KING_CONSORT_1
+        9 = ANG_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = ANG_LADY_CONSORT_fem_1
+        2 = ANG_BARONESS_CONSORT_fem_1
+        3 = ANG_VISCOUNTESS_CONSORT_fem_1
+        4 = ANG_COUNTESS_CONSORT_fem_1
+        5 = ANG_MARCHIONESS_CONSORT_fem_1
+        6 = ANG_DUCHESS_CONSORT_fem_1
+        7 = ANG_PRINCESS_CONSORT_fem_1
+        8 = ANG_QUEEN_CONSORT_fem_1
+        9 = ANG_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = ANG_HONOURABLE_1
+        2 = ANG_HONOURABLE_1
+        3 = ANG_HONOURABLE_1
+        4 = ANG_HONOURABLE_1
+        5 = ANG_LORD_1
+        6 = ANG_PRINCE_1
+        7 = ANG_PRINCE_1
+        8 = ANG_CROWN_PRINCE_1
+        9 = ANG_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = ANG_HONOURABLE_LADY_fem_1
+        2 = ANG_HONOURABLE_LADY_fem_1
+        3 = ANG_HONOURABLE_LADY_fem_1
+        4 = ANG_HONOURABLE_LADY_fem_1
+        5 = ANG_LADY_fem_1
+        6 = ANG_PRINCESS_fem_1
+        7 = ANG_PRINCESS_fem_1
+        8 = ANG_CROWN_PRINCESS_fem_1
+        9 = ANG_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            primary_culture = cosmopolitan_french_UKS
+            primary_culture = gascon_UKS
+            primary_culture = normand_UKS
+            primary_culture = aquitaine_UKS
+            primary_culture = burgundian_UKS
+            primary_culture = occitain_UKS
+            primary_culture = arpitan_UKS
+            primary_culture = poitevin_UKS
+            primary_culture = angevin_UKS
+            primary_culture = lorraine_UKS
+            primary_culture = auvergnat_UKS
+            primary_culture = gallo_UKS
+            primary_culture = wallonian_UKS
+            primary_culture = breton_UKS
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+        NOT = {
+            tag = B0H
+            tag = BR0
+            tag = CL4
+            tag = M0R
+            tag = M0T
+            tag = MR5
+        }
+    }
+}
+#ARAGON
+ara_ToR_reform = {
+    rank = {
+        1 = ARA_LORDSHIP_1
+        2 = ARA_BARONY_1
+        3 = ARA_VISCOUNTY_1
+        4 = ARA_COUNTY_1
+        5 = ARA_MARQUISATE_1
+        6 = ARA_DUCHY_1
+        7 = ARA_PRINCIPALITY_1
+        8 = ARA_KINGDOM_1
+        9 = ARA_EMPIRE_1
+    }
+    ruler_male = {
+        1 = ARA_LORD_1
+        2 = ARA_BARON_1
+        3 = ARA_VISCOUNT_1
+        4 = ARA_COUNT_1
+        5 = ARA_MARQUIS_1
+        6 = ARA_DUKE_1
+        7 = ARA_PRINCE_1
+        8 = ARA_KING_1
+        9 = ARA_EMPEROR_1
+    }
+    ruler_female = {
+        1 = ARA_LADY_fem_1
+        2 = ARA_BARONESS_fem_1
+        3 = ARA_VISCOUNTESS_fem_1
+        4 = ARA_COUNTESS_fem_1
+        5 = ARA_MARCHIONESS_fem_1
+        6 = ARA_DUCHESS_fem_1
+        7 = ARA_PRINCESS_fem_1
+        8 = ARA_QUEEN_fem_1
+        9 = ARA_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = ARA_LORD_CONSORT_1
+        2 = ARA_BARON_CONSORT_1
+        3 = ARA_VISCOUNT_CONSORT_1
+        4 = ARA_COUNT_CONSORT_1
+        5 = ARA_MARQUIS_CONSORT_1
+        6 = ARA_DUKE_CONSORT_1
+        7 = ARA_PRINCE_CONSORT_1
+        8 = ARA_KING_1
+        9 = ARA_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = ARA_LADY_CONSORT_fem_1
+        2 = ARA_BARONESS_CONSORT_fem_1
+        3 = ARA_VISCOUNTESS_CONSORT_fem_1
+        4 = ARA_COUNTESS_CONSORT_fem_1
+        5 = ARA_MARCHIONESS_CONSORT_fem_1
+        6 = ARA_DUCHESS_CONSORT_fem_1
+        7 = ARA_PRINCESS_CONSORT_fem_1
+        8 = ARA_QUEEN_fem_1
+        9 = ARA_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = ARA_HONOURABLE_1
+        2 = ARA_HONOURABLE_1
+        3 = ARA_HONOURABLE_1
+        4 = ARA_HONOURABLE_1
+        5 = ARA_LORD_1
+        6 = ARA_PRINCE_1
+        7 = ARA_PRINCE_1
+        8 = ARA_CROWN_PRINCE_1
+        9 = ARA_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = ARA_HONOURABLE_LADY_fem_1
+        2 = ARA_HONOURABLE_LADY_fem_1
+        3 = ARA_HONOURABLE_LADY_fem_1
+        4 = ARA_HONOURABLE_LADY_fem_1
+        5 = ARA_LADY_fem_1
+        6 = ARA_PRINCESS_fem_1
+        7 = ARA_PRINCESS_fem_1
+        8 = ARA_CROWN_PRINCESS_fem_1
+        9 = ARA_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            primary_culture = aragonese
+            primary_culture = catalan
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+        NOT = {
+            tag = AOR
+        }
+    }
+}
+#AUSTRIA
+ost_ToR_reform = {
+    rank = {
+        1 = OST_LORDSHIP_1
+        2 = OST_BARONY_1
+        3 = OST_VISCOUNTY_1
+        4 = OST_COUNTY_1
+        5 = OST_MARQUISATE_1
+        6 = OST_DUCHY_1
+        7 = OST_PRINCIPALITY_1
+        8 = OST_KINGDOM_1
+        9 = OST_EMPIRE_1
+    }
+    ruler_male = {
+        1 = OST_LORD_1
+        2 = OST_BARON_1
+        3 = OST_VISCOUNT_1
+        4 = OST_COUNT_1
+        5 = OST_MARQUIS_1
+        6 = OST_DUKE_1
+        7 = OST_PRINCE_1
+        8 = OST_KING_1
+        9 = OST_EMPEROR_1
+    }
+    ruler_female = {
+        1 = OST_LADY_fem_1
+        2 = OST_BARONESS_fem_1
+        3 = OST_VISCOUNTESS_fem_1
+        4 = OST_COUNTESS_fem_1
+        5 = OST_MARCHIONESS_fem_1
+        6 = OST_DUCHESS_fem_1
+        7 = OST_PRINCESS_fem_1
+        8 = OST_QUEEN_fem_1
+        9 = OST_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = OST_LORD_CONSORT_1
+        2 = OST_BARON_CONSORT_1
+        3 = OST_VISCOUNT_CONSORT_1
+        4 = OST_COUNT_CONSORT_1
+        5 = OST_MARQUIS_CONSORT_1
+        6 = OST_DUKE_CONSORT_1
+        7 = OST_PRINCE_CONSORT_1
+        8 = OST_KING_CONSORT_1
+        9 = OST_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = OST_LADY_CONSORT_fem_1
+        2 = OST_BARONESS_CONSORT_fem_1
+        3 = OST_VISCOUNTESS_CONSORT_fem_1
+        4 = OST_COUNTESS_CONSORT_fem_1
+        5 = OST_MARCHIONESS_CONSORT_fem_1
+        6 = OST_DUCHESS_CONSORT_fem_1
+        7 = OST_PRINCESS_CONSORT_fem_1
+        8 = OST_QUEEN_CONSORT_fem_1
+        9 = OST_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = OST_HONOURABLE_1
+        2 = OST_HONOURABLE_1
+        3 = OST_HONOURABLE_1
+        4 = OST_HONOURABLE_1
+        5 = OST_LORD_1
+        6 = OST_PRINCE_1
+        7 = OST_PRINCE_1
+        8 = OST_CROWN_PRINCE_1
+        9 = OST_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = OST_HONOURABLE_LADY_fem_1
+        2 = OST_HONOURABLE_LADY_fem_1
+        3 = OST_HONOURABLE_LADY_fem_1
+        4 = OST_HONOURABLE_LADY_fem_1
+        5 = OST_LADY_fem_1
+        6 = OST_PRINCESS_fem_1
+        7 = OST_PRINCESS_fem_1
+        8 = OST_CROWN_PRINCESS_fem_1
+        9 = OST_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        primary_culture = austrian
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#BALTIC
+bal_ToR_reform = {
+    rank = {
+        1 = BAL_LORDSHIP_1
+        2 = BAL_BARONY_1
+        3 = BAL_VISCOUNTY_1
+        4 = BAL_COUNTY_1
+        5 = BAL_MARQUISATE_1
+        6 = BAL_DUCHY_1
+        7 = BAL_PRINCIPALITY_1
+        8 = BAL_KINGDOM_1
+        9 = BAL_EMPIRE_1
+    }
+    ruler_male = {
+        1 = BAL_LORD_1
+        2 = BAL_BARON_1
+        3 = BAL_VISCOUNT_1
+        4 = BAL_COUNT_1
+        5 = BAL_MARQUIS_1
+        6 = BAL_DUKE_1
+        7 = BAL_PRINCE_1
+        8 = BAL_KING_1
+        9 = BAL_EMPEROR_1
+    }
+    ruler_female = {
+        1 = BAL_LADY_fem_1
+        2 = BAL_BARONESS_fem_1
+        3 = BAL_VISCOUNTESS_fem_1
+        4 = BAL_COUNTESS_fem_1
+        5 = BAL_MARCHIONESS_fem_1
+        6 = BAL_DUCHESS_fem_1
+        7 = BAL_PRINCESS_fem_1
+        8 = BAL_QUEEN_fem_1
+        9 = BAL_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = BAL_LORD_CONSORT_1
+        2 = BAL_BARON_CONSORT_1
+        3 = BAL_VISCOUNT_CONSORT_1
+        4 = BAL_COUNT_CONSORT_1
+        5 = BAL_MARQUIS_CONSORT_1
+        6 = BAL_DUKE_CONSORT_1
+        7 = BAL_PRINCE_CONSORT_1
+        8 = BAL_KING_CONSORT_1
+        9 = BAL_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = BAL_LADY_CONSORT_fem_1
+        2 = BAL_BARONESS_CONSORT_fem_1
+        3 = BAL_VISCOUNTESS_CONSORT_fem_1
+        4 = BAL_COUNTESS_CONSORT_fem_1
+        5 = BAL_MARCHIONESS_CONSORT_fem_1
+        6 = BAL_DUCHESS_CONSORT_fem_1
+        7 = BAL_PRINCESS_CONSORT_fem_1
+        8 = BAL_QUEEN_CONSORT_fem_1
+        9 = BAL_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = BAL_HONOURABLE_1
+        2 = BAL_HONOURABLE_1
+        3 = BAL_HONOURABLE_1
+        4 = BAL_HONOURABLE_1
+        5 = BAL_LORD_1
+        6 = BAL_PRINCE_1
+        7 = BAL_PRINCE_1
+        8 = BAL_CROWN_PRINCE_1
+        9 = BAL_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = BAL_HONOURABLE_LADY_fem_1
+        2 = BAL_HONOURABLE_LADY_fem_1
+        3 = BAL_HONOURABLE_LADY_fem_1
+        4 = BAL_HONOURABLE_LADY_fem_1
+        5 = BAL_LADY_fem_1
+        6 = BAL_PRINCESS_fem_1
+        7 = BAL_PRINCESS_fem_1
+        8 = BAL_CROWN_PRINCESS_fem_1
+        9 = BAL_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            culture_group = baltic
+            culture_group = finno_ugric
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            is_lordship_subject_type = yes
+        }
+    }
+}
+#BELGIUM
+bel_ToR_reform = {
+    rank = {
+        1 = BEL_LORDSHIP_1
+        2 = BEL_BARONY_1
+        3 = BEL_VISCOUNTY_1
+        4 = BEL_COUNTY_1
+        5 = BEL_MARQUISATE_1
+        6 = BEL_DUCHY_1
+        7 = BEL_PRINCIPALITY_1
+        8 = BEL_KINGDOM_1
+        9 = BEL_EMPIRE_1
+    }
+    ruler_male = {
+        1 = BEL_LORD_1
+        2 = BEL_BARON_1
+        3 = BEL_VISCOUNT_1
+        4 = BEL_COUNT_1
+        5 = BEL_MARQUIS_1
+        6 = BEL_DUKE_1
+        7 = BEL_PRINCE_1
+        8 = BEL_KING_1
+        9 = BEL_EMPEROR_1
+    }
+    ruler_female = {
+        1 = BEL_LADY_fem_1
+        2 = BEL_BARONESS_fem_1
+        3 = BEL_VISCOUNT_1
+        4 = BEL_COUNTESS_fem_1
+        5 = BEL_MARCHIONESS_fem_1
+        6 = BEL_DUCHESS_fem_1
+        7 = BEL_PRINCESS_fem_1
+        8 = BEL_QUEEN_fem_1
+        9 = BEL_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = BEL_LORD_CONSORT_1
+        2 = BEL_BARON_CONSORT_1
+        3 = BEL_VISCOUNT_CONSORT_1
+        4 = BEL_COUNT_CONSORT_1
+        5 = BEL_MARQUIS_CONSORT_1
+        6 = BEL_DUKE_CONSORT_1
+        7 = BEL_PRINCE_CONSORT_1
+        8 = BEL_KING_CONSORT_1
+        9 = BEL_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = BEL_LADY_CONSORT_fem_1
+        2 = BEL_BARONESS_CONSORT_fem_1
+        3 = BEL_VISCOUNTESS_CONSORT_fem_1
+        4 = BEL_COUNTESS_CONSORT_fem_1
+        5 = BEL_MARCHIONESS_CONSORT_fem_1
+        6 = BEL_DUCHESS_CONSORT_fem_1
+        7 = BEL_PRINCESS_CONSORT_fem_1
+        8 = BEL_QUEEN_CONSORT_fem_1
+        9 = BEL_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = BEL_HONOURABLE_1
+        2 = BEL_HONOURABLE_1
+        3 = BEL_HONOURABLE_1
+        4 = BEL_HONOURABLE_1
+        5 = BEL_LORD_1
+        6 = BEL_PRINCE_1
+        7 = BEL_PRINCE_1
+        8 = BEL_CROWN_PRINCE_1
+        9 = BEL_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = BEL_HONOURABLE_LADY_fem_1
+        2 = BEL_HONOURABLE_LADY_fem_1
+        3 = BEL_HONOURABLE_LADY_fem_1
+        4 = BEL_HONOURABLE_LADY_fem_1
+        5 = BEL_LADY_fem_1
+        6 = BEL_PRINCESS_fem_1
+        7 = BEL_PRINCESS_fem_1
+        8 = BEL_CROWN_PRINCESS_fem_1
+        9 = BEL_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        AND = { #You REALLY VU't need this. It's already in the Trigges as base
+            OR = {
+                primary_culture = brabantian            #Belgian
+                primary_culture = flemish               #Belgian
+                primary_culture = ger_brabantian        #Belgian
+                primary_culture = ger_flemish           #Belgian
+            }
+            OR = {
+                has_ToR_government_reform = yes
+                has_ToR_unique_government_reform = yes
+                is_ToR_subject_type = yes
+            }
+        }
+    }
+}
+#BOHEMIA
+boh_ToR_reform = {
+    rank = {
+        1 = BOH_LORDSHIP_1
+        2 = BOH_BARONY_1
+        3 = BOH_VISCOUNTY_1
+        4 = BOH_COUNTY_1
+        5 = BOH_MARQUISATE_1
+        6 = BOH_DUCHY_1
+        7 = BOH_PRINCIPALITY_1
+        8 = BOH_KINGDOM_1
+        9 = BOH_EMPIRE_1
+    }
+    ruler_male = {
+        1 = BOH_LORD_1
+        2 = BOH_BARON_1
+        3 = BOH_VISCOUNT_1
+        4 = BOH_COUNT_1
+        5 = BOH_MARQUIS_1
+        6 = BOH_DUKE_1
+        7 = BOH_PRINCE_1
+        8 = BOH_KING_1
+        9 = BOH_EMPEROR_1
+    }
+    ruler_female = {
+        1 = BOH_LADY_fem_1
+        2 = BOH_BARONESS_fem_1
+        3 = BOH_VISCOUNTESS_fem_1
+        4 = BOH_COUNTESS_fem_1
+        5 = BOH_MARCHIONESS_fem_1
+        6 = BOH_DUCHESS_fem_1
+        7 = BOH_PRINCESS_fem_1
+        8 = BOH_QUEEN_fem_1
+        9 = BOH_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = BOH_LORD_CONSORT_1
+        2 = BOH_BARON_CONSORT_1
+        3 = BOH_VISCOUNT_CONSORT_1
+        4 = BOH_COUNT_CONSORT_1
+        5 = BOH_MARQUIS_CONSORT_1
+        6 = BOH_DUKE_CONSORT_1
+        7 = BOH_PRINCE_CONSORT_1
+        8 = BOH_KING_CONSORT_1
+        9 = BOH_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = BOH_LADY_CONSORT_fem_1
+        2 = BOH_BARONESS_CONSORT_fem_1
+        3 = BOH_VISCOUNTESS_CONSORT_fem_1
+        4 = BOH_COUNTESS_CONSORT_fem_1
+        5 = BOH_MARCHIONESS_CONSORT_fem_1
+        6 = BOH_DUCHESS_CONSORT_fem_1
+        7 = BOH_PRINCESS_CONSORT_fem_1
+        8 = BOH_QUEEN_CONSORT_fem_1
+        9 = BOH_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = BOH_HONOURABLE_1
+        2 = BOH_HONOURABLE_1
+        3 = BOH_HONOURABLE_1
+        4 = BOH_HONOURABLE_1
+        5 = BOH_LORD_1
+        6 = BOH_PRINCE_1
+        7 = BOH_PRINCE_1
+        8 = BOH_CROWN_PRINCE_1
+        9 = BOH_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = BOH_HONOURABLE_LADY_fem_1
+        2 = BOH_HONOURABLE_LADY_fem_1
+        3 = BOH_HONOURABLE_LADY_fem_1
+        4 = BOH_HONOURABLE_LADY_fem_1
+        5 = BOH_LADY_fem_1
+        6 = BOH_PRINCESS_fem_1
+        7 = BOH_PRINCESS_fem_1
+        8 = BOH_CROWN_PRINCESS_fem_1
+        9 = BOH_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            primary_culture = czech
+            primary_culture = moravian
+            primary_culture = schlesian
+            primary_culture = sorbian
+            primary_culture = czechBOH
+            primary_culture = polishBOH
+            primary_culture = schlesianBOH
+            primary_culture = sorbianBOH
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#BURGUNDY
+bur_ToR_reform = {
+    rank = {
+        1 = BUR_LORDSHIP_1
+        2 = BUR_BARONY_1
+        3 = BUR_VISCOUNTY_1
+        4 = BUR_COUNTY_1
+        5 = BUR_MARQUISATE_1
+        6 = BUR_DUCHY_1
+        7 = BUR_PRINCIPALITY_1
+        8 = BUR_KINGDOM_1
+        9 = BUR_EMPIRE_1
+    }
+    ruler_male = {
+        1 = BUR_LORD_1
+        2 = BUR_BARON_1
+        3 = BUR_VISCOUNT_1
+        4 = BUR_COUNT_1
+        5 = BUR_MARQUIS_1
+        6 = BUR_DUKE_1
+        7 = BUR_PRINCE_1
+        8 = BUR_KING_1
+        9 = BUR_EMPEROR_1
+    }
+    ruler_female = {
+        1 = BUR_LADY_fem_1
+        2 = BUR_BARONESS_fem_1
+        3 = BUR_VISCOUNTESS_fem_1
+        4 = BUR_COUNTESS_fem_1
+        5 = BUR_MARCHIONESS_fem_1
+        6 = BUR_DUCHESS_fem_1
+        7 = BUR_PRINCESS_fem_1
+        8 = BUR_QUEEN_fem_1
+        9 = BUR_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = BUR_LORD_CONSORT_1
+        2 = BUR_BARON_CONSORT_1
+        3 = BUR_VISCOUNT_CONSORT_1
+        4 = BUR_COUNT_CONSORT_1
+        5 = BUR_MARQUIS_CONSORT_1
+        6 = BUR_DUKE_CONSORT_1
+        7 = BUR_PRINCE_CONSORT_1
+        8 = BUR_KING_CONSORT_1
+        9 = BUR_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = BUR_LADY_CONSORT_fem_1
+        2 = BUR_BARONESS_CONSORT_fem_1
+        3 = BUR_VISCOUNTESS_CONSORT_fem_1
+        4 = BUR_COUNTESS_CONSORT_fem_1
+        5 = BUR_MARCHIONESS_CONSORT_fem_1
+        6 = BUR_DUCHESS_CONSORT_fem_1
+        7 = BUR_PRINCESS_CONSORT_fem_1
+        8 = BUR_QUEEN_CONSORT_fem_1
+        9 = BUR_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = BUR_HONOURABLE_1
+        2 = BUR_HONOURABLE_1
+        3 = BUR_HONOURABLE_1
+        4 = BUR_HONOURABLE_1
+        5 = BUR_LORD_1
+        6 = BUR_PRINCE_1
+        7 = BUR_PRINCE_1
+        8 = BUR_CROWN_PRINCE_1
+        9 = BUR_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = BUR_HONOURABLE_LADY_fem_1
+        2 = BUR_HONOURABLE_LADY_fem_1
+        3 = BUR_HONOURABLE_LADY_fem_1
+        4 = BUR_HONOURABLE_LADY_fem_1
+        5 = BUR_LADY_fem_1
+        6 = BUR_PRINCESS_fem_1
+        7 = BUR_PRINCESS_fem_1
+        8 = BUR_CROWN_PRINCESS_fem_1
+        9 = BUR_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        primary_culture = burgundian
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#BYZANTIUM
+byz_ToR_reform = {
+    rank = {
+        1 = BYZ_LORDSHIP_1
+        2 = BYZ_BARONY_1
+        3 = BYZ_VISCOUNTY_1
+        4 = BYZ_COUNTY_1
+        5 = BYZ_MARQUISATE_1
+        6 = BYZ_DUCHY_1
+        7 = BYZ_PRINCIPALITY_1
+        8 = BYZ_KINGDOM_1
+        9 = BYZ_EMPIRE_1
+    }
+
+    ruler_male = {
+        1 = BYZ_LORD_1
+        2 = BYZ_BARON_1
+        3 = BYZ_VISCOUNT_1
+        4 = BYZ_COUNT_1
+        5 = BYZ_MARQUIS_1
+        6 = BYZ_DUKE_1
+        7 = BYZ_PRINCE_1
+        8 = BYZ_KING_1
+        9 = BYZ_EMPEROR_1
+    }
+
+    ruler_female = {
+        1 = BYZ_LADY_fem_1
+        2 = BYZ_BARONESS_fem_1
+        3 = BYZ_VISCOUNTESS_fem_1
+        4 = BYZ_COUNTESS_fem_1
+        5 = BYZ_MARCHIONESS_fem_1
+        6 = BYZ_DUCHESS_fem_1
+        7 = BYZ_PRINCESS_fem_1
+        8 = BYZ_QUEEN_fem_1
+        9 = BYZ_EMPRESS_fem_1
+    }
+
+    consort_male = {
+        1 = BYZ_LORD_CONSORT_1
+        2 = BYZ_BARON_CONSORT_1
+        3 = BYZ_VISCOUNT_CONSORT_1
+        4 = BYZ_COUNT_CONSORT_1
+        5 = BYZ_MARQUIS_CONSORT_1
+        6 = BYZ_DUKE_CONSORT_1
+        7 = BYZ_PRINCE_CONSORT_1
+        8 = BYZ_KING_CONSORT_1
+        9 = BYZ_EMPEROR_CONSORT_1
+    }
+
+    consort_female = {
+        1 = BYZ_LADY_CONSORT_fem_1
+        2 = BYZ_BARONESS_CONSORT_fem_1
+        3 = BYZ_VISCOUNTESS_CONSORT_fem_1
+        4 = BYZ_COUNTESS_CONSORT_fem_1
+        5 = BYZ_MARCHIONESS_CONSORT_fem_1
+        6 = BYZ_DUCHESS_CONSORT_fem_1
+        7 = BYZ_PRINCESS_CONSORT_fem_1
+        8 = BYZ_QUEEN_CONSORT_fem_1
+        9 = BYZ_EMPRESS_CONSORT_fem_1
+    }
+
+    heir_male = {
+        1 = BYZ_HONOURABLE_1
+        2 = BYZ_HONOURABLE_1
+        3 = BYZ_HONOURABLE_1
+        4 = BYZ_HONOURABLE_1
+        5 = BYZ_LORD_1
+        6 = BYZ_PRINCE_1
+        7 = BYZ_PRINCE_1
+        8 = BYZ_CROWN_PRINCE_1
+        9 = BYZ_CROWN_PRINCE_1
+    }
+
+    heir_female = {
+        1 = BYZ_HONOURABLE_LADY_fem_1
+        2 = BYZ_HONOURABLE_LADY_fem_1
+        3 = BYZ_HONOURABLE_LADY_fem_1
+        4 = BYZ_HONOURABLE_LADY_fem_1
+        5 = BYZ_LADY_fem_1
+        6 = BYZ_PRINCESS_fem_1
+        7 = BYZ_PRINCESS_fem_1
+        8 = BYZ_CROWN_PRINCESS_fem_1
+        9 = BYZ_CROWN_PRINCESS_fem_1
+    }
+
+    trigger = {
+        primary_culture = greek
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#CASTILE
+cas_ToR_reform = {
+    rank = {
+        1 = CAS_LORDSHIP_1
+        2 = CAS_BARONY_1
+        3 = CAS_VISCOUNTY_1
+        4 = CAS_COUNTY_1
+        5 = CAS_MARQUISATE_1
+        6 = CAS_DUCHY_1
+        7 = CAS_PRINCIPALITY_1
+        8 = CAS_KINGDOM_1
+        9 = CAS_EMPIRE_1
+    }
+    ruler_male = {
+        1 = CAS_LORD_1
+        2 = CAS_BARON_1
+        3 = CAS_VISCOUNT_1
+        4 = CAS_COUNT_1
+        5 = CAS_MARQUIS_1
+        6 = CAS_DUKE_1
+        7 = CAS_PRINCE_1
+        8 = CAS_KING_1
+        9 = CAS_EMPEROR_1
+    }
+    ruler_female = {
+        1 = CAS_LADY_fem_1
+        2 = CAS_BARONESS_fem_1
+        3 = CAS_VISCOUNTESS_fem_1
+        4 = CAS_COUNTESS_fem_1
+        5 = CAS_MARCHIONESS_fem_1
+        6 = CAS_DUCHESS_fem_1
+        7 = CAS_PRINCESS_fem_1
+        8 = CAS_QUEEN_fem_1
+        9 = CAS_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = CAS_LORD_CONSORT_1
+        2 = CAS_BARON_CONSORT_1
+        3 = CAS_VISCOUNT_CONSORT_1
+        4 = CAS_COUNT_CONSORT_1
+        5 = CAS_MARQUIS_CONSORT_1
+        6 = CAS_DUKE_CONSORT_1
+        7 = CAS_PRINCE_CONSORT_1
+        8 = CAS_KING_1
+        9 = CAS_EMPEROR_1
+    }
+    consort_female = {
+        1 = CAS_LADY_CONSORT_fem_1
+        2 = CAS_BARONESS_CONSORT_fem_1
+        3 = CAS_VISCOUNTESS_CONSORT_fem_1
+        4 = CAS_COUNTESS_CONSORT_fem_1
+        5 = CAS_MARCHIONESS_CONSORT_fem_1
+        6 = CAS_DUCHESS_CONSORT_fem_1
+        7 = CAS_PRINCESS_CONSORT_fem_1
+        8 = CAS_QUEEN_fem_1
+        9 = CAS_EMPRESS_fem_1
+    }
+    heir_male = {
+        1 = CAS_HONOURABLE_1
+        2 = CAS_HONOURABLE_1
+        3 = CAS_HONOURABLE_1
+        4 = CAS_HONOURABLE_1
+        5 = CAS_LORD_1
+        6 = CAS_LORD_1
+        7 = CAS_PRINCE_1
+        8 = CAS_CROWN_PRINCE_1
+        9 = CAS_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = CAS_HONOURABLE_LADY_fem_1
+        2 = CAS_HONOURABLE_LADY_fem_1
+        3 = CAS_HONOURABLE_LADY_fem_1
+        4 = CAS_HONOURABLE_LADY_fem_1
+        5 = CAS_LADY_fem_1
+        6 = CAS_LADY_fem_1
+        7 = CAS_PRINCESS_fem_1
+        8 = CAS_CROWN_PRINCESS_fem_1
+        9 = CAS_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            culture_group = iberian
+            culture = galician_celtic
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#CROATIA
+cro_ToR_reform = {
+    rank = {
+        1 = CRO_LORDSHIP
+        2 = CRO_BARONY
+        3 = CRO_VISCOUNTY
+        4 = CRO_COUNTY
+        5 = CRO_MARQUISATE
+        6 = CRO_DUCHY
+        7 = CRO_PRINCIPALITY
+        8 = CRO_KINGDOM
+        9 = CRO_EMPIRE
+    }
+    ruler_male = {
+        1 = CRO_LORD
+        2 = CRO_BARON
+        3 = CRO_VISCOUNT
+        4 = CRO_COUNT
+        5 = CRO_MARQUIS
+        6 = CRO_DUKE
+        7 = CRO_PRINCE
+        8 = CRO_KING
+        9 = CRO_EMPEROR
+    }
+    ruler_female = {
+        1 = CRO_LADY_fem
+        2 = CRO_BARONESS_fem
+        3 = CRO_VISCOUNTESS_fem
+        4 = CRO_COUNTESS_fem
+        5 = CRO_MARCHIONESS_fem
+        6 = CRO_DUCHESS_fem
+        7 = CRO_PRINCESS_fem
+        8 = CRO_QUEEN_fem
+        9 = CRO_EMPRESS_fem
+    }
+    consort_male = {
+        1 = CRO_LORD_CONSORT
+        2 = CRO_LORD_CONSORT
+        3 = CRO_LORD_CONSORT
+        4 = CRO_LORD_CONSORT
+        5 = CRO_LORD_CONSORT
+        6 = CRO_DUKE_CONSORT
+        7 = CRO_PRINCE_CONSORT
+        8 = CRO_KING_CONSORT
+        9 = CRO_EMPEROR_CONSORT
+    }
+    consort_female = {
+        1 = CRO_LADY_CONSORT_fem
+        2 = CRO_LADY_CONSORT_fem
+        3 = CRO_LADY_CONSORT_fem
+        4 = CRO_LADY_CONSORT_fem
+        5 = CRO_LADY_CONSORT_fem
+        6 = CRO_DUCHESS_CONSORT_fem
+        7 = CRO_PRINCESS_CONSORT_fem   
+        8 = CRO_QUEEN_CONSORT_fem   
+        9 = CRO_EMPRESS_CONSORT_fem     
+    }
+    heir_male = {
+        1 = CRO_LORD
+        2 = CRO_LORD
+        3 = CRO_LORD
+        4 = CRO_LORD
+        5 = CRO_LORD
+        6 = CRO_PRINCE
+        7 = CRO_PRINCE
+        8 = CRO_CROWN_PRINCE
+        9 = CRO_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = CRO_LADY_fem
+        2 = CRO_LADY_fem
+        3 = CRO_LADY_fem
+        4 = CRO_LADY_fem
+        5 = CRO_LADY_fem
+        6 = CRO_PRINCESS_fem
+        7 = CRO_PRINCESS_fem
+        8 = CRO_CROWN_PRINCESS_fem
+        9 = CRO_CROWN_PRINCESS_fem
+    }
+    trigger = {
+        OR = {
+            primary_culture = croatian
+            primary_culture = croatian_new
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#ARABIC
+arabic_ToR_reform = {
+    rank = {
+        1 = ARABIC_IMAMATE
+        2 = ARABIC_GRAND_MUFTATE
+        3 = ARABIC_SHEIKHDOM
+        4 = ARABIC_SHARIFATE
+        5 = ARABIC_EMIRATE
+        6 = ARABIC_SULTANATE
+        7 = ARABIC_TAIFATE_VU
+        8 = ARABIC_MALEKATE_VU
+        9 = ARABIC_CALIPHATE
+    }
+    ruler_male = {
+        1 = ARABIC_IMAM
+        2 = ARABIC_GRAND_MUFTI
+        3 = ARABIC_SHEIKH
+        4 = ARABIC_SHARIF
+        5 = ARABIC_EMIR
+        6 = ARABIC_SULTAN
+        7 = ARABIC_TAIF_VU
+        8 = ARABIC_MALIK
+        9 = ARABIC_CALIPH
+    }
+    consort_female = {
+        1 = ARABIC_RABA_CONSORT_fem
+        2 = ARABIC_RABA_CONSORT_fem
+        3 = ARABIC_SHEIKHA_CONSORT_fem
+        4 = ARABIC_SAYIDA_CONSORT_fem
+        5 = ARABIC_EMIRA_CONSORT_fem
+        6 = ARABIC_SULTANA_CONSORT_fem
+        7 = ARABIC_GREAT_SULTANA_CONSORT_fem
+        8 = ARABIC_MALIKAH_CONSORT_fem
+        9 = ARABIC_CALIPH_CONSORT_fem
+    }
+    heir_male = {
+        1 = ARABIC_MUFTI_heir
+        2 = ARABIC_GRAND_MUFTI_heir
+        3 = ARABIC_SHEIKH_heir
+        4 = ARABIC_SHARIF_heir
+        5 = ARABIC_EMIR_heir
+        6 = ARABIC_SULTAN_heir
+        7 = ARABIC_TAIFA_heir
+        8 = ARABIC_MALIK_heir
+        9 = ARABIC_CALIPH_heir
+    }
+    trigger = {
+        culture_group = turko_semitic
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#IRANIAN
+iranian_ToR_reform = {
+    rank = {
+        1 = IRA_MULLAHATE
+        2 = IRA_GRAND_MULLAHATE
+        3 = IRA_SHEIKHDOM
+        4 = IRA_SHARIFATE
+        5 = IRA_GOVERNATE
+        6 = IRA_SHAHDOM
+        7 = IRA_GREAT_SHAHDOM
+        8 = IRA_GRAND_SHAHDOM
+        8 = IRA_SHAHANSHAHDOM
+    }
+    ruler_male = {
+        1 = IRA_MULLAH
+        2 = IRA_GRAND_MULLAH
+        3 = IRA_SHEIKH
+        4 = IRA_SHARIF
+        5 = IRA_AMIR
+        6 = IRA_SHAH
+        7 = IRA_GREAT_SHAH
+        8 = IRA_GRAND_SHAH
+        9 = IRA_SHAHANSHAH
+    }
+    consort_female = {
+        1 = IRA_AMIRA_CONSORT_fem
+        2 = IRA_AMIRA_CONSORT_fem
+        3 = IRA_AMIRA_CONSORT_fem
+        4 = IRA_AMIRA_CONSORT_fem
+        5 = IRA_AMIRA_CONSORT_fem
+        6 = IRA_SHAHBANU_CONSORT_fem
+        7 = IRA_SHAHBANU_CONSORT_fem
+        8 = IRA_SHAHANSHAHBANU_CONSORT_fem
+        9 = IRA_SHAHANSHAHBANU_CONSORT_fem
+    }
+    heir_male = {
+        1 = IRA_MULLAH_heir
+        2 = IRA_GRAND_MULLAH_heir
+        3 = IRA_SHEIKH_heir
+        4 = IRA_SHARIF_heir
+        5 = IRA_AMIR_heir
+        6 = IRA_SHAH_heir
+        7 = IRA_GREAT_SHAH_heir
+        8 = IRA_GRAND_SHAH_heir
+        9 = IRA_SHAHANSHAH_heir
+    }
+    trigger = {
+        culture_group = iranian
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#TURKISH
+turkish_ToR_reform = {
+    rank = {
+        1 = TUR_IMAMATE
+        2 = TUR_GRAND_MUFTATE
+        3 = TUR_SHEIKHDOM
+        4 = TUR_SHARIFATE
+        5 = TUR_BEYLIK
+        6 = TUR_SULTANATE
+        7 = TUR_GREAT_SULTANATE
+        8 = TUR_GRAND_SULTANATE
+        9 = TUR_HALIFATE
+    }
+    ruler_male = {
+        1 = TUR_IMAM
+        2 = TUR_GRAND_MUFTI_VU
+        3 = TUR_SHEIKH
+        4 = TUR_SHARIF
+        5 = TUR_BEY
+        6 = TUR_SULTAN
+        7 = TUR_GREAT_SULTAN
+        8 = TUR_GRAND_SULTAN
+        9 = TUR_HALIF
+    }
+    consort_female = {
+        1 = TUR_AMIRA_CONSORT_fem
+        2 = TUR_AMIRA_CONSORT_fem
+        3 = TUR_AMIRA_CONSORT_fem
+        4 = TUR_AMIRA_CONSORT_fem
+        5 = TUR_AMIRA_CONSORT_fem
+        6 = TUR_HATUN_CONSORT_fem
+        7 = TUR_HATUN_CONSORT_fem
+        8 = TUR_HATUN_CONSORT_fem
+        9 = TUR_HALIFA_CONSORT_fem
+    }
+    heir_male = {
+        1 = TUR_MUFTI_heir
+        2 = TUR_GRAND_MUFTI_heir
+        3 = TUR_SHEIKH_heir
+        4 = TUR_SHARIF_heir
+        5 = TUR_AMIR_heir
+        6 = TUR_SULTAN_heir
+        7 = TUR_GREAT_SULTAN_heir
+        8 = TUR_GRAND_SULTAN_heir
+        9 = TUR_HALIF_heir
+    }
+    trigger = {
+        culture_group = turkish_g
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#INDIAN SUBCONTINENT
+indian_subcontinent_ToR_reform = {
+    rank = {
+        1 = INDSC_LORDSHIP
+        2 = INDSC_BARONY
+        3 = INDSC_VISCOUNTY
+        4 = INDSC_COUNTY
+        5 = INDSC_MARQUISATE
+        6 = INDSC_DUCHY
+        7 = INDSC_PRINCIPALITY
+        8 = INDSC_KINGDOM
+        9 = INDSC_EMPIRE
+    }
+    ruler_male = {
+        1 = INDSC_LORD
+        2 = INDSC_BARON
+        3 = INDSC_VISCOUNT
+        4 = INDSC_COUNT
+        5 = INDSC_MARQUIS
+        6 = INDSC_PRINCE
+        7 = INDSC_DUKE
+        8 = INDSC_KING
+        9 = INDSC_EMPEROR
+    }
+    ruler_female = {
+        1 = INDSC_LADY_fem
+        2 = INDSC_BARONESS_fem
+        3 = INDSC_VISCOUNTESS_fem
+        4 = INDSC_COUNTESS_fem
+        5 = INDSC_MARCHIONESS_fem
+        6 = INDSC_PRINCESS_fem
+        7 = INDSC_DUCHESS_fem
+        8 = INDSC_QUEEN_fem
+        9 = INDSC_EMPRESS_fem
+    }
+    consort_male = {
+        1 = INDSC_CONSORT
+        2 = INDSC_CONSORT
+        3 = INDSC_CONSORT
+        4 = INDSC_CONSORT
+        5 = INDSC_CONSORT
+        6 = INDSC_CONSORT
+        7 = INDSC_CONSORT
+        8 = INDSC_CONSORT
+        9 = INDSC_CONSORT
+    }
+    consort_female = {
+        1 = INDSC_CONSORT_fem
+        2 = INDSC_CONSORT_fem
+        3 = INDSC_CONSORT_fem
+        4 = INDSC_CONSORT_fem
+        5 = INDSC_CONSORT_fem
+        6 = INDSC_CONSORT_fem
+        7 = INDSC_CONSORT_fem
+        8 = INDSC_CONSORT_fem
+        9 = INDSC_CONSORT_fem
+    }
+    heir_male = {
+        1 = INDSC_PRINCE_HEIR
+        2 = INDSC_PRINCE_HEIR
+        3 = INDSC_PRINCE_HEIR
+        4 = INDSC_PRINCE_HEIR
+        5 = INDSC_PRINCE_HEIR
+        6 = INDSC_PRINCE_HEIR
+        7 = INDSC_PRINCE_HEIR
+        8 = INDSC_CROWN_PRINCE
+        9 = INDSC_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = INDSC_PRINCESS_HEIR_fem
+        2 = INDSC_PRINCESS_HEIR_fem
+        3 = INDSC_PRINCESS_HEIR_fem
+        4 = INDSC_PRINCESS_HEIR_fem
+        5 = INDSC_PRINCESS_HEIR_fem
+        6 = INDSC_PRINCESS_HEIR_fem
+        7 = INDSC_PRINCESS_HEIR_fem
+        8 = INDSC_CROWN_PRINCESS_HEIR_fem
+        9 = INDSC_CROWN_PRINCESS_HEIR_fem
+    }
+    trigger = {
+        OR = {
+            culture_group = dravidian
+            culture_group = hindusthani
+            culture_group = western_aryan
+            culture_group = eastern_aryan
+            culture_group = central_indic
+            culture_group = burman
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#SERBIA
+ser_ToR_reform = {
+    rank = {
+        1 = SER_LORDSHIP
+        2 = SER_BARONY
+        3 = SER_VISCOUNTY
+        4 = SER_COUNTY
+        5 = SER_MARQUISATE
+        6 = SER_SERBIAN_DESPOTATE
+        7 = SER_PRINCIPALITY
+        8 = SER_KINGDOM
+        9 = SER_EMPIRE
+    }
+    ruler_male = {
+        1 = SER_LORD
+        2 = SER_BARON
+        3 = SER_VISCOUNT
+        4 = SER_COUNT
+        5 = SER_MARQUIS
+        6 = SER_DUKE
+        7 = SER_PRINCE
+        8 = SER_KING
+        9 = SER_EMPEROR
+    }
+    ruler_female = {
+        1 = SER_LADY_fem
+        2 = SER_BARONESS_fem
+        3 = SER_VISCOUNTESS_fem
+        4 = SER_COUNTESS_fem
+        5 = SER_MARCHIONESS_fem
+        6 = SER_DUCHESS_fem
+        7 = SER_PRINCESS_fem
+        8 = SER_QUEEN_fem
+        9 = SER_EMPRESS_fem
+    }
+    consort_male = {
+        1 = SER_LORD_CONSORT
+        2 = SER_LORD_CONSORT
+        3 = SER_LORD_CONSORT
+        4 = SER_LORD_CONSORT
+        5 = SER_LORD_CONSORT
+        6 = SER_DUKE_CONSORT
+        7 = SER_PRINCE_CONSORT
+        8 = SER_KING_CONSORT
+        9 = SER_EMPEROR_CONSORT
+    }
+    consort_female = {
+        1 = SER_LADY_CONSORT_fem
+        2 = SER_LADY_CONSORT_fem
+        3 = SER_LADY_CONSORT_fem
+        4 = SER_LADY_CONSORT_fem
+        5 = SER_LADY_CONSORT_fem
+        6 = SER_DUCHESS_CONSORT_fem
+        7 = SER_PRINCESS_CONSORT_fem
+        8 = SER_QUEEN_CONSORT_fem
+        9 = SER_EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = SER_LORD
+        2 = SER_LORD
+        3 = SER_LORD
+        4 = SER_LORD
+        5 = SER_LORD
+        6 = SER_PRINCE
+        7 = SER_PRINCE
+        8 = SER_CROWN_PRINCE
+        9 = SER_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = SER_LADY_fem
+        2 = SER_LADY_fem
+        3 = SER_LADY_fem
+        4 = SER_LADY_fem
+        5 = SER_LADY_fem
+        6 = SER_PRINCESS_fem
+        7 = SER_PRINCESS_fem
+        8 = SER_CROWN_PRINCESS_fem
+        9 = SER_CROWN_PRINCESS_fem
+    }
+    trigger = {
+        OR = {
+            primary_culture = serbian
+            primary_culture = serbian_new
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#SLOVENIA
+slo_ToR_reform = {
+    rank = {
+        1 = SLO_LORDSHIP
+        2 = SLO_BARONY
+        3 = SLO_VISCOUNTY
+        4 = SLO_COUNTY
+        5 = SLO_MARQUISATE
+        6 = SLO_DUCHY
+        7 = SLO_PRINCIPALITY
+        8 = SLO_KINGDOM
+        9 = SLO_EMPIRE
+    }
+    ruler_male = {
+        1 = SLO_LORD
+        2 = SLO_BARON
+        3 = SLO_VISCOUNT
+        4 = SLO_COUNT
+        5 = SLO_MARQUIS
+        6 = SLO_DUKE
+        7 = SLO_PRINCE
+        8 = SLO_KING
+        9 = SLO_EMPEROR
+    }
+    ruler_female = {
+        1 = SLO_LADY_fem
+        2 = SLO_BARONESS_fem
+        3 = SLO_VISCOUNTESS_fem
+        4 = SLO_COUNTESS_fem
+        5 = SLO_MARCHIONESS_fem
+        6 = SLO_DUCHESS_fem
+        7 = SLO_PRINCESS_fem
+        8 = SLO_QUEEN_fem
+        9 = SLO_EMPRESS_fem
+    }
+    consort_male = {
+        1 = SLO_LORD_CONSORT
+        2 = SLO_LORD_CONSORT
+        3 = SLO_LORD_CONSORT
+        4 = SLO_LORD_CONSORT
+        5 = SLO_LORD_CONSORT
+        6 = SLO_DUKE_CONSORT
+        7 = SLO_PRINCE_CONSORT
+        8 = SLO_KING_CONSORT
+        9 = SLO_EMPEROR_CONSORT
+    }
+    consort_female = {
+        1 = SLO_LADY_CONSORT_fem
+        2 = SLO_LADY_CONSORT_fem
+        3 = SLO_LADY_CONSORT_fem
+        4 = SLO_LADY_CONSORT_fem
+        5 = SLO_LADY_CONSORT_fem
+        6 = SLO_DUCHESS_CONSORT_fem
+        7 = SLO_PRINCESS_CONSORT_fem
+        8 = SLO_QUEEN_CONSORT_fem
+        9 = SLO_EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = SLO_LORD
+        2 = SLO_LORD
+        3 = SLO_LORD
+        4 = SLO_LORD
+        5 = SLO_LORD
+        6 = SLO_PRINCE
+        7 = SLO_PRINCE
+        8 = SLO_CROWN_PRINCE
+        9 = SLO_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = SLO_LADY_fem
+        2 = SLO_LADY_fem
+        3 = SLO_LADY_fem
+        4 = SLO_LADY_fem
+        5 = SLO_LADY_fem
+        6 = SLO_PRINCESS_fem
+        7 = SLO_PRINCESS_fem
+        8 = SLO_CROWN_PRINCESS_fem
+        9 = SLO_CROWN_PRINCESS_fem
+    }
+    trigger = {
+        OR = {
+            primary_culture = slovene
+            primary_culture = slovene_new
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#BOSNIA
+bos_ToR_reform = {
+    rank = {
+        1 = BOS_LORDSHIP
+        2 = BOS_BARONY
+        3 = BOS_VISCOUNTY
+        4 = BOS_COUNTY
+        5 = BOS_MARQUISATE
+        6 = BOS_DUCHY
+        7 = BOS_PRINCIPALITY
+        8 = BOS_KINGDOM
+        9 = BOS_EMPIRE
+    }
+    ruler_male = {
+        1 = BOS_LORD
+        2 = BOS_BARON
+        3 = BOS_VISCOUNT
+        4 = BOS_COUNT
+        5 = BOS_MARQUIS
+        6 = BOS_DUKE
+        7 = BOS_PRINCE
+        8 = BOS_KING
+        9 = BOS_EMPEROR
+    }
+    ruler_female = {
+        1 = BOS_LADY_fem
+        2 = BOS_BARONESS_fem
+        3 = BOS_VISCOUNTESS_fem
+        4 = BOS_COUNTESS_fem
+        5 = BOS_MARCHIONESS_fem
+        6 = BOS_DUCHESS_fem
+        7 = BOS_PRINCESS_fem
+        8 = BOS_QUEEN_fem
+        9 = BOS_EMPRESS_fem
+    }
+    consort_male = {
+        1 = BOS_LORD_CONSORT
+        2 = BOS_LORD_CONSORT
+        3 = BOS_LORD_CONSORT
+        4 = BOS_LORD_CONSORT
+        5 = BOS_LORD_CONSORT
+        6 = BOS_DUKE_CONSORT
+        7 = BOS_PRINCE_CONSORT
+        8 = BOS_KING_CONSORT
+        9 = BOS_EMPEROR_CONSORT
+    }
+    consort_female = {
+        1 = BOS_LADY_CONSORT_fem
+        2 = BOS_LADY_CONSORT_fem
+        3 = BOS_LADY_CONSORT_fem
+        4 = BOS_LADY_CONSORT_fem
+        5 = BOS_LADY_CONSORT_fem
+        6 = BOS_DUCHESS_CONSORT_fem
+        7 = BOS_PRINCESS_CONSORT_fem
+        8 = BOS_QUEEN_CONSORT_fem
+        9 = BOS_EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = BOS_LORD
+        2 = BOS_LORD
+        3 = BOS_LORD
+        4 = BOS_LORD
+        5 = BOS_LORD
+        6 = BOS_PRINCE
+        7 = BOS_PRINCE
+        8 = BOS_CROWN_PRINCE
+        9 = BOS_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = BOS_LADY_fem
+        2 = BOS_LADY_fem
+        3 = BOS_LADY_fem
+        4 = BOS_LADY_fem
+        5 = BOS_LADY_fem
+        6 = BOS_PRINCESS_fem
+        7 = BOS_PRINCESS_fem
+        8 = BOS_CROWN_PRINCESS_fem
+        9 = BOS_CROWN_PRINCESS_fem
+    }
+    trigger = {
+        OR = {
+            primary_culture = bosnian
+            primary_culture = bosnian_new
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#BULGARS
+bul_ToR_reform = {
+    rank = {
+        1 = BUL_LORDSHIP
+        2 = BUL_BARONY
+        3 = BUL_VISCOUNTY
+        4 = BUL_COUNTY
+        5 = BUL_MARQUISATE
+        6 = BUL_DUCHY
+        7 = BUL_PRINCIPALITY
+        8 = BUL_KINGDOM
+        9 = BUL_EMPIRE
+    }
+    ruler_male = {
+        1 = BUL_LORD
+        2 = BUL_BARON
+        3 = BUL_VISCOUNT
+        4 = BUL_COUNT
+        5 = BUL_MARQUIS
+        6 = BUL_DUKE
+        7 = BUL_PRINCE
+        8 = BUL_KING
+        9 = BUL_EMPEROR
+    }
+    ruler_female = {
+        1 = BUL_LADY_fem
+        2 = BUL_BARONESS_fem
+        3 = BUL_VISCOUNTESS_fem
+        4 = BUL_COUNTESS_fem
+        5 = BUL_MARCHIONESS_fem
+        6 = BUL_DUCHESS_fem
+        7 = BUL_PRINCESS_fem
+        8 = BUL_QUEEN_fem
+        9 = BUL_EMPRESS_fem
+    }
+    consort_male = {
+        1 = BUL_LORD_CONSORT
+        2 = BUL_LORD_CONSORT
+        3 = BUL_LORD_CONSORT
+        4 = BUL_LORD_CONSORT
+        5 = BUL_LORD_CONSORT
+        6 = BUL_DUKE_CONSORT
+        7 = BUL_PRINCE_CONSORT
+        8 = BUL_KING_CONSORT
+        9 = BUL_EMPEROR_CONSORT
+    }
+    consort_female = {
+        1 = BUL_LADY_CONSORT_fem
+        2 = BUL_LADY_CONSORT_fem
+        3 = BUL_LADY_CONSORT_fem
+        4 = BUL_LADY_CONSORT_fem
+        5 = BUL_LADY_CONSORT_fem
+        6 = BUL_DUCHESS_CONSORT_fem
+        7 = BUL_PRINCESS_CONSORT_fem
+        8 = BUL_QUEEN_CONSORT_fem
+        9 = BUL_EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = BUL_LORD
+        2 = BUL_LORD
+        3 = BUL_LORD
+        4 = BUL_LORD
+        5 = BUL_LORD
+        6 = BUL_PRINCE
+        7 = BUL_PRINCE
+        8 = BUL_CROWN_PRINCE
+        9 = BUL_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = BUL_LADY_fem
+        2 = BUL_LADY_fem
+        3 = BUL_LADY_fem
+        4 = BUL_LADY_fem
+        5 = BUL_LADY_fem
+        6 = BUL_PRINCESS_fem
+        7 = BUL_PRINCESS_fem
+        8 = BUL_CROWN_PRINCESS_fem
+        9 = BUL_CROWN_PRINCESS_fem
+    }
+    trigger = {
+        OR = {
+            primary_culture = bulgar
+            primary_culture = bulgarian
+            primary_culture = bulgarian_new
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#ROMANIA
+rmn_ToR_reform = {
+    rank = {
+        1 = RMN_LORDSHIP
+        2 = RMN_BARONY
+        3 = RMN_VISCOUNTY
+        4 = RMN_COUNTY
+        5 = RMN_MARQUISATE
+        6 = RMN_DUCHY
+        7 = RMN_PRINCIPALITY
+        8 = RMN_KINGDOM
+        9 = RMN_EMPIRE
+    }
+    ruler_male = {
+        1 = RMN_LORD
+        2 = RMN_BARON
+        3 = RMN_VISCOUNT
+        4 = RMN_COUNT
+        5 = RMN_MARQUIS
+        6 = RMN_DUKE
+        7 = RMN_PRINCE
+        8 = RMN_KING
+        9 = RMN_EMPEROR
+    }
+    ruler_female = {
+        1 = RMN_LADY_fem
+        2 = RMN_BARONESS_fem
+        3 = RMN_VISCOUNTESS_fem
+        4 = RMN_COUNTESS_fem
+        5 = RMN_MARCHIONESS_fem
+        6 = RMN_DUCHESS_fem
+        7 = RMN_PRINCESS_fem
+        8 = RMN_QUEEN_fem
+        9 = RMN_EMPRESS_fem
+    }
+    consort_male = {
+        1 = RMN_LORD_CONSORT
+        2 = RMN_LORD_CONSORT
+        3 = RMN_LORD_CONSORT
+        4 = RMN_LORD_CONSORT
+        5 = RMN_LORD_CONSORT
+        6 = RMN_DUKE_CONSORT
+        7 = RMN_PRINCE_CONSORT
+        8 = RMN_KING_CONSORT
+        9 = RMN_EMPEROR_CONSORT
+    }
+    consort_female = {
+        1 = RMN_LADY_CONSORT_fem
+        2 = RMN_LADY_CONSORT_fem
+        3 = RMN_LADY_CONSORT_fem
+        4 = RMN_LADY_CONSORT_fem
+        5 = RMN_LADY_CONSORT_fem
+        6 = RMN_DUCHESS_CONSORT_fem
+        7 = RMN_PRINCESS_CONSORT_fem
+        8 = RMN_QUEEN_CONSORT_fem
+        9 = RMN_EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = RMN_LORD
+        2 = RMN_LORD
+        3 = RMN_LORD
+        4 = RMN_LORD
+        5 = RMN_LORD
+        6 = RMN_PRINCE
+        7 = RMN_PRINCE
+        8 = RMN_CROWN_PRINCE
+        9 = RMN_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = RMN_LADY_fem
+        2 = RMN_LADY_fem
+        3 = RMN_LADY_fem
+        4 = RMN_LADY_fem
+        5 = RMN_LADY_fem
+        6 = RMN_PRINCESS_fem
+        7 = RMN_PRINCESS_fem
+        8 = RMN_CROWN_PRINCESS_fem
+        9 = RMN_CROWN_PRINCESS_fem
+    }
+    trigger = {
+        OR = {
+            primary_culture = romanian
+            primary_culture = romano_dacian
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+
+#DENMARK
+dan_ToR_reform = {
+    rank = {
+        1 = DAN_LORDSHIP_1
+        2 = DAN_BARONY_1
+        3 = DAN_VISCOUNTY_1
+        4 = DAN_COUNTY_1
+        5 = DAN_MARQUISATE_1
+        6 = DAN_DUCHY_1
+        7 = DAN_PRINCIPALITY_1
+        8 = DAN_KINGDOM_1
+        9 = DAN_EMPIRE_1
+    }
+    ruler_male = {
+        1 = DAN_LORD_1
+        2 = DAN_BARON_1
+        3 = DAN_VISCOUNT_1
+        4 = DAN_COUNT_1
+        5 = DAN_MARQUIS_1
+        6 = DAN_DUKE_1
+        7 = DAN_PRINCE_1
+        8 = DAN_KING_1
+        9 = DAN_EMPEROR_1
+    }
+    ruler_female = {
+        1 = DAN_LADY_fem_1
+        2 = DAN_BARONESS_fem_1
+        3 = DAN_VISCOUNTESS_fem_1
+        4 = DAN_COUNTESS_fem_1
+        5 = DAN_MARCHIONESS_fem_1
+        6 = DAN_DUCHESS_fem_1
+        7 = DAN_PRINCESS_fem_1
+        8 = DAN_QUEEN_fem_1
+        9 = DAN_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = DAN_LORD_CONSORT_1
+        2 = DAN_BARON_CONSORT_1
+        3 = DAN_VISCOUNT_CONSORT_1
+        4 = DAN_COUNT_CONSORT_1
+        5 = DAN_MARQUIS_CONSORT_1
+        6 = DAN_DUKE_CONSORT_1
+        7 = DAN_PRINCE_CONSORT_1
+        8 = DAN_KING_CONSORT_1
+        9 = DAN_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = DAN_LADY_CONSORT_fem_1
+        2 = DAN_BARONESS_CONSORT_fem_1
+        3 = DAN_VISCOUNTESS_CONSORT_fem_1
+        4 = DAN_COUNTESS_CONSORT_fem_1
+        5 = DAN_MARCHIONESS_CONSORT_fem_1
+        6 = DAN_DUCHESS_CONSORT_fem_1
+        7 = DAN_PRINCESS_CONSORT_fem_1
+        8 = DAN_QUEEN_CONSORT_fem_1
+        9 = DAN_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = DAN_HONOURABLE_1
+        2 = DAN_HONOURABLE_1
+        3 = DAN_HONOURABLE_1
+        4 = DAN_HONOURABLE_1
+        5 = DAN_LORD_1
+        6 = DAN_PRINCE_1
+        7 = DAN_PRINCE_1
+        8 = DAN_CROWN_PRINCE_1
+        9 = DAN_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = DAN_HONOURABLE_LADY_fem_1
+        2 = DAN_HONOURABLE_LADY_fem_1
+        3 = DAN_HONOURABLE_LADY_fem_1
+        4 = DAN_HONOURABLE_LADY_fem_1
+        5 = DAN_LADY_fem_1
+        6 = DAN_PRINCESS_fem_1
+        7 = DAN_PRINCESS_fem_1
+        8 = DAN_CROWN_PRINCESS_fem_1
+        9 = DAN_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        primary_culture = danish
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#DUTCH
+dutch_ToR_reform = {
+    rank = {
+        1 = HOL_LORDSHIP_1
+        2 = HOL_BARONY_1
+        3 = HOL_VISCOUNTY_1
+        4 = HOL_COUNTY_1
+        5 = HOL_MARQUISATE_1
+        6 = HOL_DUCHY_1
+        7 = HOL_PRINCIPALITY_1
+        8 = HOL_KINGDOM_1
+        9 = HOL_EMPIRE_1
+    }
+    ruler_male = {
+        1 = HOL_LORD_1
+        2 = HOL_BARON_1
+        3 = HOL_VISCOUNT_1
+        4 = HOL_COUNT_1
+        5 = HOL_MARQUIS_1
+        6 = HOL_DUKE_1
+        7 = HOL_PRINCE_1
+        8 = HOL_KING_1
+        9 = HOL_EMPEROR_1
+    }
+    ruler_female = {
+        1 = HOL_LADY_fem_1
+        2 = HOL_BARONESS_fem_1
+        3 = HOL_VISCOUNTESS_fem_1
+        4 = HOL_COUNTESS_fem_1
+        5 = HOL_MARCHIONESS_fem_1
+        6 = HOL_DUCHESS_fem_1
+        7 = HOL_PRINCESS_fem_1
+        8 = HOL_QUEEN_fem_1
+        9 = HOL_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = HOL_LORD_CONSORT_1
+        2 = HOL_BARON_CONSORT_1
+        3 = HOL_VISCOUNT_CONSORT_1
+        4 = HOL_COUNT_CONSORT_1
+        5 = HOL_MARQUIS_CONSORT_1
+        6 = HOL_DUKE_CONSORT_1
+        7 = HOL_PRINCE_CONSORT_1
+        8 = HOL_KING_CONSORT_1
+        9 = HOL_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = HOL_LADY_CONSORT_fem_1
+        2 = HOL_BARONESS_CONSORT_fem_1
+        3 = HOL_VISCOUNTESS_CONSORT_fem_1
+        4 = HOL_COUNTESS_CONSORT_fem_1
+        5 = HOL_MARCHIONESS_CONSORT_fem_1
+        6 = HOL_DUCHESS_CONSORT_fem_1
+        7 = HOL_PRINCESS_CONSORT_fem_1
+        8 = HOL_QUEEN_CONSORT_fem_1
+        9 = HOL_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = HOL_HONOURABLE_1
+        2 = HOL_HONOURABLE_1
+        3 = HOL_HONOURABLE_1
+        4 = HOL_HONOURABLE_1
+        5 = HOL_LORD_1
+        6 = HOL_PRINCE_1
+        7 = HOL_PRINCE_1
+        8 = HOL_CROWN_PRINCE_1
+        9 = HOL_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = HOL_HONOURABLE_LADY_fem_1
+        2 = HOL_HONOURABLE_LADY_fem_1
+        3 = HOL_HONOURABLE_LADY_fem_1
+        4 = HOL_HONOURABLE_LADY_fem_1
+        5 = HOL_LADY_fem_1
+        6 = HOL_PRINCESS_fem_1
+        7 = HOL_PRINCESS_fem_1
+        8 = HOL_CROWN_PRINCESS_fem_1
+        9 = HOL_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            culture = dutch                 #Dutch
+            culture = dutch_saxon           #Dutch
+            culture = zeelandic             #Dutch
+            culture = limburgish            #Dutch
+            culture = guelders              #Dutch
+            culture = frisian               #Dutch
+            culture = ger_dutch             #Dutch
+            culture = ger_dutch_saxon       #Dutch
+            culture = ger_zeelandic         #Dutch
+            culture = ger_limburgish        #Dutch
+            culture = ger_guelders          #Dutch
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#ENGLISH
+eng_ToR_reform = {
+    rank = {
+        1 = ENG_LORDSHIP_1
+        2 = ENG_BARONY_1
+        3 = ENG_VISCOUNTY_1
+        4 = ENG_EARLDOM_1
+        5 = ENG_MARQUISATE_1
+        6 = ENG_DUCHY_1
+        7 = ENG_PRINCIPALITY_1
+        8 = ENG_KINGDOM_1
+        9 = ENG_EMPIRE_1
+    }
+    ruler_male = {
+        1 = ENG_LORD_1
+        2 = ENG_BARON_1
+        3 = ENG_VISCOUNT_1
+        4 = ENG_EARL_1
+        5 = ENG_MARQUIS_1
+        6 = ENG_DUKE_1
+        7 = ENG_PRINCE_1
+        8 = ENG_KING_1
+        9 = ENG_EMPEROR_1
+    }
+    ruler_female = {
+        1 = ENG_LADY_fem_1
+        2 = ENG_BARONESS_fem_1
+        3 = ENG_VISCOUNTESS_fem_1
+        4 = ENG_COUNTESS_fem_1
+        5 = ENG_MARCHIONESS_fem_1
+        6 = ENG_DUCHESS_fem_1
+        7 = ENG_PRINCESS_fem_1
+        8 = ENG_QUEEN_fem_1
+        9 = ENG_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = ENG_LORD_CONSORT_1
+        2 = ENG_BARON_CONSORT_1
+        3 = ENG_VISCOUNT_CONSORT_1
+        4 = ENG_EARL_CONSORT_1
+        5 = ENG_MARQUIS_CONSORT_1
+        6 = ENG_DUKE_CONSORT_1
+        7 = ENG_PRINCE_CONSORT_1
+        8 = ENG_KING_CONSORT_1
+        9 = ENG_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = ENG_LADY_CONSORT_fem_1
+        2 = ENG_BARONESS_CONSORT_fem_1
+        3 = ENG_VISCOUNTESS_CONSORT_fem_1
+        4 = ENG_COUNTESS_CONSORT_fem_1
+        5 = ENG_MARCHIONESS_CONSORT_fem_1
+        6 = ENG_DUCHESS_CONSORT_fem_1
+        7 = ENG_PRINCESS_CONSORT_fem_1
+        8 = ENG_QUEEN_CONSORT_fem_1
+        9 = ENG_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = ENG_HONOURABLE_1
+        2 = ENG_HONOURABLE_1
+        3 = ENG_HONOURABLE_1
+        4 = ENG_HONOURABLE_1
+        5 = ENG_LORD_1
+        6 = ENG_PRINCE_1
+        7 = ENG_PRINCE_1
+        8 = ENG_CROWN_PRINCE_1
+        9 = ENG_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = ENG_HONOURABLE_LADY_fem_1
+        2 = ENG_HONOURABLE_LADY_fem_1
+        3 = ENG_HONOURABLE_LADY_fem_1
+        4 = ENG_HONOURABLE_LADY_fem_1
+        5 = ENG_LADY_fem_1
+        6 = ENG_PRINCESS_fem_1
+        7 = ENG_PRINCESS_fem_1
+        8 = ENG_CROWN_PRINCESS_fem_1
+        9 = ENG_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        culture_group = british
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+            tag = B0H
+            tag = BR0
+            tag = CL4
+            tag = M0R
+            tag = M0T
+            tag = MR5
+        }
+    }
+}
+#FRANCE
+fra_ToR_reform = {
+    rank = {
+        1 = FRA_LORDSHIP_1
+        2 = FRA_BARONY_1
+        3 = FRA_VISCOUNTY_1
+        4 = FRA_COUNTY_1
+        5 = FRA_MARQUISATE_1
+        6 = FRA_DUCHY_1
+        7 = FRA_PRINCIPALITY_1
+        8 = FRA_KINGDOM_1
+        9 = FRA_EMPIRE_1
+    }
+    ruler_male = {
+        1 = FRA_LORD_1
+        2 = FRA_BARON_1
+        3 = FRA_VISCOUNT_1
+        4 = FRA_COUNT_1
+        5 = FRA_MARQUIS_1
+        6 = FRA_DUKE_1
+        7 = FRA_PRINCE_1
+        8 = FRA_KING_1
+        9 = FRA_EMPEROR_1
+    }
+    ruler_female = {
+        1 = FRA_LADY_fem_1
+        2 = FRA_BARONESS_fem_1
+        3 = FRA_VISCOUNTESS_fem_1
+        4 = FRA_COUNTESS_fem_1
+        5 = FRA_MARCHIONESS_fem_1
+        6 = FRA_DUCHESS_fem_1
+        7 = FRA_PRINCESS_fem_1
+        8 = FRA_QUEEN_fem_1
+        9 = FRA_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = FRA_LORD_CONSORT_1
+        2 = FRA_BARON_CONSORT_1
+        3 = FRA_VISCOUNT_CONSORT_1
+        4 = FRA_COUNT_CONSORT_1
+        5 = FRA_MARQUIS_CONSORT_1
+        6 = FRA_DUKE_CONSORT_1
+        7 = FRA_PRINCE_CONSORT_1
+        8 = FRA_KING_CONSORT_1
+        9 = FRA_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = FRA_LADY_CONSORT_fem_1
+        2 = FRA_BARONESS_CONSORT_fem_1
+        3 = FRA_VISCOUNTESS_CONSORT_fem_1
+        4 = FRA_COUNTESS_CONSORT_fem_1
+        5 = FRA_MARCHIONESS_CONSORT_fem_1
+        6 = FRA_DUCHESS_CONSORT_fem_1
+        7 = FRA_PRINCESS_CONSORT_fem_1
+        8 = FRA_QUEEN_CONSORT_fem_1
+        9 = FRA_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = FRA_HONOURABLE_1
+        2 = FRA_HONOURABLE_1
+        3 = FRA_HONOURABLE_1
+        4 = FRA_HONOURABLE_1
+        5 = FRA_LORD_1
+        6 = FRA_PRINCE_1
+        7 = FRA_PRINCE_1
+        8 = FRA_CROWN_PRINCE_1
+        9 = FRA_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = FRA_HONOURABLE_LADY_fem_1
+        2 = FRA_HONOURABLE_LADY_fem_1
+        3 = FRA_HONOURABLE_LADY_fem_1
+        4 = FRA_HONOURABLE_LADY_fem_1
+        5 = FRA_LADY_fem_1
+        6 = FRA_PRINCESS_fem_1
+        7 = FRA_PRINCESS_fem_1
+        8 = FRA_CROWN_PRINCESS_fem_1
+        9 = FRA_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            culture_group = french
+            primary_culture = celtic_breton_culture
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+        NOT = {
+            primary_culture = burgundian
+            is_revolutionary_republic_trigger = yes
+        }
+    }
+}
+#GERMANY
+ger_ToR_reform = {
+    rank = {
+        1 = GER_LORDSHIP_1
+        2 = GER_BARONY_1
+        3 = GER_VISCOUNTY_1
+        4 = GER_COUNTY_1
+        5 = GER_MARQUISATE_1
+        6 = GER_DUCHY_1
+        7 = GER_PRINCIPALITY_1
+        8 = GER_KINGDOM_1
+        9 = GER_EMPIRE_1
+    }
+    ruler_male = {
+        1 = GER_LORD_1
+        2 = GER_BARON_1
+        3 = GER_VISCOUNT_1
+        4 = GER_COUNT_1
+        5 = GER_MARQUIS_1
+        6 = GER_DUKE_1
+        7 = GER_PRINCE_1
+        8 = GER_KING_1
+        9 = GER_EMPEROR_1
+    }
+    ruler_female = {
+        1 = GER_LADY_fem_1
+        2 = GER_BARONESS_fem_1
+        3 = GER_VISCOUNTESS_fem_1
+        4 = GER_COUNTESS_fem_1
+        5 = GER_MARCHIONESS_fem_1
+        6 = GER_DUCHESS_fem_1
+        7 = GER_PRINCESS_fem_1
+        8 = GER_QUEEN_fem_1
+        9 = GER_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = GER_LORD_CONSORT_1
+        2 = GER_BARON_CONSORT_1
+        3 = GER_VISCOUNT_CONSORT_1
+        4 = GER_COUNT_CONSORT_1
+        5 = GER_MARQUIS_CONSORT_1
+        6 = GER_DUKE_CONSORT_1
+        7 = GER_PRINCE_CONSORT_1
+        8 = GER_KING_CONSORT_1
+        9 = GER_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = GER_LADY_CONSORT_fem_1
+        2 = GER_BARONESS_CONSORT_fem_1
+        3 = GER_VISCOUNTESS_CONSORT_fem_1
+        4 = GER_COUNTESS_CONSORT_fem_1
+        5 = GER_MARCHIONESS_CONSORT_fem_1
+        6 = GER_DUCHESS_CONSORT_fem_1
+        7 = GER_PRINCESS_CONSORT_fem_1
+        8 = GER_QUEEN_CONSORT_fem_1
+        9 = GER_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = GER_HONOURABLE_1
+        2 = GER_HONOURABLE_1
+        3 = GER_HONOURABLE_1
+        4 = GER_HONOURABLE_1
+        5 = GER_LORD_1
+        6 = GER_PRINCE_1
+        7 = GER_PRINCE_1
+        8 = GER_CROWN_PRINCE_1
+        9 = GER_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = GER_HONOURABLE_LADY_fem_1
+        2 = GER_HONOURABLE_LADY_fem_1
+        3 = GER_HONOURABLE_LADY_fem_1
+        4 = GER_HONOURABLE_LADY_fem_1
+        5 = GER_LADY_fem_1
+        6 = GER_PRINCESS_fem_1
+        7 = GER_PRINCESS_fem_1
+        8 = GER_CROWN_PRINCESS_fem_1
+        9 = GER_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        culture_group = germanic
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#HUNGARY
+hun_ToR_reform = {
+    rank = {
+        1 = HUN_LORDSHIP_1
+        2 = HUN_BARONY_1
+        3 = HUN_VISCOUNTY_1
+        4 = HUN_COUNTY_1
+        5 = HUN_MARQUISATE_1
+        6 = HUN_DUCHY_1
+        7 = HUN_PRINCIPALITY_1
+        8 = HUN_KINGDOM_1
+        9 = HUN_EMPIRE_1
+    }
+    ruler_male = {
+        1 = HUN_LORD_1
+        2 = HUN_BARON_1
+        3 = HUN_VISCOUNT_1
+        4 = HUN_COUNT_1
+        5 = HUN_MARQUIS_1
+        6 = HUN_DUKE_1
+        7 = HUN_PRINCE_1
+        8 = HUN_KING_1
+        9 = HUN_EMPEROR_1
+    }
+    ruler_female = {
+        1 = HUN_LADY_fem_1
+        2 = HUN_BARONESS_fem_1
+        3 = HUN_VISCOUNTESS_fem_1
+        4 = HUN_COUNTESS_fem_1
+        5 = HUN_MARCHIONESS_fem_1
+        6 = HUN_DUCHESS_fem_1
+        7 = HUN_PRINCESS_fem_1
+        8 = HUN_QUEEN_fem_1
+        9 = HUN_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = HUN_LORD_CONSORT_1
+        2 = HUN_BARON_CONSORT_1
+        3 = HUN_VISCOUNT_CONSORT_1
+        4 = HUN_COUNT_CONSORT_1
+        5 = HUN_MARQUIS_CONSORT_1
+        6 = HUN_DUKE_CONSORT_1
+        7 = HUN_PRINCE_CONSORT_1
+        8 = HUN_KING_CONSORT_1
+        9 = HUN_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = HUN_LADY_CONSORT_fem_1
+        2 = HUN_BARONESS_CONSORT_fem_1
+        3 = HUN_VISCOUNTESS_CONSORT_fem_1
+        4 = HUN_COUNTESS_CONSORT_fem_1
+        5 = HUN_MARCHIONESS_CONSORT_fem_1
+        6 = HUN_DUCHESS_CONSORT_fem_1
+        7 = HUN_PRINCESS_CONSORT_fem_1
+        8 = HUN_QUEEN_CONSORT_fem_1
+        9 = HUN_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = HUN_HONOURABLE_1
+        2 = HUN_HONOURABLE_1
+        3 = HUN_HONOURABLE_1
+        4 = HUN_HONOURABLE_1
+        5 = HUN_LORD_1
+        6 = HUN_PRINCE_1
+        7 = HUN_PRINCE_1
+        8 = HUN_CROWN_PRINCE_1
+        9 = HUN_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = HUN_HONOURABLE_LADY_fem_1
+        2 = HUN_HONOURABLE_LADY_fem_1
+        3 = HUN_HONOURABLE_LADY_fem_1
+        4 = HUN_HONOURABLE_LADY_fem_1
+        5 = HUN_LADY_fem_1
+        6 = HUN_PRINCESS_fem_1
+        7 = HUN_PRINCESS_fem_1
+        8 = HUN_CROWN_PRINCESS_fem_1
+        9 = HUN_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        culture_group = carpathian
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            has_heir = "Ladislaus Postumus"
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#ITALY 
+ita_ToR_reform = {
+    rank = {
+        1 = ITA_LORDSHIP_1
+        2 = ITA_BARONY_1
+        3 = ITA_VISCOUNTY_1
+        4 = ITA_COUNTY_1
+        5 = ITA_MARQUISATE_1
+        6 = ITA_DUCHY_1
+        7 = ITA_PRINCIPALITY_1
+        8 = ITA_KINGDOM_1
+        9 = ITA_EMPIRE_1
+    }
+    ruler_male = {
+        1 = ITA_LORD_1
+        2 = ITA_BARON_1
+        3 = ITA_VISCOUNT_1
+        4 = ITA_COUNT_1
+        5 = ITA_MARQUIS_1
+        6 = ITA_DUKE_1
+        7 = ITA_PRINCE_1
+        8 = ITA_KING_1
+        9 = ITA_EMPEROR_1
+    }
+    ruler_female = {
+        1 = ITA_LADY_fem_1
+        2 = ITA_BARONESS_fem_1
+        3 = ITA_VISCOUNTESS_fem_1
+        4 = ITA_COUNTESS_fem_1
+        5 = ITA_MARCHIONESS_fem_1
+        6 = ITA_DUCHESS_fem_1
+        7 = ITA_PRINCESS_fem_1
+        8 = ITA_QUEEN_fem_1
+        9 = ITA_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = ITA_LORD_CONSORT_1
+        2 = ITA_BARON_CONSORT_1
+        3 = ITA_VISCOUNT_CONSORT_1
+        4 = ITA_COUNT_CONSORT_1
+        5 = ITA_MARQUIS_CONSORT_1
+        6 = ITA_DUKE_CONSORT_1
+        7 = ITA_PRINCE_CONSORT_1
+        8 = ITA_KING_CONSORT_1
+        9 = ITA_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = ITA_LADY_CONSORT_fem_1
+        2 = ITA_BARONESS_CONSORT_fem_1
+        3 = ITA_VISCOUNTESS_CONSORT_fem_1
+        4 = ITA_COUNTESS_CONSORT_fem_1
+        5 = ITA_MARCHIONESS_CONSORT_fem_1
+        6 = ITA_DUCHESS_CONSORT_fem_1
+        7 = ITA_PRINCESS_CONSORT_fem_1
+        8 = ITA_QUEEN_CONSORT_fem_1
+        9 = ITA_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = ITA_HONOURABLE_1
+        2 = ITA_HONOURABLE_1
+        3 = ITA_HONOURABLE_1
+        4 = ITA_HONOURABLE_1
+        5 = ITA_LORD_1
+        6 = ITA_PRINCE_1
+        7 = ITA_PRINCE_1
+        8 = ITA_CROWN_PRINCE_1
+        9 = ITA_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = ITA_HONOURABLE_LADY_fem_1
+        2 = ITA_HONOURABLE_LADY_fem_1
+        3 = ITA_HONOURABLE_LADY_fem_1
+        4 = ITA_HONOURABLE_LADY_fem_1
+        5 = ITA_LADY_fem_1
+        6 = ITA_PRINCESS_fem_1
+        7 = ITA_PRINCESS_fem_1
+        8 = ITA_CROWN_PRINCESS_fem_1
+        9 = ITA_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        culture_group = latin
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#NORWAY
+nor_lordship_reform = {
+    rank = {
+        1 = NOR_LORDSHIP_1
+        2 = NOR_BARONY_1
+        3 = NOR_VISCOUNTY_1
+        4 = NOR_COUNTY_1
+        5 = NOR_MARQUISATE_1
+        6 = NOR_DUCHY_1
+        7 = NOR_PRINCIPALITY_1
+        8 = NOR_KINGDOM_1
+        9 = NOR_EMPIRE_1
+    }
+    ruler_male = {
+        1 = NOR_LORD_1
+        2 = NOR_BARON_1
+        3 = NOR_VISCOUNT_1
+        4 = NOR_COUNT_1
+        5 = NOR_MARQUIS_1
+        6 = NOR_DUKE_1
+        7 = NOR_PRINCE_1
+        8 = NOR_KING_1
+        9 = NOR_EMPEROR_1
+    }
+    ruler_female = {
+        1 = NOR_LADY_fem_1
+        2 = NOR_BARONESS_fem_1
+        3 = NOR_VISCOUNTESS_fem_1
+        4 = NOR_COUNTESS_fem_1
+        5 = NOR_MARCHIONESS_fem_1
+        6 = NOR_DUCHESS_fem_1
+        7 = NOR_PRINCESS_fem_1
+        8 = NOR_QUEEN_fem_1
+        9 = NOR_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = NOR_LORD_CONSORT_1
+        2 = NOR_BARON_CONSORT_1
+        3 = NOR_VISCOUNT_CONSORT_1
+        4 = NOR_COUNT_CONSORT_1
+        5 = NOR_MARQUIS_CONSORT_1
+        6 = NOR_DUKE_CONSORT_1
+        7 = NOR_PRINCE_CONSORT_1
+        8 = NOR_KING_CONSORT_1
+        9 = NOR_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = NOR_LADY_CONSORT_fem_1
+        2 = NOR_BARONESS_CONSORT_fem_1
+        3 = NOR_VISCOUNTESS_CONSORT_fem_1
+        4 = NOR_COUNTESS_CONSORT_fem_1
+        5 = NOR_MARCHIONESS_CONSORT_fem_1
+        6 = NOR_DUCHESS_CONSORT_fem_1
+        7 = NOR_PRINCESS_CONSORT_fem_1
+        8 = NOR_QUEEN_CONSORT_fem_1
+        9 = NOR_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = NOR_HONOURABLE_1
+        2 = NOR_HONOURABLE_1
+        3 = NOR_HONOURABLE_1
+        4 = NOR_HONOURABLE_1
+        5 = NOR_HONOURABLE_1
+        6 = NOR_PRINCE_1
+        7 = NOR_PRINCE_1
+        8 = NOR_CROWN_PRINCE_1
+        9 = NOR_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = NOR_HONOURABLE_LADY_fem_1
+        2 = NOR_HONOURABLE_LADY_fem_1
+        3 = NOR_HONOURABLE_LADY_fem_1
+        4 = NOR_HONOURABLE_LADY_fem_1
+        5 = NOR_HONOURABLE_LADY_fem_1
+        6 = NOR_PRINCESS_fem_1
+        7 = NOR_PRINCESS_fem_1
+        8 = NOR_CROWN_PRINCESS_fem_1
+        9 = NOR_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        primary_culture = norwegian
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#POLAND
+pol_ToR_reform = {
+    rank = {
+        1 = POL_LORDSHIP_1
+        2 = POL_BARONY_1
+        3 = POL_VISCOUNTY_1
+        4 = POL_COUNTY_1
+        5 = POL_MARQUISATE_1
+        6 = POL_DUCHY_1
+        7 = POL_PRINCIPALITY_1
+        8 = POL_KINGDOM_1
+        9 = POL_EMPIRE_1
+    }
+    ruler_male = {
+        1 = POL_LORD_1
+        2 = POL_BARON_1
+        3 = POL_VISCOUNT_1
+        4 = POL_COUNT_1
+        5 = POL_MARQUIS_1
+        6 = POL_DUKE_1
+        7 = POL_PRINCE_1
+        8 = POL_KING_1
+        9 = POL_EMPEROR_1
+    }
+    ruler_female = {
+        1 = POL_LADY_fem_1
+        2 = POL_BARONESS_fem_1
+        3 = POL_VISCOUNTESS_fem_1
+        4 = POL_COUNTESS_fem_1
+        5 = POL_MARCHIONESS_fem_1
+        6 = POL_DUCHESS_fem_1
+        7 = POL_PRINCESS_fem_1
+        8 = POL_QUEEN_fem_1
+        9 = POL_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = POL_LORD_CONSORT_1
+        2 = POL_BARON_CONSORT_1
+        3 = POL_VISCOUNT_CONSORT_1
+        4 = POL_COUNT_CONSORT_1
+        5 = POL_MARQUIS_CONSORT_1
+        6 = POL_DUKE_CONSORT_1
+        7 = POL_PRINCE_CONSORT_1
+        8 = POL_KING_CONSORT_1
+        9 = POL_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = POL_LADY_CONSORT_fem_1
+        2 = POL_BARONESS_CONSORT_fem_1
+        3 = POL_VISCOUNTESS_CONSORT_fem_1
+        4 = POL_COUNTESS_CONSORT_fem_1
+        5 = POL_MARCHIONESS_CONSORT_fem_1
+        6 = POL_DUCHESS_CONSORT_fem_1
+        7 = POL_PRINCESS_CONSORT_fem_1
+        8 = POL_QUEEN_CONSORT_fem_1
+        9 = POL_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = POL_HONOURABLE_1
+        2 = POL_HONOURABLE_1
+        3 = POL_HONOURABLE_1
+        4 = POL_HONOURABLE_1
+        5 = POL_LORD_1
+        6 = POL_PRINCE_1
+        7 = POL_PRINCE_1
+        8 = POL_CROWN_PRINCE_1
+        9 = POL_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = POL_HONOURABLE_LADY_fem_1
+        2 = POL_HONOURABLE_LADY_fem_1
+        3 = POL_HONOURABLE_LADY_fem_1
+        4 = POL_HONOURABLE_LADY_fem_1
+        5 = POL_LADY_fem_1
+        6 = POL_PRINCESS_fem_1
+        7 = POL_PRINCESS_fem_1
+        8 = POL_CROWN_PRINCESS_fem_1
+        9 = POL_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        primary_culture = polish
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#PORTUGAL
+por_ToR_reform = {
+    rank = {
+        1 = POR_LORDSHIP_1
+        2 = POR_BARONY_1
+        3 = POR_VISCOUNTY_1
+        4 = POR_COUNTY_1
+        5 = POR_MARQUISATE_1
+        6 = POR_DUCHY_1
+        7 = POR_PRINCIPALITY_1
+        8 = POR_KINGDOM_1
+        9 = POR_EMPIRE_1
+    }
+    ruler_male = {
+        1 = POR_LORD_1
+        2 = POR_BARON_1
+        3 = POR_VISCOUNT_1
+        4 = POR_COUNT_1
+        5 = POR_MARQUIS_1
+        6 = POR_DUKE_1
+        7 = POR_PRINCE_1
+        8 = POR_KING_1
+        9 = POR_EMPEROR_1
+    }
+    ruler_female = {
+        1 = POR_LADY_fem_1
+        2 = POR_BARONESS_fem_1
+        3 = POR_VISCOUNTESS_fem_1
+        4 = POR_COUNTESS_fem_1
+        5 = POR_MARCHIONESS_fem_1
+        6 = POR_DUCHESS_fem_1
+        7 = POR_PRINCESS_fem_1
+        8 = POR_QUEEN_fem_1
+        9 = POR_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = POR_LORD_CONSORT_1
+        2 = POR_BARON_CONSORT_1
+        3 = POR_VISCOUNT_CONSORT_1
+        4 = POR_COUNT_CONSORT_1
+        5 = POR_MARQUIS_CONSORT_1
+        6 = POR_DUKE_CONSORT_1
+        7 = POR_PRINCE_CONSORT_1
+        8 = POR_KING_CONSORT_1
+        9 = POR_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = POR_LADY_CONSORT_fem_1
+        2 = POR_BARONESS_CONSORT_fem_1
+        3 = POR_VISCOUNTESS_CONSORT_fem_1
+        4 = POR_COUNTESS_CONSORT_fem_1
+        5 = POR_MARCHIONESS_CONSORT_fem_1
+        6 = POR_DUCHESS_CONSORT_fem_1
+        7 = POR_PRINCESS_CONSORT_fem_1
+        8 = POR_QUEEN_CONSORT_fem_1
+        9 = POR_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = POR_HONOURABLE_1
+        2 = POR_HONOURABLE_1
+        3 = POR_HONOURABLE_1
+        4 = POR_HONOURABLE_1
+        5 = POR_LORD_1
+        6 = POR_PRINCE_1
+        7 = POR_PRINCE_1
+        8 = POR_CROWN_PRINCE_1
+        9 = POR_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = POR_HONOURABLE_LADY_fem_1
+        2 = POR_HONOURABLE_LADY_fem_1
+        3 = POR_HONOURABLE_LADY_fem_1
+        4 = POR_HONOURABLE_LADY_fem_1
+        5 = POR_LADY_fem_1
+        6 = POR_PRINCESS_fem_1
+        7 = POR_PRINCESS_fem_1
+        8 = POR_CROWN_PRINCESS_fem_1
+        9 = POR_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        primary_culture = portugese
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#PRUSSIA
+pru_ToR_reform = {
+    rank = {
+        1 = PRU_LORDSHIP_1
+        2 = PRU_BARONY_1
+        3 = PRU_VISCOUNTY_1
+        4 = PRU_COUNTY_1
+        5 = PRU_MARQUISATE_1
+        6 = PRU_DUCHY_1
+        7 = PRU_PRINCIPALITY_1
+        8 = PRU_KINGDOM_1
+        9 = PRU_EMPIRE_1
+    }
+    ruler_male = {
+        1 = PRU_LORD_1
+        2 = PRU_BARON_1
+        3 = PRU_VISCOUNT_1
+        4 = PRU_COUNT_1
+        5 = PRU_MARQUIS_1
+        6 = PRU_DUKE_1
+        7 = PRU_PRINCE_1
+        8 = PRU_KING_1
+        9 = PRU_EMPEROR_1
+    }
+    ruler_female = {
+        1 = PRU_LADY_fem_1
+        2 = PRU_BARONESS_fem_1
+        3 = PRU_VISCOUNTESS_fem_1
+        4 = PRU_COUNTESS_fem_1
+        5 = PRU_MARCHIONESS_fem_1
+        6 = PRU_DUCHESS_fem_1
+        7 = PRU_PRINCESS_fem_1
+        8 = PRU_QUEEN_fem_1
+        9 = PRU_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = PRU_LORD_CONSORT_1
+        2 = PRU_BARON_CONSORT_1
+        3 = PRU_VISCOUNT_CONSORT_1
+        4 = PRU_COUNT_CONSORT_1
+        5 = PRU_MARQUIS_CONSORT_1
+        6 = PRU_DUKE_CONSORT_1
+        7 = PRU_PRINCE_CONSORT_1
+        8 = PRU_KING_CONSORT_1
+        9 = PRU_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = PRU_LADY_CONSORT_fem_1
+        2 = PRU_BARONESS_CONSORT_fem_1
+        3 = PRU_VISCOUNTESS_CONSORT_fem_1
+        4 = PRU_COUNTESS_CONSORT_fem_1
+        5 = PRU_MARCHIONESS_CONSORT_fem_1
+        6 = PRU_DUCHESS_CONSORT_fem_1
+        7 = PRU_PRINCESS_CONSORT_fem_1
+        8 = PRU_QUEEN_CONSORT_fem_1
+        9 = PRU_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = PRU_HONOURABLE_1
+        2 = PRU_HONOURABLE_1
+        3 = PRU_HONOURABLE_1
+        4 = PRU_HONOURABLE_1
+        5 = PRU_LORD_1
+        6 = PRU_PRINCE_1
+        7 = PRU_PRINCE_1
+        8 = PRU_CROWN_PRINCE_1
+        9 = PRU_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = PRU_HONOURABLE_LADY_fem_1
+        2 = PRU_HONOURABLE_LADY_fem_1
+        3 = PRU_HONOURABLE_LADY_fem_1
+        4 = PRU_HONOURABLE_LADY_fem_1
+        5 = PRU_LADY_fem_1
+        6 = PRU_PRINCESS_fem_1
+        7 = PRU_PRINCESS_fem_1
+        8 = PRU_CROWN_PRINCESS_fem_1
+        9 = PRU_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        OR = {
+            tag = PRU
+            tag = GER
+            primary_culture = prussian
+        }
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#RUSSIA
+rus_ToR_reform = {
+    rank = {
+        1 = RUS_LORDSHIP_1
+        2 = RUS_BARONY_1
+        3 = RUS_VISCOUNTY_1
+        4 = RUS_COUNTY_1
+        5 = RUS_MARQUISATE_1
+        6 = RUS_DUCHY_1
+        7 = RUS_PRINCIPALITY_1
+        8 = RUS_KINGDOM_1
+        9 = RUS_EMPIRE_1
+    }
+    ruler_male = {
+        1 = RUS_LORD_1
+        2 = RUS_BARON_1
+        3 = RUS_VISCOUNT_1
+        4 = RUS_COUNT_1
+        5 = RUS_MARQUIS_1
+        6 = RUS_DUKE_1
+        7 = RUS_PRINCE_1
+        8 = RUS_KING_1
+        9 = RUS_EMPEROR_1
+    }
+    ruler_female = {
+        1 = RUS_LADY_fem_1
+        2 = RUS_BARONESS_fem_1
+        3 = RUS_VISCOUNTESS_fem_1
+        4 = RUS_COUNTESS_fem_1
+        5 = RUS_MARCHIONESS_fem_1
+        6 = RUS_DUCHESS_fem_1
+        7 = RUS_PRINCESS_fem_1
+        8 = RUS_QUEEN_fem_1
+        9 = RUS_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = RUS_LORD_CONSORT_1
+        2 = RUS_BARON_CONSORT_1
+        3 = RUS_VISCOUNT_CONSORT_1
+        4 = RUS_COUNT_CONSORT_1
+        5 = RUS_MARQUIS_CONSORT_1
+        6 = RUS_DUKE_CONSORT_1
+        7 = RUS_PRINCE_CONSORT_1
+        8 = RUS_KING_CONSORT_1
+        9 = RUS_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = RUS_LADY_CONSORT_fem_1
+        2 = RUS_BARONESS_CONSORT_fem_1
+        3 = RUS_VISCOUNTESS_CONSORT_fem_1
+        4 = RUS_COUNTESS_CONSORT_fem_1
+        5 = RUS_MARCHIONESS_CONSORT_fem_1
+        6 = RUS_DUCHESS_CONSORT_fem_1
+        7 = RUS_PRINCESS_CONSORT_fem_1
+        8 = RUS_QUEEN_CONSORT_fem_1
+        9 = RUS_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = RUS_HONOURABLE_1
+        2 = RUS_HONOURABLE_1
+        3 = RUS_HONOURABLE_1
+        4 = RUS_HONOURABLE_1
+        5 = RUS_LORD_1
+        6 = RUS_PRINCE_1
+        7 = RUS_PRINCE_1
+        8 = RUS_CROWN_PRINCE_1
+        9 = RUS_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = RUS_HONOURABLE_LADY_fem_1
+        2 = RUS_HONOURABLE_LADY_fem_1
+        3 = RUS_HONOURABLE_LADY_fem_1
+        4 = RUS_HONOURABLE_LADY_fem_1
+        5 = RUS_LADY_fem_1
+        6 = RUS_PRINCESS_fem_1
+        7 = RUS_PRINCESS_fem_1
+        8 = RUS_CROWN_PRINCESS_fem_1
+        9 = RUS_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        culture_group = east_slavic
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+#SWEDEN
+swe_ToR_reform = {
+    rank = {
+        1 = SWE_LORDSHIP_1
+        2 = SWE_BARONY_1
+        3 = SWE_VISCOUNTY_1
+        4 = SWE_COUNTY_1
+        5 = SWE_MARQUISATE_1
+        6 = SWE_DUCHY_1
+        7 = SWE_PRINCIPALITY_1
+        8 = SWE_KINGDOM_1
+        9 = SWE_EMPIRE_1
+    }
+    ruler_male = {
+        1 = SWE_LORD_1
+        2 = SWE_BARON_1
+        3 = SWE_VISCOUNT_1
+        4 = SWE_COUNT_1
+        5 = SWE_MARQUIS_1
+        6 = SWE_DUKE_1
+        7 = SWE_PRINCE_1
+        8 = SWE_KING_1
+        9 = SWE_EMPEROR_1
+    }
+    ruler_female = {
+        1 = SWE_LADY_fem_1
+        2 = SWE_BARONESS_fem_1
+        3 = SWE_VISCOUNTESS_fem_1
+        4 = SWE_COUNTESS_fem_1
+        5 = SWE_MARCHIONESS_fem_1
+        6 = SWE_DUCHESS_fem_1
+        7 = SWE_PRINCESS_fem_1
+        8 = SWE_QUEEN_fem_1
+        9 = SWE_EMPRESS_fem_1
+    }
+    consort_male = {
+        1 = SWE_LORD_CONSORT_1
+        2 = SWE_BARON_CONSORT_1
+        3 = SWE_VISCOUNT_CONSORT_1
+        4 = SWE_COUNT_CONSORT_1
+        5 = SWE_MARQUIS_CONSORT_1
+        6 = SWE_DUKE_CONSORT_1
+        7 = SWE_PRINCE_CONSORT_1
+        8 = SWE_KING_CONSORT_1
+        9 = SWE_EMPEROR_CONSORT_1
+    }
+    consort_female = {
+        1 = SWE_LADY_CONSORT_fem_1
+        2 = SWE_BARONESS_CONSORT_fem_1
+        3 = SWE_VISCOUNTESS_CONSORT_fem_1
+        4 = SWE_COUNTESS_CONSORT_fem_1
+        5 = SWE_MARCHIONESS_CONSORT_fem_1
+        6 = SWE_DUCHESS_CONSORT_fem_1
+        7 = SWE_PRINCESS_CONSORT_fem_1
+        8 = SWE_QUEEN_CONSORT_fem_1
+        9 = SWE_EMPRESS_CONSORT_fem_1
+    }
+    heir_male = {
+        1 = SWE_HONOURABLE_1
+        2 = SWE_HONOURABLE_1
+        3 = SWE_HONOURABLE_1
+        4 = SWE_HONOURABLE_1
+        5 = SWE_LORD_1
+        6 = SWE_PRINCE_1
+        7 = SWE_PRINCE_1
+        8 = SWE_CROWN_PRINCE_1
+        9 = SWE_CROWN_PRINCE_1
+    }
+    heir_female = {
+        1 = SWE_HONOURABLE_LADY_fem_1
+        2 = SWE_HONOURABLE_LADY_fem_1
+        3 = SWE_HONOURABLE_LADY_fem_1
+        4 = SWE_HONOURABLE_LADY_fem_1
+        5 = SWE_LADY_fem_1
+        6 = SWE_PRINCESS_fem_1
+        7 = SWE_PRINCESS_fem_1
+        8 = SWE_CROWN_PRINCESS_fem_1
+        9 = SWE_CROWN_PRINCESS_fem_1
+    }
+    trigger = {
+        primary_culture = swedish
+        OR = {
+            has_ToR_government_reform = yes
+            has_ToR_unique_government_reform = yes
+            is_ToR_subject_type = yes
+        }
+    }
+}
+########################
+## Generic Categories ##
+########################
+irish_peerage_monarchy = {
+    rank = {
+        1 = TIARNAS
+        2 = BARUNTACHT
+        3 = CONTAE
+        4 = IARLADOM
+        5 = TIARNAS_MAIRSEAIL
+        6 = DIUCACHT
+        7 = ARD_RIDOM
+        8 = RIDOM
+        9 = RI_MORDOM
+    }
+    ruler_male = {
+        1 = TIARNA
+        2 = BARUN
+        3 = CONTA
+        4 = IARLA
+        5 = MARTA
+        6 = DIUC
+        7 = ARD_RI
+        8 = RI
+        9 = RI_MOR
+    }
+    consort_female = {
+        1 = MHUIRE_fem
+        2 = BHANBHARUN_fem
+        3 = CUNTAIR_fem
+        4 = CUNTAIR_fem
+        5 = MHUIRE_fem
+        6 = BANPHRIONSA_fem
+        7 = BANRION_fem
+        8 = ARD_BANRION_fem
+        9 = ARD_BANRION_fem
+    }
+    heir_male = {
+        1 = TIARNA
+        2 = TIARNA
+        3 = TIARNA
+        4 = TIARNA
+        5 = TIARNA
+        6 = PHRIONSA
+        7 = ARD_PRHIONSA
+        8 = ARD_PRHIONSA
+        9 = ARD_PRHIONSA
+    }
+    trigger = {
+        OR = {
+            primary_culture = celtic_irish_culture
+            tag = DMS
+            tag = ORD
+            tag = KID
+            tag = ULS
+        }
+        NOT = {
+            has_reform = irish_clann_reform
+            has_reform = tanistry_reform
+            has_reform = irish_highkingdom_reform
+        }
+    }
+}
+pashalik_of_timbuktu = {
+    rank = {
+        1 = TMB_PASHALIK
+        2 = TMB_PASHALIK
+        3 = TMB_PASHALIK
+        4 = TMB_PASHALIK
+        5 = TMB_PASHALIK
+        6 = TMB_PASHALIK
+        7 = TMB_PASHALIK
+        8 = TMB_PASHALIK
+        9 = TMB_PASHALIK
+    }
+    ruler_male = {
+        1 = TMB_PASHA
+        2 = TMB_PASHA
+        3 = TMB_PASHA
+        4 = TMB_PASHA
+        5 = TMB_PASHA
+        6 = TMB_PASHA
+        7 = TMB_PASHA
+        8 = TMB_PASHA
+        9 = TMB_PASHA
+    }
+    consort_female = {
+        1 = TMB_HATUN_fem
+        2 = TMB_HATUN_fem
+        3 = TMB_HATUN_fem
+        4 = TMB_HATUN_fem
+        5 = TMB_HATUN_fem
+        6 = TMB_HATUN_fem
+        7 = TMB_HATUN_fem
+        8 = TMB_HATUN_fem
+        9 = TMB_HATUN_fem
+    }
+    heir_male = {
+        1 = TMB_PASHAZADE
+        2 = TMB_PASHAZADE
+        3 = TMB_PASHAZADE
+        4 = TMB_PASHAZADE
+        5 = TMB_PASHAZADE
+        6 = TMB_PASHAZADE
+        7 = TMB_PASHAZADE
+        8 = TMB_PASHAZADE
+        9 = TMB_PASHAZADE
+    }
+    trigger = {
+        is_subject = yes
+        tag = TMB
+    }
+}
+gov_jarldom = {
+    rank = {
+        4 = JARLDOM
+    }
+    ruler_male = {
+        4 = JARL
+    }
+    consort_female = {
+        4 = CONSORT
+    }
+    heir_male = {
+        4 = LORD
+    }
+    trigger = {
+        government = monarchy
+        government_rank = 4
+        OR = {
+            religion = norse_pagan_reformed
+            culture = norse
+        }
+        government_rank = 4
+        NOT = {
+            government_rank = 5
+        }
+    }
+}
+ayyutthayan_monarchy = {
+    rank = {
+        1 = AYYUTTHAYAN_COUNTY
+        2 = AYYUTTHAYAN_COUNTY
+        3 = AYYUTTHAYAN_COUNTY
+        4 = AYYUTTHAYAN_COUNTY
+        5 = AYYUTTHAYAN_MARQUISATE
+        6 = AYYUTTHAYAN_DUCHY
+        7 = AYYUTTHAYAN_PRINCIPALITY
+        8 = AYYUTTHAYAN_KINGDOM
+        9 = AYYUTTHAYAN_EMPIRE
+    }
+    ruler_male = {
+        1 = AYYUTTHAYAN_LORD
+        2 = AYYUTTHAYAN_LORD
+        3 = AYYUTTHAYAN_LORD
+        4 = AYYUTTHAYAN_LORD
+        5 = AYYUTTHAYAN_LORD
+        6 = AYYUTTHAYAN_DUKE
+        7 = AYYUTTHAYAN_PRINCE      #Deputy-King
+        8 = AYYUTTHAYAN_KING        #King
+        9 = AYYUTTHAYAN_EMPEROR
+    }
+    consort_female = {
+        1 = AYYUTTHAYAN_LADY_CONSORT_fem
+        2 = AYYUTTHAYAN_LADY_CONSORT_fem
+        3 = AYYUTTHAYAN_LADY_CONSORT_fem
+        4 = AYYUTTHAYAN_LADY_CONSORT_fem
+        5 = AYYUTTHAYAN_LADY_CONSORT_fem
+        6 = AYYUTTHAYAN_PRINCESS_CONSORT_fem
+        7 = AYYUTTHAYAN_PRINCESS_CONSORT_fem
+        8 = AYYUTTHAYAN_QUEEN_CONSORT_fem
+        9 = AYYUTTHAYAN_EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = AYYUTTHAYAN_LORD
+        2 = AYYUTTHAYAN_LORD
+        3 = AYYUTTHAYAN_LORD
+        4 = AYYUTTHAYAN_LORD
+        5 = AYYUTTHAYAN_LORD
+        6 = AYYUTTHAYAN_PRINCE
+        7 = AYYUTTHAYAN_PRINCE
+        8 = AYYUTTHAYAN_CROWN_PRINCE
+        9 = AYYUTTHAYAN_CROWN_PRINCE
+    }
+    trigger = {
+        OR = {
+            government = monarchy
+            government = tribal
+        }
+        OR = {
+            religion = animism
+            religion = buddhism
+            religion = mahayana
+        }
+        AND = {
+            OR = {
+                primary_culture = lao
+                primary_culture = central_thai
+                primary_culture = northern_thai
+                primary_culture = khmer
+                primary_culture = degar
+                tag = PAH
+            }
+            OR = {
+                has_reform = mandala_reform
+                has_reform = thai_monarchy_reform
+                has_reform = tribal_federation
+            }
+        }
+    }
+}
+#Italy
+judicate_monarchy = {
+    rank = {
+        8 = SARDINIAN_JUDICATE
+        9 = SARDINIAN_JUDICATE
+    }
+    ruler_male = {
+        8 = SARDINIAN_JUDGE
+        9 = SARDINIAN_JUDGE
+    }
+    heir_male = {
+        8 = SARDINIAN_JUDGE
+        9 = SARDINIAN_JUDGE
+    }
+    trigger = {
+        government_rank = 8
+        OR = {
+            tag = ARR
+            tag = LGD
+            tag = SAR
+        }
+    }
+}
+pavian_principality = {
+    rank = {
+        4 = PAV_PRINCIPALITY
+    }
+    ruler_male = {
+        4 = PAV_PRINCE
+    }
+    ruler_female = {
+        4 = PAV_PRINCESS_fem
+    }
+    heir_male = {
+        4 = PAV_LORD
+    }
+    heir_female = {
+        4 = PAV_LORDSHIP_fem
+    }
+    trigger = {
+        government = monarchy
+        government_rank = 4
+        tag = PAV
+        NOT = {
+            government_rank = 5
+        }
+    }
+}
+#Central asia
+armenian_monarchy = {
+    rank = {
+        1 = ARMENIAN_DUCHY
+        2 = ARMENIAN_DUCHY
+        3 = ARMENIAN_DUCHY
+        4 = ARMENIAN_DUCHY
+        5 = ARMENIAN_DUCHY
+        6 = ARMENIAN_DUCHY
+        7 = ARMENIAN_PRINCIPALITY
+        8 = ARMENIAN_KINGDOM
+        9 = ARMENIAN_EMPIRE
+    }
+    ruler_male = {
+        1 = ARMENIAN_DUKE
+        2 = ARMENIAN_DUKE
+        3 = ARMENIAN_DUKE
+        4 = ARMENIAN_DUKE
+        5 = ARMENIAN_DUKE
+        6 = ARMENIAN_DUKE
+        7 = ARMENIAN_PRINCE
+        8 = ARMENIAN_KING
+        9 = ARMENIAN_EMPEROR
+    }
+    ruler_female = {
+        1 = ARMENIAN_DUCHESS_fem
+        2 = ARMENIAN_DUCHESS_fem
+        3 = ARMENIAN_DUCHESS_fem
+        4 = ARMENIAN_DUCHESS_fem
+        5 = ARMENIAN_DUCHESS_fem
+        6 = ARMENIAN_DUCHESS_fem
+        7 = ARMENIAN_PRINCESS_fem
+        8 = ARMENIAN_QUEEN_fem
+        9 = ARMENIAN_EMPRESS_fem
+    }
+    consort_male = {
+        1 = ARMENIAN_DUKE_CONSORT
+        2 = ARMENIAN_DUKE_CONSORT
+        3 = ARMENIAN_DUKE_CONSORT
+        4 = ARMENIAN_DUKE_CONSORT
+        5 = ARMENIAN_DUKE_CONSORT
+        6 = ARMENIAN_DUKE_CONSORT
+        7 = ARMENIAN_PRINCE_CONSORT
+        8 = ARMENIAN_KING_CONSORT
+        9 = ARMENIAN_EMPEROR_CONSORT
+    }
+    consort_female = {
+        1 = ARMENIAN_DUCHESS_CONSORT_fem
+        2 = ARMENIAN_DUCHESS_CONSORT_fem
+        3 = ARMENIAN_DUCHESS_CONSORT_fem
+        4 = ARMENIAN_DUCHESS_CONSORT_fem
+        5 = ARMENIAN_DUCHESS_CONSORT_fem
+        6 = ARMENIAN_DUCHESS_CONSORT_fem
+        7 = ARMENIAN_PRINCESS_CONSORT_fem
+        8 = ARMENIAN_QUEEN_CONSORT_fem
+        9 = ARMENIAN_EMPRESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = ARMENIAN_HEIR
+        2 = ARMENIAN_HEIR
+        3 = ARMENIAN_HEIR
+        4 = ARMENIAN_HEIR
+        5 = ARMENIAN_HEIR
+        6 = ARMENIAN_HEIR
+        7 = ARMENIAN_HEIR
+        8 = ARMENIAN_CROWN_PRINCE
+        9 = ARMENIAN_CROWN_PRINCE
+    }
+    heir_female = {
+        1 = ARMENIAN_HEIRESS_fem
+        2 = ARMENIAN_HEIRESS_fem
+        3 = ARMENIAN_HEIRESS_fem
+        4 = ARMENIAN_HEIRESS_fem
+        5 = ARMENIAN_HEIRESS_fem
+        6 = ARMENIAN_HEIRESS_fem
+        7 = ARMENIAN_HEIRESS_fem
+        8 = ARMENIAN_CROWN_PRINCESS_fem
+        9 = ARMENIAN_CROWN_PRINCESS_fem
+    }
+    trigger = {
+        government = monarchy
+        primary_culture = armenian
+        OR = {
+            has_reform = autocracy_reform
+            has_reform = feudalism_reform
+        }
+    }
+}
+viet_monarchy = {
+    rank = {
+        1 = VIET_PRINCIPALITY
+        2 = VIET_PRINCIPALITY
+        3 = VIET_PRINCIPALITY
+        4 = VIET_PRINCIPALITY
+        5 = VIET_PRINCIPALITY
+        6 = VIET_PRINCIPALITY
+        7 = VIET_PRINCIPALITY
+        8 = VIET_KINGDOM       #Hoangdom
+        9 = VIET_KINGDOM
+    }
+    ruler_male = {
+        1 = VIET_PRINCE
+        2 = VIET_PRINCE
+        3 = VIET_PRINCE
+        4 = VIET_PRINCE
+        5 = VIET_PRINCE
+        6 = VIET_PRINCE
+        7 = VIET_PRINCE
+        8 = VIET_KING          #Hoang De
+        9 = VIET_KING
+    }
+    consort_female = {
+        1 = VIET_PRINCESS_CONSORT_fem
+        2 = VIET_PRINCESS_CONSORT_fem
+        3 = VIET_PRINCESS_CONSORT_fem
+        4 = VIET_PRINCESS_CONSORT_fem
+        5 = VIET_PRINCESS_CONSORT_fem
+        6 = VIET_PRINCESS_CONSORT_fem
+        7 = VIET_PRINCESS_CONSORT_fem
+        8 = VIET_QUEEN_CONSORT_fem
+        9 = VIET_QUEEN_CONSORT_fem
+    }
+    heir_male = {
+        1 = VIET_PRINCE
+        2 = VIET_PRINCE
+        3 = VIET_PRINCE
+        4 = VIET_PRINCE
+        5 = VIET_PRINCE
+        6 = VIET_PRINCE
+        7 = VIET_PRINCE
+        8 = VIET_CROWN_PRINCE
+        9 = VIET_CROWN_PRINCE
+    }
+    trigger = {
+        government = monarchy
+        primary_culture = vietnamese
+    }
+}
+#Central Asia
+dagestani_monarchy = {
+    rank = {
+        1 = MATAVRO
+        2 = MATAVRO
+        3 = MATAVRO
+        4 = MATAVRO
+        5 = MATAVRO
+        6 = MATAVRO
+        7 = SAMTAVRO
+        8 = SAMEPO
+        9 = IMPERIA
+    }
+    ruler_male = {
+        1 = MATAVRI
+        2 = MATAVRI
+        3 = MATAVRI
+        4 = MATAVRI
+        5 = MATAVRI
+        6 = MATAVRI
+        7 = SAMTAVRI
+        8 = MEPE
+        9 = IMPERATORI
+    }
+    ruler_female = {
+        1 = MATAVLI_fem
+        2 = MATAVLI_fem
+        3 = MATAVLI_fem
+        4 = MATAVLI_fem
+        5 = MATAVLI_fem
+        6 = MATAVLI_fem
+        7 = SAMTAVLI_fem
+        8 = DEDOPALI_fem
+        9 = IMPERATRITSA_fem
+    }
+    consort_male = {
+        1 = BATONISHVILI_CONSORT
+        2 = BATONISHVILI_CONSORT
+        3 = BATONISHVILI_CONSORT
+        4 = BATONISHVILI_CONSORT
+        5 = BATONISHVILI_CONSORT
+        6 = BATONISHVILI_CONSORT
+        7 = BATONISHVILI_CONSORT
+        8 = BATONISHVILI_CONSORT
+        9 = IMPERATORI_CONSORT
+    }
+    consort_female = {
+        1 = BATONISHVILI_CONSORT_fem
+        2 = BATONISHVILI_CONSORT_fem
+        3 = BATONISHVILI_CONSORT_fem
+        4 = BATONISHVILI_CONSORT_fem
+        5 = BATONISHVILI_CONSORT_fem
+        6 = BATONISHVILI_CONSORT_fem
+        7 = BATONISHVILI_CONSORT_fem
+        8 = BATONISHVILI_CONSORT_fem
+        9 = DEDOPALI_CONSORT_fem
+    }
+    heir_male = {
+        1 = BATONISHVILI
+        2 = BATONISHVILI
+        3 = BATONISHVILI
+        4 = BATONISHVILI
+        5 = BATONISHVILI
+        6 = BATONISHVILI
+        7 = BATONISHVILI
+        8 = BATONISHVILI
+        9 = BATONISHVILI
+    }
+    heir_female = {
+        1 = BATONISHVILI_fem
+        2 = BATONISHVILI_fem
+        3 = BATONISHVILI_fem
+        4 = BATONISHVILI_fem
+        5 = BATONISHVILI_fem
+        6 = BATONISHVILI_fem
+        7 = BATONISHVILI_fem
+        8 = BATONISHVILI_fem
+        9 = BATONISHVILI_fem
+    }
+    trigger = {
+        government = tribal
+        OR = {
+            primary_culture = chechen
+            primary_culture = dagestani
+            primary_culture = tsez
+        }
+    }
+}
+ashurist_issiakdom_monarchy = {
+    rank = {
+        9 = ISSIAKDOM
+    }
+    ruler_male = {
+        9 = ISSIAK
+    }
+    consort_female = {
+        9 = SEGALLU
+    }
+    heir_male = {
+        9 = RUBU_PALIHSU
+    }
+    trigger = {
+        has_reform = issi_akdom_reform
+        government_rank = 9
+    }
+}
+babylonian_sardom_monarchy = {
+    rank = {
+        9 = SARDOM_BAB
+    }
+    ruler_male = {
+        9 = SAR_BAB
+    }
+    consort_female = {
+        9 = ISSU_BAB
+    }
+    heir_male = {
+        9 = SAMAS_BAB
+    }
+    trigger = {
+        has_reform = sardom_reform
+        government_rank = 9
+    }
+}
+
+
+chinese_monarchy = {
+    rank = {
+        1 = LINGZHU
+        2 = NANJUE
+        3 = ZIJUE
+        4 = XIAN
+        5 = HOUJUE
+        6 = GONGGUO
+        7 = GONGGUO
+        8 = HUANGDOM
+        9 = DIGUO
+    }
+    ruler_male = {
+        1 = ZHU
+        2 = NANJUE
+        3 = ZIJUE
+        4 = SHU
+        5 = HOUJUE
+        6 = GONGJUE
+        7 = HUANGZI
+        8 = HUANG
+        9 = HUANGDI
+    }
+    consort_female = {
+        1 = GONGZHU_CONSORT_fem
+        2 = GONGZHU_CONSORT_fem
+        3 = GONGZHU_CONSORT_fem
+        4 = GONGZHU_CONSORT_fem
+        5 = GONGZHU_CONSORT_fem
+        6 = GONGZHU_CONSORT_fem
+        7 = GONGZHU_CONSORT_fem
+        8 = GONGZHU_CONSORT_fem
+        9 = GONGZHU_CONSORT_fem
+    }
+    heir_male = {
+        1 = HUANGZI
+        2 = HUANGZI
+        3 = HUANGZI
+        4 = HUANGZI
+        5 = HUANGZI
+        6 = HUANGZI
+        7 = HUANGZI
+        8 = HUANGZI
+        9 = HUANGZI
+    }
+    trigger = {
+        government = monarchy
+        culture_group = east_asian #Chinese
+    }
+}
+hindu_nayankara_monarchy = {
+    rank = {
+        1 = NAYANKARA
+        2 = NAYANKARA
+        3 = NAYANKARA
+        4 = NAYANKARA
+        5 = NAYANKARA
+        6 = RANATE
+        7 = HIGH_RANATE
+        8 = MAHARANATE
+        9 = CHHATRAPATINATE
+    }
+    ruler_male = {
+        1 = SAAMAANY
+        2 = SAAMAANY
+        3 = SAAMAANY
+        4 = SAAMAANY
+        5 = SAAMAANY
+        6 = RANA
+        7 = HIGH_RANA
+        8 = MAHARANA
+        9 = CHHATRAPATI
+    }
+    ruler_female = {
+        1 = SAAMAANY
+        2 = SAAMAANY
+        3 = SAAMAANY
+        4 = SAAMAANY
+        5 = SAAMAANY
+        6 = RANA
+        7 = HIGH_RANA
+        8 = MAHARANA
+        9 = CHHATRAPATI
+    }
+    consort_male = {
+        1 = HINDU_LORD_CONSORT
+        2 = HINDU_LORD_CONSORT
+        3 = HINDU_LORD_CONSORT
+        4 = HINDU_LORD_CONSORT
+        5 = HINDU_LORD_CONSORT
+        6 = HINDU_PRINCE_CONSORT
+        7 = HINDU_PRINCE_CONSORT
+        8 = HINDU_PRINCE_CONSORT
+        9 = HINDU_PRINCE_CONSORT
+    }
+    consort_female = {
+        1 = HINDU_LADY_CONSORT_fem
+        2 = HINDU_LADY_CONSORT_fem
+        3 = HINDU_LADY_CONSORT_fem
+        4 = HINDU_LADY_CONSORT_fem
+        5 = HINDU_LADY_CONSORT_fem
+        6 = HINDU_PRINCESS_CONSORT_fem
+        7 = HINDU_PRINCESS_CONSORT_fem
+        8 = HINDU_PRINCESS_CONSORT_fem
+        9 = HINDU_PRINCESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = BHAGAVAAN
+        2 = BHAGAVAAN
+        3 = BHAGAVAAN
+        4 = BHAGAVAAN
+        5 = BHAGAVAAN
+        6 = RAJKUMAR
+        7 = RAJKUMAR
+        8 = RAJKUMAR
+        9 = RAJKUMAR
+    }
+    heir_female = {
+        1 = BHAGAVAAN
+        2 = BHAGAVAAN
+        3 = BHAGAVAAN
+        4 = BHAGAVAAN
+        5 = BHAGAVAAN
+        6 = RAJKUMAR
+        7 = RAJKUMAR
+        8 = RAJKUMAR
+        9 = RAJKUMAR
+    }
+    trigger = {
+        OR = {
+            religion = hinduism
+            religion = surya_majapahit
+        }
+        OR = {
+            culture_group = dravidian
+            primary_culture = javanese
+            primary_culture = oriya
+            primary_culture = sundanese
+        }
+        OR = {
+            has_reform = nayankara_reform
+            has_reform = mandala_reform
+            has_reform = basic_reformed_mandala_reform
+            has_reform = vu_sunda_kingdom_reform
+            has_reform = vu_majapahit_kingdom_reform
+        }
+        NOT = {
+            has_reform = aryachakravarti_reform
+        }
+    }
+}
+buddhist_monarchy = {
+    rank = {
+        1 = RGYALSRASDOM
+        2 = RGYALSRASDOM
+        3 = RGYALSRASDOM
+        4 = RGYALSRASDOM
+        5 = RGYALSRASDOM
+        6 = RGYALSRASDOM
+        7 = HIGH_RGYALSRASDOM
+        8 = RGYALPODOM
+        9 = RGYALKHAMSDOM
+    }
+    ruler_male = {
+        1 = RGYALSRAS
+        2 = RGYALSRAS
+        3 = RGYALSRAS
+        4 = RGYALSRAS
+        5 = RGYALSRAS
+        6 = RGYALSRAS
+        7 = HIGH_RGYALSRAS
+        8 = RGYALPO
+        9 = RGYALKHAMS
+    }
+    consort_female = {
+        1 = SRASMO_BTSUN_fem
+        2 = SRASMO_BTSUN_fem
+        3 = SRASMO_BTSUN_fem
+        4 = SRASMO_BTSUN_fem
+        5 = SRASMO_BTSUN_fem
+        6 = SRASMO_BTSUN_fem
+        7 = SRASMO_BTSUN_fem
+        8 = SRASMO_BTSUN_fem
+        9 = SRASMO_BTSUN_fem
+    }
+    heir_male = {
+        1 = LORD
+        2 = LORD
+        3 = LORD
+        4 = LORD
+        5 = LORD
+        6 = LORD
+        7 = LORD
+        8 = LORD
+        9 = LORD
+    }
+    trigger = {
+        OR = {
+            primary_culture = nepali
+            primary_culture = tibetan
+            primary_culture = tibetan_new
+        }
+        OR = {
+            religion = bon
+            religion = buddhism #Theravada
+            religion = mahayana
+            religion = tantra
+            religion = vajrayana
+        }
+        OR = {
+            has_reform = buddhist_nation_reform
+            have_had_reform = buddhist_nation_reform
+            has_reform = life_on_the_plateau_reform
+            have_had_reform = life_on_the_plateau_reform
+        }
+        NOT = { government = tribal }
+    }
+}
+buddhist_tribal = {
+    rank = {
+        1 = RGYALSRASDOM
+        2 = RGYALSRASDOM
+        3 = RGYALSRASDOM
+        4 = RGYALSRASDOM
+        5 = RGYALSRASDOM
+        6 = RGYALSRASDOM
+        7 = HIGH_RGYALSRASDOM
+        8 = RGYALPODOM
+        9 = RGYALKHAMSDOM
+    }
+    ruler_male = {
+        1 = RGYALSRAS
+        2 = RGYALSRAS
+        3 = RGYALSRAS
+        4 = RGYALSRAS
+        5 = RGYALSRAS
+        6 = RGYALSRAS
+        7 = HIGH_RGYALSRAS
+        8 = RGYALPO
+        9 = RGYALKHAMS
+    }
+    consort_female = {
+        1 = SRASMO_BTSUN_fem
+        2 = SRASMO_BTSUN_fem
+        3 = SRASMO_BTSUN_fem
+        4 = SRASMO_BTSUN_fem
+        5 = SRASMO_BTSUN_fem
+        6 = SRASMO_BTSUN_fem
+        7 = SRASMO_BTSUN_fem
+        8 = SRASMO_BTSUN_fem
+        9 = SRASMO_BTSUN_fem
+    }
+    heir_male = {
+        1 = LORD
+        2 = LORD
+        3 = LORD
+        4 = LORD
+        5 = LORD
+        6 = LORD
+        7 = LORD
+        8 = LORD
+        9 = LORD
+    }
+    trigger = {
+        OR = {
+            primary_culture = nepali
+            primary_culture = tibetan
+            primary_culture = tibetan_new
+        }
+        OR = {
+            religion = bon
+            religion = buddhism #Theravada
+            religion = mahayana
+            religion = tantra
+            religion = vajrayana
+        }
+        has_reform = tribal_kingdom
+    }
+}
+malay_animist_monarchy = {
+    rank = {
+        1 = MALAY_CHIEFDOM
+        2 = MALAY_CHIEFDOM
+        3 = MALAY_CHIEFDOM
+        4 = MALAY_CHIEFDOM
+        5 = MALAY_CHIEFDOM
+        6 = MALAY_CHIEFDOM
+        7 = MALAY_HIGH_CHIEFDOM
+        8 = MALAY_HIGH_CHIEFDOM
+        9 = MALAY_HIGH_CHIEFDOM
+    }
+    ruler_male = {
+        1 = MALAY_CHIEF
+        2 = MALAY_CHIEF
+        3 = MALAY_CHIEF
+        4 = MALAY_CHIEF
+        5 = MALAY_CHIEF
+        6 = MALAY_CHIEF
+        7 = MALAY_HIGH_CHIEF
+        8 = MALAY_HIGH_CHIEF
+        9 = MALAY_HIGH_CHIEF
+    }
+    consort_female = {
+        1 = MALAY_LADY_CONSORT_fem
+        2 = MALAY_LADY_CONSORT_fem
+        3 = MALAY_LADY_CONSORT_fem
+        4 = MALAY_LADY_CONSORT_fem
+        5 = MALAY_LADY_CONSORT_fem
+        6 = MALAY_LADY_CONSORT_fem
+        7 = MALAY_PRINCESS_CONSORT_fem
+        8 = MALAY_PRINCESS_CONSORT_fem
+        9 = MALAY_PRINCESS_CONSORT_fem
+    }
+    heir_male = {
+        1 = MALAY_LORD
+        2 = MALAY_LORD
+        3 = MALAY_LORD
+        4 = MALAY_LORD
+        5 = MALAY_LORD
+        6 = MALAY_LORD
+        7 = MALAY_PRINCE
+        8 = MALAY_CROWN_PRINCE
+        9 = MALAY_CROWN_PRINCE
+    }
+    trigger = {
+        government = monarchy
+        religion = animism
+        AND = {
+            OR = {
+                primary_culture = bimanese
+                primary_culture = moluccan
+                primary_culture = nusa_tenggara
+                primary_culture = sulawesi
+            }
+            OR = {
+                has_reform = autocracy_reform
+                has_reform = plutocratic_reform
+            }
+        }
+    }
+}
+
+mongolian_vassal = {
+    rank = {
+        6 = HORDE
+        7 = GREAT_HORDE
+        8 = KHANATE
+        9 = KHAGANATE
+    }
+    ruler_male = {
+        6 = BEILE
+        7 = GREAT_BEILE
+        8 = KHAN
+        9 = KHAGAN
+    }
+    consort_female = {
+        6 = GEGE_CONSORT_fem
+        7 = GEGE_CONSORT_fem
+        8 = KHANUM_CONSORT_fem
+        9 = KHANUM_CONSORT_fem
+    }
+    heir_male = {
+        6 = KHANZADEH
+        7 = KHANZADEH
+        8 = KHANZADEH
+        9 = KHANZADEH
+    }
+    trigger = {
+        has_reform = steppe_horde
+        government_rank = 6
+        OR = {
+            has_subject_of_type = mongolian_vassal
+            tag = GOL
+            tag = NOG
+            tag = OIR
+            tag = SHY
+        }
+    }
+}

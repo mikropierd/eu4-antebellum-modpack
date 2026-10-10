@@ -1,0 +1,12 @@
+﻿l_english:
+ # Waterloo — Hundred Days Collapse Events
+ #
+ # vu_waterloo.1 — battle triggered collapse
+ vu_waterloo.1.t: "The Eagles Have Fallen"
+ vu_waterloo.1.d: "It is over. The gamble that began with the Emperor's triumphant march from the coast has ended in the mud and smoke of a catastrophic defeat. The Coalition line held, the flanks swept in, and what remained of the Grande Armee broke and fled into the night. Napoleon stands before the wreckage of his last campaign, stripped of everything — his army, his marshals, his cause. There is nothing left to fight for. France cannot sustain another battle, and the men who once followed the Eagles to the ends of the earth will follow them no further. The Hundred Days are finished."
+ vu_waterloo.1.a: "The Emperor yields to History."
+ #
+ # vu_waterloo.2 — time-limit fallback collapse
+ vu_waterloo.2.t: "The Hundred Days Come to an End"
+ vu_waterloo.2.d: "The campaign has reached its limit. No decisive battle has shattered the Coalition, no alliance has come to France's aid, and the will of the nation is exhausted. The army that returned with such fire three months ago is worn thin, its supply lines fraying, its officers uncertain. Without a Waterloo, there is simply an attrition — a slow, grinding loss of momentum that ends the same way. Napoleon has no path forward that does not pass through disaster. The time has come to step down."
+ vu_waterloo.2.a: "The campaign cannot go on."

@@ -1,0 +1,4983 @@
+#By VU for VU v1.37
+vu_university_of_constantinople = {
+	start = 151
+	date = 425.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 151
+		is_year = 425
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = south_slavic
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_constantinople
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_constantinople
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = south_slavic
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = south_slavic
+					culture_group = byzantine
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			global_institution_spread = 0.05
+			idea_cost = -0.025
+			female_advisor_chance = 0.2
+			advisor_cost = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			idea_cost = -0.05
+			female_advisor_chance = 0.3
+			advisor_cost = -0.2
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			idea_cost = -0.05
+			female_advisor_chance = 0.5
+			advisor_cost = -0.25
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_bologna = {
+	start = 4730
+	date = 1088.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 4730
+		is_year = 1088
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_bologna
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_bologna
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			ae_impact = -0.05					#Law: reduced aggressive expansion
+			unjustified_demands = -0.1			#Law: treaties and demands respected
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			ae_impact = -0.1
+			unjustified_demands = -0.15
+			stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			ae_impact = -0.15
+			unjustified_demands = -0.2
+			stability_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_oxford = {
+	start = 237
+	date = 1096.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 237
+		is_year = 1096
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_oxford
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_oxford
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Natural philosophy and empiricism
+			stability_cost_modifier = -0.1			#Common law and civic learning
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			stability_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			stability_cost_modifier = -0.2
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_cambridge = {
+	start = 4370
+	date = 1209.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 4370
+		is_year = 1209
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_cambridge
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_cambridge
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Mathematics and natural philosophy
+			navy_tradition = 0.5				#Astronomical navigation and mathematics
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			navy_tradition = 1.0
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			navy_tradition = 1.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_salamanca = {
+	start = 216
+	date = 1218.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 216
+		is_year = 1218
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_salamanca
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_salamanca
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			legitimacy = 0.5				#School of Salamanca: just authority
+			range = 0.1					#Theological justification of exploration
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			legitimacy = 1.0
+			range = 0.15
+			global_colonial_growth = 5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			legitimacy = 1.5
+			range = 0.2
+			global_colonial_growth = 10
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_padua = {
+	start = 4729
+	date = 1222.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 4729
+		is_year = 1222
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_padua
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_padua
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			land_attrition = -0.1				#Medicine: Vesalius's anatomy and surgery
+			technology_cost = -0.025			#Natural philosophy: Galileo taught here
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			land_attrition = -0.15
+			technology_cost = -0.05
+			manpower_recovery_speed = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			land_attrition = -0.2
+			technology_cost = -0.075
+			manpower_recovery_speed = 0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_naples = {
+	start = 121
+	date = 1224.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 121
+		is_year = 1224
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_naples
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_naples
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			administrative_efficiency = 0.025		#State administration: Frederick II's purpose
+			stability_cost_modifier = -0.1			#Theology: Aquinas trained here
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			administrative_efficiency = 0.05
+			stability_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			administrative_efficiency = 0.075
+			stability_cost_modifier = -0.2
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_siena = {
+	start = 117
+	date = 1240.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 117
+		is_year = 1240
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_siena
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_siena
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			ae_impact = -0.05				#Law: strong legal tradition in Siena
+			diplomatic_reputation = 0.5			#Arts and civic culture
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			ae_impact = -0.1
+			diplomatic_reputation = 0.75
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			ae_impact = -0.15
+			diplomatic_reputation = 1.0
+			prestige = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_valladolid = {
+	start = 215
+	date = 1241.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 215
+		is_year = 1241
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_valladolid
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_valladolid
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			stability_cost_modifier = -0.1			#Castilian royal law school
+			global_colonial_growth = 3			#Valladolid debate on indigenous rights
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			stability_cost_modifier = -0.15
+			global_colonial_growth = 5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			stability_cost_modifier = -0.2
+			global_colonial_growth = 10
+			ae_impact = -0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+# [VU] great project vu_university_of_sorbonne removed: start province 7960 not on Ante Bellum map
+
+vu_university_of_montpellier = {
+	start = 200
+	date = 1289.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 200
+		is_year = 1287
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_montpellier
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_montpellier
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			land_attrition = -0.1				#Medicine: foremost medieval medical school
+			manpower_recovery_speed = 0.05			#Medical knowledge improves recovery
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			land_attrition = -0.15
+			manpower_recovery_speed = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			land_attrition = -0.2
+			manpower_recovery_speed = 0.15
+			global_manpower_modifier = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_macerata = {
+	start = 119
+	date = 1290.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 7
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 119
+		is_year = 1290
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_macerata
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_macerata
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			stability_cost_modifier = -0.1			#Law: papal-chartered school in the Marche
+			unjustified_demands = -0.1			#Civil law training
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			stability_cost_modifier = -0.15
+			unjustified_demands = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			stability_cost_modifier = -0.2
+			unjustified_demands = -0.2
+			ae_impact = -0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_coimbra = {
+	start = 1851
+	date = 1290.05.0
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 1851
+		is_year = 1290
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_coimbra
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_coimbra
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			global_heathen_missionary_strength = 0.01	#Theology supporting overseas mission
+			range = 0.1					#Scholarly justification of exploration
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			global_heathen_missionary_strength = 0.015
+			range = 0.15
+			global_colonial_growth = 5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			global_heathen_missionary_strength = 0.02
+			range = 0.2
+			global_colonial_growth = 10
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_complutense_de_madrid = {
+	start = 217
+	date = 1293.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 217
+		is_year = 1293
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_complutense_de_madrid
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_complutense_de_madrid
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			global_heretic_missionary_strength = 0.01	#Polyglot Bible and Counter-Reformation
+			missionary_maintenance_cost = -0.1		#Theology supporting missionary work
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			global_heretic_missionary_strength = 0.015
+			missionary_maintenance_cost = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			global_heretic_missionary_strength = 0.02
+			missionary_maintenance_cost = -0.2
+			stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_sapienza = {
+	start = 118
+	date = 1303.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 118
+		is_year = 1303
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_sapienza
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_sapienza
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			papal_influence = 1				#Canon law and papal authority
+			stability_cost_modifier = -0.1			#Theology and civil law in Rome
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			papal_influence = 2
+			stability_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			papal_influence = 3
+			stability_cost_modifier = -0.2
+			ae_impact = -0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+# [VU] great project vu_university_of_perugia removed: start province 7036 not on Ante Bellum map
+
+vu_university_of_florence = {
+	start = 116
+	date = 1321.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 116
+		is_year = 1321
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_florence
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_florence
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			prestige = 0.5					#Platonic Academy: humanism and prestige
+			diplomatic_reputation = 0.5			#Machiavellian statecraft and diplomacy
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			prestige = 1.0
+			diplomatic_reputation = 0.75
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			prestige = 1.5
+			diplomatic_reputation = 1.0
+			legitimacy = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_pisa = {
+	start = 115
+	date = 1343.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 115
+		is_year = 1343
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_pisa
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_pisa
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Natural philosophy: Galileo taught here
+			navy_tradition = 0.5				#Maritime heritage of Pisa
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			navy_tradition = 1.0
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			navy_tradition = 1.5
+			ship_durability = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_charles = {
+	start = 266
+	date = 1348.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 266
+		is_year = 1348
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_charles
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_charles
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			church_power_modifier = 0.15			#Jan Hus and religious reform debates
+			stability_cost_modifier = -0.1			#Central Europe's first university
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			church_power_modifier = 0.3
+			stability_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			church_power_modifier = 0.5
+			stability_cost_modifier = -0.2
+			global_unrest = -0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_pavia = {
+	start = 4728
+	date = 1361.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 4728
+		is_year = 1361
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_pavia
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_pavia
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Law, medicine and natural philosophy
+			land_attrition = -0.1				#Medicine: Cardano and anatomical study
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			land_attrition = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			land_attrition = -0.2
+			manpower_recovery_speed = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_jagiellon = {
+	start = 262
+	date = 1364.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 262
+		is_year = 1364
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_jagiellon
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_jagiellon
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Copernicus: astronomy and mathematics
+			range = 0.1					#Astronomical navigation and discovery
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			range = 0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			range = 0.2
+			idea_cost = -0.025
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_vienna = {
+	start = 134
+	date = 1365.05.05
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 134
+		is_year = 1365
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_vienna
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_vienna
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = west_slavic
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			global_heretic_missionary_strength = 0.01	#Theology: Counter-Reformation backbone
+			stability_cost_modifier = -0.1			#Habsburg imperial university
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			global_heretic_missionary_strength = 0.015
+			stability_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			global_heretic_missionary_strength = 0.02
+			stability_cost_modifier = -0.2
+			technology_cost = -0.025
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_heidelberg = {
+	start = 77
+	date = 1386.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 77
+		is_year = 1386
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_heidelberg
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_heidelberg
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Humanism and natural philosophy
+			tolerance_heretic = 1				#Heidelberg Catechism: Reformed tolerance
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			tolerance_heretic = 2
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			tolerance_heretic = 3
+			global_unrest = -0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_ferrara = {
+	start = 113
+	date = 1391.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 113
+		is_year = 1391
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_ferrara
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_ferrara
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = iberian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			ae_impact = -0.05				#Law: Copernicus took his degree here
+			tolerance_heathen = 1			#Este court welcomed Jewish scholars
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			ae_impact = -0.1
+			tolerance_heathen = 2
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			ae_impact = -0.15
+			tolerance_heathen = 3
+			diplomatic_reputation = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_leipzig = {
+	start = 62
+	date = 1406.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 62
+		is_year = 1406
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = west_slavic
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_leipzig
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_leipzig
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = west_slavic
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = west_slavic
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Arts and learning; Leibniz connection
+			global_unrest = -0.5				#Luther's Leipzig Debate: Reformation debates
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			global_unrest = -1.0
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			global_unrest = -1.5
+			stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_leuven = {
+	start = 4347
+	date = 1425.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 4347
+		is_year = 1425
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_leuven
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_leuven
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			state_governing_cost = -0.05			#Administration: trained Low Countries officials
+			missionary_maintenance_cost = -0.1		#Erasmus and Catholic humanism
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			state_governing_cost = -0.1
+			missionary_maintenance_cost = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			state_governing_cost = -0.15
+			missionary_maintenance_cost = -0.2
+			stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_glasgow = {
+	start = 3019
+	date = 1451.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 3019
+		is_year = 1451
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_glasgow
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_glasgow
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			trade_efficiency = 0.05				#Scottish Enlightenment: Adam Smith
+			stability_cost_modifier = -0.1			#Canon law and civic learning
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			trade_efficiency = 0.075
+			stability_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			trade_efficiency = 0.1
+			stability_cost_modifier = -0.2
+			production_efficiency = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_istanbul = {
+	start = 151
+	date = 1453.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 151
+		is_year = 1453
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = south_slavic
+					religion_group = muslim
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_istanbul
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_istanbul
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = south_slavic
+					religion_group = muslim
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = south_slavic
+					religion_group = muslim
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			advisor_cost = -0.1				#Madrasa: scholarship and learned advisors
+			diplomatic_reputation = 0.5			#Ottoman learning and cosmopolitan court
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			advisor_cost = -0.15
+			diplomatic_reputation = 0.75
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			advisor_cost = -0.2
+			diplomatic_reputation = 1.0
+			stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+# [VU] great project vu_university_of_greifswald removed: start province 7842 not on Ante Bellum map
+
+vu_university_of_freiburg = {
+	start = 72
+	date = 1457.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 72
+		is_year = 1457
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_freiburg
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_freiburg
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			technology_cost = -0.025				#Ulrich Zasius: Roman law revival
+			ae_impact = -0.05				#Humanism and legal learning
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			technology_cost = -0.05
+			ae_impact = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			technology_cost = -0.075
+			ae_impact = -0.15
+			stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_basel = {
+	start = 3055
+	date = 1460.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 3055
+		is_year = 1460
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_basel
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_basel
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = latin
+					culture_group = old_latin
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			land_attrition = -0.1				#Paracelsus: medicine and toxicology
+			tolerance_heretic = 1				#Erasmus and Reformation crossroads
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			land_attrition = -0.15
+			tolerance_heretic = 2
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			land_attrition = -0.2
+			tolerance_heretic = 3
+			manpower_recovery_speed = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+# [VU] great project vu_university_of_tubingen removed: start province 7560 not on Ante Bellum map
+
+vu_university_of_uppsala = {
+	start = 1
+	date = 1477.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 1
+		is_year = 1477
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = scandinavian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_uppsala
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_uppsala
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = scandinavian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = scandinavian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			stability_cost_modifier = -0.1			#Swedish state church administration
+			global_manpower_modifier = 0.05			#Linnaeus: natural history and manpower
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			stability_cost_modifier = -0.15
+			global_manpower_modifier = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			stability_cost_modifier = -0.2
+			global_manpower_modifier = 0.15
+			army_tradition = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_copenhagen = {
+	start = 12
+	date = 1479.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 12
+		is_year = 1479
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = scandinavian
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_copenhagen
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_copenhagen
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = scandinavian
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = scandinavian
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			navy_tradition = 0.5
+			stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			navy_tradition = 1.0
+			stability_cost_modifier = -0.15
+			hostile_fleet_attrition = 1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			navy_tradition = 1.5
+			stability_cost_modifier = -0.2
+			hostile_fleet_attrition = 2
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_aberdeen = {
+	start = 251
+	date = 1451.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 251
+		is_year = 1451
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_aberdeen
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_aberdeen
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = british
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			stability_cost_modifier = -0.1
+			diplomatic_reputation = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			stability_cost_modifier = -0.15
+			diplomatic_reputation = 0.75
+			land_attrition = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			stability_cost_modifier = -0.2
+			diplomatic_reputation = 1.0
+			land_attrition = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+vu_university_of_leiden = {
+	start = 4383
+	date = 1557.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_id = 4383
+		OR = {
+			is_year = 1557
+			religion = reformed
+		}
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = french
+				}
+			}
+		}
+	}
+	on_built = {
+		#show_ambient_object = vu_university_of_leiden
+	}
+	on_destroyed = {
+		#hide_ambient_object = vu_university_of_leiden
+	}
+	can_use_modifiers_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = french
+				}
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			AND = {
+				innovativeness = 10
+				OR = {
+					culture_group = germanic
+					culture_group = french
+				}
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			global_institution_spread = 0.05
+			ae_impact = -0.05
+			diplomatic_reputation = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.3
+			global_institution_spread = 0.15
+			reform_progress_growth = 0.25
+			ae_impact = -0.1
+			diplomatic_reputation = 0.75
+			trade_efficiency = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			global_institution_spread = 0.25
+			reform_progress_growth = 0.5
+			prestige_decay = -0.01
+			ae_impact = -0.15
+			diplomatic_reputation = 1.0
+			trade_efficiency = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+}
+
+#Just for VU VU 1.37.* - SF
+vu_academy_of_science_berlin = {
+    start = 50
+    date = 1701.01.01
+    time = {
+        months = 0
+    }
+    build_cost = 0
+    can_be_moved = no
+    move_days_per_unit_distance = 7
+    starting_tier = 1
+    type = monument
+    build_trigger = {
+        province_id = 50
+        owner = {
+            AND = {
+                innovativeness = 20
+                culture_group = germanic
+            }
+        }
+    }
+    on_built = {
+        #show_ambient_object = vu_academy_of_science_berlin
+    }
+    on_destroyed = {
+        #hide_ambient_object = vu_academy_of_science_berlin
+    }
+    can_use_modifiers_trigger = {
+        owner = {
+            AND = {
+                innovativeness = 20
+                culture_group = germanic
+            }
+        }
+    }
+    can_upgrade_trigger = {
+        owner = {
+            AND = {
+                innovativeness = 20
+                culture_group = germanic
+            }
+        }
+    }
+    keep_trigger = {
+    }
+    tier_0 = {
+        upgrade_time = {
+            months = 0
+        }
+        cost_to_upgrade = {
+            factor = 0
+        }
+        province_modifiers = {
+        }
+        area_modifier = {
+        }
+        country_modifiers = {
+        }
+        on_upgraded = {
+        }
+    }
+    tier_1 = {
+        upgrade_time = {
+            months = 60
+        }
+        cost_to_upgrade = {
+            factor = 1000
+        }
+        province_modifiers = {
+			local_development_cost_modifier = -0.05
+        }
+        area_modifier = {
+			tolerance_heretic = 1
+        }
+        country_modifiers = {
+            technology_cost = -0.025
+			idea_cost = -0.025
+			fire_damage = 0.025
+        }
+        on_upgraded = {
+            owner = {
+                change_innovativeness = 5
+            }
+        }
+    }
+    tier_2 = {
+        upgrade_time = {
+            months = 120
+        }
+        cost_to_upgrade = {
+            factor = 2000
+        }
+        province_modifiers = {
+			local_development_cost_modifier = -0.1
+        }
+        area_modifier = {
+            tolerance_heretic = 2
+        }
+        country_modifiers = {
+            technology_cost = -0.05
+            idea_cost = -0.05
+            fire_damage = 0.05
+			yearly_innovativeness = 0.25
+        }
+        on_upgraded = {
+            owner = {
+                change_innovativeness = 5
+            }
+        }
+    }
+    tier_3 = {
+        upgrade_time = {
+            months = 240
+        }
+        cost_to_upgrade = {
+            factor = 3000
+        }
+        province_modifiers = {
+			local_development_cost_modifier = -0.15
+        }
+        area_modifier = {
+            tolerance_heretic = 3
+        }
+        country_modifiers = {
+            technology_cost = -0.075
+            idea_cost = -0.1
+            fire_damage = 0.1
+            yearly_innovativeness = 0.25
+			advisor_cost = -0.15
+			heir_chance = 0.5
+			military_tactics = 0.5
+        }
+        on_upgraded = {
+            owner = {
+                change_innovativeness = 5
+				add_mil_power = 50
+            }
+        }
+    }
+}

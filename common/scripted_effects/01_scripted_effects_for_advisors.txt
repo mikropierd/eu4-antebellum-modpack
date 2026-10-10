@@ -345,6 +345,7 @@ internal_advisor_generation_effect = { #Only used within generate_advisor_of_typ
 							region = maghreb_region
 						}
 						NOT = { region = caucasia_region }
+						NOT = { region = south_caucasia_region }
 						NOT = { region = anatolia_region }
 					}
 				}
@@ -361,6 +362,7 @@ internal_advisor_generation_effect = { #Only used within generate_advisor_of_typ
 					capital_scope = {
 						OR = {
 							region = caucasia_region
+							region = south_caucasia_region
 							region = anatolia_region
 						}
 					}
@@ -1330,6 +1332,41 @@ kill_advisor_by_category_effect = {
 	[[ADM]
 		trigger_switch = {
 			on_trigger = advisor
+			philosopher = { kill_advisor = philosopher }
+			natural_scientist = { kill_advisor = natural_scientist }
+			artist = { kill_advisor = artist }
+			treasurer = { kill_advisor = treasurer }
+			theologian = { kill_advisor = theologian }
+			master_of_mint = { kill_advisor = master_of_mint }
+			inquisitor = { kill_advisor = inquisitor }
+		}
+	]
+	[[DIP]
+		trigger_switch = {
+			on_trigger = advisor
+			statesman = { kill_advisor = statesman }
+			naval_reformer = { kill_advisor = naval_reformer }
+			trader = { kill_advisor = trader }
+			spymaster = { kill_advisor = spymaster }
+			colonial_governor = { kill_advisor = colonial_governor }
+			diplomat = { kill_advisor = diplomat }
+			navigator = { kill_advisor = navigator }
+		}
+	]
+	[[MIL]
+		trigger_switch = {
+			on_trigger = advisor
+			army_reformer = { kill_advisor = army_reformer }
+			army_organiser = { kill_advisor = army_organiser }
+			commandant = { kill_advisor = commandant }
+			quartermaster = { kill_advisor = quartermaster }
+			recruitmaster = { kill_advisor = recruitmaster }
+			fortification_expert = { kill_advisor = fortification_expert }
+			grand_captain = { kill_advisor = grand_captain }
+		}
+	]
+		trigger_switch = {
+			on_trigger = advisor
 			# Existing ADM Advisors
 			philosopher = { kill_advisor = philosopher }
 			natural_scientist = { kill_advisor = natural_scientist }
@@ -1351,8 +1388,6 @@ kill_advisor_by_category_effect = {
 			#PotionSeller
 			patriarch = { kill_advisor = patriarch }
 		}
-	]
-	[[DIP]
 		trigger_switch = {
 			on_trigger = advisor
 			# Existing DIP Advisors
@@ -1371,8 +1406,6 @@ kill_advisor_by_category_effect = {
 			dockmaster = { kill_advisor = dockmaster }
 			concubine = { kill_advisor = concubine }
 		}
-	]
-	[[MIL]
 		trigger_switch = {
 			on_trigger = advisor
 			# Existing MIL Advisors
@@ -1389,7 +1422,6 @@ kill_advisor_by_category_effect = {
 			siegeengineer = { kill_advisor = siegeengineer }
 			drillmaster = { kill_advisor = drillmaster }
 		}
-	]
 }
 
 generate_estate_advisor = {

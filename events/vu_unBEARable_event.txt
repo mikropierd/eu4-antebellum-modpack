@@ -1,0 +1,195 @@
+# Jan Mayen bear nation meme event
+# Initially added by docRobert
+
+# ====================================
+namespace = vu_bear
+
+country_event = { # Player choice to spawn Bear Kingdom
+	id = vu_bear.1
+	title = vu_bear.1.t
+	desc = vu_bear.1.d
+	picture = LAND_MILITARY_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	# [VU] removed: goto = 5591 (not on Ante Bellum map)
+	
+	trigger = {
+		ai = no
+		NOT = { exists = JMN }
+		always = no # [VU] owns_or_non_sovereign_subject_of = 5591 not on Ante Bellum map
+	}
+	
+	mean_time_to_happen = { #About 10 years
+		months = 120
+	}
+	
+	option = { # THE BEAR HAS LANDED!
+		name = vu_bear.1.a
+		highlight = yes
+		# [VU] removed: goto = 5591 (not on Ante Bellum map)
+		ai_chance = { factor = 0 }
+		custom_tooltip = vu_bear.1.tooltip
+		hidden_effect = {
+			# [VU] removed: province 5591 (not on Ante Bellum map)
+			release = JMN
+			# [VU] removed: province 5591 (not on Ante Bellum map)
+			JMN = {
+				capital_scope = {
+			    	build_to_forcelimit = {
+			    		heavy_ship = 0.3
+			    		light_ship = 0.3
+			    		galley = 0.2
+			    		transport = 0.2
+			    	}
+			    }
+				capital_scope = {
+			    	build_to_forcelimit = {
+			    		infantry = 0.6
+			    		cavalry = 0.1
+			    		artillery = 0.3
+			    	}
+			    }
+				add_adm_power = 150
+				add_dip_power = 150
+				add_mil_power = 150
+				add_sailors = 2000
+				add_manpower = 10 #Bearpower rather
+				add_army_tradition = 25
+				add_navy_tradition = 25
+				add_treasury = 1000
+				add_stability = 2
+				adopt_reform_progress = ROOT
+			}
+			set_global_flag = bear_nation_is_real
+			country_event = { 
+				id = vu_bear.2
+				days = 1
+			}
+		}
+	}
+	
+	option = { # Secret bear kingdom on Jan Mayen is not real and it's just false propaganda!
+		name = vu_bear.1.b
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { # Player can choose to play as Jan Mayen
+	id = vu_bear.2
+	title = vu_bear.2.t
+	desc = vu_bear.2.d
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	# [VU] removed: goto = 5591 (not on Ante Bellum map)
+	
+	is_triggered_only = yes
+	
+	option = { # I will bear it with honor
+		name = vu_bear.2.a
+		highlight = yes
+		# [VU] removed: goto = 5591 (not on Ante Bellum map)
+		switch_tag = JMN
+	}
+	
+	option = { # This is un-bear-able
+		name = vu_bear.2.b
+	}
+}
+
+country_event = { # Religion we shall bear
+	id = vu_bear.3
+	title = vu_bear.3.t
+	desc = vu_bear.3.d
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	# [VU] removed: goto = 5591 (not on Ante Bellum map)
+	
+	trigger = {
+		tag = JMN
+		ai = no
+		has_global_flag = bear_nation_is_real
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = { # Stay animist
+		name = vu_bear.3.a
+		highlight = yes
+		change_religion = animism
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to catholicism
+		name = vu_bear.3.b
+		highlight = yes
+		change_religion = catholic
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to orthodox
+		name = vu_bear.3.c
+		highlight = yes
+		change_religion = orthodox
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to coptic
+		name = vu_bear.3.e
+		highlight = yes
+		change_religion = coptic
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to finnish paganism
+		name = vu_bear.3.f
+		highlight = yes
+		change_religion = finnish_pagan_reformed
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to slavic paganism
+		name = vu_bear.3.g
+		highlight = yes
+		change_religion = slavic_pagan_reformed
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to miaphysite
+		name = vu_bear.3.h
+		highlight = yes
+		change_religion = miaphysite
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to muslim
+		name = vu_bear.3.i
+		highlight = yes
+		change_religion = sunni
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+	
+	option = { # Convert to nestorian
+		name = vu_bear.3.j
+		highlight = yes
+		change_religion = nestorian
+		# [VU] removed: province 5591 (not on Ante Bellum map)
+		add_prestige = 100
+	}
+}

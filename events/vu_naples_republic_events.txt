@@ -1,0 +1,150 @@
+# Neapolitan Republic Events
+# Two MTTH flavor paths for Naples (NAP/TTS) to become a republic.
+# Historical basis:
+#   Path 1 - French Revolutionary influence / Parthenopean Republic (Jan-Jun 1799)
+#   Path 2 - Internal Collapse / The barons seize power in a succession crisis
+# The third path (Enlightened Reform) is a decision in vu_naples_republic_decisions.txt.
+# Government-change flag sync is handled in 00_on_actions.txt (on_government_change).
+# Design: Darth Modus
+
+namespace = nap_republic
+
+# The Revolutionary Tide
+# Fires when Naples is politically unstable and revolutionary republican ideas
+# are spreading from France or a neighbouring republic.
+# Historically this reflects the Parthenopean Republic of 1799,
+# but can fire earlier in alternative histories.
+country_event = {
+	id = nap_republic.1
+	title = nap_republic.1.t
+	desc = nap_republic.1.d
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = neapolitan
+		government = monarchy
+		NOT = { stability = 2 }
+		OR = {
+			AND = {
+				exists = FRA
+				FRA = { government = republic }
+			}
+			any_neighbor_country = {
+				government = republic
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.6
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			FRA = {
+				government = republic
+				NOT = { war_with = ROOT }
+			}
+		}
+	}
+
+	# Embrace the republic
+	option = {
+		name = nap_republic.1.a
+		change_government = republic
+		add_government_reform = vu_neapolitan_republic_reform
+		add_republican_tradition = 25
+		add_prestige = -10
+		add_stability = -1
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				legitimacy = 70
+			}
+		}
+	}
+
+	# Resist the revolution
+	option = {
+		name = nap_republic.1.b
+		add_stability = -1
+		add_legitimacy = 10
+		add_prestige = -5
+
+		ai_chance = {
+			factor = 8
+		}
+	}
+}
+
+# The Barons' Ultimatum
+# Fires when Naples has collapsed into political chaos: very low legitimacy
+# and negative stability. The nobility, sensing weakness in the crown,
+# seize the initiative and force a choice between an oligarchic republic
+# and a desperate struggle to preserve royal authority.
+country_event = {
+	id = nap_republic.2
+	title = nap_republic.2.t
+	desc = nap_republic.2.d
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = neapolitan
+		government = monarchy
+		NOT = { legitimacy = 25 }
+		NOT = { stability = 0 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 10 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { stability = -1 }
+		}
+	}
+
+	# Yield to the barons -- oligarchic republic
+	option = {
+		name = nap_republic.2.a
+		change_government = republic
+		add_government_reform = vu_neapolitan_republic_reform
+		add_republican_tradition = 15
+		add_prestige = -20
+		add_stability = -1
+
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 2
+				NOT = { legitimacy = 10 }
+			}
+		}
+	}
+
+	# Fight to preserve the crown
+	option = {
+		name = nap_republic.2.b
+		add_legitimacy = 20
+		add_stability = -1
+
+		ai_chance = {
+			factor = 6
+		}
+	}
+}

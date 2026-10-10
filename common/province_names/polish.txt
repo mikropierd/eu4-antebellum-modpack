@@ -1,0 +1,445 @@
+1 = "Sztokholm"
+6 = "Malmo"
+25 = "Gotlandia"
+12 = "Kopenhaga"
+13 = "Szlezwik"
+14 = "Fionia"
+15 = "Rybia"
+25 = "Gotlandia"
+27 = { "Turku" "Turku" }
+28 = { "Nylandia" "Helsinki" }
+30 = "Wyborg"
+32 = "Prioziersk"
+33 = "Newa"
+34 = "Ingria"
+35 = "Ozylia"
+36 = "Rewal"
+37 = "Liwlandia"
+38 = "Ryga"
+39 = "Goldynga"
+41 = "Królewiec"
+42 = "Warmia"
+43 = { "Gdansk" "Gdansk" }
+45 = "Lubeka"
+46 = "Roztoka"
+47 = "Strzalów"
+48 = "Kolobrzeg"
+49 = "Gorzów Wielkopolski"
+50 = "Berlin"
+51 = "Rupin"
+52 = "Dziewin"
+53 = "Glain" # Polabian
+54 = "Stadia"
+55 = "Oldenburg"
+57 = "Brunszwik"
+58 = "Desawa"
+59 = "Biala Gora"
+60 = "Budziszyn"
+61 = "Drezno"
+62 = "Lipsk"
+63 = "Jarobród"
+65 = "Monachium"
+67 = "Norymberga"
+69 = "Górna Szwabia"
+70 = "Sztugart"
+72 = { "Bryzgowia" "Fryburg" }
+74 = "Badenia"
+75 = "Strasburg"
+78 = "Moguncja"
+80 = "Trewir"
+81 = "Hesja"
+82 = "Westfalia"
+83 = "Nassawa"
+85 = "Kolonia"
+86 = "Monastyr"
+90 = "Brugia"
+96 = { "Zelandia" "Middelburgia" }
+100 = { "Zachodnia Fryzja" "Leuwarda" }
+101 = "Genua"
+102 = "Nicea"
+103 = "Turyn"
+110 = "Trydent"
+112 = "Wenecja"
+118 = "Rzym"
+121 = "Neapol"
+126 = "Malta"
+128 = "Dolna Karyntia"
+129 = "Kraina"
+131 = "Zagrzeb"
+132 = { "Judenburg" "Judenburg" }
+133 = "Linec"
+134 = "Wieden"
+135 = "Sopron"
+136 = "Split"
+137 = "Raguza"
+137 = { "Raguza" "Dubrownik" }
+138 = "Podgorica"
+142 = "Korfu"
+145 = { "Lakonia" "Sparta" }
+146 = "Ateny"
+148 = "Saloniki"
+151 = "Konstantynopol"
+153 = { "Peszt" "Peszt" }
+154 = "Banska Szczawnica"
+159 = "Silistra"
+160 = "Krajowa"
+161 = "Targoviste"
+162 = "Zemplin"
+164 = "Naksos"
+165 = "Berno"
+170 = "Brest"
+183 = "Paryz"
+184 = "Orlean"
+196 = "Tuluza"
+201 = "Marsylia"
+202 = "Awinion"
+217 = "Madryt"
+224 = "Sewilla"
+227 = "Lizbona"
+233 = "Kornwalia"
+236 = "Londyn"
+253 = "Hebrydy Zewnetrzne"
+261 = "Halicz"
+262 = "Kraków"
+263 = "Racibórz"
+264 = "Wroclaw"
+266 = "Praga"
+266 = { "Praga" "Praga" }
+267 = "Pilzno"
+268 = { "Botoszany" "Dorohoi" }
+270 = "Troki"
+271 = "Zmudz"
+272 = "Wilno"
+273 = { "Dyneburg" "Dyneburg" }
+274 = "Psków"
+275 = "Polock"
+277 = "Brzesc"
+278 = "Pinsk"
+279 = "Wolyn"
+280 = "Kijów"
+281 = { "Podole" "Kamieniec Podolski" }
+282 = { "Oczków" "Odessa" }
+283 = "Zaporoze"
+284 = "Krym"
+285 = { "Kaffa" "Teodozja" }
+286 = "Azow"
+287 = { "Kuban" "Krasnodar" }
+288 = "Dolny Don"
+289 = "Czernichów"
+290 = "Poltawa"
+291 = { "Charków" "Charków" }
+292 = "Mohylew"
+294 = "Twer"
+295 = "Moskwa"
+297 = "Briansk"
+299 = "Woronez"
+301 = "Riazan"
+303 = "Saratów"
+302 = "Tambow"
+306 = "Nizny Nowogród"
+307 = "Wlodzimierz"
+308 = "Jaroslaw"
+309 = "Oloniec"
+310 = { "Nowogród" "Nowogród Wielki" }
+311 = "Cholm"
+312 = { "Bieloziero" "Bieloziersk" }
+313 = "Archangielsk"
+314 = "Wologda"
+320 = "Rodos"
+328 = "Synopa"
+330 = "Trapezunt"
+333 = "Baleary"
+369 = "Orkady"
+370 = "Rejkiawik"
+463 = "Czerkasy"
+464 = "Astrachan"
+466 = "Saraj"
+467 = "Uriupinsk"
+468 = "Manycz"
+475 = "Baszkortostan"
+767 = "Elk"
+770 = "Krewo"
+771 = "Witebsk"
+1079 = "Wiatka"
+1081 = "Symbirsk"
+1083 = "Wietluga"
+1177 = { "Przyladek Dobrej Nadziei" "Kapsztad" }
+1318 = "Spisz"
+1744 = "Bruksela"
+1749 = "Kadyks"
+1752 = "Rzew"
+1755 = "Ustiug"
+1756 = "Besarabia"
+1757 = "Gorny Palatynat"
+1758 = "Hanower"
+1759 = "Postapin"
+1760 = "Koblencja"
+1761 = "Palatynat"
+1762 = "Dolna Hessja"
+1763 = { "Dolne Luzyce" "Chociebuz" }
+1765 = "Sofia"
+1768 = "Linc"
+1769 = "Gorycja"
+1771 = { "Rudawy" "Cieplice" }
+1772 = "Bratyslawa"
+1773 = "Pirgos"
+1775 = { "Holsztyn" "Kilonia" }
+1776 = "Kiem"
+1777 = { "Kola" "Murmansk" }
+1778 = "Kasimow"
+1837 = "Dorpat"
+1841 = "Malbork"
+1842 = "Narwa"
+1857 = "Miasto nad Laba"
+1858 = { "Szczecin" "Szczecin" }
+1859 = { "Chelmno" "Torun" }
+1863 = "Grodziec"
+1865 = "Gendawa"
+1869 = "Zurych"
+1870 = "Sankt Gallen"
+1873 = "Gryzonia"
+1874 = "Brema"
+1878 = "Akwizgran"
+1930 = "Alandia"
+1931 = "Wschodnia Fryzja"
+1935 = { "Mitawa" "Jelgawa" }
+1936 = "Kowno"
+1941 = "Turów"
+1942 = "Zytomierz"
+1943 = "Braclaw"
+1944 = "Czerkasy"
+1945 = "Siewierszczyzna"
+1952 = "Marmarosz"
+1955 = "Cholmogory"
+1957 = "Galicz"
+1959 = "Torzok"
+1960 = "Ostrów"
+1966 = "Czelabinsk"
+1971 = "Carycyn"
+1972 = "Udmurcja"
+1974 = "Cherson"
+1978 = "Szetlandy"
+1979 = "Wyspy Owcze"
+1983 = "Lolandia"
+1984 = "Albork"
+2299 = "Amasra"
+2195 = "Adygeja"
+2327 = { "Magna" "Magna" }
+2348 = "Chios"
+2405 = { "Tehinia" "Bendery" }
+2406 = "Mikolajów"
+2407 = "Perejaslaw"
+2408 = "Lipieck"
+2409 = "Kamiensk Szachtynski"
+2410 = "Teodoro"
+2411 = { "Zaporoze" "Sicz" }
+2412 = { "Melitopol" "Melitopol" }
+2414 = "Jejsk"
+2415 = { "Chopior" "Ekaterinówka" }
+2419 = "Syzran"
+2420 = "Agidel"
+2421 = "Czystopol"
+2422 = "Czeboksary"
+2424 = "Przemysl"
+2427 = "Bielojarskij"
+2444 = "Zlatoust"
+2447 = "Anapa"
+2455 = "Badza"
+2746 = "Widyn"
+2749 = "Tichwin"
+2753 = "Narbona"
+2956 = "Strubina"
+2957 = "Ratyzbona"
+2958 = "Ostróda"
+2959 = "Tarnów"
+2961 = { "Lwów" "Lwów" }
+2962 = "Równe"
+2963 = "Naklo"
+2964 = "Stara Marchia"
+2966 = "Glogów"
+2967 = "Cheb"
+2968 = "Budziejowice"
+2969 = "Kostrzyn nad Odra"
+2970 = "Hradec"
+2971 = "Hoja"
+2973 = "Delta Mepen"
+2993 = "Przeslaw"
+2994 = "Wologoszcz"
+2995 = "Slupsk"
+2996 = "Wyszomierz"
+2997 = "Tuchola"
+3000 = "Nisz"
+3001 = "Skopje"
+3002 = "Sarajewo"
+3055 = "Bazylea"
+3058 = "Drente"
+3064 = "Dunkierka"
+3076 = "Tiszakeczeresnów"
+3094 = "Fehergyarmat"
+3110 = "Wyspy La Manche"
+3121 = "Olandia"
+3123 = "Uppsala"
+3128 = "Szkodra"
+3134 = "Apendrada"
+3135 = "Górna Fryzja"
+3142 = "Opawa"
+3146 = "Uzhorod"
+3156 = { "Suczawa" "Suczawa" }
+3159 = "Soroki"
+3160 = "Bukareszt"
+3164 = "Konstanca"
+3165 = "Warna"
+3178 = "Achaja"
+3179 = "Argos"
+3183 = "Bitola"
+3188 = { "Rachów" "Rachów" }
+3202 = "Minden"
+3224 = "Czerniachowsk"
+3225 = { "Jacwiez" "Mariampol" }
+3227 = "Piltyn"
+3229 = "Viljandia"
+3230 = { "Parnawa" "Parnawa" }
+3231 = "Hiuma"
+3238 = "Luck"
+3239 = "Izjaslaw"
+3241 = "Kalnyk"
+3242 = "Czehryn"
+3243 = "Nikopol"
+3244 = "Bospor"
+3245 = "Kercz"
+3247 = "Slowiansk"
+3262 = "Karczaja"
+3265 = { "Kamyszyn" "Kamyszyn" }
+3266 = "Rossosz"
+3268 = "Jelec"
+3271 = "Bielyj"
+3276 = "Siergijew Posad"
+3277 = "Sierpuchow"
+3278 = "Gorodiec"
+3279 = "Sarow"
+3282 = "Pudoz"
+3290 = "Wolokolamsk"
+3293 = "Semigalia"
+3301 = "Dobrohobuz"
+3302 = "Bachmut"
+3402 = "Volin"
+3965 = "Starostwo Spiskie"
+3991 = "Aleksandreta"
+4115 = "Mozyrz"
+4117 = "Biezeck"
+4122 = "Szenkursk"
+4125 = { "Eger" "Heves" }
+4128 = "Braszów"
+4129 = "Stary Perm"
+4140 = { "Oczaków" "Oczków" }
+4141 = "Burg"
+4142 = "Arhus"
+4147 = "Rostów"
+4148 = "Wielkie Luki"
+4236 = "Trenczyn"
+4237 = "Olomuniec"
+4238 = "Lignica"
+4239 = "Belgrad"
+4240 = { "Fejer" "Bialogród Stoleczny" }
+4241 = "Kies"
+4242 = "Borysów"
+4243 = "Toropiec"
+4244 = "Trubczewsk"
+4245 = "Wiazma"
+4246 = "Mscislaw"
+4247 = "Korosten"
+4248 = { "Kalazin" "Dubna" }
+4249 = "Zbucow"
+4250 = "Molokowo"
+4253 = "Woloczok"
+4260 = "Wysnij Woloczok"
+4261 = "Ustiuzna"
+4264 = "Kurmysz"
+4267 = "Bulgaria Nadwolzanska"
+4364 = "Hebrydy Wewnetrzne"
+4373 = "Poludniowy Devon"
+4382 = { "Ommenlandia" "Delfzija" }
+4383 = "Haga"
+4529 = "Jassy"
+4530 = "Galacz"
+4534 = "Szadow"
+4535 = "Uciana"
+4536 = "Lida"
+4537 = "Nowogródek"
+4539 = "Krzemieniec"
+4545 = "Sluck"
+4559 = "Minorka"
+4560 = "Ibiza"
+4698 = "Kefalonia"
+4700 = "Lesbos"
+4701 = "Korynt"
+4704 = "Tyrnowo"
+4706 = "Tulcza"
+4708 = "Fryzynga"
+4709 = "Pasawa"
+4712 = "Konstancja"
+4720 = "Genewa"
+4721 = "Fyrburg"
+4725 = "Tabor"
+4726 = "Przerów"
+4728 = "Pawia"
+4738 = "Triest"
+4741 = { "Dobrogóra" "Dobrogóra" }
+4744 = "Kadan"
+4745 = "Rugia"
+4747 = "Drawsko"
+4748 = "Wittenberga"
+4749 = "Nowy Branibor"
+4753 = "Zadar"
+4755 = "Wiszegrad"
+4759 = "Górna Karyntia"
+4765 = "Miluza"
+4772 = "Cella"
+4773 = "Getynga"
+4778 = "Zgorzelice"
+4780 = "Ochryda"
+4786 = "Prygnice"
+5097 = { "Koscierzyna" "Koscierzyna" }
+# [VU] removed: province 5553 (not on Ante Bellum map)
+# [VU] removed: province 5654 (not on Ante Bellum map)
+# [VU] removed: province 5655 (not on Ante Bellum map)
+# [VU] removed: province 6928 (not on Ante Bellum map)
+# [VU] removed: province 6951 (not on Ante Bellum map)
+# [VU] removed: province 7092 (not on Ante Bellum map)
+# [VU] removed: province 7154 (not on Ante Bellum map)
+# [VU] removed: province 7196 (not on Ante Bellum map)
+# [VU] removed: province 7198 (not on Ante Bellum map)
+# [VU] removed: province 7227 (not on Ante Bellum map)
+# [VU] removed: province 7238 (not on Ante Bellum map)
+# [VU] removed: province 7239 (not on Ante Bellum map)
+# [VU] removed: province 7510 (not on Ante Bellum map)
+# [VU] removed: province 7522 (not on Ante Bellum map)
+# [VU] removed: province 7609 (not on Ante Bellum map)
+# [VU] removed: province 7610 (not on Ante Bellum map)
+# [VU] removed: province 7620 (not on Ante Bellum map)
+# [VU] removed: province 7625 (not on Ante Bellum map)
+# [VU] removed: province 7638 (not on Ante Bellum map)
+# [VU] removed: province 7677 (not on Ante Bellum map)
+# [VU] removed: province 7678 (not on Ante Bellum map)
+# [VU] removed: province 7752 (not on Ante Bellum map)
+# [VU] removed: province 7768 (not on Ante Bellum map)
+# [VU] removed: province 7819 (not on Ante Bellum map)
+# [VU] removed: province 7821 (not on Ante Bellum map)
+# [VU] removed: province 7825 (not on Ante Bellum map)
+# [VU] removed: province 7830 (not on Ante Bellum map)
+# [VU] removed: province 7831 (not on Ante Bellum map)
+# [VU] removed: province 7832 (not on Ante Bellum map)
+# [VU] removed: province 7834 (not on Ante Bellum map)
+# [VU] removed: province 7838 (not on Ante Bellum map)
+# [VU] removed: province 7843 (not on Ante Bellum map)
+# [VU] removed: province 7847 (not on Ante Bellum map)
+# [VU] removed: province 7848 (not on Ante Bellum map)
+# [VU] removed: province 8176 (not on Ante Bellum map)
+# [VU] removed: province 8183 (not on Ante Bellum map)
+# [VU] removed: province 8184 (not on Ante Bellum map)
+# [VU] removed: province 8185 (not on Ante Bellum map)
+# [VU] removed: province 8194 (not on Ante Bellum map)
+# [VU] removed: province 8196 (not on Ante Bellum map)
+# [VU] removed: province 8244 (not on Ante Bellum map)
+# [VU] removed: province 8257 (not on Ante Bellum map)
+# [VU] removed: province 8259 (not on Ante Bellum map)

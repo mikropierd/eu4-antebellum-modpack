@@ -1,0 +1,35 @@
+﻿l_english:
+ # Modifier
+ the_ottoman_tribute:0 "The Ottoman Tribute"
+ desc_the_ottoman_tribute:0 "Constantinople is bound by tribute to the Ottoman Sultan, paying 75 ducats annually to forestall invasion."
+
+ # Event 1 - Introduction
+ byz_tribute.1.t:0 "The Sultan Demands His Tribute"
+ byz_tribute.1.desc:0 "The Ottoman Sultan has made it abundantly clear that Constantinople exists at his sufferance. Each year, 75 ducats must be sent to the Porte to keep the Ottoman armies from our walls. It is a humiliation, but one our depleted treasury and thin walls cannot afford to refuse. For now, we have no choice but to pay."
+ byz_tribute.1.a:0 "We shall pay what must be paid."
+ byz_tribute.1.a.tt:0 "Byzantium will pay 75 ducats annually to the Ottomans. Refusing to pay will invite Ottoman retaliation."
+
+ # Event 2 - Annual Tribute
+ byz_tribute.2.t:0 "The Sultan's Collectors Have Arrived"
+ byz_tribute.2.desc:0 "Ottoman envoys stand at the gates of Constantinople, demanding the annual tribute of 75 ducats. We may pay and buy ourselves another year of uneasy peace, or refuse and risk the wrath of the Sultan."
+ byz_tribute.2.a:0 "Pay the tribute. We cannot afford war."
+ byz_tribute.2.a.tt:0 "Pay 75 ducats to the Ottoman Sultan."
+ byz_tribute.2.b:0 "We will not pay. Constantinople will not bow."
+ byz_tribute.2.b.tt:0 "Refuse the tribute. The Ottomans may retaliate with force."
+
+ # Event 3 - TUR receives tribute
+ byz_tribute.3.t:0 "Constantinople Pays its Tribute"
+ byz_tribute.3.desc:0 "The envoys have returned from Constantinople bearing 75 ducats, the annual tribute from the Roman Emperor. A satisfying reminder of Ottoman supremacy."
+ byz_tribute.3.a:0 "The Romans know their place."
+
+ # Event 4 - TUR hears refusal
+ byz_tribute.4.t:0 "Constantinople Refuses to Pay"
+ byz_tribute.4.desc:0 "Our envoys have returned empty-handed. The Emperor in Constantinople has refused to pay the annual tribute, citing the dignity of Rome. This impudence cannot go unanswered."
+ byz_tribute.4.a:0 "Prepare the armies. Constantinople will fall."
+ byz_tribute.4.a.tt:0 "Gain a casus belli to annex Byzantium."
+ byz_tribute.4.b:0 "We have greater concerns for now. Let it pass."
+
+ # Event 5 - BYZ warned of retaliation
+ byz_tribute.5.t:0 "The Ottomans March on Constantinople"
+ byz_tribute.5.desc:0 "Word reaches us from across the straits where the Sultan has declared our refusal, an act of war. Ottoman armies are being assembled. The fate of the Empire now rests on the strength of our walls and the courage of our soldiers. God protect us."
+ byz_tribute.5.a:0 "Constantinople has not fallen yet. Prepare our defences."

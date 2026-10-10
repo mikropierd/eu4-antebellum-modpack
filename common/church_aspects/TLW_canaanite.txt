@@ -30,13 +30,7 @@ blessing_anat = {
 	}
 }
 
-blessing_melqart = {
-	cost = 100
-	modifier = {
-		defensiveness = 0.2
-		global_tax_modifier = 0.1
-	}
-}
+# [merge] blessing_melqart now defined in common/church_aspects/10_punic_blessings.txt (Victorum wins; Ante Bellum-specific parts merged there)
 
 blessing_sydyk = {
 	cost = 100

@@ -6,14 +6,14 @@ color = { 44 220 23 }
 revolutionary_colors = { 0 1 0 }
 
 historical_idea_groups = {
-	infrastructure_ideas
+	religious_ideas
+	defensive_ideas
 	offensive_ideas
-	innovativeness_ideas
 	trade_ideas
 	diplomatic_ideas
-	exploration_ideas
-	quality_ideas
+	plutocracy_ideas
 	economic_ideas
+	spy_ideas
 }
 
 historical_units = {
@@ -67,10 +67,14 @@ monarch_names = {
 }
 
 leader_names = {
-	Varza Vaansh Tirandazian Shahnavaz Shahukar Saran Samya Sorkhab Sabza Roshan Radmand Rahtabad Payedar Parastar Oross
-	Ostevari Namir Mazdiyasni Mayan Mashreghi Kerman Kamkar Kayanizad Kayanipur Kharanwala Kabir Javanmard Izad Hormazdi
-	Farouzan Firouzgar Faravhari Farahi Eranee Darvish Deshmukh Dangor Arestani Azdapur Azad Abester 
-	Ispahbad Zik Sasan Shapur Injuid Mihran Suren Karen Spandiyadh Varaz Zohrab Zaigar Zadah Zaaykar Yazdi Yegtahi Vakshur
+	Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon Aondironon Atiaonrek Atirhagenrat Atiraguenrek Attiragenrega Attiuoaisgon
+	Cahiague Carhagouha Carmaron Contarea Conchake Chequamegon
+	Ekiodatsaan Endarahy Iahenhouton
+	Junqueindundeh Junundat
+	Karenhassa Kakouagoga Kandouche Kehesetoa Khioetoa
+	Oeniro Onentisati Ossossane Oukhahitoua
+	Scanonaerat Sunyendeand Skenchioe
+	Teanaustayae Teandewiata Tonache Teadeouita Teanhatenaron Tondakhra Tiedonderoga Touaguainchain Tarhetown Teotoguiaton
 }
 
 ship_names = {
@@ -86,6 +90,7 @@ ship_names = {
 	Qusquasrundee
 }
 
+# ===== Ante Bellum additions (not in Victorum) =====
 army_names = {
 	"Estash $PROVINCE$"
 }

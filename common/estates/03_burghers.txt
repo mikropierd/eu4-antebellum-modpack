@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 estate_burghers = {
 	icon = 3
 
@@ -21,31 +22,27 @@ estate_burghers = {
 				NOT = { has_estate = estate_jains }
 			}
 		}
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = veche_republic }
+		#NOT = { has_reform = trading_city }
+		#OR = {
+		#	NOT = { has_reform = celestial_empire }
+		#	has_dlc = "Mandate of Heaven"
+		#}
 	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
 		trade_efficiency = 0.2
 		development_cost = -0.1
-		# TLW [[[
-		faction_byzgreek_influence = 0.2
-		# ]]]
-		monthly_commonwealth_popular_sovereignity = 0.03
 	}
 	country_modifier_neutral = {
 		trade_efficiency = 0.2
-		# TLW [[[
-		faction_byzgreek_influence = 0.1
-		# ]]]
 	}	
 	country_modifier_angry = {
 		trade_efficiency = -0.1
 		development_cost = 0.1
 		global_unrest = 2
-		# TLW [[[
-		faction_byzgreek_influence = -0.1
-		# ]]]
-		monthly_commonwealth_popular_sovereignity = -0.03
 	}
 	land_ownership_modifier = {
 		burghers_loyalty_modifier = 0.2
@@ -113,11 +110,11 @@ estate_burghers = {
 			NOT = { has_reform = free_city }
 			OR = {
 				capital = 1 #Stockholm
-				capital = 6 #Skï¿½ne
+				capital = 6 #Skåne
 				capital = 23 #Bergen
 				capital = 36 #Reval
 				capital = 38 #Riga
-				capital = 41 #Kï¿½nigsberg
+				capital = 41 #Königsberg
 				capital = 43 #Danzig
 				capital = 44 #Hamburg
 				capital = 45 #Lubeck
@@ -128,7 +125,7 @@ estate_burghers = {
 				capital = 54 #Stade
 				capital = 56 #Osnabruck
 				capital = 57 #Brunswick
-				capital = 85 #Kï¿½ln
+				capital = 85 #Köln
 				capital = 86 #Munster
 				capital = 90 #Bruges
 				capital = 100 #Groningen
@@ -148,6 +145,21 @@ estate_burghers = {
 				capital = 2995 # Stolp
 			}
 		}	
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_EAST_AFRICAN_TRADE_CITIES
+		trigger = {
+			capital_scope = {
+				OR = {
+					area = central_swahili_coast_area
+					area = mombasa_area
+					area = mozambique_area
+					area = northern_swahili_coast_area
+					area = mogadishu_area
+				}
+			}
+		}
 		influence = 5
 	}
 	influence_modifier = {
@@ -177,7 +189,7 @@ estate_burghers = {
 		trigger = {
 			has_any_estate_disaster_active = yes
 			has_not_own_estate_disaster_active = { estate = estate_burghers }
-		}	
+		}
 		influence = -40
 	}
 	
@@ -191,57 +203,16 @@ estate_burghers = {
 	}
 	#Custom Names
 	custom_name = {
-        desc = estate_kauppiaita
-        trigger = {
-            OR = {
-                tag = FIN
-                was_tag = FIN
-            }
-        }
-    }
-	# TLW [[[
-	custom_name = {
 		desc = estate_emporoi
 		trigger = {
-			OR = {
-				primary_culture = greek
-				primary_culture = sclavinian
-				primary_culture = greco_roman
-				culture_group = hellenic_g
-			}
+			tag = BYZ
+			culture_group = byzantine
 		}
 	}
-	# ]]]
 	custom_name = {
 		desc = estate_quartersmasters
 		trigger = {
 			has_government_attribute = is_pirate_republic_reform
-		}
-	}
-	custom_name = {
-		desc = estate_gorozhane
-		trigger = {
-			culture_group = east_slavic
-			NOT = { primary_culture = Litvin }
-		}
-	}
-	custom_name = {
-		desc = estate_hutukhshan
-		trigger = {
-			OR = {
-				ab_is_persia_trigger = yes
-				has_reform = persianprince
-				has_reform = persianprincet
-			}
-		}
-	}
-	custom_name = {
-		desc = estate_sweden_borgare
-		trigger = {
-			OR = {
-				tag = SWE
-				was_tag = SWE
-			}
 		}
 	}
 	custom_name = {
@@ -257,13 +228,6 @@ estate_burghers = {
 		}
 	}
 	custom_name = {
-		desc = estate_neoconfucian_reformers
-		trigger = {
-			tag = KOR
-			religion = confucianism
-		}
-	}
-	custom_name = {
 		desc = estate_ppolom
 		trigger = {
 			is_mayan_society_trigger = yes
@@ -275,60 +239,14 @@ estate_burghers = {
 			religion = nahuatl
 		}
 	}
-	# AB [[[
-	custom_name = {
-		desc = estate_mesainiai
-		trigger = {
-			OR = {
-				primary_culture = lithuanian
-				primary_culture = Litvin
-				tag = PRR
-                was_tag = PRR
-			}
-		}
-	}
-	# ]]]
-	# TLW [[[
-	custom_name = {
-		desc = estate_equestrians
-		trigger = {
-			culture_group = roman_g
-			NOT = { primary_culture = greco_roman }
-		}
-	}
-	custom_name = {
-		desc = estate_taqir
-		trigger = {
-			OR = {
-				culture_group = punic_g
-				culture_group = muskogean
-			}
-		}
-	}
-	custom_name = {
-		desc = estate_membectoq
-		trigger = {
-			OR = {
-				culture_group = eastern_algonquian
-				culture_group = central_algonquian
-				culture_group = siouan
-				culture_group = iroquoian
-			}
-		}
-	}
-	custom_name = {
-		desc = estate_qausiqtuk
-		trigger = {
-			culture_group = eskaleut
-		}
-	}
-	# ]]]
 	custom_name = {
 		desc = estate_merchant_guilds
 		trigger = {
-			OR = {
+			OR = {	#Just like "NOT = { religion_group = Christian }", but at least it doesn't override estate names for new religion groups
+				#Still needs more diversity
 				religion_group = muslim
 				religion_group = eastern
+				religion_group = buddhist_group
 				religion_group = dharmic
 				religion_group = pagan
 				religion_group = jewish_group
@@ -336,14 +254,6 @@ estate_burghers = {
 			}
 		}
 	}
-	# ABMP [[[
-	custom_name = {
-		desc = estate_breslele
-		trigger = {
-			culture_group = romanian_culture_group
-		}
-	}
-	# ]]]
 
 	color = { 35 35 150 }
 
@@ -357,6 +267,7 @@ estate_burghers = {
 		estate_burghers_new_world_charter
 		estate_burghers_indebted_to_burghers
 		estate_burghers_free_enterprise
+		estate_burghers_the_great_privilege
 		estate_burghers_exclusive_trade_rights
 		estate_burghers_control_over_monetary_policy
 		estate_burghers_private_trade_fleets
@@ -367,6 +278,7 @@ estate_burghers = {
 		estate_burghers_monopoly_of_glass
 		estate_burghers_monopoly_of_paper
 		estate_burghers_enforced_interfaith_dialogue
+		estate_burghers_prussian_confederation
 		estate_burghers_statutory_rights
 		estate_burghers_orang_laut_alliances
 		estate_burghers_control_over_the_mint
@@ -374,7 +286,9 @@ estate_burghers = {
 		estate_burghers_forest_expansion
 		estate_burghers_mountain_expansion
 		estate_burghers_orthodox_tolerance
+		estate_burghers_polish_merchant_seal
 		estate_burghers_rise_of_the_burghers
+		estate_burghers_the_new_middle_class
 		estate_burghers_autonomous_trade_companies
 		estate_burghers_development_of_cities
 		estate_burghers_control_over_the_coinage
@@ -383,17 +297,58 @@ estate_burghers = {
 		estate_burghers_naval_school_right
 		estate_burghers_expanded_monopoly_rights
 		estate_burghers_financial_demand
+		estate_burghers_sindicat_remensa_privilege
 		estate_burghers_promote_burgher_bookkeeping
+		estate_burghers_great_works_of_iran
 		estate_burghers_fund_karimi
+		estate_burghers_foreign_expeditions
+		estate_burghers_nile_goods_transport
 		estate_burghers_monopoly_of_coffee
+		estate_burghers_reliance_on_republics
+		estate_burghers_exkousseiai_for_latins
+		estate_burghers_BYZ_single_market
 		estate_burghers_ARB_oasis_development
+		estate_burghers_YEM_coffee_monopoly
+		estate_burghers_persian_rugs
+		estate_burghers_hungarian_royal_cities
+		estate_burghers_italian_coastal_influence
+		estate_burghers_livestock_regulations
+		estate_burghers_arabian_traders
+		estate_burghers_omani_marines
+		estate_burghers_ITA_promote_latin_merchants
+		estate_burghers_ITA_permit_merchant_colonists
 		estate_burghers_GER_customs_union
+		estate_burghers_GER_turn_towards_mercantilism
 		estate_burghers_black_devils
 		estate_burghers_maximize_cargo_space
 		estate_burghers_diversify_fluyts
 		estate_burghers_voc_privilege
 		estate_burghers_INC_mountain_development
-		# AB [[[
+		estate_burghers_MAY_support_of_chontal_maya
+		estate_burghers_MAY_tropical_adaptation
+		estate_burghers_SUN_support_recovering_populations
+		estate_burghers_AZT_sponsor_artisans
+		estate_burghers_AZT_mexican_gold_mines
+		estate_burghers_fugger_family
+		estate_burghers_TIM_gulf_toll
+		#GE
+		estate_burghers_town_rights
+		estate_burghers_land_privileges
+		estate_burghers_burgher_autonomy
+		estate_burghers_saharan_outposts
+		estate_burghers_office_of_chancellor
+		#ME Privileges:
+		ME_estate_burghers_ORM_heretic
+		ME_estate_burghers_MSY_marsh_development
+		ME_estate_burghers_YEM_coffee
+		ME_estate_burghers_YEM_coffee_boost #ohhh man
+		ME_estate_burghers_arid_development
+		ME_estate_burghers_desert_development
+		ME_estate_burghers_strengthen_hisbah
+		ME_estate_burghers_ORM_improve_relations
+		ME_estate_burghers_QIR_persian_development
+		me_estate_burghers_venetians_in_the_navy 
+		ME_estate_burghers_SWI_peace_in_the_cantons
 		estate_burghers_ottoman_loans
 		estate_burghers_highland_rights
 		estate_burghers_ire_deforestation
@@ -407,20 +362,13 @@ estate_burghers = {
 		estate_burghers_italo_balkan_unity
 		estate_burghers_saxon_woods_expansion
 		estate_burghers_german_woods_expansion
-		# ]]]
-		# TLW [[[
 		estate_burghers_punic_isolationism
 		estate_burghers_marsh_expansion
-		# ]]]
-		# ABMP [[[
 		estate_burghers_wal_mountain_expansion
-		# ]]]
-		# ABA [[[
 		ABA_estate_burghers_PLN_FREEDDOM_OF_RELIGION
 		ABA_estate_burghers_htm_belyana_trade
-		# ]]]
 	}
-
+	
 	agendas = {
 		estate_burghers_develop_x
 		estate_burghers_build_trade_building_in_y
@@ -456,4 +404,47 @@ estate_burghers = {
 	}
 
 	influence_from_dev_modifier = 1.0
+	custom_name = {
+		desc = estate_emporoi
+		trigger = {
+			OR = {
+				primary_culture = greek
+				primary_culture = sclavinian
+				primary_culture = greco_roman
+				culture_group = hellenic_g
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_hutukhshan
+		trigger = {
+			OR = {
+				ab_is_persia_trigger = yes
+				has_reform = persianprince
+				has_reform = persianprincet
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_equestrians
+		trigger = {
+			culture_group = roman_g
+			NOT = { primary_culture = greco_roman }
+		}
+	}
+	custom_name = {
+		desc = estate_taqir
+		trigger = {
+			OR = {
+				culture_group = punic_g
+				culture_group = muskogean
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_breslele
+		trigger = {
+			culture_group = romanian_culture_group
+		}
+	}
 }
