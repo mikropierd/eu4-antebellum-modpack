@@ -307,15 +307,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				# the event spawns between 100k and 250k rebels
-				# the AI has no hope of fighting them if they don't have
-				# a sizable army. This prevents a small Ottoman AI from
-				# repeatedly enacting the decision and quickly breaking
-				# to the rebels
-				factor = 0
-				NOT = { army_size = 100 }
-			}
 		}
 	}
 
@@ -373,6 +364,15 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				# the event spawns between 100k and 250k rebels
+				# the AI has no hope of fighting them if they don't have
+				# a sizable army. This prevents a small Ottoman AI from
+				# repeatedly enacting the decision and quickly breaking
+				# to the rebels
+				factor = 0
+				NOT = { army_size = 100 }
+			}
 		}
 	}
 

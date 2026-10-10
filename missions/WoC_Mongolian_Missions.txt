@@ -46,33 +46,6 @@ WoC_Mongols_1 = {
 		}
 		has_dlc = "Winds of Change"
 	
-		# [merge] Ante Bellum tree ab_yuan_china_first takes precedence
-		NOT = {
-tag = YUA
-		NOT = {
-			has_country_flag = YUA_HORDE
-			has_country_flag = YUA_NESTORIAN
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_china_first takes precedence
-		NOT = {
-NOT = {
-			tag = YUA
-		}
-		NOT = {
-			OR = {
-				primary_culture = korean
-				primary_culture = korean_new
-				primary_culture = manchu_new
-			}
-		}
-		OR = {
-			culture_group = east_asian
-			has_reform = chinawarlord
-		}
-		NOT = { map_setup = map_setup_random }
-		}
 		# [merge] Ante Bellum tree glh_eu_first_group takes precedence
 		NOT = {
 tag = GLH
@@ -204,6 +177,33 @@ tag = GLH
 tag = GLH
 		has_country_flag = glh_european_tree
 		NOT = { has_country_flag = glh_horde_tree }
+		}
+		# [merge] Ante Bellum tree ab_yuan_china_first takes precedence
+		NOT = {
+tag = YUA
+		NOT = {
+			has_country_flag = YUA_HORDE
+			has_country_flag = YUA_NESTORIAN
+		}
+		NOT = { map_setup = map_setup_random }
+		}
+		# [merge] Ante Bellum tree ab_china_first takes precedence
+		NOT = {
+NOT = {
+			tag = YUA
+		}
+		NOT = {
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+				primary_culture = manchu_new
+			}
+		}
+		OR = {
+			culture_group = east_asian
+			has_reform = chinawarlord
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 
@@ -434,6 +434,12 @@ WoC_Mongols_2 = {
 		}
 		has_dlc = "Winds of Change"
 	
+		# [merge] Ante Bellum tree glh_eu_second_group takes precedence
+		NOT = {
+tag = GLH
+		has_country_flag = glh_european_tree
+		NOT = { has_country_flag = glh_horde_tree }
+		}
 		# [merge] Ante Bellum tree ab_yuan_china_second takes precedence
 		NOT = {
 tag = YUA
@@ -460,12 +466,6 @@ NOT = {
 			has_reform = chinawarlord
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree glh_eu_second_group takes precedence
-		NOT = {
-tag = GLH
-		has_country_flag = glh_european_tree
-		NOT = { has_country_flag = glh_horde_tree }
 		}
 	}
 
@@ -908,6 +908,12 @@ WoC_Mongols_3 = {
 		}
 		has_dlc = "Winds of Change"
 	
+		# [merge] Ante Bellum tree glh_eu_third_group takes precedence
+		NOT = {
+tag = GLH
+		has_country_flag = glh_european_tree
+		NOT = { has_country_flag = glh_horde_tree }
+		}
 		# [merge] Ante Bellum tree ab_yuan_china_third takes precedence
 		NOT = {
 tag = YUA
@@ -934,12 +940,6 @@ NOT = {
 			has_reform = chinawarlord
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree glh_eu_third_group takes precedence
-		NOT = {
-tag = GLH
-		has_country_flag = glh_european_tree
-		NOT = { has_country_flag = glh_horde_tree }
 		}
 	}
 
@@ -1255,6 +1255,19 @@ WoC_Mongols_4 = {
 		}
 		has_dlc = "Winds of Change"
 	
+		# [merge] Ante Bellum tree glh_eu_fourth_group takes precedence
+		NOT = {
+tag = GLH
+		has_country_flag = glh_european_tree
+		NOT = { has_country_flag = glh_horde_tree }
+		}
+		# [merge] Ante Bellum tree glh_eu_fourth_group_diocese takes precedence
+		NOT = {
+tag = GLH
+		has_country_flag = glh_european_tree
+		NOT = { has_country_flag = glh_horde_tree }
+		is_subject_of_type = grand_diocese_vassal
+		}
 		# [merge] Ante Bellum tree ab_yuan_china_fourth takes precedence
 		NOT = {
 tag = YUA
@@ -1281,19 +1294,6 @@ NOT = {
 			has_reform = chinawarlord
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree glh_eu_fourth_group takes precedence
-		NOT = {
-tag = GLH
-		has_country_flag = glh_european_tree
-		NOT = { has_country_flag = glh_horde_tree }
-		}
-		# [merge] Ante Bellum tree glh_eu_fourth_group_diocese takes precedence
-		NOT = {
-tag = GLH
-		has_country_flag = glh_european_tree
-		NOT = { has_country_flag = glh_horde_tree }
-		is_subject_of_type = grand_diocese_vassal
 		}
 	}
 
@@ -1633,6 +1633,12 @@ WoC_Mongols_5 = {
 		}
 		has_dlc = "Winds of Change"
 	
+		# [merge] Ante Bellum tree glh_eu_fifth_group takes precedence
+		NOT = {
+tag = GLH
+		has_country_flag = glh_european_tree
+		NOT = { has_country_flag = glh_horde_tree }
+		}
 		# [merge] Ante Bellum tree ab_yuan_china_fifth takes precedence
 		NOT = {
 tag = YUA
@@ -1659,12 +1665,6 @@ NOT = {
 			has_reform = chinawarlord
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree glh_eu_fifth_group takes precedence
-		NOT = {
-tag = GLH
-		has_country_flag = glh_european_tree
-		NOT = { has_country_flag = glh_horde_tree }
 		}
 	}
 

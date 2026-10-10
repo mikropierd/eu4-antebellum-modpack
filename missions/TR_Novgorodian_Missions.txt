@@ -557,8 +557,8 @@ tag = ROM
 			#Neva
 			33 = {
 				owned_by = ROOT
-				has_trade_building_trigger = yes
-				has_dock_building_trigger = yes
+				has_building = marketplace
+				has_building = dock
 				is_strongest_trade_power = ROOT
 			}
 			navy_size_percentage = 1
@@ -873,8 +873,8 @@ tag = ROM
 			owns = 313 #Arkangelsk
 			313 = {
 				OR = {
-					has_trade_building_trigger = yes
-					has_dock_building_trigger = yes
+					has_building = marketplace
+					has_building = dock
 				}
 			}
 		}

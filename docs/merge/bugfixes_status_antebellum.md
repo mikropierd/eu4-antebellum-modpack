@@ -1,18 +1,18 @@
 # Bugfixes -> Antebellum: status
 
-Wynik nakładania patchy z grotaclasBugfixes (per plik, wszystko-albo-nic).
+Wynik nakładania patchy z grotaclasBugfixes (per plik, wszystko-albo-nic, kontekst dokładny bez fuzz).
 
 | status | liczba |
 |---|---|
-| applied | 12 |
+| applied | 10 |
 | already | 3 |
 | missing | 301 |
-| conflict | 9 |
+| conflict | 11 |
 
 - applied: nałożone
 - already: poprawka już jest w pliku
 - missing: pliku nie ma w tym repo (dla Antebellum: jest w bazowym modzie Ante Bellum)
-- conflict: plik jest, ale hunki nie pasują (wymaga ręcznego scalenia)
+- conflict: plik jest, ale hunki nie pasują dokładnie (wymaga ręcznego scalenia)
 
 
 ## conflict
@@ -22,9 +22,11 @@ Wynik nakładania patchy z grotaclasBugfixes (per plik, wszystko-albo-nic).
 - `0013-fix-Italian-Coastal-Influence-privilege.patch`: `common/estate_privileges/03_burgher_privileges.txt`
 - `0020-fix-or-remove-outdated-dynamic-names-for-the-province-Dortmund69.patch`: `common/province_names/ROM.txt`
 - `0028-allow-custom-nations-to-keep-livonian-reforms.patch`: `common/government_reforms/01_government_reforms_monarchies.txt`
+- `0032-Allow-France-to-annex-normal-vassals-without-seizing-land.patch`: `common/diplomatic_actions/00_diplomatic_actions.txt`
 - `0046-Apply-reward-from-fra_london-even-if-FRA-changes-tag.patch`: `common/great_projects/01_monuments.txt`
 - `0053-Fix-temple-bonus-when-switching-between-reforms.patch`: `common/government_reforms/06_government_reforms_common.txt`
 - `0077-Apply-absolutism-impact-from-court-ideas-to-all-privileges.patch`: `common/estate_privileges/02_noble_privileges.txt`, `common/estate_privileges/03_burgher_privileges.txt`
+- `0089-make-asha-monarchy-work-for-custom-nations.patch`: `common/government_reforms/01_government_reforms_monarchies.txt`
 
 ## missing
 

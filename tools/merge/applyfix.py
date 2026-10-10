@@ -22,9 +22,9 @@ for p in sorted(glob.glob('/home/user/grotaclasBugfixes/patches/*.patch')):
             res['conflict'].append((name,f,'new file exists')); continue
         if s.count('\n@@')==0 and 'Binary' in s:
             res['conflict'].append((name,f,'binary')); continue
-        r=run(['patch','-p1','-l','-F3','--forward','--dry-run','--no-backup-if-mismatch'],s)
+        r=run(['patch','-p1','-l','-F0','--forward','--dry-run','--no-backup-if-mismatch'],s)
         if r.returncode==0:
-            if not dry: run(['patch','-p1','-l','-F3','--forward','--no-backup-if-mismatch'],s)
+            if not dry: run(['patch','-p1','-l','-F0','--forward','--no-backup-if-mismatch'],s)
             res['applied'].append((name,f)); continue
         rr=run(['patch','-p1','-l','-R','--dry-run','--no-backup-if-mismatch'],s)
         if rr.returncode==0: res['already'].append((name,f))

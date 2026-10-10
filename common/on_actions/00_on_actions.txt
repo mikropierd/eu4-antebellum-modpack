@@ -5806,19 +5806,6 @@ on_province_religion_changed = {
 		}
 		remove_province_modifier = ottoman_siyasah_tax_reform_manpower
 	}
-	if = {
-		limit = {
-			FROM = {
-				has_country_flag = mng_10_loyalty_for_burghers_on_expand_infr_flag
-			}
-		}
-		FROM = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-		}
-	}
 }
 
 # province, manually conversion

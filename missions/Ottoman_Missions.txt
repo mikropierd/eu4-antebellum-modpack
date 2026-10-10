@@ -184,7 +184,7 @@ tag = ROM
 				area = thrace_area
 				province_id = 164
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			#has_fulfiled_province_requirement_for_mission_trigger = {

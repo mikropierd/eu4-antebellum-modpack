@@ -54,7 +54,7 @@
 233 = "Corn na Breataine" #Cornwall
 245 = "Eabhrac" #York
 247 = "Kembrea" #Cumbria
-4369 = "Caerfyrddin" #Carmarthen
+69 = "Caerfyrddin" #Carmarthen
 4366 = "An Baile Nua" #Montgomery
 240 = "An t-Inbhear" #Shrewsbury
 239 = "Cúntóir" #Gloucester

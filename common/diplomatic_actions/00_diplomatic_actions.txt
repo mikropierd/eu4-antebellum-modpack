@@ -986,6 +986,3 @@ break_alliance = {
         on_alliance_broken_effect = yes
     }
 }
-
-# ===== Ante Bellum additions (not in Victorum) =====
-			FROM = { is_subject_of_type = appanage }

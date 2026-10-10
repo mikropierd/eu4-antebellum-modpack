@@ -18673,10 +18673,6 @@ amsterdam_bourse = {
         OR = {
             culture = dutch
             owner = { accepted_culture = dutch }
-			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
         }
 		if = {
 			limit = {
@@ -18690,10 +18686,6 @@ amsterdam_bourse = {
 
     tier_0 = {
         upgrade_time = {
-			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
             months = 0
         }
         cost_to_upgrade = {
@@ -18701,10 +18693,6 @@ amsterdam_bourse = {
         }
         province_modifiers = {
         }
-			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
         area_modifier = {
         }
         country_modifiers = {

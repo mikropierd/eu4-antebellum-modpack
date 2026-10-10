@@ -1,49 +1,61 @@
 # Bugfixes -> Victorum: status
 
-Wynik nakładania patchy z grotaclasBugfixes (per plik, wszystko-albo-nic).
+Wynik nakładania patchy z grotaclasBugfixes (per plik, wszystko-albo-nic, kontekst dokładny bez fuzz).
 
 | status | liczba |
 |---|---|
-| applied | 214 |
-| already | 2 |
+| applied | 188 |
+| already | 6 |
 | missing | 45 |
-| conflict | 64 |
+| conflict | 86 |
 
 - applied: nałożone
 - already: poprawka już jest w pliku
 - missing: pliku nie ma w tym repo (dla Antebellum: jest w bazowym modzie Ante Bellum)
-- conflict: plik jest, ale hunki nie pasują (wymaga ręcznego scalenia)
+- conflict: plik jest, ale hunki nie pasują dokładnie (wymaga ręcznego scalenia)
 
 
 ## conflict
 
+- `0004-allow-mission-Fate-of-the-Mandatefate_of_the_mandate-to-be-completed-by-dismantling-the-mandate.patch`: `missions/DOM_Chinese_Missions.txt`
 - `0006-make-confucian-monuments-work-with-harmonized-religious-groups.patch`: `common/great_projects/01_monuments.txt`
-- `0019-fix-expand-infrastructure-effect-for-Expand-the-Bogue-missions.patch`: `missions/DOM_Japanese_Missions.txt`
-- `0020-fix-or-remove-outdated-dynamic-names-for-the-province-Dortmund69.patch`: `common/province_names/czech.txt`, `common/province_names/polish.txt`, `common/province_names/schlesian.txt`
+- `0010-allow-Amsterdam-Bourse-with-roman-culture.patch`: `common/great_projects/01_monuments.txt`
+- `0011-re-enable-GC-missions-for-VAL-and-CAT-if-DOM-is-active.patch`: `missions/GC_Aragonese_Missions.txt`
+- `0012-turn-MLO-into-a-monarchy-when-FRA-forms-a-PU-over-them.patch`: `events/FlavorFRA.txt`
+- `0019-fix-expand-infrastructure-effect-for-Expand-the-Bogue-missions.patch`: `common/on_actions/00_on_actions.txt`, `missions/DOM_Japanese_Missions.txt`
+- `0020-fix-or-remove-outdated-dynamic-names-for-the-province-Dortmund69.patch`: `common/province_names/aragonese.txt`, `common/province_names/castillian.txt`, `common/province_names/czech.txt`, `common/province_names/french.txt`, `common/province_names/irish.txt`, `common/province_names/mexican.txt` (+2)
+- `0025-add-missing-traits-to-num_of_ruler_traits.patch`: `common/scripted_triggers/00_scripted_triggers.txt`
 - `0026-let-LAE-keep-BYZ-missions-if-they-were-created-by-HAB.patch`: `missions/WoC_Austrian_Missions.txt`
 - `0028-allow-custom-nations-to-keep-livonian-reforms.patch`: `common/government_reforms/01_government_reforms_monarchies.txt`
 - `0030-avoid-permaclaims-on-sea-tiles-from-GER-and-JAP-missions.patch`: `missions/DOM_Japanese_Missions.txt`
-- `0031-remove-extra-spaces-before-regal-numbers.patch`: `common/countries/Alodia.txt`, `common/countries/Ayyubids.txt`, `common/countries/Carib.txt`, `common/countries/Charrua.txt`, `common/countries/Makuria.txt`, `common/countries/Nubia.txt`
+- `0031-remove-extra-spaces-before-regal-numbers.patch`: `common/countries/Alodia.txt`, `common/countries/Ayyubids.txt`, `common/countries/Carib.txt`, `common/countries/Charrua.txt`, `common/countries/Krakow.txt`, `common/countries/Makuria.txt` (+1)
 - `0034-Fix-burgundian-inheritance-for-non-monarchies.patch`: `events/Incident_Burgundian_Inheritance.txt`
 - `0035-fix-Seljuk-Empire-name-when-forming-Rum-as-Aq-and-Qara-Qoyunlu.patch`: `decisions/TurkishNation.txt`
 - `0043-give-japan-claims-on-korea-if-DOM-is-active.patch`: `decisions/JapaneseNation.txt`
 - `0046-Apply-reward-from-fra_london-even-if-FRA-changes-tag.patch`: `common/great_projects/01_monuments.txt`
+- `0047-Require-fur-province-in-the-new-world-for-Natives-Not-Assisting.patch`: `events/RandomEvents.txt`
 - `0051-Fix-wrong-HRE-membership-after-looking-at-other-start-dates.patch`: `history/provinces/101 - Genoa.txt`, `history/provinces/102 - Nice.txt`, `history/provinces/103 - Piedmont.txt`, `history/provinces/104 - Milan.txt`, `history/provinces/105 - Parma.txt`, `history/provinces/107 - Brescia.txt` (+24)
 - `0052-Fix-highlight-for-prussian_nation_general-decision.patch`: `decisions/PrussianNation.txt`
 - `0053-Fix-temple-bonus-when-switching-between-reforms.patch`: `common/government_reforms/06_government_reforms_common.txt`
+- `0057-Also-allow-Expanded-Daugava-Estuary-modifier-in-all-triggers-which-check-for-the-normal-modifier.patch`: `common/scripted_triggers/01_scripted_triggers_province_modifiers.txt`
+- `0064-Make-reform-Ganden-Phodrang-available-to-Sino-Tibetan-countries.patch`: `common/government_reforms/03_government_reforms_theocracies.txt`
 - `0065-Fix-devastation-trigger-and-highlighting-for-Fortify-the-Coast-missions.patch`: `missions/DOM_Japanese_Missions.txt`
 - `0066-Bring-tooltips-of-Fortify-the-Coast-missions-more-in-line-with-the-effects.patch`: `missions/DOM_Japanese_Missions.txt`
+- `0067-Cede-goa-to-the-correct-nation-in-the-event-Vasco-da-Gama-in-India.patch`: `events/FlavorPOR.txt`
 - `0071-Prevent-Hawaii-and-Viti-formation-in-random-nation-games.patch`: `decisions/FijiNation.txt`
+- `0075-Give-countries-with-Margravate-reform-another-reform-if-Domination-isnt-active.patch`: `history/countries/BAD - Baden.txt`, `history/countries/BRA - Brandenburg.txt`, `history/countries/MFA - Montferrat.txt`
 - `0076-Prevent-high-base-unrest-from-janissary-disaster.patch`: `events/disaster_ottoman_power_struggle.txt`
 - `0080-Fix-highlighting-for-Restore-the-Mongol-Empire.patch`: `decisions/MongolEmpire.txt`
 - `0082-Fix-renaming-to-Lithuanian-Polish-Commonwealth-when-forming-PLC-as-LIT.patch`: `decisions/TheCommonwealth.txt`
 - `0084-Fix-maritime-idea-reward-from-venetian-mission-Masters-of-the-Sea.patch`: `missions/WOC_Venetian_Missions.txt`
 - `0087-make-new-ruler-traits-available-to-custom-nations.patch`: `common/ruler_personalities/00_core.txt`
+- `0101-Make-Cernida-Fortifications-bonus-available-for-higher-level-forts.patch`: `common/buildings/00_buildings.txt`
+- `0105-prevent-pomeranian-ideas-from-overriding-tag-specific-ideas.patch`: `common/ideas/zz_group_ideas.txt`
 - `0106-Give-florentine-missions-when-forming-Tuscany.patch`: `decisions/TuscanNation.txt`
 - `0114-prevent-Raze-our-Enemies-if-you-cant-raze.patch`: `common/estate_agendas/05_nomadic_tribe_agendas.txt`
 - `0115-Dont-show-new-missions-when-forming-Rum-if-you-dont-get-new-missions.patch`: `decisions/TurkishNation.txt`
 - `0119-fix-modifier-duration-in-tooltips-of-jap_japanese_economic_miracle.patch`: `missions/DOM_Japanese_Missions.txt`
-- `0121-Also-allow-upgraded-buildings-in-all-missions-which-require-a-building.patch`: `missions/GC_Granadan_Missions.txt`
+- `0121-Also-allow-upgraded-buildings-in-all-missions-which-require-a-building.patch`: `missions/GC_Granadan_Missions.txt`, `missions/TR_Novgorodian_Missions.txt`
 - `0122-make-mission-rewards-for-forts-available-for-all-fort-buildings.patch`: `common/buildings/00_buildings.txt`
 
 ## missing

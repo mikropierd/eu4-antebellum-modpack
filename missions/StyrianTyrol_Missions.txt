@@ -20,9 +20,9 @@ OR = {
 			tag = SLZ
 		}
 		}
-		# [merge] Ante Bellum tree sty_branch_1 takes precedence
+		# [merge] Ante Bellum tree tir_branch_1 takes precedence
 		NOT = {
-tag = STY
+tag = TIR
 		}
 		# [merge] Ante Bellum tree ab_austria_1_army takes precedence
 		NOT = {
@@ -33,17 +33,17 @@ OR = {
 			tag = SLZ
 		}
 		}
-		# [merge] Ante Bellum tree sty_branch_1_army takes precedence
-		NOT = {
-tag = STY
-		}
-		# [merge] Ante Bellum tree tir_branch_1 takes precedence
-		NOT = {
-tag = TIR
-		}
 		# [merge] Ante Bellum tree tir_branch_1_army takes precedence
 		NOT = {
 tag = TIR
+		}
+		# [merge] Ante Bellum tree sty_branch_1 takes precedence
+		NOT = {
+tag = STY
+		}
+		# [merge] Ante Bellum tree sty_branch_1_army takes precedence
+		NOT = {
+tag = STY
 		}
 	}
 	has_country_shield = yes

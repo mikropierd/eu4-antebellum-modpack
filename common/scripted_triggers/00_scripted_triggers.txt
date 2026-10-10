@@ -3129,15 +3129,6 @@ has_trade_company_trade_goods = {
 #For Farm manufactories
 has_farm_trade_goods = {
     OR = {
-		ruler_has_personality = humane_personality
-		ruler_has_personality = petty_personality
-		ruler_has_personality = papal_puppetmaster_personality
-		ruler_has_personality = iron_crowned_personality
-		ruler_has_personality = peasant_revolt_leader_personality
-		ruler_has_personality = merchant_basileus_personality
-		ruler_has_personality = orangist_stadholder_personality
-		ruler_has_personality = reaver_personality
-		ruler_has_personality = last_knight_personality
         trade_goods = grain
         trade_goods = livestock
         trade_goods = wine

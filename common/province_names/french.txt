@@ -189,7 +189,7 @@
 62 = "Leipsic"
 65 = "Munich"
 67 = "Nuremberg"
-4712 = "Constance"
+69 = "Constance"
 70 = "Stougard"
 72 = "Brisgau"
 73 = "Val d'Inn"

@@ -311,49 +311,6 @@ SCO_Ideas = {
 	}
 }
 
-POM_ideas = {
-	start = {
-		light_ship_cost = -0.2
-		land_morale = 0.1
-	}
-
-	bonus = {
-		global_trade_power = 0.1
-	}
-
-	trigger = {
-		OR = {
-			tag = POM
-			primary_culture = pommeranian
-		}
-	}
-	free = yes
-
-	pom_idea_1 = {
-		embargo_efficiency = 0.1
-		privateer_efficiency = 0.15
-	}
-	pom_idea_2 = {
-		merchants = 1
-	}
-	pom_idea_3 = {
-		trade_steering = 0.25
-	}
-	pom_idea_4 = {
-		tolerance_heretic = 2
-	}
-	pom_idea_5 = {
-		merc_maintenance_modifier = -0.15
-	}
-	pom_idea_6 = {
-		trade_efficiency = 0.1
-	}
-	pom_idea_7 = {
-		naval_forcelimit_modifier = 0.25
-	}
-}
-
-
 berber_ideas = {
 	start = {
 		naval_attrition = -0.25

@@ -2732,17 +2732,6 @@ fort_15th = {
 		}
 		if = {
 			limit = {
-				owner = { has_country_flag = ven_defensive_reward_flag }
-				NOT = { has_province_modifier = ven_defensive_stance_modifier }
-			}
-			add_province_modifier = {
-				name = ven_defensive_stance_modifier
-				duration = -1
-				hidden = yes
-			}
-		}
-		if = {
-			limit = {
 				owner = {
 					has_country_flag = ned_buffed_forts_flag
 					NOT = {
@@ -2818,12 +2807,6 @@ fort_15th = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
-		}
-		if = {
-			limit = {
-				has_province_modifier = ven_defensive_stance_modifier
-			}
-			remove_province_modifier = ven_defensive_stance_modifier
 		}
 		if = {
 			limit = {
@@ -3190,17 +3173,6 @@ fort_18th = {
 						loyalty = 5
 					}
 				}
-			}
-		}
-		if = {
-			limit = {
-				owner = { has_country_flag = ven_defensive_reward_flag }
-				NOT = { has_province_modifier = ven_defensive_stance_modifier }
-			}
-			add_province_modifier = {
-				name = ven_defensive_stance_modifier
-				duration = -1
-				hidden = yes
 			}
 		}
 		if = {
@@ -3838,12 +3810,6 @@ farm_estate = {
 		}
 		if = {
 			limit = {
-				has_province_modifier = ven_defensive_stance_modifier
-			}
-			remove_province_modifier = ven_defensive_stance_modifier
-		}
-		if = {
-			limit = {
 				FROM = {
 					has_country_flag = geo_wine_manufactory_flag
 				}
@@ -4287,17 +4253,6 @@ ramparts = {
 		}
 		if = {
 			limit = {
-				owner = { has_country_flag = ven_defensive_reward_flag }
-				NOT = { has_province_modifier = ven_defensive_stance_modifier }
-			}
-			add_province_modifier = {
-				name = ven_defensive_stance_modifier
-				duration = -1
-				hidden = yes
-			}
-		}
-		if = {
-			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_ramparts_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_ramparts_mod
@@ -4326,12 +4281,6 @@ ramparts = {
 			factor = 0.25
 			FROM = {
 				vu_economy_ai_avoid_doing_when = yes
-		if = {
-			limit = {
-				has_province_modifier = ven_defensive_stance_modifier
-			}
-			remove_province_modifier = ven_defensive_stance_modifier
-		}
 			}
 		}
 		#Avoid building in...

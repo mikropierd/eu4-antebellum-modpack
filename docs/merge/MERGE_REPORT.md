@@ -33,8 +33,9 @@ Trzynaście prowincji ma w Antebellum inne nazwy niż w Victorum przy tym samym 
 
 ## Poprawki z grotaclasBugfixes
 
-- Victorum: 214 sekcji plików z patchy nałożone, 64 konflikty i 45 brakujących plików opisane w `bugfixes_status_victorum.md`
-- Antebellum: 12 sekcji nałożone; 301 dotyczy plików, które są w bazowym modzie Ante Bellum (nie ma ich w tym repo). Po dodaniu bazy trzeba puścić `tools/merge/applyfix.py` ponownie
+- Victorum: 188 sekcji plików z patchy nałożone (dokładny kontekst, bez fuzz), 86 konfliktów i 45 brakujących plików opisane w `bugfixes_status_victorum.md`
+- Antebellum: 10 sekcji nałożone; 301 dotyczy plików, które są w bazowym modzie Ante Bellum (nie ma ich w tym repo). Po dodaniu bazy trzeba puścić `tools/merge/applyfix.py` ponownie
+- Pierwsza wersja używała fuzzu i wstawiła część hunków w złe bloki; po review została przerobiona (commit "Redo grotaclas Bugfixes").
 - Pliki Victorum po poprawkach trafiły do Antebellum (Victorum wygrywa), więc ich poprawki są już w wyniku
 
 ## Co jest ryzykiem (i czego nie da się dziś sprawdzić)

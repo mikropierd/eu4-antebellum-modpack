@@ -2260,14 +2260,7 @@ country_event = {
 		}
 	}
 }
-		hidden_effect = {
-			MLO = {
-				if = {
-					limit = { NOT = { government = monarchy } }
-					change_government = monarchy
-				}
-			}
-		}
+
 country_event = {
 	#The Habsburg Ring
 	id = flavor_fra.102

@@ -95,7 +95,7 @@
 62 = "Lipsia"
 65 = "Múnich"
 67 = "Núremberg"
-4712 = "Constanza"
+69 = "Constanza"
 72 = "Brisgovia"
 75 = "Estrasburgo"
 76 = "Salzburgo"

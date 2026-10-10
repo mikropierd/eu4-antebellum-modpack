@@ -6022,6 +6022,14 @@ sca_swe_industrialize_norway_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree ab_sweden_slot1 takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_first takes precedence
 		NOT = {
 OR = {
@@ -6029,14 +6037,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_sweden_slot1 takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
 		}

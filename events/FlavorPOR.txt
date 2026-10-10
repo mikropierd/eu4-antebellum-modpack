@@ -1383,7 +1383,7 @@ country_event = {
 		}
 		if = {
 			limit = { tag = POR }
-		2030 = { cede_province = ROOT }
+			2030 = { cede_province = POR }
 			add_claim = 2030
 			add_prestige = 10
 		}

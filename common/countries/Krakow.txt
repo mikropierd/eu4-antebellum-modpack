@@ -41,9 +41,9 @@ monarch_names = {
 	"Grzegorz #0" = 10
 	"Jan #0" = 10
 	"Bartlomiej #0" = 10
-	"Bartosz #0" = 10
-	"Dominik #0" = 10
-	"Igor #0" = 10
+	"Bartosz  #0" = 10
+	"Dominik  #0" = 10
+	"Igor  #0" = 10
 	
 	"Karolina #0" = -10
 	"Urszula #0" = -1

@@ -69,7 +69,6 @@ has_river_estuary_trigger = {
 			#China
 			has_province_modifier = mng_bogue_modifier
 			has_province_modifier = expanded_nile_estuary_modifier
-			has_province_modifier = pol_daugava_estuary_modifier
 			#VU
 			has_province_modifier = yellow_estuary_modifier
 			#Added estuaries in VU
@@ -142,7 +141,6 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = don_estuary_modifier
 			has_province_modifier = yangtze_estuary_modifier
 			has_province_modifier = huang_he_estuary_modifier
-			has_province_modifier = pol_daugava_estuary_modifier
 			has_province_modifier = ganges_estuary_modifier
 			has_province_modifier = djanges_estuary_modifier
 			has_province_modifier = indus_estuary_modifier

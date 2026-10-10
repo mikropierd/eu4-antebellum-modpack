@@ -1625,10 +1625,6 @@
   ],
   [
    "common/government_reforms/01_government_reforms_monarchies.txt",
-   "persian_government_reform"
-  ],
-  [
-   "common/government_reforms/01_government_reforms_monarchies.txt",
    "holy_imperial_monarchy_reform"
   ],
   [
@@ -4146,10 +4142,6 @@
   [
    "common/scripted_triggers/00_scripted_triggers.txt",
    "has_any_exploration_idea"
-  ],
-  [
-   "common/scripted_triggers/00_scripted_triggers.txt",
-   "has_farm_trade_goods"
   ],
   [
    "common/scripted_triggers/00_scripted_triggers.txt",
@@ -8982,10 +8974,6 @@
   [
    "common/countries/Wallachia.txt",
    "fleet_names"
-  ],
-  [
-   "common/diplomatic_actions/00_diplomatic_actions.txt",
-   "FROM"
   ],
   [
    "common/estate_privileges/02_noble_privileges.txt",
