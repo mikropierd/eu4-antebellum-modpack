@@ -1,0 +1,159 @@
+country_decisions = {
+	QIR_urbanization_decision = {
+		major = yes
+		potential = {
+			has_country_flag = QIR_urbanization_decision_flag
+			has_dlc = "Cradle of Civilization"
+			ME_tribal_federation_trigger = yes
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			has_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 35
+			}
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = -45
+			}
+			if = {
+				limit = {
+					has_country_flag = QIR_upgrade_the_decision
+				}
+				custom_tooltip = QIR_distribute_4_4_4_dev
+				hidden_effect = {
+					for = {
+						amount = 4
+						effect = "random_owned_province = {
+								limit = {
+									culture = ROOT
+								}
+								add_base_tax = 1
+							}
+						"
+					}
+					for = {
+						amount = 4
+						effect = "random_owned_province = {
+								limit = {
+									culture = ROOT
+								}
+								add_base_production = 1
+							}
+						"
+					}
+					for = {
+						amount = 4
+						effect = "random_owned_province = {
+								limit = {
+									culture = ROOT
+								}
+								add_base_manpower = 1
+							}
+						"
+					}
+				}
+			}
+			else = {
+				custom_tooltip = QIR_distribute_3_3_3_dev
+				hidden_effect = {
+					for = {
+						amount = 3
+						effect = "random_owned_province = {
+								limit = {
+									culture = ROOT
+								}
+								add_base_tax = 1
+							}
+						"
+					}
+					for = {
+						amount = 3
+						effect = "random_owned_province = {
+								limit = {
+									culture = ROOT
+								}
+								add_base_production = 1
+							}
+						"
+					}
+					for = {
+						amount = 3
+						effect = "random_owned_province = {
+								limit = {
+									culture = ROOT
+								}
+								add_base_manpower = 1
+							}
+						"
+					}
+				}
+			}
+		}
+	}
+	QIR_stability_decision = {
+		major = yes
+		potential = {
+			has_country_flag = QIR_stability_decision_flag
+			has_dlc = "Cradle of Civilization"
+			ME_tribal_federation_trigger = yes
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			NOT = {
+				stability = 2
+			}
+			has_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 30
+			}
+			custom_trigger_tooltip = {
+				tooltip = QIR_stability_decision_cooldown
+				OR = {
+					NOT = {
+						has_country_flag = QIR_stability_decision_cooldown_flag
+					}
+					had_country_flag = {
+						days = 1825
+						flag = QIR_stability_decision_cooldown_flag
+					}
+				}
+			}
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = -30
+			}
+			add_stability_or_adm_power = yes
+			set_country_flag = QIR_stability_decision_cooldown_flag
+		}
+	}
+	QIR_pick_tree = {
+		major = yes
+		potential = {
+			OR = {
+				has_country_flag = QIR_may_go_tribal
+				has_country_flag = QIR_may_go_sedentary
+			}
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = {
+				id = ME_Qir_Qoyunlu_Events.6
+			}
+		}
+	}
+}

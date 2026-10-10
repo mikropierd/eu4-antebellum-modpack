@@ -1,0 +1,4853 @@
+#By VU
+#First two were removed due to being made obsolete
+#turn_off_subject_colouring = {
+#	hidden_effect = {
+#		set_global_flag = vu_uncoloured_subjects_global
+#		every_country = {
+#			restore_country_color = yes
+#		}
+#	}
+#}
+#vu_colouring_on_action = {
+#	# global scope
+#}
+#vu_subject_colouring = {
+#	# subject scope
+#	hidden_effect = {
+#		if = {
+#			limit = {
+#				NOT = {
+#					has_global_flag = vu_startup_disable_subject_colouring
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				NOT = {
+#					overlord = {
+#						has_country_flag = vu_uncoloured_subjects_overlord
+#					}
+#					has_country_flag = vu_uncoloured_subjects_subject
+#				}
+#				is_colourable_subject_type = yes
+#			}
+#			change_country_color = {
+#				country = overlord
+#			}
+#			set_country_flag = has_subject_colour_flag
+#			every_subject_country = {
+#				limit = {
+#					NOT = {
+#						overlord = {
+#							has_country_flag = vu_uncoloured_subjects_overlord
+#						}
+#						has_country_flag = vu_uncoloured_subjects_subject
+#					}
+#					is_colourable_subject_type = yes
+#				}
+#				change_country_color = {
+#					country = overlord
+#				}
+#				set_country_flag = has_subject_colour_flag
+#			}
+#		}
+#	}
+#}
+############################################################################################
+#Use sparingly, will cause some lag, but should be called whenever a new country forms,
+#a tag gets released etc., this will make sure all tags in the game are coloured correctly,
+#this will also fix a tag not being coloured correctly after being released in a war etc..
+vu_colour_refresh = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = vu_startup_disable_subject_colouring
+				}
+			}
+			vu_colour_all_countries = yes
+		}
+	}
+}
+
+vu_colour_all_countries = {
+	# global scope
+	hidden_effect = {
+		every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = vu_uncoloured_subjects_overlord
+				}
+				num_of_subjects = 1
+			}
+			every_subject_country = {
+				limit = {
+					is_colourable_subject_type = yes
+					#ToR_can_change_colour = yes
+				}
+				set_country_flag = has_subject_colour_flag
+				vu_colour_country = yes
+				every_subject_country = {
+					limit = {
+						is_colourable_subject_type = yes
+						#ToR_can_change_colour = yes
+					}
+					set_country_flag = has_subject_of_a_subject_colour_flag
+					vu_colour_country = yes
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					has_country_flag = has_subject_of_a_subject_colour_flag
+					has_country_flag = has_subject_colour_flag
+				}
+				is_subject = no
+			}
+			restore_country_color = yes
+		}
+	}
+}
+
+vu_colour_country = {
+	#PREV = overlord, THIS = subject
+	if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = BOH
+						is_subject = no
+					}
+					PREV = {
+						tag = BOH
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				230
+				80
+				40
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = POL
+						is_subject = no
+					}
+					PREV = {
+						tag = POL
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				180
+				50
+				70
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = PLC
+						is_subject = no
+					}
+					PREV = {
+						tag = PLC
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				240
+				40
+				80
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = LIT
+						is_subject = no
+					}
+					PREV = {
+						tag = LIT
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				160
+				50
+				130
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = BRA
+						is_subject = no
+					}
+					PREV = {
+						tag = BRA
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				150
+				110
+				110
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = PRU
+						is_subject = no
+					}
+					PREV = {
+						tag = PRU
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				70
+				90
+				170
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = TEU
+						is_subject = no
+					}
+					PREV = {
+						tag = TEU
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				190
+				170
+				160
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = LIV
+						is_subject = no
+					}
+					PREV = {
+						tag = LIV
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				100
+				100
+				150
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = DAN
+						is_subject = no
+					}
+					PREV = {
+						tag = DAN
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				210
+				90
+				90
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = HUN
+						is_subject = no
+					}
+					PREV = {
+						tag = HUN
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				90
+				130
+				90
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = TUR
+						is_subject = no
+					}
+					PREV = {
+						tag = TUR
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				110
+				160
+				80
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = MOS
+						is_subject = no
+					}
+					PREV = {
+						tag = MOS
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				220
+				200
+				120
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = TIM
+						is_subject = no
+					}
+					PREV = {
+						tag = TIM
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				190
+				20
+				50
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = ASK
+						is_subject = no
+					}
+					PREV = {
+						tag = ASK
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				180
+				50
+				90
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = MAM
+						is_subject = no
+					}
+					PREV = {
+						tag = MAM
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				240
+				200
+				70
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = ETH
+						is_subject = no
+					}
+					PREV = {
+						tag = ETH
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				70
+				140
+				210
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = MOR
+						is_subject = no
+					}
+					PREV = {
+						tag = MOR
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				210
+				130
+				80
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = ARA
+						is_subject = no
+					}
+					PREV = {
+						tag = ARA
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				190
+				90
+				90
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = PAP
+						is_subject = no
+					}
+					PREV = {
+						tag = PAP
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				240
+				240
+				240
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = STY
+						is_subject = no
+					}
+					PREV = {
+						tag = STY
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				70
+				150
+				70
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						OR = {
+							tag = AUT
+							tag = HAB
+						}
+						is_subject = no
+					}
+					PREV = {
+						OR = {
+							tag = AUT
+							tag = HAB
+						}
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				240
+				230
+				220
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = SAX
+						is_subject = no
+					}
+					PREV = {
+						tag = SAX
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				180
+				170
+				200
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = PRO
+						is_subject = no
+					}
+					PREV = {
+						tag = PRO
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				110
+				180
+				180
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = AUT
+						is_subject = no
+					}
+					PREV = {
+						tag = AUT
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				70
+				150
+				70
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = CAS
+						is_subject = no
+					}
+					PREV = {
+						tag = CAS
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				255
+				220
+				20
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = SPA
+						is_subject = no
+					}
+					PREV = {
+						tag = SPA
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				255
+				235
+				30
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = POR
+						is_subject = no
+					}
+					PREV = {
+						tag = POR
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				30
+				120
+				30
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = FRA
+						is_subject = no
+					}
+					PREV = {
+						tag = FRA
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				20
+				60
+				170
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = BUR
+						is_subject = no
+					}
+					PREV = {
+						tag = BUR
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				170
+				50
+				90
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						OR = {
+							tag = UKS
+							tag = ENG
+						}
+						is_subject = no
+					}
+					PREV = {
+						OR = {
+							tag = UKS
+							tag = ENG
+						}
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				250
+				40
+				40
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						OR = {
+							tag = UNK
+							tag = GBR
+						}
+						is_subject = no
+					}
+					PREV = {
+						OR = {
+							tag = UNK
+							tag = GBR
+						}
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				240
+				20
+				20
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				OR = {
+					AND = {
+						tag = SCO
+						is_subject = no
+					}
+					PREV = {
+						tag = SCO
+						is_subject = no
+					}
+				}
+			}
+		}
+		change_country_color = {
+			color = {
+				20
+				120
+				210
+			}
+		}
+	}
+	else = {
+		change_country_color = {
+			country = PREV
+		}
+	}
+}
+
+vu_do_with_flag_and_remove_it = {
+	#A quick little thing to simplify the settings
+	if = {
+		limit = {
+			has_country_flag = $flag$
+		}
+		custom_tooltip = $flag$
+		hidden_effect = {
+			$effect$ = yes			#This is fine, it just works, don't question it
+			clr_country_flag = $flag$
+		}
+	}
+}
+
+remove_extra_tags = {
+	hidden_effect = {
+		remove_extra_HRE_tags = yes
+		remove_extra_western_tags = yes
+		remove_extra_italian_tags = yes
+		remove_extra_swiss_tags = yes
+		remove_extra_middle_eastern_tags = yes
+		remove_extra_balkaner_tags = yes
+		remove_extra_eastern_european_tags = yes
+		remove_extra_indian_tags = yes
+		remove_extra_afrikan_tags = yes
+		#I ain't dealing with Japan, somebody else can do that, too chaotic for me + my knowledge of the area is rather limited, 
+		#so I'd rather leave that to somebody else who can better do that and make sure the historically important nations get preserved.
+		#Nor am I going to deal with southeast asia, or the pacific, or the new world, as I cannot make any authorative choices on the matter. | VU
+	}
+}
+
+vu_integrate_tag_if_possible = {
+	if = {
+		limit = {
+			$tag$ = {
+				ai = yes
+			}
+		}
+		inherit = $tag$
+	}
+}
+
+remove_extra_balkaner_tags = {
+	TUR = {
+		vu_integrate_tag_if_possible = {
+			tag = BUL
+		}
+	}
+	SER = {
+		vu_integrate_tag_if_possible = {
+			tag = MON
+		}
+	}
+	VEN = {
+		vu_integrate_tag_if_possible = {
+			tag = RAG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CDA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NAX
+		}
+	}
+	GEN = {
+		vu_integrate_tag_if_possible = {
+			tag = FEO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GZR
+		}
+	}
+	ALB = {
+		vu_integrate_tag_if_possible = {
+			tag = SP1
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BLC
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ARI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LKU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MZK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ZHR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = THP
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DKJ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DSH
+		}
+	}
+	BYZ = {
+		vu_integrate_tag_if_possible = {
+			tag = ATH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = EPI
+		}
+	}
+	CYP = {
+		vu_integrate_tag_if_possible = {
+			tag = KNI
+		}
+	}
+}
+
+remove_extra_indian_tags = {
+	#Nepal
+	KSH = {
+		vu_integrate_tag_if_possible = {
+			tag = KGR
+		}
+	}
+	UTS = {
+		vu_integrate_tag_if_possible = {
+			tag = GUG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LWA
+		}
+	}
+	ASS = {
+		vu_integrate_tag_if_possible = {
+			tag = SDY
+		}
+	}
+	PHA = {
+		vu_integrate_tag_if_possible = {
+			tag = KMT
+		}
+	}
+	DNG = {
+		vu_integrate_tag_if_possible = {
+			tag = GRK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TRT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KTU
+		}
+	}
+	KMN = {
+		vu_integrate_tag_if_possible = {
+			tag = SRM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GHR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DTI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JML
+		}
+	}
+	KAM = {
+		vu_integrate_tag_if_possible = {
+			tag = SYG
+		}
+	}
+	#Northern India
+	DLH = {
+		vu_integrate_tag_if_possible = {
+			tag = SRH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JAN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NGA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MEW
+		}
+	}
+	MER = {
+		vu_integrate_tag_if_possible = {
+			tag = JSL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DHU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HAD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GWA
+		}
+	}
+	JNP = {
+		vu_integrate_tag_if_possible = {
+			tag = BGL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NGP
+		}
+	}
+	BNG = {
+		vu_integrate_tag_if_possible = {
+			tag = MBL
+		}
+	}
+	#Central India
+	MLW = {
+		vu_integrate_tag_if_possible = {
+			tag = KLP
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GDW
+		}
+		vu_integrate_tag_if_possible = {
+			tag = PAN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BDN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KHD
+		}
+	}
+	#West India
+	GUJ = {
+		vu_integrate_tag_if_possible = {
+			tag = IDR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CMP
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BGA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = PTL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JLV
+		}
+	}
+	KAT = {
+		vu_integrate_tag_if_possible = {
+			tag = PRB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JGD
+		}
+	}
+	#East India
+	ORI = {
+		vu_integrate_tag_if_possible = {
+			tag = JPR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = PRD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GRJ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KJH
+		}
+	}
+	RTT = {
+		vu_integrate_tag_if_possible = {
+			tag = PTT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KLH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BST
+		}
+	}
+	#Southern India
+	KOC = {
+		vu_integrate_tag_if_possible = {
+			tag = VLV
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MAB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KLT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = VND
+		}
+	}
+	JFN = {
+		vu_integrate_tag_if_possible = {
+			tag = VNI
+		}
+	}
+	CEY = {
+		vu_integrate_tag_if_possible = {
+			tag = KND
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DGL
+		}
+	}
+	VIJ = {
+		vu_integrate_tag_if_possible = {
+			tag = MYS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MAD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = YOR
+		}
+	}
+	BAH = {
+		vu_integrate_tag_if_possible = {
+			tag = TLG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CHD
+		}
+	}
+}
+
+remove_extra_eastern_european_tags = {
+	KIE = {
+		vu_integrate_tag_if_possible = {
+			tag = BSV
+		}
+	}
+	OKA = {
+		vu_integrate_tag_if_possible = {
+			tag = BLV
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MSL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = VTN
+		}
+	}
+	TVE = {
+		vu_integrate_tag_if_possible = {
+			tag = ZBT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MOZ
+		}
+	}
+	MOS = {
+		vu_integrate_tag_if_possible = {
+			tag = RSO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SPK
+		}
+	}
+	LIV = {
+		vu_integrate_tag_if_possible = {
+			tag = OSL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FCR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DRP
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RIG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KUR
+		}
+	}
+	BLO = {
+		vu_integrate_tag_if_possible = {
+			tag = YAR
+		}
+	}
+	RYA = {
+		vu_integrate_tag_if_possible = {
+			tag = PRS
+		}
+	}
+	PRM = {
+		vu_integrate_tag_if_possible = {
+			tag = VYA
+		}
+	}
+	GLC = {
+		vu_integrate_tag_if_possible = {
+			tag = MLL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = UMA
+		}
+	}
+	OIR = {
+		vu_integrate_tag_if_possible = {
+			tag = KYG
+		}
+	}
+	CHG = {
+		vu_integrate_tag_if_possible = {
+			tag = KAS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BDK
+		}
+	}
+}
+
+remove_extra_swiss_tags = {
+	TTL = {
+		vu_integrate_tag_if_possible = {
+			tag = LKU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AP3
+		}
+	}
+	BSL = {
+		vu_integrate_tag_if_possible = {
+			tag = B1E
+		}
+	}
+	SAV = {
+		vu_integrate_tag_if_possible = {
+			tag = VUD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NEU
+		}
+	}
+	ZUR = {
+		vu_integrate_tag_if_possible = {
+			tag = S4R
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ST6
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ZU6
+		}
+	}
+	BRN = {
+		vu_integrate_tag_if_possible = {
+			tag = BD9
+		}
+		vu_integrate_tag_if_possible = {
+			tag = N1D
+		}
+		vu_integrate_tag_if_possible = {
+			tag = S0L
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FRB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LU3
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FRU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = OB9
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FOI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ZDN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FOI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = UR1
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SW1
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GL4
+		}
+	}
+}
+
+remove_extra_HRE_tags = {
+	set_global_flag = vu_startup_small_HRE
+	#Bohemia
+	BOH = {
+		vu_integrate_tag_if_possible = {
+			tag = MVA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SOR
+		}
+	}
+	GLG = {
+		vu_integrate_tag_if_possible = {
+			tag = LEG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JAW
+		}
+		vu_integrate_tag_if_possible = {
+			tag = OLE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NAM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BEG
+		}
+	}
+	RAC = {
+		vu_integrate_tag_if_possible = {
+			tag = TRO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NIE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = OPL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TES
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ASC
+		}
+	}
+	#Austria
+	AUT = {
+		vu_integrate_tag_if_possible = {
+			tag = SH1
+		}
+		vu_integrate_tag_if_possible = {
+			tag = PSS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BSN
+		}
+	}
+	STY = {
+		vu_integrate_tag_if_possible = {
+			tag = CR1
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CNL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GRZ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TST
+		}
+	}
+	CLI = {
+		vu_integrate_tag_if_possible = {
+			tag = RIJ
+		}
+	}
+	#Low Coutries
+	PIC = {
+		vu_integrate_tag_if_possible = {
+			tag = SPO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ATS
+		}
+	}
+	UTR = {
+		vu_integrate_tag_if_possible = {
+			tag = AHS
+		}
+	}
+	FRI = {
+		vu_integrate_tag_if_possible = {
+			tag = GRN
+		}
+	}
+	HOL = {
+		vu_integrate_tag_if_possible = {
+			tag = ZEE
+		}
+	}
+	LIE = {
+		vu_integrate_tag_if_possible = {
+			tag = STV
+		}
+	}
+	FLA = {
+		vu_integrate_tag_if_possible = {
+			tag = TOA
+		}
+	}
+	#Germany
+	GEL = {
+		vu_integrate_tag_if_possible = {
+			tag = LBG
+		}
+	}
+	EFR = {
+		vu_integrate_tag_if_possible = {
+			tag = OLD
+		}
+	}
+	SHL = {
+		vu_integrate_tag_if_possible = {
+			tag = PNN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DTT
+		}
+	}
+	HSA = {
+		vu_integrate_tag_if_possible = {
+			tag = BLK
+		}
+	}
+	HAM = {
+		vu_integrate_tag_if_possible = {
+			tag = LAU
+		}
+	}
+	MKL = {
+		vu_integrate_tag_if_possible = {
+			tag = RAT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BSW
+		}
+		vu_integrate_tag_if_possible = {
+			tag = STR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = M5H
+		}
+	}
+	BRA = {
+		vu_integrate_tag_if_possible = {
+			tag = HVL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RUP
+		}
+	}
+	STP = {
+		vu_integrate_tag_if_possible = {
+			tag = KMI
+		}
+	}
+	WOL = {
+		vu_integrate_tag_if_possible = {
+			tag = RUG
+		}
+	}
+	ANH = {
+		vu_integrate_tag_if_possible = {
+			tag = BSB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = WIN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MNF
+		}
+	}
+	MUN = {
+		vu_integrate_tag_if_possible = {
+			tag = DPZ
+		}
+	}
+	VGT = {
+		vu_integrate_tag_if_possible = {
+			tag = STO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SWZ
+		}
+	}
+	TCK = {
+		vu_integrate_tag_if_possible = {
+			tag = OSN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SCH
+		}
+	}
+	BRG = {
+		vu_integrate_tag_if_possible = {
+			tag = LPP
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MND
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BCH
+		}
+	}
+	BRU = {
+		vu_integrate_tag_if_possible = {
+			tag = COP
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HSH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = EVS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BHS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ZGM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SHF
+		}
+	}
+	FLD = {
+		vu_integrate_tag_if_possible = {
+			tag = HRF
+		}
+	}
+	HES = {
+		vu_integrate_tag_if_possible = {
+			tag = WLD
+		}
+	}
+	KOL = {
+		vu_integrate_tag_if_possible = {
+			tag = WIE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = PAD
+		}
+	}
+	KLE = {
+		vu_integrate_tag_if_possible = {
+			tag = MKK
+		}
+	}
+	A8B = {
+		vu_integrate_tag_if_possible = {
+			tag = VER
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HOY
+		}
+	}
+	NSA = {
+		vu_integrate_tag_if_possible = {
+			tag = SAY
+		}
+	}
+	FKS = {
+		vu_integrate_tag_if_possible = {
+			tag = KTZ
+		}
+	}
+	PAL = {
+		vu_integrate_tag_if_possible = {
+			tag = ERB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SPY
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HOM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LIN
+		}
+	}
+	LWN = {
+		vu_integrate_tag_if_possible = {
+			tag = LMP
+		}
+	}
+	MAI = {
+		vu_integrate_tag_if_possible = {
+			tag = DRM
+		}
+	}
+	ANS = {
+		vu_integrate_tag_if_possible = {
+			tag = TRU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LEU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BET
+		}
+	}
+	KMB = {
+		vu_integrate_tag_if_possible = {
+			tag = WDS
+		}
+	}
+	OET = {
+		vu_integrate_tag_if_possible = {
+			tag = ELW
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HLF
+		}
+	}
+	HOH = {
+		vu_integrate_tag_if_possible = {
+			tag = NEL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = WER
+		}
+	}
+	AUG = {
+		vu_integrate_tag_if_possible = {
+			tag = MBZ
+		}
+	}
+	KMP = {
+		vu_integrate_tag_if_possible = {
+			tag = MGB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KRH
+		}
+	}
+	LBV = {
+		vu_integrate_tag_if_possible = {
+			tag = FRG
+		}
+	}
+	REG = {
+		vu_integrate_tag_if_possible = {
+			tag = PBR
+		}
+	}
+	TRI = {
+		vu_integrate_tag_if_possible = {
+			tag = SPN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RHE
+		}
+	}
+	SAA = {
+		vu_integrate_tag_if_possible = {
+			tag = VEL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ZWE
+		}
+	}
+	MTZ = {
+		vu_integrate_tag_if_possible = {
+			tag = LIC
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HAG
+		}
+	}
+	ALS = {
+		vu_integrate_tag_if_possible = {
+			tag = BMN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FEN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RPL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MLH
+		}
+	}
+	BAM = {
+		vu_integrate_tag_if_possible = {
+			tag = HEN
+		}
+	}
+	WBG = {
+		vu_integrate_tag_if_possible = {
+			tag = BBH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = WRT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CTL
+		}
+	}
+	TIR = {
+		vu_integrate_tag_if_possible = {
+			tag = TNT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FBB
+		}
+	}
+	#Swabia
+	WLB = {
+		vu_integrate_tag_if_possible = {
+			tag = RW7
+		}
+	}
+	WUR = {
+		vu_integrate_tag_if_possible = {
+			tag = URA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = STU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FCB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BAD
+		}
+	}
+	SSN = {
+		vu_integrate_tag_if_possible = {
+			tag = TUT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FUR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TDT
+		}
+	}
+	SCF = {
+		vu_integrate_tag_if_possible = {
+			tag = FR1
+		}
+	}
+	FC5 = {
+		vu_integrate_tag_if_possible = {
+			tag = LPF
+		}
+	}
+	KNZ = {
+		vu_integrate_tag_if_possible = {
+			tag = RVA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = K0A
+		}
+	}
+	#Outer German sphere
+	TEU = {
+		vu_integrate_tag_if_possible = {
+			tag = PMS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KLL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = WRM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SGA
+		}
+	}
+}
+
+remove_extra_western_tags = {
+	#Ireland
+	DMS = {
+		vu_integrate_tag_if_possible = {
+			tag = MCM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = THO
+		}
+	}
+	KID = {
+		vu_integrate_tag_if_possible = {
+			tag = FLY
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ORD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LGN
+		}
+	}
+	ECO = {
+		vu_integrate_tag_if_possible = {
+			tag = GLW
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MYO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = WCO
+		}
+	}
+	SLN = {
+		vu_integrate_tag_if_possible = {
+			tag = BIF
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FGH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MGH
+		}
+	}
+	TYR = {
+		vu_integrate_tag_if_possible = {
+			tag = TRY
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CLN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ANR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = IVE
+		}
+	}
+	#England
+	SCO = {
+		vu_integrate_tag_if_possible = {
+			tag = DUG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RLL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GOR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SNC
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CM1
+		}
+	}
+	MDD = {
+		vu_integrate_tag_if_possible = {
+			tag = MCD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CBE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MCN
+		}
+	}
+	ENG = {
+		vu_integrate_tag_if_possible = {
+			tag = WRK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DUR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GLR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RT1
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NOL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RCH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LNN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = YRK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KOI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BCK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = OXF
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BED
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NFL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ARC
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SM1
+		}
+		vu_integrate_tag_if_possible = {
+			tag = EXE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JER
+		}
+	}
+	WLS = {
+		vu_integrate_tag_if_possible = {
+			tag = WMC
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CST
+		}
+	}
+	#Fance
+	PRO = {
+		vu_integrate_tag_if_possible = {
+			tag = ANJ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CMB
+		}
+	}
+	LOR = {
+		vu_integrate_tag_if_possible = {
+			tag = BAR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = VDN
+		}
+	}
+	AMG = {
+		vu_integrate_tag_if_possible = {
+			tag = CMG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FOI
+		}
+	}
+	FOR = {
+		vu_integrate_tag_if_possible = {
+			tag = VLY
+		}
+	}
+	ORL = {
+		vu_integrate_tag_if_possible = {
+			tag = RHM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RET
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LGR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TOL
+		}
+	}
+	BOU = {
+		vu_integrate_tag_if_possible = {
+			tag = AUV
+		}
+	}
+	MNE = {
+		vu_integrate_tag_if_possible = {
+			tag = ALE
+		}
+	}
+	BUR = {
+		vu_integrate_tag_if_possible = {
+			tag = NEV
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BSA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LXL
+		}
+	}
+	PAP = {
+		vu_integrate_tag_if_possible = {
+			tag = AVI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ONG
+		}
+	}
+	#Iberia
+	POR = {
+		vu_integrate_tag_if_possible = {
+			tag = BZA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BJA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AB3
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CIM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AGV
+		}
+	}
+	LON = {
+		vu_integrate_tag_if_possible = {
+			tag = ASU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AB0
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GAL
+		}
+	}
+	CAS = {
+		vu_integrate_tag_if_possible = {
+			tag = BDH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LBC
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GUP
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ALV
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MLN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TLD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MUR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JAE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CDB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SVL
+		}
+	}
+	ARA = {
+		vu_integrate_tag_if_possible = {
+			tag = VAL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AB8
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CAT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MJO
+		}
+	}
+}
+
+remove_extra_italian_tags = {
+	SAV = {
+		vu_integrate_tag_if_possible = {
+			tag = GNV
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MFA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SZO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TND
+		}
+	}
+	MLO = {
+		vu_integrate_tag_if_possible = {
+			tag = MNO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ATI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ASD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BOB
+		}
+	}
+	GEN = {
+		vu_integrate_tag_if_possible = {
+			tag = FNL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CEV
+		}
+		vu_integrate_tag_if_possible = {
+			tag = COR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MNC
+		}
+	}
+	VEN = {
+		vu_integrate_tag_if_possible = {
+			tag = AQU
+		}
+	}
+	FER = {
+		vu_integrate_tag_if_possible = {
+			tag = MOD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BLG
+		}
+	}
+	LUC = {
+		vu_integrate_tag_if_possible = {
+			tag = MSS
+		}
+	}
+	MAN = {
+		vu_integrate_tag_if_possible = {
+			tag = CRR
+		}
+	}
+	LAN = {
+		vu_integrate_tag_if_possible = {
+			tag = VLR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ARE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CTN
+		}
+	}
+	SIE = {
+		vu_integrate_tag_if_possible = {
+			tag = PIO
+		}
+	}
+	SNM = {
+		vu_integrate_tag_if_possible = {
+			tag = AOR
+		}
+	}
+	PAP = {
+		vu_integrate_tag_if_possible = {
+			tag = ORV
+		}
+		vu_integrate_tag_if_possible = {
+			tag = PGA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CMR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FMO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ANC
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MTS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FRL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FNZ
+		}
+	}
+	NAP = {
+		vu_integrate_tag_if_possible = {
+			tag = SIC
+		}
+	}
+	ARA = {
+		vu_integrate_tag_if_possible = {
+			tag = SAR
+		}
+	}
+}
+
+remove_extra_middle_eastern_tags = {
+	CIR = {
+		vu_integrate_tag_if_possible = {
+			tag = KBD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BKS
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ALN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AKZ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = QRC
+		}
+	}
+	GAZ = {
+		vu_integrate_tag_if_possible = {
+			tag = AVR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AKN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DID
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DRZ
+		}
+	}
+	SRV = {
+		vu_integrate_tag_if_possible = {
+			tag = DER
+		}
+		vu_integrate_tag_if_possible = {
+			tag = RUT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SHE
+		}
+	}
+	AKK = {
+		vu_integrate_tag_if_possible = {
+			tag = EGI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BTL
+		}
+	}
+	QAR = {
+		vu_integrate_tag_if_possible = {
+			tag = BHT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MUK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SIN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HAK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SRN
+		}
+	}
+	KCN = {
+		vu_integrate_tag_if_possible = {
+			tag = ART
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HMM
+		}
+	}
+	ARL = {
+		vu_integrate_tag_if_possible = {
+			tag = BPI
+		}
+	}
+	TAB = {
+		vu_integrate_tag_if_possible = {
+			tag = KRY
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BDP
+		}
+	}
+	QOM = {
+		vu_integrate_tag_if_possible = {
+			tag = ARD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = LRI
+		}
+	}
+	SHM = {
+		vu_integrate_tag_if_possible = {
+			tag = UNZ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ANZ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MRU
+		}
+	}
+	HDR = {
+		vu_integrate_tag_if_possible = {
+			tag = MHR
+		}
+		vu_integrate_tag_if_possible = {
+			tag = FDI
+		}
+	}
+	HED = {
+		vu_integrate_tag_if_possible = {
+			tag = AZD
+		}
+	}
+	MKR = {
+		vu_integrate_tag_if_possible = {
+			tag = KUU
+		}
+	}
+	ABB = {
+		vu_integrate_tag_if_possible = {
+			tag = ABD
+		}
+	}
+	ALO = {
+		vu_integrate_tag_if_possible = {
+			tag = SLK
+		}
+	}
+	ETH = {
+		vu_integrate_tag_if_possible = {
+			tag = DAM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = HDY
+		}
+	}
+	KAF = {
+		vu_integrate_tag_if_possible = {
+			tag = ENA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = JJI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = WLY
+		}
+	}
+	AJU = {
+		vu_integrate_tag_if_possible = {
+			tag = MDI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MRE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = OGD
+		}
+	}
+	ADA = {
+		vu_integrate_tag_if_possible = {
+			tag = WAR
+		}
+	}
+	MZB = {
+		vu_integrate_tag_if_possible = {
+			tag = LGH
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TGT
+		}
+		vu_integrate_tag_if_possible = {
+			tag = OGL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ZAB
+		}
+	}
+	GDM = {
+		vu_integrate_tag_if_possible = {
+			tag = GHD
+		}
+	}
+	FZA = {
+		vu_integrate_tag_if_possible = {
+			tag = BSM
+		}
+	}
+	MOR = {
+		vu_integrate_tag_if_possible = {
+			tag = MRK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TFL
+		}
+	}
+}
+
+remove_extra_afrikan_tags = {
+	#South Afrika
+	ZIM = {
+		vu_integrate_tag_if_possible = {
+			tag = RZW
+		}
+	}
+	MRA = {
+		vu_integrate_tag_if_possible = {
+			tag = LDU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TBK
+		}
+	}
+	KUN = {
+		vu_integrate_tag_if_possible = {
+			tag = HOA
+		}
+	}
+	XOO = {
+		vu_integrate_tag_if_possible = {
+			tag = SAN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = AMK
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NHO
+		}
+	}
+	KWE = {
+		vu_integrate_tag_if_possible = {
+			tag = ILN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GAN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = GUI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TSA
+		}
+	}
+	#East Africa
+	ZAN = {
+		vu_integrate_tag_if_possible = {
+			tag = MKU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MBA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MLI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = PTE
+		}
+	}
+	ANT = {
+		vu_integrate_tag_if_possible = {
+			tag = MFY
+		}
+	}
+	#Cental Africa
+	MUC = {
+		vu_integrate_tag_if_possible = {
+			tag = MWI
+		}
+	}
+	WMB = {
+		vu_integrate_tag_if_possible = {
+			tag = MBE
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MBB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = VYE
+		}
+	}
+	KON = {
+		vu_integrate_tag_if_possible = {
+			tag = LOA
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MTB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KSM
+		}
+		vu_integrate_tag_if_possible = {
+			tag = TFL
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NDO
+		}
+	}
+	YAK = {
+		vu_integrate_tag_if_possible = {
+			tag = KUB
+		}
+	}
+	LND = {
+		vu_integrate_tag_if_possible = {
+			tag = KSJ
+		}
+		vu_integrate_tag_if_possible = {
+			tag = CKW
+		}
+		vu_integrate_tag_if_possible = {
+			tag = MBU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KZB
+		}
+	}
+	LUB = {
+		vu_integrate_tag_if_possible = {
+			tag = KLD
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KIK
+		}
+	}
+	RWA = {
+		vu_integrate_tag_if_possible = {
+			tag = BUU
+		}
+		vu_integrate_tag_if_possible = {
+			tag = KRW
+		}
+		vu_integrate_tag_if_possible = {
+			tag = UBH
+		}
+	}
+	BUG = {
+		vu_integrate_tag_if_possible = {
+			tag = BSG
+		}
+		vu_integrate_tag_if_possible = {
+			tag = BNY
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NKO
+		}
+	}
+	#West Afrika
+	KBO = {
+		vu_integrate_tag_if_possible = {
+			tag = YAO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = SAO
+		}
+	}
+	BEN = {
+		vu_integrate_tag_if_possible = {
+			tag = OYO
+		}
+		vu_integrate_tag_if_possible = {
+			tag = NUP
+		}
+	}
+	BON = {
+		vu_integrate_tag_if_possible = {
+			tag = DGB
+		}
+		vu_integrate_tag_if_possible = {
+			tag = DAH
+		}
+	}
+	ZAF = {
+		vu_integrate_tag_if_possible = {
+			tag = JNN
+		}
+	}
+	SON = {
+		vu_integrate_tag_if_possible = {
+			tag = MSI
+		}
+		vu_integrate_tag_if_possible = {
+			tag = YAT
+		}
+	}
+	WGD = {
+		vu_integrate_tag_if_possible = {
+			tag = GUR
+		}
+	}
+	KTS = {
+		vu_integrate_tag_if_possible = {
+			tag = KAN
+		}
+		vu_integrate_tag_if_possible = {
+			tag = ZZZ
+		}
+	}
+}
+
+enable_hard_to_colonise = {
+	hidden_effect = {
+		hard_to_colonise_1 = {
+			add_permanent_province_modifier = {
+				name = vu_hard_to_colonise_1
+				duration = -1
+			}
+		}
+		hard_to_colonise_2 = {
+			add_permanent_province_modifier = {
+				name = vu_hard_to_colonise_2
+				duration = -1
+			}
+		}
+		hard_to_colonise_3 = {
+			add_permanent_province_modifier = {
+				name = vu_hard_to_colonise_3
+				duration = -1
+			}
+		}
+		hard_to_colonise_4 = {
+			add_permanent_province_modifier = {
+				name = vu_hard_to_colonise_4
+				duration = -1
+			}
+		}
+		hard_to_colonise_5 = {
+			add_permanent_province_modifier = {
+				name = vu_hard_to_colonise_5
+				duration = -1
+			}
+		}
+	}
+}
+
+spawn_troops_on_startup = {
+	#VU additions by San Felipe
+	hidden_effect = {
+		ENG = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 24
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_infantry
+						value = 25
+					}
+				}
+				random_owned_province = {
+					limit = {
+						infantry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = infantry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_infantry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			#
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 6
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_cavalry
+						value = 7
+					}
+				}
+				random_owned_province = {
+					limit = {
+						cavalry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = cavalry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_cavalry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+			artillery = capital
+			export_to_variable = {
+				which = num_of_heavy_ship
+				value = trigger_value:num_of_heavy_ship
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_heavy_ship
+							value = 10
+						}
+					}
+				}
+				heavy_ship = capital
+				change_variable = {
+					which = num_of_heavy_ship
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_heavy_ship
+				value = 0
+			}
+		}
+		BYZ = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 28
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_infantry
+						value = 29
+					}
+				}
+				random_owned_province = {
+					limit = {
+						infantry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = infantry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_infantry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 12
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_cavalry
+						value = 13
+					}
+				}
+				random_owned_province = {
+					limit = {
+						cavalry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = cavalry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_cavalry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_heavy_ship
+				value = trigger_value:num_of_heavy_ship
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_heavy_ship
+							value = 3
+						}
+					}
+				}
+				heavy_ship = capital
+				change_variable = {
+					which = num_of_heavy_ship
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_heavy_ship
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_galley
+				value = trigger_value:num_of_galley
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_galley
+							value = 12
+						}
+					}
+				}
+				galley = capital
+				change_variable = {
+					which = num_of_galley
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_galley
+				value = 0
+			}
+		}
+		CAS = {
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			export_to_variable = {
+				which = num_of_heavy_ship
+				value = trigger_value:num_of_heavy_ship
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_heavy_ship
+							value = 8
+						}
+					}
+				}
+				heavy_ship = 224
+				change_variable = {
+					which = num_of_heavy_ship
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_heavy_ship
+				value = 0
+			}
+		}
+		POR = {
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+			export_to_variable = {
+				which = num_of_heavy_ship
+				value = trigger_value:num_of_heavy_ship
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_heavy_ship
+							value = 6
+						}
+					}
+				}
+				heavy_ship = 4556
+				change_variable = {
+					which = num_of_heavy_ship
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_heavy_ship
+				value = 0
+			}
+		}
+		GOL = {
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+		KAZ = {
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+		NOG = {
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+		SHY = {
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+		CRI = {
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+		}
+		FRA = {
+			export_to_variable = {
+				which = num_of_heavy_ship
+				value = trigger_value:num_of_heavy_ship
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_heavy_ship
+							value = 3
+						}
+					}
+				}
+				heavy_ship = 6928
+				change_variable = {
+					which = num_of_heavy_ship
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_heavy_ship
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 32
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_infantry
+						value = 33
+					}
+				}
+				random_owned_province = {
+					limit = {
+						infantry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = infantry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_infantry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 8
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_cavalry
+						value = 9
+					}
+				}
+				random_owned_province = {
+					limit = {
+						cavalry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = cavalry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_cavalry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+		}
+		MAM = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 14
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_infantry
+						value = 15
+					}
+				}
+				random_owned_province = {
+					limit = {
+						infantry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = infantry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_infantry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			#
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 6
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_cavalry
+						value = 7
+					}
+				}
+				random_owned_province = {
+					limit = {
+						cavalry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = cavalry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_cavalry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+			#
+			export_to_variable = {
+				which = num_of_artillery
+				value = trigger_value:num_of_artillery
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_artillery
+							value = 0
+						}
+					}
+				}
+				artillery = capital
+				change_variable = {
+					which = num_of_artillery
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_artillery
+						value = 0
+					}
+				}
+				random_owned_province = {
+					limit = {
+						artillery_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = artillery
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_artillery
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_artillery
+				value = 0
+			}
+		}
+		TUR = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 56
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_infantry
+						value = 57
+					}
+				}
+				random_owned_province = {
+					limit = {
+						infantry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = infantry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_infantry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 24
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_cavalry
+						value = 25
+					}
+				}
+				random_owned_province = {
+					limit = {
+						cavalry_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = cavalry
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_cavalry
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_artillery
+				value = trigger_value:num_of_artillery
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_artillery
+							value = 0
+						}
+					}
+				}
+				artillery = capital
+				change_variable = {
+					which = num_of_artillery
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					check_variable = {
+						which = num_of_artillery
+						value = 0
+					}
+				}
+				random_owned_province = {
+					limit = {
+						artillery_in_province = PREV
+					}
+					kill_units = {
+						who = owner
+						type = artillery
+						amount = 1
+					}
+				}
+				change_variable = {
+					which = num_of_artillery
+					value = -1
+				}
+			}
+			set_variable = {
+				which = num_of_artillery
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_galley
+				value = trigger_value:num_of_galley
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_galley
+							value = 16
+						}
+					}
+				}
+				galley = 7129
+				change_variable = {
+					which = num_of_galley
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_galley
+				value = 0
+			}
+		}
+		STY = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 16
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 4
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+		}
+		BOH = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 18
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 4
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_artillery
+				value = trigger_value:num_of_artillery
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_artillery
+							value = 3
+						}
+					}
+				}
+				artillery = capital
+				change_variable = {
+					which = num_of_artillery
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_artillery
+				value = 0
+			}
+		}
+		HUN = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 16
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 4
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+		}
+		POL = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 12
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 4
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+			random_owned_province = {
+				limit = {
+					artillery_in_province = PREV
+				}
+				kill_units = {
+					who = owner
+					type = artillery
+					amount = 1
+				}
+			}
+		}
+		TEU = {
+			export_to_variable = {
+				which = num_of_infantry
+				value = trigger_value:num_of_infantry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_infantry
+							value = 10
+						}
+					}
+				}
+				infantry = capital
+				change_variable = {
+					which = num_of_infantry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_infantry
+				value = 0
+			}
+			export_to_variable = {
+				which = num_of_cavalry
+				value = trigger_value:num_of_cavalry
+			}
+			while = {
+				limit = {
+					is_year = 1444
+					NOT = {
+						check_variable = {
+							which = num_of_cavalry
+							value = 4
+						}
+					}
+				}
+				cavalry = capital
+				change_variable = {
+					which = num_of_cavalry
+					value = 1
+				}
+			}
+			set_variable = {
+				which = num_of_cavalry
+				value = 0
+			}
+		}
+	}
+}
+
+crownland_share_on_startup = {
+	hidden_effect = {
+		if = {
+			limit = {
+				tag = TEU
+			}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 15
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -10
+			}
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			change_estate_land_share = {
+				estate = estate_jews
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 10
+			}
+		}
+		if = {
+			limit = {
+				tag = SCO
+			}
+			change_estate_land_share = {
+				estate = estate_jews
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 10
+			}
+		}
+		if = {
+			limit = {
+				tag = BOH
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -14
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = 5
+			}
+		}
+		if = {
+			limit = {
+				tag = BRA
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -7
+			}
+			change_estate_land_share = {
+				estate = estate_jews
+				share = 12
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -13
+			}
+		}
+		if = {
+			limit = {
+				tag = CAS
+			}
+			change_estate_land_share = {
+				estate = estate_jews
+				share = -30
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -9
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_jews
+			}
+			change_estate_land_share = {
+				estate = estate_jews
+				share = -20
+			}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 4
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 18
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = 4
+			}
+		}
+	}
+}
+
+vu_on_ottoman_age = {
+	if = {
+		limit = {
+			OR = {
+				has_country_modifier = rise_of_the_ottomans
+				has_country_modifier = zenith_of_the_ottomans
+				has_country_modifier = twilight_of_the_ottomans
+				has_country_modifier = decline_of_the_ottomans
+			}
+		}
+		remove_country_modifier = rise_of_the_ottomans
+		remove_country_modifier = zenith_of_the_ottomans
+		remove_country_modifier = twilight_of_the_ottomans
+		remove_country_modifier = decline_of_the_ottomans
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_discovery
+		}
+		add_country_modifier = {
+			name = rise_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_reformation
+		}
+		add_country_modifier = {
+			name = zenith_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_absolutism
+		}
+		add_country_modifier = {
+			name = twilight_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_revolutions
+		}
+		add_country_modifier = {
+			name = decline_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
+	if = {
+		limit = {
+			tag = BOH
+			NOT = {
+				has_country_flag = boh_hussite_aftermath_flag
+			}
+		}
+		set_country_flag = boh_hussite_aftermath_flag
+		country_event = {
+			id = flavor_boh.15
+		}
+	}
+}
+
+vu_add_regimental_camps = {
+	hidden_effect = {
+		TUR = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = thrace_area
+						area = eastern_macedonia_area
+						area = macedonia_area
+						area = northern_macedonia_area
+						area = upper_thrace_area
+						area = northern_thrace_area
+						area = karasi_area
+						area = hudavendigar_area
+						area = aeolia_area
+					}
+				}
+				add_building = regimental_camp
+			}
+		}
+		MAM = {
+			every_owned_province = {
+				limit = {
+					area = bahari_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		MNG = {
+			every_owned_province = {
+				add_building = regimental_camp
+			}
+		}
+		TIM = {
+			every_owned_province = {
+				limit = {
+					region = khorasan_region
+				}
+				add_building = regimental_camp
+			}
+		}
+		BYZ = {
+			every_owned_province = {
+				add_building = regimental_camp
+			}
+		}
+		FRA = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = ile_de_france_area
+						area = champagne_area
+					}
+				}
+				add_building = regimental_camp
+			}
+		}
+		ENG = {
+			every_owned_province = {
+				limit = {
+					area = greater_london_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		HUN = {
+			every_owned_province = {
+				limit = {
+					area = alfold_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		BOH = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = prague_area
+						area = bohemia_area
+					}
+				}
+				add_building = regimental_camp
+			}
+		}
+		POL = {
+			every_owned_province = {
+				limit = {
+					area = central_poland_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		TEU = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = nadruvia_area
+						area = west_prussia_area
+					}
+				}
+				add_building = regimental_camp
+			}
+		}
+		DAN = {
+			every_owned_province = {
+				limit = {
+					area = kobenhavn_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		SCO = {
+			every_owned_province = {
+				limit = {
+					area = lowlands_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		GRA = {
+			every_owned_province = {
+				limit = {
+					area = upper_andalucia_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		MOR = {
+			every_owned_province = {
+				limit = {
+					area = western_morocco_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		TLC = {
+			every_owned_province = {
+				limit = {
+					area = barbary_coast_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		TUN = {
+			every_owned_province = {
+				limit = {
+					area = tunisia_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		SAX = {
+			every_owned_province = {
+				limit = {
+					area = thuringia_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		MLO = {
+			every_owned_province = {
+				limit = {
+					area = lombardy_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		PAP = {
+			every_owned_province = {
+				limit = {
+					area = lazio_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		NAP = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 2983
+						province_id = 121
+					}
+				}
+				add_building = regimental_camp
+			}
+		}
+		FLA = {
+			every_owned_province = {
+				limit = {
+					area = flanders_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		VEN = {
+			every_owned_province = {
+				limit = {
+					area = venetia_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		GEN = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = liguria_area
+				}
+				add_building = regimental_camp
+			}
+		}
+		SIE = {
+			every_owned_province = {
+				limit = {
+					is_capital = yes
+				}
+				add_building = regimental_camp
+			}
+		}
+		KNI = {
+			every_owned_province = {
+				add_building = regimental_camp
+			}
+		}
+		CYP = {
+			#just a small buff to the Crusaders so that they may stand a chance
+			every_owned_province = {
+				add_building = regimental_camp
+			}
+		}
+		CIR = {
+			every_owned_province = {
+				limit = {
+					area = circassia_area
+				}
+				add_building = regimental_camp
+			}
+		}
+	}
+}
+
+vu_add_docks = {
+	hidden_effect = {
+		MAM = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = delta_area
+				}
+				add_building = shipyard
+			}
+		}
+		MAM = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = tunisia_area
+				}
+				add_building = shipyard
+			}
+		}
+		TUR = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						province_id = 318
+						area = thrace_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		TLC = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = barbary_coast_area
+				}
+				add_building = shipyard
+			}
+		}
+		TUN = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = tunisia_area
+						area = djerba_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		MOR = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = western_morocco_area
+						area = northern_morocco_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		GRA = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = upper_andalucia_area
+				}
+				add_building = shipyard
+			}
+		}
+		POR = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = estremadura_area
+				}
+				add_building = shipyard
+			}
+		}
+		FRA = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = languedoc_area
+						area = west_languedoc_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		HOL = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = shipyard
+			}
+		}
+		FLA = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = shipyard
+			}
+		}
+		SCO = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = lowlands_area
+				}
+				add_building = shipyard
+			}
+		}
+		DAN = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = denmark_area
+						area = denmark_strait_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		BRE = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = shipyard
+			}
+		}
+		HAM = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = shipyard
+			}
+		}
+		HSA = {
+			#Need to make sure Lubeck can actually compete with Denmark on the seas
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = grand_shipyard
+				add_building = drydock
+			}
+		}
+		GOT = {
+			#Again, historically start with 6 pirate ships + a pirate haeven
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = grand_shipyard
+			}
+		}
+		VEN = {
+			#Very advanced shipbuilding techniques for the time
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = venetia_area
+						area = friuli_area
+					}
+				}
+				add_building = grand_shipyard
+			}
+		}
+		GEN = {
+			#More serene than Venice XD (but not more technologically advanced))
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = liguria_area
+						area = corsica_sardinia_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		LAN = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = shipyard
+			}
+		}
+		SIE = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = shipyard
+			}
+		}
+		PAP = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					area = lazio_area
+				}
+				add_building = shipyard
+			}
+		}
+		CYP = {
+			#just a small buff to the Crusaders so that they may stand a chance
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_building = shipyard
+			}
+		}
+		VIJ = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = north_carnatic_area
+						area = south_carnatic_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		KOR = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = western_korea_area
+						area = left_chungcheong_area
+						area = south_korea_area
+						area = left_hwanghae_area
+					}
+				}
+				add_building = shipyard
+			}
+		}
+		BRA = {
+			#Relax it's a joke, Bismark dockyard, get it?
+			every_owned_province = {
+				limit = {
+					has_port = yes
+					province_id = 3528
+				}
+				add_building = shipyard
+			}
+		}
+	}
+}
+
+vu_shatter_the_world = {
+	hidden_effect = {
+		#This is just for fun XD (takes 2 minutes to process on my end XD) Use at your own peril XD
+		every_country = {
+			release_all_possible_countries = yes
+		}
+		every_country = {
+			every_province = {
+				limit = {
+					is_core = PREV
+				}
+				cede_province = PREV
+			}
+		}
+		every_country = {
+			release_all_possible_countries = yes
+		}
+		every_country = {
+			release_all_possible_countries = yes
+		}
+		every_country = {
+			release_all_possible_countries = yes
+		}
+	}
+}
+
+vu_release_all_subjects = {
+	hidden_effect = {
+		#Again, more of a fun option to have the world be a smidge more chaotic
+		every_country = {
+			every_subject_country = {
+				limit = {
+					is_colourable_subject_type = yes
+				}
+				grant_independence = yes
+			}
+		}
+		every_country = {
+			restore_country_color = yes
+		}
+	}
+}
+
+vu_set_POW_policy_globally = {
+	hidden_effect = {
+		every_country = {
+			limit = {
+				ai = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						religion = nahuatl
+						religion = mesoamerican_religion
+						religion = inti
+					}
+				}
+				add_country_modifier = {
+					name = vu_pow_sacrificial_attitude
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						religion = buddhism
+						religion = hinduism						#Either sell them or release them into proverty
+						religion = surya_majapahit
+						capital_scope = {
+							region = ireland_region
+						}
+						tag = NAP
+						tag = SIC
+						tag = ALB
+						technology_group = scandinavian_tech_group
+					}
+				}
+				add_country_modifier = {
+					name = vu_pow_slavery_attitude
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					technology_group = spanish_tech_group
+				}
+				add_country_modifier = {
+					name = vu_pow_resettlement_attitude
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						technology_group = bohemian_tech_group
+						is_subject_of = BOH
+						tag = BRA
+						tag = TEU
+						technology_group = hungarian_tech_group
+						technology_group = bulgarian_tech_group
+						technology_group = swiss_tech_group
+						technology_group = italian_tech_group
+					}
+				}
+				add_country_modifier = {
+					name = vu_pow_noble_ransom_attitude
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					tag = ENG
+					is_subject_of = ENG
+					technology_group = dutch_tech_group
+					culture = romanian
+					religion = totemism
+				}
+				add_country_modifier = {
+					name = vu_pow_community_service_attitude
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						religion = bon						#Would release them into the wild for them to be eaten by wild beasts
+						religion = tantra						#Same as bon
+						uses_horde_unity = yes
+						tag = TIM
+						is_subject_of = TIM
+						tag = SCO
+						is_subject_of = SCO
+					}
+				}
+				add_country_modifier = {
+					name = vu_pow_hostile_attitude
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						religion = confucianism
+						religion = taoism
+						religion = shinto
+						religion = state_shinto
+						religion = mahayana
+					}
+				}
+				add_country_modifier = {
+					name = vu_pow_friendly_attitude
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						religion = animism
+						religion = shamanism
+						is_primitive = yes
+					}
+				}
+				add_country_modifier = {
+					name = vu_pow_cannibalism_attitude
+					duration = -1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = vu_pow_neutral_attitude
+					duration = -1
+				}
+			}
+			set_variable = {
+				which = vu_pow_sacrifices
+				value = 0
+			}
+			set_variable = {
+				which = vu_pow_slaves
+				value = 0
+			}
+			set_variable = {
+				which = vu_pow_nobles
+				value = 0
+			}
+			set_variable = {
+				which = vu_pow_gladiators
+				value = 0
+			}
+			set_variable = {
+				which = vu_pow_prisoners
+				value = 0
+			}
+		}
+	}
+}
+
+vu_set_add_institutions = {
+	hidden_effect = {
+		every_province = {
+			limit = {
+				is_year = 1250
+				province_has_center_of_trade_of_level = 2
+				OR = {
+					superregion = europe_superregion
+					AND = {
+						superregion = eastern_europe_superregion
+						owner = {
+							OR = {
+								technology_group = bohemian_tech_group
+								technology_group = german_tech_group
+							}
+						}
+					}
+					AND = {
+						region = balkan_region
+						has_port = yes
+					}
+				}
+			}
+			add_institution_embracement = {
+				which = market_production
+				value = 100
+			}
+		}
+		every_province = {
+			limit = {
+				OR = {
+					region = sudan_region
+					region = egypt_region
+					region = tanzania_region
+					region = arabia_region
+					region = horn_of_africa_region
+				}
+				has_port = yes
+			}
+			add_institution_embracement = {
+				which = medicine
+				value = 100
+			}
+		}
+	}
+}
+
+vu_set_disable_releasing_of_colonies = {
+	hidden_effect = {
+		every_country = {
+			limit = {
+				ai = no
+			}
+			set_country_flag = no_cn_in_colonial_alaska
+			set_country_flag = no_cn_in_colonial_canada
+			set_country_flag = no_cn_in_colonial_eastern_america
+			set_country_flag = no_cn_in_colonial_louisiana
+			set_country_flag = no_cn_in_colonial_california
+			set_country_flag = no_cn_in_colonial_mexico
+			set_country_flag = no_cn_in_colonial_the_carribean
+			set_country_flag = no_cn_in_colonial_colombia
+			set_country_flag = no_cn_in_colonial_peru
+			set_country_flag = no_cn_in_colonial_la_plata
+			set_country_flag = no_cn_in_colonial_brazil
+			set_country_flag = no_cn_in_colonial_australia
+			set_country_flag = no_cn_in_colonial_cascadia
+			set_country_flag = no_cn_in_colonial_northwest_territories
+			set_country_flag = no_cn_in_colonial_hudson_bay
+			set_country_flag = no_cn_in_colonial_newfoundland
+			set_country_flag = no_cn_in_colonial_acadia
+			set_country_flag = no_cn_in_colonial_cuba
+			set_country_flag = no_cn_in_colonial_hispaniola
+			set_country_flag = no_cn_in_colonial_polynesia
+			set_country_flag = no_cn_in_colonial_cape
+			set_country_flag = no_cn_in_colonial_greenland
+			set_country_flag = no_cn_in_colonial_great_lakes
+			set_country_flag = no_cn_in_colonial_florida
+			set_country_flag = no_cn_in_colonial_mississippi
+			set_country_flag = no_cn_in_colonial_papua
+			set_country_flag = no_cn_in_colonial_solomons
+			set_country_flag = no_cn_in_colonial_vanuatu
+			set_country_flag = no_cn_in_colonial_new_caledonia
+			set_country_flag = no_cn_in_colonial_fiji
+			set_country_flag = no_cn_in_colonial_guyana
+			set_country_flag = no_cn_in_colonial_ecuador
+			set_country_flag = no_cn_in_colonial_venezuela
+			set_country_flag = no_cn_in_colonial_bolivia
+			set_country_flag = no_cn_in_colonial_chile
+			set_country_flag = no_cn_in_colonial_texas
+			set_country_flag = no_cn_in_colonial_central_america
+		}
+	}
+}
+
+vu_set_disable_releasing_of_colonies_ROOT = {
+	hidden_effect = {
+		ROOT = {
+			set_country_flag = no_cn_in_colonial_alaska
+			set_country_flag = no_cn_in_colonial_canada
+			set_country_flag = no_cn_in_colonial_eastern_america
+			set_country_flag = no_cn_in_colonial_louisiana
+			set_country_flag = no_cn_in_colonial_california
+			set_country_flag = no_cn_in_colonial_mexico
+			set_country_flag = no_cn_in_colonial_the_carribean
+			set_country_flag = no_cn_in_colonial_colombia
+			set_country_flag = no_cn_in_colonial_peru
+			set_country_flag = no_cn_in_colonial_la_plata
+			set_country_flag = no_cn_in_colonial_brazil
+			set_country_flag = no_cn_in_colonial_australia
+			set_country_flag = no_cn_in_colonial_cascadia
+			set_country_flag = no_cn_in_colonial_northwest_territories
+			set_country_flag = no_cn_in_colonial_hudson_bay
+			set_country_flag = no_cn_in_colonial_newfoundland
+			set_country_flag = no_cn_in_colonial_acadia
+			set_country_flag = no_cn_in_colonial_cuba
+			set_country_flag = no_cn_in_colonial_hispaniola
+			set_country_flag = no_cn_in_colonial_polynesia
+			set_country_flag = no_cn_in_colonial_cape
+			set_country_flag = no_cn_in_colonial_greenland
+			set_country_flag = no_cn_in_colonial_great_lakes
+			set_country_flag = no_cn_in_colonial_florida
+			set_country_flag = no_cn_in_colonial_mississippi
+			set_country_flag = no_cn_in_colonial_papua
+			set_country_flag = no_cn_in_colonial_solomons
+			set_country_flag = no_cn_in_colonial_vanuatu
+			set_country_flag = no_cn_in_colonial_new_caledonia
+			set_country_flag = no_cn_in_colonial_fiji
+			set_country_flag = no_cn_in_colonial_guyana
+			set_country_flag = no_cn_in_colonial_ecuador
+			set_country_flag = no_cn_in_colonial_venezuela
+			set_country_flag = no_cn_in_colonial_bolivia
+			set_country_flag = no_cn_in_colonial_chile
+			set_country_flag = no_cn_in_colonial_texas
+			set_country_flag = no_cn_in_colonial_central_america
+		}
+	}
+}

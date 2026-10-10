@@ -1,0 +1,15 @@
+#XXX = { "Province Name" "City Name" } - New addition to EUIV
+
+#Europe
+75 = { "Elsàss" "Strossburi" }
+188 = { "Metz" "Metz" }
+132 = { "Judenburg" "Judenburg" }
+4765 = { "Owerelsàss" "Milhüsa" }
+1880 = { "Sunt-gowe" "Àltkìrech" }
+# [VU] removed: province 7944 (not on Ante Bellum map)
+# [VU] removed: province 7949 (not on Ante Bellum map)
+# [VU] removed: province 8459 (not on Ante Bellum map)
+# [VU] removed: province 8461 (not on Ante Bellum map)
+# [VU] removed: province 8463 (not on Ante Bellum map)
+# [VU] removed: province 8466 (not on Ante Bellum map)
+# [VU] removed: province 8465 (not on Ante Bellum map)

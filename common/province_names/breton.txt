@@ -1,0 +1,10 @@
+##XXX = { "Province Name" "City Name" } - New addition to EUIV
+
+169 = { "Aodoù-an-Hanternoz" "Sant-Brieg" }
+132 = { "Judenburg" "Judenburg" }
+# [VU] removed: province 7992 (not on Ante Bellum map)
+# [VU] removed: province 7994 (not on Ante Bellum map)
+# [VU] removed: province 7995 (not on Ante Bellum map)
+# [VU] removed: province 7996 (not on Ante Bellum map)
+# [VU] removed: province 8013 (not on Ante Bellum map)
+

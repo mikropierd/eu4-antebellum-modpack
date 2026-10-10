@@ -1,0 +1,46 @@
+# For PTE:
+is_in_war_with_cb_that_disallows_taking_subjects = {
+	OR = {
+		# Vanilla:
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_trade_war_triggered
+		}
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_trade_conflict
+		}
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_trade_league_conflict
+		}
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_humiliate
+		}
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_trade_war
+		}
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_trade_league_dispute
+		}
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_humiliate_rotw
+		}
+		is_in_war = {
+			attacker_leader = ROOT
+			defenders = FROM
+			casus_belli = cb_native_american_tribal_feud
+		}
+	}
+}

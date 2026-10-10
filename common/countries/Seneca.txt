@@ -6,13 +6,13 @@ color = { 189 153 176 }
 revolutionary_colors = { 2 0 2 }
 
 historical_idea_groups = {
-	infrastructure_ideas
+	religious_ideas
+	defensive_ideas
 	offensive_ideas
-	innovativeness_ideas
 	trade_ideas
 	diplomatic_ideas
-	exploration_ideas
-	quality_ideas
+	plutocracy_ideas
+	spy_ideas
 	economic_ideas
 }
 
@@ -137,9 +137,17 @@ monarch_names = {
 }
 
 leader_names = {
-	Abbarid Adonibaalid Adonisacid Ahiromid Adramitid Ammilatid Azizatid Baalhannid Baalid Barcid Bayalshid Bitdaganid Bostarid
-	Chelbesid Daganid Didothid Dinonid Duguratid Eshbaalid Eugorid Hamilcid Hannid Hanunid Hadarid Hiramid Ishmehid Karthid Kasbilid
-	Mahdulid Malchustid Magoid Magulid Mattanid Melqartid Metallid Milkiramid Phelgetid Philosirid Sapahtaid Saphatidid Shumataid Tanid
+	Awegen Ahaouet
+	Canajoharie Canastigaone Canienga Caughnawaga Cahunghage Canowaroghere
+	Deseroken Dayoitgao Deonundagae Deyodeshot Deyohnegano Deyonongdadagana
+	Gweugwehono Gandasetaigon Ganogeh Gayagaanhe Gewauga Goiogouen Gadoquat Gannentaha
+	Hostayuntwa
+	Kawauka Kente Kanagaro Kowogoconnughariegugharie Kanadaseagea Kanatakowa
+	Neodakheat Nowadaga Nundawaono
+	Onekagoncka Onoalagona Oquaga Osquake Onayotekaono Oriska Ossewingo 
+	Skannayutenate Saratoga Schaunactada Schoharie
+	Teatontaloga Tewanondadon Tionnontoguen Tegasoke Teseroken Tetosweken 
+	Yoroonwago
 }
 
 ship_names = {

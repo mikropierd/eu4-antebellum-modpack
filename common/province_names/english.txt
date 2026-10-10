@@ -1,0 +1,258 @@
+#XXX = { "Province Name" "City Name" } - New addition to EUIV
+
+#Africa
+356 = "Benghazi"
+357 = "Derna"
+358 = {"Alexandria" "Alexandria" }
+360 = "Qena"
+361 = { "Cairo" "Cairo" }
+362 = "Kafr"
+363 = { "Damietta" "Damietta" }
+364 = "Gaza"
+377 = "Aleppo" 
+379 = { "Jerusalem" "Jerusalem" }
+382 = { "Damascus" "Damascus" }
+388 = "Aden"
+410 = "Baghdad"
+411 = { "Al-Mawsil" "Mosul" }
+1138 = { "Kumasi" "Kumasi" }
+1141 = { "Whydah" "Ouidah" }
+1190 = { "Lusaka" "Lusaka" }
+1213 = "Addis Ababa"
+1792 = { "Merina" "Antananarivo" }
+1854 = "Nablus"
+1925 = { "Tana" "Nairobi" }
+2242 = { "Karou" "Monrovia" }
+2313 = "Antioch"
+2315 = { "Suez" "Suez" }
+2326 = "Bardia"
+2327 = { "Magna" "Magna" }
+3047 = { "Ndar" "Saint-Louis" }
+4781 = { "Johannesburg" "Johannesburg" }
+4782 = { "Tswana" "Vryburg" } 
+# [VU] removed: province 5261 (not on Ante Bellum map)
+# [VU] removed: province 5356 (not on Ante Bellum map)
+# [VU] removed: province 5368 (not on Ante Bellum map)
+# [VU] removed: province 5371 (not on Ante Bellum map)
+# [VU] removed: province 5419 (not on Ante Bellum map)
+
+#Asia
+3991 = "Alexandretta"
+
+#VU - Papua New Guinea by San Felipe
+3764 = { "Mount Hagen" "Mount Hagen" }
+
+#VU - Australia by NoobMiner72
+1084 = { "Perth" "Perth" }
+1085 = { "Buckingham" "Hobart" }
+1086 = { "Adelaide" "Port Adelaide" }
+1087 = { "Melbourne" "Melbourne" }
+1088 = { "Bendigo" "Bendigo" }
+1089 = { "Bathurst" "Orange" }
+1090 = { "Sydney" "Sydney" }
+1091 = { "Orana" "Dubbo" }
+1092 = { "Port Macquarie" "Port Macquarie" }
+1093 = { "Bulloo" "Thargomindah" }
+1094 = { "Fraser Coast" "Hervey Bay" }
+2726 = { "Gascoyne" "Geraldton" }
+2727 = { "Esperance" "Esperance" }
+2728 = { "Bathurst Island" "Bathurst Island" }
+2729 = { "Arnhem" "East Arnhem" }
+2730 = { "Weipa" "Weipa" }
+2731 = { "Hope Vale" "Cairns" }
+2732 = { "Townsville" "Townsville" }
+2733 = { "Mackay" "Mackay" }
+2734 = { "Port Albert" "Port Albert" }
+2735 = { "Mount Gambier" "Mount Gambier" }
+2736 = { "Hopetown" "Hopetown" }
+3780 = { "East Devon" "Devonport" }
+3781 = { "Meredith Range" "Queenstown" }
+3783 = { "Glamorgan" "Swansea" }
+3784 = { "Montgomery" "Macquarie Harbour" }
+3785 = { "West Devon" "Emu Bay" }
+4846 = { "Palmerston" "Darwin" }
+4847 = { "Barkly" "Tennant Creek" }
+4848 = { "Bourke" "Bourke" }
+4849 = { "Carpentaria" "Normanton" }
+4850 = { "Gladstone" "Gladstone" }
+4851 = { "Sunshine Coast" "Noosa" }
+4852 = { "Burnett" "Kingaroy" }
+4853 = { "Paroo" "Cunnamulla" }
+4854 = { "Brisbane" "Brisbane" }
+4855 = { "Moree Plains" "Moree" }
+4856 = { "Tamworth" "Tamworth" }
+4857 = { "Newcastle" "Newcastle" }
+4858 = { "Wollongong" "Wollongong" }
+4859 = { "Canberra" "Canberra" }
+4860 = { "Southern Tablelands" "Goulburn" }
+4861 = { "Bogong" "Wodonga" }
+4862 = { "Taunton" "Taunton" }
+4863 = { "Marmion" "Cranbrook" }
+4864 = { "Murray" "Geraldton" }
+4865 = { "Ashburton" "Karratha" }
+4866 = { "Pilbara" "Port Hedland" }
+4867 = { "Kimberley" "Easton" }
+4868 = { "Dorset" "Launceston" }
+4869 = { "Wellington" "Smithton" }
+
+#VU - New Zealand by NoobMiner72
+1106 = { "Northland" "Whangarei" }
+1107 = { "Wellington" "Wellington" }
+1108 = { "Bay of Plenty" "Tauranga" }
+1109 = { "Otago" "Dunedin" }
+1246 = { "Invercargill" "Invercargill" }
+2738 = { "Nelson" "Nelson" }
+2737 = { "Hawke's Bay" "Napier" }
+2739 = { "Waikawau" "Waikawau" }
+4939 = { "Te Kaha" "Te Kaha" }
+# [VU] removed: province 5597 (not on Ante Bellum map)
+# [VU] removed: province 5598 (not on Ante Bellum map)
+# [VU] removed: province 5599 (not on Ante Bellum map)
+# [VU] removed: province 5600 (not on Ante Bellum map)
+# [VU] removed: province 5601 (not on Ante Bellum map)
+# [VU] removed: province 5602 (not on Ante Bellum map)
+# [VU] removed: province 5603 (not on Ante Bellum map)
+# [VU] removed: province 5604 (not on Ante Bellum map)
+# [VU] removed: province 5605 (not on Ante Bellum map)
+# [VU] removed: province 5606 (not on Ante Bellum map)
+# [VU] removed: province 5607 (not on Ante Bellum map)
+# [VU] removed: province 5608 (not on Ante Bellum map)
+# [VU] removed: province 5609 (not on Ante Bellum map)
+
+#Caribbean
+481 = { "Bermuda" "Hamilton" }
+482 = { "New Providence" "Charles Town" }                                                  
+483 = { "Turks & Caicos Islands" "Cockburn Town" }
+484 = { "Havana" "Havana" }
+485 = { "One Hundred Fires" "One Hundred Fires" }
+486 = { "Saint James" "St. James" }
+487 = { "Port Royal" "Port Royal" }
+488 = { "Prince's Bay" "Port of the Prince" }
+489 = { "North West" "Port of Peace" }
+490 = { "The Seibo" "Higey" }
+491 = { "Curacao" "Charles Town" }
+492 = { "Rich Port" "St. John" }
+493 = { "Virgin Islands" "Road Town" }
+494 = { "St. Kitts & Nevis" "Lowland" }
+495 = { "Antigua & Barbuda" "St. John's" }
+496 = { "Guadeloupe" "Lowland" }
+497 = { "Dominica" "Reed" }
+498 = { "Martinique" "Fort Royal" }
+499 = { "St. Lucia" "Castries" }
+500 = { "St. Vincent and the Grenadines" "Kingstown" }
+501 = { "Barbados" "Bridgetown" }
+502 = { "Trinity" "Port of Spain" }
+926 = { "St. Lucie" "St. Lucie" }
+927 = { "Fort Caroline" "Fort Caroline" }
+1881 = { "St. Martin & Anguilla" "Marigot" }
+2536 = { "Miami" "Miami" }
+2654 = { "Guantanamo" "Baracoa" }
+2655 = { "Grandma" "Thundersquall" }
+2656 = { "Camaguey" "Camaguey" }
+2658 = { "Azua" "Azua" }
+2659 = { "Silver Port" "Silver Port" }
+4618 = { "Artibonite" "Gonayiv" }
+4619 = { "North" "Haitian Cape" }
+4620 = { "Samana" "St. Barbara" }
+4621 = { "St. Dominic" "Santo Domingo" }
+4622 = { "Isle of Youth" "New Gerona" }
+4623 = { "Clear House" "St. Clare" }
+4624 = { "Pinewood" "Pinewood of the River" }
+# [VU] removed: province 5563 (not on Ante Bellum map)
+# [VU] removed: province 5565 (not on Ante Bellum map)
+# [VU] removed: province 5567 (not on Ante Bellum map)
+# [VU] removed: province 5572 (not on Ante Bellum map)
+# [VU] removed: province 5574 (not on Ante Bellum map)
+# [VU] removed: province 5575 (not on Ante Bellum map)
+# [VU] removed: province 5576 (not on Ante Bellum map)
+# [VU] removed: province 5577 (not on Ante Bellum map)
+# [VU] removed: province 5578 (not on Ante Bellum map)
+# [VU] removed: province 5579 (not on Ante Bellum map)
+# [VU] removed: province 5581 (not on Ante Bellum map)
+# [VU] removed: province 5582 (not on Ante Bellum map)
+# [VU] removed: province 5583 (not on Ante Bellum map)
+# [VU] removed: province 5584 (not on Ante Bellum map)
+# [VU] removed: province 5585 (not on Ante Bellum map)
+# [VU] removed: province 5586 (not on Ante Bellum map)
+# [VU] removed: province 5706 (not on Ante Bellum map)
+# [VU] removed: province 5707 (not on Ante Bellum map)
+# [VU] removed: province 5708 (not on Ante Bellum map)
+# [VU] removed: province 5709 (not on Ante Bellum map)
+# [VU] removed: province 5710 (not on Ante Bellum map)
+# [VU] removed: province 6010 (not on Ante Bellum map)
+# [VU] removed: province 6011 (not on Ante Bellum map)
+# [VU] removed: province 6012 (not on Ante Bellum map)
+# [VU] removed: province 6013 (not on Ante Bellum map)
+# [VU] removed: province 6014 (not on Ante Bellum map)
+# [VU] removed: province 6015 (not on Ante Bellum map)
+# [VU] removed: province 6016 (not on Ante Bellum map)
+# [VU] removed: province 6017 (not on Ante Bellum map)
+
+#Europe
+104 = { "Milan" "Milan" }
+134 = { "Vienna" "Vienna" }
+167 = { "Rollon" "Rollon" }
+177 = { "Mances" "Mances" }
+184 = { "Aurcester" "Aurcester" }
+186 = { "Reimham" "St.Henry’s" }
+1879 = { "Sarthemouth" "Sarthemouth" }
+2746 = { "Widdin" "Widdin" }
+3091 = { "Builder" "Builder" }
+4383 = { "The Hague" "The Hague" }
+4385 = { "Cherborough" "Cherborough" }
+4388 = { "Carnutcester" "Carnutcester" }
+4729 = { "Padua" "Padua" }
+4776 = { "Blesceter" "Blesceter" }
+# [VU] removed: province 7944 (not on Ante Bellum map)
+# [VU] removed: province 7995 (not on Ante Bellum map)
+# [VU] removed: province 8434 (not on Ante Bellum map)
+
+#Ireland
+3014 = { "West Mayo" "Kilmaine" }
+3127 = { "Bournemouth" "Bournemouth" }
+3155 = { "Swansea" "Swansea" }
+3161 = { "Crewe" "Crewe" }
+3162 = { "Southend" "Southend" }
+3189 = { "Londonderry" "Magherafelt" }
+3222 = { "East Mayo" "Claremorris" }
+3228 = { "Mallow" "Mallow" }
+3232 = { "Midleton" "Midleton" }
+3233 = { "Meath" "Navan" }
+# [VU] removed: province 8163 (not on Ante Bellum map)
+3234 = { "Clare" "Corracatlin" }
+3236 = { "Leitrim" "Drumsna" }
+3237 = { "Inishowen" "Buncrana" }
+4119 = { "Sligo" "Sligo" }
+
+#Scotland
+3240 = { "Lanarkshire" "Lanark" }
+3272 = { "Arran" "Whiting Bay" }
+
+#Philippines
+656 = { "Manila" "Manila" }
+657 = { "Agoo" "Saint John" }
+658 = { "Cagayan" "New Segovia" }
+2700 = { "Panay" "Iloilo City" }
+2701 = { "New Guipzcoa" "New Vergara" }
+4349 = { "Laguna" "Calamba" }
+4350 = { "Western Mindoro" "Caminawit" }
+4351 = { "Western Negros" "Bacolod City" }
+4352 = { "Cebu" "Cebu City" }
+4353 = { "Leyte" "Carigara" }
+4354 = { "Zamboanga" "Zamboanga City" }
+# [VU] removed: province 7166 (not on Ante Bellum map)
+# [VU] removed: province 7167 (not on Ante Bellum map)
+# [VU] removed: province 7175 (not on Ante Bellum map)
+# [VU] removed: province 7184 (not on Ante Bellum map)
+# [VU] removed: province 8270 (not on Ante Bellum map)
+# [VU] removed: province 8273 (not on Ante Bellum map)
+# [VU] removed: province 8274 (not on Ante Bellum map)
+# [VU] removed: province 8282 (not on Ante Bellum map)
+# [VU] removed: province 8286 (not on Ante Bellum map)
+# [VU] removed: province 8287 (not on Ante Bellum map)
+# [VU] removed: province 8288 (not on Ante Bellum map)
+# [VU] removed: province 8290 (not on Ante Bellum map)
+# [VU] removed: province 8291 (not on Ante Bellum map)
+# [VU] removed: province 8293 (not on Ante Bellum map)
+# [VU] removed: province 8297 (not on Ante Bellum map)
+# [VU] removed: province 8714 (not on Ante Bellum map)

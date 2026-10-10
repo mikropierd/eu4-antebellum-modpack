@@ -5,12 +5,8 @@ estate_qizilbash = {
 
 	# If true, country will get estate
 	trigger = {
-		# AB [[[
-		# Disable this for now
-		always = no
-		# ]]]
 		has_dlc = "King of Kings"
-		NOT = { has_government_attribute = disables_estate_qizilbash }
+		#NOT = { has_government_attribute = disables_estate_qizilbash } #Commenting this out as it's not used anywhere. Remember to enable it again when we add a reform to disable the estate. - By Altan
 		NOT = { has_disabled_estate = { estate = estate_qizilbash } }
 		OR = {
 			has_government_attribute = enables_estate_qizilbash
@@ -18,14 +14,8 @@ estate_qizilbash = {
 			AND = {
 				OR = {
 					tag = PER
-					# AB [[[
-					tag = PRZ # Muslim Persia
-					tag = PMN # Mani Persia
-					tag = PRC # Nestorian Persia
-					# ]]]
 					tag = ARL
 					has_unlocked_estate = { estate = estate_qizilbash }
-					has_country_flag = ABA_ZUN_unlock_qizilbash
 				}
 				NOT = { has_government_attribute = is_pirate_republic_reform }
 				NOT = { government = native }
@@ -100,7 +90,7 @@ estate_qizilbash = {
 			not = { religion_group = zoroastrian_group }
 			NOT = { any_owned_province = { religion = shiite } }
 		}
-		influence = -5
+		influence = -20
 	}
 	influence_modifier = {
 		desc = EST_VAL_IS_SHIA
@@ -172,10 +162,12 @@ estate_qizilbash = {
 		desc = EST_VAL_ACCEPTS_TURKOMAN_CULTURE
 		trigger = {
 			not = { religion_group = zoroastrian_group }
+			NOT = { primary_culture = turco_iranian }
 			NOT = { primary_culture = azerbaijani }
 			NOT = { primary_culture = turkish }
 			NOT = { primary_culture = turkmeni }
 			OR = {
+				accepted_culture = turco_iranian
 				accepted_culture = azerbaijani
 				accepted_culture = turkish
 				accepted_culture = turkmeni
@@ -188,6 +180,7 @@ estate_qizilbash = {
 		trigger = {
 			not = { religion_group = zoroastrian_group }
 			OR = {
+				primary_culture = turco_iranian
 				primary_culture = azerbaijani
 				primary_culture = turkish
 				primary_culture = turkmeni
@@ -234,7 +227,7 @@ estate_qizilbash = {
 			NOT = { any_owned_province = { religion = shiite } }
 			not = { religion_group = zoroastrian_group }
 		}
-		loyalty = -5
+		loyalty = -20
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_IS_SHIA_LOY
@@ -299,16 +292,18 @@ estate_qizilbash = {
 				}
 			}
 		}
-		loyalty = -10
+		loyalty = -20
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_ACCEPTS_TURKOMAN_CULTURE_LOY
 		trigger = {
 			not = { religion_group = zoroastrian_group }
+			NOT = { primary_culture = turco_iranian }
 			NOT = { primary_culture = azerbaijani }
 			NOT = { primary_culture = turkish }
 			NOT = { primary_culture = turkmeni }
 			OR = {
+				accepted_culture = turco_iranian
 				accepted_culture = azerbaijani
 				accepted_culture = turkish
 				accepted_culture = turkmeni
@@ -321,6 +316,7 @@ estate_qizilbash = {
 		trigger = {
 			not = { religion_group = zoroastrian_group }
 			OR = {
+				primary_culture = turco_iranian
 				primary_culture = azerbaijani
 				primary_culture = turkish
 				primary_culture = turkmeni

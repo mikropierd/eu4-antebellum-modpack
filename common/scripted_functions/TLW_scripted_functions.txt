@@ -1,15 +1,1 @@
-can_have_colonial_nations = {
-	condition = {
-		potential = {
-			FROM = {
-				OR = {
-					tag = CTG
-					tlw_is_american_trigger = yes
-				}
-			}
-		}
-		allow = {
-			always = no 
-		}
-	}
-}
+# [merge] can_have_colonial_nations now defined in common/scripted_functions/00_scripted_functions.txt (Victorum wins; Ante Bellum-specific parts merged there)

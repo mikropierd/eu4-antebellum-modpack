@@ -43,32 +43,6 @@ defined_text = {
     name = StartScreenUpLeftTitle
 	random = no #Pick first that fits
 
-	# TLW [[[
-	text = { #Punic League
-        localisation_key = string_start_title_punic
-        trigger = {
-			primary_culture = punic
-        }
-    }
-	text = { #Aldiraqs
-        localisation_key = string_start_title_barbiri
-        trigger = {
-			OR = {
-				primary_culture = barbiri
-				primary_culture = delaware
-				primary_culture = cherokee
-				primary_culture = yuchi
-			}
-        }
-    }
-	text = { #Hylinian League
-        localisation_key = string_start_title_hylinia
-        trigger = {
-			culture_group = eastern_algonquian
-        }
-    }
-	# ]]]
-
 	#Country Specific:
 	
 	#Africa
@@ -97,7 +71,15 @@ defined_text = {
 	text = {
         localisation_key = string_start_title_daimyo
         trigger = {
-			has_reform = daimyo
+			OR = {
+				has_reform = daimyo
+			    has_reform = daimyo_barony_reform
+			    has_reform = daimyo_viscounty_reform
+			    has_reform = daimyo_county_reform
+			    has_reform = daimyo_marquisate_reform
+			    has_reform = daimyo_duchy_reform
+			    has_reform = daimyo_principality_reform
+			}
 		}
     }
 	text = {
@@ -118,608 +100,103 @@ defined_text = {
 		}
     }
 	text = {
-        localisation_key = string_start_title_francia
-        trigger = {
-			tag = FRC
-		}
-    }
-	text = {
-        localisation_key = string_start_title_carniola
-        trigger = {
-			tag = SLV
-		}
-    }
-	text = {
-        localisation_key = string_start_title_piedmont
-        trigger = {
-			OR = {
-				tag = NCE
-				tag = IVR
-				tag = AII
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_southernduchies
-        trigger = {
-			OR = {
-				tag = TOU
-				tag = BOU
-				tag = NEV
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_gascony
-        trigger = {
-			tag = GUY
-		}
-    }
-	text = {
-        localisation_key = string_start_title_croatia
-        trigger = {
-			tag = CRO
-		}
-    }
-	text = {
-        localisation_key = string_start_title_serbia
-        trigger = {
-			tag = SER
-		}
-    }
-	text = {
-        localisation_key = string_start_title_afghanistan
-        trigger = {
-			OR = {
-				tag = ROB
-				tag = SHH
-				tag = GHU
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_mesopotamia
-        trigger = {
-			OR = {
-				tag = NNV
-				tag = MSN
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_ruthenia
-        trigger = {
-			culture_group = east_slavic
-		}
-    }
-	text = {
-        localisation_key = string_start_title_princespersia
-        trigger = {
-			OR = {
-				tag = PER
-				tag = SSN
-				tag = KRN
-				tag = ZKD
-				tag = ISP
-				tag = MRH
-				tag = SHP
-				tag = SRN
-				tag = MRV
-				tag = INJ
-				tag = KYN
-			}
-		}
-    }
-	
-	text = { #Francia
-		localisation_key = string_start_title_centralasia
-        trigger = {
-			OR = {
-				capital_scope = {
-					region = central_asia_region
-				}
-				tag = GRG
-			}
-			NOT = {
-				OR = {
-					tag = QQT
-					tag = KUC
-					tag = SLH
-					tag = KRR
-				}
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = {
-        localisation_key = string_start_title_jalayirids
-        trigger = {
-			tag = JLR
-		}
-    }
-	text = {
-        localisation_key = string_start_title_pannonia
-        trigger = {
-			tag = PNN
-		}
-    }
-	text = {
-        localisation_key = string_start_title_normandy
-        trigger = {
-			tag = NRM
-		}
-    }
-	text = {
-        localisation_key = string_start_title_cornwall
-        trigger = {
-			tag = CRN
-		}
-    }
-	text = {
-        localisation_key = string_start_title_welsh
-        trigger = {
-			tag = WLS
-		}
-    }
-	text = {
-        localisation_key = string_start_title_ire_ab
-        trigger = {
-			NOT = {
-				tag = COT
-			}
-			OR = {
-				primary_culture = norse_gael
-				primary_culture = irish
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_connacht
-        trigger = {
-			tag = COT
-		}
-    }
-	text = {
-        localisation_key = string_start_title_wendia
-        trigger = {
-			capital_scope = { region = wendia_region }
-			NOT = {
-				culture_group = germanic
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_caucasia
-        trigger = {
-			OR = {
-				tag = ALN
-				tag = CMN
-				tag = FEO
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_beyliks
-        trigger = {
-			NOT = { tag = SEL }
-			primary_culture = turkish
-		}
-    }
-	text = {
-        localisation_key = string_start_title_cilicia
-        trigger = {
-			tag = CLC
-		}
-    }
-	text = {
-        localisation_key = string_start_title_ilkhanate
-        trigger = {
-			tag = ILK
-		}
-    }
-	text = {
-        localisation_key = string_start_title_gh
-        trigger = {
-			tag = GLH
-		}
-    }
-	text = {
-        localisation_key = string_start_title_ayyubids
-        trigger = {
-			tag = HSN
-		}
-    }
-	text = {
-        localisation_key = string_start_title_georgia
-        trigger = {
-			tag = GEO
-		}
-    }
-	text = {
-        localisation_key = string_start_title_seljuks
-        trigger = {
-			tag = SEL
-		}
-    }
-	text = {
-        localisation_key = string_start_title_khitans
-        trigger = {
-			tag = QQT
-		}
-    }
-	text = {
-        localisation_key = string_start_title_china
-        trigger = {
-			OR = {
-				tag = ZHH
-				tag = MIN
-				tag = SNG
-				tag = HNN
-				tag = YUE
-				tag = CDL
-			}
-		}
-	}
-	text = {
-        localisation_key = string_start_title_oirats
-        trigger = {
-			OR = {
-				tag = CRS
-				tag = KHT
-				tag = TRG
-				tag = DRB
-			}
-		}
-	}
-	text = { #Francia
-		localisation_key = string_start_title_manchuria
-        trigger = {
-			OR = {
-				primary_culture = buryat
-				primary_culture = evenk
-				primary_culture = manchu
-				tag = TMG
-			}
-        }
-	}
-	text = {
-        localisation_key = string_start_title_tocharia
-        trigger = {
-			OR = {
-				tag = SLH
-				tag = KRR
-				tag = KUC
-			}
-		}
-	}
-	text = {
-        localisation_key = string_start_title_goryeo
-        trigger = {
-			OR = {
-				tag = GOR
-				tag = JSN
-			}
-		}
-	}
-	text = {
-        localisation_key = string_start_title_yuan
-        trigger = {
-			tag = YUA
-		}
-    }
-	text = {
-        localisation_key = string_start_title_sakya
-        trigger = {
-			tag = SKY
-		}
-    }
-	text = {
-        localisation_key = string_start_title_centraltibet
-        trigger = {
-			OR = {
-				tag = UTS
-				tag = PHA
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_kham
-        trigger = {
-			OR = {
-				tag = GNJ
-				tag = LGG
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_amdo
-        trigger = {
-			tag = AMD
-		}
-    }
-	text = {
-        localisation_key = string_start_title_guge
-        trigger = {
-			tag = GUG
-		}
-    }
-	text = {
-        localisation_key = string_start_title_toyouji
-        trigger = {
-			capital_scope = { 
-				region = japan_region
-			}
-		}
-	}
-	text = {
-        localisation_key = string_start_title_breton
-        trigger = {
-			tag = BRI
-		}
-    }
-	text = {
-        localisation_key = string_start_title_capua
-        trigger = {
-			tag = CAP
-		}
-    }
-    text = {
-        localisation_key = string_start_title_netherlands
-        trigger = {
-			capital_scope = {
-				region = low_countries_region
-			}
-        }
-    }
-	text = {
-        localisation_key = string_start_title_knights
-        trigger = {
-			tag = KNI
-		}
-    }
-	text = {
-        localisation_key = string_start_title_moravia
-        trigger = {
-			tag = MVA
-		}
-    }
-	text = {
-        localisation_key = string_start_title_andalusia
-        trigger = {
-			tag = ADU
-		}
-    }
-	text = {
-        localisation_key = string_start_title_franconia
-        trigger = {
-			tag = FKN
-		}
-    }
-	text = {
-        localisation_key = string_start_title_andalusia
-        trigger = {
-			tag = ADU
-		}
-    }
-	text = {
-        localisation_key = string_start_title_lombardy
-        trigger = {
-			tag = LOM
-		}
-    }
-	text = {
-        localisation_key = string_start_title_hansa
-        trigger = {
-			tag = HAS
-		}
-    }
-	text = {
-        localisation_key = string_start_title_saxons
-        trigger = {
-			tag = SAX
-		}
-    }
-	text = {
-        localisation_key = string_start_title_swabia
-        trigger = {
-			tag = SWA
-		}
-    }
-	text = {
-        localisation_key = string_start_title_sicily
-        trigger = {
-			tag = SIC
-		}
-    }
-	text = {
-        localisation_key = string_start_title_sweden
-        trigger = {
-			tag = SWE
-		}
-    }
-	text = {
-        localisation_key = string_start_title_lothar
-        trigger = {
-			tag = LOT
-		}
-    }
-	text = {
-        localisation_key = string_start_title_styria
-        trigger = {
-			tag = STY
-		}
-    }
-	text = {
-        localisation_key = string_start_title_wallachia
-        trigger = {
-			tag = WAL
-		}
-    }
-	text = {
-        localisation_key = string_start_title_moldavia
-        trigger = {
-			tag = MOL
-		}
-    }
-	text = {
-        localisation_key = string_start_title_cornwall
-        trigger = {
-			tag = CRN
-		}
-    }
-	text = {
-        localisation_key = string_start_title_magyars
-        trigger = {
-			tag = MGY
-		}
-    }
-	text = {
-        localisation_key = string_start_title_nizzarids
-        trigger = {
-			tag = NAZ
-		}
-    }
-	text = {
-        localisation_key = string_start_title_lothar
-        trigger = {
-			tag = LOT
-		}
-    }
-	text = {
-        localisation_key = string_start_title_burgundies
-        trigger = {
-			OR = {
-				tag = LWB
-				tag = UPB
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_jerusalem
-        trigger = {
-			tag = KOJ
-		}
-    }
-	text = {
-        localisation_key = string_start_title_venice
-        trigger = {
-			tag = VEN
-		}
-    }
-	text = {
-        localisation_key = string_start_title_ibeminors
-        trigger = {
-			OR = {
-				tag = ASU
-				tag = NAV
-				tag = GAL
-			}
-		}
-    }
-	text = {
-        localisation_key = string_start_title_antioch
-        trigger = {
-			tag = ATI
-		}
-    }
-	text = {
-        localisation_key = string_start_title_cyprus
-        trigger = {
-			tag = CYP
-		}
-    }
-	text = {
-        localisation_key = string_start_title_scotland
-        trigger = {
-			tag = SCO
-		}
-    }
-	text = {
-        localisation_key = string_start_title_byzantium
-        trigger = {
-			tag = BYZ
-		}
-    }
-	text = {
-        localisation_key = string_start_title_nicaea
-        trigger = {
-			tag = NCI
-		}
-    }
-	text = {
-        localisation_key = string_start_title_bulgaria
-        trigger = {
-			tag = BUL
-		}
-    }
-	text = {
-        localisation_key = string_start_title_persia
-        trigger = {
-			tag = PER
-		}
-    }
-	text = {
-        localisation_key = string_start_title_danish
+        localisation_key = string_start_title_denmark
         trigger = {
 			tag = DAN
+			has_ruler = "Christopher III"
 		}
     }
 	text = {
-        localisation_key = string_start_title_ireland
+        localisation_key = string_start_title_ottomans
         trigger = {
-			NOT = {
-				tag = COT
-			}
-			OR = {
-				primary_culture = norse_gael
-				primary_culture = irish
-			}
+			tag = TUR
 		}
     }
 	text = {
-        localisation_key = string_start_title_poles
+        localisation_key = string_start_title_sweden_norway
         trigger = {
 			OR = {
-				tag = LUD
-				tag = PLN
-				tag = VIS
-				tag = MAZ
+				AND = {
+					OR = {
+						tag = SWE
+						tag = NOR
+					}
+					is_subject_of = DAN
+				}
+			}
+			OR ={
+				tag = GOT
+				has_ruler = "Erik VII"
 			}
 		}
     }
 	text = {
-        localisation_key = string_start_title_bavaria
+        localisation_key = string_start_title_baltic_orders
         trigger = {
-			tag = BAV
+			OR = {
+				tag = TEU
+				tag = LIV
+				tag = RIG
+			}
 		}
     }
 	text = {
-        localisation_key = string_start_title_baltics
+        localisation_key = string_start_title_austria
         trigger = {
-			capital_scope = {
-				region = baltic_region
+			OR = {
+				tag = HAB
+				tag = AUT #VU - SF addition
 			}
-        }
+			NOT = { is_year = 1452 }
+		}
+    }
+	text = {
+        localisation_key = string_start_title_bavarians
+        trigger = {
+			OR = {
+				tag = ING
+				tag = UBV
+				tag = LBV
+			}
+			NOT = { is_year = 1445 }
+		}
+    }
+	text = { #Saxony
+		localisation_key = string_start_title_saxony
+		trigger = {
+			tag = SAX
+			NOT = { is_year = 1454 }
+		}
+	}
+	text = { #Thuringia
+		localisation_key = string_start_title_thuringia
+		trigger = {
+			tag = THU
+			NOT = { is_year = 1454 }
+		}
 	}
 	text = {
-        localisation_key = string_start_title_bohemian
+        localisation_key = string_start_title_hungary
         trigger = {
-			tag = BOH
+			OR = {
+				tag = HUN
+				tag = CRO
+			}
+			NOT = { is_year = 1445 }
 		}
     }
-	text = {
-        localisation_key = string_start_title_english
-        trigger = {
-			tag = ENG
-		}
-    }
-
-
 	text = {
         localisation_key = string_start_title_burgundy
         trigger = {
 			tag = BUR
 			NOT = { is_year = 1467 }
+		}
+    }
+	text = {
+        localisation_key = string_start_title_bohemia
+        trigger = {
+			tag = BOH
+			NOT = { is_year = 1457 }
 		}
     }
 	text = {
@@ -730,21 +207,40 @@ defined_text = {
     }
 	text = {
         localisation_key = string_start_title_poland
-        trigger = {
+         trigger = {
 			tag = POL
+			tag = LIT
 		}
     }
 	text = {
         localisation_key = string_start_title_france
         trigger = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+			}
 			NOT = { is_year = 1461 }
 		}
     }
 	text = {
         localisation_key = string_start_title_france_fallback
         trigger = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+			}
 		}
     }
 	text = {
@@ -757,6 +253,12 @@ defined_text = {
         localisation_key = string_start_title_provence
         trigger = {
 			tag = PRO
+		}
+    }
+	text = {
+        localisation_key = string_start_title_brittany
+        trigger = {
+			tag = BRI
 		}
     }
 	text = {
@@ -791,46 +293,23 @@ defined_text = {
 		}
 	}
 	
-	text = { # Italian Statelets
-		localisation_key = string_start_title_italian_statelets
-		trigger = {
-			OR = {
-				tag = LAN
-				tag = RMG
-				tag = SIE
-				tag = GRS
-				tag = RVN
-				tag = URB
-				tag = ANC
-				tag = PGA
-				tag = LUC
-				tag = PAR
-				tag = VRN
-			}
-			NOT = { is_year = 1448 }
-		}
-	}
-
-	text = { # Nordmark and Dresden
-		localisation_key = string_start_title_nordmark_dresden
-		trigger = {
-			OR = {
-				tag = NRD
-				tag = DRE
-			}
-			NOT = { is_year = 1448 }
-		}
-	}
-
-	text = { # Tirol 
-		localisation_key = string_start_title_tirol
-		trigger = {
-			tag = TIR
-			NOT = { is_year = 1448 }
-		}
-	}
-	
 	#Middle & Near East
+	text = {
+        localisation_key = string_start_title_hisn_kayfa
+        trigger = {
+			tag = HSN
+		}
+    }
+	text = {
+		localisation_key = string_start_title_georgia_imereti
+		trigger = {
+			OR = {
+				tag = GEO
+				tag = IME
+			}
+			NOT = { is_year = 1490 }
+		}
+	}
 	text = {
 		localisation_key = string_start_title_samtskhe
 		trigger = {
@@ -843,7 +322,10 @@ defined_text = {
 	text = {
         localisation_key = string_start_title_horde
         trigger = {
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
         }
     }
 	text = {
@@ -945,7 +427,43 @@ defined_text = {
 	random = no
 
    
-
+	text = {
+        localisation_key = string_start_east_asia_moh_title #Japan, Eoc and Tributaries
+        trigger = {
+			has_dlc = "Mandate of Heaven"
+			capital_scope = {
+				OR = {
+					region = mongolia_region
+					region = manchuria_region
+					region = east_siberia_region
+					region = tibet_region
+					area = shanshan_area
+					area = tarim_basin_area
+					superregion = far_east_superregion
+					superregion = china_superregion
+					superregion = east_indies_superregion
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_start_east_asia_title #Japan
+        trigger = {
+			capital_scope = {
+				OR = {
+					region = mongolia_region
+					region = manchuria_region
+					region = east_siberia_region
+					region = tibet_region
+					area = shanshan_area
+					area = tarim_basin_area
+					superregion = far_east_superregion
+					superregion = china_superregion
+					superregion = east_indies_superregion
+				}
+			}
+        }
+    }
 	text = {
         localisation_key = string_start_europe #The HRE
         trigger = {
@@ -1056,61 +574,114 @@ defined_text = {
 			current_age = age_of_revolutions
 		}		
 	}
-
-	# TLW [[[
-	text = { #Punic League
-        localisation_key = string_start_punic
-        trigger = {
-			primary_culture = punic
-        }
-    }
-	text = { #Aldiraqs
-        localisation_key = string_start_barbiri
-        trigger = {
-			OR = {
-				primary_culture = barbiri
-				primary_culture = delaware
-				primary_culture = cherokee
-				primary_culture = yuchi
-			}
-        }
-    }
-	text = { #Hylinian League
-        localisation_key = string_start_hylinia
-        trigger = {
-			culture_group = eastern_algonquian
-        }
-    }
-	# ]]]
-
 	#Country Specific:
 	
+	#Africa
+	text = { # Maghreb
+        localisation_key = string_start_maghreb
+        trigger = {
+			OR = {
+				tag = GRA
+				culture_group = berber_group
+				capital_scope = {
+					region = maghreb_region
+				}
+			}
+			NOT = { is_year = 1445 }
+        }
+    }	
+	text = { #Mali
+        localisation_key = string_start_mali
+        trigger = {
+			tag = MAL
+        }
+    }	
+	text = { #Songhai
+        localisation_key = string_start_songhai
+        trigger = {
+			tag = SON
+        }
+    }	
+	text = { #Jolof
+        localisation_key = string_start_jolof
+        trigger = {
+			tag = JOL
+        }
+    }	
+	text = { #Mossi States
+        localisation_key = string_start_mossi
+        trigger = {
+			primary_culture = mossi
+        }
+    }	
+	text = { #Hausa States
+        localisation_key = string_start_hausa
+        trigger = {
+			primary_culture = hausa
+        }
+    }	
+	text = { #Oyo
+        localisation_key = string_start_oyo
+        trigger = {
+			tag = OYO
+        }
+    }	
+	text = { #Ethiopia
+        localisation_key = string_start_ethiopia
+        trigger = {
+			tag = ETH
+        }
+    }	
+	text = { #Adal
+        localisation_key = string_start_adal
+        trigger = {
+			tag = ADA
+        }
+    }	
+	text = { #Ajuuraan
+        localisation_key = string_start_ajuuraan
+        trigger = {
+			tag = AJU
+        }
+    }	
+	text = { #Kilwa
+        localisation_key = string_start_kilwa
+        trigger = {
+			tag = ZAN
+        }
+    }	
+	text = { #Mutapa
+        localisation_key = string_start_mutapa
+        trigger = {
+			tag = ZIM
+        }
+    }	
+	text = { #Kongo
+        localisation_key = string_start_kongo
+        trigger = {
+			tag = KON
+        }
+    }
 	
 	#India
 	
-	#East Asia:
-	
+			
+ 
+	#East Asia:	
 	text = { #Great Ming
         localisation_key = string_start_great_ming
         trigger = {
 			tag = MNG
         }
-    }
-	
+    }	
+ 
 	text = { #Korea
         localisation_key = string_start_korea
         trigger = {
 			tag = KOR
         }
-    }
-	
-	text = { #Korea
-        localisation_key = string_start_capua
-        trigger = {
-			tag = CAP
-        }
-    }
-	
+    }	
+ 
 	text = { # Jurchens
         localisation_key = string_start_jurchens
         trigger = {
@@ -1122,25 +693,17 @@ defined_text = {
 				tag = EJZ
 			}
         }
-    }
-	
+    }	
+ 
 	text = { #Mongols
         localisation_key = string_start_mongolia
         trigger = {
 			capital_scope = {
 				region = mongolia_region
 			}
-			NOT = {
-			OR = {
-				tag = CRS
-				tag = DRB
-				tag = TRG
-				tag = KHT
-			}
-			}
         }
-    }
-	
+    }	
+ 
 	text = { #Philippines
 		localisation_key = string_start_philippines
 		trigger = {
@@ -1159,6 +722,116 @@ defined_text = {
 	}
 	
 	#Japan
+	text = { #Ashikaga
+		localisation_key = string_start_ashikaga
+		trigger = {
+			tag = ASK
+			NOT = { is_year = 1468 }
+		}
+	}
+	text = { #Hatakeyama
+		localisation_key = string_start_hatakeyama
+		trigger = {
+			tag = HTK
+			NOT = { is_year = 1468 }
+		}
+	}
+	text = { #Shiba
+		localisation_key = string_start_shiba
+		trigger = {
+			tag = SBA
+			NOT = { is_year = 1468 }
+		}
+	}
+	text = { #Central Japan
+		localisation_key = string_start_central_japan
+		trigger = {
+			OR = {
+				tag = TKD
+				tag = IMG
+				tag = TKI
+				tag = ISK
+				tag = KTB
+				tag = ODA
+				tag = TKG
+				tag = OGS
+				tag = TTI
+			}
+			NOT = { is_year = 1468 }
+		}
+	}
+	text = { #Northern Japan
+		localisation_key = string_start_northern_japan
+		trigger = {
+			OR = {
+				tag = DTE
+				tag = RFR
+				tag = AKT
+			}
+			NOT = { is_year = 1468 }
+		}
+	}
+	text = { #Eastern Japan
+		localisation_key = string_start_eastern_japan
+		trigger = {
+			primary_culture = togoku
+			NOT = { is_year = 1468 }
+		}
+	}
+	text = { #Western Japan
+		localisation_key = string_start_western_japan
+		trigger = {
+			OR = {
+				primary_culture = japanese #Saigoku
+				primary_culture = kyushuan
+			}
+			NOT = { is_year = 1468 }
+		}
+	}
+
+	#South East Asia
+	text = { #Majapahit
+		localisation_key = string_start_majapahit
+		trigger = {
+			tag = MAJ
+		}
+	}
+	text = { #Palembang
+		localisation_key = string_start_palembang
+		trigger = {
+			tag = PLB
+		}
+	}
+	text = { #Tondo
+		localisation_key = string_start_tondo
+		trigger = {
+			tag = TDO
+		}
+	}
+	text = { #Dai Viet
+		localisation_key = string_start_dai_viet
+		trigger = {
+			tag = DAI
+		}
+	}
+	text = { #Khmer
+		localisation_key = string_start_khmer
+		trigger = {
+			tag = KHM
+		}
+	}
+	text = { #Ayutthaya
+		localisation_key = string_start_ayutthaya
+		trigger = {
+			tag = AYU
+		}
+	}
+	text = { #Pegu
+		localisation_key = string_start_pegu
+		trigger = {
+			tag = PEG
+		}
+	}
 	
 	#Americas:
 	text = { # Aztecs
@@ -1175,724 +848,174 @@ defined_text = {
 			is_random_new_world = no
 		}
 	}
-	
-	#Europe:
-	text = { #Francia
-		localisation_key = string_start_francia
+	text = { #Iroquois
+        localisation_key = string_start_iroquois
         trigger = {
-			tag = FRC
-			NOT = { is_year = 1448 }
+			tag = IRO
+			is_random_new_world = no
         }
-	}
-	text = { 
-		localisation_key = string_start_carniola
+    }
+	text = { #Huron
+        localisation_key = string_start_huron
         trigger = {
-			tag = SLV
-			NOT = { is_year = 1448 }
+			tag = HUR
+			is_random_new_world = no
         }
-	}
-	text = { 
-		localisation_key = string_start_piedmont
+    }
+	text = { #Anishinaabe
+        localisation_key = string_start_anishinaabe
         trigger = {
 			OR = {
-				tag = NCE
-				tag = IVR
-				tag = AII
+				tag = OTT
+				tag = OJI
+				tag = POT
 			}
-			NOT = { is_year = 1448 }
+			is_random_new_world = no
         }
-	}
-	text = {
-        localisation_key = string_start_southernduchies
+    }
+	text = { #Edge of the Plains
+        localisation_key = string_start_edge_of_the_plains
         trigger = {
 			OR = {
-				tag = TOU
-				tag = BOU
-				tag = NEV
+				tag = SIO
+				tag = CHY
+				tag = COM
+				tag = ARP
+				tag = ASI
+				tag = KIO
 			}
-			NOT = { is_year = 1448 }
+			is_random_new_world = no
 		}
     }
-	text = {
-        localisation_key = string_start_gascony
+	text = { #Plain Dwellers
+        localisation_key = string_start_plain_dwellers
         trigger = {
-			tag = GUY
-			NOT = { is_year = 1448 }
+			OR = {
+				tag = WIC
+				tag = PAW
+			}
+			is_random_new_world = no
+        }
+    }
+	text = { #Osage
+        localisation_key = string_start_osage
+        trigger = {
+			tag = OSA
+			is_random_new_world = no
+        }
+    }
+	text = { #Cherokee
+        localisation_key = string_start_cherokee
+        trigger = {
+			tag = CHE
+			is_random_new_world = no
+        }
+    }
+	text = { #Creek
+        localisation_key = string_start_creek
+        trigger = {
+			tag = CRE
+			is_random_new_world = no
+        }
+    }
+	text = { #Chickasaw and Choctaw
+        localisation_key = string_start_chikasaw_choctaw
+        trigger = {
+			OR = {
+				tag = CHI
+				tag = CHO
+			}
+			is_random_new_world = no
+        }
+    }
+	
+		 
+ 
+	#Europe:	
+	text = { # Aragon
+		localisation_key = string_start_aragon
+		trigger = {
+			tag = ARA
+			has_ruler = "Alfons V"
 		}
-    }
-	text = { #Francia
-		localisation_key = string_start_croatia
-        trigger = {
-			tag = CRO
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Francia
-		localisation_key = string_start_serbia
-        trigger = {
-			tag = SER
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Francia
-		localisation_key = string_start_afghanistan
-        trigger = {
+	}	
+ 
+	text = { # Romania
+		localisation_key = string_start_romania
+		trigger = {
 			OR = {
-				tag = ROB
-				tag = SHH
-				tag = GHU
+				tag = MOL
+				tag = WAL
 			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Francia
-		localisation_key = string_start_mesopotamia
-        trigger = {
+			NOT = { is_year = 1447 }
+		}
+	}	
+ 
+	text = { #Poland
+		localisation_key = string_start_poland
+		trigger = {
 			OR = {
-				tag = NNV
-				tag = MSN
+				tag = POL
+				tag = LIT
 			}
-			NOT = { is_year = 1448 }
-        }
+			NOT = { is_year = 1447 }
+		}
 	}
-	text = { #Francia
-		localisation_key = string_start_ruthenia
-        trigger = {
-			culture_group = east_slavic
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_princespersia
-        trigger = {
+	text = { #Austria
+		localisation_key = string_start_austria
+		trigger = {
 			OR = {
-				tag = PER
-				tag = SSN
-				tag = KRN
-				tag = ZKD
-				tag = ISP
-				tag = MRH
-				tag = SHP
-				tag = SRN
-				tag = MRV
-				tag = INJ
-				tag = KYN
+				tag = HAB
+				tag = AUT #VU - SF addition
 			}
-			NOT = { is_year = 1448 }
-        }
+			NOT = { is_year = 1457 }
+		}
 	}
-	
-	text = { #Francia
-		localisation_key = string_start_centralasia
-        trigger = {
+	text = { #Bavarians
+		localisation_key = string_start_bavaria
+		trigger = {
 			OR = {
-				capital_scope = {
-					region = central_asia_region
-				}
-				tag = GRG
+				tag = ING
+				tag = UBV
+				tag = LBV
 			}
-			NOT = {
-				OR = {
-					tag = QQT
-					tag = KUC
-					tag = SLH
-					tag = KRR
-				}
-			}
-			NOT = { is_year = 1448 }
-        }
+			NOT = { is_year = 1445 }
+		}
 	}
-	
-	text = { #Francia
-		localisation_key = string_start_jalayirids
-        trigger = {
-			tag = JLR
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_pannonia
-        trigger = {
-			tag = PNN
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_cornwall
-        trigger = {
-			tag = CRN
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_normandy
-        trigger = {
-			tag = NRM
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_welsh
-        trigger = {
-			tag = WLS
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_ire_ab
-        trigger = {
-			NOT = {
-				tag = COT
-			}
+	text = { #Saxony
+		localisation_key = string_start_saxony
+		trigger = {
 			OR = {
-				primary_culture = norse_gael
-				primary_culture = irish
+				tag = SAX
+				tag = THU
 			}
-			NOT = { is_year = 1448 }
-        }
+			NOT = { is_year = 1454 }
+		}
 	}
-	
-	text = { #Francia
-		localisation_key = string_start_connacht
-        trigger = {
-			tag = COT
-			NOT = { is_year = 1448 }
-        }
+	text = { #Milan
+		localisation_key = string_start_milan
+		trigger = {
+			tag = MLO
+			NOT = { is_year = 1445 }
+		}
 	}
-	
-	text = { #Francia
-		localisation_key = string_start_cyprus
-        trigger = {
-			tag = CYP
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_antioch
-        trigger = {
-			tag = ATI
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_wendia
-        trigger = {
-			capital_scope = { region = wendia_region }
-			NOT = {
-				culture_group = germanic
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_nicaea
-        trigger = {
-			tag = NCI
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_caucasia
-        trigger = {
+	text = { #Hungary
+		localisation_key = string_start_hungary
+		trigger = {
 			OR = {
-				tag = FEO
-				tag = ALN
-				tag = CMN
+				tag = HUN
+				tag = CRO
 			}
-			NOT = { is_year = 1448 }
-        }
+			NOT = { is_year = 1445 }
+		}
 	}
-	
-	text = { #Francia
-		localisation_key = string_start_cilicia
-        trigger = {
-			tag = CLC
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_ilkhanate
-        trigger = {
-			tag = ILK
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_gh
-        trigger = {
-			tag = GLH
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_ayyubids
-        trigger = {
-			tag = HSN
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_georgia
-        trigger = {
-			tag = GEO
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_seljuks
-        trigger = {
-			tag = SEL
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_beyliks
-        trigger = {
-			primary_culture = turkish
-			NOT = { tag = SEL }
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_tangut
-        trigger = {
-			tag = TGU
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_yuan
-        trigger = {
-			tag = YUA
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_china
-        trigger = {
-			OR = {
-				tag = ZHH
-				tag = MIN
-				tag = SNG
-				tag = HNN
-				tag = YUE
-				tag = CDL
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_oirats
-        trigger = {
-			OR = {
-				tag = CRS
-				tag = DRB
-				tag = TRG
-				tag = KHT
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_manchuria
-        trigger = {
-			OR = {
-				primary_culture = buryat
-				primary_culture = evenk
-				primary_culture = manchu
-				tag = TMG
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_tocharia
-        trigger = {
-			OR = {
-				tag = SLH
-				tag = KUC
-				tag = KRR
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_goryeo
-        trigger = {
-			OR = {
-				tag = GOR
-				tag = JSN
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_sakya
-        trigger = {
-			tag = SKY
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_khitans
-        trigger = {
-			tag = QQT
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_centraltibet
-        trigger = {
-			OR = {
-				tag = UTS
-				tag = PHA
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_kham
-        trigger = {
-			OR = {
-				tag = GNJ
-				tag = LGG
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_amdo
-        trigger = {
-			tag = AMD
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_guge
-        trigger = {
-			tag = GUG
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_toyouji
-        trigger = {
-			capital_scope = { 
-				region = japan_region
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_breton
-        trigger = {
-			tag = BRI
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = {
-        localisation_key = string_start_netherlands
-        trigger = {
-			capital_scope = {
-				region = low_countries_region
-			}
-        }
-    }
-	
-	text = { #Francia
-		localisation_key = string_start_papal_state
-        trigger = {
-			tag = PAP
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_venice
-        trigger = {
-			tag = VEN
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_ibeminors
-        trigger = {
-			OR = {
-				tag = ASU
-				tag = NAV
-				tag = GAL
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_knights
-        trigger = {
-			tag = KNI
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Francia
-		localisation_key = string_start_scotland
-        trigger = {
-			tag = SCO
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Moravia
-		localisation_key = string_start_moravia
-        trigger = {
-			tag = MVA
-			NOT = { is_year = 1448 }
-        }
-	}
-
-	
-	text = { #Moravia
-		localisation_key = string_start_lothar
-        trigger = {
-			tag = LOT
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Moravia
-		localisation_key = string_start_burgundies
-        trigger = {
-			OR = {
-				tag = LWB
-				tag = UPB
-			}
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Moravia
-		localisation_key = string_start_baltics
-        trigger = {
-			capital_scope = {
-				region = baltic_region
-			}
-        }
-	}
-	
-	text = { #Moravia
-		localisation_key = string_start_poles
-        trigger = {
-			capital_scope = {
-				region = poland_region
-			}
-        }
-	}
-	
-	text = { #Franconia
-		localisation_key = string_start_franconia
-        trigger = {
-			tag = FKN
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Franconia
-		localisation_key = string_start_wallachia
-        trigger = {
-			tag = WAL
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Franconia
-		localisation_key = string_start_moldavia
-        trigger = {
-			tag = MOL
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Andalusia
-		localisation_key = string_start_andalusia
-        trigger = {
-			tag = ADU
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Lombardy
-		localisation_key = string_start_lombardy
-        trigger = {
-			tag = LOM
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Lombardy
-		localisation_key = string_start_hansa
-        trigger = {
-			tag = HAS
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Lombardy
-		localisation_key = string_start_saxons
-        trigger = {
-			tag = SAX
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Lombardy
-		localisation_key = string_start_swabia
-        trigger = {
-			tag = SWA
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Lombardy
+	text = { #Sweden
 		localisation_key = string_start_sweden
-        trigger = {
+		trigger = {
 			tag = SWE
 			NOT = { is_year = 1448 }
-        }
+		}
 	}
-	text = { #Lombardy
-		localisation_key = string_start_sicily
-        trigger = {
-			tag = SIC
-			NOT = { is_year = 1448 }
-        }
-	}
-	text = { #Bohemia
-		localisation_key = string_start_bohemian
-        trigger = {
-			tag = BOH
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #England
-		localisation_key = string_start_english
-        trigger = {
-			tag = ENG
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Bulgaria
-		localisation_key = string_start_bulgaria
-        trigger = {
-			tag = BUL
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Byzantium
-		localisation_key = string_start_byzantium
-        trigger = {
-			tag = BYZ
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Denmark
-		localisation_key = string_start_danish
-        trigger = {
-			tag = DAN
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Jerusalem
-		localisation_key = string_start_jerusalem
-        trigger = {
-			tag = KOJ
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Norway
-		localisation_key = string_start_norway
-        trigger = {
-			tag = NOR
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Norway
-		localisation_key = string_start_nizzarids
-        trigger = {
-			tag = NAZ
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Norway
-		localisation_key = string_start_bavaria
-        trigger = {
-			tag = BAV
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Norway
-		localisation_key = string_start_styria
-        trigger = {
-			tag = STY
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Norway
-		localisation_key = string_start_lothar
-        trigger = {
-			tag = LOT
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-	text = { #Magyars
-		localisation_key = string_start_magyars
-        trigger = {
-			tag = MGY
-			NOT = { is_year = 1448 }
-        }
-	}
-	
-
-
 	text = { #Castile
 		localisation_key = string_start_castile
 		trigger = {
@@ -1907,18 +1030,48 @@ defined_text = {
 			NOT = { is_year = 1467 }
 		}
 	}
+	text = { #Bohemia
+        localisation_key = string_start_bohemia
+        trigger = {
+			tag = BOH
+			NOT = { is_year = 1457 }
+		}
+    }
 	text = { #France
 		localisation_key = string_start_france
 		trigger = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+			}
 			NOT = { is_year = 1448 }
 		}
+	}
+	text = { #Denmark
+		localisation_key = string_start_denmark
+        trigger = {
+			tag = DAN
+			NOT = { is_year = 1448 }
+        }
 	}
 	text = { #Portugal
 		localisation_key = string_start_portugal
         trigger = {
 			tag = POR
 			NOT = { is_year = 1446 }
+        }
+	}
+	text = { #England
+		localisation_key = string_start_england
+        trigger = {
+			tag = ENG
+			NOT = { is_year = 1448 }
         }
 	}
 	text = { #Brandenburg
@@ -1928,55 +1081,182 @@ defined_text = {
 			NOT = { is_year = 1445 }
         }
 	}
+	text = { #Muscovy
+		localisation_key = string_start_muscovy
+        trigger = {
+			tag = MOS
+			NOT = { is_year = 1460 }
+       }
+	}	
 	
-	text = {
+	
+	text = { # Irish Minors
+		localisation_key = string_start_irish_minors
+		trigger = {
+			OR = {
+				tag = CNN
+				tag = LEI
+				tag = MNS
+				tag = TYR
+				tag = MTH
+				tag = ULS
+				tag = DMS
+				tag = SLN
+				tag = KID
+				tag = ORD
+				tag = TRY
+				tag = FLY
+				tag = MCM
+			}
+			NOT = {
+				is_year = 1460
+			}
+		}
+	}	
+ 
+	text = { # Scotland
+		localisation_key = string_start_scotland
+		trigger = {
+			tag = SCO
+			NOT = {
+				is_year = 1461
+			}
+		}
+	}	
+ 
+	text = { # Brittany
+		localisation_key = string_start_brittany
+		trigger = {
+			tag = BRI
+			NOT = {
+				is_year = 1488
+			}
+		}
+	}	
+ 
+	text = { # Provence
+		localisation_key = string_start_provence
+		trigger = {
+			tag = PRO
+			NOT = {
+				is_year = 1481 # death of Rene
+			}
+		}
+	}	
+ 
+	text = { #Papal State
+		localisation_key = string_start_papal_state
+		trigger = {
+			OR = {
+				tag = PAP
+				tag = PGA
+				tag = URB
+			}
+		}
+	}	
+ 
+	text = { #Lantus
+		localisation_key = string_start_LANTUS
+		trigger = {
+			OR = {
+				tag = LAN
+				tag = SIE
+				tag = LUC
+			}
+			NOT = { is_year = 1569 }
+		}
+	}	
+	text = { #Dutch Minors
+		 
+		localisation_key = string_start_dutch_minors
+		trigger = {
+			OR = {
+				tag = HOL
+				tag = BRB
+				tag = FLA
+				tag = FRI
+				tag = UTR
+				tag = GEL
+			}
+			NOT = { is_year = 1467 }
+		}
+	}	
+ 
+	text = { #Venice
+		localisation_key = string_start_venice
+		trigger = {
+			tag = VEN
+		}
+	}	
+ 
+	text = { #Hanseatic
+		localisation_key = string_start_hanseatic
+		trigger = {
+			OR = {
+				tag = HSA
+				tag = BRE
+				tag = HAM
+			}
+		}
+	}	
+ 
+	text = { #Byzantium
+		localisation_key = string_start_byzantium
+		trigger = {
+			tag = BYZ
+		}
+	}	
+ 
+	text = { #Naples
 		localisation_key = string_start_naples
 		trigger = {
 			tag = NAP
 		}
-	}
-
-	text = { # Italian Statelets
-		localisation_key = string_start_italian_statelets
+	}	
+ 
+	text = { #Genoa
+		localisation_key = string_start_genoa
 		trigger = {
-			OR = {
-				tag = LAN
-				tag = RMG
-				tag = SIE
-				tag = GRS
-				tag = RVN
-				tag = URB
-				tag = ANC
-				tag = PGA
-				tag = LUC
-				tag = PAR
-				tag = VRN
-			}
-			NOT = { is_year = 1448 }
+			tag = GEN
 		}
 	}
-
-	text = { # Nordmark and Dresden
-		localisation_key = string_start_nordmark_dresden
-		trigger = {
-			OR = {
-				tag = NRD
-				tag = DRE
-			}
+	text = { #Norway
+		localisation_key = string_start_norway
+        trigger = {
+			tag = NOR
 			NOT = { is_year = 1448 }
-		}
+        }
 	}
-
-	text = { # Tirol 
-		localisation_key = string_start_tirol
-		trigger = {
-			tag = TIR
-			NOT = { is_year = 1448 }
-		}
+	text = { #Teutonic Order
+		localisation_key = string_start_teutonic_order
+        trigger = {
+			tag = TEU
+			NOT = { is_year = 1525 }
+        }
 	}
-
-	#Middle & Near East
+	text = { #Livonian Order
+		localisation_key = string_start_livonian_order
+        trigger = {
+			tag = LIV
+			NOT = { is_year = 1561 }
+        }
+	}
+	text = { #Riga
+		localisation_key = string_start_riga
+        trigger = {
+			tag = RIG
+			NOT = { is_year = 1581 }
+        }
+	}
+	text = { #Gotland
+		localisation_key = string_start_gotland
+        trigger = {
+			tag = GOT
+			NOT = { is_year = 1449 }
+        }
+	}
 	
+	#Middle & Near East	
 	text = { # The Tatar Hordes
 		localisation_key = string_start_tatars
         trigger = {
@@ -1990,7 +1270,7 @@ defined_text = {
 			NOT = { is_year = 1466 }
         }
 	}	
-	
+ 
 	text = { #The Ottoman Empire
 		localisation_key = string_start_ottomans
         trigger = {
@@ -2004,8 +1284,8 @@ defined_text = {
 			tag = MAM
 			NOT = { is_year = 1450 }
         }
-	}
-	
+	}	
+ 
 	text = { #Timurids
 		localisation_key = string_start_timurids
         trigger = {
@@ -2041,10 +1321,28 @@ defined_text = {
 			NOT = { is_year = 1446 }
         }
 	}
+	text = { #Hisn Kayfa
+        localisation_key = string_start_hisn_kayfa
+        trigger = {
+			tag = HSN
+			NOT = { is_year = 1450 }
+        }
+    }
 	text = { #Kharabakh
         localisation_key = string_start_kharabakh
         trigger = {
 			tag = MLK
+        }
+    }
+	text = { #The Georgian tags
+        localisation_key = string_start_georgia
+        trigger = {
+			NOT = { is_year = 1450 }
+			OR = {
+				tag = GEO
+				tag = IME
+				tag = SME
+			}
         }
     }
 	
@@ -2134,7 +1432,7 @@ defined_text = {
 			}
         }
     }
-	text = {
+	text = { # Horn of Africa
         localisation_key = string_start_tag_horn_of_africa
         trigger = {
 			capital_scope = {
@@ -2142,9 +1440,52 @@ defined_text = {
 			}
         }
     }
+	text = { # West Africa
+        localisation_key = string_start_tag_north_west_africa
+        trigger = {
+			capital_scope = {
+				OR = {
+					region = niger_region
+					region = guinea_region
+					region = sahel_region
+					region = maghreb_region
+				}
+			}
+        }
+    }
+	text = { # Central Africa
+        localisation_key = string_start_tag_central_africa
+        trigger = {
+			capital_scope = {
+				OR = {
+					region = central_africa_region
+					region = kongo_region
+				}
+			}
+        }
+    }
+	text = { # East Africa
+        localisation_key = string_start_tag_east_africa
+        trigger = {
+			capital_scope = {
+				OR = {
+					region = south_africa_region
+					region = east_africa_region
+				}
+			}
+        }
+    }
+	text = { # Central Asia
+        localisation_key = string_start_tag_central_asia
+        trigger = {
+			capital_scope = {
+				region = central_asia_region
+			}
+        }
+    }
 	
 	#Super Regions
-	text = {
+	text = { #India
         localisation_key = string_start_tag_india
         trigger = {
 			capital_scope = {
@@ -2152,7 +1493,7 @@ defined_text = {
 			}
         }
     }
-	text = {
+	text = { #Far East
         localisation_key = string_start_tag_far_east
         trigger = {
 			capital_scope = {
@@ -2166,7 +1507,7 @@ defined_text = {
 			}
         }
     }
-	text = {
+	text = { #South East Asia
         localisation_key = string_start_tag_south_east_asia
         trigger = {
 			capital_scope = {
@@ -2174,7 +1515,7 @@ defined_text = {
 			}
         }
     }
-	text = {
+	text = { #Central America
         localisation_key = string_start_tag_central_america
         trigger = {
 			capital_scope = {
@@ -2182,7 +1523,7 @@ defined_text = {
 			}
         }
     }
-	text = {
+	text = { #Middle East
         localisation_key = string_start_tag_middle_east
         trigger = {
 			capital_scope = {
@@ -2195,7 +1536,7 @@ defined_text = {
     }
 	
 	#Continents
-    text = {
+    text = { #Europe
         localisation_key = string_start_tag_europe
         trigger = {
 			capital_scope = {
@@ -2203,7 +1544,7 @@ defined_text = {
 			}
         }
     }
-	text = {
+	text = { #Asia
         localisation_key = string_start_tag_asia
         trigger = {
 			capital_scope = {
@@ -2211,7 +1552,7 @@ defined_text = {
 			}
         }
     }
-    text = {
+    text = { #Africa
         localisation_key = string_start_tag_africa
         trigger = {
 			capital_scope = {
@@ -2219,7 +1560,7 @@ defined_text = {
 			}
         }
     }
-	text = {
+	text = { #North America
         localisation_key = string_start_tag_north_america
         trigger = {
 			capital_scope = {
@@ -2227,7 +1568,7 @@ defined_text = {
 			}
         }
 	}
-	text = {
+	text = { #South America
         localisation_key = string_start_tag_south_america
         trigger = {
 			capital_scope = {
@@ -2235,7 +1576,7 @@ defined_text = {
 			}
         }
 	}
-	text = {
+	text = { #Oceania
         localisation_key = string_start_tag_oceania
         trigger = {
 			capital_scope = {
@@ -2243,7 +1584,7 @@ defined_text = {
 			}
         }
 	}
-	text = {#Random New World
+	text = { #Random New World
         localisation_key = string_start_tag_rnw
 		trigger = {
 			capital_scope = {
@@ -2251,7 +1592,7 @@ defined_text = {
 			}
 		}
 	}
-	text = {#Fallback
+	text = { #Fallback
         localisation_key = string_start_tag_generic
 		trigger = {
 			always = yes
@@ -2279,6 +1620,13 @@ defined_text = {
         localisation_key = string_start_religion_catholic
         trigger = {
 			religion = catholic
+        }
+    }
+	#Hussite (The Reformation)
+	text = {
+        localisation_key = string_start_religion_hussite
+        trigger = {
+			religion = hussite
         }
     }
 	#Protestant (The Reformation)
@@ -2361,6 +1709,13 @@ defined_text = {
 			religion = hinduism
         }
     }
+	#Surya Majapahit
+	text = {
+        localisation_key = string_start_religion_surya_majapahit
+        trigger = {
+			religion = surya_majapahit
+        }
+    }
 	#Sikh
 	text = {
         localisation_key = string_start_religion_sikh
@@ -2417,7 +1772,35 @@ defined_text = {
 			religion = norse_pagan_reformed
         }
     }
-	#Fallback (Currently used by Animism, Judaism and Totemism)
+	#Arctolatry
+	text = {
+        localisation_key = string_start_religion_arctolatry
+        trigger = {
+			religion = arctolatry
+        }
+    }
+	#Totemism
+	text = {
+        localisation_key = string_start_religion_totemism
+        trigger = {
+			religion = totemism
+        }
+    }
+	#Alcheringa
+	text = {
+        localisation_key = string_start_religion_dreamtime
+        trigger = {
+			religion = dreamtime #Alcheringa
+        }
+    }
+	#Judaism
+	text = {
+        localisation_key = string_start_religion_jewish
+        trigger = {
+			religion = jewish
+        }
+    }
+	#Fallback (Currently used by Animism)
 	text = {
         localisation_key = string_start_religion_fallback
         trigger = {
@@ -2501,7 +1884,7 @@ defined_text = {
 
 #Church Power
 defined_text = {
-	name = start_protestant_church_power
+	name = start_protestant_hussite_church_power
 	random = no
 	text = {
         localisation_key = string_church_power_info #Has to end with \n
@@ -2511,10 +1894,24 @@ defined_text = {
         }
     }
 	text = {
+        localisation_key = string_church_power_hussite_info #Has to end with \n
+        trigger = {
+			religion = hussite
+			has_dlc = "Emperor"
+        }
+    }
+	text = {
         localisation_key = string_church_power_info_no #\n
         trigger = {
 			religion = protestant
 			NOT = { has_dlc = "Common Sense" }
+        }
+    }
+	text = {
+        localisation_key = string_hussite_power_info_no #\n
+        trigger = {
+			religion = hussite
+			NOT = { has_dlc = "Emperor" }
         }
     }
 }
@@ -2540,9 +1937,9 @@ defined_text = {
 }
 
 
-#Coptic Blessings
+#Coptic / Zoroastrian Blessings
 defined_text = {
-	name = start_coptic_blessings
+	name = start_coptic_zoroastrian_blessings
 	random = no
 	text = {
         localisation_key = string_blessings_info #Has to end with \n
@@ -2558,6 +1955,20 @@ defined_text = {
 			NOT = { has_dlc = "Rights of Man" }
         }
     }
+	text = {
+        localisation_key = string_rituals_info #Has to end with \n
+        trigger = {
+			religion = zoroastrian
+			has_dlc = "Rights of Man"
+        }
+    }
+	text = {
+        localisation_key = string_rituals_info_no #\n
+        trigger = {
+			religion = zoroastrian
+			NOT = { has_dlc = "Rights of Man" }
+        }
+    }
 }
 
 #Buddhist Karma
@@ -2567,14 +1978,22 @@ defined_text = {
 	text = {
         localisation_key = string_karma_info #Has to end with \n
         trigger = {
-			uses_karma = yes
+			OR = {
+				religion = buddhism
+				religion = mahayana
+				religion = vajrayana
+			}
 			has_dlc = "Common Sense"
         }
     }
 	text = {
         localisation_key = string_karma_info_no #\n
         trigger = {
-			uses_karma = yes
+			OR = {
+				religion = buddhism
+				religion = mahayana
+				religion = vajrayana
+			}
 			NOT = { has_dlc = "Common Sense" }
         }
     }
@@ -2628,14 +2047,20 @@ defined_text = {
 	text = {
         localisation_key = string_deities_info #Has to end with \n
         trigger = {
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 			has_dlc = "Wealth of Nations"
         }
     }
 	text = {
         localisation_key = string_deities_info_no #\n
         trigger = {
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 			NOT = { has_dlc = "Wealth of Nations" }
         }
     }
@@ -2643,7 +2068,7 @@ defined_text = {
 
 #Fetishist Cults
 defined_text = {
-	name = start_fetishist_cults
+	name = start_fetishist_alcheringa_cults
 	random = no
 	text = {
         localisation_key = string_cults_info #Has to end with \n
@@ -2656,6 +2081,20 @@ defined_text = {
         localisation_key = string_cults_info_no #\n
         trigger = {
 			religion = shamanism
+			NOT = { has_dlc = "Rights of Man" }
+        }
+    }
+	text = {
+        localisation_key = string_stories_info #Has to end with \n
+        trigger = {
+			religion = dreamtime
+			has_dlc = "Rights of Man"
+        }
+    }
+	text = {
+        localisation_key = string_stories_info_no #\n
+        trigger = {
+			religion = dreamtime
 			NOT = { has_dlc = "Rights of Man" }
         }
     }
@@ -2701,7 +2140,6 @@ defined_text = {
     }
 }
 
-
 #Nahuatl DOOM!
 defined_text = {
 	name = start_nahuatl_doom
@@ -2738,6 +2176,66 @@ defined_text = {
         trigger = {
 			religion = mesoamerican_religion
 			NOT = { has_dlc = "El Dorado" }
+        }
+    }
+}
+
+#Arctolatry Ancestors
+defined_text = {
+	name = start_arctolatry_ancestor
+	random = no
+	text = {
+        localisation_key = string_ancestor_info #Has to end with \n
+        trigger = {
+			religion = arctolatry
+			has_dlc = "Leviathan"
+        }
+    }
+	text = {
+        localisation_key = string_ancestor_info_no #\n
+        trigger = {
+			religion = arctolatry
+			NOT = { has_dlc = "Leviathan" }
+        }
+    }
+}
+
+#Totemism Ancestors
+defined_text = {
+	name = start_totemism_ancestor
+	random = no
+	text = {
+        localisation_key = string_ancestor_info #Has to end with \n
+        trigger = {
+			religion = totemism
+			has_dlc = "Leviathan"
+        }
+    }
+	text = {
+        localisation_key = string_ancestor_info_no #\n
+        trigger = {
+			religion = totemism
+			NOT = { has_dlc = "Leviathan" }
+        }
+    }
+}
+
+#Jewish Aspects
+defined_text = {
+	name = start_judaism_aspects
+	random = no
+	text = {
+        localisation_key = string_jewish_aspects_info #Has to end with \n
+        trigger = {
+			religion = jewish
+			has_dlc = "Origins"
+        }
+    }
+	text = {
+        localisation_key = string_jewish_aspects_info_no #\n
+        trigger = {
+			religion = jewish
+			NOT = { has_dlc = "Origins" }
         }
     }
 }
@@ -2842,14 +2340,20 @@ defined_text = {
 		trigger = {
 			government = monarchy
 			NOT = { has_reform = mamluk_government }
-			NOT = { has_reform = steppe_horde }
+			NOT = { 
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 		}
 	}
 	text = {
 		localisation_key = string_start_government_horde_heirs
 		trigger = {
 			government = monarchy
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 		}
 	}
 	text = {
@@ -2966,7 +2470,10 @@ defined_text  = {
         trigger = {
 			government = monarchy
 			NOT = { has_reform = iqta }
-			NOT = { has_reform = steppe_horde }
+			NOT = { 
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 			NOT = { has_reform = mamluk_government }
 			has_dlc = "Rights of Man"
         }
@@ -3066,8 +2573,14 @@ defined_text  = {
     text = {
         localisation_key = string_start_harem
         trigger = {
-			has_reform = ottoman_government
-			has_dlc = "Rights of Man"
+			OR = {
+				has_reform = ottoman_government
+				has_reform = sultanate_of_rum_reform
+			}
+			OR = {
+				has_dlc = "Rights of Man"
+				has_dlc = "Domination"
+			}
         }
     }
 	text = {
@@ -3086,8 +2599,14 @@ defined_text  = {
     text = {
         localisation_key = string_start_pashas
         trigger = {
-			has_reform = ottoman_government
-			has_dlc = "Cradle of Civilization"
+			OR = {
+				has_reform = ottoman_government
+				has_reform = sultanate_of_rum_reform
+			}
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Domination"
+			}
         }
     }
 	text = {
@@ -3188,7 +2707,10 @@ defined_text  = {
     text = {
         localisation_key = string_start_prussian_government
         trigger = {
-			has_reform = prussian_monarchy
+			OR = {
+				has_reform = prussian_monarchy_base
+				has_reform = prussian_monarchy
+			}
         }
     }
 	text = {
@@ -3253,7 +2775,10 @@ defined_text  = {
     text = {
         localisation_key = string_start_horde
         trigger = {
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 			has_dlc = "The Cossacks"
         }
     }
@@ -3322,8 +2847,7 @@ defined_text  = {
 	text = {
         localisation_key = string_start_meritocracy
         trigger = {
-			has_reform = celestial_empire
-			has_dlc = "Mandate of Heaven"
+			uses_meritocracy = yes
         }
     }
 	text = {
@@ -3404,10 +2928,26 @@ defined_text = {
         }
     }
 	
-
-	
 	text = {
         localisation_key = string_start_africa_americas_description
+        trigger = {
+			capital_scope = {
+				OR = {
+					AND = {
+						continent = africa
+						NOT = { region = maghreb_region }
+						NOT = { region = egypt_region }
+					}
+					continent = new_world
+					continent = north_america
+					continent = south_america
+				}
+			}
+        }
+    }
+	
+	text = {
+        localisation_key = string_start_no_special_region_description
         trigger = {
 			always = yes
         }
@@ -3516,11 +3056,11 @@ defined_text = {
     text = {
         localisation_key = string_anglicanism_desc
         trigger = {
-					has_dlc = "Rule Britannia"
-					# AB [[[
-					#culture_group = british
-					always = no
-					# ]]]
+			has_dlc = "Rule Britannia"
+			OR = {
+				culture_group = british
+				primary_culture = anglois
+			}
         }
     }
 	text = {
@@ -3547,7 +3087,10 @@ defined_text = {
 	text = {
 		localisation_key = string_cossacks_steppe_nomads
         trigger = {
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 			has_dlc = "The Cossacks"
         }
 	}
@@ -3557,4 +3100,65 @@ defined_text = {
 			always = yes
         }
 	}
+}
+
+# ===== Ante Bellum additions (not in Victorum) =====
+#Church Power
+defined_text = {
+	name = start_protestant_church_power
+	random = no
+	text = {
+        localisation_key = string_church_power_info #Has to end with \n
+        trigger = {
+			religion = protestant
+			has_dlc = "Common Sense"
+        }
+    }
+	text = {
+        localisation_key = string_church_power_info_no #\n
+        trigger = {
+			religion = protestant
+			NOT = { has_dlc = "Common Sense" }
+        }
+    }
+}
+
+#Coptic Blessings
+defined_text = {
+	name = start_coptic_blessings
+	random = no
+	text = {
+        localisation_key = string_blessings_info #Has to end with \n
+        trigger = {
+			religion = coptic
+			has_dlc = "Rights of Man"
+        }
+    }
+	text = {
+        localisation_key = string_blessings_info_no #\n
+        trigger = {
+			religion = coptic
+			NOT = { has_dlc = "Rights of Man" }
+        }
+    }
+}
+
+#Fetishist Cults
+defined_text = {
+	name = start_fetishist_cults
+	random = no
+	text = {
+        localisation_key = string_cults_info #Has to end with \n
+        trigger = {
+			religion = shamanism
+			has_dlc = "Rights of Man"
+        }
+    }
+	text = {
+        localisation_key = string_cults_info_no #\n
+        trigger = {
+			religion = shamanism
+			NOT = { has_dlc = "Rights of Man" }
+        }
+    }
 }

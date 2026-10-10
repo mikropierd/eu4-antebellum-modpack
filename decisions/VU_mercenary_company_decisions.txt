@@ -1,0 +1,158 @@
+# VU Mercenary Company Unlock Decisions
+# These decisions set the country flags that unlock the mercenary companies
+# defined in ME_Mercenaries.txt (merc_mubarizun, merc_mor_ottoman_mercenaries,
+# merc_mor_black_guard, merc_gra_volunteers_of_the_faith).
+# Design: Darth Modus & Prussia
+
+country_decisions = {
+
+    ###########################################################################
+    # merc_mubarizun (ARB_company)
+    # Mubarizun — Arabian champions of the faith, elite cavalry vanguards.
+    # Available to Arabian/Gulf tags once they have consolidated the Hejaz
+    # and built up a proud military tradition.
+    ###########################################################################
+    vu_raise_the_mubarizun = {
+        major = yes
+        potential = {
+            NOT = { has_country_flag = ARB_company }
+            capital_scope = {
+                OR = {
+                    region = arabia_region
+                    region = mashriq_region
+                }
+            }
+            religion_group = muslim
+        }
+        allow = {
+            is_at_war = no
+            army_tradition = 40
+            owns_core_province = 385       # Basra — heartland of the Gulf trade routes
+            mil_power = 50
+        }
+        effect = {
+            set_country_flag = ARB_company
+            add_army_tradition = -10
+            add_mil_power = -50
+            add_prestige = 15
+            custom_tooltip = vu_mubarizun_unlocked_tt
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    ###########################################################################
+    # merc_mor_ottoman_mercenaries (MOR_ottoman_company)
+    # Ottoman-trained corps — Moroccan soldiers drilled in Ottoman methods.
+    # Available to Morocco once they have made contact with the Ottoman sphere
+    # and invested in military modernisation.
+    ###########################################################################
+    vu_hire_ottoman_military_instructors = {
+        major = yes
+        potential = {
+            NOT = { has_country_flag = MOR_ottoman_company }
+            OR = {
+                tag = MOR
+                AND = {
+                    capital_scope = { region = maghreb_region }
+                    religion_group = muslim
+                }
+            }
+        }
+        allow = {
+            is_at_war = no
+            mil_tech = 8
+            army_tradition = 30
+            OR = {
+                has_opinion = { who = TUR value = 50 }
+                has_opinion = { who = OTT value = 50 }
+            }
+            mil_power = 75
+        }
+        effect = {
+            set_country_flag = MOR_ottoman_company
+            add_mil_power = -75
+            add_army_tradition = -5
+            add_prestige = 10
+            custom_tooltip = vu_ottoman_corps_unlocked_tt
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    ###########################################################################
+    # merc_mor_black_guard (MOR_black_guard_flag)
+    # The Black Guard — elite sub-Saharan slave soldiers of the Moroccan
+    # sultans. Historically established by Ismail ibn Sharif c. 1680.
+    ###########################################################################
+    vu_establish_the_black_guard = {
+        major = yes
+        potential = {
+            NOT = { has_country_flag = MOR_black_guard_flag }
+            OR = {
+                tag = MOR
+                AND = {
+                    capital_scope = { region = maghreb_region }
+                    religion_group = muslim
+                }
+            }
+        }
+        allow = {
+            is_at_war = no
+            is_year = 1650
+            army_tradition = 50
+            absolutism = 50
+            treasury = 200
+        }
+        effect = {
+            set_country_flag = MOR_black_guard_flag
+            add_treasury = -200
+            add_army_tradition = -5
+            add_prestige = 20
+            custom_tooltip = vu_black_guard_unlocked_tt
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { is_year = 1680 }
+            }
+        }
+    }
+
+    ###########################################################################
+    # merc_gra_volunteers_of_the_faith (GRA_merc_company_volunteers_flag)
+    # Volunteers of the Faith — Granadan crusaders who fought to reclaim
+    # the holy sites. Unlocked after completing the Reclaim Mecca mission.
+    ###########################################################################
+    vu_raise_volunteers_of_the_faith = {
+        major = yes
+        potential = {
+            NOT = { has_country_flag = GRA_merc_company_volunteers_flag }
+            OR = {
+                tag = GRA
+                AND = {
+                    culture_group = iberian
+                    religion_group = muslim
+                }
+            }
+        }
+        allow = {
+            is_at_war = no
+            mission_completed = adu_reclaim_mecca
+            mil_power = 50
+        }
+        effect = {
+            set_country_flag = GRA_merc_company_volunteers_flag
+            add_mil_power = -50
+            add_prestige = 15
+            custom_tooltip = vu_volunteers_faith_unlocked_tt
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+}

@@ -1770,54 +1770,7 @@ CLE_ideas = {
 	}
 }
 
-JAP_ideas = {
-	start = {
-		stability_cost_modifier = -0.1
-		discipline = 0.05
-	}
-	
-	bonus = {
-		infantry_power = 0.15
-	}
-	
-	trigger = {
-		OR = {
-			tag = JAP
-			tag = JPE
-		}
-		NOT = {
-			has_country_flag = JAP_evolved_ideas1
-		}
-		NOT = {
-			has_country_flag = JAP_evolved_ideas2
-		}
-	}
-	free = yes
-	
-	jap_unification_under_the_emperor = {
-		global_unrest = -2
-	}
-	reformed_land_holding = {
-		global_manpower_modifier = 0.2
-	}
-	jap_modernization = {
-		technology_cost = -0.05
-		global_institution_spread = 0.1
-	}
-	jap_fourth = {
-		heavy_ship_power = 0.1
-		ship_durability = 0.05
-	}
-	jap_fifth = {
-		production_efficiency = 0.15
-	}
-	jap_kaitakudan = {
-		global_colonial_growth = 20
-	}
-	jap_seventh = {
-		province_warscore_cost = -0.15
-	}
-}
+# [merge] JAP_ideas now defined in common/ideas/00_country_ideas.txt (Victorum wins; Ante Bellum-specific parts merged there)
 
 XXI2_ideas = {
 	start = {

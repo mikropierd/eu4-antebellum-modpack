@@ -1,0 +1,1087 @@
+######################################################################################
+# VU Timurids by SF
+######################################################################################
+timariot_assistance = {
+	horde_unity = 2
+	tax_income = 36
+}
+
+timariot_subjugation = {
+	trade_efficiency = -0.15
+}
+
+turko_khanates = {
+	discipline = 0.025
+}
+
+tauric_khanates = {
+	cavalry_power = 0.05
+}
+
+######################################################################################
+# Updated by SF to VU 1.37 ToR
+######################################################################################
+cas_morocco_modifier = {
+	num_accepted_cultures = 1
+}
+
+MOR_marinids = {
+	church_loyalty_modifier = 0.05
+	build_cost = -0.05
+}
+
+MOR_wattasids = {
+	monthly_piety = 0.005
+}
+
+######################################################################################
+# VU Colonial triggered modifiers
+######################################################################################
+vu_tiny_colony = {
+	colonists = 1
+	global_colonial_growth = 25
+	liberty_desire = -50
+	global_tax_income = 48
+}
+
+vu_small_colony = {
+	colonists = 1
+	global_colonial_growth = 50
+	liberty_desire = -25
+	global_tax_income = 24
+}
+
+vu_medium_colony = {
+	colonists = 2
+	global_colonial_growth = 100
+	global_tax_income = 12
+}
+
+vu_large_colony = {
+	colonists = 2
+	global_colonial_growth = 100
+	liberty_desire = 10
+}
+
+vu_huge_colony = {
+	colonists = 3
+	global_colonial_growth = 200
+	liberty_desire = 25
+}
+
+vu_massive_colony = {
+	colonists = 3
+	global_colonial_growth = 250
+	liberty_desire = 50
+}
+
+######################################################################################
+# National Focuses
+######################################################################################
+vu_addon_triggered_modifier_adm_focus = {
+	legitimacy = 1
+	republican_tradition = 0.5
+	devotion = 1
+	horde_unity = 1
+	meritocracy = 1
+	advisor_cost = -0.2
+	global_autonomy = -0.025
+}
+
+vu_addon_triggered_modifier_dip_focus = {
+	diplomatic_reputation = 2
+	diplomatic_upkeep = 1
+	improve_relation_modifier = 0.3
+}
+
+vu_addon_triggered_modifier_mil_focus = {
+	land_forcelimit_modifier = 0.2
+	manpower_recovery_speed = 0.3
+	war_exhaustion = -0.01
+}
+
+######################################################################################
+# Manpower modifiers re-balanced by DM
+######################################################################################
+sufficient_manpower = {
+	land_morale = 0.05
+	manpower_recovery_speed = -0.1
+}
+
+insufficient_manpower = {
+	production_efficiency = -0.05
+	land_morale = -0.05
+	manpower_recovery_speed = 0.05
+}
+
+exhausted_manpower = {
+	land_morale = -0.1
+	production_efficiency = -0.05
+	global_trade_goods_size_modifier = -0.1
+	manpower_recovery_speed = 0.1
+}
+
+######################################################################################
+# Maritime Republic Mechanic
+######################################################################################
+VU_maritime_republic_triggered_modifier_new_world = {
+	monthly_maritime_republic = -0.33
+	#picture = "monthly_maritime_republic_opposite"
+}
+
+VU_maritime_republic_triggered_modifier_global_trade = {
+	monthly_maritime_republic = -0.33
+	#picture = "monthly_maritime_republic_opposite"
+}
+
+######################################################################################
+# SE subject triggered modifiers
+######################################################################################
+increased_tariffs_triggered_modifier = {
+	global_tariffs = 0.5
+}
+
+persian_satrapies_increased_tariffs_triggered_modifier = {
+	global_tariffs = 0.5
+}
+
+has_5_pirate_brotherhood_vassals_triggered_modifier = {
+	navy_tradition = 0.25
+	global_ship_cost = -0.1
+	ship_durability = 0.1
+}
+
+dutch_provinces_reform_1_overlord = {
+	legitimacy = 0.5
+	devotion = 0.5
+	horde_unity = 0.5
+	meritocracy = 0.5
+	republican_tradition = 0.25
+}
+
+dutch_provinces_reform_1_subject = {
+	diplomatic_reputation = 1
+}
+
+dutch_provinces_reform_2_overlord = {
+	ae_impact = -0.1
+	land_maintenance_modifier = -0.1
+}
+
+dutch_provinces_reform_2_subject = {
+	development_cost = -0.1
+	build_cost = -0.1
+}
+
+dutch_provinces_reform_3_overlord = {
+	diplomatic_upkeep = 1
+	culture_conversion_cost = -0.1
+}
+
+dutch_provinces_reform_3_subject = {
+	global_trade_power = 0.1
+}
+
+is_tributary_state_triggered_modifier = {
+	trade_efficiency = 0.15
+}
+
+overlord_has_administrative_region_triggered_modifier = {
+	global_tax_modifier = 0.15
+}
+
+######################################################################################
+# ME Zapadoslavia
+######################################################################################
+zapadoslavia_disloyal_nobles_triggered_modifier = {
+	legitimacy = -1
+	global_unrest = 2
+	global_manpower_modifier = -0.1
+}
+
+######################################################################################
+# ME USA Modifiers
+######################################################################################
+nah_usa_reservation_triggered_modifier = {
+	land_forcelimit_modifier = -2
+	global_tax_modifier = 0.15
+}
+
+usa_nah_reservation_triggered_modifier = {
+	diplomatic_reputation = 0.5
+	manpower_recovery_speed = 0.05
+}
+
+usa_market_economy_triggered_modifier = {
+	merchants = 1
+	global_trade_power = 0.15
+}
+
+######################################################################################
+# VU SWE Modifiers
+######################################################################################
+accepted_latvian_culture_triggered_modifier = {
+	num_accepted_cultures = 1
+}
+
+accepted_estonian_culture_triggered_modifier = {
+	num_accepted_cultures = 1
+}
+
+######################################################################################
+# ME SWA Modifiers
+######################################################################################
+ME_SWA_Stability_1 = {
+	development_cost = -0.05
+}
+
+ME_SWA_Stability_2 = {
+	development_cost = -0.1
+}
+
+ME_SWA_Stability_3 = {
+	development_cost = -0.15
+}
+
+######################################################################################
+# ME SPA Modifier
+######################################################################################
+the_milan_duchy_vassal_triggered_modifier = {
+	diplomatic_upkeep = 1
+}
+
+######################################################################################
+# ME SAX Modifiers
+######################################################################################
+saxony_nordmark_triggered_modifier = {
+	diplomatic_upkeep = 1
+	land_forcelimit_modifier = 0.1
+}
+
+saxony_nordmark_subject_triggered_modifier = {
+	fort_maintenance_modifier = -0.75
+	land_morale = 0.05
+}
+
+######################################################################################
+# ME RUM Modifiers
+######################################################################################
+BEY_ottoman_war = {
+	province_warscore_cost = -0.1
+}
+
+RUM_crusader_triggered_modifier = {
+	naval_morale = 0.05
+	church_loyalty_modifier = 0.05
+}
+
+RUM_movement_speed_triggered_modifier = {
+	movement_speed = 0.1
+}
+
+######################################################################################
+# ME RHN Modifier
+######################################################################################
+RHN_no_trading_bonus = {
+	global_trade_goods_size_modifier = -0.1
+}
+
+######################################################################################
+# ME PRU Modifiers
+######################################################################################
+BRA_diplo_slot = {
+	diplomatic_upkeep = 1
+}
+
+PRU_prussian_vassal = {
+	global_trade_goods_size_modifier = 0.33
+}
+
+PRU_prussian_vassal_2 = {
+	army_tradition = 1
+}
+
+######################################################################################
+# ME POL Modifiers
+######################################################################################
+POL_rawa_triggered_modifier = {
+	land_maintenance_modifier = -0.05
+}
+
+prussia_noble_cooperation_triggered_modifier = {
+	army_tradition = 0.5
+}
+
+POL_kurland_subject_triggered_modifier = {
+	trade_efficiency = 0.1
+}
+
+######################################################################################
+# ME PER Modifiers
+######################################################################################
+persia_hegemony_india_triggered_modifier = {
+	spy_offence = 0.3
+	global_trade_power = 0.2
+}
+
+persia_securing_road_triggered_modifier = {
+	caravan_power = 0.3
+	merchants = 1
+	trade_steering = 0.2
+}
+
+persia_indian_hegemony_march_triggered_modifier = {
+	global_trade_goods_size_modifier = 0.2
+	num_accepted_cultures = 2
+	stability_cost_modifier = -0.25
+}
+
+persia_indian_hegemony_march_522_overlord_triggered_modifier = {
+	merchants = 1
+	diplomatic_upkeep = 1
+}
+
+persia_indian_hegemony_march_563_overlord_triggered_modifier = {
+	trade_efficiency = 0.1
+	diplomatic_upkeep = 1
+}
+
+persia_indian_hegemony_march_1948_overlord_triggered_modifier = {
+	global_manpower_modifier = 0.15
+	diplomatic_upkeep = 1
+}
+
+persia_indian_hegemony_march_541_overlord_triggered_modifier = {
+	global_trade_power = 0.1
+	global_trade_goods_size_modifier = 0.1
+	diplomatic_upkeep = 1
+}
+
+######################################################################################
+# ME PAL Modifier
+######################################################################################
+PAL_bibliotheca_palatina_triggered = {
+	global_heretic_missionary_strength = 0.01
+}
+
+######################################################################################
+# ME NOR Modifier
+######################################################################################
+norwegian_constitutional_monarchy = {
+	global_unrest = -1
+	max_absolutism = 15
+}
+
+######################################################################################
+# ME MAY Modifier
+######################################################################################
+estate_maya_high_influence = {
+	legitimacy = -1
+	devotion = -1
+	republican_tradition = -1
+	horde_unity = -1
+	meritocracy = -1
+	build_cost = -0.33
+	all_power_cost = 0.33
+}
+
+######################################################################################
+# ME MAM Modifiers
+######################################################################################
+MAM_nubia_triggered_modifier = {
+	manpower_in_true_faith_provinces = 0.1
+}
+
+MAM_maghreb_triggered_modifier = {
+	global_unrest = -1
+	global_prosperity_growth = 0.25
+}
+
+MAM_indian_ocean_supremacy_triggered_modifier = {
+	trade_efficiency = -0.15
+}
+
+######################################################################################
+# ME MSA Modifiers
+######################################################################################
+MSA_syncretic_practices = {
+	global_unrest = -2
+}
+
+MSA_dar_islam_extends = {
+	church_loyalty_modifier = 0.1
+}
+
+MSA_war_with_colonizers = {
+	land_morale = 0.1
+}
+
+######################################################################################
+# ME MLC Modifier
+######################################################################################
+MLC_diplo_slot = {
+	free_leader_pool = 1
+}
+
+######################################################################################
+# ME ITA Modifiers
+######################################################################################
+italy_four_maritime_republics = {
+	mercantilism_cost = -0.2
+	trade_efficiency = 0.05
+	global_trade_goods_size_modifier = 0.1
+}
+
+ita_domus_marium = {
+	ship_durability = 0.05
+	global_naval_engagement_modifier = 0.1
+}
+
+ita_domus_terrae = {
+	discipline = 0.05
+	infantry_power = 0.1
+}
+
+######################################################################################
+# ME IRQ Modifier
+######################################################################################
+IRQ_free_subject = {
+	diplomatic_upkeep = 1
+}
+
+######################################################################################
+# ME SYR Modifier
+######################################################################################
+SYR_free_subject = {
+	diplomatic_upkeep = 1
+}
+
+######################################################################################
+# ME ILK Modifier
+######################################################################################
+ilkhanate_jihad_triggered_modifier = {
+	land_morale = 0.075
+	manpower_recovery_speed = 0.2
+}
+
+######################################################################################
+# ME HES Modifiers
+######################################################################################
+HES_independent_schmalkaldic_league_modifier = {
+	global_heretic_missionary_strength = 0.02
+	tolerance_own = 1
+}
+
+HES_loss_schmalkaldic_league_modifier = {
+	religious_unity = 0.25
+	global_heretic_missionary_strength = 0.02
+}
+
+######################################################################################
+# ME GRA Modifier
+######################################################################################
+GRA_tolerance_in_colonies_effect = {
+	tolerance_of_heathens_capacity = 1
+	tolerance_of_heretics_capacity = 1
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+}
+
+######################################################################################
+# ME FKN Modifier
+######################################################################################
+FKN_custom_modifier = {
+	land_morale = 0.1
+}
+
+######################################################################################
+# ME FRA Modifiers
+######################################################################################
+fra_furious_peasantry_triggered_modifier = {
+	global_unrest = 1
+}
+
+fra_continental_system_triggered_modifier = {
+	liberty_desire = -5
+}
+
+fra_first_reform_bonus = {
+	prestige = 0.5
+}
+
+fra_second_reform_bonus = {
+	land_maintenance_modifier = -0.1
+}
+
+fra_third_reform_bonus = {
+	global_unrest = -1
+}
+
+fra_fourth_reform_bonus = {
+	administrative_efficiency = 0.05
+}
+
+fra_treasurer_triggered_modifier = {
+	adm_advisor_cost = -0.1
+}
+
+######################################################################################
+# ME HAT Modifier
+######################################################################################
+gran_colombia_haiti_vassal_triggered_modifier = {
+	naval_forcelimit_modifier = 0.15
+}
+
+######################################################################################
+# ME CAN Modifiers
+######################################################################################
+canada_can_liberal_party_peace_triggered_modifier = {
+	can_liberal_party_influence = 0.05
+}
+
+canada_can_liberal_party_war_triggered_modifier = {
+	can_liberal_party_influence = 0.15
+}
+
+canada_can_liberal_party_stability_triggered_modifier = {
+	can_liberal_party_influence = 0.03
+}
+
+canada_can_conservative_party_war_triggered_modifier = {
+	can_conservative_party_influence = 0.15
+}
+
+canada_can_conservative_party_loans_triggered_modifier = {
+	can_conservative_party_influence = 0.25
+}
+
+canada_can_conservative_party_stability_triggered_modifier = {
+	can_conservative_party_influence = 0.03
+}
+
+canada_can_quebecois_party_war_triggered_modifier = {
+	can_quebecois_party_influence = 0.3
+}
+
+canada_can_quebecois_party_low_influence_triggered_modifier = {
+	can_quebecois_party_influence = 0.15
+}
+
+canada_can_quebecois_party_loans_triggered_modifier = {
+	can_quebecois_party_influence = 0.25
+}
+
+canada_can_quebecois_party_stability_triggered_modifier = {
+	can_quebecois_party_influence = 0.03
+}
+
+######################################################################################
+# ME BAV Modifiers
+######################################################################################
+bavaria_ferrara_subject_triggered_modifier = {
+	diplomatic_upkeep = 1
+	possible_mil_policy = 1
+}
+
+bavaria_ferrara_fer_subject_triggered_modifier = {
+	global_regiment_cost = -0.1
+}
+
+bavaria_italy_subject_triggered_modifier = {
+	free_mil_policy = 1
+}
+
+bavaria_italy_ita_subject_triggered_modifier = {
+	backrow_artillery_damage = 0.1
+}
+
+bavaria_dynasty_wittelsbach_triggered_modifier = {
+	monarch_diplomatic_power = 1
+}
+
+bavaria_dynasty_welf_triggered_modifier = {
+	monarch_military_power = 1
+}
+
+######################################################################################
+# ME Barbary Pirates Modifier
+######################################################################################
+AYY_triggered_modifier = {
+	galley_cost = -0.2
+	global_manpower_modifier = 0.05
+}
+
+######################################################################################
+# ME ARL Modifier
+######################################################################################
+ardabil_georgian_triggered_modifier = {
+	state_maintenance_modifier = -0.2
+	reform_progress_growth = 0.25
+}
+
+ardabil_shia_propaganda_triggered_modifier = {
+	siege_ability = 0.1
+}
+
+######################################################################################
+# ME ARA Modifier
+######################################################################################
+me_aragon_free_states_triggered_modifier = {
+	governing_capacity = 50
+}
+
+######################################################################################
+# ME ARB Modifiers
+######################################################################################
+HED_vassal_completed_dev_cost_mission = {
+	development_cost = -0.1
+}
+
+ARB_china_trade = {
+	trade_steering = 0.1
+	global_prosperity_growth = 0.25
+}
+
+ARB_subsaharan_africa_buff = {
+	religious_unity = 0.2
+	stability_cost_modifier = -0.1
+}
+
+ARB_tulaya = {
+	movement_speed = 0.05
+	cavalry_power = 0.1
+}
+
+MSY_low_piety = {
+	core_creation = -0.1
+	land_morale = 0.05
+}
+
+######################################################################################
+# From VU triggered modifiers
+######################################################################################
+#
+######################################################################################
+# Aragon Balancing
+######################################################################################
+vu_iberian_crowns = {
+	diplomatic_upkeep = 2	#Added to account for lack of hegemoniacle for Aragon since PUs don't count.
+	reduced_liberty_desire = 45
+	diplomatic_annexation_cost = 0.25
+}
+
+######################################################################################
+# Hanseatic League Balancing
+######################################################################################
+vu_hanseatic_domination = {
+	placed_merchant_power = 9
+	global_foreign_trade_power = 0.125
+	trade_steering = 0.125
+	global_ship_trade_power = 0.05
+}
+
+######################################################################################
+# ME KOR Government Modifiers
+######################################################################################
+bangyesurok_1 = {
+	global_tax_modifier = 0.05
+}
+
+bangyesurok_2 = {
+	global_tax_modifier = 0.1
+}
+
+bangyesurok_3 = {
+	global_tax_modifier = 0.15
+}
+
+######################################################################################
+# GE KOR Government Modifiers
+######################################################################################
+central_army_VU = {
+	global_regiment_recruit_speed = -0.25
+	manpower_recovery_speed = 0.1
+}
+
+bureaucracy_autonomy = {
+	global_tax_modifier = 0.05
+	production_efficiency = 0.05
+}
+
+korean_bureaucracy_advisor_1 = {
+	stability_cost_modifier = -0.05
+}
+
+korean_bureaucracy_advisor_2 = {
+	stability_cost_modifier = -0.1
+}
+
+korean_bureaucracy_advisor_3 = {
+	stability_cost_modifier = -0.15
+}
+
+korean_bureaucracy_advisor_4 = {
+	stability_cost_modifier = -0.2
+}
+
+korean_bureaucracy_advisor_5 = {
+	stability_cost_modifier = -0.25
+}
+
+######################################################################################
+# GE Theocracy Government Modifier
+######################################################################################
+VU_monastic_militarism = {
+	manpower_recovery_speed = 0.25
+	army_tradition = 1
+}
+
+######################################################################################
+# VU AI alliance balancing by DM
+######################################################################################
+vu_emperor_dip_decrease = {
+	diplomatic_upkeep = -3
+}
+
+vu_elector_dip_decrease = {
+	diplomatic_upkeep = -3
+}
+
+vu_prince_dip_decrease = {
+	diplomatic_upkeep = -2
+}
+
+######################################################################################
+# VU Edumacation by SF & Prussia
+######################################################################################
+vu_ruler_studying = {
+	state_maintenance_modifier = 0.15
+	stability_cost_modifier = 0.15
+	administrative_efficiency = -0.1
+}
+
+vu_war_ruler_studying = {
+	state_maintenance_modifier = 0.15
+	stability_cost_modifier = 0.25
+	administrative_efficiency = -0.1
+	all_power_cost = 0.05
+}
+
+vu_heir_studying = {
+	stability_cost_modifier = 0.15
+	administrative_efficiency = -0.1
+}
+
+vu_war_heir_general_studying = {
+	state_maintenance_modifier = 0.15
+	stability_cost_modifier = 0.15
+	administrative_efficiency = -0.15
+}
+
+######################################################################################
+# VU Startup Settings
+######################################################################################
+vu_startup_small_HRE_modifier = {
+	imperial_authority_value = 0.15
+}
+
+######################################################################################
+# VU Strategic Resources 
+######################################################################################
+vu_lacks_horses_for_cavalry = {
+	cavalry_cost = 0.5
+}
+
+vu_lacks_bronze_for_cannons = {
+	artillery_cost = 0.5
+}
+
+vu_brass_substitute_for_cannons = {
+	artillery_fire = -0.5
+}
+
+vu_cast_iron_substitute_for_cannons = {
+	artillery_power = -0.15
+}
+
+vu_lacks_iron_for_infantry = {
+	infantry_cost = 0.5
+}
+
+vu_lacks_lumber_for_ships = {
+	global_ship_cost = 0.5
+	naval_maintenance_modifier = 0.5
+}
+
+vu_lacks_supplies_for_navies = {
+	naval_attrition = 0.25
+}
+
+vu_lacks_food = {
+	land_attrition = 0.25
+}
+
+vu_has_access_to_gunpowder = {
+	fire_damage = 0.05
+}
+
+vu_has_access_to_steel = {
+	shock_damage = 0.05
+}
+
+vu_has_access_to_munitons = {
+	fire_damage_received = -0.05
+}
+
+vu_has_access_to_alcohol = {
+	morale_damage_received = -0.05
+	movement_speed = 0.025
+}
+
+vu_has_access_to_uniforms = {
+	morale_damage = 0.05
+}
+
+vu_has_access_to_regular_clothes = {
+	global_unrest = -1
+}
+
+vu_has_access_to_luxury_clothes = {
+	diplomatic_reputation = 0.5
+}
+
+vu_has_access_to_fur_clothes = {
+	land_attrition = -0.1
+}
+
+vu_has_access_to_medicaments_or_herbs = {
+	manpower_recovery_speed = 0.1
+}
+
+vu_has_access_to_salt = {
+	land_maintenance_modifier = -0.1
+}
+
+vu_has_access_to_optics = {
+	range = 0.15
+}
+
+vu_has_access_to_woodworking = {
+	ship_durability = 0.05
+	global_ship_repair = 0.15
+}
+
+######################################################################################
+# From 00_triggered_modifiers
+######################################################################################
+###########################################
+# Discovery of the East Indian trade route.
+###########################################
+east_indian_trade_route = {
+	trade_efficiency = 0.1	#VU increased from 0.05 to reward meeting somewhat more difficult requirements
+	trade_steering = 0.1	#VU new bonus to reward meeting somewhat more difficult requirements
+	global_ship_trade_power = 0.05	#VU new bonus to reward meeting somewhat more difficult requirements
+}
+
+######################################
+# Custodian of the Two Holy Mosques
+######################################
+custodian_of_the_two_holy_mosques = {
+	legitimacy = 0.5
+	missionaries = 1
+}
+
+######################################
+# Catholic control of Rome.
+######################################
+catholic_rome = {
+	papal_influence = -10
+	diplomatic_reputation = -2	#VU changed from -1. Harsh penalties, but a Catholic shouldn't occupy Rome.
+	#icon = 9
+}
+
+papal_subjugation = {
+	diplomatic_reputation = -1	#VU changed from -2. Subjugating isn't worse than outright occupying, at least subjects have the illusion of self determination.
+}
+
+rapid_collapse_of_society = {
+	all_power_cost = 0.33
+	discipline = -0.1
+	land_morale = -0.2
+}
+
+######################################
+# Italian - Submission to Emperor
+######################################
+submission_to_emperor = {
+	global_unrest = 3
+	stability_cost_modifier = 0.1
+	prestige = -1
+}
+
+######################################
+# Counter Revolution
+######################################
+counter_revolution = {
+	prestige = -5
+	stability_cost_modifier = 0.3
+	global_unrest = 5
+}
+
+######################################
+# Reaction
+######################################
+reaction = {
+	prestige = 10
+	stability_cost_modifier = -0.1
+	global_unrest = -10
+}
+
+######################################
+# Crusader
+######################################
+crusader = {
+	global_manpower_modifier = 0.3
+	global_tax_modifier = 0.1
+	land_morale = 0.1
+	prestige = 1
+	papal_influence = 1
+	devotion = 0.25
+	#icon = 9
+}
+
+######################################
+# Excommunication
+######################################
+excommunication = {
+	prestige = -2
+	tolerance_own = -3
+	devotion = -5
+	papal_influence = -10
+	#icon = 10
+}
+
+##################################################
+# The Pentarchy
+##################################################
+pentarchy_mod = {
+	prestige = 0.5
+	missionaries = 1
+}
+
+##################################################
+# China modifiers
+##################################################
+waging_war_for_china = {
+	imperial_mandate = 0.05
+}
+
+##################################################
+# HRE modifiers
+##################################################
+hre_dominant_catholic = {
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+hre_dominant_protestant = {
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+hre_dominant_reformed = {
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+hre_dominant_hussite = {
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	imperial_authority = 0.25
+}
+
+######################################
+# The Golden Age of Piracy
+######################################
+golden_age_of_piracy = {
+	privateer_efficiency = 0.2
+}
+
+######################################
+# The Great Peasants' War
+######################################
+great_peasants_war_triggered_modifier = {
+	global_unrest = 6
+}
+
+great_peasants_war_concessions_triggered_modifier = {
+	global_tax_modifier = -0.05
+}
+
+######################################
+# Pope is in the empire
+######################################
+pope_in_hre_triggered_modifier = {
+	prestige = -0.5
+}
+
+######################################
+# The Italian Wars
+######################################
+italian_wars_triggered_modifier = {
+	mercenary_cost = -0.1
+	mercenary_discipline = 0.05
+}
+
+######################################
+# Defense of the Empire
+######################################
+defense_of_the_empire_modifier = {
+	war_taxes_cost_modifier = -1
+}
+
+######################################
+# Judaism Defensive Aspect
+######################################
+judaism_yom_kippur_aspect_war_modifier = {
+	manpower_recovery_speed = 0.2
+	church_power_modifier = 0.25
+}
+
+judaism_yom_kippur_aspect_defensive_war_modifier = {
+	manpower_recovery_speed = 0.2
+	church_power_modifier = 0.25
+}
+
+######################################
+# Government Reform Specific
+######################################
+ahmudan_system_attacker = {
+	global_regiment_cost = -0.1
+	manpower_recovery_speed = 0.2
+}
+
+ahmudan_system_defender = {
+	land_morale = 0.075
+	defensiveness = 0.15
+	manpower_recovery_speed = 0.1
+}
+
+TIM_diwan_adm = {
+	yearly_corruption = -0.15
+}
+
+TIM_diwan_dip = {
+	global_unrest = -1
+}
+
+TIM_diwan_mil = {
+	land_maintenance_modifier = -0.1
+}

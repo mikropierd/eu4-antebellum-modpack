@@ -1,0 +1,119 @@
+#Larp Dynasties from various series for sheetz and gigglesworth - Prussia
+country_decisions = {
+	vu_larp_dynasty_event_decision = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_country_flag = meme_dynasty_decision_taken
+			}
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			set_country_flag = meme_dynasty_decision_taken
+			country_event = {
+				id = vu_meme_dynasty_events.1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	vu_castily_rock = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_country_flag = vu_castile_rename_meme
+			}
+			tag = CAS
+			dynasty = "Lannister"
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			set_country_flag = vu_castile_rename_meme
+			override_country_name = VU_CASRCK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	vu_palpatinate = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = {
+				has_country_flag = vu_palatinate_rename_meme
+			}
+			tag = PAL
+			dynasty = "Palpatine"
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			set_country_flag = vu_palatinate_rename_meme
+			override_country_name = VU_PAL
+			swap_ideas = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	vu_taoism_eradicate_confucianism = {
+		major = yes
+		potential = {
+			ai = no
+			is_emperor_of_china = yes
+			religion = taoism
+			OR = {
+				any_owned_province = {
+					religion = confucianism
+				}
+				any_subject_country = {
+					any_owned_province = {
+						NOT = {
+							religion = taoism
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			ai = no
+			OR = {
+				any_owned_province = {
+					religion = confucianism
+				}
+				any_subject_country = {
+					any_owned_province = {
+						NOT = {
+							religion = taoism
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			every_owned_province = {
+				change_religion = taoism
+			}
+			every_subject_country = {
+				every_owned_province = {
+					change_religion = taoism
+				}
+			}
+			add_stability = 1
+		} 
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

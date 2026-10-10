@@ -144,6 +144,11 @@ spriteTypes = {
 		name = "gfx_select_building_large_bg2"
 		texturefile = "gfx/interface/select_building_large_bg2.dds"
 	}		
+	### Added by Abyssian007, this is an extra image for a larger UI ###
+	spriteType = {
+		name = "gfx_select_building_large_bg2"
+		texturefile = "gfx/interface/select_building_large_bg2.dds"
+	}																	 
 	
 	spriteType = {
 		name = "GFX_select_building_small_bg"
@@ -217,11 +222,21 @@ spriteTypes = {
 		name = "GFX_exploit_button_reduce_infrastructure"
 		texturefile = "gfx/interface/exploit_button_reduce_infrastructure.dds"
 	}
+	
+	#spriteType = {
+	#	name = "GFX_development_button_production"
+	#	texturefile = "gfx/interface/development_button_literacy.dds"
+	#}
 
 	spriteType = {
 		name = "GFX_development_button_production"
 		texturefile = "gfx/interface/development_button_production.dds"
 	}
+	
+	#spriteType = {
+	#	name = "GFX_development_button_manpower"
+	#	texturefile = "gfx/interface/development_button_sanitation.dds"
+	#}
 
 	spriteType = {
 		name = "GFX_development_button_manpower"
@@ -312,7 +327,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_view_religion"
 		texturefile = "gfx//interface//province_view_religion.dds"
-		noOfFrames = 46 # TLw
+		noOfFrames = 38
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -980,14 +995,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 32
+		noOfFrames = 142
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_resource_icon_small"
 		texturefile = "gfx//interface//resources_small.dds"
-		noOfFrames = 32
+		noOfFrames = 142
 		loadType = "INGAME"
 	}
 
@@ -1000,7 +1015,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon_transparent"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 32
+		noOfFrames = 142
 		loadType = "INGAME"
 		
 		alwaystransparent = yes
@@ -1433,7 +1448,6 @@ spriteTypes = {
 		name = "GFX_autonomy_increased"
 		texturefile = "gfx/interface/ideas_EU4/autonomy_increased.dds"
 	}
-
 	spriteType = {
 		name = "GFX_state_view_invisible_button_114x20"
 		texturefile = "gfx\interface\state_view_invisible_button_114x20.dds"

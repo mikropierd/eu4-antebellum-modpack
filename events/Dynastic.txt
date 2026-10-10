@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 # Carnal sins
 country_event = {
 	id = 9450
@@ -15,6 +16,7 @@ country_event = {
 		government = monarchy
 		dip = 2
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		has_government_attribute = heir
 	}
 	
@@ -60,6 +62,7 @@ country_event = {
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		any_owned_province = {
 			num_free_building_slots = 1
 			NOT = { has_building = cathedral }
@@ -118,6 +121,7 @@ country_event = {
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 	}
 	
 	mean_time_to_happen = {
@@ -196,6 +200,7 @@ country_event = {
 	trigger = {
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		is_month = 3
 		NOT = { is_month = 6 }
@@ -273,7 +278,7 @@ country_event = {
 	}
 }
 
-# Soirï¿½e
+# Soirée
 country_event = {
 	id = 9455
 	title = "EVTNAME9455"
@@ -286,6 +291,7 @@ country_event = {
 		government = monarchy
 		has_regency = no
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		has_government_attribute = heir
 	}
@@ -432,6 +438,7 @@ country_event = {
 		religion_group = christian
 		has_regency = no
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
@@ -483,6 +490,7 @@ country_event = {
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = {
 			is_year = 1450
@@ -491,7 +499,19 @@ country_event = {
 			has_country_flag = last_jousting_tournament_held
 		}
 		army_tradition =  20
-		technology_group = western
+		OR = {
+			technology_group = western
+			technology_group = dutch_tech_group
+			technology_group = english_tech_group
+			technology_group = french_tech_group
+			technology_group = german_tech_group
+			technology_group = italian_tech_group
+			technology_group = portuguese_tech_group
+			technology_group = roman_tech_group
+			technology_group = scandinavian_tech_group
+			technology_group = spanish_tech_group
+			technology_group = swiss_tech_group
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -618,8 +638,9 @@ country_event = {
 		is_free_or_tributary_trigger = yes
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = celestial_empire }
-		adm_tech = 20
+		adm_tech = 37
 		adm_power = 200
 		has_factions = no
 	}
@@ -715,6 +736,7 @@ country_event = {
 		government = monarchy
 		NOT = { legitimacy_or_horde_unity = 50 }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = celestial_empire }
 		NOT = { has_reform = mamluk_government }
 		has_regency = yes
@@ -759,6 +781,7 @@ country_event = {
 			AND = {
 				government = monarchy
 				NOT = { has_government_attribute = has_harem_events }
+				NOT = { has_government_attribute = has_selamlik_events }
 				NOT = { has_reform = mamluk_government }
 				NOT = { has_reform = elective_monarchy }
 				NOT = { has_reform = polish_elective_monarchy }
@@ -883,6 +906,19 @@ country_event = {
 			dynasty = ROOT
 			male = yes
 			name = "Pachakutiq"
+			claim = 100
+			mil = 6
+		}
+	}
+	option = {
+		name = "EVTOPTAh9469"
+		trigger = {
+			religion = arctolatry
+		}
+		define_heir = {
+			dynasty = ROOT
+			male = yes
+			name = "Deganawida"
 			claim = 100
 			mil = 6
 		}
@@ -1208,6 +1244,7 @@ country_event = {
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		has_regency = no
 		is_lesser_in_union = no
@@ -1220,6 +1257,7 @@ country_event = {
 			NOT = { has_reform = elective_monarchy }
 			NOT = { has_reform = polish_elective_monarchy }
 			NOT = { has_government_attribute = has_harem_events }
+			NOT = { has_government_attribute = has_selamlik_events }
 			NOT = { has_reform = mamluk_government }
 			marriage_with = ROOT
 			NOT = { dynasty = ROOT }
@@ -1371,6 +1409,7 @@ province_event = {
 			NOT = { has_reform = elective_monarchy }
 			NOT = { has_reform = polish_elective_monarchy }
 			NOT = { has_government_attribute = has_harem_events }
+			NOT = { has_government_attribute = has_selamlik_events }
 			is_lesser_in_union = no
 			NOT = { has_country_flag = murdering_bastard }
 			NOT = { has_country_flag = contained_insanity }
@@ -1508,6 +1547,7 @@ country_event = {
 		prestige = 30
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		is_lesser_in_union = no
 		is_at_war = no
 		has_regency = no
@@ -1682,7 +1722,19 @@ country_event = {
 		picture = ROYAL_STRESS_eventPicture
 		trigger = {
 			has_dlc = "Lions of the North"
-			technology_group = western
+		    OR = {
+		    	technology_group = western
+		    	technology_group = dutch_tech_group
+		    	technology_group = english_tech_group
+		    	technology_group = french_tech_group
+		    	technology_group = german_tech_group
+		    	technology_group = italian_tech_group
+		    	technology_group = portuguese_tech_group
+		    	technology_group = roman_tech_group
+		    	technology_group = scandinavian_tech_group
+		    	technology_group = spanish_tech_group
+		    	technology_group = swiss_tech_group
+		    }
 		}
 	}
 	picture = {
@@ -1690,7 +1742,21 @@ country_event = {
 		trigger = {
 			OR = {
 				NOT = { has_dlc = "Lions of the North" }
-				NOT = { technology_group = western }
+				NOT = { 
+					OR = {
+		            	technology_group = western
+		            	technology_group = dutch_tech_group
+		            	technology_group = english_tech_group
+		            	technology_group = french_tech_group
+		            	technology_group = german_tech_group
+		            	technology_group = italian_tech_group
+		            	technology_group = portuguese_tech_group
+		            	technology_group = roman_tech_group
+		            	technology_group = scandinavian_tech_group
+		            	technology_group = spanish_tech_group
+		            	technology_group = swiss_tech_group
+		            }
+			    }
 			}
 		}
 	}
@@ -1766,6 +1832,7 @@ country_event = {
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
@@ -1806,7 +1873,7 @@ country_event = {
 	}
 }
 
-### Suggestions by Ex Mudder, scripted by Sara Wendel-ï¿½rtqvist
+### Suggestions by Ex Mudder, scripted by Sara Wendel-Örtqvist
 
 namespace = dynastic_events
 
@@ -1823,6 +1890,7 @@ country_event = {
 		government = monarchy
 		religion_group = christian
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
@@ -1918,6 +1986,7 @@ country_event = {
 		government = monarchy
 		NOT = { religion_group = muslim }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
@@ -1984,6 +2053,7 @@ country_event = {
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { religion_group = muslim }
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = shogunate }
 		has_government_attribute = heir
@@ -2079,7 +2149,7 @@ country_event = {
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
-		NOT = { has_government_attribute = romanian_elective_monarchy }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_reform = mamluk_government }
@@ -2091,6 +2161,7 @@ country_event = {
 			government = monarchy
 			religion_group = christian
 			NOT = { has_government_attribute = has_harem_events }
+			NOT = { has_government_attribute = has_selamlik_events }
 			NOT = { has_reform = elective_monarchy }
 			NOT = { has_reform = polish_elective_monarchy }
 			has_regency = no
@@ -2117,6 +2188,7 @@ country_event = {
 				limit = {
 					government = monarchy
 					NOT = { has_government_attribute = has_harem_events }
+					NOT = { has_government_attribute = has_selamlik_events }
 					NOT = { has_reform = elective_monarchy }
 					NOT = { has_reform = polish_elective_monarchy }
 					has_regency = no
@@ -2225,8 +2297,11 @@ country_event = {
 		has_heir = no
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
+		NOT = { has_government_attribute = has_selamlik_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = polish_elective_monarchy }
+			NOT = { has_reform = mamluk_government }
 		religion_group = christian
 		is_free_or_tributary_trigger = yes
 		has_consort = no
@@ -2237,9 +2312,9 @@ country_event = {
 		any_neighbor_country = {
 			government = monarchy
 			NOT = { has_government_attribute = has_harem_events }
+			NOT = { has_government_attribute = has_selamlik_events }
+			NOT = { has_government_attribute = has_selamlik_events }
 			NOT = { has_reform = elective_monarchy }
-			NOT = { has_reform = polish_elective_monarchy }
-			NOT = { has_reform = mamluk_government }
 			religion_group = christian
 			has_heir = no
 			ruler_age = 16
@@ -2291,6 +2366,7 @@ country_event = {
 			limit = {
 				government = monarchy
 				NOT = { has_government_attribute = has_harem_events }
+				NOT = { has_government_attribute = has_selamlik_events }
 				NOT = { has_reform = elective_monarchy }
 				NOT = { has_reform = polish_elective_monarchy }
 				NOT = { has_reform = mamluk_government }

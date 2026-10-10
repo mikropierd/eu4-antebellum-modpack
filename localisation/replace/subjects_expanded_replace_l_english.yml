@@ -1,0 +1,6 @@
+﻿l_english:
+ CAN_HAVE_SUBJECTS:1 "Can have §Y$SUBJECTS$§!\n"
+
+ mechanic_can_create_banking_family_subject_rule: "Banking Family Clan Creation"
+ mechanic_can_create_banking_family_subject_rule_yes: "Allows establishing the subject type §YBanking Family Clan§! in suitable countries."
+

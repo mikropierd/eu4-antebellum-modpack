@@ -1,0 +1,753 @@
+namespace = VU_SET_Events
+#################################
+# Quick setup					#
+#################################
+country_event = {
+	id = VU_SET_Events.01
+	title = VU_SET_Events.01.t
+	desc = VU_SET_Events.01.d
+	picture = FEAST_eventPicture
+	fire_only_once = yes
+	trigger = {
+		has_game_started = yes
+		ROOT = {
+			ai = no
+		}
+	}
+	immediate = {
+		vu_add_regimental_camps = yes		#VU forcelimit balance
+		vu_add_docks = yes		#VU forcelimit balance
+		vu_discover_the_world = yes		#Discover the world by Modus
+		spawn_troops_on_startup = yes		#Spawning the historical amounts of troops for countries by Modus
+		crownland_share_on_startup = yes		#Spawn the historical crownland share by VU Team
+		vu_set_POW_policy_globally = yes		#VU POWs
+		vu_set_add_institutions = yes		#VU
+		vu_set_disable_releasing_of_colonies = yes		#VU colonial settings
+		#vu_set_province_modifiers = yes			#SF's & VU's province modifiers (will unhash it when it's completed)
+	}
+	option = {
+		#Reccommended Mode, doesn't do shit, just leaves the game as is and exits the settings
+		name = VU_SET_Events.01.a
+		highlight = yes
+		add_prestige = 1
+		vu_colour_refresh = yes
+		enable_hard_to_colonise = yes
+	}
+	option = {
+		#Performance Mode, yeets a lot of extra tags. Turns off some mechanics (TBD)
+		name = VU_SET_Events.01.b
+		remove_extra_tags = yes
+		add_treasury = 1
+		set_global_flag = vu_no_historical_colonization
+		set_global_flag = vu_startup_disable_subject_colouring
+	}
+	option = {
+		name = VU_SET_Events.01.c
+		country_event = {
+			id = VU_SET_Events.02
+		}
+	}
+}
+
+#################################
+# Options Categories			#
+#################################
+country_event = {
+	id = VU_SET_Events.02
+	title = VU_SET_Events.02.t
+	desc = VU_SET_Events.02.d
+	picture = INVENTION_eventPicture
+	is_triggered_only = yes
+	option = {
+		#Specific Performance options
+		name = VU_SET_Events.02.a
+		country_event = {
+			id = VU_SET_Events.04
+		}
+	}
+	option = {
+		#Specific Gameplay options
+		name = VU_SET_Events.02.b
+		country_event = {
+			id = VU_SET_Events.03
+		}
+	}
+	option = {
+		#Fun Gameplay options
+		name = VU_SET_Events.02.e
+		country_event = {
+			id = VU_SET_Events.05
+		}
+	}
+	option = {
+		#Apply and close options
+		name = VU_SET_Events.02.c
+		add_treasury = 1
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_HRE
+			effect = remove_extra_HRE_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_western_europe
+			effect = remove_extra_western_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_italy
+			effect = remove_extra_italian_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_switzerland
+			effect = remove_extra_swiss_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_middle_east
+			effect = remove_extra_middle_eastern_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_balkans
+			effect = remove_extra_balkaner_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_eastern_europe
+			effect = remove_extra_eastern_european_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_india
+			effect = remove_extra_indian_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_simplify_afrika
+			effect = remove_extra_afrikan_tags
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_shattered_world
+			effect = vu_shatter_the_world
+		}
+		vu_do_with_flag_and_remove_it = {
+			flag = vu_startup_release_all_subjects
+			effect = vu_release_all_subjects
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = vu_startup_disable_hard_to_colonise
+				}
+			}
+			hidden_effect = {
+				enable_hard_to_colonise = yes
+			}
+		}
+		else = {
+			custom_tooltip = vu_startup_disable_hard_to_colonise
+			hidden_effect = {
+				clr_country_flag = vu_startup_disable_hard_to_colonise
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = vu_startup_disable_subject_colouring
+			}
+			custom_tooltip = vu_no_historical_colonization
+		}
+		else = {
+			hidden_effect = {
+				vu_colour_all_countries = yes
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = vu_no_historical_colonization
+			}
+			custom_tooltip = vu_no_historical_colonization
+		}
+	}
+}
+
+#################################
+# Gameplay Options				#
+#################################
+country_event = {
+	id = VU_SET_Events.03
+	title = VU_SET_Events.03.t
+	desc = VU_SET_Events.03.d
+	picture = ARTWORK_eventPicture
+	is_triggered_only = yes
+	option = {
+		#Turn OFF Subjects colouring in
+		name = VU_SET_Events.03.ay
+		trigger = {
+			NOT = {
+				has_global_flag = vu_startup_disable_subject_colouring
+			}
+		}
+		hidden_effect = {
+			set_global_flag = vu_startup_disable_subject_colouring
+		}
+	}
+	option = {
+		#Turn ON Subjects colouring in
+		name = VU_SET_Events.03.an
+		trigger = {
+			has_global_flag = vu_startup_disable_subject_colouring
+		}
+		hidden_effect = {
+			clr_global_flag = vu_startup_disable_subject_colouring
+		}
+	}
+	option = {
+		#Turn OFF Hard to Colonise
+		name = VU_SET_Events.03.by
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_disable_hard_to_colonise
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_disable_hard_to_colonise
+		}
+	}
+	option = {
+		#Turn ON Hard to Colonise
+		name = VU_SET_Events.03.bn
+		trigger = {
+			has_country_flag = vu_startup_disable_hard_to_colonise
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_disable_hard_to_colonise
+		}
+	}
+	option = {
+		#Turn OFF Historical Colonisation
+		name = VU_SET_Events.03.cy
+		trigger = {
+			NOT = {
+				has_global_flag = vu_no_historical_colonization
+			}
+		}
+		hidden_effect = {
+			set_global_flag = vu_no_historical_colonization
+		}
+	}
+	option = {
+		#Turn ON Historical Colonisation
+		name = VU_SET_Events.03.cn
+		trigger = {
+			has_global_flag = vu_no_historical_colonization
+		}
+		hidden_effect = {
+			clr_global_flag = vu_no_historical_colonization
+		}
+	}
+	option = {
+		#Return back
+		name = VU_SET_Events.03.q
+	}
+	after = {
+		country_event = {
+			id = VU_SET_Events.02
+		}
+	}
+}
+
+#################################
+# Performance Options	    	#
+#################################
+country_event = {
+	id = VU_SET_Events.04
+	title = VU_SET_Events.04.t
+	desc = VU_SET_Events.04.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		#Simplify HRE NO
+		name = VU_SET_Events.04.ay
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_HRE
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_HRE
+		}
+	}
+	option = {
+		#Simplify HRE YES
+		name = VU_SET_Events.04.an
+		trigger = {
+			has_country_flag = vu_startup_simplify_HRE
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_HRE
+		}
+	}
+	option = {
+		#Simplify Western Europe NO
+		name = VU_SET_Events.04.by
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_western_europe
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_western_europe
+		}
+	}
+	option = {
+		#Simplify Western Europe YES
+		name = VU_SET_Events.04.bn
+		trigger = {
+			has_country_flag = vu_startup_simplify_western_europe
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_western_europe
+		}
+	}
+	option = {
+		#Simplify Italy NO
+		name = VU_SET_Events.04.cy
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_italy
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_italy
+		}
+	}
+	option = {
+		#Simplify Italy YES
+		name = VU_SET_Events.04.cn
+		trigger = {
+			has_country_flag = vu_startup_simplify_italy
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_italy
+		}
+	}
+	option = {
+		#Simplify Switzerland NO
+		name = VU_SET_Events.04.dy
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_switzerland
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_switzerland
+		}
+	}
+	option = {
+		#Simplify Switzerland YES
+		name = VU_SET_Events.04.dn
+		trigger = {
+			has_country_flag = vu_startup_simplify_switzerland
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_switzerland
+		}
+	}
+	option = {
+		#Simplify Middle East NO
+		name = VU_SET_Events.04.ey
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_middle_east
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_middle_east
+		}
+	}
+	option = {
+		#Simplify Middle East YES
+		name = VU_SET_Events.04.en
+		trigger = {
+			has_country_flag = vu_startup_simplify_middle_east
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_middle_east
+		}
+	}
+	option = {
+		#Simplify Balkans NO
+		name = VU_SET_Events.04.fy
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_balkans
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_balkans
+		}
+	}
+	option = {
+		#Simplify Balkans YES
+		name = VU_SET_Events.04.fn
+		trigger = {
+			has_country_flag = vu_startup_simplify_balkans
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_balkans
+		}
+	}
+	option = {
+		#Simplify East Europe NO
+		name = VU_SET_Events.04.gy
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_eastern_europe
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_eastern_europe
+		}
+	}
+	option = {
+		#Simplify East Europe YES
+		name = VU_SET_Events.04.gn
+		trigger = {
+			has_country_flag = vu_startup_simplify_eastern_europe
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_eastern_europe
+		}
+	}
+	option = {
+		#Simplify India NO
+		name = VU_SET_Events.04.hy
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_india
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_india
+		}
+	}
+	option = {
+		#Simplify India YES
+		name = VU_SET_Events.04.hn
+		trigger = {
+			has_country_flag = vu_startup_simplify_india
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_india
+		}
+	}
+	option = {
+		#Simplify Afrika NO
+		name = VU_SET_Events.04.iy
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_simplify_afrika
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_simplify_afrika
+		}
+	}
+	option = {
+		#Simplify Afrika YES
+		name = VU_SET_Events.04.in
+		trigger = {
+			has_country_flag = vu_startup_simplify_afrika
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_simplify_afrika
+		}
+	}
+	option = {
+		#Return back
+		name = VU_SET_Events.04.q
+		highlight = yes
+	}
+	after = {
+		country_event = {
+			id = VU_SET_Events.02
+		}
+	}
+}
+
+#################################
+# Fun Gameplay Options		    #
+#################################
+country_event = {
+	id = VU_SET_Events.05
+	title = VU_SET_Events.05.t
+	desc = VU_SET_Events.05.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		#Shatter the world YES
+		name = VU_SET_Events.05.ay
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_shattered_world
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_shattered_world
+		}
+	}
+	option = {
+		#Shatter the world NO
+		name = VU_SET_Events.05.an
+		trigger = {
+			has_country_flag = vu_startup_shattered_world
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_shattered_world
+		}
+	}
+	option = {
+		#Release all subjects YES
+		name = VU_SET_Events.05.by
+		trigger = {
+			NOT = {
+				has_country_flag = vu_startup_release_all_subjects
+			}
+		}
+		hidden_effect = {
+			set_country_flag = vu_startup_release_all_subjects
+		}
+	}
+	option = {
+		#Release all subjects NO
+		name = VU_SET_Events.05.bn
+		trigger = {
+			has_country_flag = vu_startup_release_all_subjects
+		}
+		hidden_effect = {
+			clr_country_flag = vu_startup_release_all_subjects
+		}
+	}
+	option = {
+		#Return back
+		name = VU_SET_Events.04.q		#Uses the same "Return Back" text as 04
+	}
+	after = {
+		country_event = {
+			id = VU_SET_Events.02			#back to the catagories
+		}
+	}
+}
+
+#################################
+# Missing DLC's alert 		    #
+#################################
+country_event = {
+	id = VU_SET_Events.06
+	title = VU_SET_Events.06.t
+	desc = VU_SET_Events.06.d
+	picture = ACCUSATION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		set_global_flag = vu_missing_dlcs
+		#These are split up as for some reason having links in a LOC file breaks all text formatting, so it has to be split up like this...
+		custom_tooltip = VU_SET_Events.06.l1
+		custom_tooltip = VU_SET_Events.06.l2
+		custom_tooltip = VU_SET_Events.06.l3
+		custom_tooltip = VU_SET_Events.06.l4
+	}
+	option = {
+		name = VU_SET_Events.06.1
+		trigger = {
+			NOT = {
+				has_dlc = "Conquest of Paradise"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.2
+		trigger = {
+			NOT = {
+				has_dlc = "Wealth of Nations"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.3
+		trigger = {
+			NOT = {
+				has_dlc = "Res Publica"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.4
+		trigger = {
+			NOT = {
+				has_dlc = "El Dorado"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.5
+		trigger = {
+			NOT = {
+				has_dlc = "The Cossacks"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.6
+		trigger = {
+			NOT = {
+				has_dlc = "Mare Nostrum"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.7
+		trigger = {
+			NOT = {
+				has_dlc = "Mandate of Heaven"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.8
+		trigger = {
+			NOT = {
+				has_dlc = "Cradle of Civilization"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.9
+		trigger = {
+			NOT = {
+				has_dlc = "Dharma"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.10
+		trigger = {
+			NOT = {
+				has_dlc = "Emperor"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.11
+		trigger = {
+			NOT = {
+				has_dlc = "Leviathan"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.12
+		trigger = {
+			NOT = {
+				has_dlc = "Domination"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.13
+		trigger = {
+			NOT = {
+				has_dlc = "Winds of Change"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.14
+		trigger = {
+			NOT = {
+				has_dlc = "Third Rome"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.15
+		trigger = {
+			NOT = {
+				has_dlc = "Rule Britannia"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.16
+		trigger = {
+			NOT = {
+				has_dlc = "Golden Century"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.17
+		trigger = {
+			NOT = {
+				has_dlc = "Origins"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.18
+		trigger = {
+			NOT = {
+				has_dlc = "Lions of the North"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.19
+		trigger = {
+			NOT = {
+				has_dlc = "King of Kings"
+			}
+		}
+		add_prestige = -1
+	}
+	option = {
+		name = VU_SET_Events.06.20
+		trigger = {
+			AND = {
+				#Expansions
+				has_dlc = "Conquest of Paradise"
+				has_dlc = "Wealth of Nations"
+				has_dlc = "Res Publica"
+				has_dlc = "El Dorado"
+				has_dlc = "The Cossacks"
+				has_dlc = "Mare Nostrum"
+				has_dlc = "Mandate of Heaven"
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Dharma"
+				has_dlc = "Emperor"
+				has_dlc = "Leviathan"
+				has_dlc = "Domination"
+				has_dlc = "Winds of Change"
+				#Immersion Packs
+				has_dlc = "Third Rome"
+				has_dlc = "Rule Britannia"
+				has_dlc = "Golden Century"
+				has_dlc = "Origins"
+				has_dlc = "Lions of the North"
+				has_dlc = "King of Kings"
+			}
+		}
+		add_prestige = 1
+	}
+}

@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.37
 #For all the English Parliament Issues which should be unique.
 english_french_act_of_union = {
 	category = 4
@@ -18,22 +19,22 @@ english_french_act_of_union = {
 				owns_core_province = 237		# Oxfordshire
 				owns_core_province = 234		# Wessex
 				owns_core_province = 236		# London
-				owns_core_province = 177		# Maine
-				owns_core_province = 183		# Paris
-				owns_core_province = 178		# Anjou
-				178 = {							# Anjou
-					is_state = yes
-				}
+				#owns_core_province = 177		# Maine
+				#owns_core_province = 183		# Paris
+				#owns_core_province = 178		# Anjou
+				#178 = {							# Anjou
+				#	is_state = yes
+				#}
 			}
 			AND = {
 				OR = {
 					FRA = {	junior_union_with = ENG	}
 					FRA = {	is_subject_of = ENG	}
 				}
-				FRA = { NOT = { num_of_cities = 40 } }
+				FRA = { NOT = { num_of_cities = 400 } } #Was 80 but changed by SF in VU v1.37 was arbitrary and stupid.
 			}
 		}
-		adm_tech = 10
+		adm_tech = 27
 	}
 	
 	effect = {
@@ -46,7 +47,7 @@ english_french_act_of_union = {
 					exists = yes
 					ai = yes
 					is_subject_of = ROOT
-					NOT = { num_of_cities = 40 }
+					NOT = { num_of_cities = 400 } #Was 80 but changed by SF in VU v1.37 was arbitrary and stupid.
 				}
 			}
 			tooltip = {
@@ -94,9 +95,16 @@ english_french_act_of_union = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
+			}
+			if = {
+				limit = { 
+					has_custom_ideas = no
+					NOT = { has_idea_group = AVE_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		add_prestige = 25
@@ -117,113 +125,147 @@ english_french_act_of_union = {
 	}
 }
 
-english_scottish_act_of_union = {
+vu_english_scottish_act_of_union = {
 	category = 4
 
 	allow = {
-		has_government_attribute = english_parliament
-		has_not_enacted_parliament_action = {
-			parliament_action = english_scottish_act_of_union
-		}
-		has_issue_unlocked = {
-			issue = english_scottish_act_of_union
-		}
-		NOT = { has_country_flag = eng_took_ave_branch }
-		is_free_or_tributary_trigger = yes
-		is_nomad = no
-		is_at_war = no
-		OR = {
-			AND = {
-				owns_core_province = 237		# Oxfordshire
-				owns_core_province = 234		# Wessex
-				owns_core_province = 248		# Lothian
-				owns_core_province = 251		# Aberdeen
-				owns_core_province = 236		# London
-				236 = {							# London
-					is_state = yes
-				}
-			}
-			AND = {
-				OR = {
-					SCO = {	junior_union_with = ENG	}
-					SCO = {	is_subject_of = ENG	}
-				}
-				SCO = { NOT = { num_of_cities = 15 } }
-			}
-		}
-		adm_tech = 10
+		always = yes
 	}
-	
+
 	effect = {
-		set_parliament_action_flag = {
-			parliament_action = english_scottish_act_of_union
-		}
-		if = {
-			limit = {
-				SCO = {
-					exists = yes
-					ai = yes
-					is_subject_of = ROOT
-					NOT = { num_of_cities = 15 }
-				}
-			}
-			tooltip = {
-				inherit = SCO
-			}
-			custom_tooltip = english_scottish_act_of_union_bt
-			hidden_effect = {
-				SCO = {
-					every_subject_country = {
-						limit = {
-							capital_scope = {
-								region = british_isles_region
-							}
-							NOT = { num_of_cities = 5 }
-						}
-						SCO = {
-							inherit = PREV
-						}
-					}
-				}
-				inherit = SCO
-			}
-		}
-		#custom_tooltip = english_scottish_act_of_union_at
-		change_tag = GBR
 		hidden_effect = {
-			on_change_tag_effect = yes
-			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			if = {
-				limit = { 
-					has_custom_ideas = no
-					NOT = { has_idea_group = GBR_ideas }
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
+			set_country_flag = vu_can_form_gbr
 		}
-		add_prestige = 25
 	}
-	
+
 	modifier = {
 		global_autonomy = -0.05
 		prestige_decay = -0.01
 	}
+
 	backing_percentage = 0
 	
 	chance = {
-		factor = 0	#Will be forced through a decision
+		factor = 0	#Will be forced thruogh a decision
 	}
 
 	ai_will_do = {
 		factor = 1000
 	}
 }
+
+#english_scottish_act_of_union = {
+#	category = 4
+#
+#	allow = {
+#		has_government_attribute = english_parliament
+#		has_not_enacted_parliament_action = {
+#			parliament_action = english_scottish_act_of_union
+#		}
+#		has_issue_unlocked = {
+#			issue = english_scottish_act_of_union
+#		}
+#		NOT = { has_country_flag = eng_took_ave_branch }
+#		is_free_or_tributary_trigger = yes
+#		is_nomad = no
+#		is_at_war = no
+#		OR = {
+#			AND = {
+#				owns_core_province = 237		# Oxfordshire
+#				owns_core_province = 234		# Wessex
+#				owns_core_province = 248		# Lothian
+#				owns_core_province = 251		# Aberdeen
+#				owns_core_province = 236		# London
+#				236 = {							# London
+#					is_state = yes
+#				}
+#			}
+#			AND = {
+#				OR = {
+#					SCO = {	junior_union_with = ENG	}
+#					SCO = {	is_subject_of = ENG	}
+#				}
+#				SCO = { NOT = { num_of_cities = 15 } }
+#			}
+#		}
+#		adm_tech = 10
+#	}
+#	
+#	effect = {
+#		Conclusively crashes the game
+#		set_parliament_action_flag = {
+#			parliament_action = english_scottish_act_of_union
+#		}
+#		Crashes the game
+#		if = {
+#			limit = {
+#				SCO = {
+#					exists = yes
+#					ai = yes
+#					is_subject_of = ROOT
+#					NOT = { num_of_cities = 15 }
+#				}
+#			}
+#			tooltip = {
+#				inherit = SCO
+#			}
+#			custom_tooltip = english_scottish_act_of_union_bt
+#			hidden_effect = {
+#				SCO = {
+#					every_subject_country = {
+#						limit = {
+#							capital_scope = {
+#								region = british_isles_region
+#							}
+#							NOT = { num_of_cities = 5 }
+#						}
+#						SCO = {
+#							inherit = PREV
+#						}
+#					}
+#				}
+#				inherit = SCO
+#			}
+#		}
+#		custom_tooltip = english_scottish_act_of_union_at
+#		Does not crash the game
+#		change_tag = GBR
+#		Is crashing the game
+#		hidden_effect = {
+#			on_change_tag_effect = yes
+#			remove_non_electors_emperors_from_empire_effect = yes
+#			if = {
+#				limit = {
+#					NOT = { government_rank = 2 }
+#				}
+#				set_government_rank = 2
+#			}
+#			if = {
+#				limit = { 
+#					has_custom_ideas = no
+#					NOT = { has_idea_group = GBR_ideas }
+#				}
+#				country_event = { id = ideagroups.1 } #Swap Ideas
+#			}
+#		}
+#		Does not crash the game
+#		add_prestige = 25
+#	}
+#	
+#	modifier = {
+#		global_autonomy = -0.05
+#		prestige_decay = -0.01
+#	}
+#	backing_percentage = 0
+#	
+#	chance = {
+#		factor = 0	#Will be forced through a decision
+#	}
+#
+#	ai_will_do = {
+#		factor = 1000
+#	}
+#}
 
 enact_the_wales_acts = {
 	category = 4
@@ -315,7 +357,7 @@ crown_of_ireland_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -387,7 +429,7 @@ crown_of_iberia_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -463,7 +505,7 @@ crown_of_italy_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -501,7 +543,7 @@ crown_of_the_empire_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -671,81 +713,6 @@ the_tea_act = {
 	}
 }
 
-#the_habeas_corpus_act = {
-#	category = 4
-#
-#	allow = {
-#		has_not_enacted_parliament_action = {
-#			parliament_action = the_habeas_corpus_act
-#		}
-#		has_government_attribute = english_parliament
-#	}
-#	
-#	effect = {
-#		set_parliament_action_flag = {
-#			parliament_action = the_habeas_corpus_act
-#		}
-#	}
-#	
-#	chance = {
-#		factor = 0.5
-#	}
-#
-#	ai_will_do = {
-#		factor = 1
-#	}
-#}
-#
-#the_quartering_act = {
-#	category = 4
-#
-#	allow = {
-#		has_not_enacted_parliament_action = {
-#			parliament_action = the_quartering_act
-#		}
-#		has_government_attribute = english_parliament
-#	}
-#	
-#	effect = {
-#		set_parliament_action_flag = {
-#			parliament_action = the_quartering_act
-#		}
-#	}
-#	
-#	chance = {
-#		factor = 0.5
-#	}
-#
-#	ai_will_do = {
-#		factor = 1
-#	}
-#}
-#
-#the_mutiny_act = {
-#	category = 4
-#
-#	allow = {
-#		has_not_enacted_parliament_action = {
-#			parliament_action = the_mutiny_act
-#		}
-#		has_government_attribute = english_parliament
-#	}
-#	
-#	effect = {
-#		set_parliament_action_flag = {
-#			parliament_action = the_mutiny_act
-#		}
-#	}
-#		
-#	chance = {
-#		factor = 0.5
-#	}
-#
-#	ai_will_do = {
-#		factor = 1
-#	}
-#}
-
 colonial_venture_act = {
 	category = 4
 
@@ -777,7 +744,7 @@ colonial_venture_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -824,7 +791,7 @@ french_english_reconciliation_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -837,7 +804,7 @@ crush_french_nobles = {
 
 	allow = {
 		has_government_attribute = english_parliament
-		#has_mission = ave_shatter_frances_nobility
+		has_mission = ave_shatter_frances_nobility
 		OR = {
 			FRA = { is_subject_of = ROOT }
 			num_of_owned_provinces_with = {
@@ -924,7 +891,7 @@ the_bank_charter_act = {
 
 	allow = {
 		has_government_attribute = english_parliament
-		#has_mission = ave_introduce_the_banking_act		
+		has_mission = ave_introduce_the_banking_act		
 		has_not_enacted_parliament_action = {
 			parliament_action = the_bank_charter_act
 		}
@@ -1030,7 +997,7 @@ acts_of_impressment = {
 	backing_percentage = 0
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1071,7 +1038,7 @@ acts_of_high_admiralty = {
 	effect_duration = 5
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1117,7 +1084,7 @@ acts_of_maritime_courage = {
 	effect_duration = 5
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1163,7 +1130,7 @@ acts_of_naval_professionalism = {
 	effect_duration = 5
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1202,7 +1169,7 @@ acts_of_maritime_professionalism = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1244,7 +1211,7 @@ acts_of_taxation = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1286,7 +1253,7 @@ act_of_representation = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1321,7 +1288,7 @@ the_sugar_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1356,7 +1323,7 @@ the_gold_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1394,7 +1361,7 @@ the_spice_act = {
 	}
 	
 	chance = {
-		factor = 2
+		factor = 0
 	}
 
 	ai_will_do = {
@@ -1411,7 +1378,7 @@ royal_impressment_act = {
 		has_issue_unlocked = {
 			issue = english_ideas_laws
 		}
-		#has_idea = royal_navy
+		has_idea = royal_navy
 		NOT = { has_country_modifier = royal_impressment_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1446,7 +1413,7 @@ isolationism_act = {
 		has_issue_unlocked = {
 			issue = english_ideas_laws
 		}
-		#has_idea = secretaries_of_state
+		has_idea = secretaries_of_state
 		NOT = { has_country_modifier = isolationism_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1481,7 +1448,7 @@ colonial_act = {
 		has_issue_unlocked = {
 			issue = english_ideas_laws
 		}
-		has_idea = bill_of_rights
+		has_idea = republican_legal_system
 		NOT = { has_country_modifier = colonial_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1517,7 +1484,7 @@ military_reassignment_act = {
 		has_issue_unlocked = {
 			issue = british_ideas_laws
 		}
-		#has_idea = royal_navy
+		has_idea = royal_navy
 		NOT = { has_country_modifier = military_reassignment_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1551,7 +1518,7 @@ acts_of_annexation = {
 		has_issue_unlocked = {
 			issue = british_ideas_laws
 		}
-		#has_idea = gbr_acts_of_union
+		has_idea = gbr_acts_of_union
 		NOT = { has_country_modifier = acts_of_development_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1586,7 +1553,7 @@ global_empire_act = {
 		has_issue_unlocked = {
 			issue = british_ideas_laws
 		}
-		has_idea = city_upon_a_hill
+		has_idea = british_merchant_navy
 		NOT = { has_country_modifier = global_empire_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1622,7 +1589,7 @@ naval_reassignment_act = {
 		has_issue_unlocked = {
 			issue = angevin_ideas_laws
 		}
-		#has_idea = reformed_angevin_infantry
+		has_idea = reformed_angevin_infantry
 		NOT = { has_country_modifier = naval_reassignment_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1657,7 +1624,7 @@ diplomatic_act = {
 		has_issue_unlocked = {
 			issue = angevin_ideas_laws
 		}
-		#has_idea_group = AVE_ideas
+		has_idea_group = AVE_ideas
 		NOT = { has_country_modifier = diplomatic_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1692,7 +1659,7 @@ internal_focus_act = {
 		has_issue_unlocked = {
 			issue = angevin_ideas_laws
 		}
-		#has_idea = angevin_decentralized_rule
+		has_idea = angevin_decentralized_rule
 		NOT = { has_country_modifier = internal_focus_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1914,7 +1881,7 @@ improved_man_of_war_acts = {
 	}
 	
 	effect = {
-		add_navy_tradition = 5
+		add_navy_tradition = 15
 	}
 	
 	modifier = {
@@ -1946,7 +1913,8 @@ army_reform_acts = {
 	}
 	
 	effect = {
-		add_army_tradition = 5
+		add_army_professionalism = 0.01
+		add_army_tradition = 15
 	}
 	
 	modifier = {
@@ -1963,5 +1931,114 @@ army_reform_acts = {
 
 	ai_will_do = {
 		factor = 1
+	}
+}
+
+# ===== Ante Bellum additions (not in Victorum) =====
+english_scottish_act_of_union = {
+	category = 4
+
+	allow = {
+		has_government_attribute = english_parliament
+		has_not_enacted_parliament_action = {
+			parliament_action = english_scottish_act_of_union
+		}
+		has_issue_unlocked = {
+			issue = english_scottish_act_of_union
+		}
+		NOT = { has_country_flag = eng_took_ave_branch }
+		is_free_or_tributary_trigger = yes
+		is_nomad = no
+		is_at_war = no
+		OR = {
+			AND = {
+				owns_core_province = 237		# Oxfordshire
+				owns_core_province = 234		# Wessex
+				owns_core_province = 248		# Lothian
+				owns_core_province = 251		# Aberdeen
+				owns_core_province = 236		# London
+				236 = {							# London
+					is_state = yes
+				}
+			}
+			AND = {
+				OR = {
+					SCO = {	junior_union_with = ENG	}
+					SCO = {	is_subject_of = ENG	}
+				}
+				SCO = { NOT = { num_of_cities = 15 } }
+			}
+		}
+		adm_tech = 10
+	}
+	
+	effect = {
+		set_parliament_action_flag = {
+			parliament_action = english_scottish_act_of_union
+		}
+		if = {
+			limit = {
+				SCO = {
+					exists = yes
+					ai = yes
+					is_subject_of = ROOT
+					NOT = { num_of_cities = 15 }
+				}
+			}
+			tooltip = {
+				inherit = SCO
+			}
+			custom_tooltip = english_scottish_act_of_union_bt
+			hidden_effect = {
+				SCO = {
+					every_subject_country = {
+						limit = {
+							capital_scope = {
+								region = british_isles_region
+							}
+							NOT = { num_of_cities = 5 }
+						}
+						SCO = {
+							inherit = PREV
+						}
+					}
+				}
+				inherit = SCO
+			}
+		}
+		#custom_tooltip = english_scottish_act_of_union_at
+		change_tag = GBR
+		hidden_effect = {
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = { 
+					has_custom_ideas = no
+					NOT = { has_idea_group = GBR_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		add_prestige = 25
+	}
+	
+	modifier = {
+		global_autonomy = -0.05
+		prestige_decay = -0.01
+	}
+	backing_percentage = 0
+	
+	chance = {
+		factor = 0	#Will be forced through a decision
+	}
+
+	ai_will_do = {
+		factor = 1000
 	}
 }

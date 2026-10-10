@@ -1,0 +1,1325 @@
+#XXX = { "Province Name" "City Name" } - New addition to EUIV
+
+131 = { "Zagreb" "Zagreb" }
+132 = { "Judenburg" "Judenburg" }
+134 = { "Viyana" "Beç" }
+135 = { "Shubruna" "Shubruna" }
+136 = { "Ispelet" "Ispelet" }
+137 = { "Ragusa" "Ragusa" }
+138 = { "Burguriçe" "Burguriçe" }
+139 = { "Köprühisar" "Köprühisar" }
+140 = { "Doboya" "Doboya" }
+141 = { "Kraguyfoça" "Kraguyfoça" }
+142 = { "Korfu" "Korfu" }
+143 = { "Belgrad-i Arnavud" "Belgrad-i Arnavud" }
+144 = { "Yanya" "Yanya" }
+145 = { "Lakonia" "Mezistre" }
+146 = { "Atina" "Atina" }
+147 = { "Yenisehir" "Yenisehr-i Fener" }
+148 = { "Selanik" "Selanik" }
+150 = { "Nigbolu" "Plevne" }
+151 = "Kostantiniyye"
+153 = { "Peste" "Peste" }
+154 = { "Uyvar" "Uyvar" }
+155 = { "Göle" "Göle" }
+156 = { "Temesvar" "Temesvar" }
+157 = { "Varad" "Varad" }
+158 = { "Marospazari" "Marospazari" }
+159 = "Silistre"
+160 = { "Krayova" "Krayova" }
+161 = { "Terkoviç" "Terkoviç" }
+162 = { "Ishemfina" "Ishemfina" }
+163 = "Girit"
+164 = { "Naksa Berre" "Naksa Berre" }
+223 = { "Öpücük" "Öpücük" }
+226 = "Cebelitarik"
+236 = "Londra"
+240 = { "Baliklava" "Baliklava" }
+268 = { "Bogdan" "Dorohoy" }
+281 = "Kamanice"
+282 = { "Hacibey" "Hacibey" }
+283 = { "Kamenka" "Kamenka" }
+284 = { "Orkapi" "Orkapi" }
+285 = { "Kefe" "Kefe" }
+286 = { "Azak" "Azak" } 
+287 = { "Kupan" "Kaleshkur" }
+316 = { "Kocaeli" "Izmit" }
+317 = "Hüdavendigar"
+318 = { "Izmir" "Izmir" }
+319 = { "Mentese" "Mugla" }
+320 = { "Rodos" "Rodos" }
+323 = "Konya"
+321 = "Kibris"
+322 = "Eskisehir"
+324 = "Karaman"
+325 = "Kastamonu"
+326 = "Ankara"
+327 = "Adana"
+328 = "Sinop"
+329 = { "Sivas" "Sivas" }
+330 = { "Trabzon" "Trabzon" }
+331 = "Erzurum"
+332 = "Maras"
+333 = "Balear Adalari"
+334 = "Tanca"
+336 = "Tilimsan"
+337 = "Vahran"
+338 = "Cezayir"
+339 = "Kabiliye"
+340 = "Konstantin"
+341 = "Tunus"
+352 = "Kafsa"
+354 = "Trablusgarp"
+356 = "Bingazi"
+358 = "Iskenderiye"
+360 = "Circe"
+361 = "Kahire"
+364 = "Gazze"
+368 = "Kanarya Adalari"
+377 = "Halep"
+378 = "Trablus"
+379 = "Kudüs"
+380 = "El Karak"
+381 = "Dera"
+384 = "Medine"
+385 = "Mekke"
+387 = "Mohka"
+291 = { "Sharukan" "Sharukan" }
+394 = "Lahsa"
+395 = "Katar"
+396 = "Bahreyn"
+407 = "Rakka"
+409 = "Kerbela"
+411 = "Musul"
+415 = "Sehrizor"
+416 = { "Tebriz" "Tebriz" }
+418 = "Diyarbekir"
+419 = { "Erivan" "Erivan" }
+420 = "Karabag"
+421 = { "Bakü" "Bakü" }
+423 = { "Tiflis" "Tiflis" }
+424 = { "Erdebil" "Erdebil" }
+425 = "Dagistan"
+429 = "Isfahan"
+462 = { "Megrelya" "Zekdide" }
+463 = "Çerkesya"
+483 = "Türk Adalari"
+715 = "Urumçi"
+965 = "Yeni Istanbul"
+1756 = { "Kilye" "Kilye" }
+1764 = { "Misivri" "Misivri" }
+1765 = "Sofya"
+1766 = "Kosova"
+1773 = { "Ilia" "Pirgos" }
+1827 = "Yeni Pazar"
+1828 = "Travik"
+1831 = "Trebine"
+1846 = "Bayramli"
+1848 = "Afyon"
+1849 = "Hama"
+1853 = { "Kesriye" "Kesriye" }
+1855 = "Akka"
+1856 = "Abhazya"
+1864 = "Kopan"
+1953 = "Debrecin"
+1954 = "Beçkerek"
+2195 = { "Adige" "Cenaheyn" }
+2196 = "Çildir"
+2199 = { "Tarak" "Tarak" }
+2201 = { "Terekkale" "Terekkale" }
+2204 = { "Kars" "Kars" }
+2205 = { "Nahçivan" "Nahçivan" }
+2296 = { "Kale-i Sultaniye" "Kale-i Sultaniye" } #Modern Turkish name : Çanakkale
+2297 = "Manisa"
+2298 = "Teke"
+2299 = { "Amasra" "Amasra" }
+2300 = "Bozok"
+2301 = "Kayseri"
+2302 = "Içel"
+2303 = "Malatya"
+2304 = { "Samsun" "Samsun" }
+2305 = "Erzincan"
+2313 = "Antakya"
+2327 = { "Gayal" "Gayal" }
+2348 = { "Sakiz" "Sakiz" }
+2405 = "Bender"
+2410 = { "Akyar" "Akyar" }
+2414 = { "Yeya" "Yeya" }
+2447 = { "Taman" "Onogurya" }
+2750 = "Filibe"
+2998 = { "Boze" "Boze" }
+2999 = "Hürmüz"
+3000 = "Nis"
+3001 = { "Üsküp" "Üsküp" }
+3003 = { "Egriboz" "Egriboz" }
+3156 = { "Suceava" "Suceava" }
+3160 = { "Bükres" "Bükres" }
+3164 = { "Köstence" "Köstence" }
+3167 = { "Névrékop" "Névrékop" }
+3169 = { "Eskizagra" "Eskizagra" }
+3170 = { "Kirklareli" "Kirklareli" }
+3174 = { "Tirhala" "Tirhala" }
+3175 = { "Vrachori" "Vrachori" }
+3177 = { "Istefe" "Istefe" }
+3179 = { "Anabolu" "Anabolu" }
+3180 = { "Hanya" "Hanya" }
+3181 = { "Avlonya" "Avlonya" }
+3182 = { "Iskodra" "Iskodra" }
+3183 = { "Manastir" "Manastir" }
+3244 = { "Kirim" "Kirim" }
+3245 = { "Keriç" "Keriç" }
+3247 = { "Üzüm" "Üzüm" }
+3248 = { "Lazistan" "Rize" }
+3754 = { "Suruç" "Suruç" }
+3972 = "Ulaº"
+4125 = "Eger"
+4126 = "Segedin"
+4173 = "Sirem"
+4174 = { "Diraç" "Diraç" }
+4175 = { "Eshim" "Eshim" }
+4176 = { "Braniçevo" "Pasarofça" }
+4239 = { "Belgrad" "Belgrad" }
+4298 = { "Antep" "Antep" }
+4307 = "Aksaray"
+4308 = "Denizli"
+4309 = { "Tire" "Tire" }
+4312 = { "Bolu" "Bolu" }
+4313 = "Çankiri"
+4314 = "Koçhisar"
+4315 = { "Gümüshane" "Gümüshane" }
+4530 = { "Birlat" "Birlat" }
+4531 = { "Yergögü" "Yergögü" }
+4532 = { "Söreyn" "Söreyn" }
+4698 = { "Keflonya" "Hisar Keflonya" }
+4699 = { "Narda" "Narda" }
+4700 = { "Midilli" "Midilli" }
+4701 = { "Gördes" "Gördes" }
+4702 = { "Siroz" "Siroz" }
+4703 = { "Köstendil" "Köstendil" }
+4705 = { "Dedeagac" "Gümülcine" }
+4706 = { "Tulça" "Tulça" }
+4750 = { "Akçahisar" "Akçahisar" }
+4754 = { "Kotur" "Kotur" }
+4779 = "Gelibolu"
+4780 = { "Ohri" "Ohri" }
+5130 = { "Karesi" "Balikesir" }
+5131 = "Ayvalik"
+5134 = "Bodrum"
+5135 = "Mersin"
+5137 = { "Yozgat" "Yozgat" }
+5138 = { "Haruniyye" "Haruniyye" }
+5146 = "Nigde"
+5147 = { "Alayie" "Alayie" }
+5150 = { "Kirsehir" "Göreme" }
+5152 = "Amasya"
+5155 = { "Polatli" "Polatli" }
+5156 = { "Biga" "Biga" }
+5157 = "Iznik"
+5158 = "Divrigi"
+5161 = { "Kizkalesi" "Kizkalesi" }
+5162 = "Megri"
+5163 = "Usak"
+5164 = "Karabük"
+5165 = { "Kirikkale" "Kirikkale" }
+5167 = "Çorum"
+5168 = { "Adapazari" "Adapazari" }
+5171 = { "Mihaliç" "Bandirma" }
+5172 = { "Saruhan" "Alasehir" }
+5206 = { "Giresun" "Giresun" }
+# [VU] removed: province 5560 (not on Ante Bellum map)
+# [VU] removed: province 6931 (not on Ante Bellum map)
+# [VU] removed: province 7100 (not on Ante Bellum map)
+# [VU] removed: province 7101 (not on Ante Bellum map)
+# [VU] removed: province 7102 (not on Ante Bellum map)
+# [VU] removed: province 7106 (not on Ante Bellum map)
+# [VU] removed: province 7107 (not on Ante Bellum map)
+# [VU] removed: province 7108 (not on Ante Bellum map)
+# [VU] removed: province 7109 (not on Ante Bellum map)
+# [VU] removed: province 7110 (not on Ante Bellum map)
+# [VU] removed: province 7111 (not on Ante Bellum map)
+# [VU] removed: province 7112 (not on Ante Bellum map)
+# [VU] removed: province 7113 (not on Ante Bellum map)
+# [VU] removed: province 7114 (not on Ante Bellum map)
+# [VU] removed: province 7115 (not on Ante Bellum map)
+# [VU] removed: province 7117 (not on Ante Bellum map)
+# [VU] removed: province 7118 (not on Ante Bellum map)
+# [VU] removed: province 7120 (not on Ante Bellum map)
+# [VU] removed: province 7122 (not on Ante Bellum map)
+# [VU] removed: province 7123 (not on Ante Bellum map)
+# [VU] removed: province 7124 (not on Ante Bellum map)
+# [VU] removed: province 7125 (not on Ante Bellum map)
+# [VU] removed: province 7126 (not on Ante Bellum map)
+# [VU] removed: province 7129 (not on Ante Bellum map)
+# [VU] removed: province 7130 (not on Ante Bellum map)
+# [VU] removed: province 7132 (not on Ante Bellum map)
+# [VU] removed: province 7133 (not on Ante Bellum map)
+# [VU] removed: province 7134 (not on Ante Bellum map)
+# [VU] removed: province 7136 (not on Ante Bellum map)
+# [VU] removed: province 7138 (not on Ante Bellum map)
+# [VU] removed: province 7139 (not on Ante Bellum map)
+# [VU] removed: province 7140 (not on Ante Bellum map)
+# [VU] removed: province 7141 (not on Ante Bellum map)
+# [VU] removed: province 7142 (not on Ante Bellum map)
+# [VU] removed: province 7143 (not on Ante Bellum map)
+# [VU] removed: province 7144 (not on Ante Bellum map)
+# [VU] removed: province 7147 (not on Ante Bellum map)
+# [VU] removed: province 7148 (not on Ante Bellum map)
+# [VU] removed: province 7149 (not on Ante Bellum map)
+# [VU] removed: province 7150 (not on Ante Bellum map)
+# [VU] removed: province 7151 (not on Ante Bellum map)
+# [VU] removed: province 7152 (not on Ante Bellum map)
+# [VU] removed: province 7154 (not on Ante Bellum map)
+# [VU] removed: province 7155 (not on Ante Bellum map)
+# [VU] removed: province 7156 (not on Ante Bellum map)
+# [VU] removed: province 7158 (not on Ante Bellum map)
+# [VU] removed: province 7159 (not on Ante Bellum map)
+# [VU] removed: province 7163 (not on Ante Bellum map)
+# [VU] removed: province 7190 (not on Ante Bellum map)
+# [VU] removed: province 7192 (not on Ante Bellum map)
+# [VU] removed: province 7193 (not on Ante Bellum map)
+# [VU] removed: province 7197 (not on Ante Bellum map)
+# [VU] removed: province 7200 (not on Ante Bellum map)
+# [VU] removed: province 7202 (not on Ante Bellum map)
+# [VU] removed: province 7203 (not on Ante Bellum map)
+# [VU] removed: province 7204 (not on Ante Bellum map)
+# [VU] removed: province 7251 (not on Ante Bellum map)
+# [VU] removed: province 7257 (not on Ante Bellum map)
+# [VU] removed: province 7258 (not on Ante Bellum map)
+# [VU] removed: province 7276 (not on Ante Bellum map)
+# [VU] removed: province 7278 (not on Ante Bellum map) 
+# [VU] removed: province 7279 (not on Ante Bellum map)
+# [VU] removed: province 7703 (not on Ante Bellum map)
+# [VU] removed: province 7705 (not on Ante Bellum map)
+# [VU] removed: province 7706 (not on Ante Bellum map)
+# [VU] removed: province 7707 (not on Ante Bellum map)
+# [VU] removed: province 7708 (not on Ante Bellum map)
+# [VU] removed: province 7714 (not on Ante Bellum map)
+# [VU] removed: province 7715 (not on Ante Bellum map)
+# [VU] removed: province 7718 (not on Ante Bellum map)
+# [VU] removed: province 7726 (not on Ante Bellum map)
+# [VU] removed: province 7727 (not on Ante Bellum map)
+# [VU] removed: province 7740 (not on Ante Bellum map)
+# [VU] removed: province 7741 (not on Ante Bellum map)
+# [VU] removed: province 7748 (not on Ante Bellum map)
+# [VU] removed: province 7750 (not on Ante Bellum map)
+# [VU] removed: province 7751 (not on Ante Bellum map)
+# [VU] removed: province 7752 (not on Ante Bellum map)
+# [VU] removed: province 7753 (not on Ante Bellum map)
+# [VU] removed: province 7754 (not on Ante Bellum map)
+# [VU] removed: province 7755 (not on Ante Bellum map)
+# [VU] removed: province 7756 (not on Ante Bellum map)
+# [VU] removed: province 7757 (not on Ante Bellum map)
+# [VU] removed: province 7758 (not on Ante Bellum map)
+# [VU] removed: province 7759 (not on Ante Bellum map)
+# [VU] removed: province 7763 (not on Ante Bellum map)
+# [VU] removed: province 7765 (not on Ante Bellum map)
+# [VU] removed: province 7814 (not on Ante Bellum map)
+# [VU] removed: province 7941 (not on Ante Bellum map)
+# [VU] removed: province 8046 (not on Ante Bellum map)
+# [VU] removed: province 8087 (not on Ante Bellum map)
+# [VU] removed: province 8172 (not on Ante Bellum map)
+# [VU] removed: province 8174 (not on Ante Bellum map)
+# [VU] removed: province 8175 (not on Ante Bellum map)
+# [VU] removed: province 8178 (not on Ante Bellum map)
+# [VU] removed: province 8180 (not on Ante Bellum map)
+# [VU] removed: province 8182 (not on Ante Bellum map)
+# [VU] removed: province 8183 (not on Ante Bellum map)
+# [VU] removed: province 8184 (not on Ante Bellum map)
+# [VU] removed: province 8185 (not on Ante Bellum map)
+# [VU] removed: province 8186 (not on Ante Bellum map)
+# [VU] removed: province 8190 (not on Ante Bellum map)
+# [VU] removed: province 8191 (not on Ante Bellum map)
+# [VU] removed: province 8192 (not on Ante Bellum map)
+# [VU] removed: province 8193 (not on Ante Bellum map)
+# [VU] removed: province 8194 (not on Ante Bellum map)
+# [VU] removed: province 8195 (not on Ante Bellum map)
+# [VU] removed: province 8196 (not on Ante Bellum map)
+# [VU] removed: province 8197 (not on Ante Bellum map)
+# [VU] removed: province 8198 (not on Ante Bellum map)
+# [VU] removed: province 8200 (not on Ante Bellum map)
+# [VU] removed: province 8201 (not on Ante Bellum map)
+# [VU] removed: province 8203 (not on Ante Bellum map)
+# [VU] removed: province 8204 (not on Ante Bellum map)
+# [VU] removed: province 8205 (not on Ante Bellum map)
+# [VU] removed: province 8206 (not on Ante Bellum map)
+# [VU] removed: province 8207 (not on Ante Bellum map)
+# [VU] removed: province 8208 (not on Ante Bellum map)
+# [VU] removed: province 8209 (not on Ante Bellum map)
+# [VU] removed: province 8210 (not on Ante Bellum map)
+# [VU] removed: province 8211 (not on Ante Bellum map)
+# [VU] removed: province 8212 (not on Ante Bellum map)
+# [VU] removed: province 8213 (not on Ante Bellum map)
+# [VU] removed: province 8215 (not on Ante Bellum map) 
+# [VU] removed: province 8218 (not on Ante Bellum map) 
+# [VU] removed: province 8219 (not on Ante Bellum map)
+# [VU] removed: province 8220 (not on Ante Bellum map)
+# [VU] removed: province 8493 (not on Ante Bellum map)
+# [VU] removed: province 8494 (not on Ante Bellum map)
+# [VU] removed: province 8495 (not on Ante Bellum map)
+
+#Poland
+257 = { "Varsova" "Varsova" }
+262 = { "Kirakivu" "Kirakivu" }
+264 = { "Prasleva" "Prasleva" }
+2959 = { "Tarnof" "Tarnof" }
+
+#Baltic
+43 = { "Dansik" "Dansik" }
+
+#Scandinavia
+1 = { "Istokholm" "Istokholm" }
+12 = { "Kopenhag" "Kopenhag" }
+
+#Levant
+321 = { "Leymosun" "Leymosun" }
+364 = { "Arish" "Arish" }
+365 = { "Tur" "Tur" }
+377 = { "Halep" "Halep" }
+378 = { "Trablus" "Trablus" }
+379 = { "Kudüs" "Kudüs" }
+380 = { "Kerek" "Kerek" }
+381 = { "Aclun" "Aclun" }
+382 = { "Sam" "Sam" }
+405 = { "Palmira" "Çölün Gelini" }
+1849 = { "Humus" "Humus" }
+1854 = { "Nablus" "Nablus" }
+1855 = { "Safed" "Safed" }
+2313 = { "Antakya" "Antakya" }
+4268 = { "Akabe" "Akabe" }
+4270 = { "Munha" "Munha" }
+4271 = { "Idlib" "Idlib" }
+4297 = { "Balabak Vadi" "Balabak Vadi" }
+5139 = { "Lefkosha" "Lefkosha" }
+5145 = { "Magusa" "Magusa" }
+5170 = { "Lazkiyye" "Lazkiyye" }
+5180 = { "Gazze" "Gazze" }
+5181 = { "Hücran" "Hücran" }
+5203 = { "Shubak" "Shubak" }
+5205 = { "Beyrut" "Beyrut" }
+# [VU] removed: province 6065 (not on Ante Bellum map)
+# [VU] removed: province 6066 (not on Ante Bellum map)
+# [VU] removed: province 6067 (not on Ante Bellum map)
+# [VU] removed: province 6068 (not on Ante Bellum map)
+# [VU] removed: province 6069 (not on Ante Bellum map)
+# [VU] removed: province 6070 (not on Ante Bellum map)
+# [VU] removed: province 6071 (not on Ante Bellum map)
+# [VU] removed: province 6072 (not on Ante Bellum map)
+# [VU] removed: province 6073 (not on Ante Bellum map)
+# [VU] removed: province 6074 (not on Ante Bellum map)
+# [VU] removed: province 6075 (not on Ante Bellum map)
+# [VU] removed: province 6076 (not on Ante Bellum map)
+# [VU] removed: province 6077 (not on Ante Bellum map)
+# [VU] removed: province 6078 (not on Ante Bellum map)
+# [VU] removed: province 6079 (not on Ante Bellum map)
+# [VU] removed: province 6080 (not on Ante Bellum map)
+# [VU] removed: province 6081 (not on Ante Bellum map) 
+# [VU] removed: province 6082 (not on Ante Bellum map)
+# [VU] removed: province 6083 (not on Ante Bellum map)
+# [VU] removed: province 6084 (not on Ante Bellum map)
+# [VU] removed: province 6085 (not on Ante Bellum map)
+# [VU] removed: province 6086 (not on Ante Bellum map)
+# [VU] removed: province 6087 (not on Ante Bellum map)
+# [VU] removed: province 6088 (not on Ante Bellum map)
+# [VU] removed: province 6093 (not on Ante Bellum map)
+# [VU] removed: province 6094 (not on Ante Bellum map)
+# [VU] removed: province 6095 (not on Ante Bellum map)
+
+#Mesopotamia
+331 = { "Erzurum" "Erzurum" }
+406 = { "Hit" "Hit" }
+407 = { "Rakka" "Rakka" }
+408 = { "Basra" "Basra" }
+409 = { "Kerbela" "Kerbela" }
+410 = { "Bagdat" "Bagdat" }
+411 = { "Musul" "Musul" }
+415 = { "Kerkük" "Kerkük" }
+418 = { "Diyarbekir" "Diyarbekir" }
+2303 = { "Malatya" "Malatya" }
+2305 = { "Erzincan" "Erzincan" }
+2306 = { "Mus" "Mus" }
+2307 = { "Van" "Van" }
+2308 = { "Urfa" "Urfa" }
+2309 = { "Sincar" "Sincar" }
+2310 = { "Tikrit" "Tikrit" }
+2311 = { "Necef" "Necef" }
+2312 = { "Vasit" "Vasit" }
+2314 = { "Deyrizor" "Deyrizor" }
+2340 = { "Gürni-Hafat" "Gürni-Hafat" }
+3254 = { "Beyazit" "Beyazit" }
+4179 = { "Oramar" "Oramar" }
+4288 = { "Kurne" "Kurne" }
+4291 = { "Bendink" "Bendink" }
+4292 = { "Mardin" "Mardin" }
+4293 = { "Erbil" "Erbil" }
+4294 = { "Süleymaniyye" "Süleymaniyye" }
+4295 = { "Hasankeyf" "Hasankeyf" }
+4296 = { "Bitlis" "Bitlis" }
+4302 = { "Alashkerd" "Alashkerd" }
+4310 = { "Harput" "Harput" }
+5151 = { "Bayburt" "Bayburt" }
+5158 = { "Divrigi" "Divrigi" }
+# [VU] removed: province 5293 (not on Ante Bellum map)
+# [VU] removed: province 5295 (not on Ante Bellum map)
+# [VU] removed: province 5296 (not on Ante Bellum map)
+# [VU] removed: province 5330 (not on Ante Bellum map)
+# [VU] removed: province 5331 (not on Ante Bellum map)
+# [VU] removed: province 5332 (not on Ante Bellum map)
+# [VU] removed: province 6030 (not on Ante Bellum map)
+# [VU] removed: province 6089 (not on Ante Bellum map)
+# [VU] removed: province 6090 (not on Ante Bellum map)
+# [VU] removed: province 6091 (not on Ante Bellum map)
+# [VU] removed: province 6092 (not on Ante Bellum map)
+# [VU] removed: province 6099 (not on Ante Bellum map)
+# [VU] removed: province 6100 (not on Ante Bellum map)
+# [VU] removed: province 6101 (not on Ante Bellum map)
+# [VU] removed: province 6102 (not on Ante Bellum map)
+# [VU] removed: province 6103 (not on Ante Bellum map)
+# [VU] removed: province 6104 (not on Ante Bellum map)
+# [VU] removed: province 6105 (not on Ante Bellum map)
+# [VU] removed: province 6106 (not on Ante Bellum map)
+# [VU] removed: province 6107 (not on Ante Bellum map)
+# [VU] removed: province 6108 (not on Ante Bellum map)
+# [VU] removed: province 6109 (not on Ante Bellum map)
+# [VU] removed: province 6110 (not on Ante Bellum map)
+# [VU] removed: province 6111 (not on Ante Bellum map)
+# [VU] removed: province 6112 (not on Ante Bellum map)
+# [VU] removed: province 6113 (not on Ante Bellum map)
+# [VU] removed: province 6114 (not on Ante Bellum map)
+# [VU] removed: province 6115 (not on Ante Bellum map)
+# [VU] removed: province 6116 (not on Ante Bellum map)
+# [VU] removed: province 6117 (not on Ante Bellum map)
+# [VU] removed: province 6118 (not on Ante Bellum map)
+# [VU] removed: province 6119 (not on Ante Bellum map)
+# [VU] removed: province 6120 (not on Ante Bellum map)
+# [VU] removed: province 6121 (not on Ante Bellum map)
+# [VU] removed: province 6122 (not on Ante Bellum map)
+# [VU] removed: province 6123 (not on Ante Bellum map)
+# [VU] removed: province 6124 (not on Ante Bellum map)
+# [VU] removed: province 6125 (not on Ante Bellum map)
+# [VU] removed: province 6126 (not on Ante Bellum map)
+# [VU] removed: province 6127 (not on Ante Bellum map)
+# [VU] removed: province 6128 (not on Ante Bellum map)
+# [VU] removed: province 6129 (not on Ante Bellum map)
+# [VU] removed: province 6130 (not on Ante Bellum map)
+# [VU] removed: province 6131 (not on Ante Bellum map)
+# [VU] removed: province 6132 (not on Ante Bellum map)
+# [VU] removed: province 6133 (not on Ante Bellum map)
+# [VU] removed: province 6134 (not on Ante Bellum map)
+# [VU] removed: province 6135 (not on Ante Bellum map)
+# [VU] removed: province 6136 (not on Ante Bellum map)
+# [VU] removed: province 6137 (not on Ante Bellum map)
+# [VU] removed: province 6138 (not on Ante Bellum map)
+# [VU] removed: province 6139 (not on Ante Bellum map)
+# [VU] removed: province 6140 (not on Ante Bellum map)
+# [VU] removed: province 6141 (not on Ante Bellum map)
+# [VU] removed: province 6142 (not on Ante Bellum map)
+# [VU] removed: province 6143 (not on Ante Bellum map)
+# [VU] removed: province 6144 (not on Ante Bellum map)
+# [VU] removed: province 6145 (not on Ante Bellum map)
+# [VU] removed: province 6149 (not on Ante Bellum map)
+
+#Egypt
+358 = { "Iskenderiyye" "Iskenderiyye" } 
+359 = { "Feyyum" "Feyyum" }
+360 = { "Kina" "Kina" }
+361 = { "Kahire" "Kahire" }
+362 = { "Rashit" "Rashit" }
+363 = { "Sena" "Sena" } 
+1220 = { "Bayuda" "Gakdul" }
+1228 = { "Beshr-i Badi" "Beshr-i Badi" }
+1229 = { "Ümerhem" "Üryab" }
+1231 = { "Asvan" "Asvan" }
+1232 = { "Sevakin" "Sevakin" }
+1233 = { "Karga-i Nasib" "Karga" }
+1234 = { "Ibrim" "Ibrim" }
+2315 = { "Süveys" "Süveys" }
+2316 = { "Garbiya" "Kübra" }
+2317 = { "Minye" "Minye" }
+2318 = { "Ülbeht" "Shemriye" }
+2319 = { "Asyurt" "Asyurt" }
+2320 = { "Rüsh-i Garib" "Rüsh-i Garib" }
+2321 = { "Kusayr" "Kusayr" } 
+2322 = { "Fars" "Fars" }
+2323 = { "Shanka" "Shanka" }
+2324 = { "Gürbi Müselles" "Gürbi Müselles" }
+2325 = { "Alameyn" "Alameyn" }
+2797 = { "Ishandiyar" "Ishandiyar" }
+4316 = { "Sharkiyye" "Bülveht" }
+4317 = { "Demenhur" "Demenhur" }
+4318 = { "Astfihar" "Astfihar" }
+4319 = { "Luksor" "Luksor" }
+4320 = { "Circe" "Circe" }
+4321 = { "Vadi-i Beyza" "Gübli Karban" }
+4322 = { "Ülek Vadi-i" "Abrak" }
+4323 = { "Dülhisar" "Küsran" }
+# [VU] removed: province 5261 (not on Ante Bellum map)
+# [VU] removed: province 5264 (not on Ante Bellum map)
+# [VU] removed: province 5267 (not on Ante Bellum map)
+# [VU] removed: province 5271 (not on Ante Bellum map)
+# [VU] removed: province 5272 (not on Ante Bellum map)
+# [VU] removed: province 5273 (not on Ante Bellum map)
+# [VU] removed: province 5277 (not on Ante Bellum map)
+# [VU] removed: province 5278 (not on Ante Bellum map)
+# [VU] removed: province 5279 (not on Ante Bellum map)
+# [VU] removed: province 5280 (not on Ante Bellum map)
+# [VU] removed: province 5281 (not on Ante Bellum map)
+# [VU] removed: province 5282 (not on Ante Bellum map)
+# [VU] removed: province 5283 (not on Ante Bellum map)
+# [VU] removed: province 5284 (not on Ante Bellum map)	
+# [VU] removed: province 5301 (not on Ante Bellum map)
+# [VU] removed: province 5302 (not on Ante Bellum map)
+
+#Arabia
+383 = { "Tebük" "Tebük" }
+384 = { "Medine" "Medine-i Münevvere" }
+385 = { "Mekke" "Mekke-i Mükerreme" }
+386 = { "Esir" "Ebha" }
+387 = { "Moha" "Moha" }
+388 = { "Adeyn" "Adeyn" }
+389 = { "Mükella" "Mükella" }
+390 = { "San'a" "San'a" } 
+391 = { "Necran" "Necran" }
+392 = { "Diriyye" "Diriyye" }
+393 = { "Sümer" "Hilal" }
+394 = { "Katif" "Katif" }
+395 = { "Katar" "Zübare" }
+396 = { "Bahreyn" "Manama" }
+397 = { "Abu Dabi" "Abu Dabi" }
+398 = { "Sharika" "Sharika" }
+399 = { "Sahar" "Sahar" }
+400 = { "Maskat" "Maskat" }
+401 = { "Zufar" "Zufar" }
+402 = { "Mehre" "Kishn" }
+403 = { "Dahiliyye" "Nizva" }
+404 = { "Lüver" "Lüver" }
+1099 = { "Sokotra" "Sok" }
+2327 = { "Makna" "Makna" }
+2328 = { "Teyma" "Teyma" }
+2329 = { "Yenbû" "Yenbû" }
+2330 = { "Dürc-i Zer" "Dürc-i Zer" }
+2331 = { "Cidde" "Cidde" } 
+2332 = { "Türbahar" "Türbahar" }
+2333 = { "Shileh" "Shileh" }
+2335 = { "Baid-i Diyar" "Baid-i Diyar" }
+2336 = { "Washim" "Shakra" } 
+2337 = { "Kasim" "Uneyze" }
+2338 = { "Kül-biten" "Kül-biten" }
+2339 = { "Tüffüreh" "Tüffüreh" }
+2341 = { "Sharkiyye" "Sur" } 
+2342 = { "Vusta" "Dukm" }
+2343 = { "Hadramut" "Tarim" }
+2344 = { "Magrib" "Magrib" }
+2345 = { "Sade" "Sade" }
+2346 = { "Cizan" "Cizan" }
+2347 = { "Lahsa" "Lahsa" } 
+2999 = { "Hürmüz" "Hürmüz" }
+4269 = { "Zibâ" "Zibâ" }
+4272 = { "Küfe" "Shakar" }
+4274 = { "Sudayr" "Mecma" }
+4275 = { "Khurais" "Khurais" }
+4276 = { "Itabi-Ced" "Efür" }
+4277 = { "Taif" "Taif" }
+4278 = { "Kunfüze" "Kunfüze" }
+4279 = { "Hüdeyde" "Hüdeyde" }
+4280 = { "Taiz" "Taiz" }
+4281 = { "Damar" "Damar" }
+4282 = { "Bisha" "Kalet Bisha" }
+4283 = { "Marbat" "Marbat" }
+4284 = { "Hurmut" "Hurmut" }
+4285 = { "Ayn" "Ayn" }
+4286 = { "Füceyre" "Füceyre" }
+4287 = { "Uman" "Uman" }
+# [VU] removed: province 5231 (not on Ante Bellum map)
+# [VU] removed: province 5232 (not on Ante Bellum map)
+# [VU] removed: province 5233 (not on Ante Bellum map)
+# [VU] removed: province 5235 (not on Ante Bellum map)
+# [VU] removed: province 5239 (not on Ante Bellum map)
+# [VU] removed: province 5241 (not on Ante Bellum map)
+# [VU] removed: province 5243 (not on Ante Bellum map)
+# [VU] removed: province 5244 (not on Ante Bellum map)
+# [VU] removed: province 5246 (not on Ante Bellum map)
+# [VU] removed: province 5249 (not on Ante Bellum map)
+# [VU] removed: province 5250 (not on Ante Bellum map)	
+# [VU] removed: province 5251 (not on Ante Bellum map)
+# [VU] removed: province 5255 (not on Ante Bellum map)
+# [VU] removed: province 5256 (not on Ante Bellum map)
+# [VU] removed: province 5333 (not on Ante Bellum map)
+# [VU] removed: province 5334 (not on Ante Bellum map)
+
+#Maghreb
+334 = { "Tanca" "Tanca" }
+335 = { "Meliyye" "Meliyye" }
+336 = { "Tilimsan" "Tilimsan" }
+337 = { "Vahran" "Vahran" }
+338 = { "Cezayir" "Cezayir" }
+339 = { "Bicaye" "Bicaye" }
+340 = { "Kosantine" "Kosantine" }
+341 = { "Tunus" "Tunus" }
+342 = { "Kasrülkebir" "Kasrülkebir" }
+343 = { "Fas" "Fas" }
+344 = { "Marakish" "Marakish" }
+345 = { "Isfih" "Isfih" }
+346 = { "Tüfileh" "Tüfileh" }
+347 = { "Albelül" "Albelül" }
+348 = { "Müzgen" "Müzgen" }
+349 = { "Burdicevhan" "Burdicevhan" }
+350 = { "Lugat" "Lugat" }
+351 = { "Biskira" "Biskira" }
+352 = { "Kafsa" "Kafsa" }
+353 = { "Medenin" "Medenin" }
+354 = { "Trablusgarp" "Trablusgarp" } 
+355 = { "Sirte" "Sirte" }
+356 = { "Bingazi" "Bingazi" }
+357 = { "Derne" "Derne" }
+1110 = { "Agadir" "Agadir" }
+1751 = { "Sebte" "Sebte" }
+1882 = { "Annabe" "Annabe" }
+2326 = { "Tobruk" "Tobruk" }
+2449 = { "Hüfran" "Vardün" }
+2450 = { "Tatavin" "Tatavin" }
+2452 = { "Zuvare" "Zuvare" }
+2453 = { "Isfakiz" "Isfakiz" }
+2454 = { "Kayrevân" "Kayrevân" }
+2455 = { "Benzert" "Benzert" }
+2456 = { "Tüghurt" "Tüghurt" }
+2457 = { "Zab-i" "Gürdinya" }
+2458 = { "Islemin" "Islemin" }
+2459 = { "Medye" "Medye" }
+2460 = { "Ürtünkag" "Ürtünkag" }
+2461 = { "Müstagânem" "Müstagânem" }
+2462 = { "Atrüyeh" "Atrüyeh" }
+2463 = { "Namik" "Namik" }	
+2464 = { "Güzhizare" "Güzhizare" }
+2465 = { "Uçda" "Uçda" }
+2466 = { "Idra" "Akhür" }
+2467 = { "Münkesh" "Münkesh" }
+2468 = { "Yenifer" "Yenifer" }
+2469 = { "Jud-i Hisar" "Jud-i Hisar" }
+2470 = { "Mugadire" "Mugadire" }
+2472 = { "Ouargla" "Ouargla" }
+2473 = { "Susa" "Susa" }
+2954 = { "Cirbe" "Cirbe" }
+4561 = { "Tetuvan" "Tetuvan" }
+4562 = { "Enrumiye" "Enrumiye" }
+4563 = { "Selâ" "Selâ" }
+4564 = { "Kazablanka" "Kazablanka" } 
+4566 = { "Sidi Buzeyd" "Sidi Buzeyd" }
+4567 = { "Gadamez" "Gadamez" }
+4568 = { "Gash-i Burnak" "Gash-i Burnak" }
+5210 = { "Shafshavan" "Shafshavan" } 
+# [VU] removed: province 5211 (not on Ante Bellum map)
+# [VU] removed: province 5212 (not on Ante Bellum map)
+# [VU] removed: province 5213 (not on Ante Bellum map)
+# [VU] removed: province 5218 (not on Ante Bellum map)
+# [VU] removed: province 5219 (not on Ante Bellum map)
+# [VU] removed: province 5220 (not on Ante Bellum map)
+# [VU] removed: province 5224 (not on Ante Bellum map)
+# [VU] removed: province 5225 (not on Ante Bellum map)
+# [VU] removed: province 5226 (not on Ante Bellum map)
+# [VU] removed: province 5228 (not on Ante Bellum map)
+# [VU] removed: province 5274 (not on Ante Bellum map)
+# [VU] removed: province 5229 (not on Ante Bellum map)
+# [VU] removed: province 5303 (not on Ante Bellum map)
+# [VU] removed: province 5304 (not on Ante Bellum map)
+# [VU] removed: province 5306 (not on Ante Bellum map)
+# [VU] removed: province 5309 (not on Ante Bellum map)
+# [VU] removed: province 5310 (not on Ante Bellum map)
+# [VU] removed: province 5311 (not on Ante Bellum map)
+# [VU] removed: province 5312 (not on Ante Bellum map)
+# [VU] removed: province 5313 (not on Ante Bellum map)
+# [VU] removed: province 5314 (not on Ante Bellum map)
+# [VU] removed: province 5315 (not on Ante Bellum map)
+# [VU] removed: province 5316 (not on Ante Bellum map)
+# [VU] removed: province 5317 (not on Ante Bellum map)
+# [VU] removed: province 5318 (not on Ante Bellum map)
+# [VU] removed: province 5319 (not on Ante Bellum map)
+# [VU] removed: province 5320 (not on Ante Bellum map)
+# [VU] removed: province 5321 (not on Ante Bellum map)
+# [VU] removed: province 5322 (not on Ante Bellum map)
+# [VU] removed: province 5323 (not on Ante Bellum map)
+# [VU] removed: province 5324 (not on Ante Bellum map)
+# [VU] removed: province 5325 (not on Ante Bellum map)
+# [VU] removed: province 5326 (not on Ante Bellum map)
+# [VU] removed: province 5327 (not on Ante Bellum map)
+# [VU] removed: province 5328 (not on Ante Bellum map)
+# [VU] removed: province 5329 (not on Ante Bellum map)
+
+#Low Countries
+92 = { "Brüksel" "Brüksel" }
+94 = { "Lüksemburg" "Lüksemburg" }
+97 = { "Amesterdam" "Amesterdam" }
+1744 = { "Anvers" "Anvers" }
+4383 = { "Lahey" "Lahey" }
+
+#South Germany
+64 = { "Lonçate" "Lonçate" }
+65 = { "Münih" "Münih" }
+70 = { "Stutgart" "Stutgart" }
+73 = { "Cisr-i Ene" "Cisr-i Ene" }
+129 = { "Laybah" "Laybah" }
+133 = { "Linçe" "Linçe" }
+134 = { "Beç" "Beç" } 
+265 = { "Brün" "Brün" }
+266 = { "Perak" "Perak" }
+267 = { "Pilsen" "Pilsen" }
+1863 = { "Graviçe" "Graviçe" }
+1867 = { "Lozan" "Lozan" }
+1869 = { "Zürih" "Zürih" }
+3050 = { "Maribur" "Maribur" }
+3051 = { "Kishmaran" "Kishmaran" }
+4237 = { "Olomuk" "Olomuk" }
+4720 = { "Cenevre" "Cenevre" }
+4751 = { "Silli" "Silli" }
+# [VU] removed: province 7762 (not on Ante Bellum map)
+# [VU] removed: province 7764 (not on Ante Bellum map)
+
+#Italy
+101 = { "Cineviz" "Cineviz" }
+102 = { "Nitse" "Nitse" }
+103 = { "Turin" "Turin" }
+104 = { "Milan" "Milan" }
+105 = { "Pürme" "Pürme" }
+106 = { "Mudina" "Mudina" }
+107 = { "Büryeska" "Büryeska" }
+108 = { "Birune" "Birune" }
+109 = { "Mantovan" "Mantovan" }
+110 = { "Etranhür" "Etranhür" }
+111 = { "Ükülya" "Ükülya" }
+112 = { "Bundukiyye" "Bundukiyye" }
+113 = { "Firere" "Firere" } 
+114 = { "Rüvhenya" "Rüvhenya" }
+115 = { "Piza" "Piza" }
+116 = { "Floransa" "Floransa" }
+117 = { "Siyenha" "Siyenha" }
+118 = { "Rum" "Rum" }
+119 = { "Ankone" "Ankone" }
+120 = { "Liçeles Akula" "Liçeles Akula" }
+121 = { "Nablusgarp" "Nablusgarp" }
+122 = { "Taranda" "Taranda" }
+123 = { "Cenub-i Refah" "Cenub-i Refah" }
+124 = { "Mesine" "Mesine" }
+125 = { "Balarm" "Balarm" }
+126 = { "Malta" "Medine" }
+127 = { "Gülherna" "Cavit" }
+130 = { "Astarya" "Astarya" }
+1247 = { "Ayakub" "Ayakub" }
+1769 = { "Gürzhiya" "Gürz" }
+1774 = { "Gurvethan" "Gurvethan" }
+1862 = { "Kirkam" "Kirkam" }
+1875 = { "Yunyo" "Yunyo" }
+1933 = { "Bari" "Bari" }
+1934 = { "Üptanza" "Üptanza" }
+2976 = { "Piruç" "Piruç" }
+2977 = { "Üryabun" "Üryabun" }
+2978 = { "Türzegil" "Türzegil" }
+2979 = { "Hunavar" "Hunavar" }
+2980 = { "Lucca" "Lucca" }
+2981 = { "Ufhemra" "Kasal" }
+2982 = { "Sirakusa" "Sirakusa" }
+2983 = { "Bursaler" "Bursaler" }
+2984 = { "Kozenza" "Kozenza" }
+2985 = { "Luçera" "Luçera" }
+2986 = { "Kalyari" "Kalyari" }
+2992 = { "Elbinya" "Elbinya" }
+3039 = { "Birkapi" "Birkapi" }
+3040 = { "Dücce-i Lücce" "Dücce-i Lücce" }
+3042 = { "Azamet-i Mese" "Azamet-i Mese" }
+3045 = { "Usta" "Usta" }
+3048 = { "Bülzanhan" "Bülzanhan" }
+3054 = { "Ulugat" "Ulugat" }
+3294 = { "Üveltar" "Baderya" }
+3295 = { "Vitrap" "Vitrap" }
+4727 = { "Sülzor" "Sülzor" }
+4728 = { "Üpavyun" "Üpavyun" }
+4729 = { "Nulsah" "Nulsah" }
+4730 = { "Bolonyya" "Bolonyya" }
+4731 = { "Üspül" "Üspül" }
+4732 = { "Gavriye" "Gavriye" }
+4733 = { "Olmisha" "Urkumbaso" }
+4734 = { "Evelan" "Evelan" }
+4735 = { "Urbür" "Horistan" }
+4736 = { "Tirpani" "Tirpani" }
+4737 = { "Kirkent" "Kirkent" }
+4738 = { "Tiriyeste" "Tiriyeste" }
+4739 = { "Burgamot" "Burgamot" }
+4740 = { "Kumluk" "Kumluk" }
+4758 = { "Ümran" "Ümran" }
+5091 = { "Ulubak" "Isser" }
+5092 = { "Pestiyye" "Pestiyye" }
+# [VU] removed: province 7001 (not on Ante Bellum map)
+# [VU] removed: province 7002 (not on Ante Bellum map)
+# [VU] removed: province 7003 (not on Ante Bellum map)
+# [VU] removed: province 7004 (not on Ante Bellum map)
+# [VU] removed: province 7005 (not on Ante Bellum map) 
+# [VU] removed: province 7006 (not on Ante Bellum map)
+# [VU] removed: province 7007 (not on Ante Bellum map)
+# [VU] removed: province 7008 (not on Ante Bellum map)
+# [VU] removed: province 7009 (not on Ante Bellum map)
+# [VU] removed: province 7011 (not on Ante Bellum map)
+# [VU] removed: province 7012 (not on Ante Bellum map)
+# [VU] removed: province 7013 (not on Ante Bellum map)
+# [VU] removed: province 7014 (not on Ante Bellum map)
+# [VU] removed: province 7015 (not on Ante Bellum map)
+# [VU] removed: province 7016 (not on Ante Bellum map)
+# [VU] removed: province 7017 (not on Ante Bellum map)
+# [VU] removed: province 7019 (not on Ante Bellum map)
+# [VU] removed: province 7020 (not on Ante Bellum map)
+# [VU] removed: province 7021 (not on Ante Bellum map)
+# [VU] removed: province 7022 (not on Ante Bellum map)
+# [VU] removed: province 7024 (not on Ante Bellum map)
+# [VU] removed: province 7025 (not on Ante Bellum map)
+# [VU] removed: province 7026 (not on Ante Bellum map)
+# [VU] removed: province 7027 (not on Ante Bellum map)
+# [VU] removed: province 7028 (not on Ante Bellum map)
+# [VU] removed: province 7029 (not on Ante Bellum map)
+# [VU] removed: province 7030 (not on Ante Bellum map)
+# [VU] removed: province 7031 (not on Ante Bellum map)
+# [VU] removed: province 7032 (not on Ante Bellum map)
+# [VU] removed: province 7033 (not on Ante Bellum map)
+# [VU] removed: province 7034 (not on Ante Bellum map)
+# [VU] removed: province 7035 (not on Ante Bellum map)
+# [VU] removed: province 7036 (not on Ante Bellum map)
+# [VU] removed: province 7037 (not on Ante Bellum map)
+# [VU] removed: province 7038 (not on Ante Bellum map)
+# [VU] removed: province 7039 (not on Ante Bellum map)
+# [VU] removed: province 7040 (not on Ante Bellum map)
+# [VU] removed: province 7041 (not on Ante Bellum map)
+# [VU] removed: province 7042 (not on Ante Bellum map)
+# [VU] removed: province 7043 (not on Ante Bellum map)
+# [VU] removed: province 7044 (not on Ante Bellum map)
+# [VU] removed: province 7045 (not on Ante Bellum map)
+# [VU] removed: province 7046 (not on Ante Bellum map)
+# [VU] removed: province 7047 (not on Ante Bellum map)
+# [VU] removed: province 7048 (not on Ante Bellum map)
+# [VU] removed: province 7049 (not on Ante Bellum map)
+# [VU] removed: province 7050 (not on Ante Bellum map)
+# [VU] removed: province 7051 (not on Ante Bellum map)
+# [VU] removed: province 7052 (not on Ante Bellum map)
+# [VU] removed: province 7053 (not on Ante Bellum map)
+# [VU] removed: province 7054 (not on Ante Bellum map)
+# [VU] removed: province 7055 (not on Ante Bellum map)
+# [VU] removed: province 7056 (not on Ante Bellum map)
+# [VU] removed: province 7057 (not on Ante Bellum map)
+# [VU] removed: province 7058 (not on Ante Bellum map)
+# [VU] removed: province 7059 (not on Ante Bellum map)
+# [VU] removed: province 7060 (not on Ante Bellum map)
+# [VU] removed: province 7061 (not on Ante Bellum map)
+# [VU] removed: province 7062 (not on Ante Bellum map)
+# [VU] removed: province 7063 (not on Ante Bellum map)
+# [VU] removed: province 7064 (not on Ante Bellum map)
+# [VU] removed: province 7065 (not on Ante Bellum map)
+# [VU] removed: province 7067 (not on Ante Bellum map)
+# [VU] removed: province 7068 (not on Ante Bellum map)
+# [VU] removed: province 7070 (not on Ante Bellum map)
+# [VU] removed: province 7071 (not on Ante Bellum map)
+# [VU] removed: province 7072 (not on Ante Bellum map)
+# [VU] removed: province 7075 (not on Ante Bellum map)
+# [VU] removed: province 7076 (not on Ante Bellum map)
+# [VU] removed: province 7078 (not on Ante Bellum map)
+# [VU] removed: province 7079 (not on Ante Bellum map)
+# [VU] removed: province 7080 (not on Ante Bellum map)
+# [VU] removed: province 7081 (not on Ante Bellum map)
+# [VU] removed: province 7082 (not on Ante Bellum map)
+# [VU] removed: province 7083 (not on Ante Bellum map)
+# [VU] removed: province 7084 (not on Ante Bellum map)
+# [VU] removed: province 7085 (not on Ante Bellum map)
+# [VU] removed: province 7086 (not on Ante Bellum map)
+# [VU] removed: province 7087 (not on Ante Bellum map)
+# [VU] removed: province 7088 (not on Ante Bellum map)
+# [VU] removed: province 7089 (not on Ante Bellum map)
+# [VU] removed: province 7090 (not on Ante Bellum map)
+# [VU] removed: province 7091 (not on Ante Bellum map)
+# [VU] removed: province 7093 (not on Ante Bellum map)
+# [VU] removed: province 7094 (not on Ante Bellum map)
+# [VU] removed: province 7095 (not on Ante Bellum map)
+# [VU] removed: province 7096 (not on Ante Bellum map)
+# [VU] removed: province 7097 (not on Ante Bellum map)
+# [VU] removed: province 7098 (not on Ante Bellum map)
+# [VU] removed: province 7099 (not on Ante Bellum map)
+
+#Caucasia
+419 = { "Erivan" "Erivan" }
+420 = { "Gence" "Gence" }
+421 = { "Shirvan" "Bakü" }
+422 = { "Açikbash" "Kutayis" }
+423 = { "Tiflis" "Tiflis" }
+424 = { "Erdebil" "Erdebil" }
+425 = { "Kuba" "Kuba" }
+462 = { "Megrelya" "Zekdide" }
+463 = { "Çerkes" "Shithale" }
+1856 = { "Abhazya" "Sohumkale" }
+2195 = { "Adige" "Cenaheyn" }
+2196 = { "Gürye" "Oçerki" }
+2197 = { "Kabardiya" "Nalçik" }
+2198 = { "Kunduzkale" "Kunduzkale" }
+2199 = { "Tarak" "Tarak" }
+2201 = { "Terekkale" "Terekkale" }
+2202 = { "Haçin" "Shishe" }
+2203 = { "Kahit" "Telav" }
+2204 = { "Kars" "Kars" }
+2205 = { "Nahçivan" "Nahçivan" }
+2208 = { "Kizlarkalesi" "Kizlarkalesi" }
+2416 = { "Majar" "Majar" }
+3250 = { "Artvin" "Artvin" }
+3251 = { "Meshetya" "Aksika" }
+3253 = { "Lore" "Karakilis" }
+3256 = { "Sünnik" "Tütev" }
+3261 = { "Demirkapi" "Demirkapi" }
+3262 = { "Karaçay" "Çerkezkale" } 
+3263 = { "Beshdag" "Beshdag" }
+4299 = { "Shamahi" "Shamahi" }
+4301 = { "Göri" "Göri" }
+4303 = { "Çildir" "Çildir" }
+4305 = { "Sheki" "Sheki" }
+4306 = { "Lezgistan" "Kümüye" }
+4340 = { "Talish" "Lenkeran" }
+
+#Persia
+412 = { "Ahvaz" "Ahvaz" }
+413 = { "Hürremabad" "Hürremabad" }
+414 = { "Hemedan" "Hemedan" }
+416 = { "Tebriz" "Tebriz" }
+417 = { "Lahican" "Lahican" }
+426 = { "Amul" "Amul" }
+427 = { "Kumis" "Damgan" }
+428 = { "Tahran" "Tahran" }
+429 = { "Isfahan" "Isfahan" }
+430 = { "Deshtistan" "Busehir" }
+431 = { "Bender Abbas" "Bender Abbas" }
+432 = { "Kirman" "Kirman" }
+433 = { "Yezit" "Yezit" }
+2206 = { "Urmiyye" "Urmiyye" } 
+2207 = { "Meraga" "Meraga" }
+2209 = { "Ilam" "Ilam" }
+2210 = { "Kirmanshah" "Kirmanshah" }
+2211 = { "Erdelan" "Sinne" }
+2212 = { "Zencan" "Zencan" }
+2213 = { "Kum" "Kum" }
+2214 = { "Gülistan" "Gürgen" }
+2215 = { "Kazvin" "Kazvin" }
+2216 = { "Simnan" "Simnan" }
+2217 = { "Yasuc" "Yasuc" }
+2218 = { "Shiraz" "Shiraz" }
+2219 = { "Bender Lenge" "Bender Lenge" }
+2220 = { "Bem" "Bem" }
+2222 = { "Erdakan" "Erdakan" }
+2223 = { "Laristan" "Lar" } 
+2234 = { "Refsencan" "Refsencan" }
+4171 = { "Eberkuh" "Eberkuh" }
+4289 = { "Shushter" "Shushter" }
+4290 = { "Huveyze" "Huveyze" }
+4300 = { "Miyane" "Miyane" }
+4304 = { "Hoy Kend" "Hoy Kend" }
+4327 = { "Bender Cask" "Bender Cask" }
+4329 = { "Fesa" "Fesa" }
+4330 = { "Dürüb" "Dürüb" }
+4331 = { "Kuzerün" "Kuzerün" }
+4332 = { "Shiraf" "Shiraf" }
+4335 = { "Kaçan" "Kaçan" }
+4337 = { "Save" "Save" }
+4338 = { "Sultaniyye" "Sultaniyye" }
+4339 = { "Resht" "Resht" }
+4341 = { "Sarye" "Sarye" }
+4342 = { "Ize" "Ize" }
+4345 = { "Seyyidabad" "Seyyidabad" }
+
+#Caribbean
+481 = { "Bermuda" "Yeni Bursa" }
+482 = { "Yeni Ihtiyat" "Konya Burnu" }
+483 = { "Turks ve Caicos Adalari" "Türk Pelerini" }
+484 = { "Havana" "Havana" }
+485 = { "Yüz Yangin" "Yüz Yangin" }
+486 = { "Peygamberler Adasi" "Peygamberler Adasi" }
+487 = { "Jamaika" "Sultan'in Kasabasi" }
+488 = { "Bati" "Prens Limani" }
+489 = { "Kuzeybati" "Baris Limani" }
+490 = { "Seibo" "Higüey" }
+491 = { "Kyurasao" "Muhammed'in Inisi" }
+492 = { "Zengin baglanti Noktasi" "Sadiklar Koyu" }
+493 = { "Peygamber Adasi" "Yol Kasabasi" }
+494 = { "Kitts ve Nevis" "Ovalar" }
+495 = { "Antigua ve Barbuda" "Pelerin Duasi" }
+496 = { "Guadelup" "Peygamber'in topragi" }
+497 = { "Dominika" "Kamis" }
+498 = { "Martinika" "Kraliyet Kalesi" }
+499 = { "Yeni Medine" "Yeni Medine" }
+500 = { "Aziz Vincent ve Grenadinler" "Kral Kasabasi" }
+501 = { "Barbados" "Köprüsehri" }
+502 = { "Uçleme" "Ispanya limani" }
+926 = { "Aziz Lucie" "Aziz Lucie" }
+927 = { "Caroline Kalesi" "Caroline Kalesi" }
+1881 = { "Martin ve Anguilla" "John'un sehri" }
+2654 = { "Guantanamo" "Baracoa" }
+2655 = { "Büyükanne" "Firtina" }
+2656 = { "Camagüey" "Camagüey" }
+2658 = { "Azua" "Azua" }
+2659 = { "Gümüs Baglanti Noktasi" "Gümüs Baglanti Noktasi" }
+4618 = { "Artibonit" "Gonaifler" }
+4619 = { "Kuzey" "Haiti Pelerini" }
+4620 = { "Samana" "Aziz Barbara" }
+4621 = { "Dominik" "Dominik" }
+4622 = { "Gençlik Adasi" "Yeni Gerona" }
+4623 = { "Temiz ev" "Yeni Bursa" }
+4624 = { "Çam agaci" "Nehrin Çam Agaci" }
+# [VU] removed: province 5563 (not on Ante Bellum map)
+# [VU] removed: province 5565 (not on Ante Bellum map)
+# [VU] removed: province 5567 (not on Ante Bellum map)
+# [VU] removed: province 5572 (not on Ante Bellum map)
+# [VU] removed: province 5576 (not on Ante Bellum map)
+# [VU] removed: province 5577 (not on Ante Bellum map)
+# [VU] removed: province 5578 (not on Ante Bellum map)
+# [VU] removed: province 5579 (not on Ante Bellum map)
+# [VU] removed: province 5581 (not on Ante Bellum map)
+# [VU] removed: province 5582 (not on Ante Bellum map)
+# [VU] removed: province 5583 (not on Ante Bellum map)
+# [VU] removed: province 5584 (not on Ante Bellum map)
+# [VU] removed: province 5585 (not on Ante Bellum map)
+# [VU] removed: province 5586 (not on Ante Bellum map)
+# [VU] removed: province 5706 (not on Ante Bellum map)
+# [VU] removed: province 5707 (not on Ante Bellum map)
+# [VU] removed: province 5708 (not on Ante Bellum map)
+# [VU] removed: province 5709 (not on Ante Bellum map)
+# [VU] removed: province 5710 (not on Ante Bellum map)
+# [VU] removed: province 6010 (not on Ante Bellum map)
+# [VU] removed: province 6011 (not on Ante Bellum map)
+# [VU] removed: province 6012 (not on Ante Bellum map)
+# [VU] removed: province 6013 (not on Ante Bellum map)
+# [VU] removed: province 6014 (not on Ante Bellum map)
+# [VU] removed: province 6015 (not on Ante Bellum map)
+# [VU] removed: province 6016 (not on Ante Bellum map)
+# [VU] removed: province 6017 (not on Ante Bellum map)
+# [VU] removed: province 8414 (not on Ante Bellum map)
+
+#Khorasan
+434 = { "Hampur" "Hampur" }
+435 = { "Zaranç" "Zaranç" }
+436 = { "Bircend" "Bircend" }
+444 = { "Çarçou" "Çarçou" }
+445 = { "Mari" "Mari" }  
+446 = { "Hirat" "Hirat" }
+447 = { "Kandehar" "Kandehar" }
+448 = { "Gazne" "Gazne" }
+449 = { "Gur" "Çagçaran" }
+450 = { "Belh" "Belh" }
+451 = { "Kâbil" "Kâbil" }
+452 = { "Bedahshan" "Feyzabad" }
+575 = { "Urgüvad" "Urgüvad" }
+576 = { "Kalat" "Kalat" }
+577 = { "Ketta" "Ketta" }
+578 = { "Peshaver" "Peshaver" }
+2068 = { "Yünikhat" "Yünikhat" }
+2221 = { "Meshhed" "Meshhed" }
+2224 = { "Ferah" "Ferah" }
+2225 = { "Bamiyan" "Bamiyan" }
+2226 = { "Celalabat" "Celalabat" }
+2227 = { "Kunduz" "Kunduz" }
+2228 = { "Maymana" "Maymana" }
+2229 = { "Leshkâr" "Leshkâr" }
+2230 = { "Chakhansur" "Chakhansur" }
+2231 = { "Bela" "Bela" }
+2232 = { "Haran" "Haran" }
+2233 = { "Çabahar" "Çabahar" }
+2235 = { "Sebzevar" "Sebzevar" }
+2236 = { "Bucnurt" "Bucnurt" }
+2350 = { "Ashkabat" "Ashkabat" }
+4324 = { "Ghoryan" "Ghoryan" }
+4325 = { "Serhas" "Serhas" }
+4326 = { "Neyshabur" "Neyshabur" }
+4334 = { "Tebes" "Tebes" }
+4336 = { "Tun" "Tun" }
+
+#Central Asia
+437 = { "Köpetdag" "Köpetdag" }
+438 = { "Karakum" "Karakum" }
+439 = { "Mankishlak" "Mankishlak" }
+440 = { "Karakalpak" "Çimbay" }
+441 = { "Hywa" "Hywa" } 
+442 = { "Buharak" "Buharak" } 
+443 = { "Üstyurt" "Üstyurt" } 
+453 = { "Karshi" "Karshi" }
+454 = { "Semizkend" "Semizkend" }
+455 = { "Kizilkum" "Kizilkum" }
+456 = { "Türkistan" "Yesi" }
+457 = { "Tashkent" "Tashkent" }
+458 = { "Hokant" "Hokant" }
+459 = { "Tiraz" "Tiraz" }
+460 = { "Özçent" "Özçent" }
+461 = { "Almati" "Almati" }
+477 = { "Nadim" "Nadim" }
+478 = { "Argin" "Argin" }
+1967 = { "Hucand" "Hucand" }
+1968 = { "Külyab" "Külyab" }
+1969 = { "Sozak" "Sozak" }
+1970 = { "Sugnak" "Sugnak" }
+1973 = { "Ürgenç" "Ürgenç" }
+2125 = { "Karakol" "Karakol" }
+2126 = { "Çüy" "Pishpek" }
+2349 = { "Kizilsu" "Kizilsu" }
+2355 = { "Narim" "Narim" }
+2356 = { "Çimkent" "Çimkent" }
+2358 = { "Altin" "Altin" }
+2362 = { "Köneürgenç" "Köneürgenç" }
+2363 = { "Atakent" "Atakent" }
+2364 = { "Talas" "Talas" }
+2368 = { "Taldikurgan" "Taldikurgan" }
+2370 = { "Konurat" "Konurat" }
+4343 = { "Tirmiz" "Tirmiz" }
+4344 = { "Kesh" "Kesh" }
+4685 = { "Karagandi" "Karagandi" }
+
+#Mongolia
+715 = { "Urumçi" "Urumçi" }
+
+#Ruthenia
+261 = { "Haliç" "Haliç" }
+269 = { "Püdlas" "Püdlas" }
+270 = { "Trok" "Trok" }
+272 = { "Vilniya" "Vilniya" }
+277 = { "Berestiye" "Berestiye" }
+279 = { "Bulymer-Volinya" "Bulymer-Volinya" }
+280 = { "Kiyef" "Kiyef" }
+281 = { "Kamaniçe" "Kamaniçe" }
+289 = { "Karacar" "Karacar" }
+290 = { "Baltavar" "Baltavar" }
+297 = { "Birinçi" "Birinçi" }
+298 = { "Kür" "Kür" }
+1940 = { "Bülfizhar" "Bülfizhar" }
+1942 = { "Jitomir" "Jitomir" }
+1943 = { "Kizikermen" "Kizikermen" }
+1944 = { "Çigirin" "Çigirin" }
+1945 = { "Urus-Seber" "Urus-Seber" }
+2407 = { "Pereiaslav" "Pereiaslav" }
+2424 = { "Üpremish" "Üpremish" }
+2961 = { "Ilbav" "Ilbav" }
+2962 = { "Rivne" "Rivne" }
+3223 = { "Üblüstok" "Üblüstok" }
+3225 = { "Küvrenkis" "Küvrenkis" }
+3238 = { "Lütsük" "Lütsük" }
+3239 = { "Ihmelin" "Ihmelin" }
+3241 = { "Kalnik" "Kalnik" }
+3242 = { "Çehrin" "Çehrin" }
+3246 = { "Romniyye" "Romniyye" }
+3267 = { "Çallikale" "Çallikale" }
+3270 = { "Istradub" "Istradub" }
+4242 = { "Borisof" "Borisof" }
+4244 = { "Trubçevsk" "Trubçevsk" }
+4247 = { "Çorosten" "Çorosten" }
+4538 = { "Külm" "Külm" }
+4539 = { "Kremenis" "Kremenis" }
+4540 = { "Vinniçe" "Vinniçe" }
+4541 = { "Drohobiç" "Drohobiç" }
+4542 = { "Lubniyye" "Lubniyye" }
+4543 = { "Rilsk" "Rilsk" }
+4540 = { "Vinniçe" "Vinniçe" }
+4789 = { "Sikubiyye" "Sikubiyye" }
+# [VU] removed: province 5660 (not on Ante Bellum map)
+# [VU] removed: province 5670 (not on Ante Bellum map)
+# [VU] removed: province 7206 (not on Ante Bellum map)
+# [VU] removed: province 7207 (not on Ante Bellum map)
+# [VU] removed: province 7208 (not on Ante Bellum map)
+# [VU] removed: province 7209 (not on Ante Bellum map)
+# [VU] removed: province 7211 (not on Ante Bellum map)
+# [VU] removed: province 7217 (not on Ante Bellum map)
+# [VU] removed: province 7228 (not on Ante Bellum map)
+# [VU] removed: province 7229 (not on Ante Bellum map)
+# [VU] removed: province 7237 (not on Ante Bellum map)
+# [VU] removed: province 7239 (not on Ante Bellum map)
+# [VU] removed: province 7242 (not on Ante Bellum map)
+# [VU] removed: province 7243 (not on Ante Bellum map)
+# [VU] removed: province 7244 (not on Ante Bellum map)
+# [VU] removed: province 7245 (not on Ante Bellum map)
+# [VU] removed: province 7246 (not on Ante Bellum map)
+# [VU] removed: province 7248 (not on Ante Bellum map)
+# [VU] removed: province 7249 (not on Ante Bellum map)
+# [VU] removed: province 7250 (not on Ante Bellum map)
+# [VU] removed: province 7252 (not on Ante Bellum map)
+# [VU] removed: province 7253 (not on Ante Bellum map)
+# [VU] removed: province 7254 (not on Ante Bellum map)
+# [VU] removed: province 7255 (not on Ante Bellum map)
+# [VU] removed: province 7256 (not on Ante Bellum map)
+# [VU] removed: province 7259 (not on Ante Bellum map)
+# [VU] removed: province 7262 (not on Ante Bellum map)
+# [VU] removed: province 7263 (not on Ante Bellum map)
+# [VU] removed: province 7267 (not on Ante Bellum map)
+# [VU] removed: province 7268 (not on Ante Bellum map)
+# [VU] removed: province 7269 (not on Ante Bellum map)
+# [VU] removed: province 7270 (not on Ante Bellum map)
+# [VU] removed: province 7271 (not on Ante Bellum map)
+# [VU] removed: province 7272 (not on Ante Bellum map)
+# [VU] removed: province 7273 (not on Ante Bellum map)
+# [VU] removed: province 7882 (not on Ante Bellum map)
+
+#VU - Australia by NoobMiner72
+1084 = { "Perth" "Perth" }
+1085 = { "Gobart" "Gobart" }
+1086 = { "Adelaýd" "Port Adelaýd" }
+1087 = { "Melburn" "Melburn" }
+1088 = { "Bendigo" "Bendigo" }
+1089 = { "Bathurst" "Mämisi" }
+1090 = { "Sidneý" "Sidneý" }
+1091 = { "Orana" "Dubbo" }
+1092 = { "Port Makkari" "Port Makkari" }
+1093 = { "Bulloo" "Thargomindah" }
+1094 = { "Frazer kenary" "Herweý aýlagy" }
+2726 = { "Gascoyne" "Geraldton" }
+2727 = { "Esperans" "Esperans" }
+2728 = { "Bathurst adasy" "Bathurst adasy" }
+2729 = { "Arnhem" "Gündogar Arnhem" }
+2730 = { "Weipa" "Weipa" }
+2731 = { "Hope Vale" "Cairns" }
+2732 = { "Townsville" "Townsville" }
+2733 = { "Mackay" "Mackay" }
+2734 = { "Port Albert" "Port Albert" }
+2735 = { "Gambier dagy" "Gambier dagy" }
+2736 = { "Hopetown" "Hopetown" }
+4846 = { "Palmerston" "Darwin" }
+4847 = { "Barkly" "Tennant Creek" }
+4848 = { "Bourke" "Bourke" }
+4849 = { "Carpentaria" "Normanton" }
+4850 = { "Gladstone" "Gladstone" }
+4851 = { "Günes kenary" "Noosa" }
+4852 = { "Burnett" "Kingaroy" }
+4853 = { "Paroo" "Cunnamulla" }
+4854 = { "Brisbane" "Brisbane" }
+4855 = { "Moree Plains" "Moree" }
+4856 = { "Tamworth" "Tamworth" }
+4857 = { "Newcastle" "Newcastle" }
+4858 = { "Wollongong" "Wollongong" }
+4859 = { "Canberra" "Canberra" }
+4860 = { "Günorta Tablelands" "Goulburn" }
+4861 = { "Bogong" "Wodonga" }
+4862 = { "Taunton" "Taunton" }
+4863 = { "Marmion" "Cranbrook" }
+4864 = { "Murray" "Geraldton" }
+4865 = { "Ashburton" "Karratha" }
+4866 = { "Pilbara" "Port Hedland" }
+4867 = { "Kimberley" "Easton" }
+4868 = { "Launceston" "Launceston" }
+4869 = { "Queenstown" "Queenstown" }
+
+#VU - New Zealand by NoobMiner72
+1106 = { "Northland" "Whangarei" }
+1107 = { "Wellington" "Wellington" }
+1108 = { "Bol aýlagy" "Tauranga" }
+1109 = { "Otago" "Dunedin" }
+1246 = { "Invercargill" "Invercargill" }
+2738 = { "Nelson" "Nelson" }
+2737 = { "Hawke's Bay" "Napier" }
+2739 = { "Waikawau" "Waikawau" }
+4939 = { "Te Kaha" "Te Kaha" }
+# [VU] removed: province 5597 (not on Ante Bellum map)
+# [VU] removed: province 5598 (not on Ante Bellum map)
+# [VU] removed: province 5599 (not on Ante Bellum map)
+# [VU] removed: province 5600 (not on Ante Bellum map)
+# [VU] removed: province 5601 (not on Ante Bellum map)
+# [VU] removed: province 5602 (not on Ante Bellum map)
+# [VU] removed: province 5603 (not on Ante Bellum map)
+# [VU] removed: province 5604 (not on Ante Bellum map)
+# [VU] removed: province 5605 (not on Ante Bellum map)
+# [VU] removed: province 5606 (not on Ante Bellum map)
+# [VU] removed: province 5607 (not on Ante Bellum map)
+# [VU] removed: province 5608 (not on Ante Bellum map)
+# [VU] removed: province 5609 (not on Ante Bellum map)
+
+#Africa
+3047 = { "Ndar" "Aziz Luis" }

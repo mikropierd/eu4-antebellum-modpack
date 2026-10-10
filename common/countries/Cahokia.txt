@@ -6,13 +6,13 @@ color = { 59 15 49 }
 revolutionary_colors = { 14 10 5 }
 
 historical_idea_groups = {
-	infrastructure_ideas
+	religious_ideas
+	defensive_ideas
 	offensive_ideas
-	innovativeness_ideas
 	trade_ideas
 	diplomatic_ideas
-	exploration_ideas
-	quality_ideas
+	plutocracy_ideas
+	spy_ideas
 	economic_ideas
 }
 
@@ -70,8 +70,8 @@ monarch_names = {
 }
 
 leader_names = {
-	Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid 
-	Oferid Omrid Pinchasid Raananid Shemidid Yairid
+	Kaskaskia Cahokia Peoria Tamaroa Moingwena Michigamea Albiui Amonokoa Chepoussa
+	Chinkoa Coiracoentanon Espeminkia Maroa Matchinkoa Michibousa Negawichi Tapouara
 }
 
 ship_names = {

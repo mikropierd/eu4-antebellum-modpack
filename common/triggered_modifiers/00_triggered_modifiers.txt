@@ -1,0 +1,209 @@
+#Dummy, see events/VU_Triggered_Modifiers.txt, don't add anything here, I'm only keeping the AI stuffs as it cannot be done any better way...
+#
+##################################################
+# China AI modifiers
+##################################################
+the_mandate_of_heaven = {
+	potential = {
+		has_reform = celestial_empire
+		NOT = {
+			has_dlc = "Mandate of Heaven"
+		}
+	}
+	trigger = {
+		stability = 0
+		legitimacy = 60
+		num_of_cities = 20
+	}
+	stability_cost_modifier = -0.1
+	global_unrest = -5
+}
+
+the_mandate_of_heaven_lost = {
+	potential = {
+		has_reform = celestial_empire
+		NOT = {
+			has_dlc = "Mandate of Heaven"
+		}
+	}
+	trigger = {
+		OR = {
+			NOT = {
+				stability = 0
+			}
+			NOT = {
+				legitimacy = 60
+			}
+			NOT = {
+				num_of_cities = 20
+			}
+		}
+	}
+	discipline = -0.1
+	stability_cost_modifier = 0.5
+	global_unrest = 10
+}
+
+lost_control_of_beijing = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+	}
+	trigger = {
+		OR = {
+			NOT = {
+				owns = 1816
+			}
+			NOT = {
+				controls = 1816
+			}
+		}
+	}
+	ai_weight = {
+		factor = -1000		# Do what you can to avoid this modifier
+	}
+	imperial_mandate = -0.05
+}
+
+lost_control_of_nanjing = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+	}
+	trigger = {
+		OR = {
+			NOT = {
+				owns = 1821
+			}
+			NOT = {
+				controls = 1821
+			}
+		}
+	}
+	ai_weight = {
+		factor = -1000		# Do what you can to avoid this modifier
+	}
+	imperial_mandate = -0.05
+}
+
+lost_control_of_canton = {
+	potential = {
+		has_reform = celestial_empire
+		has_dlc = "Mandate of Heaven"
+	}
+	trigger = {
+		OR = {
+			NOT = {
+				owns = 667
+			}
+			NOT = {
+				controls = 667
+			}
+		}
+	}
+	ai_weight = {
+		factor = -1000		# Do what you can to avoid this modifier
+	}
+	imperial_mandate = -0.05
+}
+
+##########################################################################
+# VU Province-Count Force Limit Scaling
+# Small nations receive a force limit bonus. Large empires receive a
+# penalty. The baseline band (51-100 provinces) gets no modifier.
+# Thresholds are calibrated for VU's expanded map (~2x vanilla provinces).
+# Design: VU
+##########################################################################
+
+# 1-10 provinces — Independent Principality
+# Minor lords, free cities, OPMs. Disproportionate military capacity
+# to survive in a world of larger neighbours.
+vu_army_scale_micro = {
+	potential = {
+		num_of_cities = 1
+		NOT = { num_of_cities = 11 }
+	}
+	trigger = {
+		num_of_cities = 1
+		NOT = { num_of_cities = 11 }
+	}
+	land_forcelimit_modifier = 0.20
+	naval_forcelimit_modifier = 0.20
+}
+
+# 11-25 provinces — Small Kingdom
+# England, Venice, Denmark, minor European kingdoms at game start.
+# Real military powers, just not continent-spanning.
+vu_army_scale_small = {
+	potential = {
+		num_of_cities = 11
+		NOT = { num_of_cities = 26 }
+	}
+	trigger = {
+		num_of_cities = 11
+		NOT = { num_of_cities = 26 }
+	}
+	land_forcelimit_modifier = 0.10
+	naval_forcelimit_modifier = 0.10
+}
+
+# 26-50 provinces — Regional Power
+# Mid-sized kingdoms. Punching at their weight but not yet a great power.
+vu_army_scale_regional = {
+	potential = {
+		num_of_cities = 26
+		NOT = { num_of_cities = 51 }
+	}
+	trigger = {
+		num_of_cities = 26
+		NOT = { num_of_cities = 51 }
+	}
+	land_forcelimit_modifier = 0.05
+	naval_forcelimit_modifier = 0.05
+}
+
+# 51-100 provinces — baseline, no modifier applied.
+
+# 101-150 provinces — Great Power Overstretch
+# Administering a large empire strains the capacity to fully mobilise.
+vu_army_scale_great_power = {
+	potential = {
+		num_of_cities = 101
+		NOT = { num_of_cities = 151 }
+	}
+	trigger = {
+		num_of_cities = 101
+		NOT = { num_of_cities = 151 }
+	}
+	land_forcelimit_modifier = -0.10
+	naval_forcelimit_modifier = -0.10
+}
+
+# 151-200 provinces — Continental Empire Overstretch
+# Holding together a continent-spanning empire fragments military focus.
+vu_army_scale_empire = {
+	potential = {
+		num_of_cities = 151
+		NOT = { num_of_cities = 201 }
+	}
+	trigger = {
+		num_of_cities = 151
+		NOT = { num_of_cities = 201 }
+	}
+	land_forcelimit_modifier = -0.20
+	naval_forcelimit_modifier = -0.20
+}
+
+# 200+ provinces — World Empire Overstretch
+# Late Ottomans, Mughals, world-spanning empires. Administrative limits
+# on mobilising such vast territories historically capped effective armies.
+vu_army_scale_world_empire = {
+	potential = {
+		num_of_cities = 201
+	}
+	trigger = {
+		num_of_cities = 201
+	}
+	land_forcelimit_modifier = -0.30
+	naval_forcelimit_modifier = -0.30
+}

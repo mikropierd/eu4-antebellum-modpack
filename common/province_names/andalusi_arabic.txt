@@ -1,0 +1,170 @@
+#Arabic andalucian
+124 = "Massina"
+125 = "Balarm"
+132 = { "Judenburg" "Judenburg" }
+196 = "Tolosha"
+197 = { "Rusilu" "Rusilu" }
+206 = "Shant Yakub"
+208 = "Liyun"
+210 = "Banbaluna"
+211 = { "Wasqah" "Jibal al-brans" }
+212 = { "Garundah" "Garundah" }
+213 = { "Barshaluna" "Barshaluna" }
+214 = { "Saraqusta" "Saraqusta" }
+215 = "Baladu-Walid"
+216 = { "Salmanika" "Salmanika" }
+217 = { "Majrit" "Majrit" }
+218 = {"Bitlius" "Bitlius" }
+219 = { "Tulidu" "Tulidu" }
+220 = { "Falinsiyah" "Falinsiyah" }
+221 = { "Mursia" "Mursia" }
+222 = { "al-Mariyah" "al-Mariyah" }
+223 = { "Huyiskar" "Huyiskar" }
+224 = { "Iishbilyah" "Iishbilyah" }
+225 = { "Kartafa" "Kartafa" }
+226 = { "Jab al-Tariq" "Jab al-Tariq" }
+227 = { "Lishbuna" "Lishbuna" }
+228 = "al-Adna"
+229 = { "Baja" "Baja" }
+230 = { "Buhayrat" "Shilb" }
+231 = "Burtuqal"
+332 = "Mar'ash"
+333 = "Mayurqa"
+336 = "Tilvalenciaimsan"
+338 = "Al-Djazair"
+340 = "Qusantinah"
+352 = "Qafsah"
+356 = "Bangazi"
+357 = "Darnah"
+358 = "Iskandariyya"
+361 = "Qahirah"
+362 = "Kafr"
+363 = "Dumyat"
+364 = "Ghazzah"
+365 = "Sina"
+377 = "Halab" 
+378 = "Tarabulus al-Sham"
+379 = "al-Quds"
+381 = "Ajloun"
+382 = "Dimashq"
+384 = "Madinah"
+385 = "Makkah"
+387 = "Mukha"
+388 = "Adan"
+390 = "San'a"	
+391 = "Najran"	
+392 = "Al'Arid"
+393 = "Jabal Shammar"
+394 = "Qatif"	
+395 = "Qatar"
+396 = "Awal"
+398 = "Qawasim"
+399 = "Suhar"	
+400 = "Masqat"
+404 = "Liwa"
+405 = "Tadmor"
+407 = "Ar-Raqqah"
+408 = "Basrah"
+410 = "Bagdad"
+411 = "Mawsil"
+418 = "Diyar al-Bakr"
+965 = "Garnatah al-Jadida"
+1099 = "Suqutra"
+1102 = "Dina Arobi"
+1103 = "Dina Morgabin"
+1747 = { "Kasiris" "El-Belat" }
+1746 = "Qila"
+1748 = { "Jian" "Jian" }
+1749 = { "Qadis" "Qadis" }
+1750 = { "al-Yakanti" "al-Yakanti" }
+1751 = "Sebtah"
+1849 = "Hamah"	
+1851 = { "Qulumriya" "Qulumriya" }
+1855 = "Sayda"
+2313 = "Antakiya"
+2315 = "as-Suways"
+2320 = "Ras Gareb"
+2321 = "Qusayr"
+2326 = "Bardiya"
+2327 = { "Magna" "Magna" }
+2329 = "Yanbu' al-Bahr"
+2339 = "Yabrin"
+2473 = "Susa"
+2751 = { "Hawd" "Hawd" }
+2753 = "Arbouna"
+2754 = { "al-Mansha" "al-Mansha" }
+2755 = { "Suria" "Madinat Salim" }
+2982 = "Saraqusa"
+2987 = { "Uwrjil" "Uwrjil" }
+2988 = { "Taraghwna" "Tarrakunah" }
+2990 = { "Tirwil" "Tirwal" }
+3108 = { "Saytubal" "Saytubal" }
+3565 = { "Santiaghu dw Kasim" "Santiaghu dw Kasim" }
+4020 = "Qamari"
+4150 = { "Iifura" "Iifura" }
+4546 = { "Malaqah" "Malaqah" }
+4547 = { "al-Basit" "al-Basit" }
+4548 = { "Hwylfa" "Hwylfa" }
+4549 = { "Jatifa" "Jatifa" }
+4550 = { "Kastilun" "Kastilun" }
+4787 = { "Ribatiju" "Ribatiju" }
+4788 = { "Bilasinsiyah" "Bilasinsiyah" }
+# [VU] removed: province 7903 (not on Ante Bellum map)
+# [VU] removed: province 8036 (not on Ante Bellum map)
+# [VU] removed: province 8047 (not on Ante Bellum map)
+# [VU] removed: province 8050 (not on Ante Bellum map)
+# [VU] removed: province 8051 (not on Ante Bellum map)
+# [VU] removed: province 8052 (not on Ante Bellum map)
+# [VU] removed: province 8053 (not on Ante Bellum map)
+# [VU] removed: province 8054 (not on Ante Bellum map)
+# [VU] removed: province 8055 (not on Ante Bellum map)
+# [VU] removed: province 8056 (not on Ante Bellum map)
+# [VU] removed: province 8057 (not on Ante Bellum map)
+# [VU] removed: province 8058 (not on Ante Bellum map)
+# [VU] removed: province 8060 (not on Ante Bellum map)
+# [VU] removed: province 8061 (not on Ante Bellum map)
+# [VU] removed: province 8062 (not on Ante Bellum map)
+# [VU] removed: province 8063 (not on Ante Bellum map)
+# [VU] removed: province 8064 (not on Ante Bellum map)
+# [VU] removed: province 8065 (not on Ante Bellum map)
+# [VU] removed: province 8066 (not on Ante Bellum map)
+# [VU] removed: province 8068 (not on Ante Bellum map)
+# [VU] removed: province 8069 (not on Ante Bellum map)
+# [VU] removed: province 8070 (not on Ante Bellum map)
+# [VU] removed: province 8071 (not on Ante Bellum map)
+# [VU] removed: province 8072 (not on Ante Bellum map)
+# [VU] removed: province 8073 (not on Ante Bellum map)
+# [VU] removed: province 8074 (not on Ante Bellum map)
+# [VU] removed: province 8075 (not on Ante Bellum map)
+# [VU] removed: province 8078 (not on Ante Bellum map)
+# [VU] removed: province 8079 (not on Ante Bellum map)
+# [VU] removed: province 8080 (not on Ante Bellum map)
+# [VU] removed: province 8081 (not on Ante Bellum map)
+# [VU] removed: province 8083 (not on Ante Bellum map)
+# [VU] removed: province 8084 (not on Ante Bellum map)
+# [VU] removed: province 8085 (not on Ante Bellum map)
+# [VU] removed: province 8086 (not on Ante Bellum map)
+# [VU] removed: province 8087 (not on Ante Bellum map)
+# [VU] removed: province 8088 (not on Ante Bellum map)
+# [VU] removed: province 8089 (not on Ante Bellum map)
+# [VU] removed: province 8096 (not on Ante Bellum map)
+# [VU] removed: province 8097 (not on Ante Bellum map)
+# [VU] removed: province 8098 (not on Ante Bellum map)
+# [VU] removed: province 8100 (not on Ante Bellum map)
+# [VU] removed: province 8101 (not on Ante Bellum map)
+# [VU] removed: province 8102 (not on Ante Bellum map)
+# [VU] removed: province 8103 (not on Ante Bellum map)
+# [VU] removed: province 8104 (not on Ante Bellum map)
+# [VU] removed: province 8105 (not on Ante Bellum map)
+# [VU] removed: province 8106 (not on Ante Bellum map)
+# [VU] removed: province 8107 (not on Ante Bellum map)
+# [VU] removed: province 8108 (not on Ante Bellum map)
+# [VU] removed: province 8109 (not on Ante Bellum map)
+# [VU] removed: province 8110 (not on Ante Bellum map)
+# [VU] removed: province 8111 (not on Ante Bellum map)
+# [VU] removed: province 8114 (not on Ante Bellum map)
+# [VU] removed: province 8115 (not on Ante Bellum map)
+# [VU] removed: province 8116 (not on Ante Bellum map)
+# [VU] removed: province 8117 (not on Ante Bellum map)
+# [VU] removed: province 8121 (not on Ante Bellum map)
+# [VU] removed: province 8505 (not on Ante Bellum map)

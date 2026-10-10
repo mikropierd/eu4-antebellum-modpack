@@ -1,0 +1,138 @@
+#ROU - Rouen
+
+graphical_culture = westerngfx
+
+color = { 133  6  200 }
+revolutionary_colors = { 5 8 5 }
+
+historical_idea_groups = {
+	infrastructure_ideas
+	defensive_ideas
+	religious_ideas
+	spy_ideas
+	state_affairs_ideas
+	quantity_ideas
+	humanist_ideas
+	gunpowder_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {	
+	"Henri #4" = 20
+	"Charles #0" = 20
+	"Richard #4" = 5
+	"douard #1" = 5
+	"Godefroid #1" = 5
+	"Jean #1" = 5
+	"Robert #3" = 1
+	"Guillaume #2" = 1
+	"tienne #1" = 1
+	"Adrien #0" = 0
+	"Alexandre #0" = 0
+	"Amde #0" = 0
+	"Andr #0" = 0
+	"Artus #0" = 0
+	"Barthlemy #0" = 0
+	"Blaise #0" = 0
+	"Claude #0" = 0
+	"Constant #0" = 0
+	"Daniel #0" = 0
+	"Didier #0" = 0
+	"mery #0" = 0
+	"Eudes #0" = 0	
+	"Franois #0" = 0
+	"Gilles #0" = 0
+	"Hercule #0" = 0
+	"Isembart #0" = 0
+	"Jean-Baptiste #0" = 0
+	"Jrme #0" = 0
+	"Julien #0" = 0
+	"Lon #0" = 0
+	"Louis #0" = 0
+	"Marin #0" = 0
+	"Matthieu #0" = 0
+	"Maurice #0" = 0
+	"Pierre #0" = 0
+	"Quentin #0" = 0
+	"Raoul #0" = 0
+	"Romain #0" = 0
+	"Vincent #0" = 0
+	"Zacharie #0" = 0
+	
+	"Rosalie #0" = -1
+	"Sibylle #0" = -1
+	"Modeste #0" = -1
+}
+
+leader_names = {
+	"d'Amfreville" "d'Abancourt" "d'Aboville"
+	"de Bailleul" "de Berquetot" "de Bthencourt" "de la Boucque" "de Bracquemont" "de Brionne"
+	"de Croismarie" "de Crottay" "du Chastel" 
+	"de Dampierre" "Duquesne"
+	"d'mondeville" "d'Estrimont" "Esquemelin"
+	"de Frville" "de Fry"
+	"de la Galissonire" "Gosselin" "de Graville" "Guillaumery"
+	"d'Harcourt" "d'Herbouville" "de Houdetot" "de La Houssaye"
+	"d'Imbleval"
+	"de Joigny" "de Jourville"
+	"de La Motte" "Le Moyne" "de Lenemont" "Lesperon" "de Lessard" "Le Tellier"
+	"de Marigny" "de Mauquenchy" "de Mornay" "du Moucel"
+	"de Noscey"
+	"d'Alenon" "d'Ozenne"
+	"de Parbay" "Parmentier" "de Presteval"
+	"de Quenonville" "de Quesdeville" "du Quesnoy"
+	"de Riancourt" "Roncerolles "
+	"de Saint-Passy" "de Saint-Bosmer" "de Sbouville"
+	"de Tallebot" "de Tassigny" "de Thiboutot"
+	"de Valiquerville" "de Vauquelin"
+	"d'Ymonville"
+}
+
+ship_names = {
+	"l'Actif" "l'Adroit" "l'Aigrette" "l'Alouette" "l'Amarante"
+	"l'Anglique" "l'Ardent" "l'Arthuse" "l'Arrogant" "l'Alcyon"
+	"l'Atalante" "l'Aurore" "la Balance" "la Blanche" "la Blonde"
+	"le Brave" "la Brune" "la Bricolle" "la Brlante" "la Carpe"
+	"la Charente" "le Chariot-Royal" "la Chasse" "la Corneille" "la Coulisse"
+	"la Cruelle" "la Curieuse" "le Dana" "la Danuble" "la Dauphine"
+	"la Digue" "la Diligente" "la Dryade" "l'cluse" "l'cueil"
+	"l'Embuscade" "l'meraude" "l'Enjoue" "l'Entendue" "l'ole"
+	"l'toile" "la Favorite" "la Fe" "la Flicit" "la Fidle"
+	"la Fine" "la Flatteuse" "la Flore" "le Franois" "le Gaillard"
+	"la Galate" "la Garonne" "la Gazelle" "la Gentille" "la Gironde"
+	"la Gloire" "la Grce" "la Gracieuse" "le Grand-Ponton" "la Grive"
+	"l'Harmonie" "l'Hb" "l'Heureux" "l'Inconstante" "l'Infidle"
+	"le Jason" "la Jolie" "la Joyeuse" "la Junon" "le Juste"
+	"le Lger" "Le Havre" "la Levrette" "le Lion" "la Marie-Franoise"
+	"le Marin" "la Martiale" "la Menaante" "la Nayade" "la Normande"
+	"l'Orage" "l'Oriflamme" "le Palmier" "la Palombe" "la Plerine"
+	"le Petit-Ponton" "le Petit Saint-Franois" "la Pintade" "le Prcieux" "le Prompte"
+	"le Rsolu" "la Rocheloise" "le Rubis" "le Saint-Louis" "le Saint-Michel"
+	"le Sans-Pareil" "la Somme" "la Subtile" "la Trompeuse" "la Turquoise"
+}
+
+army_names = {
+	"Arme du Cotentin" "Arme du Bessin" "Arme du Pays d'Auge"
+	"Arme d'Alenon" "Arme de Caen" "Arme d'Argentan"
+	"Arme de Falaise" "Arme du Virois" "Arme de Neubourg"
+	"Arme de l'Avranchin" "Arme du Perche" "Arme du Mortainais"
+	"Arme du Pays de Caux" 
+	"Arme de $PROVINCE$" 
+}

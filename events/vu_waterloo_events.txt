@@ -1,0 +1,151 @@
+# The Hundred Days — Collapse Events
+# Fires when the french_first_empire_restoration_reform (Hundred Days) ends.
+#
+# Two triggers:
+#   vu_waterloo.1 — battle lost in Northern France / Southern Low Countries
+#                   (hooked via on_battle_won_province in 00_on_actions.txt)
+#   vu_waterloo.2 — 4-month MTTH fallback: the campaign exhausts itself even
+#                   if the player never fights in the Waterloo corridor
+#
+# Design: Darth Modus & Prussia
+
+namespace = vu_waterloo
+
+########################################
+# EVENT 1 — The Eagles Have Fallen     #
+# Fires when France loses a battle in  #
+# Northern France or the Low Countries #
+# while holding the Hundred Days reform#
+########################################
+country_event = {
+	id = vu_waterloo.1
+	title = vu_waterloo.1.t
+	desc = vu_waterloo.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_reform = french_first_empire_restoration_reform
+		NOT = { has_country_flag = vu_hundred_days_collapsed }
+	}
+
+	# Napoleon abdicates — the Bourbons return
+	option = {
+		name = vu_waterloo.1.a
+		set_country_flag = vu_hundred_days_collapsed
+		clr_country_flag = vu_hundred_days_started
+		add_prestige = -30
+		add_stability = -2
+		add_war_exhaustion = 5
+		lose_reforms = 1
+		add_government_reform = french_monarchic_restoration_reform
+		if = {
+			limit = { NOT = { tag = BFR } }
+			change_tag = BFR
+			swap_non_generic_missions = yes
+		}
+		hidden_effect = {
+			kill_ruler = yes
+			define_ruler = {
+				name = "Louis"
+				dynasty = "Bourbon"
+				adm = 3
+				dip = 4
+				mil = 2
+				age = 60
+				claim = 100
+			}
+			define_consort = {
+				name = "Marie Antoinette"
+				dynasty = "Habsburg"
+				adm = 2
+				dip = 4
+				mil = 1
+				age = 40
+			}
+			define_heir = {
+				name = "Charles"
+				dynasty = "Bourbon"
+				adm = 2
+				dip = 2
+				mil = 2
+				age = 58
+				claim = 95
+			}
+		}
+	}
+}
+
+########################################
+# EVENT 2 — The Hundred Days Expire    #
+# 4-month MTTH fallback. Fires if the  #
+# Hundred Days reform is still active  #
+# and France is at war, regardless of  #
+# where any battles were fought.       #
+########################################
+country_event = {
+	id = vu_waterloo.2
+	title = vu_waterloo.2.t
+	desc = vu_waterloo.2.d
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+
+	trigger = {
+		has_reform = french_first_empire_restoration_reform
+		has_country_flag = vu_hundred_days_started
+		NOT = { has_country_flag = vu_hundred_days_collapsed }
+		is_at_war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	# The campaign collapses without a decisive victory
+	option = {
+		name = vu_waterloo.2.a
+		set_country_flag = vu_hundred_days_collapsed
+		clr_country_flag = vu_hundred_days_started
+		add_prestige = -20
+		add_stability = -1
+		add_war_exhaustion = 3
+		lose_reforms = 1
+		add_government_reform = french_monarchic_restoration_reform
+		if = {
+			limit = { NOT = { tag = BFR } }
+			change_tag = BFR
+			swap_non_generic_missions = yes
+		}
+		hidden_effect = {
+			kill_ruler = yes
+			define_ruler = {
+				name = "Louis"
+				dynasty = "Bourbon"
+				adm = 3
+				dip = 4
+				mil = 2
+				age = 60
+				claim = 100
+			}
+			define_consort = {
+				name = "Marie Antoinette"
+				dynasty = "Habsburg"
+				adm = 2
+				dip = 4
+				mil = 1
+				age = 40
+			}
+			define_heir = {
+				name = "Charles"
+				dynasty = "Bourbon"
+				adm = 2
+				dip = 2
+				mil = 2
+				age = 58
+				claim = 95
+			}
+		}
+	}
+}

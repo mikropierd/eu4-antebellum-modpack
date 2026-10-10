@@ -1,25 +1,66 @@
 edict_religion_enforced = {
 	potential = {
-		current_age = age_of_reformation
+		is_primitive = no
+		is_religion_enabled = protestant
 	}
-	
 	allow = {
-		custom_trigger_tooltip = {
-			tooltip =edict_religion_enforced_tooltip
-			has_country_flag = religion_enforced_edict
-		}
-		current_age = age_of_reformation
+		is_religion_enabled = protestant
 	}
-	
 	modifier = {
-		local_religious_conversion_resistance = 1.0
+		local_religious_conversion_resistance = 1
+		local_religious_unity_contribution = 0.2
 	}
-	
-	color = {  116 198 240  }
-	
-	
+	color = {
+		120
+		200
+		240
+	}
 	ai_will_do = {
-		factor = 0
+		factor = 20
+		#modifier = {
+		#	factor = 5
+		#	owner = {
+		#		has_opinion = {
+		#			who = PAP
+		#			value = 50
+		#		}
+		#	}
+		#}
+		#modifier = {
+		#	factor = 5
+		#	owner = {
+		#		has_opinion = {
+		#			who = PAP
+		#			value = 100
+		#		}
+		#	}
+		#}
+		#modifier = {
+		#	factor = 10
+		#	owner = {
+		#		OR = {
+		#			alliance_with = PAP
+		#			papal_influence = 25
+		#		}
+		#	}
+		#}
+		#modifier = {
+		#	factor = 10
+		#	owner = {
+		#		is_papal_controller = yes
+		#	}
+		#}
+		#modifier = {
+		#	factor = 10
+		#	owner = {
+		#		religion = catholic
+		#		is_emperor = yes
+		#	}
+		#}
+		#modifier = {
+		#	factor = 10
+		#	has_state_edict = edict_religion_enforced
+		#}
 	}
 	on_state_edict_enacted = {
 		edict_commander_add_cooldown_to_state = yes

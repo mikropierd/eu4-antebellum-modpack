@@ -1,0 +1,216 @@
+# Byzantine Ottoman Tribute Events
+# Byzantium pays annual tribute to the Ottomans rather than being their subject.
+# Modelled on the Muscovy/Golden Horde tribute mechanic (flavor_mos.3-6).
+# Historical basis: Byzantium paid 300,000 silver coins/year until ~1433, then stopped.
+# Design: Ian (ian75geingunne) & Darth Modus
+
+namespace = byz_tribute
+
+# The Ottoman Tribute - Introduction
+# Fires at game start for Byzantium, establishing the tribute obligation.
+country_event = {
+	id = byz_tribute.1
+	title = byz_tribute.1.t
+	desc = byz_tribute.1.desc
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BYZ
+		exists = TUR
+		NOT = { war_with = TUR }
+		NOT = { is_year = 1453 }
+		NOT = { has_country_modifier = the_ottoman_tribute }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = byz_tribute.1.a
+		add_country_modifier = {
+			name = the_ottoman_tribute
+			duration = -1
+		}
+		custom_tooltip = byz_tribute.1.a.tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# The Yearly Ottoman Tribute
+# Fires annually for Byzantium while the tribute modifier is active.
+country_event = {
+	id = byz_tribute.2
+	title = byz_tribute.2.t
+	desc = byz_tribute.2.desc
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BYZ
+		has_country_modifier = the_ottoman_tribute
+		exists = TUR
+		NOT = { war_with = TUR }
+	}
+
+	# Pay the Annual Tribute
+	option = {
+		name = byz_tribute.2.a
+		custom_tooltip = byz_tribute.2.a.tt
+		hidden_effect = {
+			add_treasury = -75
+			TUR = {
+				country_event = {
+					id = byz_tribute.3
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.15 }
+			}
+		}
+	}
+
+	# Refuse to Pay the Annual Tribute
+	option = {
+		name = byz_tribute.2.b
+		custom_tooltip = byz_tribute.2.b.tt
+		remove_country_modifier = the_ottoman_tribute
+		hidden_effect = {
+			TUR = {
+				country_event = {
+					id = byz_tribute.4
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				years_of_income = 0.15
+				TUR = {
+					is_at_war = no
+					manpower_percentage = 0.5
+					mil_power_cost = 50
+				}
+			}
+		}
+	}
+}
+
+# Constantinople Pays its Tribute
+# Fires for the Ottomans when Byzantium pays.
+country_event = {
+	id = byz_tribute.3
+	title = byz_tribute.3.t
+	desc = byz_tribute.3.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = byz_tribute.3.a
+		add_treasury = 75
+		add_prestige = 2
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Constantinople Refuses to Pay
+# Fires for the Ottomans when Byzantium refuses.
+country_event = {
+	id = byz_tribute.4
+	title = byz_tribute.4.t
+	desc = byz_tribute.4.desc
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+
+	# Retaliate — march on Constantinople
+	option = {
+		name = byz_tribute.4.a
+		add_prestige = 5
+		custom_tooltip = byz_tribute.4.a.tt
+		hidden_effect = {
+			add_casus_belli = {
+				target = FROM
+				type = cb_annex
+				months = 120
+			}
+			FROM = {
+				country_event = {
+					id = byz_tribute.5
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					is_at_war = yes
+					NOT = { manpower_percentage = 0.5 }
+					NOT = { mil_power_cost = 50 }
+				}
+			}
+		}
+	}
+
+	# Let it pass for now
+	option = {
+		name = byz_tribute.4.b
+		add_prestige = -10
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = no
+				manpower_percentage = 0.5
+				mil_power_cost = 50
+			}
+		}
+	}
+}
+
+# The Ottomans Grow Impatient
+# Fires for Byzantium when the Ottomans decide to retaliate.
+country_event = {
+	id = byz_tribute.5
+	title = byz_tribute.5.t
+	desc = byz_tribute.5.desc
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = byz_tribute.5.a
+		add_prestige = 5
+		add_legitimacy = 5
+		define_ruler_to_general = {
+			fire = 2
+			shock = 3
+			manuever = 2
+			siege = 1
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

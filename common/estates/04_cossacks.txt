@@ -16,7 +16,7 @@ estate_cossacks = {
 			factor = 2
 			OR = {
 				culture_group = east_slavic
-				#culture_group = slavic
+				culture_group = slavic
 			}
 		}
 		modifier = {
@@ -46,7 +46,6 @@ estate_cossacks = {
 		OR = {
 			has_government_attribute = enables_estate_cossacks
 			has_enabled_estate = { estate = estate_cossacks }
-			has_country_flag = aba_pol_westernization_cossacks
 			AND = {
 				OR = {
 					has_unlocked_estate = { estate = estate_cossacks }
@@ -69,8 +68,8 @@ estate_cossacks = {
 				is_nomad = no
 				is_colonial_nation = no
 				NOT = { has_reform = celestial_empire }
-				NOT = { has_reform = MIN_celestial_empire }
 				NOT = { has_reform = revolutionary_empire_reform }
+				NOT = { has_reform = MIN_celestial_empire }
 			}
 		}
 		#NOT = { has_government_attribute = is_merchant_republic }
@@ -83,7 +82,6 @@ estate_cossacks = {
 		cavalry_cost = -0.2
 		cavalry_power = 0.2
 		cav_to_inf_ratio = 0.10
-		monthly_commonwealth_popular_sovereignity = 0.03
 	}
 	country_modifier_neutral = {
 		cavalry_power = 0.2
@@ -92,38 +90,10 @@ estate_cossacks = {
 		cavalry_cost = 0.2
 		cavalry_power = -0.1
 		global_unrest = 2
-		monthly_commonwealth_popular_sovereignity = -0.03
 	}
 	land_ownership_modifier = {
 		cossacks_loyalty_modifier = 0.2
 	}
-
-	# AB {{{
-	custom_name = {
-		desc = estate_kazokai
-		trigger = {
-			OR = {
-				primary_culture = lithuanian
-				primary_culture = Litvin
-			}
-		}
-	}
-	custom_name = {
-		desc = estate_kozakiv
-		trigger = {
-			culture_group = east_slavic
-			NOT = {
-				primary_culture = Litvin
-			}
-		}
-	}
-	custom_name = {
-		desc = estate_cazacii
-		trigger = {
-			culture_group = romanian_culture_group
-		}
-	}
-	# }}}
 
 	# Influence modifiers
 	base_influence = 0
@@ -171,10 +141,8 @@ estate_cossacks = {
 		estate_cossacks_military_service
 		estate_cossacks_expand_cossacks_raiders
 		estate_cossacks_monopoly_on_steppe_herds
-		# ABA [[[
 		ABA_estate_cossacks_pln_cossack_szlachta
 		ABA_estate_cossacks_htm_starshyna_council
-		# ]]]
 	}
 
 	agendas = {
@@ -193,4 +161,10 @@ estate_cossacks = {
 	}
 
 	color = { 200 150 150 }
+	custom_name = {
+		desc = estate_cazacii
+		trigger = {
+			culture_group = romanian_culture_group
+		}
+	}
 }

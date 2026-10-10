@@ -1,0 +1,151 @@
+# French Coup and Counterrevolution Events
+# Handles military coups and counterrevolutions that restore monarchy
+# to French republican governments, enabling re-entry into the monarchical
+# reform chain via the french_coup_restored_monarchy country flag.
+# Design: Darth Modus & Prussia
+
+namespace = vu_french_coup
+
+########################################
+# EVENT 1 — The Military Coup         #
+# Fires for French republican tags     #
+# when stability is low or republican  #
+# tradition has collapsed.             #
+########################################
+country_event = {
+	id = vu_french_coup.1
+	title = vu_french_coup.1.t
+	desc = vu_french_coup.1.d
+	picture = vu_napoleon_coup_eventPicture
+
+	fire_only_once = no
+
+	trigger = {
+		OR = {
+			tag = FSR
+			tag = TFR
+			tag = FRA
+			tag = BFR
+			tag = NPF
+			tag = OFR
+			tag = FSE
+			tag = RVF
+		}
+		government = republic
+		is_at_war = no
+		NOT = { has_country_flag = french_coup_restored_monarchy }
+		OR = {
+			NOT = { stability = 1 }
+			NOT = { republican_tradition = 30 }
+			NOT = { legitimacy_equivalent = 40 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.6
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { republican_tradition = 15 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { legitimacy_equivalent = 25 }
+		}
+		modifier = {
+			factor = 2.0
+			stability = 1
+		}
+		modifier = {
+			factor = 3.0
+			NOT = { mil_power = 50 }
+		}
+	}
+
+	# The coup succeeds — monarchy is restored by force
+	option = {
+		name = vu_french_coup.1.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 1.5
+				NOT = { stability = 0 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { republican_tradition = 20 }
+			}
+		}
+		change_government = monarchy
+		lose_reforms = 2
+		set_country_flag = french_coup_restored_monarchy
+		add_stability = -1
+		add_prestige = -20
+		add_legitimacy = -25
+		hidden_effect = {
+			clr_country_flag = populists_in_government
+		}
+	}
+
+	# The republic holds — but the attempt leaves scars
+	option = {
+		name = vu_french_coup.1.b
+		ai_chance = {
+			factor = 40
+		}
+		add_stability = -2
+		add_prestige = -15
+		add_republican_tradition = -10
+		spawn_rebels = {
+			type = pretender_rebels
+			size = 2
+		}
+	}
+}
+
+########################################
+# EVENT 2 — Legitimacy Restored       #
+# Hidden cleanup event. Fires once    #
+# the coup monarchy has stabilised    #
+# and a proper reform is in place,   #
+# clearing the coup flag.             #
+########################################
+country_event = {
+	id = vu_french_coup.2
+	title = vu_french_coup.2.t
+	desc = vu_french_coup.2.d
+	picture = vu_napoleon_coup_eventPicture
+	hidden = yes
+	fire_only_once = no
+
+	trigger = {
+		has_country_flag = french_coup_restored_monarchy
+		government = monarchy
+		stability = 1
+		legitimacy = 60
+		OR = {
+			has_reform = french_kingdom_reform
+			has_reform = first_french_empire_reform
+			has_reform = french_monarchic_restoration_reform
+			has_reform = french_orleanist_restoration_reform
+			has_reform = french_first_empire_restoration_reform
+			has_reform = second_french_empire_reform
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = vu_french_coup.2.a
+		clr_country_flag = french_coup_restored_monarchy
+	}
+}

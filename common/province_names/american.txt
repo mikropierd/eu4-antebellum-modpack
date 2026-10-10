@@ -1,0 +1,1227 @@
+#XXX = { "Province Name" "City Name" } - New addition to EUIV
+
+#Africa
+356 = "Benghazi"
+357 = "Derna"
+358 = {"Alexandria" "Alexandria" }
+360 = "Qena"
+361 = { "Cairo" "Cairo" }
+362 = "Kafr"
+363 = { "Damietta" "Damietta" }
+364 = "Gaza"
+377 = "Aleppo" 
+379 = { "Jerusalem" "Jerusalem" }
+382 = { "Damascus" "Damascus" }
+388 = "Aden"
+410 = "Baghdad"
+411 = { "Al-Mawsil" "Mosul" }
+1138 = { "Kumasi" "Kumasi" }
+1141 = { "Whydah" "Ouidah" }
+1184 = { "Salisbury" "Salisbury" }
+1190 = { "Lusaka" "Lusaka" }
+1213 = "Addis Ababa"
+1792 = { "Merina" "Antananarivo" }
+1854 = "Nablus"
+1925 = { "Tana" "Nairobi" }
+2242 = { "Karou" "Monrovia" }
+2313 = "Antioch"
+2315 = { "Suez" "Suez" }
+2326 = "Bardia"
+2327 = { "Magna" "Magna" }
+2856 = { "Bloemfontein" "Bloemfontein" }
+3047 = { "Ndar" "Saint-Louis" }
+4781 = { "Johannesburg" "Johannesburg" }
+4782 = { "Tswana" "Vryburg" } 
+# [VU] removed: province 5261 (not on Ante Bellum map)
+# [VU] removed: province 5356 (not on Ante Bellum map)
+# [VU] removed: province 5368 (not on Ante Bellum map)
+# [VU] removed: province 5371 (not on Ante Bellum map)
+# [VU] removed: province 5419 (not on Ante Bellum map)
+
+#Asia
+3991 = "Alexandretta"
+
+#VU - Papua New Guinea by San Felipe
+3764 = { "Mount Hagen" "Mount Hagen" }
+
+#VU - Australia by NoobMiner72
+1084 = { "Perth" "Perth" }
+1085 = { "Buckingham" "Hobart" }
+1086 = { "Adelaide" "Port Adelaide" }
+1087 = { "Melbourne" "Melbourne" }
+1088 = { "Bendigo" "Bendigo" }
+1089 = { "Bathurst" "Orange" }
+1090 = { "Sydney" "Sydney" }
+1091 = { "Orana" "Dubbo" }
+1092 = { "Port Macquarie" "Port Macquarie" }
+1093 = { "Bulloo" "Thargomindah" }
+1094 = { "Fraser Coast" "Hervey Bay" }
+2726 = { "Gascoyne" "Geraldton" }
+2727 = { "Esperance" "Esperance" }
+2728 = { "Bathurst Island" "Bathurst Island" }
+2729 = { "Arnhem" "East Arnhem" }
+2730 = { "Weipa" "Weipa" }
+2731 = { "Hope Vale" "Cairns" }
+2732 = { "Townsville" "Townsville" }
+2733 = { "Mackay" "Mackay" }
+2734 = { "Port Albert" "Port Albert" }
+2735 = { "Mount Gambier" "Mount Gambier" }
+2736 = { "Hopetown" "Hopetown" }
+3780 = { "East Devon" "Devonport" }
+3781 = { "Meredith Range" "Queenstown" }
+3783 = { "Glamorgan" "Swansea" }
+3784 = { "Montgomery" "Macquarie Harbour" }
+3785 = { "West Devon" "Emu Bay" }
+4846 = { "Palmerston" "Darwin" }
+4847 = { "Barkly" "Tennant Creek" }
+4848 = { "Bourke" "Bourke" }
+4849 = { "Carpentaria" "Normanton" }
+4850 = { "Gladstone" "Gladstone" }
+4851 = { "Sunshine Coast" "Noosa" }
+4852 = { "Burnett" "Kingaroy" }
+4853 = { "Paroo" "Cunnamulla" }
+4854 = { "Brisbane" "Brisbane" }
+4855 = { "Moree Plains" "Moree" }
+4856 = { "Tamworth" "Tamworth" }
+4857 = { "Newcastle" "Newcastle" }
+4858 = { "Wollongong" "Wollongong" }
+4859 = { "Canberra" "Canberra" }
+4860 = { "Southern Tablelands" "Goulburn" }
+4861 = { "Bogong" "Wodonga" }
+4862 = { "Taunton" "Taunton" }
+4863 = { "Marmion" "Cranbrook" }
+4864 = { "Murray" "Geraldton" }
+4865 = { "Ashburton" "Karratha" }
+4866 = { "Pilbara" "Port Hedland" }
+4867 = { "Kimberley" "Easton" }
+4868 = { "Dorset" "Launceston" }
+4869 = { "Wellington" "Smithton" }
+
+#VU - New Zealand by NoobMiner72
+1106 = { "Northland" "Whangarei" }
+1107 = { "Wellington" "Wellington" }
+1108 = { "Bay of Plenty" "Tauranga" }
+1109 = { "Otago" "Dunedin" }
+1246 = { "Invercargill" "Invercargill" }
+2738 = { "Nelson" "Nelson" }
+2737 = { "Hawke's Bay" "Napier" }
+2739 = { "Waikawau" "Waikawau" }
+4939 = { "Te Kaha" "Te Kaha" }
+# [VU] removed: province 5597 (not on Ante Bellum map)
+# [VU] removed: province 5598 (not on Ante Bellum map)
+# [VU] removed: province 5599 (not on Ante Bellum map)
+# [VU] removed: province 5600 (not on Ante Bellum map)
+# [VU] removed: province 5601 (not on Ante Bellum map)
+# [VU] removed: province 5602 (not on Ante Bellum map)
+# [VU] removed: province 5603 (not on Ante Bellum map)
+# [VU] removed: province 5604 (not on Ante Bellum map)
+# [VU] removed: province 5605 (not on Ante Bellum map)
+# [VU] removed: province 5606 (not on Ante Bellum map)
+# [VU] removed: province 5607 (not on Ante Bellum map)
+# [VU] removed: province 5608 (not on Ante Bellum map)
+# [VU] removed: province 5609 (not on Ante Bellum map)
+
+#Caribbean
+481 = { "Bermuda" "Hamilton" }
+482 = { "New Providence" "Charles Town" }                                                  
+483 = { "Turks & Caicos Islands" "Cockburn Town" }
+484 = { "Havana" "Havana" }
+485 = { "One Hundred Fires" "One Hundred Fires" }
+486 = { "Saint James" "St. James" }
+487 = { "Port Royal" "Port Royal" }
+488 = { "Prince's Bay" "Port of the Prince" }
+489 = { "North West" "Port of Peace" }
+490 = { "The Seibo" "Higuey" }
+491 = { "Curacao" "Charles Town" }
+492 = { "Rich Port" "St. John" }
+493 = { "Virgin Islands" "Road Town" }
+494 = { "St. Kitts & Nevis" "Lowland" }
+495 = { "Antigua & Barbuda" "St. John's" }
+496 = { "Guadeloupe" "Lowland" }
+497 = { "Dominica" "Reed" }
+498 = { "Martinique" "Fort Royal" }
+499 = { "St. Lucia" "Castries" }
+500 = { "St. Vincent and the Grenadines" "Kingstown" }
+501 = { "Barbados" "Bridgetown" }
+502 = { "Trinity" "Port of Spain" }
+926 = { "St. Lucie" "St. Lucie" }
+927 = { "Jacksonville" "Jacksonville" }
+1881 = { "St. Martin & Anguilla" "Marigot" }
+2536 = { "Miami" "Miami" }
+2654 = { "Guantanamo" "Baracoa" }
+2655 = { "Grandma" "Thundersquall" }
+2656 = { "Camaguey" "Camaguey" }
+2658 = { "Azua" "Azua" }
+2659 = { "Silver Port" "Silver Port" }
+4618 = { "Artibonite" "Gonayiv" }
+4619 = { "North" "Haitian Cape" }
+4620 = { "Samana" "St. Barbara" }
+4621 = { "St. Dominic" "Santo Domingo" }
+4622 = { "Isle of Youth" "New Gerona" }
+4623 = { "Clear House" "St. Clare" }
+4624 = { "Pinewood" "Pinewood of the River" }
+# [VU] removed: province 5563 (not on Ante Bellum map)
+# [VU] removed: province 5565 (not on Ante Bellum map)
+# [VU] removed: province 5567 (not on Ante Bellum map)
+# [VU] removed: province 5572 (not on Ante Bellum map)
+# [VU] removed: province 5574 (not on Ante Bellum map)
+# [VU] removed: province 5575 (not on Ante Bellum map)
+# [VU] removed: province 5576 (not on Ante Bellum map)
+# [VU] removed: province 5577 (not on Ante Bellum map)
+# [VU] removed: province 5578 (not on Ante Bellum map)
+# [VU] removed: province 5579 (not on Ante Bellum map)
+# [VU] removed: province 5581 (not on Ante Bellum map)
+# [VU] removed: province 5582 (not on Ante Bellum map)
+# [VU] removed: province 5583 (not on Ante Bellum map)
+# [VU] removed: province 5584 (not on Ante Bellum map)
+# [VU] removed: province 5585 (not on Ante Bellum map)
+# [VU] removed: province 5586 (not on Ante Bellum map)
+# [VU] removed: province 5706 (not on Ante Bellum map)
+# [VU] removed: province 5707 (not on Ante Bellum map)
+# [VU] removed: province 5708 (not on Ante Bellum map)
+# [VU] removed: province 5709 (not on Ante Bellum map)
+# [VU] removed: province 5710 (not on Ante Bellum map)
+# [VU] removed: province 6010 (not on Ante Bellum map)
+# [VU] removed: province 6011 (not on Ante Bellum map)
+# [VU] removed: province 6012 (not on Ante Bellum map)
+# [VU] removed: province 6013 (not on Ante Bellum map)
+# [VU] removed: province 6014 (not on Ante Bellum map)
+# [VU] removed: province 6015 (not on Ante Bellum map)
+# [VU] removed: province 6016 (not on Ante Bellum map)
+# [VU] removed: province 6017 (not on Ante Bellum map)
+
+#Europe
+104 = { "Milan" "Milan" }
+132 = { "Judenburg" "Judenburg" }
+134 = { "Vienna" "Vienna" }
+167 = { "Rollon" "Rollon" }
+177 = { "Mances" "Mances" }
+184 = { "Aurcester" "Aurcester" }
+186 = { "Reimham" "St.Henry’s" }
+1879 = { "Sarthemouth" "Sarthemouth" }
+2746 = { "Widdin" "Widdin" }
+3091 = { "Builder" "Builder" }
+4383 = { "The Hague" "The Hague" }
+4385 = { "Cherborough" "Cherborough" }
+4388 = { "Carnutcester" "Carnutcester" }
+4729 = { "Padua" "Padua" }
+4776 = { "Blesceter" "Blesceter" }
+# [VU] removed: province 7944 (not on Ante Bellum map)
+# [VU] removed: province 7995 (not on Ante Bellum map)
+# [VU] removed: province 8434 (not on Ante Bellum map)
+
+#Ireland
+3014 = { "West Mayo" "Kilmaine" }
+3127 = { "Bournemouth" "Bournemouth" }
+3155 = { "Swansea" "Swansea" }
+3161 = { "Crewe" "Crewe" }
+3162 = { "Southend" "Southend" }
+3189 = { "Londonderry" "Magherafelt" }
+3222 = { "East Mayo" "Claremorris" }
+3228 = { "Mallow" "Mallow" }
+3232 = { "Midleton" "Midleton" }
+3233 = { "Meath" "Navan" }
+# [VU] removed: province 8163 (not on Ante Bellum map)
+3234 = { "Clare" "Corracatlin" }
+3236 = { "Leitrim" "Drumsna" }
+3237 = { "Inishowen" "Buncrana" }
+4119 = { "Sligo" "Sligo" }
+
+#Scotland
+3240 = { "Lanarkshire" "Lanark" }
+3272 = { "Arran" "Whiting Bay" }
+
+#America
+833 = { "Somerset East" "Somerset East" }
+858 = { "Tampico" "Tampico" }
+867 = { "Blythe" "Blythe" }
+868 = { "Santa Barbara" "Santa Barbara" }
+869 = { "Southern Diabo Mts." "Paso Robles" }
+870 = { "Modesto" "Modesto" }
+871 = { "Albion" "Albion" }
+872 = { "Salem" "Salem" }
+873 = { "Astoria" "Astoria" }
+874 = { "Seattle" "Seattle" }
+875 = { "Tuba City" "Tuba City" }
+876 = { "Phoenix" "Phoenix" }
+877 = { "Sierra Vista" "Sierra Vista" }
+878 = { "Farmington" "Farmington" }
+879 = { "Holbrook" "Holbrook" }
+880 = { "Santa Fe" "Santa Fe" }
+881 = { "Alamogordo" "Alamogordo" }
+882 = { "Clovis" "Clovis" }
+883 = { "San Antonio" "San Antonio" }
+884 = { "Corpus Christi" "Corpus Christi" }
+885 = { "Amarillo" "Amarillo" }
+886 = { "Dallas" "Dallas" }
+887 = { "Waco" "Waco" }
+888 = { "Houston" "Houston" }
+889 = { "Guymon" "Guymon" }
+890 = { "Wichita" "Wichita" }
+891 = { "Enid" "Enid" }
+892 = { "Oklahoma City" "Oklahoma City" }
+893 = { "New Orleans" "New Orleans" }
+894 = { "Camden" "Camden" }
+895 = { "Pine Bluff" "Pine Bluff" }
+896 = { "Atoka" "Atoka" }
+897 = { "Little Rock" "Little Rock" }
+898 = { "Kansas City" "Kansas City" }
+899 = { "Ozarks" "Springfield" }
+900 = { "St. Louis" "St. Louis" }
+901 = { "Grand Island" "Grand Island" }
+902 = { "St. Joseph" "St. Joseph" }
+904 = { "Rochester" "Rochester" }
+905 = { "Cedar Falls" "Cedar Falls" }
+906 = { "Fargo" "Fargo" }
+907 = { "Watertown" "Watertown" }
+908 = { "Alexandria" "Alexandria" }
+909 = { "Jamestown" "Jamestown" }
+910 = { "Duluth" "Duluth" }
+911 = { "Escanaba" "Escanaba" }
+912 = { "Marathon" "Wausau" }
+913 = { "Madison" "Madison" }
+914 = { "Milwaukee" "Milwaukee" }
+915 = { "Chicago" "Chicago" }
+916 = { "Springfield" "Springfield" }
+917 = { "Granite City" "Granite City" }
+918 = { "Memphis" "Memphis" }
+919 = { "Tupelo" "Tupelo" }
+920 = { "Meridian" "Meridian" }
+921 = { "Baton Rouge" "Baton Rouge" }
+924 = { "Montgomery" "Montgomery" }
+925 = { "Auburn" "Auburn" }
+928 = { "Leon County" "Tallahassee" }
+929 = { "Savannah" "Savannah" }
+930 = { "Atlanta" "Atlanta" }
+931 = { "Peachtree" "Peachtree" }
+932 = { "Charleston" "Charleston" }
+933 = { "Darlington" "Darlington" }
+934 = { "Knoxville" "Knoxville" }
+935 = { "Johnson City" "Johnson City" }
+936 = { "Caldwell" "Blowing Rock" }
+937 = { "Raleigh" "Raleigh" }
+938 = { "Craven" "New Bern" }
+939 = { "Clarksville" "Clarksville" }
+940 = { "Louisville" "Louisville" }
+941 = { "Somerset" "Somerset" }
+942 = { "Gary" "Gary" }
+943 = { "Indianapolis" "Indianapolis" }
+944 = { "Detroit" "Detroit" }
+945 = { "Traverse City" "Traverse City" }
+946 = { "Toledo" "Toledo" }
+947 = { "Cleveland" "Cleveland" }
+948 = { "Zanesville" "Zanesville" }
+949 = { "Montgomery" "Blacksburg" }
+950 = { "Norfolk" "Norfolk" }
+951 = { "Cabell" "Huntington" }
+952 = { "Richmond" "Richmond" }
+953 = { "District of Columbia" "Washington" }
+954 = { "Erie" "Erie" }
+955 = { "Lancaster" "Lancaster" }
+956 = { "Philadelphia" "Philadelphia" }
+957 = { "Dover" "Dover" }
+958 = { "Rochester" "Rochester" }
+959 = { "Syracuse" "Syracuse" }
+960 = { "Ithaca" "Ithaca" }
+961 = { "Watertown" "Watertown" }
+962 = { "Atlantic City" "Atlantic City" }
+963 = { "Albany" "Albany" }
+964 = { "Schenectady" "Schenectady" }
+965 = { "New York" "New York City" }
+966 = { "East Hampden" "Springfield" }
+967 = { "Washington" "Narragansett" }
+968 = { "Boston" "Boston" }
+969 = { "Bennington" "Bennington" }
+970 = { "Rockingham" "Portsmouth" }
+971 = { "Hancock" "Bangor" }
+972 = { "Nuchatlitz" "Nuchatlitz" }
+973 = { "Vancouver" "Vancouver" }
+974 = { "Margaret Bay" "Margaret Bay" }
+975 = { "Bella Coola" " Bella Coola" }
+976 = { "Wrangell" "Wrangell" }
+977 = { "Yakutat" "Yakutat" }
+978 = { "Anchorage" "Anchorage" }
+979 = { "Andreanof Islands" "Adak Station" }
+980 = { "Bonavista" "Bonavista" }
+981 = { "Rocky Harbour" "Rocky Harbour" }
+982 = { "Cape Breton" "Sydney" }
+983 = { "Prince Edward Isl." "Charlottetown" }
+984 = { "Fundy" "Windsor" }
+985 = { "Moncton" "Moncton" }
+986 = { "Perce Grande-Rivers" "Perce Grande-Rivers" }
+987 = { "Niagara" "St. Catharines" }
+988 = { "Windsor" "Windsor" }
+989 = { "Frontenac" "Kingston" }
+990 = { "Three Rivers" "Three Rivers" }
+991 = { "Petawawa" "Petawawa" }
+992 = { "Mont-Temblant" "Mont-Tremblant" }
+993 = { "Montreal & Laval Isl" "Montreal" }
+994 = { "Quebec" "Quebec City" }
+995 = { "Tadoussac" "Tadoussac" }
+996 = { "Gros-Mecatina" "Old Fort" }
+997 = { "Henley Harbour" "Henley Habour" }
+998 = { "Inukjuak" "Inukjuak" }
+999 = { "Port George" "Port George" }
+1000 = { "Fort Rupert" "Fort Rupert" }
+1001 = { "Sault Ste. Marie" "Sault Ste. Marie" }
+1002 = { "Iroquois Falls" "Iroquois Falls" }
+1003 = { "Fort Albany" "Fort Albany" }
+1004 = { "Moose Factory" "Moose Factory" }
+1005 = { "York Factory" "York Factory" }
+1006 = { "Churchill" "Fort Churchill" }
+1007 = { "Thunder Bay" "Thunder Bay" }
+1008 = { "Winnipeg" "Winnipeg" }
+1009 = { "Pine Falls" "Pine Falls" }
+1010 = { "Gimli" "Gimli" }
+1011 = { "Grand Rapids" "Grand Rapids" }
+1174 = { "Walvis Bay" "Walvis Bay" }
+1177 = { "Cape Town" "Cape Town" }
+1179 = { "Mossel Bay" "Mossel Bay" }
+1180 = { "East London" "East London" }
+1181 = { "Durban" "Durban" }
+1805 = { "St. George" "St. George" }
+1806 = { "Oxford House" "Oxford House" }
+1808 = { "Nevadan Mountains" "Eureka" }
+1809 = { "Cheyenne" "Cheyenne" }
+1810 = { "Flat" "Flat" }
+1811 = { "Tadoule Lake" "Tadoule Lake" }
+1813 = { "The Pas" "The Pas" }
+2003 = { "Sparwood" "Sparwood" }
+2004 = { "Cranbrook" "Cranbrook" }
+2005 = { "Regina" "Regina" }
+2006 = { "Valley City" "Valley City" }
+2007 = { "Pierre" "Pierre" }
+2008 = { "Aberdeen" "Aberdeen" }
+2009 = { "Mission" "Mission" }
+2010 = { "Hartford" "Hartford" }
+2011 = { "Rockingham" "Harrisonburg" }
+2012 = { "Sherbrooke" "Sherbrooke" }
+2013 = { "Casco" "Portland" }
+2014 = { "Shreveport" "Shreveport" }
+2015 = { "Wawa" "Wawa" }
+2016 = { "Great Forks" "Great Forks" }
+2017 = { "Edmonton" "Edmonton" }
+2018 = { "Jasper" "Jasper" }
+2019 = { "Wallowa Mts." "Enterprise" }
+2020 = { "Pocatello" "Pocatello" }
+2021 = { "San Francisco" "San Francisco" }
+2022 = { "Masset" "Masset" }
+2023 = { "Luzerne" "Scranton" }
+2476 = { "San Diego" "San Diego" }
+2477 = { "Riverside" "Riverside" }
+2478 = { "Southwestern Mojave" "Ridgecrest" }
+2479 = { "Susanville" "Susanville" }
+2480 = { "East Klamath Mts." "Yreka" }
+2481 = { "Coos Bay" "Coos Bay" }
+2482 = { "Mt. Hood" "Ripplebrook" }
+2483 = { "Richland" "Richland" }
+2484 = { "Forks" "Forks" }
+2485 = { "Tacoma" "Tacoma" }
+2486 = { "Western Cascades" "Skykomish" }
+2487 = { "Spokane" "Spokane" }
+2488 = { "Goldendale" "Goldendale" }
+2489 = { "Boise" "Boise" }
+2490 = { "Salt Lake City" "Salt Lake City" }
+2491 = { "Dolan Springs" "Dolan Springs" }
+2492 = { "Lordsburg" "Lordsburg" }
+2493 = { "Window Rock" "Window Rock" }
+2494 = { "Reserve" "Reserve" }
+2495 = { "Grants" "Grants" }
+2496 = { "Clayton" "Clayton" }
+2497 = { "Odessa" "Odessa" }
+2498 = { "Alpine" "Alpine" }
+2499 = { "Brownsville" "Brownsville" }
+2500 = { "Abilene" "Abilene" }
+2501 = { "Culbertson" "Culbertson" }
+2502 = { "Minot" "Minot" }
+2503 = { "Belfield" "Belfield" }
+2504 = { "Worland" "Worland" }
+2505 = { "Rapid City" "Rapid City" }
+2506 = { "Casper" "Casper" }
+2507 = { "Kimball" "Kimball" }
+2508 = { "Valentine" "Valentine" }
+2509 = { "Clinton" "Clinton" }
+2510 = { "Devils Lake" "Devils Lake" }
+2511 = { "New Town" "New Town" }
+2512 = { "Minneapolis" "Minneapolis" }
+2513 = { "Fort Madison" "Fort Madison" }
+2514 = { "Jefferson City" "Jefferson City" }
+2515 = { "Fort Smith" "Fort Smith" }
+2516 = { "Lafayette" "Lafayette" }
+2517 = { "Mille Lacs" "Pine City" }
+2518 = { "Superior" "Superior" }
+2519 = { "Effingham" "Effingham" }
+2520 = { "Marion" "Marion" }
+2521 = { "Saginaw" "Saginaw" }
+2522 = { "Grand Rapids" "Grand Rapids" }
+2523 = { "Terre Haute" "Terre Haute" }
+2524 = { "Madison" "Madison" }
+2525 = { "Chillicothe" "Chillicothe" }
+2526 = { "Lexington" "Concord" }
+2527 = { "Hamilton" "Chattanooga" }
+2528 = { "Washington Country" "Greenville" }
+2529 = { "Jackson" "Jackson" }
+2530 = { "Gulfport" "Gulfport" }
+2531 = { "Huntsville" "Huntsville" }
+2532 = { "Jefferson County" "Birmingham" }
+2534 = { "Alachua" "Gainesville" }
+2537 = { "Dougherty" "Albany" }
+2538 = { "Fidius" "Fidius" }
+2539 = { "Frederick" "Frederick" }
+2540 = { "Augusta" "Augusta" }
+2541 = { "Richland" "Columbia" }
+2542 = { "Beaufort" "Beaufort" }
+2543 = { "New Hanover" "Myrtle Beach" }
+2544 = { "Charlotte" "Charlotte" }
+2545 = { "Cumberland" "Fayetteville" }
+2546 = { "Onslow" "Jacksonville" }
+2548 = { "New River" "Bristol" }
+2549 = { "Danville" "Danville" }
+2550 = { "Spotsylvania" "Fredericksburg" }
+2551 = { "Monongalia" "Morgantown" }
+2552 = { "Martinsburg" "Martinsburg" }
+2553 = { "Hagerstown" "Hagerstown" }
+2554 = { "Baltimore" "Baltimore" }
+2555 = { "Pittsburgh" "Pittsburgh" }
+2556 = { "Huntingdon" "Huntingdon" }
+2557 = { "Snyder" "Williamsport" }
+2558 = { "Middletown" "Middletown" }
+2559 = { "Ticonderoga" "Fort Ticonderoga" }
+2560 = { "New Haven" "New Haven" }
+2561 = { "Franklin" "Franklin" }
+2562 = { "Manchester" "Manchester" }
+2563 = { "Burlington" "Burlington" }
+2564 = { "White Mountains" "Littleton" }
+2565 = { "Franklin" "Farmington" }
+2566 = { "Machias" "Machias" }
+2567 = { "Aroostook" "Presque Isle" }
+2568 = { "Anapolis Valley" "Digby" }
+2569 = { "Halifax" "Halifax" }
+2570 = { "St. John" "St. John" }
+2571 = { "Plaster Rock" "Plaster Rock" }
+2572 = { "Miramichi" "Miramichi" }
+2573 = { "Burgeo" "Burgeo" }
+2574 = { "Nain" "Nain" }
+2575 = { "Happy Valley-Goose Bay" "Happy Valley-Goose Bay"}
+2576 = { "Magpie" "Magpie" }
+2577 = { "Seven Islands" "Seven Islands" }
+2578 = { "Anticosti Island" "Port-Menier" }
+2579 = { "Saguenay" "Saguenay" }
+2580 = { "Alma" "Alma" }
+2581 = { "Ville-Marie" "Ville-Marie" }
+2582 = { "Rimouski" "Rimouski" }
+2583 = { "Saint-Georges" "Saint-Georges" }
+2584 = { "Brossard" "Brossard" }
+2585 = { "Ottawa" "Ottawa" }
+2586 = { "Sarnia" "Sarnia" }
+2587 = { "Collingwood" "Collingwood" }
+2589 = { "Timmins" "Timmins" }
+2590 = { "Temiskaming Shores" "Temiskaming Shores" }
+2594 = { "Norway House" "Norway House" }
+2595 = { "Clearwater Lake" "Ile-a-la-Crosse" }
+2596 = { "Dauphin" "Dauphin" }
+2597 = { "Prince Albert" "Prince Albert" }
+2598 = { "Moose Jaw" "Moose Jaw" }
+2588 = { "North Bay" "North Bay" }
+2591 = { "Hearst" "Hearst" }
+2592 = { "Forst Severn" "Fort Severn" }
+2593 = { "Lake of the Woods" "Kenora" }
+2599 = { "Fort Chipewyan" "Fort Chipewyan" }
+2600 = { "Athabasca" "Athabasca" }
+2601 = { "Meander River " "Meander River" }
+2602 = { "Calgary" "Calgary" }
+2603 = { "Finlay" "Finlay" }
+2604 = { "Prince George" "Prince George" }
+2605 = { "Salmon Arm" "Salmon Arm" }
+2606 = { "Williams Lake" "Williams Lake" }
+2607 = { "Kelowna" "Kelowna" }
+2608 = { "Aspen" "Aspen" }
+2609 = { "Prince Rupert" "Prince Rupert" }
+2610 = { "Powell River" "Powell River" }
+2611 = { "Kodiak Island" "Kodiak" }
+2612 = { "Cordova" "Cordova" }
+2613 = { "Chichagof Island" "Sitka" }
+2625 = { "Dodge City" "Dodge City" }
+4635 = { "Southern Coast Mts." "New Cuyama" }
+4637 = { "Northern Diabo Mts." "Gilroy" }
+2639 = { "Newark" "Newark" }
+2644 = { "Puebla" "Puebla" }
+2665 = { "Beaumont" "Beaumont" }
+2666 = { "Laredo" "Laredo" }
+2669 = { "Tyler" "Tyler" }
+2670 = { "Toronto" "Toronto" }
+2671 = { "Parry Sound" "Parry Sound" }
+2672 = { "Salina" "Salina" }
+4570 = { "Texcoco" "Texcoco" }
+4625 = { "St. Augustine" "St. Augustine" }
+4626 = { "Tampa" "Tampa" }
+4627 = { "Austin" "Austin" }
+4628 = { "Elpaso" "Elpaso" }
+4629 = { "McCamey" "McCamey" }
+4630 = { "Estancia" "Estancia" }
+4631 = { "Albuquerque" "Albuquerque" }
+4632 = { "Bernalillo" "Bernalillo" }
+4634 = { "Flagstaff" "Flagstaff" }
+4636 = { "Merced" "Merced" }
+4638 = { "Vallejo" "Vallejo" }
+4639 = { "El Centro" "El Centro" }
+4871 = { "Caledonia" "Montpelier" }
+4872 = { "Buffalo" "Buffalo" }
+4873 = { "Oxford" "Bethel" }
+4874 = { "West Hamden" "Holyoke" }
+4875 = { "Elk" "St. Mary" }
+4876 = { "Lycoming" "Towanda" }
+4877 = { "Greensville" "Hicks'Ford" }
+4878 = { "Guilford" "High Point" }
+4879 = { "Buncombe" "Asheville" }
+4881 = { "Lowndes" "Valdosta" }
+4882 = { "Greenville" "Greenville" }
+4883 = { "Franklin County" "Russellville" }
+4884 = { "Pike" "McComb" }
+4885 = { "Alexandria" "Alexandria" }
+4886 = { "Hot Springs" "Hot Springs " }
+4887 = { "McCracken" "Paducah" }
+4888 = { "Floyd" "Prestonsburg" }
+4889 = { "Lewisburg" "Lewisburg" }
+4890 = { "Gatineau" "Gatineau" }
+4891 = { "Amherst" "Amherst" }
+4892 = { "Muskoka" "Gravenhurst" }
+4893 = { "Victoriaville" "Victoriaville" }
+4894 = { "Mont-Laurier" "Mont-Laurier" }
+4895 = { "Shawinigan" "Shawinigan" }
+4896 = { "Woodstock" "Woodstock" }
+4897 = { "Algonquin" "Mattawa" }
+4898 = { "Marquette" "Marquette" }
+4899 = { "Marinette" "Marinette" }
+4900 = { "Council Bluffs" "Council Bluffs" }
+4901 = { "Marshal" "Marshal" }
+4902 = { "International Falls" "International Falls" }
+4903 = { "Moline" "Moline" }
+4904 = { "Adams" "Quincy" }
+4905 = { "Cedar Rapids" "Cedar Rapids" }
+4906 = { "Kirksville" "Kirksville" }
+4907 = { "Columbus" "Columbus" }
+4908 = { "Tulsa" "Tulsa" }
+4909 = { "Wichita Falls" "Wichita Falls" }
+4910 = { "Fort Worth" "Fort Worth" }
+4911 = { "Sherman" "Sherman" }
+4912 = { "Jefferson" "Fort Drum" }
+4913 = { "Columbia" "Columbia" }
+4914 = { "Fredonia" "Fredonia" }
+4915 = { "Lincoln" "Lincoln" }
+4916 = { "Sioux Falls" "Sioux Falls" }
+4917 = { "Broadus" "Broadus" }
+4918 = { "Bismarck" "Bismarck" }
+4919 = { "Winkler" "Winkler" }
+4920 = { "Brandon" "Brandon" }
+4921 = { "Warren" "Bowling Green" }
+4922 = { "South Bend" "South Bend" }
+4923 = { "Jonesboro" "Jonesboro" }
+4931 = { "Hardin" "Savannah" }
+4942 = { "Tillamook" "Tillamook" }
+4943 = { "Witset" "Witset" } 
+4944 = { "Tatle Lake" "Tatle Lake" }
+4945 = { "The Dalles" "The Dalles" }
+4946 = { "Madres" "Madres" }
+4947 = { "Creston" "Creston" }
+4948 = { "Polson" "Polson" }
+4949 = { "Northeast Cascades" "Winthrop" }
+4950 = { "Fresno" "Fresno" }
+4951 = { "Sacramento" "Sacramento" }
+4952 = { "Mammoth Lakes" "Mammoth Lakes" }
+4953 = { "Truckee" "Truckee" }
+4954 = { "North Sierra Nevada" "Canby" }
+4955 = { "Northern Mojave" "Caliente" }
+4956 = { "Riddle" "Riddle" }
+4957 = { "Baker City" "Baker City" }
+4958 = { "Klamath Falls" "Klamath Falls" }
+4959 = { "Denver" "Denver" }
+4960 = { "Missoula" "Missoula" }
+4961 = { "Lewiston" "Lewiston" }
+4962 = { "Craig" "Craig" }
+4963 = { "Grand Junction" "Grand Junction" }
+4965 = { "South Wasatch Range" "Beaver" }
+4966 = { "The Grand Canyon" "Colorado City" }
+4967 = { "Sevier Desert" " Delta" }
+4968 = { "Kotzebue" "Kotzebue" }
+4969 = { "Point Hope" "Point Hope" }
+4970 = { "Barrow" " Barrow" }
+4971 = { "Prudhoe Bay" "Prudhoe Bay" }
+4972 = { "Manitoulin Island" "Little Current" }
+4973 = { "Sudbury" "Sudbury" }
+4974 = { "Grand Bank" "Grand Bank" }
+4975 = { "Moab" "Moab" }
+4976 = { "Inuvik" "Inuvik" }
+4977 = { "Sterling" "Sterling" }
+4978 = { "Fort Good Hope" "Fort Good Hope" }
+4979 = { "Blanding" "Blanding" }
+4980 = { "Norman Wells" "Norman Wells" }
+4981 = { "Fraser" "Fraser" }
+4982 = { "Mackenzie" "Mackenzie" }
+4983 = { "Dawson Creek" "Dawson Creek" }
+4984 = { "Fort St. John" "Fort St. John" }
+4985 = { "Yellowknife" "Yellowknife" }
+4986 = { "Hay River" "Hay River" }
+4987 = { "Fort Nelson" "Fort Nelson" }
+4988 = { "Fraser Lake" "Fraser Lake" }
+4989 = { "Fort Resolution" "Fort Resolution" }
+4990 = { "Arviat" "Arviat" }
+4991 = { "Whale Cove" "Whale Cove" }
+4992 = { "Fullerton" "Fullerton" }
+4993 = { "Repulse Bay" "Repulse Bay" }
+4994 = { "Hall Beach" "Hall Beach" }
+4995 = { "Southanpton Island" "Coral Harbour" }
+4996 = { "Cape Dorset" "Cape Dorset" }
+4997 = { "Kimmirut" "Kimmirut" }
+4999 = { "Hudson Bay Islands" "Sanikiluaq" }
+5000 = { "Fort McMurray" "Fort McMurry" }
+5001 = { "Stony Rapids" "Stone Rapids" }
+5002 = { "Lynn Lake" "Lynn Lake" }
+5003 = { "Opasquia" "Sachigo Lake" }
+5004 = { "Red Lake" "Red Lake" }
+5005 = { "Landsdowne House" "Lansdowne House" }
+5006 = { "Ivujivik" "Ivujivik" }
+5007 = { "Fort Chimo" "Fort Chimo" }
+5008 = { "Matagami" "Matagami" }
+5009 = { "Mistissini" "Mistissini" }
+5010 = { "Dolbeau-Mistassini" "Dolbeau-Mistassini" } 
+5011 = { "Gagnon" "Gagnon" }
+5012 = { "Lac-Allard" "Lac-Allard" }
+5013 = { "St. John's" "St. John's" }
+5014 = { "Labrador City" "Labrador City" }
+5015 = { "Churchill Falls" "Churchill Falls" }
+5016 = { "Carson City" "Carson City" }
+5017 = { "Nampa" "Nampa" }
+5018 = { "Los Angeles" "Los Angeles" }
+5019 = { "St. Peter Island" "St. Peter" }
+# [VU] removed: province 5724 (not on Ante Bellum map)
+5030 = { "San Rafael" "San Rafael" }
+5031 = { "Eureka" "Eureka" }
+5032 = { "Bakersfield" "Bakersfield" }
+5033 = { "Cameron Bay" "Cameron Bay" }
+5034 = { "Medicine Hat" "Medicine Hat" }
+5035 = { "Cold Lake" "Cold Lake" }
+5036 = { "Atikokan" "Atikokan" }
+5037 = { "Barrie" "Barrie" }
+5038 = { "Quinte" "Belleville" }
+5039 = { "Owen Sound" "Owen Sound" }
+5040 = { "Rockford" "Rockford" }
+5041 = { "Smith River" "Smith River" }
+5042 = { "Bullhead City" "Bullhead City" }
+5043 = { "Mexicali" "Mexicali" }
+5044 = { "Pahute Mesa" "Beatty" }
+5045 = { "Redding" "Redding" }
+5046 = { "Fredericton" "Frederiction " }
+5047 = { "Truro" "Truro" }
+5048 = { "Guysborough" "Guysbourough" }
+5049 = { "Balthurst" "Balthurst" }
+5050 = { "Edmundston" "Edmundston" }
+5051 = { "Yarmouth" "Yarmouth" }
+5052 = { "Penobscot" "Millinocket" }
+5053 = { "Riviere-du-loup" "Riviere-du-loup" }
+5054 = { "Gaspe" "Gaspe" }
+5055 = { "Baie-Comeau" "Baie-Comeau" }
+5056 = { "Fort-Coulonge" "Fort-Coulonge" }
+5057 = { "Harricana" "Amos" }
+5058 = { "Renews" "Renews" }
+5059 = { "Placentia" "Placentia" }
+5060 = { "Drummondville" "Drummondville" }
+5064 = { "Durango" "Durango" }
+5065 = { "Lamar" "Lamar" }
+5066 = { "Alamosa" "Alamosa" }
+5067 = { "Baker Lake" "Baker Lake" }
+5068 = { "Gillam" "Gillam" }
+5069 = { "Reno" "Reno" }
+5070 = { "Ennadai" "Ennadai" }
+5071 = { "Colorado Springs" "Colorado Springs" }
+5072 = { "Champaign" "Champaign" }
+5073 = { "London" "London" }
+5074 = { "Colville Lake" "Colville Lake" }
+5075 = { "Herschel" "Herschel" }
+5076 = { "Camden Bay" "Kaktovik" }
+5077 = { "St. Lawrence Island" "Gambell" }
+5078 = { "Mayo" "Mayo"}
+5079 = { "Whitehorse" "Whitehorse" }
+5080 = { "Old Crow" "Old Crow" }
+5081 = { "Whati" "Whati" }
+5082 = { "Fort Simpson" "Fort Simpson" }
+5083 = { "Burwash Landing" "Burwash Landing" }
+5084 = { "Fond-du-Lac" "Fond-du-Lac" }
+5085 = { "Hinton" "Hinton" }
+5086 = { "Slave Lake" "Slave Lake" }
+5087 = { "La Loche" "La Loche" }
+5088 = { "Swan River" "Swan River" }
+5089 = { "Cumberland House" "Cumberland House" }
+5095 = { "St. Paul & St. George Island" "St. Paul" }
+5129 = { "Great Salt Lake Desert" "Wendover" }
+5142 = { "Kitimat" "Kitimat" }
+5143 = { "Flint" "Flint" }
+5173 = { "Fox Islands" "Unalaska" }
+5174 = { "King Salmon" "King Salmon" }
+5175 = { "Dillingham" "Dillingham" }
+5176 = { "Bethel" "Bethel" }
+5177 = { "St. Michael" "St. Michael" }
+5178 = { "Nome" "Nome" }
+5184 = { "Kenai" "Kenai" }
+5185 = { "Valdez" "Valdez" }
+5186 = { "Galena" "Galena" }
+5187 = { "Nenana" "Nenana" }
+5188 = { "Hughes" "Hughes" }
+5189 = { "Fairbanks" "Fairbanks" }
+5190 = { "Christian" "Christian" } 
+5191 = { "Circle" "Circle" }
+5192 = { "Mississauga" "Mississauga" }
+5193 = { "Watson Lake" "Watson Lake" }
+5194 = { "Willow Creek" "Willow Creek" }
+5195 = { "Dawson" "Dawson City" }
+5196 = { "Haines Junction" "Haines Junction" }
+5197 = { "Red Deer" "Red Deer" }
+5198 = { "Victoria" "Victoria" }
+# [VU] removed: province 5573 (not on Ante Bellum map)
+# [VU] removed: province 5580 (not on Ante Bellum map)
+# [VU] removed: province 5587 (not on Ante Bellum map)
+# [VU] removed: province 5592 (not on Ante Bellum map)
+# [VU] removed: province 5593 (not on Ante Bellum map)
+# [VU] removed: province 5594 (not on Ante Bellum map)
+# [VU] removed: province 5596 (not on Ante Bellum map)
+# [VU] removed: province 5611 (not on Ante Bellum map)
+# [VU] removed: province 5612 (not on Ante Bellum map)
+# [VU] removed: province 5613 (not on Ante Bellum map)
+# [VU] removed: province 5614 (not on Ante Bellum map)
+# [VU] removed: province 5615 (not on Ante Bellum map)
+# [VU] removed: province 5616 (not on Ante Bellum map)
+# [VU] removed: province 5617 (not on Ante Bellum map)
+# [VU] removed: province 5618 (not on Ante Bellum map)
+# [VU] removed: province 5619 (not on Ante Bellum map)
+# [VU] removed: province 5620 (not on Ante Bellum map)
+# [VU] removed: province 5621 (not on Ante Bellum map)
+# [VU] removed: province 5622 (not on Ante Bellum map)
+# [VU] removed: province 5623 (not on Ante Bellum map)
+# [VU] removed: province 5624 (not on Ante Bellum map)
+# [VU] removed: province 5625 (not on Ante Bellum map)
+# [VU] removed: province 5626 (not on Ante Bellum map)
+# [VU] removed: province 5627 (not on Ante Bellum map)
+# [VU] removed: province 5628 (not on Ante Bellum map)
+# [VU] removed: province 5629 (not on Ante Bellum map)
+# [VU] removed: province 5630 (not on Ante Bellum map)
+# [VU] removed: province 5631 (not on Ante Bellum map)
+# [VU] removed: province 5632 (not on Ante Bellum map)
+# [VU] removed: province 5633 (not on Ante Bellum map)
+# [VU] removed: province 5634 (not on Ante Bellum map)
+# [VU] removed: province 5635 (not on Ante Bellum map)
+# [VU] removed: province 5636 (not on Ante Bellum map)
+# [VU] removed: province 5637 (not on Ante Bellum map)
+# [VU] removed: province 5638 (not on Ante Bellum map)
+# [VU] removed: province 5639 (not on Ante Bellum map)
+# [VU] removed: province 5640 (not on Ante Bellum map)
+# [VU] removed: province 5711 (not on Ante Bellum map)
+# [VU] removed: province 5712 (not on Ante Bellum map)
+# [VU] removed: province 5713 (not on Ante Bellum map)
+# [VU] removed: province 5714 (not on Ante Bellum map)
+# [VU] removed: province 5722 (not on Ante Bellum map)
+# [VU] removed: province 5723 (not on Ante Bellum map)
+# [VU] removed: province 5725 (not on Ante Bellum map)
+# [VU] removed: province 5726 (not on Ante Bellum map)
+# [VU] removed: province 5727 (not on Ante Bellum map)
+# [VU] removed: province 5728 (not on Ante Bellum map)
+# [VU] removed: province 5729 (not on Ante Bellum map)
+# [VU] removed: province 5730 (not on Ante Bellum map)
+# [VU] removed: province 5731 (not on Ante Bellum map)
+# [VU] removed: province 5732 (not on Ante Bellum map)
+# [VU] removed: province 5733 (not on Ante Bellum map)
+# [VU] removed: province 5734 (not on Ante Bellum map)
+# [VU] removed: province 5735 (not on Ante Bellum map)
+# [VU] removed: province 5736 (not on Ante Bellum map)
+# [VU] removed: province 5737 (not on Ante Bellum map)
+# [VU] removed: province 5738 (not on Ante Bellum map)
+# [VU] removed: province 5739 (not on Ante Bellum map)
+# [VU] removed: province 5740 (not on Ante Bellum map)
+# [VU] removed: province 5741 (not on Ante Bellum map)
+# [VU] removed: province 5742 (not on Ante Bellum map)
+# [VU] removed: province 5743 (not on Ante Bellum map)
+# [VU] removed: province 5744 (not on Ante Bellum map)
+# [VU] removed: province 5745 (not on Ante Bellum map)
+# [VU] removed: province 5746 (not on Ante Bellum map)
+# [VU] removed: province 5747 (not on Ante Bellum map)
+# [VU] removed: province 5748 (not on Ante Bellum map)
+# [VU] removed: province 5749 (not on Ante Bellum map)
+# [VU] removed: province 5750 (not on Ante Bellum map)
+# [VU] removed: province 5751 (not on Ante Bellum map)
+# [VU] removed: province 5752 (not on Ante Bellum map)
+# [VU] removed: province 5753 (not on Ante Bellum map)
+# [VU] removed: province 5754 (not on Ante Bellum map)
+# [VU] removed: province 5755 (not on Ante Bellum map)
+# [VU] removed: province 5756 (not on Ante Bellum map)
+# [VU] removed: province 5757 (not on Ante Bellum map)
+# [VU] removed: province 5758 (not on Ante Bellum map)
+# [VU] removed: province 5759 (not on Ante Bellum map)
+# [VU] removed: province 5760 (not on Ante Bellum map)
+# [VU] removed: province 5761 (not on Ante Bellum map)
+# [VU] removed: province 5762 (not on Ante Bellum map)
+# [VU] removed: province 5763 (not on Ante Bellum map)
+# [VU] removed: province 5764 (not on Ante Bellum map)
+# [VU] removed: province 5765 (not on Ante Bellum map)
+# [VU] removed: province 5766 (not on Ante Bellum map)
+# [VU] removed: province 5767 (not on Ante Bellum map)
+# [VU] removed: province 5768 (not on Ante Bellum map)
+# [VU] removed: province 5769 (not on Ante Bellum map)
+# [VU] removed: province 5770 (not on Ante Bellum map)
+# [VU] removed: province 5771 (not on Ante Bellum map)
+# [VU] removed: province 5772 (not on Ante Bellum map)
+# [VU] removed: province 5773 (not on Ante Bellum map)
+# [VU] removed: province 5774 (not on Ante Bellum map)
+# [VU] removed: province 5775 (not on Ante Bellum map)
+# [VU] removed: province 5776 (not on Ante Bellum map)
+# [VU] removed: province 5777 (not on Ante Bellum map)
+# [VU] removed: province 5778 (not on Ante Bellum map)
+# [VU] removed: province 5779 (not on Ante Bellum map)
+# [VU] removed: province 5780 (not on Ante Bellum map)
+# [VU] removed: province 5781 (not on Ante Bellum map)
+# [VU] removed: province 5782 (not on Ante Bellum map)
+# [VU] removed: province 5783 (not on Ante Bellum map)
+# [VU] removed: province 5785 (not on Ante Bellum map)
+# [VU] removed: province 5784 (not on Ante Bellum map)
+# [VU] removed: province 5786 (not on Ante Bellum map)
+# [VU] removed: province 5788 (not on Ante Bellum map)
+# [VU] removed: province 5787 (not on Ante Bellum map)
+# [VU] removed: province 5790 (not on Ante Bellum map)
+# [VU] removed: province 5791 (not on Ante Bellum map)
+# [VU] removed: province 5792 (not on Ante Bellum map)
+# [VU] removed: province 5793 (not on Ante Bellum map)
+# [VU] removed: province 5794 (not on Ante Bellum map)
+# [VU] removed: province 5795 (not on Ante Bellum map)
+# [VU] removed: province 5796 (not on Ante Bellum map)
+# [VU] removed: province 5797 (not on Ante Bellum map)
+# [VU] removed: province 5798 (not on Ante Bellum map)
+# [VU] removed: province 5799 (not on Ante Bellum map)
+# [VU] removed: province 5800 (not on Ante Bellum map)
+# [VU] removed: province 5801 (not on Ante Bellum map)
+# [VU] removed: province 5802 (not on Ante Bellum map)
+# [VU] removed: province 5803 (not on Ante Bellum map)
+# [VU] removed: province 5804 (not on Ante Bellum map)
+# [VU] removed: province 5805 (not on Ante Bellum map)
+# [VU] removed: province 5806 (not on Ante Bellum map)
+# [VU] removed: province 5807 (not on Ante Bellum map)
+# [VU] removed: province 5808 (not on Ante Bellum map)
+# [VU] removed: province 5809 (not on Ante Bellum map)
+# [VU] removed: province 5810 (not on Ante Bellum map)
+# [VU] removed: province 5811 (not on Ante Bellum map)
+# [VU] removed: province 5812 (not on Ante Bellum map)
+# [VU] removed: province 5813 (not on Ante Bellum map)
+# [VU] removed: province 5814 (not on Ante Bellum map)
+# [VU] removed: province 5815 (not on Ante Bellum map)
+# [VU] removed: province 5816 (not on Ante Bellum map)
+# [VU] removed: province 5819 (not on Ante Bellum map)
+# [VU] removed: province 5820 (not on Ante Bellum map)
+# [VU] removed: province 5821 (not on Ante Bellum map)
+# [VU] removed: province 5822 (not on Ante Bellum map)
+# [VU] removed: province 5823 (not on Ante Bellum map)
+# [VU] removed: province 5824 (not on Ante Bellum map)
+# [VU] removed: province 5825 (not on Ante Bellum map)
+# [VU] removed: province 5826 (not on Ante Bellum map)
+# [VU] removed: province 5827 (not on Ante Bellum map)
+# [VU] removed: province 5830 (not on Ante Bellum map)
+ #Las Cruces
+# [VU] removed: province 5833 (not on Ante Bellum map)
+# [VU] removed: province 5834 (not on Ante Bellum map)
+# [VU] removed: province 5835 (not on Ante Bellum map)
+# [VU] removed: province 5836 (not on Ante Bellum map)
+# [VU] removed: province 5837 (not on Ante Bellum map)
+# [VU] removed: province 5838 (not on Ante Bellum map)
+# [VU] removed: province 5839 (not on Ante Bellum map)
+# [VU] removed: province 5840 (not on Ante Bellum map)
+# [VU] removed: province 5841 (not on Ante Bellum map)
+# [VU] removed: province 5843 (not on Ante Bellum map)
+# [VU] removed: province 5844 (not on Ante Bellum map)
+# [VU] removed: province 5845 (not on Ante Bellum map)
+# [VU] removed: province 5846 (not on Ante Bellum map)
+# [VU] removed: province 5847 (not on Ante Bellum map)
+# [VU] removed: province 5848 (not on Ante Bellum map)
+# [VU] removed: province 5849 (not on Ante Bellum map)
+# [VU] removed: province 5850 (not on Ante Bellum map)
+# [VU] removed: province 5851 (not on Ante Bellum map)
+# [VU] removed: province 5852 (not on Ante Bellum map)
+# [VU] removed: province 5853 (not on Ante Bellum map)
+# [VU] removed: province 5854 (not on Ante Bellum map)
+# [VU] removed: province 5855 (not on Ante Bellum map)
+# [VU] removed: province 5856 (not on Ante Bellum map)
+# [VU] removed: province 5857 (not on Ante Bellum map)
+# [VU] removed: province 5858 (not on Ante Bellum map)
+# [VU] removed: province 5859 (not on Ante Bellum map)
+# [VU] removed: province 5863 (not on Ante Bellum map)
+# [VU] removed: province 5864 (not on Ante Bellum map)
+# [VU] removed: province 5866 (not on Ante Bellum map)
+# [VU] removed: province 5867 (not on Ante Bellum map)
+# [VU] removed: province 5868 (not on Ante Bellum map)
+# [VU] removed: province 5869 (not on Ante Bellum map)
+# [VU] removed: province 5870 (not on Ante Bellum map)
+# [VU] removed: province 5871 (not on Ante Bellum map)
+# [VU] removed: province 5872 (not on Ante Bellum map)
+# [VU] removed: province 5873 (not on Ante Bellum map)
+# [VU] removed: province 5874 (not on Ante Bellum map)
+# [VU] removed: province 5875 (not on Ante Bellum map)
+# [VU] removed: province 5876 (not on Ante Bellum map)
+# [VU] removed: province 5877 (not on Ante Bellum map)
+# [VU] removed: province 5878 (not on Ante Bellum map)
+# [VU] removed: province 5879 (not on Ante Bellum map)
+# [VU] removed: province 5880 (not on Ante Bellum map)
+# [VU] removed: province 5881 (not on Ante Bellum map)
+# [VU] removed: province 5882 (not on Ante Bellum map)
+# [VU] removed: province 5883 (not on Ante Bellum map)
+# [VU] removed: province 5884 (not on Ante Bellum map)
+# [VU] removed: province 5885 (not on Ante Bellum map)
+# [VU] removed: province 5886 (not on Ante Bellum map)
+# [VU] removed: province 5887 (not on Ante Bellum map) 
+# [VU] removed: province 5888 (not on Ante Bellum map)
+# [VU] removed: province 5889 (not on Ante Bellum map)
+# [VU] removed: province 5890 (not on Ante Bellum map)
+# [VU] removed: province 5891 (not on Ante Bellum map)
+# [VU] removed: province 5892 (not on Ante Bellum map)
+# [VU] removed: province 5893 (not on Ante Bellum map)
+# [VU] removed: province 5894 (not on Ante Bellum map)
+# [VU] removed: province 5897 (not on Ante Bellum map)
+# [VU] removed: province 5898 (not on Ante Bellum map)
+# [VU] removed: province 5899 (not on Ante Bellum map)
+# [VU] removed: province 5895 (not on Ante Bellum map)
+# [VU] removed: province 5900 (not on Ante Bellum map)
+# [VU] removed: province 5901 (not on Ante Bellum map)
+# [VU] removed: province 5902 (not on Ante Bellum map)
+# [VU] removed: province 5903 (not on Ante Bellum map)
+# [VU] removed: province 5904 (not on Ante Bellum map)
+# [VU] removed: province 5905 (not on Ante Bellum map)
+# [VU] removed: province 5906 (not on Ante Bellum map)
+# [VU] removed: province 5907 (not on Ante Bellum map)
+# [VU] removed: province 5908 (not on Ante Bellum map)
+# [VU] removed: province 5909 (not on Ante Bellum map)
+# [VU] removed: province 5910 (not on Ante Bellum map)
+# [VU] removed: province 5911 (not on Ante Bellum map)
+# [VU] removed: province 5912 (not on Ante Bellum map)
+# [VU] removed: province 5913 (not on Ante Bellum map)
+# [VU] removed: province 5914 (not on Ante Bellum map)
+# [VU] removed: province 5915 (not on Ante Bellum map)
+# [VU] removed: province 5916 (not on Ante Bellum map)
+# [VU] removed: province 5917 (not on Ante Bellum map)
+# [VU] removed: province 5918 (not on Ante Bellum map)
+# [VU] removed: province 5919 (not on Ante Bellum map)
+# [VU] removed: province 5920 (not on Ante Bellum map)
+# [VU] removed: province 5921 (not on Ante Bellum map)
+# [VU] removed: province 5922 (not on Ante Bellum map)
+# [VU] removed: province 5923 (not on Ante Bellum map)
+# [VU] removed: province 5924 (not on Ante Bellum map)
+# [VU] removed: province 5925 (not on Ante Bellum map)
+# [VU] removed: province 5935 (not on Ante Bellum map)
+# [VU] removed: province 5936 (not on Ante Bellum map)
+# [VU] removed: province 5937 (not on Ante Bellum map)
+# [VU] removed: province 5938 (not on Ante Bellum map)
+# [VU] removed: province 5939 (not on Ante Bellum map)
+# [VU] removed: province 5940 (not on Ante Bellum map)
+# [VU] removed: province 5951 (not on Ante Bellum map)
+# [VU] removed: province 5952 (not on Ante Bellum map)
+# [VU] removed: province 5953 (not on Ante Bellum map)
+# [VU] removed: province 5954 (not on Ante Bellum map)
+# [VU] removed: province 5955 (not on Ante Bellum map)
+# [VU] removed: province 5956 (not on Ante Bellum map)
+# [VU] removed: province 5957 (not on Ante Bellum map)
+# [VU] removed: province 5958 (not on Ante Bellum map)
+# [VU] removed: province 5959 (not on Ante Bellum map)
+# [VU] removed: province 5960 (not on Ante Bellum map)
+# [VU] removed: province 5969 (not on Ante Bellum map)
+# [VU] removed: province 5970 (not on Ante Bellum map)
+# [VU] removed: province 5971 (not on Ante Bellum map)
+# [VU] removed: province 5972 (not on Ante Bellum map)
+# [VU] removed: province 5973 (not on Ante Bellum map)
+# [VU] removed: province 5974 (not on Ante Bellum map)
+# [VU] removed: province 5975 (not on Ante Bellum map)
+# [VU] removed: province 5976 (not on Ante Bellum map)
+# [VU] removed: province 5977 (not on Ante Bellum map)
+# [VU] removed: province 5978 (not on Ante Bellum map)
+# [VU] removed: province 5979 (not on Ante Bellum map)
+# [VU] removed: province 5980 (not on Ante Bellum map)
+# [VU] removed: province 5981 (not on Ante Bellum map)
+# [VU] removed: province 5982 (not on Ante Bellum map)
+# [VU] removed: province 5984 (not on Ante Bellum map)
+# [VU] removed: province 5986 (not on Ante Bellum map)
+# [VU] removed: province 5987 (not on Ante Bellum map)
+# [VU] removed: province 5988 (not on Ante Bellum map)
+# [VU] removed: province 5989 (not on Ante Bellum map)
+# [VU] removed: province 5990 (not on Ante Bellum map)
+# [VU] removed: province 5991 (not on Ante Bellum map)
+# [VU] removed: province 5992 (not on Ante Bellum map)
+# [VU] removed: province 5993 (not on Ante Bellum map)
+# [VU] removed: province 5994 (not on Ante Bellum map)
+# [VU] removed: province 5995 (not on Ante Bellum map)
+# [VU] removed: province 5996 (not on Ante Bellum map)
+# [VU] removed: province 5997 (not on Ante Bellum map)
+# [VU] removed: province 5998 (not on Ante Bellum map)
+# [VU] removed: province 5999 (not on Ante Bellum map)
+# [VU] removed: province 6000 (not on Ante Bellum map)
+# [VU] removed: province 6001 (not on Ante Bellum map)
+# [VU] removed: province 6002 (not on Ante Bellum map)
+# [VU] removed: province 6003 (not on Ante Bellum map)
+# [VU] removed: province 6004 (not on Ante Bellum map)
+# [VU] removed: province 6005 (not on Ante Bellum map)
+# [VU] removed: province 6006 (not on Ante Bellum map)
+# [VU] removed: province 6007 (not on Ante Bellum map)
+# [VU] removed: province 6008 (not on Ante Bellum map)
+# [VU] removed: province 6009 (not on Ante Bellum map)
+# [VU] removed: province 6019 (not on Ante Bellum map)
+# [VU] removed: province 6020 (not on Ante Bellum map)
+# [VU] removed: province 6039 (not on Ante Bellum map)
+# [VU] removed: province 6040 (not on Ante Bellum map)
+# [VU] removed: province 6933 (not on Ante Bellum map)
+# [VU] removed: province 6934 (not on Ante Bellum map)
+# [VU] removed: province 8764 (not on Ante Bellum map)
+# [VU] removed: province 8000 (not on Ante Bellum map)
+# [VU] removed: province 8001 (not on Ante Bellum map)
+# [VU] removed: province 8002 (not on Ante Bellum map)
+# [VU] removed: province 8003 (not on Ante Bellum map)
+# [VU] removed: province 8004 (not on Ante Bellum map)
+# [VU] removed: province 8005 (not on Ante Bellum map)
+# [VU] removed: province 8006 (not on Ante Bellum map)
+# [VU] removed: province 8007 (not on Ante Bellum map)
+# [VU] removed: province 8008 (not on Ante Bellum map)
+# [VU] removed: province 8009 (not on Ante Bellum map)
+# [VU] removed: province 8010 (not on Ante Bellum map)
+# [VU] removed: province 8011 (not on Ante Bellum map)
+# [VU] removed: province 8012 (not on Ante Bellum map)
+# [VU] removed: province 8800 (not on Ante Bellum map)
+# [VU] removed: province 8801 (not on Ante Bellum map)
+# [VU] removed: province 8802 (not on Ante Bellum map)
+# [VU] removed: province 8803 (not on Ante Bellum map)
+# [VU] removed: province 8804 (not on Ante Bellum map)
+# [VU] removed: province 8805 (not on Ante Bellum map)
+# [VU] removed: province 8806 (not on Ante Bellum map)
+# [VU] removed: province 8807 (not on Ante Bellum map)
+# [VU] removed: province 8808 (not on Ante Bellum map)
+# [VU] removed: province 8809 (not on Ante Bellum map)
+# [VU] removed: province 8810 (not on Ante Bellum map)
+# [VU] removed: province 8811 (not on Ante Bellum map)
+# [VU] removed: province 8812 (not on Ante Bellum map)
+# [VU] removed: province 8813 (not on Ante Bellum map)
+# [VU] removed: province 8814 (not on Ante Bellum map)
+# [VU] removed: province 8815 (not on Ante Bellum map)
+# [VU] removed: province 8816 (not on Ante Bellum map)
+# [VU] removed: province 8817 (not on Ante Bellum map)
+# [VU] removed: province 8818 (not on Ante Bellum map)
+# [VU] removed: province 8819 (not on Ante Bellum map)
+# [VU] removed: province 8820 (not on Ante Bellum map)
+# [VU] removed: province 8821 (not on Ante Bellum map)
+# [VU] removed: province 8822 (not on Ante Bellum map)
+# [VU] removed: province 8823 (not on Ante Bellum map)
+# [VU] removed: province 8824 (not on Ante Bellum map)
+# [VU] removed: province 8825 (not on Ante Bellum map)
+# [VU] removed: province 8826 (not on Ante Bellum map)
+# [VU] removed: province 8827 (not on Ante Bellum map)
+# [VU] removed: province 8828 (not on Ante Bellum map)
+# [VU] removed: province 8829 (not on Ante Bellum map)
+# [VU] removed: province 8830 (not on Ante Bellum map)
+# [VU] removed: province 8831 (not on Ante Bellum map)
+# [VU] removed: province 8832 (not on Ante Bellum map)
+# [VU] removed: province 8833 (not on Ante Bellum map)
+# [VU] removed: province 8834 (not on Ante Bellum map)
+# [VU] removed: province 8835 (not on Ante Bellum map)
+# [VU] removed: province 8836 (not on Ante Bellum map)
+# [VU] removed: province 8837 (not on Ante Bellum map)
+# [VU] removed: province 8838 (not on Ante Bellum map)
+# [VU] removed: province 8839 (not on Ante Bellum map)
+# [VU] removed: province 8840 (not on Ante Bellum map)
+# [VU] removed: province 8841 (not on Ante Bellum map)
+# [VU] removed: province 8842 (not on Ante Bellum map)
+# [VU] removed: province 8843 (not on Ante Bellum map)
+# [VU] removed: province 8844 (not on Ante Bellum map)
+# [VU] removed: province 8845 (not on Ante Bellum map)
+# [VU] removed: province 8846 (not on Ante Bellum map)
+# [VU] removed: province 8847 (not on Ante Bellum map)
+# [VU] removed: province 8848 (not on Ante Bellum map)
+# [VU] removed: province 8849 (not on Ante Bellum map)
+# [VU] removed: province 8850 (not on Ante Bellum map)
+# [VU] removed: province 8851 (not on Ante Bellum map)
+# [VU] removed: province 8852 (not on Ante Bellum map)
+# [VU] removed: province 8853 (not on Ante Bellum map)
+# [VU] removed: province 8854 (not on Ante Bellum map)
+# [VU] removed: province 8855 (not on Ante Bellum map)
+# [VU] removed: province 8856 (not on Ante Bellum map)
+# [VU] removed: province 8857 (not on Ante Bellum map)
+# [VU] removed: province 8858 (not on Ante Bellum map)
+# [VU] removed: province 8859 (not on Ante Bellum map)
+# [VU] removed: province 8860 (not on Ante Bellum map)
+# [VU] removed: province 8861 (not on Ante Bellum map)
+# [VU] removed: province 8862 (not on Ante Bellum map)
+# [VU] removed: province 8863 (not on Ante Bellum map)
+# [VU] removed: province 8864 (not on Ante Bellum map)
+# [VU] removed: province 8865 (not on Ante Bellum map)
+# [VU] removed: province 8866 (not on Ante Bellum map)
+# [VU] removed: province 8867 (not on Ante Bellum map)
+# [VU] removed: province 8868 (not on Ante Bellum map)
+# [VU] removed: province 8869 (not on Ante Bellum map)
+# [VU] removed: province 8870 (not on Ante Bellum map)
+# [VU] removed: province 8871 (not on Ante Bellum map)
+# [VU] removed: province 8872 (not on Ante Bellum map)
+# [VU] removed: province 8873 (not on Ante Bellum map)
+# [VU] removed: province 8874 (not on Ante Bellum map)
+# [VU] removed: province 8875 (not on Ante Bellum map)
+# [VU] removed: province 8876 (not on Ante Bellum map)
+# [VU] removed: province 8877 (not on Ante Bellum map)
+# [VU] removed: province 8878 (not on Ante Bellum map)
+# [VU] removed: province 8879 (not on Ante Bellum map)
+# [VU] removed: province 8880 (not on Ante Bellum map)
+# [VU] removed: province 8881 (not on Ante Bellum map)
+# [VU] removed: province 8882 (not on Ante Bellum map)
+# [VU] removed: province 8883 (not on Ante Bellum map)
+# [VU] removed: province 8884 (not on Ante Bellum map)
+# [VU] removed: province 8885 (not on Ante Bellum map)
+# [VU] removed: province 8886 (not on Ante Bellum map)
+# [VU] removed: province 8887 (not on Ante Bellum map)
+# [VU] removed: province 8888 (not on Ante Bellum map)
+# [VU] removed: province 8889 (not on Ante Bellum map)
+# [VU] removed: province 8890 (not on Ante Bellum map)
+# [VU] removed: province 8891 (not on Ante Bellum map)
+# [VU] removed: province 8892 (not on Ante Bellum map)
+# [VU] removed: province 8893 (not on Ante Bellum map)
+# [VU] removed: province 8894 (not on Ante Bellum map)
+# [VU] removed: province 8895 (not on Ante Bellum map)
+# [VU] removed: province 8896 (not on Ante Bellum map)
+# [VU] removed: province 8897 (not on Ante Bellum map)
+# [VU] removed: province 8898 (not on Ante Bellum map)
+# [VU] removed: province 8899 (not on Ante Bellum map)
+# [VU] removed: province 8900 (not on Ante Bellum map)
+# [VU] removed: province 8901 (not on Ante Bellum map)
+# [VU] removed: province 8902 (not on Ante Bellum map)
+# [VU] removed: province 8903 (not on Ante Bellum map)
+# [VU] removed: province 8904 (not on Ante Bellum map)
+# [VU] removed: province 8905 (not on Ante Bellum map)
+# [VU] removed: province 8906 (not on Ante Bellum map)
+# [VU] removed: province 8907 (not on Ante Bellum map)
+# [VU] removed: province 8908 (not on Ante Bellum map)
+# [VU] removed: province 8909 (not on Ante Bellum map)
+# [VU] removed: province 8910 (not on Ante Bellum map)
+# [VU] removed: province 8911 (not on Ante Bellum map) 
+
+#Philippines
+656 = { "Manila" "Manila" }
+657 = { "Agoo" "Saint John" }
+658 = { "Cagayan" "New Segovia" }
+2700 = { "Panay" "Iloilo City" }
+2701 = { "New Guipuzcoa" "New Vergara" }
+4349 = { "Laguna" "Calamba" }
+4350 = { "Western Mindoro" "Caminawit" }
+4351 = { "Western Negros" "Bacolod City" }
+4352 = { "Cebu" "Cebu City" }
+4353 = { "Leyte" "Carigara" }
+4354 = { "Zamboanga" "Zamboanga City" }
+# [VU] removed: province 7166 (not on Ante Bellum map)
+# [VU] removed: province 7167 (not on Ante Bellum map)
+# [VU] removed: province 7175 (not on Ante Bellum map)
+# [VU] removed: province 7184 (not on Ante Bellum map)
+# [VU] removed: province 8270 (not on Ante Bellum map)
+# [VU] removed: province 8273 (not on Ante Bellum map)
+# [VU] removed: province 8274 (not on Ante Bellum map)
+# [VU] removed: province 8282 (not on Ante Bellum map)
+# [VU] removed: province 8286 (not on Ante Bellum map)
+# [VU] removed: province 8287 (not on Ante Bellum map)
+# [VU] removed: province 8288 (not on Ante Bellum map)
+# [VU] removed: province 8290 (not on Ante Bellum map)
+# [VU] removed: province 8291 (not on Ante Bellum map)
+# [VU] removed: province 8293 (not on Ante Bellum map)
+# [VU] removed: province 8297 (not on Ante Bellum map)
+# [VU] removed: province 8714 (not on Ante Bellum map)

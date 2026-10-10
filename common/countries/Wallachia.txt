@@ -1,16 +1,9 @@
 #Country Name: Please see filename.
-graphical_culture = easterngfx
-color = {
-	68
-	122
-	174
-}
 
-revolutionary_colors = {
-	13
-	8
-	5
-}
+graphical_culture = greekgfx #easterngfx
+
+color = { 161  126  128 }
+revolutionary_colors = { 14 8 4 }
 
 historical_idea_groups = {
 	defensive_ideas
@@ -24,22 +17,21 @@ historical_idea_groups = {
 }
 
 historical_units = {
-	bardiche_infantry
-	druzhina_cavalry
+	eastern_medieval_infantry
+	eastern_knights
 	slavic_stradioti
 	eastern_militia
-	muscovite_musketeer
-	muscovite_caracolle
-	muscovite_soldaty
-	muscovite_cossack
-	russian_petrine
-	russian_lancer
-	russian_green_coat
-	russian_cuirassier
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
 	eastern_skirmisher
 	eastern_uhlan
 	eastern_carabinier
-	russian_mass
+	ottoman_new_model
+	ottoman_lancer
 }
 
 monarch_names = {
@@ -83,73 +75,29 @@ monarch_names = {
 	"Sergiu #0" = 0
 	"Teodor #0" = 0
 	"Valeriu #0" = 0
+	
 	"Rahela #0" = -1
 	"Flavia #0" = -1
 	"Cosmina #0" = -1
-	"Elena #0" = -1
-	"Ana #0" = -1
-	"Ecaterina #0" = -1
-	"Ilinca #0" = -1
-	"Ruxandra #0" = -1
-	"Domnica #0" = -1
-	"Maria #0" = -1
-	"Marica #0" = -1
-	"Despina #0" = -1
-	"Stanca #0" = -1
-	"Doamna #0" = -1
-	"Teodora #0" = -1
-	"Ileana #0" = -1
-	"Smaranda #0" = -1
-	"Ancuta #0" = -1
-	"Catinca #0" = -1
-	"Vasilica #0" = -1
-	"Magdalena #0" = -1
-	"Paraschiva #0" = -1
-	"Artemiza #0" = -1
-	"Fevronia #0" = -1
 }
 
 leader_names = {
-	Basarab
-	Brancoveanu
-	Cantacuzino
-	Caragea
-	Craiovescu
-	Dracul
-	Duca
-	Ghica
-	Golescu
-	Ilias
-	Ipsilanti
-	Mavrocordat
-	Mircea
-	Moruzi
+	Basarab Brâncoveanu
+	Cantacuzino Caragea Craiovescu
+	Dracul Duca
+	Ghica Golescu
+	Ilias Ipsilanti
+	Mavrocordat Mircea Moruzi
 	Racovita
-	Sutu
-	Tepelus
-	Tolmay
-	Vacarescu
-	Voda
-	Movila
-	Buicescu
-	Stirbei
-	Callimachi
-	Antonie
-	Paleologu
-	Cerbulescu
-	Cantemir
-	Neagoe
-	Voinea
-	Doicescu
-	Patrascu
-	Serban
-	Zamfirescu
+	Sutu 
+	Tepelus Tolmay
+	Vacarescu Voda
 }
 
 ship_names = {
 	Dracul
 	Viteazul
-	"Putera mari"
+	Putera mari
 	Sperietoaria
 	"Frumuseatsa valurilor"
 	Posada
@@ -158,34 +106,13 @@ ship_names = {
 	Sirmium
 	"Atacul de noapte"
 	Litovoi
-	Neajlov
-	Arges
-	Oltul
-	Mircea
-	"Mihai Viteazul"
-	Bran
-	Fulgerul
-	"Sfantul Andrei"
-	"Corbul Negru"
-	Dacia
-	Alutus
-	"Straja Dunarii"
-	"Stefan cel Mare"
 }
 
 army_names = {
-	"Oastea de $PROVINCE$"
-	"Oastea Mare"
-	"Armata Domneasca"
-	"Armata Tarii"
-	"Armata Munteniei"
-	"Armata Olteniei"
-	"Armata Moldovei"
-	"Armata Ardealului"
-	"Armata Carpatilor"
-	"Armata Dunarii"
+	"Oastea de $PROVINCE$" 
 }
 
+# ===== Ante Bellum additions (not in Victorum) =====
 fleet_names = {
 	"Flota Marii Negre"
 	"Flota Dunarii"

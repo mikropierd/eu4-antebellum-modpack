@@ -1,17 +1,1 @@
-can_make_core = {
-	condition = {
-		tooltip = ME_making_state_cores_is_toggled_off
-		potential = {
-			owner = { has_country_flag = ME_toggle_no_full_cores }
-			is_core = owner
-		}
-		allow = {
-			OR = {
-				NOT = {
-					owner = { has_country_flag = ME_toggle_no_full_cores }
-				}
-				NOT = { is_core = owner }
-			}
-		}
-	}
-}
+# [merge] can_make_core now defined in common/scripted_functions/00_scripted_functions.txt (Victorum wins; Ante Bellum-specific parts merged there)

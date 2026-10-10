@@ -1,0 +1,41 @@
+# Neapolitan Republic -- Enlightened Reform Decision
+# The third and voluntary path for Naples/Two Sicilies to become a republic.
+# Historical basis: Enlightenment reforms under Charles VII / Tanucci (c. 1750s);
+# the philosophical climate that eventually produced the Parthenopean Republic.
+# Requires the Enlightenment institution and progressive ideas to take the step.
+# Design: Darth Modus
+
+country_decisions = {
+
+	vu_naples_enlightened_republic = {
+		potential = {
+			primary_culture = neapolitan
+			government = monarchy
+			NOT = { has_country_flag = vu_nap_enlightened_republic_enacted }
+		}
+
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			stability = 1
+			has_institution = enlightenment
+			OR = {
+				has_idea_group = humanist_ideas
+				has_idea_group = innovativeness_ideas
+			}
+		}
+
+		effect = {
+			set_country_flag = vu_nap_enlightened_republic_enacted
+			change_government = republic
+			add_government_reform = vu_neapolitan_republic_reform
+			add_republican_tradition = 50
+			add_prestige = 10
+			add_adm_power = 25
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -42,7 +42,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_russian_icons_strip"
 		texturefile = "gfx//interface//russian_icons_strip.dds"
-		noOfFrames = 19 # TLW
+		noOfFrames = 5
 	}	
 	
 	spriteType = {
@@ -53,7 +53,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hindu_deities_strip"
 		texturefile = "gfx//interface//hindu_deities_strip.dds"
-		noOfFrames = 17 # TLW
+		noOfFrames = 27
 	}
 	
 
@@ -418,7 +418,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_incident_icons"
 		texturefile = "gfx/interface/incident_icons.dds"
-		noOfFrames = 9
+		noOfFrames = 8
 	}
 
 	spriteType = {
@@ -723,11 +723,45 @@ spriteTypes = {
 		texturefile = "gfx/interface/church_aspects_anglicanism/icons_of_the_church_icon.dds"
 	}
 
-
 	### Domination
 
 	spriteType = {
 		name = "GFX_spread_the_book_of_common_prayer"
 		texturefile = "gfx/interface/church_aspects_anglicanism/spread_the_book_of_common_prayer_icon.dds"
 	}
+
+	#Methodist Aspects
+
+	spriteType = {
+		name = "GFX_methodist_abstentionism_icon"
+		texturefile = "gfx/interface/church_aspects_methodist/vu_encourage_abstentionism_aspects_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_methodist_development_aspect"
+		texturefile = "gfx/interface/church_aspects_methodist/vu_encourage_development_aspects_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_methodist_productivity_aspect"
+		texturefile = "gfx/interface/church_aspects_methodist/vu_encourage_productivity_aspects_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_methodist_trade_aspect"
+		texturefile = "gfx/interface/church_aspects_methodist/vu_encourage_trade_aspects_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_methodist_relations_aspect"
+		texturefile = "gfx/interface/church_aspects_methodist/vu_encourage_neighbourly_relations_aspects_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_methodist_military_aspect"
+		texturefile = "gfx/interface/church_aspects_methodist/vu_encourage_readiness_to_fight_aspects_icon.dds"
+	}
 }	
+
+
+

@@ -1,0 +1,567 @@
+country_decisions = {
+    create_dominion_in_india = {
+        potential = {
+            ai = no
+            is_subject = no
+            can_be_overlord = self_governing_dominion_vu
+            num_of_ports = 40
+            capital_scope = {
+                NOT = {
+                    superregion = india_superregion
+                    superregion = china_superregion
+                    region = japan_region
+                    continent = oceania
+                    superregion = east_indies_superregion
+                    continent = africa
+                }
+            }
+            NOT = {
+                exists = DI1
+            }
+            num_of_owned_provinces_with = {
+                value = 10
+                superregion = india_superregion
+            }
+        }
+        provinces_to_highlight = {
+            superregion = india_superregion
+            has_discovered = ROOT
+        }
+        allow = {
+            treasury = 3000
+            is_at_war = no
+            OR = {
+                has_idea_group = expansion_ideas
+                has_idea_group = exploration_ideas
+            }
+            num_of_owned_provinces_with = {
+                value = 20
+                superregion = india_superregion
+            }
+        }
+        effect = {
+            add_treasury = -3000
+            custom_tooltip = ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        superregion = india_superregion
+                    }
+                    remove_core = ROOT
+                    add_core = DI1
+                    cede_province = DI1
+                }
+                create_subject = {
+                    subject = DI1
+                    subject_type = self_governing_dominion_vu
+                }
+                DI1 = {
+                    add_treasury = 3000
+                    add_truce_with = ROOT
+                    change_primary_culture = ROOT
+                    change_religion = ROOT
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = western
+                                    technology_group = english_tech_group
+                                    technology_group = french_tech_group
+                                    technology_group = german_tech_group
+                                    technology_group = italian_tech_group
+                                    technology_group = bohemian_tech_group
+                                    technology_group = scandinavian_tech_group
+                                    technology_group = spanish_tech_group
+                                    technology_group = portuguese_tech_group
+                                    technology_group = roman_tech_group
+                                    technology_group = dutch_tech_group
+                                    technology_group = swiss_tech_group
+                                }
+                                NOT = {
+                                    unit_type = western
+                                }
+                            }
+                        }
+                        change_unit_type = western
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = russian_tech_group
+                                    technology_group = bulgarian_tech_group
+                                    technology_group = polish_tech_group
+                                    technology_group = eastern
+                                    technology_group = byzantine_tech_group
+                                    technology_group = hungarian_tech_group
+                                    primary_culture = wendish
+                                    primary_culture = polabian_culture
+                                }
+                                NOT = {
+                                    unit_type = eastern
+                                }
+                            }
+                        }
+                        change_unit_type = eastern
+                    }
+                    else = {
+                        if = {
+                            limit = {
+                                ROOT = {
+                                    OR = {
+                                        technology_group = ottoman
+                                        technology_group = muslim
+                                        technology_group = persian_tech_group
+                                    }
+                                    NOT = {
+                                        unit_type = muslim
+                                    }
+                                }
+                            }
+                            change_unit_type = muslim
+                        }
+                    }                    
+                    define_ruler = {
+                        culture = ROOT
+                        religion = ROOT
+                    }
+                    adopt_reform_progress = ROOT
+                    every_province = {
+                        limit = {
+                            has_discovered = ROOT
+                        }
+                        discover_country = PREV
+                    }
+                }
+            }
+        }
+    }
+    create_dominion_in_east_indies = {
+        potential = {
+            ai = no
+            is_subject = no
+            can_be_overlord = self_governing_dominion_vu
+            num_of_ports = 40
+            capital_scope = {
+                NOT = {
+                    superregion = india_superregion
+                    superregion = china_superregion
+                    region = japan_region
+                    continent = oceania
+                    superregion = east_indies_superregion
+                    continent = africa
+                }
+            }
+            NOT = {
+                exists = DC1
+            }
+            num_of_owned_provinces_with = {
+                value = 10
+                OR = {
+                    trade_company_region = trade_company_indonesia
+                    trade_company_region = trade_company_moluccas
+                }
+            }
+        }
+        provinces_to_highlight = {
+            OR = {
+                trade_company_region = trade_company_indonesia
+                trade_company_region = trade_company_moluccas
+            }
+            has_discovered = ROOT
+        }
+        allow = {
+            treasury = 3000
+            is_at_war = no
+            OR = {
+                has_idea_group = expansion_ideas
+                has_idea_group = exploration_ideas
+            }
+            num_of_owned_provinces_with = {
+                value = 20
+                OR = {
+                    trade_company_region = trade_company_indonesia
+                    trade_company_region = trade_company_moluccas
+                }
+            }
+        }
+        effect = {
+            add_treasury = -3000
+            custom_tooltip = ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        OR = {
+                            trade_company_region = trade_company_indonesia
+                            trade_company_region = trade_company_moluccas
+                        }
+                    }
+                    if = {
+                        limit = {
+                            is_core = ROOT
+                        }
+                        remove_core = ROOT
+                        add_core = DC1
+                    }
+                    cede_province = DC1
+                }
+                create_subject = {
+                    subject = DC1
+                    subject_type = self_governing_dominion_vu
+                }
+                DC1 = {
+                    add_treasury = 3000
+                    add_truce_with = ROOT
+                    change_primary_culture = ROOT
+                    change_religion = ROOT
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = western
+                                    technology_group = english_tech_group
+                                    technology_group = french_tech_group
+                                    technology_group = german_tech_group
+                                    technology_group = italian_tech_group
+                                    technology_group = bohemian_tech_group
+                                    technology_group = scandinavian_tech_group
+                                    technology_group = spanish_tech_group
+                                    technology_group = portuguese_tech_group
+                                    technology_group = roman_tech_group
+                                    technology_group = dutch_tech_group
+                                    technology_group = swiss_tech_group
+                                }
+                                NOT = {
+                                    unit_type = western
+                                }
+                            }
+                        }
+                        change_unit_type = western
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = russian_tech_group
+                                    technology_group = bulgarian_tech_group
+                                    technology_group = polish_tech_group
+                                    technology_group = eastern
+                                    technology_group = byzantine_tech_group
+                                    technology_group = hungarian_tech_group
+                                    primary_culture = wendish
+                                    primary_culture = polabian_culture
+                                }
+                                NOT = {
+                                    unit_type = eastern
+                                }
+                            }
+                        }
+                        change_unit_type = eastern
+                    }
+                    else = {
+                        if = {
+                            limit = {
+                                ROOT = {
+                                    OR = {
+                                        technology_group = ottoman
+                                        technology_group = muslim
+                                        technology_group = persian_tech_group
+                                    }
+                                    NOT = {
+                                        unit_type = muslim
+                                    }
+                                }
+                            }
+                            change_unit_type = muslim
+                        }
+                    }
+                    define_ruler = {
+                        culture = ROOT
+                        religion = ROOT
+                    }
+                    adopt_reform_progress = ROOT
+                    every_province = {
+                        limit = {
+                            has_discovered = ROOT
+                        }
+                        discover_country = PREV
+                    }
+                }
+            }
+        }
+    }
+    create_dominion_in_west_africa = {
+        potential = {
+            ai = no
+            is_subject = no
+            can_be_overlord = self_governing_dominion_vu
+            num_of_ports = 40
+            capital_scope = {
+                NOT = {
+                    superregion = india_superregion
+                    superregion = china_superregion
+                    region = japan_region
+                    continent = oceania
+                    superregion = east_indies_superregion
+                    continent = africa
+                }
+            }
+            NOT = {
+                exists = DW1
+            }
+            num_of_owned_provinces_with = {
+                value = 10
+                vu_province_in_west_afrika = yes
+            }
+        }
+        provinces_to_highlight = {
+            vu_province_in_west_afrika = yes
+            has_discovered = ROOT
+        }
+        allow = {
+            treasury = 3000
+            is_at_war = no
+            OR = {
+                has_idea_group = expansion_ideas
+                has_idea_group = exploration_ideas
+            }
+            num_of_owned_provinces_with = {
+                value = 20
+                vu_province_in_west_afrika = yes
+            }
+        }
+        effect = {
+            add_treasury = -3000
+            custom_tooltip = ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        vu_province_in_west_afrika = yes
+                    }
+                    remove_core = ROOT
+                    add_core = DW1
+                    cede_province = DW1
+                }
+                create_subject = {
+                    subject = DW1
+                    subject_type = self_governing_dominion_vu
+                }
+                DW1 = {
+                    add_treasury = 3000
+                    add_truce_with = ROOT
+                    change_primary_culture = ROOT
+                    change_religion = ROOT
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = western
+                                    technology_group = english_tech_group
+                                    technology_group = french_tech_group
+                                    technology_group = german_tech_group
+                                    technology_group = italian_tech_group
+                                    technology_group = bohemian_tech_group
+                                    technology_group = scandinavian_tech_group
+                                    technology_group = spanish_tech_group
+                                    technology_group = portuguese_tech_group
+                                    technology_group = roman_tech_group
+                                    technology_group = dutch_tech_group
+                                    technology_group = swiss_tech_group
+                                }
+                                NOT = {
+                                    unit_type = western
+                                }
+                            }
+                        }
+                        change_unit_type = western
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = russian_tech_group
+                                    technology_group = bulgarian_tech_group
+                                    technology_group = polish_tech_group
+                                    technology_group = eastern
+                                    technology_group = byzantine_tech_group
+                                    technology_group = hungarian_tech_group
+                                    primary_culture = wendish
+                                    primary_culture = polabian_culture
+                                }
+                                NOT = {
+                                    unit_type = eastern
+                                }
+                            }
+                        }
+                        change_unit_type = eastern
+                    }
+                    else = {
+                        if = {
+                            limit = {
+                                ROOT = {
+                                    OR = {
+                                        technology_group = ottoman
+                                        technology_group = muslim
+                                        technology_group = persian_tech_group
+                                    }
+                                    NOT = {
+                                        unit_type = muslim
+                                    }
+                                }
+                            }
+                            change_unit_type = muslim
+                        }
+                    }
+                    define_ruler = {
+                        culture = ROOT
+                        religion = ROOT
+                    }
+                    adopt_reform_progress = ROOT
+                    every_province = {
+                        limit = {
+                            has_discovered = ROOT
+                        }
+                        discover_country = PREV
+                    }
+                }
+            }
+        }
+    }
+    create_dominion_in_east_africa = {
+        potential = {
+            ai = no
+            is_subject = no
+            can_be_overlord = self_governing_dominion_vu
+            num_of_ports = 40
+            capital_scope = {
+                NOT = {
+                    superregion = india_superregion
+                    superregion = china_superregion
+                    region = japan_region
+                    continent = oceania
+                    superregion = east_indies_superregion
+                    continent = africa
+                }
+            }
+            NOT = {
+                exists = DA1
+            }
+            num_of_owned_provinces_with = {
+                value = 10
+                vu_province_in_ost_afrika = yes
+            }
+        }
+        provinces_to_highlight = {
+            vu_province_in_ost_afrika = yes
+            has_discovered = ROOT
+        }
+        allow = {
+            treasury = 3000
+            is_at_war = no
+            OR = {
+                has_idea_group = expansion_ideas
+                has_idea_group = exploration_ideas
+            }
+            num_of_owned_provinces_with = {
+                value = 20
+                vu_province_in_ost_afrika = yes
+            }
+        }
+        effect = {
+            add_treasury = -3000
+            custom_tooltip = ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        vu_province_in_ost_afrika = yes
+                    }
+                    remove_core = ROOT
+                    add_core = DA1
+                    cede_province = DA1
+                }
+                create_subject = {
+                    subject = DA1
+                    subject_type = self_governing_dominion_vu
+                }
+                DA1 = {
+                    add_treasury = 3000
+                    add_truce_with = ROOT
+                    change_primary_culture = ROOT
+                    change_religion = ROOT
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = western
+                                    technology_group = english_tech_group
+                                    technology_group = french_tech_group
+                                    technology_group = german_tech_group
+                                    technology_group = italian_tech_group
+                                    technology_group = bohemian_tech_group
+                                    technology_group = scandinavian_tech_group
+                                    technology_group = spanish_tech_group
+                                    technology_group = portuguese_tech_group
+                                    technology_group = roman_tech_group
+                                    technology_group = dutch_tech_group
+                                    technology_group = swiss_tech_group
+                                }
+                                NOT = {
+                                    unit_type = western
+                                }
+                            }
+                        }
+                        change_unit_type = western
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    technology_group = russian_tech_group
+                                    technology_group = bulgarian_tech_group
+                                    technology_group = polish_tech_group
+                                    technology_group = eastern
+                                    technology_group = byzantine_tech_group
+                                    technology_group = hungarian_tech_group
+                                    primary_culture = wendish
+                                    primary_culture = polabian_culture
+                                }
+                                NOT = {
+                                    unit_type = eastern
+                                }
+                            }
+                        }
+                        change_unit_type = eastern
+                    }
+                    else = {
+                        if = {
+                            limit = {
+                                ROOT = {
+                                    OR = {
+                                        technology_group = ottoman
+                                        technology_group = muslim
+                                        technology_group = persian_tech_group
+                                    }
+                                    NOT = {
+                                        unit_type = muslim
+                                    }
+                                }
+                            }
+                            change_unit_type = muslim
+                        }
+                    }
+                    define_ruler = {
+                        culture = ROOT
+                        religion = ROOT
+                    }
+                    adopt_reform_progress = ROOT
+                    every_province = {
+                        limit = {
+                            has_discovered = ROOT
+                        }
+                        discover_country = PREV
+                    }
+                }
+            }
+        }
+    }
+}

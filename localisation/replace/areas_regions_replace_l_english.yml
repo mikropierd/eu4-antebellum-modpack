@@ -1,0 +1,302 @@
+﻿l_english:
+ #AREAS
+ alfold_area: "West Alföld"
+
+ #amapa_area: "Amapá"
+ 
+ amazon_area: "Amazonas"
+
+ arakan_area: "Arakan"
+ arakan_area_name: "Arakan"
+ arakan_area_adj: "Arakanese"
+
+ bahama_channel_area: "Antillas Mayores"
+ bahama_channel_area_name: "Antillas Mayores"
+ bahama_channel_area_adj: "Antillas Mayores"
+
+ bohemia_area: "Pardubice"
+ bohemia_area_name: "Pardubice"
+ bohemia_area_adj: "Pardubician"
+
+ bourgogne_area: "Burgundy"
+
+ brittany_area: "Upper Brittany"
+ brittany_area_name: "Upper Brittany"
+ brittany_area_adj: "Upper Breton"
+
+ caribbean_sea_area: "West Caribbean Sea"
+ caribbean_sea_area_name: "West Caribbean Sea"
+ caribbean_sea_area_adj: "West Caribbean Sea"
+
+ castille_area: "Old Castile"
+ castille_area_name: "Old Castile"
+ castille_area_adj: "Old Castilian"
+
+ caucasia_region: "North Caucasia"
+ caucasia_region_name: "North Caucasia"
+ caucasia_region_adj: "North Caucasian"
+
+ central_italy_area: "Marche"
+
+ central_poland_area: "Sieradz"
+
+ central_thai_area: "Ayutthaya"
+ central_thai_area_name: "Ayutthaya"
+ central_thai_area_adj: "Ayutthayan"
+
+ chindwin_area: "Hsenwi"
+ chindwin_area_name: "Hsenwi"
+ chindwin_area_adj: "Hsenwi"
+
+ corsica_sardinia_area: "Corsica"
+ corsica_sardinia_area_name: "Corsica"
+ corsica_sardinia_area_adj: "Corsican"
+
+ #diamantina_area: "Diamantina"
+
+ east_prussia_area: "Varmia"
+ east_prussia_area_name: "Varmia"
+ east_prussia_area_adj: "Varmian"
+
+ east_sahara_area: "East Saharan"
+ east_sahara_area_name: "East Saharan"
+ east_sahara_area_adj: "East Saharan"
+
+ east_sulawesi_area: "Eastern Sulawesi"
+ east_sulawesi_area_name: "Eastern Sulawesi"
+ east_sulawesi_area_adj: "Eastern Sulawesi"
+
+ goias_area: "Goiás"
+
+ grao_para_area: "Pará"
+
+ #guapore_area: "Guapore"
+
+ gulf_of_siam_area: "Gulf of Siam"
+ gulf_of_siam_area_name: "Gulf of Siam"
+ gulf_of_siam_area_adj: "Gulf of Siam"
+
+ gulf_stream_area: "Eastern Seaboard"
+ gulf_stream_area_name: "Eastern Seaboard"
+ gulf_stream_area_adj: "Eastern Seaboard"
+
+ guyenne_area: "Guyenne"
+ guyenne_area_name: "Guyenne"
+ guyenne_area_adj: "Guyenne"
+
+ haida_gwaii_area: "Haida Gwaii"
+ haida_gwaii_area_name: "Haida Gwaii"
+ haida_gwaii_area_adj: "Haida Gwaiian"
+
+ karenni_area: "Myelat"
+ karenni_area_name: "Myelat"
+ karenni_area_adj: "Myelat"
+
+ languedoc_area: "East Languedoc"
+ languedoc_area_name: "East Languedoc"
+ languedoc_area_adj: "East Languedoc"
+
+ loire_area: "Orléanais"
+ loire_area_name: "Orléanais"
+ loire_area_adj: "Orléanais"
+
+ lombardy_area: "West Lombardy"
+
+ lower_andalucia_area: "Lower Andalusia"
+ lower_andalucia_area_name: "Lower Andalusia"
+ lower_andalucia_area_adj: "Lower Andalusia"
+
+ lower_rhineland_area: "South Rhine"
+ 
+ lower_saxony_area: "Hannover"
+ #lower_swabia_area: "Lower Swabia"
+
+ malacca_straits_area: "Straits of Malacca"
+ malacca_straits_area_name: "Straits of Malacca"
+ malacca_straits_area_adj: "Straits of Malacca"
+
+ malaya_area: "Pahang"
+ malaya_area_name: "Pahang"
+ malaya_area_adj: "Pahangite"
+
+ maranhao_area: "Maranhão"
+
+ massif_central_area: "Auvergne"
+ massif_central_area_name: "Auvergne"
+ massif_central_area_adj: "Auvergnat"
+
+ mekong_area: "Mekong Delta"
+ mekong_area_name: "Mekong Delta"
+ mekong_area_adj: "Mekong"
+
+ melanesia_area: "Solomons"
+ melanesia_area_name: "Solomons"
+ melanesia_area_adj: "Soloman"
+
+ minsk_area: "White Ruthenia"
+ minsk_area_name: "White Ruthenia"
+ minsk_area_adj: "White Ruthenian"
+
+ misiones_area: "Entre Ríos"
+
+ molluca_area: "Southern Maluku"
+ molluca_area_name: "Southern Maluku"
+ molluca_area_adj: "Southern Maluku"
+
+ murray_river_area: "South Australia"
+ murray_river_area_name: "South Australia"
+ murray_river_area_adj: "South Australian"
+
+ normandy_area: "Upper Normandy"
+ normandy_area_name: "Upper Normandy"
+ normandy_area_adj: "Upper Norman"
+
+ northern_australia_area: "Queensland"
+ northern_australia_area_name: "Queensland"
+ northern_australia_area_adj: "Queenslander"
+
+ northern_england_area: "North East"
+ northern_england_area_name: "North East"
+ northern_england_area_adj: "North East"
+
+ northern_thai_area: "Lan Na"
+ northern_thai_area_name: "Lan Na"
+ northern_thai_area_adj: "Lanna"
+
+ north_brabant_area: "Guelders"
+
+ #northern_saxony_area: "Altmark"
+
+ #ofaie_area: "Ofaie"
+
+ orleans_area: "Anjou-Maine"
+
+ piaui_area: "Piauí"
+
+ philipine_sea_area: "Mariana Trench"
+ philipine_sea_area_name: "Mariana Trench"
+ philipine_sea_area_adj: "Mariana Trench"
+
+ po_valley_area: "East Lombardy"
+
+ #pontal_area: "Pontal"
+
+ pyrenees_area: "Lower Gascony"
+ pyrenees_area_name: "Lower Gascony"
+ pyrenees_area_adj: "Lower Gascony"
+
+ red_river_delta_area: "Tonkin"
+ red_river_delta_area_name: "Tonkin"
+ red_river_delta_area_adj: "Tonkinese"
+
+ sao_paolo_area: "São Paulo"
+
+ sargasso_sea_area: "Mid-Atlantic Ridge"
+ sargasso_sea_area_name: "Mid-Atlantic Ridge"
+ sargasso_sea_area_adj: "Mid-Atlantic Ridge"
+
+ shan_hill_area: "Salween" #Alternatively Kengtung
+ shan_hill_area_name: "Salween"
+ shan_hill_area_adj: "Salween"
+
+ skeleton_coast_area: "Skeleton Coast"
+ skeleton_coast_area_name: "Skeleton Coast"
+ skeleton_coast_area_adj: "Skeletonian Coast"
+
+ slovakia_area: "Lower Slovakia"
+
+ south_sulawesi_area: "Southern Sulawesi"
+ south_sulawesi_area_name: "Southern Sulawesi"
+ south_sulawesi_area_adj: "Southern Sulawesi"
+
+ spice_islands_area: "Northern Maluku"
+ spice_islands_area_name: "Northern Maluku"
+ spice_islands_area_adj: "Northern Maluku"
+
+ sulawesi_area: "Northern Sulawesi"
+ sulawesi_area_name: "Northern Sulawesi"
+ sulawesi_area_adj: "Northern Sulawesi"
+
+ taiwan_area: "Formosa"
+ taiwan_area_name: "Formosa"
+ taiwan_area_adj: "Formosa"
+
+ toledo_area: "La Mancha"
+ toledo_area_name: "La Mancha"
+ toledo_area_adj: "Manchego"
+
+ top_end_area: "Northern Territories"
+ top_end_area_name: "Northern Territories"
+ top_end_area_adj: "Top Ender"
+
+ upper_andalucia_area: "Upper Andalusia"
+ upper_andalucia_area_name: "Upper Andalusia"
+ upper_andalucia_area_adj: "Upper Andalusia"
+
+ #upper_swabia_area: "Upper Swabia"
+
+ vietnam_area: "Annam"
+ vietnam_area_name: "Annam"
+ vietnam_area_adj: "Annamite"
+ 
+ wallonia_area: "Hainaut"
+ wallonia_area_name: "Hainaut"
+ wallonia_area_adj: "Hainaut"
+
+ wales_area: "Gwynedd"
+ wales_area_name: "Gwynedd"
+ wales_area_adj: "Gwynedd"
+
+ western_australia_area: "Western Australia"
+ western_australia_area_name: "Western Australia"
+ western_australia_area_adj: "Western Australian"
+
+ west_burgundy_area: "Franche-Comté"
+
+ west_sao_paolo_area: "Paraná"
+
+ #western_atlantic_area: "Bermuda Triangle"
+ #western_atlantic_area_name: "Bermuda Triangle"
+ #western_atlantic_area_adj: "Bermuda Triangle"
+
+ #REGIONS
+ banda_sea_region: "Banda Sea"
+
+ brazil_region: "São Paulo"
+
+ caribbean_sea_region: "West Caribbean Sea"
+
+ celebes_sea_region: "Celebes Sea"
+
+ central_atlantic_region: "Central Atlantic"
+
+ chinese_coast_region: "East China Sea"
+
+ east_china_sea_region: "East Philippine Sea"
+
+ java_sea_region: "Java Sea"
+
+ malacca_straits_region: "Malacca Straits"
+
+ #north_east_pacific_region: "North Eastern Pacific"
+
+ #north_west_pacific_region: "North Western Pacific"
+
+ south_china_sea_region: "South China Sea"
+
+ #south_east_pacific_region: "South Eastern Pacific"
+
+ south_indian_ocean_region: "Southern Indian Ocean"
+
+ south_west_pacific_region: "South Western Pacific"
+
+ #western_atlantic_region: "Bermuda Triangle"
+
+ west_african_sea_region: "West African Coast"
+ 
+ #SUPERREGIONS
+ africa_superregion: "Africa"
+
+ near_east_superregion: "Middle East"
+
+ south_america_superregion: "South America"

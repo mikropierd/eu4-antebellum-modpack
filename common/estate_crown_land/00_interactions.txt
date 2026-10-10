@@ -1,15 +1,13 @@
 interaction = {
-	key = sale_of_titles
-	random_seed = crown_land_share
+    key = sale_of_titles
+    random_seed = crown_land_share
 	cooldown_months = 60
-	trigger = {
-		crown_land_share = 10
-		NOT = {
-			num_of_rebel_armies = 1
-		}
-		NOT = {
-			num_of_rebel_controlled_provinces = 1
-		}
+
+    trigger = {
+        crown_land_share = 10
+        NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		hidden_trigger = { has_any_estates = yes }
 		if = {
 			limit = {
 				has_wallachia_purged_the_estates = yes
@@ -28,11 +26,8 @@ interaction = {
 				}
 			}
 		}
-		hidden_trigger = {
-			has_any_estates = yes
-		}
-	}
-	effect = {
+    }
+    effect = {
 		if = {
 			limit = {
 				religion = inti
@@ -45,60 +40,38 @@ interaction = {
 		}
 		else_if = {
 			limit = {
+				NOT = { has_government_attribute = no_crownland_money_loss_to_age } 
+				NOT = { has_country_flag = enable_full_ducat_gain_from_selling_crownland_flag }
 				has_wallachia_purged_the_estates = yes
 			}
-			sell_crownland_modified_by_purges = yes
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					has_government_attribute = no_crownland_money_loss_to_age
-				}
-				NOT = {
-					has_country_flag = enable_full_ducat_gain_from_selling_crownland_flag
-				}
-			}
 			if = {
-				limit = {
-					current_age = age_of_discovery
-				}
+				limit = { current_age = age_of_discovery }
 				add_years_of_estate_land_income = 2.5
 			}
 			else_if = {
-				limit = {
-					current_age = age_of_reformation
-				}
-				add_years_of_estate_land_income = 2
+				limit = { current_age = age_of_reformation }
+				add_years_of_estate_land_income = 2.0
 			}
 			else_if = {
-				limit = {
-					current_age = age_of_absolutism
-				}
+				limit = { current_age = age_of_absolutism }
 				add_years_of_estate_land_income = 1.5
 			}
 			else_if = {
-				limit = {
-					current_age = age_of_revolutions
-				}
-				add_years_of_estate_land_income = 1
+				limit = { current_age = age_of_revolutions }
+				add_years_of_estate_land_income = 1.0
 			}
+			sell_crownland_modified_by_purges = yes
 		}
 		else = {
 			add_years_of_estate_land_income = 2.5
 		}
 		if = {
 			limit = {
-				NOT = {
-					has_government_attribute = can_sell_crownland_to_single_estates
-				}
-				NOT = {
-					has_country_flag = can_sell_crownland_to_estates_targeted_flag
-				}
+				NOT = { has_government_attribute = can_sell_crownland_to_single_estates }
+				NOT = { has_country_flag = can_sell_crownland_to_estates_targeted_flag }
 			}
 			custom_tooltip = ESTATES_SALE_OF_TITLES_DESC
-			give_estate_land_share_gigantic = {
-				estate = all
-			}
+			give_estate_land_share_gigantic = { estate = all }
 			add_estate_loyalty = {
 				estate = all
 				loyalty = 10
@@ -124,42 +97,32 @@ interaction = {
 		}
 		set_country_flag = recent_land_distribution
 		on_sale_of_titles_effect = yes
-	}
+    }
 	ai_will_do = {
 		factor = 25
 		modifier = {
 			factor = 0
 			OR = {
-				NOT = {
-					crown_land_share = 25
-				}
+				NOT = { crown_land_share = 25 }
 				AND = {
 					is_absolutism_active = yes
-					NOT = {
-						crown_land_share = 40
-					}
+					NOT = { crown_land_share = 40 }
 				}
 			}
 		}
 		modifier = {
 			factor = 0.8
 			OR = {
-				NOT = {
-					crown_land_share = 35
-				}
+				NOT = { crown_land_share = 35 }
 				AND = {
 					is_absolutism_active = yes
-					NOT = {
-						crown_land_share = 50
-					}
+					NOT = { crown_land_share = 50 }
 				}
 			}
 		}
 		modifier = {
 			factor = 0
-			NOT = {
-				num_of_loans = 1
-			}
+			NOT = { num_of_loans = 1 }
 		}
 		modifier = {
 			factor = 0.5
@@ -238,40 +201,32 @@ interaction = {
 }
 
 interaction = {
-	key = summon_the_diet
-	random_seed = random
+    key = summon_the_diet
+    random_seed = random
 	cooldown_months = 60
-	trigger = {
-		NOT = {
-			has_any_active_estate_agenda = yes
-		}
-		hidden_trigger = {
-			has_any_estates = yes
-		}
-		NOT = {
-			has_government_attribute = blocked_call_diet
-		}
-	}
-	effect = {
-		custom_tooltip = ESTATES_SUMMON_THE_DIET_DESC
-		hidden_effect = {
-			country_event = {
-				id = estate_privileges_and_agendas_events.3
-			}
+
+    trigger = {
+        NOT = { has_any_active_estate_agenda = yes }
+		hidden_trigger = { has_any_estates = yes }
+		NOT = { has_government_attribute = blocked_call_diet }
+    }
+
+    effect = {
+        custom_tooltip = ESTATES_SUMMON_THE_DIET_DESC
+        hidden_effect = {
+	       country_event = { id = estate_privileges_and_agendas_events.3 }
 			if = {
 				limit = {
 					ai = yes
 				}
 				random_list = {
-					1 = {
-					}
-					9 = {
-						set_country_flag = auto_complete_estate_agenda_all
-					}
+					1 = {}
+					9 = { set_country_flag = auto_complete_estate_agenda_all }
 				}
 			}
-		}
-		custom_tooltip = SEPERATOR_TOOLTIP
+        }
+        custom_tooltip = SEPERATOR_TOOLTIP
+        
 		if = {
 			limit = {
 				has_country_flag = recent_estate_agenda
@@ -279,12 +234,9 @@ interaction = {
 			clr_country_flag = recent_estate_agenda
 		}
 		set_country_flag = recent_estate_agenda
-		if = {
-			limit = {
-				NOT = {
-					has_government_attribute = diet_increases_not_influence
-				}
-			}
+
+        if = {
+			limit = { NOT = { has_government_attribute = diet_increases_not_influence } }
 			add_estate_influence_modifier = {
 				estate = all
 				desc = EST_VAL_DIET_SUMMONED
@@ -305,7 +257,7 @@ interaction = {
 			add_scaled_republican_tradition = 2
 		}
 		on_summon_the_diet_effect = yes
-	}
+    }
 	ai_will_do = {
 		# Only use if it will bring loyalty above 50 for all estates
 		# AI will most likely fail to complete the task
@@ -313,6 +265,7 @@ interaction = {
 		modifier = {
 			factor = 10
 			can_use_crown_land_interaction = seize_land
+			
 			estate_loyalty = {
 				estate = all
 				loyalty = 45.5
@@ -338,49 +291,31 @@ interaction = {
 }
 
 interaction = {
-	key = seize_land
-	random_seed = random
+    key = seize_land
+    random_seed = random
 	cooldown_months = 60
-	trigger = {
-		hidden_trigger = {
-			has_any_estates = yes
-		}
-		if = {
-			limit = {
-				has_government_mechanic = wallachian_terror_mechanic
-			}
-			OR = {
-				has_country_modifier = wallachian_terror_purging_the_estate_elites
-				is_at_war = no
-			}
-		}
-		else = {
-			is_at_war = no
-		}
-		NOT = {
-			crown_land_share = 100
-		}
-		NOT = {
-			num_of_rebel_armies = 1
-		}
-		NOT = {
-			num_of_rebel_controlled_provinces = 1
-		}
+
+    trigger = {
+		hidden_trigger = { has_any_estates = yes }
+        NOT = { crown_land_share = 100 }
+        NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 		#The following if/else_if-statements match those in estate_privileges_and_agendas_events.2.a. If those change, these should too.
 		if = {
 			limit = {
 				OR = {
 					has_estate_privilege = estate_brahmins_statutory_rights
 					AND = {
-						religion = hinduism
+						OR ={
+							religion = hinduism
+							religion = surya_majapahit
+						}
 						has_estate = estate_brahmins
 					}
 				}
 				has_estate = estate_brahmins
 			}
-			NOT = {
-				has_estate_privilege = estate_brahmins_statutory_rights
-			}
+			NOT = { has_estate_privilege = estate_brahmins_statutory_rights }
 		}
 		else_if = {
 			limit = {
@@ -392,9 +327,7 @@ interaction = {
 					}
 				}
 			}
-			NOT = {
-				has_estate_privilege = estate_nobles_statutory_rights
-			}
+			NOT = { has_estate_privilege = estate_nobles_statutory_rights }
 		}
 		else_if = {
 			limit = {
@@ -406,9 +339,7 @@ interaction = {
 					}
 				}
 			}
-			NOT = {
-				has_estate_privilege = estate_burghers_statutory_rights
-			}
+			NOT = { has_estate_privilege = estate_burghers_statutory_rights }
 		}
 		else_if = {
 			limit = {
@@ -420,20 +351,25 @@ interaction = {
 					}
 				}
 			}
-			NOT = {
-				has_estate_privilege = estate_church_statutory_rights
-			}
+			NOT = { has_estate_privilege = estate_church_statutory_rights }
+		}
+        is_at_war = no
+		if = {
+			limit = { has_government_attribute = can_not_seize_land }
+			NOT = { has_government_attribute_short_desc = can_not_seize_land }
 		}
 		if = {
 			limit = {
-				has_government_attribute = can_not_seize_land
+				has_government_mechanic = wallachian_terror_mechanic
 			}
-			NOT = {
-				has_government_attribute_short_desc = can_not_seize_land
+			OR = {
+				has_country_modifier = wallachian_terror_purging_the_estate_elites
+				is_at_war = no
 			}
 		}
-	}
-	effect = {
+    }
+    effect = {
+
 		if = {
 			limit = {
 				has_country_flag = recent_land_seizure
@@ -453,17 +389,11 @@ interaction = {
 		}
 		else_if = {
 			limit = {
-				NOT = {
-					has_government_attribute = can_seize_crownland_of_single_estates
-				}
-				NOT = {
-					has_country_flag = can_seize_crownland_to_estates_targeted_flag
-				}
+				NOT = { has_government_attribute = can_seize_crownland_of_single_estates }
+				NOT = { has_country_flag = can_seize_crownland_to_estates_targeted_flag }
 			}
-			custom_tooltip = ESTATES_SEIZE_LAND_DESC
-			take_estate_land_share_massive = {
-				estate = all
-			}
+				custom_tooltip = ESTATES_SEIZE_LAND_DESC
+				take_estate_land_share_massive = { estate = all }
 			custom_tooltip = SEPERATOR_TOOLTIP
 			if = {
 				limit = {
@@ -495,11 +425,7 @@ interaction = {
 			custom_tooltip = ESTATES_SEIZE_LAND_EXCEPTION_DESC
 			re_add_loyalty_from_seized_land = yes
 			if = {
-				limit = {
-					NOT = {
-						has_government_attribute = seizing_land_no_rebels
-					}
-				}
+				limit = { NOT = { has_government_attribute = seizing_land_no_rebels } }
 				custom_tooltip = seize_land_rebels_tt
 			}
 			if = {
@@ -515,8 +441,9 @@ interaction = {
 						loyalty = 30
 					}
 				}
+				add_treasury = 100
 			}
-			else_if = {
+			else_if = { 
 				limit = {
 					NOT = {
 						estate_loyalty = {
@@ -527,7 +454,7 @@ interaction = {
 					estate_influence = {
 						estate = all
 						influence = 1
-					}
+					}				
 				}
 				spawn_rebels_seize_land_switch = yes
 			}
@@ -544,9 +471,7 @@ interaction = {
 			add_karma = -10
 		}
 		if = {
-			limit = {
-				has_government_attribute = theocratic_monarchy_mechanic
-			}
+			limit = { has_government_attribute = theocratic_monarchy_mechanic }
 			change_statists_vs_orangists = 0.05
 		}
 		on_seize_land_effect = yes
@@ -588,30 +513,25 @@ interaction = {
 		}
 		modifier = {
 			factor = 0.2
+
 			# This custom event target is set by code. If ai_will_do is higher when this is set (and >50) than when it isn't,
 			# the AI will raise maintenance and wait until the event target doesn't increase the ai_will_do score
-			NOT = {
-				has_saved_event_target = ai_suppose_full_maintenance
-			}
+			NOT = { has_saved_event_target = ai_suppose_full_maintenance }
+
 			NOT = {
 				estate_loyalty = {
 					estate = all
 					loyalty = 50
 				}
 			}
+
 			OR = {
-				NOT = {
-					land_maintenance = 0.9
-				}
+				NOT = { land_maintenance = 0.9 }
 				num_mothballed_forts = 1
-				NOT = {
-					all_regiments_morale_percent = 90
-				}
+				NOT = { all_regiments_morale_percent = 90 }
 				any_owned_province = {
 					fort_level = 1
-					NOT = {
-						garrison = 400
-					}
+					NOT = { garrison = 400 }
 				}
 			}
 		}
@@ -619,8 +539,7 @@ interaction = {
 			factor = 0
 			crown_land_share = 30
 			has_any_disaster = yes
-			NOT = {
-				#sorry, scripted triggers glitched out
+			NOT = { #sorry, scripted triggers glitched out
 				OR = {
 					has_disaster = estate_brahmins_disaster
 					has_disaster = estate_burghers_disaster
@@ -646,39 +565,22 @@ interaction = {
 				}
 			}
 			if = {
-				limit = {
-					num_of_cities = 50
-				}
-				NOT = {
-					army_size_percentage = 0.2
-				}
+				limit = { num_of_cities = 50 }
+				NOT = { army_size_percentage = 0.2 }
 			}
 			else_if = {
-				limit = {
-					num_of_cities = 25
-				}
-				NOT = {
-					army_size_percentage = 0.3
-				}
+				limit = { num_of_cities = 25 }
+				NOT = { army_size_percentage = 0.3 }
 			}
 			else = {
-				NOT = {
-					army_size_percentage = 0.5
-				}
+				NOT = { army_size_percentage = 0.5 }
 			}
 			if = {
-				limit = {
-					is_emperor = yes
-				}
-				NOT = {
-					army_size = 50
-				}
+				limit = { is_emperor = yes }
+				NOT = { army_size = 50 }
 			}
-			NOT = {
-				army_size = 100
-			}
-			NOT = {
-				#sorry, scripted triggers glitched out
+			NOT = { army_size = 100 }
+			NOT = { #sorry, scripted triggers glitched out
 				OR = {
 					has_disaster = estate_brahmins_disaster
 					has_disaster = estate_burghers_disaster
@@ -741,43 +643,29 @@ interaction = {
 		modifier = {
 			factor = 1.5
 			is_absolutism_active = yes
-			NOT = {
-				num_of_rebel_armies = 1
-			}
+			NOT = { num_of_rebel_armies = 1 }
 		}
 		modifier = {
 			factor = 1.5
 			is_absolutism_active = yes
-			NOT = {
-				average_unrest = 1
-			}
-			NOT = {
-				num_of_rebel_armies = 1
-			}
+			NOT = { average_unrest = 1 }
+			NOT = { num_of_rebel_armies = 1 }
 		}
 		modifier = {
 			factor = 2
-			NOT = {
-				crown_land_share = 20
-			}
+			NOT = { crown_land_share = 20 }
 		}
 		modifier = {
 			factor = 1.5
-			NOT = {
-				crown_land_share = 30
-			}
+			NOT = { crown_land_share = 30 }
 		}
 		modifier = {
 			factor = 1.2
-			NOT = {
-				crown_land_share = 35
-			}
+			NOT = { crown_land_share = 35 }
 		}
 		modifier = {
 			factor = 1.2
-			NOT = {
-				crown_land_share = 50
-			}
+			NOT = { crown_land_share = 50 }
 		}
 		modifier = {
 			factor = 1.1

@@ -1,18 +1,20 @@
-#Country Name: Please see filename.
+#Macedonia
 
-graphical_culture = easterngfx
+graphical_culture = greekgfx #easterngfx
 
-color = { 0 44 109 }
+color = { 20 20 20 }
+
+revolutionary_colors = { 14 0 14 }
 
 historical_idea_groups = {
-	defensive_ideas
-	diplomatic_ideas
-	offensive_ideas
+    offensive_ideas
 	administrative_ideas
-	trade_ideas
-	quality_ideas
-	innovativeness_ideas
 	religious_ideas
+	innovativeness_ideas
+	aristocracy_ideas
+	quality_ideas
+	diplomatic_ideas
+	trade_ideas
 }
 
 historical_units = {
@@ -35,164 +37,84 @@ historical_units = {
 }
 
 monarch_names = {
-	"Eurysthenes" = 1
-	"Agis" = 1
-	"Labotas" = 1
-	"Agesilaos" = 1
-	"Polydoros" = 1
-	"Leon" = 1
-	"Anaxandridas" = 1
-	"Leonidas" = 1
-	"Akrotatos" = 1
-	"Areus" = 1
-	"Pleistonanax" = 1
-	"Damaratos" = 1
-	"Ariston" = 1
-	"Eudamidas" = 1
-	"Diotimus" = 1
-	"Telekles" = 1
-	"Anaxicrates" = 1
-	"Aristonymos" = 1
-	"Philokrates" = 1
-	"Democles" = 1
-	"Eubulos" = 1
-	"Diognetus" = 1
-	"Arrheneides" = 1
-	"Thymochares" = 1
-	"Pheidostratos" = 1
-	"Lysiades" = 1
-	"Eurykleides" = 1
-	"Nicetes" = 1
-	"Demetrios" = 1
-	"Philocrates" = 1
-	"Diognetus" = 1
-	"Cranaus" = 1
-	"Amphictyon" = 1
-	"Erechtheus" = 1
-	"Aegeus" = 1
-	"Aristocles" = 1
-	"Critias" = 1
-	"Eucrates" = 1
-	"Solon" = 1
-	"Philippus" = 1
-	"Archestratidas" = 1
-	"Hippocleides" = 1
-	"Thericles" = 1
-	"Hippias" = 1
-	"Cleisthenes" = 1
-	"Pisistratus" = 1
-	"Hermocreon" = 1
-	"Aristides" = 1
-	"Philocrates" = 1
-	"Hypsichides" = 1
-	"Phaedon" = 1
-	"Euphemus" = 1
-	"Tisandrus" = 1
-	"Alexias" = 1
-	"Demostratos" = 1
-	"Charisandrus" = 1
-	"Lysimachides" = 1
-	"Euainetos" = 1
-	"Kimon" = 1
-	"Diotimus" = 1
-	"Telekles" = 1
-	"Anaxicrates" = 1
-	"Aristonymos" = 1
-	"Philokrates" = 1
-	"Democles" = 1
-	"Eubulos" = 1
-	"Diognetus" = 1
-	"Arrheneides" = 1
-	"Thymochares" = 1
-	"Pheidostratos" = 1
-	"Lysiades" = 1
-	"Eurykleides" = 1
-	"Nicetes" = 1
-	"Kleomenes" = 1
-    "Pausanias" = 1
-    "Kleombrotos" = 1
-    "Prokles" = 1
-    "Soos" = 1
-    "Eurypon" = 1
-    "Polydektes" = 1
-    "Eunomos" = 1
-    "Charilaos" = 1
-    "Nikander" = 1
-    "Theopompos" = 1
-    "Zeuxidamos" = 1
-    "Anaxidamos" = 1
-    "Archidamos" = 1
-    "Anaxilas" = 1
-    "Leotychidas" = 1
-    "Hippokratides" = 1
-    "Agasikles" = 1
-    "Lykourgos" = 1
-    "Pelops" = 1
-    "Machanidas" = 1
-    "Nabis" = 1
-    "Lakonikos" = 1
-    "Xanthippos" = 1
-    "Menelaos" = 1
-    "Lysander" = 1
-    "Chilon" = 1
-    "Chionis" = 1
-    "Dorieus" = 1
-    "Pleistarchos" = 1
-    "Agesipolis" = 1
-    "Kleonymos" = 1
-	"Achaia" = -1
-	"Agapia" = -1
-	"Anteia" = -1
-	"Basiane" = -1
-	"Caleope" = -1
-	"Chione" = -1
-	"Demophile" = -1
-	"Dynamene" = -1
-	"Harmonia" = -1
-	"Heliodora" = -1
-	"Hyrmina" = -1
-	"Ione" = -1
-	"Kassandra" = -1
-	"Kleopatra" = -1
-	"Klymene" = -1
-	"Lasthena" = -1
-	"Marpessa" = -1
-	"Nikaia" = -1
-	"Pelopia" = -1
-	"Rhea" = -1
-	"Rhodope" = -1
-	"Sophia" = -1
-	"Thaleia" = -1
-	"Zita" = -1
+	"Georgios #0" = 40
+	"Alexandros #0" = 20
+	"Konstantinos #0" = 20
+	"Pavlos #0" = 15
+	"Andreas #0" = 10
+	"Nikolaos #0" = 10
+
+	"Alexandra #0" = -10
+	"Antonia #0" = -5
+	"Anna #0" = -5
+	"Artemisia #0" = -1
+	"Eirene #0" = -1
+	"Euphrosyne #0" = -1
+	"Laskarina #0" = -1
+	"Manto #0" = -1
+	"Thalia #0" = -1
+	"Sevasti #0" = -1
+	"Sophia #0" = -1
+	
+
+	"Aineias #0" = 0
+	"Alexeios #0" = 0
+	"Ambrosios #0" = 0
+	"Bartholomaios #0" = 0
+	"Basileios #0" = 0
+	"Chrysanthos #0" = 0
+	"David #0" = 0
+	"Dimitrios #0" = 0
+	"Diogenes #0" = 0
+	"Dionysos #0" = 0
+	"Eirenaios #0" = 0
+	"Elpidios #0" = 0
+	"Gregorios #0" = 0
+	"Hektor #0" = 0
+	"Herakles #0" = 0
+	"Iason #0" = 0
+	"Ioannes #0" = 0
+	"Kastor #0" = 0
+	"Lambros #0" = 0
+	"Manuel #0" = 0
+	"Matthaios #0" = 0
+	"Nestor #0" = 0
+	"Nikomedes #0" = 0
+	"Orestes #0" = 0
+	"Palaemon #0" = 0
+	"Pelagios #0" = 0
+	"Petros #0" = 0
+	"Philemon #0" = 0
+	"Philippos #0" = 0
+	"Prokopios #0" = 0
+	"Skantarios #0" = 0
+	"Stefanos #0" = 0
+	"Tasos #0" = 0
+	"Theodoros #0" = 0
+	"Thomas #0" = 0
 }
 
-leader_names = { 
-	Achaos Agatharchidos Agathos Agelaos Agenos Agesipolos Agos Aknonos Akrotatos Alexandros Alexarchos Alketos Alkimos Amantos Amnytos Amphoteros 
-	Anaxarchos Anaxikratos Anaximandros Andagoros Andromachos Andromenos Andronikos Apollodoros Aristodemos Asandros Bryaxos Charos Charidemos Chariklos 
-	Demados Eupolemos Gorgos Gylippos Hekataos  Hektos Helenos Heliodoros Helioklos Herakos Hermogenos Hippalos Hyperbatos Kalliarchos Kebalinos 
-	Kephisodotos Kleomenos Ktesiklos Leontos Leosthenos Lydiados Lykurgos Menedemos Menos Menippos Mnesidemos Nearchos Nikagoros Niketos Nikos Olympiodoros 
-	Onomarchos Onomastos Ophellos Orestos Parmenos Polyperchos Proteos Stratonos Xenophos Zeuxos Pheraeos Argead Airopos Agaos Agathoklos Agathonos Agelaos 
-	Agenoros Agisos Aischinos Aknonos Akrotatos Alkimachos Amyntos Andragoros Andromachos Andromenos Androsthenos Antenoros Antialkidas "Antigonos" Antiklos 
-	Antimachos Antiochos Antipatros Antiphatos Antiphilos Antisthenos Aphrodisos Apollodotos Apollonos Apollophanos 
-	Archagathos Archebos Archelaos Archos Archidamos Archimedos Archippos Aretos Aristarchos Aristobulos Aristomachos Aristonos 
-	Aristophanos Aristophonos Arrhabaos Arsos Artemidoros Athenodoros Attalos Audoleonos Bakchos Balakros 
-	Bikonos Bryaxos Chabros Chairestratos Chairondos Charos Charidemos Chariklos Charinos Chremos Chrysippos Damokratos Damophonos Damotelos Deimachos Deinippos 
-	Demetros Democharos Demokleides Demophanos Demosthenos Derdos Deriados Dikaiarchos Dikaos Dimnos Diodoros 
-	Diogenos Diomedos Echekratos Eisigonos Ekdemos Empedoklos Epameinondos Epandros Epikuros Epikydos Epimenos Epokillos 
-	Erigos Euainetos Euandros Eubulos Eudoxos Euhemeros Eumenos Eupolemos Eurylochos Euthydemos 
-	Euthykratos Euthykritos Euxenippos Gabras Gelonos Gorgippos Hagesandros Harpalos Hegemachos Hegesos Hekataos Hektoros 
-	Herakonos Hermarchos Hermos Hermogenos Heromenos Herophilos Hieraxos Hieronos Hiketos Hippalos Hipparchos Hippokratos Hippostratos Hyakinthos Hyperbatos Ikadionod Ismenos 
-	Kallinos Kallisthenos Kallistratos Kassandros Kebalinos Kephalonos Kephisophos Kleandros Kleanthos Klearchos 
-	Kleombrotos Koinos Krateros Kratos Lacharos Laomedonos Leonos Leonnatos Leontos Leosthenos Leostratos 
-	Leukonos Lysandros Lysimachos Lysippos Lysistratos Machanidos Machatos Makartatos Megasthenos Meleagros Memnonos 
-	Menandros Menelaos Menidos Menonos Menos Metrodoros Metronos Milonos Mnesidemos Molonos Nabos Neaichmos Nearchos Neoptolemos Nikagoros Nikandros 
-	Nikanoros Nikarchos Nikephoros Nikeratos Niketos Nikiad Nikodoros Nikokratos Nikomachos Nikomedos Nikostratos Numenos 
-	Orestos Paioniad Pairisados Pantaleonos Pantauchos Pantordanos Patroklos Pausanos Peithagoros Peithonos 
-	Peukestos Phereklos Philemonos Philetos Philinos Philippos Philoklos Philonos Philotos Phyromachos 
-	Platonos Pleistarchos Polemonos Polybiad Polydamos Polydoros Polyeuktos Polygnotos Polyperchos Poseidippos Prepelaos "Ptolemaios"
-	Pyrrhos Pythead Pythodelos Satyros "Seleukos" Simmiad Sophytos Sopolos Sosistratos Sotos Stasanoros Stilponos Stratoklos 
-	Taurionos Teisikratos Telesarchos Thearos Themistiad Theodamos Theodoros Theodotos Theokritos Theophilos 
-	Thoinonos Thrasyklos Timarchos Timoleonos Timothead Tryphonos Xenophonos Zoilos Zopyrionos Lacharos 
+leader_names = {
+	Anina Angelopoulos Androutsos Aulakos
+	Botsaris Bouboulis
+	Chatzeris Christianopoulos Chatzimoschos
+	Dalianis Doumpiotis Diakos Danglis Dagres Deligiannis Damodos
+	Flessas Farmakidis
+	Gotzias Gonemis Gouras Giatrakos Gazalis
+	Hatzipetros
+	Kapodistrias Kolokotronis Karaiskakis Kanaris Katsonis Karykes Kontares Karatzas Kriezotis Kirezis Kountouriotis Korais
+	Kairis Kyriazis Kontostavlos
+	Loukaris Livinis
+	Mavrokordatos Mavrikios Makris Mavromichalis Meletopoulos Metaxas Milios Meintanis Mavrogenes
+	Notaras
+	Pegas Patelaros Pelekasis Petrovas Panourgias Pappas Papatsonis Papazafiropoulos Psalidas Papanikolis Pinotsis
+	Ratzikotsikas
+	Serpetzoglou Skoufas Sachtouris Skourtis Stamatelopoulos Soumalis
+	Triantaphyllos Tsakalov Tsokris Tombazis
+	Vokos Verousis Vasileiou Voulgaris
+	Xanthos Xiros
+	Ypsilantis Yiannouzas
+	Zalykis Zeras
 }
 
 ship_names = {
@@ -254,6 +176,7 @@ ship_names = {
 	Pisidia Thassos Thespia Tragurion Trapeza "Agia Trapeza" Tripolis Troia Tylissos Tyra Vasilliki Zakros Vathypetra Megalopetra
 }
 
+# ===== Ante Bellum additions (not in Victorum) =====
 army_names = {
 	"Thema Thrakes" "Thema Makedonikon" "Thema Thessalonikes" "Thema Helladikon" "Thema Opsikion" "Thema Optimaton" 
 	"Thema Paphlagonia" "Thema $PROVINCE$"

@@ -1,0 +1,37 @@
+# French Government Progression Events
+# Handles tag transitions triggered by vanilla reforms that cannot
+# have effect blocks added directly (e.g. directory_republic_reform).
+# All events here are hidden and fire with a 1-month MTTH.
+# Design: Darth Modus & Prussia
+
+namespace = vu_french_progression
+
+########################################
+# EVENT 1 — FRA goes Republican        #
+# FRA adopts a republican government   #
+# (e.g. via the Revolution disaster)   #
+# and becomes Revolutionary France.    #
+########################################
+country_event = {
+	id = vu_french_progression.1
+	title = vu_french_progression.1.t
+	desc = vu_french_progression.1.d
+	picture = vu_tennis_court_oath_eventPicture
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		government = republic
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = vu_french_progression.1.a
+		change_tag = RVF
+		swap_non_generic_missions = yes
+	}
+}

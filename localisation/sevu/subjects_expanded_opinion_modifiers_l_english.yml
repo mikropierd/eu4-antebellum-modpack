@@ -1,0 +1,112 @@
+﻿l_english:
+ returned_to_vassal: "Demoted to Vassal"
+ treaty_of_bonn_opinion_positive: "Treaty of Bonn"
+ treaty_of_bonn_opinion_negative: "Treaty of Bonn rejected"
+
+ is_overseas_territory: "Overseas Territory"
+ released_overseas_territory: "Released Overseas Territory"
+ overseas_territory_forced: "Forced Overseas Territory"
+ declined_establish_overseas_territory_opinion: "Demand of Overseas Territory declined"
+ declined_ask_to_become_overseas_territory: "Offer for Overseas Territory declined"
+
+ is_satellite_state: "Satellite State"
+ released_satellite_state: "Released Satellite State"
+ satellite_state_forced: "Forced Satellite State"
+ declined_establish_satellite_state_opinion: "Demand of Satellite State declines"
+
+ is_dominion: "Dominion"
+
+ is_roman_client_kingdom: "Roman Client Kingdom"
+ roman_client_kingdom_forced: "Forced Roman Client Kingdom"
+ roman_client_kingdom_rejected_heir: "Did not acknowledge the legitimacy of our heir"
+ roman_client_kingdom_accepted_heir: "Acknowledged the legitimacy of our heir"
+ roman_client_kingdom_replaced_ruler: "Helped ruler to ascend the throne"
+
+ is_voivodeship: "Voivodeship"
+
+ is_crusader_state_vassal: "Crusader State"
+
+ is_nahuatl_vassal: "Nahuatl Vassal"
+
+ is_peasant_vassal: "Peasant Vassal"
+ declined_establish_peasant_vassal_opinion: "Demand of Peasant Vassal declined"
+ peasant_vassal_forced: "Forced Peasant Vassal"
+
+ is_pirate_brotherhood_vassal: "Pirate Brotherhood"
+ pirate_brotherhood_vassal_forced: "Forced Pirate Brotherhood"
+
+ is_imperial_tributary_state: "Imperial Tributary State"
+ imperial_tributary_state_forced: "Forced Imperial Tributary State"
+
+ is_sister_republic: "Sister Republic"
+ sister_republic_forced: "Forced Sister Republic"
+ declined_establish_sister_republic_opinion: "Demand of Sister Republic declined"
+ declined_ask_for_sister_republic_opinion: "Offer for Sister Republic declined"
+
+ is_muslim_tributary_vassal: "Dar al-Sulh Territory"
+ muslim_tributary_vassal_forced: "Forced Dar al-Sulh Territory"
+ declined_establish_muslim_tributary_vassal_opinion: "Demand of Dar al-Sulh Territory declined"
+ declined_ask_for_muslim_tributary_vassal_opinion: "Offer for Dar al-Sulh Territory declined"
+
+ is_mandala_trade_vassal: "Mandala Vassal"
+ mandala_trade_vassal_forced: "Forced Mandala Vassal"
+
+ is_integrated_tribe_subject: "Integrated Tribe"
+ integrated_tribe_subject_paid_additional_tribute: "Paid Additional Tribute"
+
+ is_dutch_province_subject: "Dutch Province"
+ declined_establish_dutch_province_subject_opinion: "Demand of Dutch Province declined"
+ declined_ask_for_dutch_province_subject_opinion: "Offer for Dutch Province declined"
+ dutch_province_subject_declined_freedom: "Declined Independence"
+
+ is_canadian_province_subject: "Canadian Province"
+ declined_establish_canadian_province_subject_opinion: "Demand of Canadian Province declined"
+ declined_ask_for_canadian_province_subject_opinion: "Offer for Canadian Province declined"
+ canadian_province_subject_declined_freedom: "Declined Independence"
+
+ is_commonwealth_subject: "Commonwealth"
+ declined_establish_commonwealth_subject_opinion: "Demand of Commonwealth declined"
+ declined_ask_for_commonwealth_subject_opinion: "Offer for Commonwealth declined"
+ commonwealth_subject_declined_freedom: "Declined Independence"
+
+ is_revolution_subject: "Revolutionary Confederation"
+ revolution_subject_forced: "Forced Revolutionary Confederation"
+
+ is_persian_satrapy: "Satrapy"
+ persian_satrapy_forced: "Forced Satrapy"
+
+ is_trade_outpost: "Trade Outpost"
+ trade_outpost_forced: "Forced Trade Outpost"
+ declined_establish_trade_outpost_opinion: "Demand for Trade Outpost declined"
+ declined_ask_to_become_trade_outpost: "Offer for Trade Outpost declined"
+
+ is_cadet_branch: "Cadet Branch"
+ cadet_branch_forced: "Forced Cadet Branch"
+ declined_establish_cadet_branch_opinion: "Demand for Cadet Branch declined"
+
+ is_pagan_chiefdom: "Chiefdom"
+ declined_ask_to_become_pagan_chiefdom: "Offer for Chiefdom declined"
+
+ is_first_nations_reserve: "First Nations Reservation"
+ declined_establish_first_nations_reserve_opinion: "Demand for First Nations Reservation declined"
+ declined_ask_for_first_nations_reserve_opinion: "Offer for First Nations Reservation declined"
+ first_nations_reserve_forced: "Forced First Nations Reservation"
+
+ is_administrative_region: "Administrative Region"
+ administrative_region_removed_heir_opinion: "Forced us to disinherit our heir"
+ administrative_region_enable_administrative_help_opinion: "Enabled Administrative Help"
+
+ is_viking_settlement: "Viking Settlement"
+ viking_settlement_demanded_raid_loot_opinion: "Demanded to share raid loot"
+
+ is_banking_family_subject: "Banking Family Clan"
+ declined_establish_banking_family_subject_opinion: "Demand for Banking Family Clan declined"
+ declined_ask_to_become_banking_family_subject: "Offer for Banking Family Clan declined"
+ banking_family_subject_forced: "Forced Banking Family Clan"
+ banking_family_subject_extord_emergency_funds_opinion: "Extorted Emergency Funds"
+
+ is_palatinate_vassal: "Palatinate"
+ palatinate_vassal_forced: "Forced Palatinate"
+
+ is_defensive_march: "Defensive March"
+ declined_ask_to_become_defensive_march: "Offer for Defensive March declined"

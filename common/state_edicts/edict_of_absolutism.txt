@@ -1,73 +1,57 @@
 edict_of_absolutism = {
 	potential = {
-		current_age = age_of_absolutism
+		is_absolutism_active = yes
+		is_primitive = no
 	}
-	
 	allow = {
-		custom_trigger_tooltip = {
-			tooltip =edict_of_absolutism_tooltip
-			has_country_flag = edict_of_absolutism
-		}
-		current_age = age_of_absolutism
+		absolutism = 10
 	}
-	
 	modifier = {
-	
-		local_monthly_devastation = -0.25
+		local_culture_conversion_cost = -0.15
+		local_culture_conversion_time = -0.1
 	}
-	
-	color = {  116 198 240  }
-	
-	
+	color = {
+		0
+		70
+		180
+	}
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			AND = {
-				has_state_edict = edict_of_absolutism
-				all_province_in_state = {
-					NOT = {
-						devastation = 1
-					}	
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			has_state_edict = edict_of_absolutism
-		}
-		modifier = {
-			factor = 0
-			
-			AND = {
-				NOT = { has_state_edict = edict_of_absolutism }
-				all_province_in_state = {
-					NOT = {
-						devastation = 2
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			
-			AND = {
-				NOT = { has_state_edict = edict_of_absolutism }
-				all_province_in_state = {
-					devastation = 5
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			
-			AND = {
-				NOT = { has_state_edict = edict_of_absolutism }
-				any_province_in_state = {
-					devastation = 10
-				}
-			}
-		}
+		factor = 20
+		#modifier = {
+		#	factor = 0
+		#	OR = {
+		#		owner = {
+		#			has_idea_group = humanist_ideas
+		#		}
+		#		all_province_in_state = {
+		#			culture = FROM
+		#		}
+		#	}
+		#}
+		#modifier = {
+		#	factor = 5
+		#	all_province_in_state = {
+		#		NOT = {
+		#			culture = FROM
+		#		}
+		#	}
+		#}
+		#modifier = {
+		#	factor = 10
+		#	owner = {
+		#		has_idea_group = nationalism_ideas
+		#	}
+		#}
+		#modifier = {
+		#	factor = 10
+		#	owner = {
+		#		absolutism = 50
+		#	}
+		#}
+		#modifier = {
+		#	factor = 10
+		#	has_state_edict = edict_of_absolutism
+		#}
 	}
 	on_state_edict_enacted = {
 		edict_commander_add_cooldown_to_state = yes

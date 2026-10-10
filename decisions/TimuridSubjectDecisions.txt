@@ -1,0 +1,304 @@
+#For establishing historical Timurid princes in subject nations
+country_decisions = {
+	vu_tim_establish_ilkhanate = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = ILK
+			}
+			owns = 4338
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			azerbaijan_area = {
+				add_core = ILK
+			}
+			release = ILK
+			create_subject = {
+				subject_type = islamic_malikate
+				who = ILK
+			}
+			ILK = {
+				change_religion = ROOT
+				change_government = monarchy
+				set_government_rank = 8
+				add_government_reform = islamic_malikate_reform
+				add_treasury = 200
+				add_manpower = 19
+				add_army_tradition = 40
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				define_ruler = {
+					name = "Abu Sa'id"
+					dynasty = "Timurid"
+					age = 20
+					adm = 4
+					dip = 3
+					mil = 5
+				}
+			}
+		}
+	}
+	vu_tim_establish_scythia = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = SCY
+			}
+			owns = 469
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			lower_yik_area = {
+				add_core = SCY
+			}
+			release = SCY
+			create_subject = {
+				subject_type = islamic_malikate
+				who = SCY
+			}
+			SCY = {
+				change_religion = ROOT
+				change_government = monarchy
+				set_government_rank = 8
+				add_government_reform = islamic_malikate_reform
+				add_treasury = 200
+				add_manpower = 19
+				add_army_tradition = 40
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				define_ruler = {
+					name = "Ulugh Beg"
+					dynasty = "Timurid"
+					age = 40
+					adm = 5
+					dip = 3
+					mil = 3
+				}
+			}
+		}
+	}
+	vu_tim_establish_uae = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = U4E
+			}
+			owns = 397
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			pirate_coast_area = {
+				add_core = U4E
+			}
+			release = U4E
+			create_subject = {
+				subject_type = islamic_malikate
+				who = U4E
+			}
+			U4E = {
+				change_religion = ROOT
+				change_government = monarchy
+				set_government_rank = 8
+				add_government_reform = islamic_malikate_reform
+				add_treasury = 200
+				add_manpower = 19
+				add_army_tradition = 40
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 15
+				define_ruler = {
+					name = "Ibrahim"
+					dynasty = "Timurid"
+					age = 40
+					adm = 4
+					dip = 3
+					mil = 4
+				}
+			}
+		}
+	}
+	vu_tim_establish_assur = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = ASR
+			}
+			owns = 411
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			mosul_area = {
+				add_core = ASR
+			}
+			release = ASR
+			create_subject = {
+				subject_type = islamic_malikate
+				who = ASR
+			}
+			ASR = {
+				change_religion = ROOT
+				change_government = monarchy
+				set_government_rank = 8
+				add_government_reform = islamic_malikate_reform
+				add_treasury = 200
+				add_manpower = 19
+				add_army_tradition = 40
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				define_ruler = {
+					name = "Abul-Qasim"
+					dynasty = "Timurid"
+					age = 22
+					adm = 4
+					dip = 5
+					mil = 5
+				}
+			}
+		}
+	}
+	vu_tim_establish_rum = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = RUM
+			}
+			owns = 329
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			rum_area = {
+				add_core = RUM
+			}
+			release = RUM
+			create_subject = {
+				subject_type = islamic_malikate
+				who = RUM
+			}
+			RUM = {
+				change_religion = ROOT
+				change_government = monarchy
+				set_government_rank = 8
+				add_government_reform = islamic_malikate_reform
+				add_treasury = 200
+				add_manpower = 19
+				add_army_tradition = 40
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				define_ruler = {
+					name = "Abdul-Latif"
+					dynasty = "Timurid"
+					age = 24
+					adm = 3
+					dip = 4
+					mil = 4
+				}
+			}
+		}
+	}
+	vu_tim_establish_palestine = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = PLE
+			}
+			owns = 379
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			palestine_area = {
+				add_core = PLE
+			}
+			release = PLE
+			create_subject = {
+				subject_type = islamic_malikate
+				who = PLE
+			}
+			PLE = {
+				change_religion = ROOT
+				change_government = monarchy
+				set_government_rank = 8
+				add_government_reform = islamic_malikate_reform
+				add_treasury = 200
+				add_manpower = 19
+				add_army_tradition = 40
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				define_ruler = {
+					name = "Sultan Muhammad"
+					dynasty = "Timurid"
+					age = 26
+					adm = 3
+					dip = 4
+					mil = 3
+				}
+			}
+		}
+	}
+	vu_tim_establish_dagestan = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = {
+				exists = DAG
+			}
+			owns = 3261
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			dagestan_area = {
+				add_core = DAG
+			}
+			release = DAG
+			create_subject = {
+				subject_type = islamic_malikate
+				who = DAG
+			}
+			DAG = {
+				change_religion = ROOT
+				change_government = monarchy
+				set_government_rank = 8
+				add_government_reform = islamic_malikate_reform
+				add_treasury = 200
+				add_manpower = 19
+				add_army_tradition = 40
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				define_ruler = {
+					name = "Husayn Bayqara"
+					dynasty = "Timurid"
+					age = 16
+					adm = 3
+					dip = 3
+					mil = 5
+				}
+			}
+		}
+	}
+}

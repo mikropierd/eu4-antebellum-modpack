@@ -1,0 +1,11 @@
+﻿l_english:
+ # French Coup Events
+ vu_french_coup.1.t: "A Coup Threatens the Republic"
+ vu_french_coup.1.d: "The Republic stands on uncertain ground. Years of instability, broken promises, and the shadow of military defeat have sapped confidence in the government. Whispers spread through the barracks and the salons alike — a strongman, a general, a man of iron will, has decided that France cannot afford the luxury of republican indecision any longer. His officers are loyal. His plan is set. The question is not whether the coup will be attempted, but whether the Republic has the strength to resist it."
+ vu_french_coup.1.a: "France needs a firm hand. Let the Republic fall."
+ vu_french_coup.1.b: "We will not surrender the Republic without a fight."
+ #
+ # Cleanup (hidden)
+ vu_french_coup.2.t: "The Restoration is Consolidated"
+ vu_french_coup.2.d: "The new government has stabilized."
+ vu_french_coup.2.a: "The new government is secure."

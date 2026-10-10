@@ -1,0 +1,145 @@
+﻿l_english:
+ # CB Types:
+ cb_independence_war_semi_volunteer: "Independence"
+ cb_independence_war_semi_volunteer_desc: "We deserve independence."
+
+ cb_force_imperial_tributary_state: "Force Imperial Tributary State"
+ cb_force_imperial_tributary_state_desc: "They are a less developed country and we should force them to pay us tribute and make us to their successor."
+
+ cb_force_mandala_trade_vassal: "Force Mandala Vassal"
+ cb_force_mandala_trade_vassal_desc: "They are in our sphere of influence and could be benefitial for our economy. We have to force them to pay us tribute!"
+
+ cb_force_persian_satrapy_triggered_only: "Force Satrapy"
+ cb_force_persian_satrapy_triggered_only_desc: "We should force them to become what they should already be: Our Satrapy!"
+
+ cb_force_trade_outpost: "Force Trade Outpost"
+ cb_force_trade_outpost_desc: "They can be benefitial for us as a trade outpost in their trade node. If they don't want to become one voluntarily, we have to force them."
+
+ cb_convert_heathen_for_iqta: "Force Islamic Law"
+ cb_convert_heathen_for_iqta_desc: "They are infidels and have to be converted to the True Faith!"
+
+ cb_disloyal_cadet_branch: "Disloyal Cadet Branch"
+ cb_disloyal_cadet_branch_desc: "They are not a loyal Cadet Branch anymore. We have to change that."
+
+ cb_disloyal_banking_family_subject: "Disloyal Banking Family Clan"
+ cb_disloyal_banking_family_subject_desc: "They are not a loyal Banking Family Clan anymore. We have to change that."
+
+ cb_liberate_elector_palatinate_vassal: "Illegitimate Palatinate"
+ cb_liberate_elector_palatinate_vassal_desc: "They are not the Emperor anymore, yet they still hold Palatinates. We need to liberate these Electors."
+
+ cb_force_pirate_brotherhood_vassal_triggered_only: "Force Pirate Brotherhood"
+ cb_force_pirate_brotherhood_vassal_triggered_only_desc: "We should make them our Pirate Brotherhood. Yar Har!"
+
+ # War Goals:
+ take_capital_force_imperial_tributary_state: "Take Capital"
+ take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
+
+ take_capital_force_mandala_trade_vassal: "Take Capital"
+ take_capital_force_mandala_trade_vassal_desc: "The war goal is to conquer the target's capital."
+
+ take_capital_force_persian_satrapy: "Take Capital"
+ take_capital_force_persian_satrapy_desc: "The war goal is to conquer the target's capital."
+
+ take_capital_force_trade_outpost: "Take Capital"
+ take_capital_force_trade_outpost_desc: "The war goal is to conquer the target's capital."
+
+ superiority_convert_heathen_for_iqta: "Show Superiority"
+ superiority_convert_heathen_for_iqta_desc: "The war goal is to show our superiority in battles."
+
+ take_capital_restore_cadet_branch: "Take Capital"
+ take_capital_restore_cadet_branch_desc: "The war goal is to conquer the target's capital."
+
+ take_capital_restore_banking_family_subject: "Take Capital"
+ take_capital_restore_banking_family_subject_desc: "The war goal is to conquer the target's capital."
+
+ superiority_liberation_palatinate_vassal: "Show Superiority"
+ superiority_liberation_palatinate_vassal_desc: "The war goal is to show our superiority in battles."
+
+ blockade_ports_force_pirate_brotherhood_vassal: "Blockade Ports"
+ blockade_ports_force_pirate_brotherhood_vassal_desc: "The war goal is to blockade their ports."
+
+ # War Names:
+ MANDALA_WAR_NAME: "$ORDER$ $FIRST$ War of Mandala Enforcement"
+ SATRAPY_WAR_NAME: "$ORDER$ $FIRST$ War of Persian Hegemony"
+ TRADE_OUTPOST_WAR_NAME: "$ORDER$ $FIRST$ Creation of a Trade Outpost in $SECOND_NAME$"
+ IMPERIAL_FEUD_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Imperial Strength"
+ CADET_BRANCH_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Dynastical Dominance"
+ BANKING_FAMILY_SUBJECT_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Financial Dominance"
+ PIRATE_BROTHERHOOD_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ Pirate War"
+
+ # Peace Treaties:
+ make_overseas_territory: "Overseas Territory"
+ make_overseas_territory_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Overseas Territory of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_overseas_territory: "Force Overseas Territory"
+ PEACE_make_overseas_territory: "$TAKERS$ Overseas Territory"
+
+ make_satellite_state: "Satellite State"
+ make_satellite_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Satellite State of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_satellite_state: "Force Satellite State"
+ PEACE_make_satellite_state: "$TAKERS$ Satellite State"
+
+ make_satellite_state_imperial: "Imperial Satellite State"
+ make_satellite_state_imperial_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Imperial Satellite State of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_satellite_state_imperial: "Force Imperial Satellite State"
+ PEACE_make_satellite_state_imperial: "$TAKERS$ Imperial Satellite State"
+
+ make_roman_client_kingdom_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Roman Client Kingdom of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_roman_client_kingdom: "Force Roman Client Kingdom"
+ PEACE_make_roman_client_kingdom: "$TAKERS$ Client Kingdom"
+
+ make_peasant_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Peasant Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a §YPeasants Republic§!, they will become one."
+ CB_ALLOWED_make_peasant_vassal: "Force Peasant Vassal"
+ PEACE_make_peasant_vassal: "$TAKERS$ Peasant Vassal"
+
+ make_pirate_brotherhood_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Pirate Brotherhood of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] does not have a Pirate government, they will get one."
+ CB_ALLOWED_make_pirate_brotherhood_vassal: "Force Pirate Brotherhood"
+ PEACE_make_pirate_brotherhood_vassal: "$TAKERS$ Pirate Brotherhood"
+
+ make_imperial_tributary_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made into an Imperial Tributary State of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ CB_ALLOWED_make_imperial_tributary_state: "Force Imperial Tributary State"
+ PEACE_make_imperial_tributary_state: "$TAKERS$ Imperial Tributary State"
+
+ make_muslim_tributary_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Dar al-Sulh Territory of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ CB_ALLOWED_make_muslim_tributary_vassal: "Force Dar al-Sulh Territory"
+ PEACE_make_muslim_tributary_vassal: "$TAKERS$ Dar al-Sulh Territory"
+
+ make_mandala_trade_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Mandala Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] has Mandala Vassals themselves, they will keep them. Most of their subjects of other types are are transfered to §Y[Root.GetName]§!."
+ CB_ALLOWED_make_mandala_trade_vassal: "Force Mandala Vassal"
+ PEACE_make_mandala_trade_vassal: "$TAKERS$ Mandala Vassal"
+
+ make_revolution_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Revolutionary Confederation of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_revolution_subject: "Force Revolutionary Confederation"
+ PEACE_make_revolution_subject: "$TAKERS$ Revolutionary Confederation"
+
+ make_persian_satrapy_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Satrapy of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a Republican Dictatorship, they will become one."
+ CB_ALLOWED_make_persian_satrapy: "Force Satrapy"
+ PEACE_make_persian_satrapy: "$TAKERS$ Satrapy"
+
+ make_trade_outpost_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Trade Outpost of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_trade_outpost: "Force Trade Outpost"
+ PEACE_make_trade_outpost: "$TAKERS$ Trade Outpost"
+
+ make_cadet_branch: "Cadet Branch"
+ make_cadet_branch_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Cadet Branch of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_cadet_branch: "Restore Cadet Branch"
+ PEACE_make_cadet_branch: "$TAKERS$ Cadet Branch"
+
+ make_first_nations_reserve: "First Nations Reservation"
+ make_first_nations_reserve_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a First Nations Reservation of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_first_nations_reserve: "Force First Nations Reservation"
+ PEACE_make_first_nations_reserve: "$TAKERS$ First Nations Reservation"
+
+ make_banking_family_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Banking Family Clan of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_banking_family_subject: "Force Banking Family Clan"
+ PEACE_make_banking_family_subject: "$TAKERS$ Banking Family Clan"
+
+ make_palatinate_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Palatinate of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_palatinate_vassal: "Force Palatinate"
+ PEACE_make_palatinate_vassal: "$TAKERS$ Palatinate"
+
+ make_pirate_brotherhood_vassal_triggered_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Pirate Brotherhood of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] does not have a Pirate government, they will get one."
+ CB_ALLOWED_make_pirate_brotherhood_vassal_triggered: "Force Pirate Brotherhood"
+ PEACE_make_pirate_brotherhood_vassal_triggered: "$TAKERS$ Pirate Brotherhood"
+
+ cb_force_vassal_surya_majapahit: "Majapahiti Vassalization"
+ cb_force_vassal_surya_majapahit_desc: "This nation sits in our sphere of influence and yet does not kneel to us. Let us rectify!"

@@ -1,0 +1,6 @@
+#XXX = { "Province Name" "City Name" } - New addition to EUIV
+
+#Europe
+# [VU] removed: province 7949 (not on Ante Bellum map)
+# [VU] removed: province 8461 (not on Ante Bellum map)
+# [VU] removed: province 8465 (not on Ante Bellum map)

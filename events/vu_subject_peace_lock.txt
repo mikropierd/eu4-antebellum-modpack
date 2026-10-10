@@ -1,0 +1,75 @@
+# Subject Peace Lock Events
+# Prevents subjects from being called back into a war they have already white peaced from.
+# When a subject white peaces while their overlord is still at war, a flag is set.
+# A monthly check then ejects them if the overlord calls them back in.
+# Design: Doc Prussia & Darth Modus
+
+namespace = subj_peace
+
+# Subject Peaces Out While Overlord Is at War
+# Fires via on_peace_actor and on_peace_recipient.
+# Attempts to immediately re-add the subject to the overlord's wars via add_to_war.
+# Whether this succeeds depends on whether the engine enforces truces at this point.
+# Also applies a diplomatic penalty for abandoning the overlord's war.
+country_event = {
+	id = subj_peace.1
+	title = subj_peace.1.t
+	desc = subj_peace.1.d
+	picture = GFX_evt_diplomacy
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_subject = yes
+		overlord = { is_at_war = yes }
+	}
+
+	option = {
+		name = subj_peace.1.a
+		set_country_flag = white_peaced_from_overlords_war
+		# Diplomatic penalty: overlord loses opinion of subject for abandoning the war
+		overlord = {
+			add_opinion = {
+				who = ROOT
+				modifier = vu_broke_overlord_war
+			}
+		}
+	}
+}
+
+# Monthly Check - Eject Subject If Recalled Into Overlord War
+# Fires monthly for subjects with the white_peaced_from_overlords_war flag.
+# Clears the flag if the overlord is no longer at war.
+# Ejects the subject via white peace if they have been called back in.
+country_event = {
+	id = subj_peace.2
+	title = subj_peace.2.t
+	desc = subj_peace.2.d
+	picture = GFX_evt_diplomacy
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = white_peaced_from_overlords_war
+		is_subject = yes
+	}
+
+	option = {
+		name = subj_peace.2.a
+		if = {
+			limit = { overlord = { is_at_war = no } }
+			clr_country_flag = white_peaced_from_overlords_war
+		}
+		if = {
+			limit = {
+				is_at_war = yes
+				overlord = { is_at_war = yes }
+			}
+			every_country = {
+				limit = { war_with = ROOT }
+				white_peace = ROOT
+			}
+			clr_country_flag = white_peaced_from_overlords_war
+		}
+	}
+}
