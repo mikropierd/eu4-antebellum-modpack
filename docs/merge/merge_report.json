@@ -8824,6 +8824,50 @@
   [
    "annexationaction",
    "condition"
+  ],
+  [
+   "effect",
+   "TLW_switch_flag_triumvirate_effect"
+  ],
+  [
+   "effect",
+   "TLW_switch_target_triumvirate_effect"
+  ],
+  [
+   "if",
+   "add_government_reform"
+  ],
+  [
+   "effect",
+   "else"
+  ],
+  [
+   "effect",
+   "add_ruler_personality"
+  ],
+  [
+   "effect",
+   "if"
+  ],
+  [
+   "effect",
+   "hidden_effect"
+  ],
+  [
+   "potential",
+   "culture_group"
+  ],
+  [
+   "potential",
+   "is_or_was_wallachia"
+  ],
+  [
+   "effect",
+   "if"
+  ],
+  [
+   "effect",
+   "country_event"
   ]
  ],
  "a_only": [
@@ -52168,6 +52212,33 @@
    "swe_humanist_mission_slot",
    "missions/AB_North_SWE.txt",
    "missions/SCA_Swedish_Missions.txt"
+  ]
+ ],
+ "decision_dups": [
+  [
+   "italian_nation",
+   "decisions/ItalianNation.txt",
+   "decisions/VU_Replace_Vanilla_Country_Formations.txt"
+  ],
+  [
+   "polish_nation",
+   "decisions/PolishNation.txt",
+   "decisions/VU_Replace_Vanilla_Country_Formations.txt"
+  ],
+  [
+   "restore_roman_empire",
+   "decisions/RestoreRomanEmpire.txt",
+   "decisions/VU_Replace_Vanilla_Country_Formations.txt"
+  ],
+  [
+   "romanian_nation",
+   "decisions/RomanianNation.txt",
+   "decisions/VU_Replace_Vanilla_Country_Formations.txt"
+  ],
+  [
+   "ruthenian_nation",
+   "decisions/RuthenianNation.txt",
+   "decisions/VU_Replace_Vanilla_Country_Formations.txt"
   ]
  ],
  "gated": [

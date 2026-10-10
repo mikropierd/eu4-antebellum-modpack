@@ -20,16 +20,6 @@ teu_hre_protection_mission_slot = {
 		NOT = { has_country_flag = teu_crusader_path }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
 		NOT = {
 OR = {
@@ -62,6 +52,16 @@ OR = {
 			tag = LIV
 			was_tag = TEU
 			was_tag = LIV
+		}
+		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
 		}
 		NOT = { tag = GER }
 		}
@@ -130,14 +130,6 @@ teu_livonian_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
 		NOT = {
 OR = {
@@ -211,6 +203,14 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -419,16 +419,6 @@ teu_danzig_and_poland_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_third_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_third takes precedence
 		NOT = {
 OR = {
@@ -505,6 +495,16 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree ab_teu_third_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -608,14 +608,6 @@ teu_army_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_fourth_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_fourth takes precedence
 		NOT = {
 OR = {
@@ -693,6 +685,14 @@ OR = {
 		}
 		has_country_flag = ab_teu_horde_missions
 		}
+		# [merge] Ante Bellum tree ab_teu_fourth_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
+		}
 	}
 	has_country_shield = yes
 	
@@ -752,16 +752,6 @@ teu_pru_hre_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
 		NOT = {
 OR = {
@@ -794,6 +784,16 @@ OR = {
 			tag = LIV
 			was_tag = TEU
 			was_tag = LIV
+		}
+		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
 		}
 		NOT = { tag = GER }
 		}
@@ -888,16 +888,6 @@ teu_pru_dummy_hre_mission_slot_1 = {
 		NOT = { has_country_flag = teu_kingdom_prussia_path }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
 		NOT = {
 OR = {
@@ -930,6 +920,16 @@ OR = {
 			tag = LIV
 			was_tag = TEU
 			was_tag = LIV
+		}
+		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
 		}
 		NOT = { tag = GER }
 		}
@@ -1852,14 +1852,6 @@ teu_pru_dummy_hre_mission_slot_2 = {
 		NOT = { has_country_flag = teu_kingdom_prussia_path }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
 		NOT = {
 OR = {
@@ -1933,6 +1925,14 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -3258,16 +3258,6 @@ teu_pru_conquest_hre_mission_slot = {
 		has_country_flag = teu_conquest_hre_path
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
 		NOT = {
 OR = {
@@ -3300,6 +3290,16 @@ OR = {
 			tag = LIV
 			was_tag = TEU
 			was_tag = LIV
+		}
+		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
 		}
 		NOT = { tag = GER }
 		}
@@ -3653,14 +3653,6 @@ teu_pru_secondary_conquest_hre_mission_slot = {
 		has_country_flag = teu_conquest_hre_path
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
 		NOT = {
 OR = {
@@ -3734,6 +3726,14 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -4040,16 +4040,6 @@ teu_pru_kingdom_of_prussia_mission_slot = {
 		has_country_flag = teu_kingdom_prussia_path
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
 		NOT = {
 OR = {
@@ -4082,6 +4072,16 @@ OR = {
 			tag = LIV
 			was_tag = TEU
 			was_tag = LIV
+		}
+		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree ab_teu_first_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
 		}
 		NOT = { tag = GER }
 		}
@@ -4407,14 +4407,6 @@ teu_pru_secondary_kingdom_of_prussia_mission_slot = {
 		has_country_flag = teu_kingdom_prussia_path
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
 		NOT = {
 OR = {
@@ -4488,6 +4480,14 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree ab_teu_second_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -4848,16 +4848,6 @@ teu_pru_prussia_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_third_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_third takes precedence
 		NOT = {
 OR = {
@@ -4934,6 +4924,16 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree ab_teu_third_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -5167,14 +5167,6 @@ teu_pru_military_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_fourth_danzig takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			was_tag = DNZ
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_nordmark_fourth takes precedence
 		NOT = {
 OR = {
@@ -5251,6 +5243,14 @@ OR = {
 			tag = LIV
 		}
 		has_country_flag = ab_teu_horde_missions
+		}
+		# [merge] Ante Bellum tree ab_teu_fourth_danzig takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			was_tag = DNZ
+		}
+		NOT = { tag = GER }
 		}
 	}
 	has_country_shield = yes
@@ -5458,16 +5458,6 @@ teu_pru_development_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_teu_fifth_start takes precedence
-		NOT = {
-OR = {
-			tag = DNZ
-			tag = RIG
-			was_tag = DNZ
-			was_tag = RIG
-		}
-		NOT = { tag = GER }
-		}
 		# [merge] Ante Bellum tree ab_brandenburg_fifth takes precedence
 		NOT = {
 OR = {
@@ -5488,6 +5478,16 @@ OR = {
 			tag = LIV
 			was_tag = TEU
 			was_tag = LIV
+		}
+		NOT = { tag = GER }
+		}
+		# [merge] Ante Bellum tree ab_teu_fifth_start takes precedence
+		NOT = {
+OR = {
+			tag = DNZ
+			tag = RIG
+			was_tag = DNZ
+			was_tag = RIG
 		}
 		NOT = { tag = GER }
 		}

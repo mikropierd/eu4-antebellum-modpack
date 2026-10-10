@@ -2970,6 +2970,8 @@ country_decisions = {
             swap_non_generic_missions = yes
             set_country_flag = formed_italy_flag
             vu_colour_refresh = yes
+			TLW_switch_flag_triumvirate_effect = yes
+			TLW_switch_target_triumvirate_effect = yes
         }
         ai_will_do = {
             factor = 1
@@ -3801,6 +3803,7 @@ country_decisions = {
                     }
                 }
                 set_government_rank = 8
+				add_government_reform = crownpoland
             }
             poland_region = {
                 limit = {
@@ -3821,6 +3824,10 @@ country_decisions = {
             swap_ideas = yes
             set_country_flag = formed_poland_flag
             vu_colour_refresh = yes
+			else = {
+				set_country_flag = aba_pln_crownpoland_popular
+				add_government_reform = aba_crownpoland
+			}
         }
         ai_will_do = {
             factor = 1
@@ -4770,6 +4777,8 @@ country_decisions = {
                 tag = WAL
             }
             primary_culture = romanian
+			culture_group = romanian_culture_group
+			is_or_was_wallachia = no
         }
         color = {
             250
@@ -15942,6 +15951,136 @@ country_decisions = {
                 remove_country_modifier = ITA_blatant_roman_larp
             }
             vu_colour_refresh = yes
+			add_ruler_personality = augustus_personality
+			if = {
+				limit = {
+					NOT = { culture_group = roman_g }
+				}
+				if = {
+					limit = {
+						culture_group = gaelic
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								culture_group = ROOT
+							}
+							change_culture = romano_british
+						}
+					}
+					custom_tooltip = AB_EMPTY
+					change_primary_culture = romano_british
+				}
+				else_if = {
+					limit = {
+						culture_group = iberian
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								culture_group = ROOT
+							}
+							change_culture = hispano_roman
+						}
+					}
+					custom_tooltip = AB_EMPTY
+					change_primary_culture = hispano_roman
+				}
+				else_if = {
+					limit = {
+						culture_group = french
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								culture_group = ROOT
+							}
+							change_culture = gallo_roman
+						}
+					}
+					custom_tooltip = AB_EMPTY
+					change_primary_culture = gallo_roman
+				}
+				else_if = {
+					limit = {
+						culture_group = germanic
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								culture_group = ROOT
+							}
+							change_culture = romano_germanic
+						}
+					}
+					custom_tooltip = AB_EMPTY
+					change_primary_culture = romano_germanic
+				}
+				else = {
+					hidden_effect = {
+						every_province = {
+							limit = {
+								culture_group = ROOT
+							}
+							change_culture = roman_new
+						}
+					}
+					custom_tooltip = AB_EMPTY
+					change_primary_culture = roman_new
+				}
+				custom_tooltip = ROME_CATHOLIC_ROMANIZATION_ON_DECISION
+				hidden_effect = {
+					every_province = {
+						limit = {
+							OR = {
+								culture_group = byzantine
+								province_id = 151
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									culture = greek
+									culture = pontic_greek
+									culture = turkish_christian
+									culture = goths
+									province_id = 151
+								}
+							}
+							change_culture = greco_roman
+						}
+						else = {
+							change_culture = illyro_roman
+						}
+					}
+					every_subject_country = {
+						limit = {
+							is_colonial_nation = yes
+						}
+						change_primary_culture = ROOT
+						set_heir_culture = ROOT
+						set_ruler_culture = ROOT
+					}
+				}
+				# Colonial Cultures
+				TLW_colonial_culture_event_rome_effect = yes
+			}
+			hidden_effect = {
+				country_event = {
+					id = ab_achiev.3
+				}
+				set_heir_culture = ROOT
+				set_ruler_culture = ROOT
+				118 = {
+					add_core = ROOT
+					province_event = {
+						id = tlw_rome.0
+					}
+				}
+				country_event = {
+					id = tlw_rome.1
+				}
+			}
         }
         ai_will_do = {
             factor = 0
@@ -16669,6 +16808,25 @@ country_decisions = {
                 #Swap Ideas
             }
             vu_colour_refresh = yes
+			if = {
+				limit = { is_revolutionary = no }
+				if = {
+					limit = { government = republic }
+					add_government_reform = great_veche_republic
+				}
+				else_if = {
+					limit = { government = theocracy }
+					add_government_reform = metropolisrus
+				}
+				else = {
+					if = {
+						limit = { NOT = { government = monarchy } }
+						change_government_to_monarchy = yes
+					}
+					add_government_reform = tsardom
+				}
+			}
+			country_event = { id = ab_rus.2 }
         }
         ai_importance = 500
     }

@@ -11,6 +11,7 @@ WRAPPERS = {'guiTypes', 'spriteTypes', 'objectTypes', 'positionTypes', 'bitmapfo
 TEXT_EXT = ('.txt', '.gui', '.gfx')
 REMAP_DIRS = ('common/', 'decisions/', 'events/', 'missions/')
 
+BASE = os.environ.get('A_BASE', 'HEAD')
 rm = remap.Remap()
 report = collections.defaultdict(list)
 
@@ -180,10 +181,10 @@ def load_aonly():
             for f in fs:
                 if f.endswith(('.txt', '.gui', '.gfx')):
                     vtok.update(tok.findall(rd(os.path.join(root, f))))
-    files = subprocess.run(['git', 'ls-tree', '-r', '--name-only', 'HEAD'], cwd=A, capture_output=True, text=True).stdout.split(chr(10))
+    files = subprocess.run(['git', 'ls-tree', '-r', '--name-only', BASE], cwd=A, capture_output=True, text=True).stdout.split(chr(10))
     for rel in files:
         if rel.split('/')[0] in ('common', 'decisions', 'events', 'missions', 'interface') and rel.endswith(('.txt', '.gui', '.gfx')):
-            t = subprocess.run(['git', 'show', 'HEAD:' + rel], cwd=A, capture_output=True).stdout.decode('latin-1')
+            t = subprocess.run(['git', 'show', BASE + ':' + rel], cwd=A, capture_output=True).stdout.decode('latin-1')
             for nd in cw.parse(t):
                 k = nd.key
                 if nd.kind == 'block' and k not in vtok and len(k) > 3 and not k.isdigit():
@@ -208,8 +209,8 @@ def pick_retags():
         d = {}
         base = 'common/country_tags'
         if git:
-            fl = [l for l in subprocess.run(['git', 'ls-tree', '-r', '--name-only', 'HEAD', base], cwd=root, capture_output=True, text=True).stdout.split(chr(10)) if l]
-            get = lambda f: subprocess.run(['git', 'show', 'HEAD:' + f], cwd=root, capture_output=True).stdout.decode('latin-1')
+            fl = [l for l in subprocess.run(['git', 'ls-tree', '-r', '--name-only', BASE, base], cwd=root, capture_output=True, text=True).stdout.split(chr(10)) if l]
+            get = lambda f: subprocess.run(['git', 'show', BASE + ':' + f], cwd=root, capture_output=True).stdout.decode('latin-1')
         else:
             fl = [os.path.join(base, f) for f in os.listdir(os.path.join(root, base))]
             get = lambda f: rd(os.path.join(root, f))
@@ -236,7 +237,7 @@ def retag_txt(t):
 
 def retag_yml(t):
     for o, n in RETAG.items():
-        t = re.sub(r'(?m)^(\s*)' + o + r'(?=(_\w+)?:)', lambda m: m.group(1) + n, t)
+        t = re.sub(r'(?<![A-Za-z0-9])' + o + r'(?![A-Za-z0-9])', n, t)
     return t
 
 
@@ -300,12 +301,17 @@ def copy_gfx():
             lower[os.path.relpath(p, V).lower()] = os.path.relpath(p, V)
     n = size = 0
     seen = set()
-    for f in sorted(os.listdir(V + '/interface')):
-        if not f.endswith('.gfx') or not GFX_PREFIX.match(f):
-            continue
-        t = rd(os.path.join(V, 'interface', f))
+    gfx_files = []
+    for root, _, fs in os.walk(V + '/interface'):
+        for f in sorted(fs):
+            rel_if = os.path.relpath(os.path.join(root, f), V + '/interface')
+            # prefix check on the file name or on the top-level subfolder (government_mechanics/, ...)
+            if f.endswith('.gfx') and (GFX_PREFIX.match(f) or '/' in rel_if or GFX_PREFIX.match(rel_if)):
+                gfx_files.append(os.path.join(root, f))
+    for gp in sorted(gfx_files):
+        t = rd(gp)
         for m in re.finditer(r'(?i)(?:texturefile|effectfile|textureFile\d*)\s*=\s*"([^"]+)"', t):
-            r = m.group(1).replace(chr(92), '/')
+            r = re.sub('/+', '/', m.group(1).replace(chr(92), '/'))
             real = lower.get(r.lower())
             if not real or real in seen or real.startswith(('gfx/models', 'gfx/loadingscreens')):
                 continue
@@ -334,6 +340,47 @@ def copy_gfx():
         shutil.copyfile(src, dst); fl += 1; size += os.path.getsize(dst)
     print('gfx textures', n, 'flags', fl, 'MB', round(size / 1e6, 1))
 
+
+
+def decision_dups():
+    """decisions restored from Ante Bellum that Victorum redefines in another file: Victorum wins, AB parts injected"""
+    import subprocess
+    W = ('country_decisions', 'province_decisions')
+    def kids(txt):
+        out = []
+        for w in cw.parse(txt):
+            if w.kind == 'block' and w.key in W:
+                out += [c for c in cw.children(txt, w) if c.kind == 'block']
+        return out
+    files = sorted(f for f in os.listdir(os.path.join(A, 'decisions')) if f.endswith('.txt'))
+    where = collections.defaultdict(list)
+    for f in files:
+        rel = 'decisions/' + f
+        txt = rd(os.path.join(A, rel))
+        for c in kids(txt):
+            where[c.key].append(rel)
+    done = 0
+    for k, fs in where.items():
+        if len(set(fs)) < 2:
+            continue
+        acopy, vcopy = [], []
+        for rel in sorted(set(fs)):
+            orig = subprocess.run(['git', 'show', BASE + ':' + rel], cwd=A, capture_output=True).stdout.decode('latin-1')
+            (acopy if any(c.key == k for c in kids(orig)) else vcopy).append(rel)
+        if not acopy or not vcopy:
+            continue
+        vrel = vcopy[0]
+        for arel in acopy:
+            vt = rd(os.path.join(A, vrel)); at = rd(os.path.join(A, arel))
+            vn = next(c for c in kids(vt) if c.key == k); an = next(c for c in kids(at) if c.key == k)
+            new = inject(vt, vn, at, an)
+            if new != vt[vn.bstart:vn.bend]:
+                vt = vt[:vn.bstart] + new + vt[vn.bend:]
+                wr(os.path.join(A, vrel), vt)
+            at = at[:an.start] + '# [merge] decision ' + k + ' now defined in ' + vrel + ' (Victorum wins; Ante Bellum-specific parts merged there)' + at[an.end:]
+            wr(os.path.join(A, arel), at)
+            report['decision_dups'].append((k, arel, vrel)); done += 1
+    return done
 
 
 def gate_missions():
@@ -444,6 +491,7 @@ def main():
         os.makedirs(os.path.dirname(ap), exist_ok=True)
         shutil.copyfile(vp, ap); n['raw'] += 1
     n['cross_dups'] = cross_dups()
+    n['decision_dups'] = decision_dups()
     n['gated_series'] = gate_missions()
     lua = os.path.join(A, 'common/defines/01_tlw.lua')
     if os.path.exists(lua):

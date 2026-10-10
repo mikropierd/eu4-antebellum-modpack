@@ -2188,6 +2188,23 @@ dan_england_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -2249,23 +2266,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -2565,6 +2565,23 @@ dan_religion_start_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -2626,23 +2643,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -2756,6 +2756,23 @@ dan_religion_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -2817,23 +2834,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -3260,6 +3260,23 @@ dan_catholic_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -3321,23 +3338,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -3552,6 +3552,23 @@ dan_protestant_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -3613,23 +3630,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -3841,6 +3841,23 @@ dan_humanist_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -3902,23 +3919,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -4030,6 +4030,23 @@ dan_norse_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -4091,23 +4108,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -4301,6 +4301,23 @@ dan_merc_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -4362,23 +4379,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -5276,6 +5276,23 @@ dan_sca_merc_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -5337,23 +5354,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -5404,6 +5404,23 @@ dan_sca_internal_development = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			AND = {
+				was_tag = SWE
+				tag = SCA
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sca_unlock_humanist_missions
+				has_country_flag = sca_unlock_catholic_missions
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_danish_fifth1 takes precedence
 		NOT = {
 OR = {
@@ -5465,23 +5482,6 @@ OR = {
 			was_tag = DAN
 			tag = DNK
 			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				tag = SCA
-			}
-		}
-		NOT = {
-			OR = {
-				has_country_flag = sca_unlock_humanist_missions
-				has_country_flag = sca_unlock_catholic_missions
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 		}

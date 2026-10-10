@@ -108,13 +108,32 @@ def apply_edits(t, edits):
     return t
 
 
+_STR = re.compile(r'"[^"\n]*"')
+_TRIG = re.compile(r'\b(' + '|'.join(sorted(TRIG_SCALAR)) + r')\s*=\s*(\d+)\b')
+
+
+def fix_strings(t, rm):
+    """province triggers embedded in quoted strings (e.g. simple_dynamic_effect limits)"""
+    def sub_str(m):
+        s = m.group(0)
+        if '=' not in s:
+            return s
+        def sub_t(mm):
+            if oor(mm.group(2)):
+                rm.bump('embedded string triggers')
+                return 'always = no'
+            return mm.group(0)
+        return _TRIG.sub(sub_t, s)
+    return _STR.sub(sub_str, t)
+
+
 def remap_text(t, rm, fname=''):
     nodes = cw.parse(t)
     edits = []
     rm.walk(t, nodes, [], edits, True, fname)
-    if not edits:
-        return t
-    return apply_edits(t, edits)
+    if edits:
+        t = apply_edits(t, edits)
+    return fix_strings(t, rm)
 
 
 # ---- tradenodes -----------------------------------------------------------

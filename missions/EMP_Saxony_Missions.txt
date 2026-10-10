@@ -15,6 +15,18 @@ emp_sax_missions_conquest = {
 		}
 		NOT = { map_setup = map_setup_random }
 	
+		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
+		NOT = {
+OR = {
+			tag = NRD
+			tag = THU
+			tag = GOS
+			tag = DRE
+			tag = BRA
+			tag = PRU
+		}
+		NOT = { was_tag = TEU }
+		}
 		# [merge] Ante Bellum tree sax_first_group takes precedence
 		NOT = {
 OR = {
@@ -34,18 +46,6 @@ OR = {
 			tag = RVB
 			tag = HYA
 		}
-		}
-		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
-		NOT = {
-OR = {
-			tag = NRD
-			tag = THU
-			tag = GOS
-			tag = DRE
-			tag = BRA
-			tag = PRU
-		}
-		NOT = { was_tag = TEU }
 		}
 	}
 	has_country_shield = yes
@@ -176,6 +176,18 @@ emp_sax_missions_defragment_and_go_east = {
 		}
 		NOT = { map_setup = map_setup_random }
 	
+		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
+		NOT = {
+OR = {
+			tag = NRD
+			tag = THU
+			tag = GOS
+			tag = DRE
+			tag = BRA
+			tag = PRU
+		}
+		NOT = { was_tag = TEU }
+		}
 		# [merge] Ante Bellum tree sax_second_group takes precedence
 		NOT = {
 OR = {
@@ -195,18 +207,6 @@ OR = {
 			tag = RVB
 			tag = HYA
 		}
-		}
-		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
-		NOT = {
-OR = {
-			tag = NRD
-			tag = THU
-			tag = GOS
-			tag = DRE
-			tag = BRA
-			tag = PRU
-		}
-		NOT = { was_tag = TEU }
 		}
 	}
 	has_country_shield = yes
@@ -393,6 +393,18 @@ emp_sax_missions_conquer_franconia = {
 		}
 		NOT = { map_setup = map_setup_random }
 	
+		# [merge] Ante Bellum tree ab_nordmark_third takes precedence
+		NOT = {
+OR = {
+			tag = NRD
+			tag = THU
+			tag = GOS
+			tag = DRE
+			tag = BRA
+			tag = PRU
+		}
+		NOT = { was_tag = TEU }
+		}
 		# [merge] Ante Bellum tree sax_third_group takes precedence
 		NOT = {
 OR = {
@@ -412,18 +424,6 @@ OR = {
 			tag = RVB
 			tag = HYA
 		}
-		}
-		# [merge] Ante Bellum tree ab_nordmark_third takes precedence
-		NOT = {
-OR = {
-			tag = NRD
-			tag = THU
-			tag = GOS
-			tag = DRE
-			tag = BRA
-			tag = PRU
-		}
-		NOT = { was_tag = TEU }
 		}
 	}
 	has_country_shield = yes
@@ -571,6 +571,18 @@ emp_sax_missions_religion = {
 		}
 		NOT = { map_setup = map_setup_random }
 	
+		# [merge] Ante Bellum tree ab_nordmark_third takes precedence
+		NOT = {
+OR = {
+			tag = NRD
+			tag = THU
+			tag = GOS
+			tag = DRE
+			tag = BRA
+			tag = PRU
+		}
+		NOT = { was_tag = TEU }
+		}
 		# [merge] Ante Bellum tree sax_third_group takes precedence
 		NOT = {
 OR = {
@@ -590,18 +602,6 @@ OR = {
 			tag = RVB
 			tag = HYA
 		}
-		}
-		# [merge] Ante Bellum tree ab_nordmark_third takes precedence
-		NOT = {
-OR = {
-			tag = NRD
-			tag = THU
-			tag = GOS
-			tag = DRE
-			tag = BRA
-			tag = PRU
-		}
-		NOT = { was_tag = TEU }
 		}
 	}
 	has_country_shield = yes
@@ -790,6 +790,18 @@ emp_sax_missions_culture_1 = {
 		}
 		NOT = { map_setup = map_setup_random }
 	
+		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
+		NOT = {
+OR = {
+			tag = NRD
+			tag = THU
+			tag = GOS
+			tag = DRE
+			tag = BRA
+			tag = PRU
+		}
+		NOT = { was_tag = TEU }
+		}
 		# [merge] Ante Bellum tree sax_first_group takes precedence
 		NOT = {
 OR = {
@@ -809,18 +821,6 @@ OR = {
 			tag = RVB
 			tag = HYA
 		}
-		}
-		# [merge] Ante Bellum tree ab_nordmark_first takes precedence
-		NOT = {
-OR = {
-			tag = NRD
-			tag = THU
-			tag = GOS
-			tag = DRE
-			tag = BRA
-			tag = PRU
-		}
-		NOT = { was_tag = TEU }
 		}
 	}
 	has_country_shield = yes
@@ -862,6 +862,18 @@ emp_sax_missions_culture_2 = {
 		}
 		NOT = { map_setup = map_setup_random }
 	
+		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
+		NOT = {
+OR = {
+			tag = NRD
+			tag = THU
+			tag = GOS
+			tag = DRE
+			tag = BRA
+			tag = PRU
+		}
+		NOT = { was_tag = TEU }
+		}
 		# [merge] Ante Bellum tree sax_second_group takes precedence
 		NOT = {
 OR = {
@@ -881,18 +893,6 @@ OR = {
 			tag = RVB
 			tag = HYA
 		}
-		}
-		# [merge] Ante Bellum tree ab_nordmark_second takes precedence
-		NOT = {
-OR = {
-			tag = NRD
-			tag = THU
-			tag = GOS
-			tag = DRE
-			tag = BRA
-			tag = PRU
-		}
-		NOT = { was_tag = TEU }
 		}
 	}
 	has_country_shield = yes
@@ -1224,6 +1224,18 @@ emp_sax_missions_economic = {
 		}
 		NOT = { map_setup = map_setup_random }
 	
+		# [merge] Ante Bellum tree ab_nordmark_fourth takes precedence
+		NOT = {
+OR = {
+			tag = NRD
+			tag = THU
+			tag = GOS
+			tag = DRE
+			tag = BRA
+			tag = PRU
+		}
+		NOT = { was_tag = TEU }
+		}
 		# [merge] Ante Bellum tree sax_fourth_group takes precedence
 		NOT = {
 OR = {
@@ -1243,18 +1255,6 @@ OR = {
 			tag = RVB
 			tag = HYA
 		}
-		}
-		# [merge] Ante Bellum tree ab_nordmark_fourth takes precedence
-		NOT = {
-OR = {
-			tag = NRD
-			tag = THU
-			tag = GOS
-			tag = DRE
-			tag = BRA
-			tag = PRU
-		}
-		NOT = { was_tag = TEU }
 		}
 	}
 	has_country_shield = yes

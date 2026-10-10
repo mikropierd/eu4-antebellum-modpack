@@ -12,7 +12,8 @@ Nic poniżej nie zostało przetestowane w grze. Sprawdzono tylko składnię (bal
 | Ten sam plik w obu modach (452, z czego ~120 w katalogach mechanik) | **Victorum wygrywa** na poziomie bloków; bloki istniejące tylko w Antebellum są dopisywane na końcu |
 | Blok istnieje w obu, ale Antebellum ma w nim własne elementy | elementy Antebellum (nowe reformy, przywileje, hooki w on_actions, przyciski GUI itd.) są **wstrzykiwane** do wersji Victorum (808 wstrzyknięć) |
 | Ten sam klucz w *różnych* plikach (31 przypadków, np. `POL_ideas`, `declarewar`, `can_exploit_tax`) | Victorum wygrywa, wersja Antebellum jest usunięta z jego pliku, a jej własne elementy wstrzyknięte do bloku Victorum |
-| Kolizje tagów (`CTG`, `PU3`, `RSL`) | Antebellum zachowuje swoje (Kartagina, Punic3, Latinsphere Revolt); tagi Victorum przemianowane na `XCA`, `XCB`, `XCC` (skrypty, lokalizacja, flagi) |
+| Kolizje tagów (`CTG`, `PU3`, `RSL`) | Antebellum zachowuje swoje (Kartagina, Punic3, Latinsphere Revolt); tagi Victorum przemianowane na `XCA`, `XCB`, `XCC` (skrypty, cała lokalizacja, flagi) |
+| Decyzje zdefiniowane w obu modach w różnych plikach (5, np. `italian_nation`) | Victorum wygrywa, elementy Antebellum wstrzyknięte do definicji Victorum |
 | Drzewka misji dla tego samego tagu i slotu (705 serii) | Seria Victorum dostaje `NOT = { potential serii Antebellum }`, więc dla krajów z drzewem Antebellum działa ono, a Victorum tylko tam, gdzie Antebellum nie ma drzewa |
 | `common/defines/01_tlw.lua` | przemianowany na `zz_01_tlw.lua`, żeby ładował się po `defines.lua` Victorum (inaczej Victorum mógłby je nadpisać) |
 
@@ -43,7 +44,7 @@ Trzynaście prowincji ma w Antebellum inne nazwy niż w Victorum przy tym samym 
 1. **Brak bazy Ante Bellum.** Pliki Victorum o nazwach takich jak w bazie nadpiszą bazę (np. `common/tradenodes/00_tradenodes.txt`, `common/defines/defines.lua`, `common/ideas/00_country_ideas.txt`). Po dodaniu bazy trzeba uruchomić `tools/merge/merge.py` ze ścieżką do bazy jako "A", żeby ten sam algorytm zrobił scalenie z bazą, i `tools/merge/dups.py`, żeby wyłapać kolizje kluczy i tagów.
 2. **Mapa-zależne dane z Victorum** (`tradenodes`, `colonial_regions`, `trade_companies`) zostały przycięte, nie przeprojektowane. Sieć handlu będzie wymagała przeglądu w grze.
 3. **Interfejs**: okna GUI scalone po nazwie, Victorum wygrywa; elementy Antebellum dopisane do okien Victorum, ale ich rozmieszczenie nie było oglądane (możliwe nakładanie przycisków).
-4. **Grafiki**: skopiowano tekstury odwoływane przez pliki `.gfx` Victorum o prefiksach `vu_`, `me_`, `GME_`, `zzz_expanded` itd. (427 plików) oraz flagi krajów Victorum (1519). Tekstury waniliowe i pozostałe ikony nie były kopiowane.
+4. **Grafiki**: skopiowano tekstury odwoływane przez pliki `.gfx` Victorum o prefiksach `vu_`, `me_`, `GME_`, `zzz_expanded` itd. (ok. 2900 plików, także z podkatalogów `interface/`) oraz flagi krajów Victorum (1519). Tekstury waniliowe i pozostałe ikony nie były kopiowane.
 5. **Lokalizacja**: w `loadingtips_l_english.yml` (wspólny plik) Victorum wygrywa; poza nim ok. 100 kluczy ma różny tekst w różnych plikach obu modów (np. `punic`), rozstrzyga kolejność ładowania plików, nic nie usuwano.
 6. Seria misji Victorum, której `potential` nie zawiera `tag = ...`, nie jest bramkowana.
 

@@ -16,13 +16,9 @@ sca_conquqest_slot_1 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_sweden_slot1 takes precedence
+		# [merge] Ante Bellum tree nor_1_group takes precedence
 		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
-		}
-		NOT = { map_setup = map_setup_random }
+tag = NOR
 		}
 		# [merge] Ante Bellum tree ab_danish_first takes precedence
 		NOT = {
@@ -34,9 +30,13 @@ OR = {
 		}
 		NOT = { map_setup = map_setup_random }
 		}
-		# [merge] Ante Bellum tree nor_1_group takes precedence
+		# [merge] Ante Bellum tree ab_sweden_slot1 takes precedence
 		NOT = {
-tag = NOR
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 	has_country_shield = yes
@@ -80,13 +80,9 @@ sca_conquest_slot_2 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_sweden_slot2 takes precedence
+		# [merge] Ante Bellum tree nor_2_group takes precedence
 		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
-		}
-		NOT = { map_setup = map_setup_random }
+tag = NOR
 		}
 		# [merge] Ante Bellum tree ab_danish_second takes precedence
 		NOT = {
@@ -98,9 +94,13 @@ OR = {
 		}
 		NOT = { map_setup = map_setup_random }
 		}
-		# [merge] Ante Bellum tree nor_2_group takes precedence
+		# [merge] Ante Bellum tree ab_sweden_slot2 takes precedence
 		NOT = {
-tag = NOR
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 	has_country_shield = yes
@@ -179,6 +179,20 @@ sca_conquqest_slot_3 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree nor_3_group takes precedence
+		NOT = {
+tag = NOR
+		}
+		# [merge] Ante Bellum tree ab_danish_third takes precedence
+		NOT = {
+OR = {
+			tag = DAN
+			was_tag = DAN
+			tag = DNK
+			was_tag = DNK
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_sweden_slot3 takes precedence
 		NOT = {
 OR = {
@@ -226,20 +240,6 @@ OR = {
 			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_danish_third takes precedence
-		NOT = {
-OR = {
-			tag = DAN
-			was_tag = DAN
-			tag = DNK
-			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree nor_3_group takes precedence
-		NOT = {
-tag = NOR
 		}
 	}
 	has_country_shield = yes
@@ -361,6 +361,20 @@ sca_conquqest_slot_4 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree nor_4_group takes precedence
+		NOT = {
+tag = NOR
+		}
+		# [merge] Ante Bellum tree ab_danish_fourth takes precedence
+		NOT = {
+OR = {
+			tag = DAN
+			was_tag = DAN
+			tag = DNK
+			was_tag = DNK
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_sweden_slot4 takes precedence
 		NOT = {
 OR = {
@@ -376,20 +390,6 @@ OR = {
 			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_danish_fourth takes precedence
-		NOT = {
-OR = {
-			tag = DAN
-			was_tag = DAN
-			tag = DNK
-			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree nor_4_group takes precedence
-		NOT = {
-tag = NOR
 		}
 	}
 	has_country_shield = yes
@@ -529,13 +529,9 @@ sca_development_slot_1 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_sweden_slot1 takes precedence
+		# [merge] Ante Bellum tree nor_1_group takes precedence
 		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
-		}
-		NOT = { map_setup = map_setup_random }
+tag = NOR
 		}
 		# [merge] Ante Bellum tree ab_danish_first takes precedence
 		NOT = {
@@ -547,9 +543,13 @@ OR = {
 		}
 		NOT = { map_setup = map_setup_random }
 		}
-		# [merge] Ante Bellum tree nor_1_group takes precedence
+		# [merge] Ante Bellum tree ab_sweden_slot1 takes precedence
 		NOT = {
-tag = NOR
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 	has_country_shield = yes
@@ -665,13 +665,9 @@ sca_development_slot_2 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_sweden_slot2 takes precedence
+		# [merge] Ante Bellum tree nor_2_group takes precedence
 		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
-		}
-		NOT = { map_setup = map_setup_random }
+tag = NOR
 		}
 		# [merge] Ante Bellum tree ab_danish_second takes precedence
 		NOT = {
@@ -683,9 +679,13 @@ OR = {
 		}
 		NOT = { map_setup = map_setup_random }
 		}
-		# [merge] Ante Bellum tree nor_2_group takes precedence
+		# [merge] Ante Bellum tree ab_sweden_slot2 takes precedence
 		NOT = {
-tag = NOR
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 	has_country_shield = yes
@@ -947,6 +947,20 @@ sca_development_slot_3 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree nor_3_group takes precedence
+		NOT = {
+tag = NOR
+		}
+		# [merge] Ante Bellum tree ab_danish_third takes precedence
+		NOT = {
+OR = {
+			tag = DAN
+			was_tag = DAN
+			tag = DNK
+			was_tag = DNK
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_sweden_slot3 takes precedence
 		NOT = {
 OR = {
@@ -994,20 +1008,6 @@ OR = {
 			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_danish_third takes precedence
-		NOT = {
-OR = {
-			tag = DAN
-			was_tag = DAN
-			tag = DNK
-			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree nor_3_group takes precedence
-		NOT = {
-tag = NOR
 		}
 	}
 	has_country_shield = yes
@@ -1135,13 +1135,9 @@ sca_norse_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_sweden_slot5 takes precedence
+		# [merge] Ante Bellum tree nor_5_group takes precedence
 		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
-		}
-		NOT = { map_setup = map_setup_random }
+tag = NOR
 		}
 		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
 		NOT = {
@@ -1157,14 +1153,6 @@ OR = {
 				has_country_flag = sca_unlock_humanist_missions
 				has_country_flag = sca_unlock_catholic_missions
 			}
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_sweden_slot5_second takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -1232,9 +1220,21 @@ OR = {
 		}
 		NOT = { map_setup = map_setup_random }
 		}
-		# [merge] Ante Bellum tree nor_5_group takes precedence
+		# [merge] Ante Bellum tree ab_sweden_slot5 takes precedence
 		NOT = {
-tag = NOR
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
+		}
+		# [merge] Ante Bellum tree ab_sweden_slot5_second takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 	has_country_shield = yes
@@ -1349,13 +1349,9 @@ sca_revolution_mission_slot = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_sweden_slot5 takes precedence
+		# [merge] Ante Bellum tree nor_5_group takes precedence
 		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
-		}
-		NOT = { map_setup = map_setup_random }
+tag = NOR
 		}
 		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
 		NOT = {
@@ -1371,14 +1367,6 @@ OR = {
 				has_country_flag = sca_unlock_humanist_missions
 				has_country_flag = sca_unlock_catholic_missions
 			}
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_sweden_slot5_second takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -1446,9 +1434,21 @@ OR = {
 		}
 		NOT = { map_setup = map_setup_random }
 		}
-		# [merge] Ante Bellum tree nor_5_group takes precedence
+		# [merge] Ante Bellum tree ab_sweden_slot5 takes precedence
 		NOT = {
-tag = NOR
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
+		}
+		# [merge] Ante Bellum tree ab_sweden_slot5_second takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 	has_country_shield = yes
@@ -1597,6 +1597,20 @@ sca_colonialism_slot_3 = {
 		is_random_new_world = no
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree nor_3_group takes precedence
+		NOT = {
+tag = NOR
+		}
+		# [merge] Ante Bellum tree ab_danish_third takes precedence
+		NOT = {
+OR = {
+			tag = DAN
+			was_tag = DAN
+			tag = DNK
+			was_tag = DNK
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_sweden_slot3 takes precedence
 		NOT = {
 OR = {
@@ -1644,20 +1658,6 @@ OR = {
 			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_danish_third takes precedence
-		NOT = {
-OR = {
-			tag = DAN
-			was_tag = DAN
-			tag = DNK
-			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree nor_3_group takes precedence
-		NOT = {
-tag = NOR
 		}
 	}
 	has_country_shield = yes
@@ -1725,6 +1725,20 @@ sca_colonialism_slot_4 = {
 		is_random_new_world = no
 		has_country_flag = use_paradox_missions
 	
+		# [merge] Ante Bellum tree nor_4_group takes precedence
+		NOT = {
+tag = NOR
+		}
+		# [merge] Ante Bellum tree ab_danish_fourth takes precedence
+		NOT = {
+OR = {
+			tag = DAN
+			was_tag = DAN
+			tag = DNK
+			was_tag = DNK
+		}
+		NOT = { map_setup = map_setup_random }
+		}
 		# [merge] Ante Bellum tree ab_sweden_slot4 takes precedence
 		NOT = {
 OR = {
@@ -1740,20 +1754,6 @@ OR = {
 			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_danish_fourth takes precedence
-		NOT = {
-OR = {
-			tag = DAN
-			was_tag = DAN
-			tag = DNK
-			was_tag = DNK
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree nor_4_group takes precedence
-		NOT = {
-tag = NOR
 		}
 	}
 	has_country_shield = yes
@@ -1901,13 +1901,9 @@ sca_colonialism_slot_5 = {
 		is_random_new_world = no
 		has_country_flag = use_paradox_missions
 	
-		# [merge] Ante Bellum tree ab_sweden_slot5 takes precedence
+		# [merge] Ante Bellum tree nor_5_group takes precedence
 		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
-		}
-		NOT = { map_setup = map_setup_random }
+tag = NOR
 		}
 		# [merge] Ante Bellum tree swe_locked_mission_slot takes precedence
 		NOT = {
@@ -1923,14 +1919,6 @@ OR = {
 				has_country_flag = sca_unlock_humanist_missions
 				has_country_flag = sca_unlock_catholic_missions
 			}
-		}
-		NOT = { map_setup = map_setup_random }
-		}
-		# [merge] Ante Bellum tree ab_sweden_slot5_second takes precedence
-		NOT = {
-OR = {
-			tag = SWE
-			was_tag = SWE
 		}
 		NOT = { map_setup = map_setup_random }
 		}
@@ -1998,9 +1986,21 @@ OR = {
 		}
 		NOT = { map_setup = map_setup_random }
 		}
-		# [merge] Ante Bellum tree nor_5_group takes precedence
+		# [merge] Ante Bellum tree ab_sweden_slot5 takes precedence
 		NOT = {
-tag = NOR
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
+		}
+		# [merge] Ante Bellum tree ab_sweden_slot5_second takes precedence
+		NOT = {
+OR = {
+			tag = SWE
+			was_tag = SWE
+		}
+		NOT = { map_setup = map_setup_random }
 		}
 	}
 	has_country_shield = yes
