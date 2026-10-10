@@ -2238,6 +2238,8 @@ country_event = {
 			government = monarchy
 			NOT = { has_government_attribute = has_harem_events }
 			NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = polish_elective_monarchy }
+			NOT = { has_reform = mamluk_government }
 			religion_group = christian
 			has_heir = no
 			ruler_age = 16

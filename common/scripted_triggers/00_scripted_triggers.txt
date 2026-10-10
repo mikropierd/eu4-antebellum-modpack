@@ -3238,6 +3238,15 @@ num_of_ruler_traits = {
 		ruler_has_personality = legendary_conqueror_personality
 		ruler_has_personality = great_engineer_personality
 		ruler_has_personality = patron_of_arts_personality
+		ruler_has_personality = humane_personality
+		ruler_has_personality = petty_personality
+		ruler_has_personality = papal_puppetmaster_personality
+		ruler_has_personality = iron_crowned_personality
+		ruler_has_personality = peasant_revolt_leader_personality
+		ruler_has_personality = merchant_basileus_personality
+		ruler_has_personality = orangist_stadholder_personality
+		ruler_has_personality = reaver_personality
+		ruler_has_personality = last_knight_personality
 		amount = $amount$
 	}
 }

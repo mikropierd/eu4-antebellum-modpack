@@ -3790,7 +3790,7 @@ on_province_owner_change = {
 		if = {
 			limit = {
 				region = low_countries_region
-				culture_group = ROOT
+				culture_group = owner
 			}
 			add_province_modifier = {
 				name = ned_seven_provinces_organization_positive_modifier
@@ -4430,11 +4430,9 @@ on_loan_repaid = {
 	on_loan_repaid_estate_privileges_effect = yes
 	if = {
 		limit = { 
-			THIS = {
-				economic_ideas = 4 
-			}
+			economic_ideas = 4
 		}
-		THIS = { add_inflation = -0.05 }
+		add_inflation = -0.05
 	}
 }
 
@@ -4777,6 +4775,19 @@ on_expanded_infrastructure = {
 			add_province_modifier = {
 				name = MUG_expanded_infrastructure
 				duration = 7300
+			}
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = mng_10_loyalty_for_burghers_on_expand_infr_flag
+			}
+		}
+		FROM = {
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
 			}
 		}
 	}

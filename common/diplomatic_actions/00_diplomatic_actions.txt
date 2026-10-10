@@ -324,4 +324,4 @@ ask_for_tributary_state_action = {
 			NOT = { has_reform = daimyo }
 		}
 	}
-}
+}			FROM = { is_subject_of_type = appanage }
